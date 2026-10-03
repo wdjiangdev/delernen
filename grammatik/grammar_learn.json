@@ -1180,7 +1180,7 @@
   "id": "konjunktiv1",
   "title": "第一虚拟式（转述）",
   "titleDe": "Konjunktiv I",
-  "explain": "间接引语用。er sagt, er sei krank（他说他病了）。sein 的虚拟一式：ich sei, du seiest, er sei。\n\n🇬🇧 英语对照：英语没有第一虚拟式！英语转述用时态后移（He said he was ill）。德语用 sei/habe，是德语特有。",
+  "explain": "间接引语用：用虚拟式标记“这是他说的话，不是我保证的事实”。er sagt, er sei krank（他说他病了）。sein 的虚拟一式：ich sei, du seiest, er sei；haben：er habe。\n\n🇬🇧 英语对照：英语没有第一虚拟式！英语转述用时态后移（He said he was ill）。德语不后移时态，而是换语气，用 sei/habe。口语常偷懒用陈述式，但新闻和书面语里全是它。",
   "table": [
    [
     "",
@@ -1217,7 +1217,7 @@
   "id": "partizip_attr",
   "title": "分词作定语",
   "titleDe": "Partizip als Attribut",
-  "explain": "现在分词/过去分词可作定语，相当于缩略的关系从句，要加形容词词尾。\n\n🇬🇧 英语对照：英语 -ing/-ed 作定语（the crying boy, the opened window）。德语分词作定语也要加词尾，和形容词一样变格。",
+  "explain": "现在分词/过去分词放名词前作定语，相当于缩略的关系从句，要像形容词一样加词尾：Das laufende Wasser = Das Wasser, das läuft（流动的水）。\n\n🇬🇧 英语对照：英语 -ing/-ed 作定语（the crying boy, the opened window）。英语词形不变，德语分词也要变格。",
   "table": [
    [
     "",
@@ -1256,7 +1256,7 @@
   "id": "n_deklination",
   "title": "N-词尾变化",
   "titleDe": "N-Deklination",
-  "explain": "部分阳性名词（多指人/动物）单数二三四格加 -n/-en：der Student→den Studenten。\n\n🇬🇧 英语对照：英语完全没有这个概念！英语名词单复数同形（student/students 只看复数）。德语部分阳性名词单数二三四格要加 -n。",
+  "explain": "一小批阳性名词（多指人/动物），单数二三四格都要加 -n/-en：der Student→den Studenten，der Herr→den Herrn（只加 -n）。背单词时这类名词最好连着属格一起背。\n\n🇬🇧 英语对照：英语完全没有这个概念！英语名词单复数同形（student/students 只看复数）。德语部分阳性名词单数二三四格要加 -n。",
   "table": [
    [
     "一格",
@@ -1295,7 +1295,7 @@
   "id": "nominalisierung",
   "title": "名词化",
   "titleDe": "Nominalisierung",
-  "explain": "动词/形容词大写变名词：das Lesen（阅读）、das Gute（好的东西）。\n\n🇬🇧 英语对照：英语动名词 doing（Reading is hard）。德语 das Lesen 完全对应，只是首字母大写。",
+  "explain": "动词/形容词大写变名词：lesen→das Lesen（阅读）、krank→der Kranke（病人）。形容词变过来的保留形容词词尾（der Kranke, das Wichtigste）。\n\n🇬🇧 英语对照：英语动名词 doing（Reading is hard = Das Lesen fällt mir schwer）。德语完全对应，只是首字母必须大写。",
   "table": [
    [
     "原词",
