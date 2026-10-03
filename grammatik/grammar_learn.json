@@ -1,0 +1,1316 @@
+[
+ {
+  "level": "A1",
+  "id": "verb_konjugation",
+  "title": "动词变位",
+  "titleDe": "Verbkonjugation",
+  "explain": "德语动词要根据人称变位。规则动词去 -en 加词尾；不规则动词元音会变化（如 e→i, e→ie, a→ä）。\n\n🇬🇧 英语对照：英语也有动词变位，但简单得多：只有第三人称单数加 -s（he makes）。德语 6 个人称都要变。",
+  "table": [
+   [
+    "人称",
+    "machen（规则）",
+    "sprechen（e→i）",
+    "sehen（e→ie）",
+    "fahren（a→ä）"
+   ],
+   [
+    "ich",
+    "mache",
+    "spreche",
+    "sehe",
+    "fahre"
+   ],
+   [
+    "du",
+    "machst",
+    "sprichst",
+    "siehst",
+    "fährst"
+   ],
+   [
+    "er/sie/es",
+    "macht",
+    "spricht",
+    "sieht",
+    "fährt"
+   ],
+   [
+    "wir",
+    "machen",
+    "sprechen",
+    "sehen",
+    "fahren"
+   ],
+   [
+    "ihr",
+    "macht",
+    "sprecht",
+    "seht",
+    "fahrt"
+   ],
+   [
+    "sie/Sie",
+    "machen",
+    "sprechen",
+    "sehen",
+    "fahren"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich mache meine Hausaufgaben.",
+    "我在做作业。"
+   ],
+   [
+    "Du sprichst gut Deutsch.",
+    "你德语说得很好。"
+   ],
+   [
+    "Er sieht einen Film.",
+    "他在看电影。"
+   ],
+   [
+    "Sie fährt nach Berlin.",
+    "她开车去柏林。"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "artikel",
+  "title": "冠词：der / die / das",
+  "titleDe": "Artikel",
+  "explain": "德语名词有三种性：阳性 der、阴性 die、中性 das。复数统一用 die。性没有绝对规则，要和单词一起背。\n\n🇬🇧 英语对照：英语只有 a/an/the，不分阴阳中性。德语名词必须记住性（der/die/das），这是英语没有的难点。",
+  "table": [
+   [
+    "",
+    "阳性",
+    "阴性",
+    "中性"
+   ],
+   [
+    "定冠词",
+    "der Mann",
+    "die Frau",
+    "das Kind"
+   ],
+   [
+    "不定冠词",
+    "ein Mann",
+    "eine Frau",
+    "ein Kind"
+   ],
+   [
+    "复数",
+    "die Männer",
+    "die Frauen",
+    "die Kinder"
+   ]
+  ],
+  "examples": [
+   [
+    "Der Mann trinkt Kaffee.",
+    "那个男人在喝咖啡。"
+   ],
+   [
+    "Die Frau liest ein Buch.",
+    "那个女人在读书。"
+   ],
+   [
+    "Das Kind spielt im Garten.",
+    "孩子在花园里玩。"
+   ],
+   [
+    "Die Kinder sind müde.",
+    "孩子们累了。"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "pronomen",
+  "title": "人称代词",
+  "titleDe": "Personalpronomen",
+  "explain": "德语人称代词有三格变化：一格作主语，四格作直接宾语，三格作间接宾语。er/sie/es 的三格是 ihm/ihr/ihm，别和英语搞混。\n\n🇬🇧 英语对照：英语 I/me、he/him、they/them 只有两格（主格/宾格），德语多一个三格。英语 give him 的 him，在德语里是四格 ihn 还是三格 ihm，要看动词支配（helfen 支配三格：Ich helfe ihm）。",
+  "table": [
+   [
+    "人称",
+    "一格",
+    "四格",
+    "三格"
+   ],
+   [
+    "我",
+    "ich",
+    "mich",
+    "mir"
+   ],
+   [
+    "你",
+    "du",
+    "dich",
+    "dir"
+   ],
+   [
+    "他",
+    "er",
+    "ihn",
+    "ihm"
+   ],
+   [
+    "她",
+    "sie",
+    "sie",
+    "ihr"
+   ],
+   [
+    "它",
+    "es",
+    "es",
+    "ihm"
+   ],
+   [
+    "我们",
+    "wir",
+    "uns",
+    "uns"
+   ],
+   [
+    "你们",
+    "ihr",
+    "euch",
+    "euch"
+   ],
+   [
+    "他们",
+    "sie",
+    "sie",
+    "ihnen"
+   ],
+   [
+    "您",
+    "Sie",
+    "Sie",
+    "Ihnen"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich sehe dich morgen.",
+    "我明天见你。"
+   ],
+   [
+    "Er hilft mir oft.",
+    "他常帮我。"
+   ],
+   [
+    "Sie besucht uns am Sonntag.",
+    "她周日拜访我们。"
+   ],
+   [
+    "Ich danke Ihnen.",
+    "谢谢您。"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "akkusativ",
+  "title": "第四格 Akkusativ",
+  "titleDe": "Akkusativ",
+  "explain": "直接宾语用第四格。只有阳性单数冠词变化：der→den, ein→einen。动词后跟\"谁/什么\"就是四格。\n\n🇬🇧 英语对照：英语相当于直接宾语（direct object），但英语名词没有格变化，只有代词有（him/her/them）。德语阳性冠词 der→den。",
+  "table": [
+   [
+    "格",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "一格",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "四格",
+    "den",
+    "die",
+    "das",
+    "die"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich sehe den Mann.",
+    "我看见那个男人。"
+   ],
+   [
+    "Sie kauft einen Apfel.",
+    "她买一个苹果。"
+   ],
+   [
+    "Wir lieben das Wetter.",
+    "我们喜欢这天气。"
+   ],
+   [
+    "Er besucht die Freunde.",
+    "他拜访朋友们。"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "negation",
+  "title": "否定：nicht / kein",
+  "titleDe": "Negation",
+  "explain": "kein 否定名词（=没有），nicht 否定动词/形容词/整个句子。kein 要变格，和 ein 一样。\n\n🇬🇧 英语对照：英语 not ≈ nicht，no ≈ kein。英语 \"I have no car\" = \"Ich habe kein Auto\"。",
+  "table": [
+   [
+    "",
+    "kein（名词）",
+    "nicht（其他）"
+   ],
+   [
+    "例",
+    "kein Geld（没有钱）",
+    "nicht gut（不好）"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe kein Auto.",
+    "我没有车。"
+   ],
+   [
+    "Das ist keine Frage.",
+    "这不是问题。"
+   ],
+   [
+    "Ich komme nicht.",
+    "我不来。"
+   ],
+   [
+    "Der Film ist nicht interessant.",
+    "这电影没意思。"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "fragen",
+  "title": "疑问句",
+  "titleDe": "Fragen",
+  "explain": "是非疑问句动词放句首；特殊疑问句疑问词放句首、动词第二位。\n\n🇬🇧 英语对照：英语一般疑问句要加助动词 do（Do you come?），德语直接动词放句首（Kommst du?）。特殊疑问句两者结构相似。",
+  "table": [
+   [
+    "类型",
+    "结构",
+    "例子"
+   ]
+  ],
+  "examples": [
+   [
+    "Kommst du mit?",
+    "你一起来吗？"
+   ],
+   [
+    "Wo wohnst du?",
+    "你住在哪？"
+   ],
+   [
+    "Was machst du?",
+    "你在做什么？"
+   ],
+   [
+    "Wie heißt du?",
+    "你叫什么名字？"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "modalverben",
+  "title": "情态动词",
+  "titleDe": "Modalverben",
+  "explain": "können（能）、müssen（必须）、wollen（想要）、dürfen（可以）、sollen（应该）、mögen（喜欢）。情态动词变位不规则，句中主要动词用原形放句末。\n\n🇬🇧 英语对照：英语情态动词 can/must/will/may/shall/might：后跟动词原形，和德语一样（I can speak = Ich kann sprechen）。但英语情态动词不变位，德语要变位。",
+  "table": [
+   [
+    "",
+    "können",
+    "müssen",
+    "wollen"
+   ],
+   [
+    "ich",
+    "kann",
+    "muss",
+    "will"
+   ],
+   [
+    "du",
+    "kannst",
+    "musst",
+    "willst"
+   ],
+   [
+    "er",
+    "kann",
+    "muss",
+    "will"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich kann Deutsch sprechen.",
+    "我会说德语。"
+   ],
+   [
+    "Du musst mir helfen.",
+    "你必须帮我。"
+   ],
+   [
+    "Wir wollen nach Hause gehen.",
+    "我们想回家。"
+   ],
+   [
+    "Darf ich hier rauchen?",
+    "我可以在这抽烟吗？"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "trennbar",
+  "title": "可分动词",
+  "titleDe": "Trennbare Verben",
+  "explain": "前缀可分：陈述句中前缀分开、放句末；从句和不定式中不分开。\n\n🇬🇧 英语对照：英语最接近的是短语动词（phrasal verbs）：wake up、turn on、call back。德语前缀分开后放句末，英语小品词也是分离的（Turn it on）。",
+  "table": [
+   [
+    "",
+    "陈述句",
+    "从句"
+   ],
+   [
+    "ankommen",
+    "Ich komme an.",
+    "…, weil ich ankomme."
+   ]
+  ],
+  "examples": [
+   [
+    "Der Zug kommt um 8 Uhr an.",
+    "火车8点到达。"
+   ],
+   [
+    "Mach bitte das Licht an!",
+    "请开灯！"
+   ],
+   [
+    "Ruf mich später an.",
+    "晚点给我打电话。"
+   ],
+   [
+    "Sie steht früh auf.",
+    "她起得很早。"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "satzklammer",
+  "title": "句框结构",
+  "titleDe": "Satzklammer",
+  "explain": "德语句子像一个框：变位动词在左框（永远第二位），动词的其他部分（可分前缀、不定式、第二分词）被扔到句末右框，框住整个句子。从句里框会合拢。\n\n🇬🇧 英语对照：英语没有句框，动词部分都挤在一起（I want to go home）。德语把 will 放第二位、gehen 扔句末，初学最容易漏掉右框。",
+  "table": [
+   [
+    "类型",
+    "左框（第二位）",
+    "右框（句末）"
+   ],
+   [
+    "可分动词",
+    "mache",
+    "zu"
+   ],
+   [
+    "情态动词",
+    "will",
+    "gehen"
+   ],
+   [
+    "完成时",
+    "habe",
+    "gelesen"
+   ],
+   [
+    "将来时",
+    "werde",
+    "kommen"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich mache die Tür zu.",
+    "我把门关上。"
+   ],
+   [
+    "Ich will nach Hause gehen.",
+    "我想回家。"
+   ],
+   [
+    "Ich habe das Buch gelesen.",
+    "我读过这本书。"
+   ],
+   [
+    "…, weil ich die Tür zumache.",
+    "…因为我关门。（从句里框合拢）"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "praep_temporal",
+  "title": "时间介词",
+  "titleDe": "Temporale Präpositionen",
+  "explain": "说时间用 um/am/im：几点钟用 um，星期和日期用 am，月份季节年份用 im。vor/nach/ab 后面跟三格。\n\n🇬🇧 英语对照：英语 at 8 / on Monday / in May，德语 um 8 / am Montag / im Mai，一一对应，很好记。",
+  "table": [
+   [
+    "介词",
+    "用法",
+    "例子"
+   ],
+   [
+    "um",
+    "几点钟",
+    "um 8 Uhr"
+   ],
+   [
+    "am",
+    "星期·日期",
+    "am Montag"
+   ],
+   [
+    "im",
+    "月·季·年",
+    "im Mai"
+   ],
+   [
+    "vor +三格",
+    "…之前",
+    "vor dem Essen"
+   ],
+   [
+    "nach +三格",
+    "…之后",
+    "nach der Arbeit"
+   ],
+   [
+    "ab +三格",
+    "从…起",
+    "ab nächster Woche"
+   ]
+  ],
+  "examples": [
+   [
+    "Der Zug fährt um 8 Uhr.",
+    "火车八点开。"
+   ],
+   [
+    "Am Montag habe ich Deutsch.",
+    "周一我有德语课。"
+   ],
+   [
+    "Im Sommer ist es sehr heiß.",
+    "夏天很热。"
+   ],
+   [
+    "Nach der Arbeit gehe ich nach Hause.",
+    "下班后我回家。"
+   ]
+  ]
+ },
+ {
+  "level": "A1",
+  "id": "perfekt",
+  "title": "现在完成时 Perfekt",
+  "titleDe": "Perfekt",
+  "explain": "口语过去时：haben/sein + 过去分词。表位移的动词用 sein，其他多用 haben。\n\n🇬🇧 英语对照：英语现在完成时 have + 过去分词（I have worked）。德语一样用 haben/sein + 过去分词，但德语口语中完成时用得比英语多得多。",
+  "table": [
+   [
+    "",
+    "haben",
+    "sein"
+   ],
+   [
+    "结构",
+    "ich habe gemacht",
+    "ich bin gegangen"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe gestern viel gearbeitet.",
+    "我昨天工作了很多。"
+   ],
+   [
+    "Sie ist nach Berlin gefahren.",
+    "她开车去了柏林。"
+   ],
+   [
+    "Wir haben einen Film gesehen.",
+    "我们看了一部电影。"
+   ],
+   [
+    "Bist du schon aufgestanden?",
+    "你起床了吗？"
+   ]
+  ]
+ },
+ {
+  "level": "A2",
+  "id": "dativ",
+  "title": "第三格 Dativ",
+  "titleDe": "Dativ",
+  "explain": "间接宾语用第三格。冠词变化：der→dem, die→der, das→dem, die(复数)→den + n。\n\n🇬🇧 英语对照：英语相当于间接宾语（indirect object），但英语名词无格变化，只有代词（give him）。德语冠词要变：dem/der/dem/den。",
+  "table": [
+   [
+    "格",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "一格",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "三格",
+    "dem",
+    "der",
+    "dem",
+    "den + n"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich helfe dem Mann.",
+    "我帮助那个男人。"
+   ],
+   [
+    "Sie gibt der Frau ein Buch.",
+    "她给那个女人一本书。"
+   ],
+   [
+    "Das gehört mir.",
+    "那属于我。"
+   ],
+   [
+    "Er antwortet den Kindern.",
+    "他回答孩子们。"
+   ]
+  ]
+ },
+ {
+  "level": "A2",
+  "id": "wechsel",
+  "title": "双向介词",
+  "titleDe": "Wechselpräpositionen",
+  "explain": "an, auf, hinter, in, neben, über, unter, vor, zwischen：表示静态位置跟三格，表示方向移动跟四格。\n\n🇬🇧 英语对照：英语没有这个概念！英语介词不支配格。这是德语特有难点，只能靠 in+位置=三格 / in+方向=四格 来记。",
+  "table": [
+   [
+    "介词",
+    "三格（位置）",
+    "四格（方向）"
+   ],
+   [
+    "in",
+    "in der Stadt（在城里）",
+    "in die Stadt（进城）"
+   ],
+   [
+    "auf",
+    "auf dem Tisch（在桌上）",
+    "auf den Tisch（放到桌上）"
+   ]
+  ],
+  "examples": [
+   [
+    "Das Buch liegt auf dem Tisch.",
+    "书在桌上。（位置）"
+   ],
+   [
+    "Ich lege das Buch auf den Tisch.",
+    "我把书放到桌上。（方向）"
+   ],
+   [
+    "Sie ist in der Schule.",
+    "她在学校。（位置）"
+   ],
+   [
+    "Er geht in die Schule.",
+    "他去上学。（方向）"
+   ]
+  ]
+ },
+ {
+  "level": "A2",
+  "id": "praeteritum",
+  "title": "过去时 Präteritum",
+  "titleDe": "Präteritum",
+  "explain": "书面过去时。规则动词：词干+te；不规则动词要背（如 gehen→ging）。口语多用 Perfekt，书面多用 Präteritum。\n\n🇬🇧 英语对照：英语一般过去时（simple past）：I went = Ich ging。英语口语也常用过去时，德语口语则多用完成时。",
+  "table": [
+   [
+    "",
+    "machen（规则）",
+    "gehen（不规则）",
+    "haben",
+    "sein"
+   ],
+   [
+    "ich",
+    "machte",
+    "ging",
+    "hatte",
+    "war"
+   ],
+   [
+    "er",
+    "machte",
+    "ging",
+    "hatte",
+    "war"
+   ]
+  ],
+  "examples": [
+   [
+    "Er ging gestern ins Kino.",
+    "他昨天去看了电影。"
+   ],
+   [
+    "Sie hatte keine Zeit.",
+    "她没有时间。"
+   ],
+   [
+    "Wir waren sehr müde.",
+    "我们很累。"
+   ],
+   [
+    "Ich machte meine Hausaufgaben.",
+    "我做了作业。"
+   ]
+  ]
+ },
+ {
+  "level": "A2",
+  "id": "nebensatz",
+  "title": "从句与连词",
+  "titleDe": "Nebensätze",
+  "explain": "weil（因为）、dass（…）、wenn（如果/当…时）、als（当…时，过去一次性）：从句中动词放句末。\n\n🇬🇧 英语对照：英语也有从句（because/that/if），但英语从句保持主谓宾语序，德语从句动词必须放句末——这是最大区别。",
+  "table": [
+   [
+    "连词",
+    "含义",
+    "动词位置"
+   ],
+   [
+    "weil",
+    "因为",
+    "句末"
+   ],
+   [
+    "dass",
+    "…（宾语从句）",
+    "句末"
+   ],
+   [
+    "wenn",
+    "如果；每当",
+    "句末"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich bleibe zu Hause, weil ich krank bin.",
+    "我待在家里，因为我病了。"
+   ],
+   [
+    "Er sagt, dass er keine Zeit hat.",
+    "他说他没时间。"
+   ],
+   [
+    "Wenn es regnet, bleiben wir zu Hause.",
+    "如果下雨，我们就待在家里。"
+   ],
+   [
+    "Als ich ein Kind war, spielte ich Fußball.",
+    "当我还是孩子时，我踢足球。"
+   ]
+  ]
+ },
+ {
+  "level": "A2",
+  "id": "komparativ",
+  "title": "比较级与最高级",
+  "titleDe": "Komparativ / Superlativ",
+  "explain": "比较级：形容词+er + als；最高级：am + 形容词+sten。部分不规则：gut→besser→am besten, viel→mehr→am meisten。\n\n🇬🇧 英语对照：英语 -er/-est 或 more/most（bigger, more interesting）。德语一样 +er/am …sten，不规则变化也类似（gut→besser ≈ good→better）。",
+  "table": [
+   [
+    "原级",
+    "比较级",
+    "最高级"
+   ],
+   [
+    "schnell",
+    "schneller",
+    "am schnellsten"
+   ],
+   [
+    "gut",
+    "besser",
+    "am besten"
+   ]
+  ],
+  "examples": [
+   [
+    "Er ist größer als ich.",
+    "他比我高。"
+   ],
+   [
+    "Dieses Buch ist besser als das.",
+    "这本书比那本好。"
+   ],
+   [
+    "Sie läuft am schnellsten.",
+    "她跑得最快。"
+   ],
+   [
+    "Heute ist es kälter als gestern.",
+    "今天比昨天冷。"
+   ]
+  ]
+ },
+ {
+  "level": "A2",
+  "id": "reflexiv",
+  "title": "反身动词",
+  "titleDe": "Reflexive Verben",
+  "explain": "什么时候用？当动作的发出者和承受者是同一个人时——动作\"反射\"回主语身上。\n\n**两类反身动词：**\n1. 真反身（必须带 sich，去掉就错）：sich freuen（高兴）、sich erinnern（记得）、sich beeilen（赶紧）、sich verspäten（迟到）\n2. 假反身（可带可不带，意思不同）：waschen（洗）→ sich waschen（洗自己）；anziehen（穿衣）→ sich anziehen（自己穿）\n\n**反身代词表（第四格）：** mich, dich, sich, uns, euch, sich\n**第三格**（动词后还有第四格宾语时）：mir, dir, sich, uns, euch, sich\n例：Ich wasche mir die Hände.（我洗手——手是四格宾语，所以用 mir）\n\n🇬🇧 英语对照：英语反身代词 myself/yourself/himself…，但英语真反身动词很少（enjoy oneself）。德语大量动词必须带 sich，这是高频难点。",
+  "table": [
+   [
+    "人称",
+    "sich freuen"
+   ],
+   [
+    "ich",
+    "mich"
+   ],
+   [
+    "du",
+    "dich"
+   ],
+   [
+    "er",
+    "sich"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich freue mich auf dich.",
+    "我期待见到你。"
+   ],
+   [
+    "Er wäscht sich die Hände.",
+    "他洗手。"
+   ],
+   [
+    "Wir erinnern uns an ihn.",
+    "我们记得他。"
+   ],
+   [
+    "Beeil dich!",
+    "快点！"
+   ]
+  ]
+ },
+ {
+  "level": "B1",
+  "id": "genitiv",
+  "title": "第二格 Genitiv",
+  "titleDe": "Genitiv",
+  "explain": "表所属。阳性/中性：der→des + 词尾-(e)s；阴性/复数：die→der。口语常用 von + 三格代替。\n\n🇬🇧 英语对照：英语 ’s 或 of（the teacher’s car / the color of the wall）。德语二格 des+(e)s，口语常用 von+三格代替（和英语 of 类似）。",
+  "table": [
+   [
+    "格",
+    "阳性",
+    "阴性",
+    "中性"
+   ],
+   [
+    "一格",
+    "der",
+    "die",
+    "das"
+   ],
+   [
+    "二格",
+    "des + (e)s",
+    "der",
+    "des + (e)s"
+   ]
+  ],
+  "examples": [
+   [
+    "Das ist das Auto des Lehrers.",
+    "这是老师的车。"
+   ],
+   [
+    "Die Farbe der Wand ist weiß.",
+    "墙的颜色是白的。"
+   ],
+   [
+    "Wegen des Wetters bleiben wir zu Hause.",
+    "因为天气，我们待在家里。"
+   ],
+   [
+    "Trotz der Kälte geht er spazieren.",
+    "尽管寒冷，他还是去散步。"
+   ]
+  ]
+ },
+ {
+  "level": "B1",
+  "id": "konjunktiv2",
+  "title": "第二虚拟式",
+  "titleDe": "Konjunktiv II",
+  "explain": "表假设、愿望、委婉。würde + 不定式（最常用）；haben→hätte, sein→wäre。\n\n🇬🇧 英语对照：英语用 would + 动词（I would buy）或 were（If I were you）。德语 würde + 不定式完全对应英语 would。",
+  "table": [
+   [
+    "",
+    "würde 形式",
+    "特殊形式"
+   ],
+   [
+    "ich",
+    "würde gehen",
+    "hätte / wäre"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich würde gern nach Japan reisen.",
+    "我想去日本旅行。（愿望）"
+   ],
+   [
+    "Wenn ich Geld hätte, würde ich ein Auto kaufen.",
+    "如果我有钱，我就买辆车。（假设）"
+   ],
+   [
+    "Könnten Sie mir helfen?",
+    "您能帮我吗？（委婉）"
+   ],
+   [
+    "An deiner Stelle würde ich das nicht tun.",
+    "要是我是你，我不会这么做。"
+   ]
+  ]
+ },
+ {
+  "level": "B1",
+  "id": "relativsatz",
+  "title": "关系从句",
+  "titleDe": "Relativsätze",
+  "explain": "der/die/das 作关系代词，引导定语从句，动词放句末。关系代词的格由从句中的功能决定。\n\n🇬🇧 英语对照：英语关系从句 who/which/that（the man who stands there）。德语用 der/die/das，动词放句末，英语语序不变。",
+  "table": [
+   [
+    "先行词",
+    "关系代词（主格）"
+   ],
+   [
+    "der Mann",
+    "der"
+   ],
+   [
+    "die Frau",
+    "die"
+   ],
+   [
+    "das Kind",
+    "das"
+   ]
+  ],
+  "examples": [
+   [
+    "Der Mann, der dort steht, ist mein Lehrer.",
+    "站在那的男人是我老师。"
+   ],
+   [
+    "Das Buch, das ich lese, ist spannend.",
+    "我正在读的书很精彩。"
+   ],
+   [
+    "Die Frau, mit der ich gesprochen habe, ist nett.",
+    "和我说话的女人很友好。"
+   ],
+   [
+    "Kinder, die viel lesen, lernen schnell.",
+    "多读书的孩子学得快。"
+   ]
+  ]
+ },
+ {
+  "level": "B1",
+  "id": "infinitiv_zu",
+  "title": "不定式 zu",
+  "titleDe": "Infinitiv mit zu",
+  "explain": "versuchen zu（尝试）、beginnen zu（开始）、vergessen zu（忘记）：zu + 动词原形放句末。\n\n🇬🇧 英语对照：英语不定式 to + 动词（try to learn）。德语 zu + 动词原形放句末，结构对应但位置不同。",
+  "table": [
+   [
+    "动词",
+    "结构"
+   ],
+   [
+    "versuchen",
+    "versuchen, … zu machen"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich versuche, Deutsch zu lernen.",
+    "我尝试学德语。"
+   ],
+   [
+    "Er hat vergessen, mich anzurufen.",
+    "他忘了给我打电话。"
+   ],
+   [
+    "Es ist schwer, das zu verstehen.",
+    "这很难理解。"
+   ],
+   [
+    "Sie beginnt, das Buch zu lesen.",
+    "她开始读书。"
+   ]
+  ]
+ },
+ {
+  "level": "B1",
+  "id": "passiv",
+  "title": "被动态",
+  "titleDe": "Passiv",
+  "explain": "werden + 过去分词。施动者用 von + 三格。\n\n🇬🇧 英语对照：英语 be + 过去分词（is built）。德语 werden + 过去分词，结构完全对应。",
+  "table": [
+   [
+    "时态",
+    "结构"
+   ],
+   [
+    "现在时",
+    "wird gemacht"
+   ],
+   [
+    "过去时",
+    "wurde gemacht"
+   ],
+   [
+    "完成时",
+    "ist gemacht worden"
+   ]
+  ],
+  "examples": [
+   [
+    "Das Haus wird gebaut.",
+    "房子正在被建造。"
+   ],
+   [
+    "Der Brief wurde gestern geschrieben.",
+    "信是昨天写的。"
+   ],
+   [
+    "Die Fenster sind geputzt worden.",
+    "窗户已经被擦了。"
+   ],
+   [
+    "Mir wurde geholfen.",
+    "我得到了帮助。"
+   ]
+  ]
+ },
+ {
+  "level": "B1",
+  "id": "rektion",
+  "title": "动词固定搭配",
+  "titleDe": "Verben mit Präposition",
+  "explain": "很多德语动词固定搭配某个介词和格，介词和意思一起背：warten auf（等待+四格）、sich freuen auf（期待+四格）vs sich freuen über（为…高兴+四格）。\n\n🇬🇧 英语对照：和英语固定搭配一个思路（wait for、be interested in），只是德语还要记住跟三格还是四格。",
+  "table": [
+   [
+    "动词",
+    "介词+格",
+    "意思"
+   ],
+   [
+    "warten auf",
+    "+四格",
+    "等待"
+   ],
+   [
+    "sich freuen auf",
+    "+四格",
+    "期待"
+   ],
+   [
+    "denken an",
+    "+四格",
+    "想起"
+   ],
+   [
+    "sprechen über",
+    "+四格",
+    "谈论"
+   ],
+   [
+    "sich freuen über",
+    "+四格",
+    "为…高兴"
+   ],
+   [
+    "sprechen mit",
+    "+三格",
+    "交谈"
+   ],
+   [
+    "erzählen von",
+    "+三格",
+    "讲述"
+   ],
+   [
+    "abhängen von",
+    "+三格",
+    "取决于"
+   ],
+   [
+    "gehören zu",
+    "+三格",
+    "属于"
+   ],
+   [
+    "einladen zu",
+    "+三格",
+    "邀请"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich warte auf dich.",
+    "我在等你。"
+   ],
+   [
+    "Wir sprechen über den Film.",
+    "我们在谈论这部电影。"
+   ],
+   [
+    "Es hängt vom Wetter ab.",
+    "这取决于天气。"
+   ],
+   [
+    "Sie lädt uns zum Essen ein.",
+    "她邀请我们吃饭。"
+   ]
+  ]
+ },
+ {
+  "level": "B1",
+  "id": "adj_deklination",
+  "title": "形容词词尾",
+  "titleDe": "Adjektivdeklination",
+  "explain": "形容词在名词前作定语要加词尾，规律就一条：der-词后面一律 -e（复数 -en），其他情况看表。先背 der-词和 ein-词两列。\n\n🇬🇧 英语对照：英语形容词永远不变（a good man / the good men），德语要变，这是英语母语者最不习惯、德语学习者必须死磕的一块。",
+  "table": [
+   [
+    "",
+    "der gut-__ Mann",
+    "ein gut-__ Mann",
+    "gut-__ Männer"
+   ],
+   [
+    "一格",
+    "der gute Mann",
+    "ein guter Mann",
+    "gute Männer"
+   ],
+   [
+    "四格",
+    "den guten Mann",
+    "einen guten Mann",
+    "gute Männer"
+   ],
+   [
+    "三格",
+    "dem guten Mann",
+    "einem guten Mann",
+    "guten Männern"
+   ]
+  ],
+  "examples": [
+   [
+    "Das ist ein guter Mann.",
+    "这是个好心人。"
+   ],
+   [
+    "Ich sehe den guten Mann.",
+    "我看见那个好心人。"
+   ],
+   [
+    "Er hilft dem guten Mann.",
+    "他帮助那个好心人。"
+   ],
+   [
+    "Gute Freunde helfen einander.",
+    "好朋友们互相帮助。"
+   ]
+  ]
+ },
+ {
+  "level": "B2",
+  "id": "konjunktiv1",
+  "title": "第一虚拟式（转述）",
+  "titleDe": "Konjunktiv I",
+  "explain": "间接引语用。er sagt, er sei krank（他说他病了）。sein 的虚拟一式：ich sei, du seiest, er sei。\n\n🇬🇧 英语对照：英语没有第一虚拟式！英语转述用时态后移（He said he was ill）。德语用 sei/habe，是德语特有。",
+  "table": [
+   [
+    "",
+    "sein",
+    "haben"
+   ],
+   [
+    "er",
+    "sei",
+    "habe"
+   ]
+  ],
+  "examples": [
+   [
+    "Er sagt, er sei krank.",
+    "他说他病了。"
+   ],
+   [
+    "Sie meint, sie habe keine Zeit.",
+    "她说她没时间。"
+   ],
+   [
+    "Der Sprecher erklärt, die Lage habe sich verbessert.",
+    "发言人解释说情况已改善。"
+   ]
+  ]
+ },
+ {
+  "level": "B2",
+  "id": "partizip_attr",
+  "title": "分词作定语",
+  "titleDe": "Partizip als Attribut",
+  "explain": "现在分词/过去分词可作定语，相当于缩略的关系从句，要加形容词词尾。\n\n🇬🇧 英语对照：英语 -ing/-ed 作定语（the crying boy, the opened window）。德语分词作定语也要加词尾，和形容词一样变格。",
+  "table": [
+   [
+    "",
+    "例"
+   ],
+   [
+    "Partizip I",
+    "der lachende Mann（笑着的男人）"
+   ],
+   [
+    "Partizip II",
+    "das geöffnete Fenster（开着的窗）"
+   ]
+  ],
+  "examples": [
+   [
+    "Der weinende Junge braucht Hilfe.",
+    "哭泣的男孩需要帮助。"
+   ],
+   [
+    "Die gestern angekommene Post liegt hier.",
+    "昨天到的邮件在这里。"
+   ],
+   [
+    "Ein gut bezahlter Job ist schwer zu finden.",
+    "高薪工作难找。"
+   ]
+  ]
+ },
+ {
+  "level": "B2",
+  "id": "n_deklination",
+  "title": "N-词尾变化",
+  "titleDe": "N-Deklination",
+  "explain": "部分阳性名词（多指人/动物）单数二三四格加 -n/-en：der Student→den Studenten。\n\n🇬🇧 英语对照：英语完全没有这个概念！英语名词单复数同形（student/students 只看复数）。德语部分阳性名词单数二三四格要加 -n。",
+  "table": [
+   [
+    "一格",
+    "二/三/四格"
+   ],
+   [
+    "der Student",
+    "des/dem/den Studenten"
+   ],
+   [
+    "der Kollege",
+    "des/dem/den Kollegen"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich sehe den Studenten.",
+    "我看见那个学生。"
+   ],
+   [
+    "Das Buch des Kollegen ist hier.",
+    "同事的书在这。"
+   ],
+   [
+    "Er hilft dem Jungen.",
+    "他帮助那个男孩。"
+   ]
+  ]
+ },
+ {
+  "level": "B2",
+  "id": "nominalisierung",
+  "title": "名词化",
+  "titleDe": "Nominalisierung",
+  "explain": "动词/形容词大写变名词：das Lesen（阅读）、das Gute（好的东西）。\n\n🇬🇧 英语对照：英语动名词 doing（Reading is hard）。德语 das Lesen 完全对应，只是首字母大写。",
+  "table": [
+   [
+    "原词",
+    "名词化"
+   ],
+   [
+    "lesen",
+    "das Lesen"
+   ],
+   [
+    "gut",
+    "das Gute"
+   ]
+  ],
+  "examples": [
+   [
+    "Das Lesen fällt mir schwer.",
+    "阅读对我来说很难。"
+   ],
+   [
+    "Beim Kochen höre ich Musik.",
+    "做饭时我听音乐。"
+   ],
+   [
+    "Das Wichtigste ist die Gesundheit.",
+    "最重要的是健康。"
+   ]
+  ]
+ }
+]

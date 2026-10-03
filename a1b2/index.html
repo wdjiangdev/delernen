@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>A1-B2 德语单词星图</title>
+<style>
+:root{--bg:#0a0e1a;--bg-card:#111830;--bg-elev:#141b30;--bg-deep:#0d1326;--bg-input:#0e1428;
+--text:#e0e6f0;--text2:#b0b8d0;--text3:#8a93a8;--text4:#6a7490;--text5:#5a6378;
+--border:#2a3350;--border2:#232c48;--border3:#1a2340;
+--accent:#4a7aca;--accent2:#6ab0ff;--accentbg:#2a4a8a;--accentdeep:#1a2a5a;--link:#2a3a5a;--nodebd:#3a4a70;
+--green:#7dd87d;--orange:#ffb84d;--purple:#9d7bff;--red:#ff7d7d;--yellow:#ffd479}
+[data-theme="light"]{--bg:#f4f6fa;--bg-card:#ffffff;--bg-elev:#e9edf4;--bg-deep:#e2e8f1;--bg-input:#f0f3f8;
+--text:#1c2536;--text2:#3c4c66;--text3:#5c6e88;--text4:#8a9bb5;--text5:#aab8cc;
+--border:#cfd8e6;--border2:#dfe6f0;--border3:#e8edf4;
+--accent:#3868c8;--accent2:#2c5ab5;--accentbg:#d4e2fa;--accentdeep:#e6eefc;--link:#b8c8e0;--nodebd:#9ab0d0;
+--green:#2a8a3a;--orange:#c87a1a;--purple:#7a5cc8;--red:#c83a3a;--yellow:#8a6a1a}
+[data-theme="light"] #stars{display:none}
+[data-theme="light"] .link{stroke:var(--link)}
+[data-theme="light"] .stem-label{fill:var(--text)}
+[data-theme="light"] .verb-label{fill:var(--text)}
+[data-theme="light"] .verb-def{fill:var(--text4)}
+.node-fill{fill:#141d36}
+.node-center{fill:#1a2a5a}
+[data-theme="light"] .node-fill{fill:#ffffff}
+[data-theme="light"] .node-center{fill:#dce9ff}
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh;overflow-x:hidden}
+#stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+header{position:relative;z-index:1;padding:16px 16px 8px;text-align:center}
+header h1{font-size:20px;font-weight:700;letter-spacing:2px}
+header p{font-size:12px;color:var(--text3);margin-top:4px}
+#tabs{position:relative;z-index:1;display:flex;gap:8px;justify-content:center;padding:8px 16px 0}
+.tab{padding:8px 20px;border-radius:20px;border:1px solid #2a3350;background:var(--bg-elev);color:var(--text2);font-size:14px;cursor:pointer}
+.tab.active{background:var(--accentbg);border-color:var(--accent);color:#fff;font-weight:600}
+#groupNav{position:relative;z-index:1;display:flex;gap:8px;overflow-x:auto;padding:10px 16px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#groupNav::-webkit-scrollbar{display:none}
+#learnBar{position:relative;z-index:1;text-align:center;font-size:13px;padding:0 16px 8px;color:var(--text3)}
+#learnBar a{color:var(--accent2)}
+.gbtn{flex:0 0 auto;padding:8px 14px;border-radius:20px;border:1px solid #2a3350;background:var(--bg-elev);color:var(--text2);font-size:14px;cursor:pointer}
+.gbtn.active{background:var(--accentbg);border-color:var(--accent);color:#fff}
+.gbtn small{color:var(--text4);margin-left:4px}
+.gbtn.active small{color:#a0c0f0}
+#legend{position:relative;z-index:1;display:flex;gap:14px;justify-content:center;padding:0 16px 4px;font-size:11px;color:var(--text3)}
+#legend span{display:flex;align-items:center;gap:4px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.lv{display:inline-block;font-size:10px;font-weight:700;padding:1px 6px;border-radius:8px;margin-left:6px;vertical-align:middle}
+.lv-A1{background:var(--green);color:var(--green)}.lv-A2{background:#1a3a5a;color:var(--accent2)}
+.lv-B1{background:var(--orange);color:var(--orange)}.lv-B2{background:var(--red);color:var(--red)}
+#stage{position:relative;z-index:1;width:100%;height:62vh;min-height:420px}
+#stage svg{width:100%;height:100%;display:block}
+.node{cursor:pointer}
+.node circle{transition:r .2s}
+.node text{pointer-events:none;font-family:inherit}
+.stem-label{font-size:22px;font-weight:700;fill:#fff;text-anchor:middle}
+.stem-sub{font-size:11px;fill:var(--text3);text-anchor:middle}
+.verb-label{font-size:14px;fill:var(--text);text-anchor:middle}
+.verb-prefix{font-size:14px;font-weight:700;fill:var(--accent2);text-anchor:middle}
+.verb-def{font-size:10px;fill:var(--text4);text-anchor:middle}
+.link{stroke:var(--link);stroke-width:1.5}
+#detail{position:relative;z-index:1;margin:0 16px 20px;padding:14px 16px;background:var(--bg-elev);border:1px solid #2a3350;border-radius:12px;min-height:80px}
+#detail h3{font-size:16px;margin-bottom:6px}
+#detail h3 .pfx{color:var(--accent2);font-weight:700}
+#detail p{font-size:13px;color:var(--text2);line-height:1.6}
+#detail p.zh{font-size:15px;color:var(--text);font-weight:600;margin-bottom:2px}
+#detail p.en{font-size:12px;color:var(--text3);font-style:italic}
+#detail .forms{display:flex;gap:12px;margin:10px 0}
+#detail .forms div{flex:1;background:var(--bg-input);border:1px solid #2a3350;border-radius:8px;padding:8px 10px}
+#detail .forms span{display:block;font-size:10px;color:var(--text4);margin-bottom:2px}
+#detail .forms b{font-size:14px;color:var(--yellow);font-weight:600}
+#detail .meta{font-size:11px;color:var(--text4);margin-top:8px}
+.hint{text-align:center;color:var(--text5);font-size:11px;padding:0 0 12px;position:relative;z-index:1}
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<header>
+<h1>A1-B2 单词星图</h1>
+<p>A1+A2+B1 (Nicos Weg) + B2 (考纲) · 按词根串联</p>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" style="position:absolute;top:12px;right:12px;background:var(--bg-elev);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:50">🔄</button></header>
+<div id="tabs">
+<button class="tab active" data-tab="verb">动词前缀</button>
+<button class="tab" data-tab="family">词族</button>
+<button class="tab" data-tab="grammar">语法</button>
+
+
+</div>
+<div id="legend" style="display:none">
+<span><i class="dot" style="background:var(--accent2)"></i>动词</span>
+<span><i class="dot" style="background:var(--green)"></i>名词</span>
+<span><i class="dot" style="background:var(--orange)"></i>形容词</span>
+</div>
+<div id="groupNav"></div>
+<div id="learnBar" style="display:none"></div>
+<div id="stage"><svg id="map" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet"></svg></div>
+<div class="hint">点击动词查看释义 · 同一颜色为同一词族</div>
+<div id="detail"><p style="color:var(--text5)">点击上方星图中的动词查看详情</p></div>
+
+<script>
+let DATA=null;
+const svg=document.getElementById('map');
+const NS='http://www.w3.org/2000/svg';
+
+// 星空背景
+(function(){
+  const c=document.getElementById('stars'),x=c.getContext('2d');
+  function rs(){c.width=innerWidth;c.height=innerHeight;}
+  rs();addEventListener('resize',rs);
+  const N=120,ps=[];
+  for(let i=0;i<N;i++)ps.push({x:Math.random(),y:Math.random(),r:Math.random()*1.5+0.3,s:Math.random()*0.3+0.05});
+  (function anim(){
+    x.clearRect(0,0,c.width,c.height);
+    for(const p of ps){
+      p.y-=p.s/c.height;if(p.y<0)p.y=1;
+      x.beginPath();x.arc(p.x*c.width,p.y*c.height,p.r,0,7);
+      x.fillStyle='rgba(150,180,255,'+(0.2+p.r*0.2)+')';x.fill();
+    }
+    requestAnimationFrame(anim);
+  })();
+})();
+
+function el(tag,attrs,parent){
+  const e=document.createElementNS(NS,tag);
+  for(const k in attrs)e.setAttribute(k,attrs[k]);
+  if(parent)parent.appendChild(e);
+  return e;
+}
+
+let activeTab='verb';
+let verbData=null, familyData=null, grammarData=null;
+
+const POS_COLORS={v:'#6ab0ff',n:'#7dd87d',a:'#ffb84d'};
+const POS_NAMES={v:'动词',n:'名词',a:'形容词'};
+
+function renderGroup(g){
+  svg.innerHTML='';
+  const lb=document.getElementById('learnBar');
+  if(lb){if(activeTab==='grammar'&&g.learn){lb.style.display='block';lb.innerHTML='📖 <a href="../grammatik/index.html#g-'+g.learn+'">系统讲解：'+g.learnTitle+'</a>';}
+  else lb.style.display='none';}
+  const cx=200,cy=185,R=125;
+  if(activeTab==='verb')renderVerbGroup(g,cx,cy,R);
+  else if(activeTab==='family')renderFamilyGroup(g,cx,cy,R);
+  else renderGrammarGroup(g,cx,cy,R);
+}
+
+function renderGrammarGroup(g,cx,cy,R){
+  const members=g.members, n=members.length;
+  members.forEach((m,i)=>{
+    const a=(i/n)*Math.PI*2-Math.PI/2;
+    el('line',{x1:cx,y1:cy,x2:cx+Math.cos(a)*R,y2:cy+Math.sin(a)*R,class:'link'},svg);
+  });
+  const cG=el('g',{class:'node',transform:'translate('+cx+','+cy+')'},svg);
+  el('circle',{r:42,class:'node-center',stroke:'#4a7aca','stroke-width':2},cG);
+  const st=el('text',{y:-4,class:'stem-label','font-size':'18px'},cG);st.textContent=g.title;
+  const ss=el('text',{y:18,class:'stem-sub'},cG);ss.textContent=g.titleZh.slice(0,14);
+  members.forEach((m,i)=>{
+    const a=(i/n)*Math.PI*2-Math.PI/2;
+    const px=cx+Math.cos(a)*R, py=cy+Math.sin(a)*R;
+    const node=el('g',{class:'node',transform:'translate('+px+','+py+')'},svg);
+    el('circle',{r:30,class:'node-fill',stroke:'#9d7bff','stroke-width':1.5},node);
+    const label=el('text',{y:-2,class:'verb-label'},node);
+    label.textContent=m.word;
+    label.setAttribute('x',-m.word.length*4);
+    const df=el('text',{y:14,class:'verb-def'},node);
+    df.textContent=(m.zh||'').split('；')[0].slice(0,8);
+    node.addEventListener('click',()=>showGrammarDetail(m,g));
+  });
+  if(members.length)showGrammarDetail(members[0],g);
+}
+
+function showGrammarDetail(m,g){
+  const d=document.getElementById('detail');
+  let forms='';
+  if(m.past||m.pp){
+    forms='<div class="forms"><div><span>过去式</span><b>'+(m.past||'-')+'</b></div>'+
+      '<div><span>过去分词</span><b>'+(m.pp||'-')+'</b></div></div>';
+  }
+  const ex=m.ex?'<p class="en">例：'+m.ex+'</p>':'';
+  d.innerHTML='<h3>'+m.word+'</h3><p class="zh">'+(m.zh||'')+'</p>'+ex+forms+
+    '<div class="meta">'+g.title+' · '+g.titleZh+'</div>';
+}
+
+function renderVerbGroup(g,cx,cy,R){
+  const members=g.members;
+  members.forEach((m,i)=>{
+    if(m.prefix===null)return;
+    const a=(i/members.length)*Math.PI*2-Math.PI/2;
+    el('line',{x1:cx,y1:cy,x2:cx+Math.cos(a)*R,y2:cy+Math.sin(a)*R,class:'link'},svg);
+  });
+  const stemG=el('g',{class:'node',transform:'translate('+cx+','+cy+')'},svg);
+  el('circle',{r:38,class:'node-center',stroke:'#4a7aca','stroke-width':2},stemG);
+  const st=el('text',{y:2,class:'stem-label'},stemG);st.textContent=g.stem;
+  const ss=el('text',{y:22,class:'stem-sub'},stemG);ss.textContent=g.stemZh||'词干';
+  stemG.addEventListener('click',()=>showVerbDetail({verb:g.stem,prefix:null,def:g.stemDef,zh:'',count:(members.find(m=>m.prefix===null)||{}).count||0},g));
+  members.forEach((m,i)=>{
+    if(m.prefix===null)return;
+    const a=(i/members.length)*Math.PI*2-Math.PI/2;
+    const px=cx+Math.cos(a)*R, py=cy+Math.sin(a)*R;
+    const node=el('g',{class:'node',transform:'translate('+px+','+py+')'},svg);
+    el('circle',{r:30,class:'node-fill',stroke:'#3a4a70','stroke-width':1.5},node);
+    const stemPart=m.verb.slice(m.prefix.length);
+    const label=el('text',{y:-2},node);
+    const t1=document.createElementNS(NS,'tspan');t1.setAttribute('class','verb-prefix');t1.textContent=m.prefix;
+    const t2=document.createElementNS(NS,'tspan');t2.setAttribute('class','verb-label');t2.textContent=stemPart;
+    label.appendChild(t1);label.appendChild(t2);
+    const w=m.prefix.length*9+stemPart.length*8;
+    label.setAttribute('x',-w/2+4);
+    const df=el('text',{y:14,class:'verb-def'},node);
+    df.textContent=(m.zh||m.def||'').split('；')[0].slice(0,8);
+    node.addEventListener('click',()=>showVerbDetail(m,g));
+  });
+  showVerbDetail({verb:g.stem,prefix:null,def:g.stemDef,zh:'',past:'',pp:'',count:(members.find(m=>m.prefix===null)||{}).count||0},g);
+}
+
+function renderFamilyGroup(g,cx,cy,R){
+  const members=g.members;
+  const n=members.length;
+  members.forEach((m,i)=>{
+    const a=(i/n)*Math.PI*2-Math.PI/2;
+    el('line',{x1:cx,y1:cy,x2:cx+Math.cos(a)*R,y2:cy+Math.sin(a)*R,class:'link'},svg);
+  });
+  // 中心：词根
+  const rootG=el('g',{class:'node',transform:'translate('+cx+','+cy+')'},svg);
+  el('circle',{r:38,class:'node-center',stroke:'#4a7aca','stroke-width':2},rootG);
+  const st=el('text',{y:2,class:'stem-label'},rootG);st.textContent=g.root;
+  const ss=el('text',{y:22,class:'stem-sub'},rootG);ss.textContent='词根';
+  // 环绕：按词性着色
+  members.forEach((m,i)=>{
+    const a=(i/n)*Math.PI*2-Math.PI/2;
+    const px=cx+Math.cos(a)*R, py=cy+Math.sin(a)*R;
+    const node=el('g',{class:'node',transform:'translate('+px+','+py+')'},svg);
+    const c=POS_COLORS[m.pos]||'#6ab0ff';
+    el('circle',{r:32,class:'node-fill',stroke:c,'stroke-width':2},node);
+    const label=el('text',{y:-2,class:'verb-label'},node);
+    label.textContent=m.word.length>10?m.word.slice(0,10)+'…':m.word;
+    const w=label.textContent.length*8;
+    label.setAttribute('x',-w/2+4);
+    const df=el('text',{y:14,class:'verb-def'},node);
+    df.textContent=(m.zh||'').split('；')[0].slice(0,8);
+    const tag=el('text',{y:-18,class:'verb-def',fill:c},node);
+    tag.textContent=POS_NAMES[m.pos]||'';
+    tag.setAttribute('fill',c);
+    node.addEventListener('click',()=>showFamilyDetail(m,g));
+  });
+  if(members.length)showFamilyDetail(members[0],g);
+}
+
+function showVerbDetail(m,g){
+  const d=document.getElementById('detail');
+  let title;
+  if(m.prefix){
+    const stemPart=m.verb.slice(m.prefix.length);
+    title='<span class="pfx">'+m.prefix+'</span>'+stemPart;
+  }else{
+    title=m.verb+' <span style="font-size:11px;color:var(--text4)">（词干）</span>';
+  }
+  let forms='';
+  if(m.past||m.pp){
+    forms='<div class="forms"><div><span>过去式</span><b>'+(m.past||'-')+'</b></div>'+
+      '<div><span>过去分词</span><b>'+(m.pp||'-')+'</b></div></div>';
+  }
+  d.innerHTML='<h3>'+title+'</h3><p class="zh">'+(m.zh||g.stemZh||'')+'</p><p class="en">'+(m.def||'')+'</p>'+forms+
+    '<div class="meta">词族 '+g.stem+' · 共 '+g.members.length+' 个'+(m.count?' · 在 Nicos Weg 出现 '+m.count+' 次':'')+(g.level?' · <span class="lv lv-'+g.level+'">'+g.level+'</span>':'')+'</div>';
+}
+
+function showFamilyDetail(m,g){
+  const d=document.getElementById('detail');
+  const c=POS_COLORS[m.pos]||'#6ab0ff';
+  let forms='';
+  if(m.pos==='v'&&(m.past||m.pp)){
+    forms='<div class="forms"><div><span>过去式</span><b>'+(m.past||'-')+'</b></div>'+
+      '<div><span>过去分词</span><b>'+(m.pp||'-')+'</b></div></div>';
+  }else if(m.pos==='n'&&m.plural){
+    const pl=m.plural==='—'?'无复数':m.plural;
+    forms='<div class="forms"><div><span>复数</span><b>'+pl+'</b></div></div>';
+  }
+  d.innerHTML='<h3>'+m.word+' <span style="font-size:11px;color:'+c+'">'+(POS_NAMES[m.pos]||'')+'</span></h3>'+
+    '<p class="zh">'+(m.zh||'')+'</p>'+forms+
+    '<div class="meta">词根 '+g.root+' · 词族共 '+g.members.length+' 个</div>';
+}
+
+function renderNav(groups){
+  const nav=document.getElementById('groupNav');
+  nav.innerHTML='';
+  groups.forEach((g,i)=>{
+    const b=document.createElement('button');
+    b.className='gbtn'+(i===0?' active':'');
+    const label=activeTab==='verb'?g.stem:activeTab==='family'?g.root:g.title;
+    const lv=g.level?'<span class="lv lv-'+g.level+'">'+g.level+'</span>':'';
+    b.innerHTML=label+lv+'<small>'+g.members.length+'</small>';
+    b.addEventListener('click',()=>{
+      document.querySelectorAll('.gbtn').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      renderGroup(g);
+    });
+    nav.appendChild(b);
+  });
+}
+
+function switchTab(tab){
+  activeTab=tab;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===tab));
+  document.getElementById('legend').style.display=tab==='family'?'flex':'none';
+  const groups=tab==='verb'?verbData.groups:tab==='family'?familyData.families:grammarData.groups;
+  renderNav(groups);
+  if(groups.length)renderGroup(groups[0]);
+}
+
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click',()=>switchTab(t.dataset.tab));
+});
+
+Promise.all([fetch('verb_groups.json').then(r=>r.json()),fetch('word_families.json').then(r=>r.json()),fetch('grammar.json').then(r=>r.json())]).then(d=>{
+  verbData=d[0];familyData=d[1];grammarData=d[2];
+  renderNav(verbData.groups);
+  if(verbData.groups.length)renderGroup(verbData.groups[0]);
+}).catch(e=>{
+  document.getElementById('detail').innerHTML='<p style="color:#e08080">加载失败：'+e+'</p>';
+});
+</script>
+
+<script>
+// 主题：light / dark / auto（跟随系统）
+(function(){
+  function apply(t){
+    var root=document.documentElement;
+    if(t==='auto'){root.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}
+    else root.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');
+    if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';
+  }
+  var cur=localStorage.getItem('delernen-theme')||'auto';
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
+})();
+</script>
+</body>
+</html>

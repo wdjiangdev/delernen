@@ -1,0 +1,1095 @@
+{
+ "groups": [
+  {
+   "id": "prep_akk",
+   "title": "四格介词",
+   "titleZh": "永远跟第四格 (Akkusativ)",
+   "members": [
+    {
+     "word": "durch",
+     "zh": "穿过；通过",
+     "ex": "durch den Park"
+    },
+    {
+     "word": "für",
+     "zh": "为了；给",
+     "ex": "für dich"
+    },
+    {
+     "word": "gegen",
+     "zh": "反对；朝向",
+     "ex": "gegen ihn"
+    },
+    {
+     "word": "ohne",
+     "zh": "没有",
+     "ex": "ohne mich"
+    },
+    {
+     "word": "um",
+     "zh": "围绕；在…点",
+     "ex": "um das Haus"
+    }
+   ],
+   "learn": "akkusativ",
+   "learnTitle": "第四格 Akkusativ"
+  },
+  {
+   "id": "prep_dat",
+   "title": "三格介词",
+   "titleZh": "永远跟第三格 (Dativ)",
+   "members": [
+    {
+     "word": "aus",
+     "zh": "从…出来；由…制成",
+     "ex": "aus dem Haus"
+    },
+    {
+     "word": "bei",
+     "zh": "在…处；在…身边",
+     "ex": "bei mir"
+    },
+    {
+     "word": "mit",
+     "zh": "和；用",
+     "ex": "mit dem Bus"
+    },
+    {
+     "word": "nach",
+     "zh": "去（城市/国家）；在…之后",
+     "ex": "nach Berlin"
+    },
+    {
+     "word": "seit",
+     "zh": "自从",
+     "ex": "seit einem Jahr"
+    },
+    {
+     "word": "von",
+     "zh": "从；属于",
+     "ex": "von meinem Vater"
+    },
+    {
+     "word": "zu",
+     "zh": "去（地点）；到",
+     "ex": "zum Arzt"
+    }
+   ],
+   "learn": "dativ",
+   "learnTitle": "第三格 Dativ"
+  },
+  {
+   "id": "prep_wech",
+   "title": "双向介词",
+   "titleZh": "表示位置跟三格，表方向跟四格",
+   "members": [
+    {
+     "word": "an",
+     "zh": "在…旁（垂直）",
+     "ex": "an der Wand / an die Wand"
+    },
+    {
+     "word": "auf",
+     "zh": "在…上（水平）",
+     "ex": "auf dem Tisch / auf den Tisch"
+    },
+    {
+     "word": "hinter",
+     "zh": "在…后面",
+     "ex": "hinter dem Haus / hinter das Haus"
+    },
+    {
+     "word": "in",
+     "zh": "在…里",
+     "ex": "in der Stadt / in die Stadt"
+    },
+    {
+     "word": "neben",
+     "zh": "在…旁边",
+     "ex": "neben mir / neben mich"
+    },
+    {
+     "word": "über",
+     "zh": "在…上方",
+     "ex": "über dem Bett / über das Bett"
+    },
+    {
+     "word": "unter",
+     "zh": "在…下方",
+     "ex": "unter dem Tisch / unter den Tisch"
+    },
+    {
+     "word": "vor",
+     "zh": "在…前面",
+     "ex": "vor dem Kino / vor das Kino"
+    },
+    {
+     "word": "zwischen",
+     "zh": "在…之间",
+     "ex": "zwischen den Stühlen"
+    }
+   ],
+   "learn": "wechsel",
+   "learnTitle": "双向介词"
+  },
+  {
+   "id": "verb_dat",
+   "title": "三格动词",
+   "titleZh": "这些动词的宾语用第三格（Nicos Weg 出现过）",
+   "members": [
+    {
+     "word": "helfen",
+     "zh": "帮助",
+     "ex": "Ich helfe dir.",
+     "past": "half",
+     "pp": "geholfen"
+    },
+    {
+     "word": "gefallen",
+     "zh": "使愉悦；喜欢",
+     "ex": "Das gefällt mir.",
+     "past": "gefiel",
+     "pp": "gefallen"
+    },
+    {
+     "word": "glauben",
+     "zh": "相信",
+     "ex": "Ich glaube dir.",
+     "past": "glaubte",
+     "pp": "geglaubt"
+    },
+    {
+     "word": "passen",
+     "zh": "合适；合身",
+     "ex": "Das passt mir.",
+     "past": "passte",
+     "pp": "gepasst"
+    },
+    {
+     "word": "gehören",
+     "zh": "属于",
+     "ex": "Das gehört mir.",
+     "past": "gehörte",
+     "pp": "gehört"
+    },
+    {
+     "word": "schmecken",
+     "zh": "尝起来",
+     "ex": "Es schmeckt mir.",
+     "past": "schmeckte",
+     "pp": "geschmeckt"
+    },
+    {
+     "word": "fehlen",
+     "zh": "缺少；缺席",
+     "ex": "Du fehlst mir.",
+     "past": "fehlte",
+     "pp": "gefehlt"
+    },
+    {
+     "word": "antworten",
+     "zh": "回答",
+     "ex": "Antworte mir!",
+     "past": "antwortete",
+     "pp": "geantwortet"
+    },
+    {
+     "word": "zuhören",
+     "zh": "倾听",
+     "ex": "Hör mir zu!",
+     "past": "hörte zu",
+     "pp": "zugehört"
+    },
+    {
+     "word": "vertrauen",
+     "zh": "信任",
+     "ex": "Ich vertraue dir.",
+     "past": "vertraute",
+     "pp": "vertraut"
+    }
+   ],
+   "learn": "dativ",
+   "learnTitle": "第三格 Dativ"
+  },
+  {
+   "id": "modal",
+   "title": "情态动词",
+   "titleZh": "Modalverben · 后接动词原形",
+   "members": [
+    {
+     "word": "dürfen",
+     "zh": "可以；被允许",
+     "ex": "Darf ich herein?（我可以进来吗？）",
+     "past": "durfte",
+     "pp": "gedurft"
+    },
+    {
+     "word": "können",
+     "zh": "会；能够",
+     "ex": "Ich kann schwimmen.（我会游泳。）",
+     "past": "konnte",
+     "pp": "gekonnt"
+    },
+    {
+     "word": "mögen",
+     "zh": "喜欢",
+     "ex": "Ich mag keinen Kaffee.（我不喜欢咖啡。）",
+     "past": "mochte",
+     "pp": "gemocht"
+    },
+    {
+     "word": "müssen",
+     "zh": "必须",
+     "ex": "Ich muss morgen früh aufstehen.（我明天必须早起。）",
+     "past": "musste",
+     "pp": "gemusst"
+    },
+    {
+     "word": "sollen",
+     "zh": "应该",
+     "ex": "Du sollst mehr schlafen.（你应该多睡觉。）",
+     "past": "sollte",
+     "pp": "gesollt"
+    },
+    {
+     "word": "wollen",
+     "zh": "想要",
+     "ex": "Ich will nach Berlin.（我想去柏林。）",
+     "past": "wollte",
+     "pp": "gewollt"
+    }
+   ],
+   "learn": "modalverben",
+   "learnTitle": "情态动词"
+  },
+  {
+   "id": "trennbar",
+   "title": "可分前缀",
+   "titleZh": "trennbare Präfixe · 重音在前缀",
+   "members": [
+    {
+     "word": "ab",
+     "zh": "离开；向下",
+     "ex": "abfahren（出发）"
+    },
+    {
+     "word": "an",
+     "zh": "靠近；打开",
+     "ex": "ankommen（到达）"
+    },
+    {
+     "word": "auf",
+     "zh": "向上；打开",
+     "ex": "aufstehen（起床）"
+    },
+    {
+     "word": "aus",
+     "zh": "向外",
+     "ex": "ausgehen（出去）"
+    },
+    {
+     "word": "bei",
+     "zh": "附带；加入",
+     "ex": "beitreten（加入）"
+    },
+    {
+     "word": "ein",
+     "zh": "向内",
+     "ex": "einkaufen（购物）"
+    },
+    {
+     "word": "los",
+     "zh": "开始；松开",
+     "ex": "losgehen（出发；开始）"
+    },
+    {
+     "word": "mit",
+     "zh": "一起",
+     "ex": "mitkommen（一起来）"
+    },
+    {
+     "word": "nach",
+     "zh": "追随；思考",
+     "ex": "nachdenken（思考）"
+    },
+    {
+     "word": "vor",
+     "zh": "向前；提前",
+     "ex": "vorschlagen（建议）"
+    },
+    {
+     "word": "zu",
+     "zh": "关闭；朝向",
+     "ex": "zumachen（关上）"
+    },
+    {
+     "word": "zurück",
+     "zh": "返回",
+     "ex": "zurückkommen（回来）"
+    }
+   ],
+   "learn": "trennbar",
+   "learnTitle": "可分动词"
+  },
+  {
+   "id": "konj-neben",
+   "title": "并列连词",
+   "titleZh": "语序不变（占零位）",
+   "members": [
+    {
+     "word": "und",
+     "zh": "和",
+     "ex": "Brot und Butter（面包和黄油）"
+    },
+    {
+     "word": "aber",
+     "zh": "但是",
+     "ex": "Ich bin müde, aber ich arbeite weiter.（我累了，但继续工作。）"
+    },
+    {
+     "word": "oder",
+     "zh": "或者",
+     "ex": "Tee oder Kaffee?（茶还是咖啡？）"
+    },
+    {
+     "word": "denn",
+     "zh": "因为",
+     "ex": "Ich bleibe zu Hause, denn ich bin krank.（我待在家里，因为我病了。）"
+    },
+    {
+     "word": "sondern",
+     "zh": "而是",
+     "ex": "Nicht heute, sondern morgen.（不是今天，而是明天。）"
+    }
+   ],
+   "learn": "nebensatz",
+   "learnTitle": "从句与连词"
+  },
+  {
+   "id": "konj-unter",
+   "title": "从属连词",
+   "titleZh": "动词放句末",
+   "members": [
+    {
+     "word": "weil",
+     "zh": "因为",
+     "ex": "Ich lerne, weil ich eine Prüfung habe.（我学习，因为我有考试。）"
+    },
+    {
+     "word": "dass",
+     "zh": "…这件事",
+     "ex": "Ich weiß, dass du kommst.（我知道你会来。）"
+    },
+    {
+     "word": "wenn",
+     "zh": "当…；如果",
+     "ex": "Wenn es regnet, bleibe ich zu Hause.（如果下雨，我就待在家里。）"
+    },
+    {
+     "word": "als",
+     "zh": "当…（过去一次性）",
+     "ex": "Als ich Kind war, spielte ich Fußball.（当我是孩子时，我踢足球。）"
+    },
+    {
+     "word": "ob",
+     "zh": "是否",
+     "ex": "Ich weiß nicht, ob er kommt.（我不知道他是否来。）"
+    },
+    {
+     "word": "obwohl",
+     "zh": "尽管",
+     "ex": "Obwohl es regnet, gehen wir spazieren.（尽管下雨，我们去散步。）"
+    },
+    {
+     "word": "damit",
+     "zh": "以便",
+     "ex": "Ich lerne viel, damit ich bestehe.（我努力学习，以便通过。）"
+    },
+    {
+     "word": "bevor",
+     "zh": "在…之前",
+     "ex": "Ruf mich an, bevor du kommst.（你来之前给我打电话。）"
+    }
+   ],
+   "learn": "nebensatz",
+   "learnTitle": "从句与连词"
+  },
+  {
+   "id": "pronomen",
+   "title": "人称代词",
+   "titleZh": "一格 → 四格 → 三格",
+   "members": [
+    {
+     "word": "ich → mich → mir",
+     "zh": "我",
+     "ex": "Ich sehe dich.（我看见你。）"
+    },
+    {
+     "word": "du → dich → dir",
+     "zh": "你",
+     "ex": "Ich helfe dir.（我帮你。）"
+    },
+    {
+     "word": "er → ihn → ihm",
+     "zh": "他",
+     "ex": "Ich kenne ihn.（我认识他。）"
+    },
+    {
+     "word": "sie → sie → ihr",
+     "zh": "她",
+     "ex": "Ich besuche sie.（我拜访她。）"
+    },
+    {
+     "word": "es → es → ihm",
+     "zh": "它",
+     "ex": "Ich nehme es.（我拿它。）"
+    },
+    {
+     "word": "wir → uns → uns",
+     "zh": "我们",
+     "ex": "Er besucht uns.（他拜访我们。）"
+    },
+    {
+     "word": "ihr → euch → euch",
+     "zh": "你们",
+     "ex": "Ich sehe euch.（我看见你们。）"
+    },
+    {
+     "word": "sie/Sie → sie/Sie → ihnen/Ihnen",
+     "zh": "他们；您",
+     "ex": "Ich danke Ihnen.（我谢谢您。）"
+    }
+   ],
+   "learn": "pronomen",
+   "learnTitle": "人称代词"
+  },
+  {
+   "id": "rektion-auf",
+   "title": "auf + 四格",
+   "titleZh": "动词固定搭配",
+   "members": [
+    {
+     "word": "warten auf",
+     "zh": "等待",
+     "ex": "Ich warte auf dich.（我在等你。）"
+    },
+    {
+     "word": "sich freuen auf",
+     "zh": "期待",
+     "ex": "Ich freue mich auf das Wochenende.（我期待周末。）"
+    },
+    {
+     "word": "achten auf",
+     "zh": "注意",
+     "ex": "Achte auf die Aussprache!（注意发音！）"
+    },
+    {
+     "word": "hoffen auf",
+     "zh": "希望",
+     "ex": "Wir hoffen auf gutes Wetter.（我们希望好天气。）"
+    },
+    {
+     "word": "antworten auf",
+     "zh": "回答",
+     "ex": "Er antwortet auf meine Frage.（他回答我的问题。）"
+    }
+   ],
+   "learn": "rektion",
+   "learnTitle": "动词固定搭配"
+  },
+  {
+   "id": "rektion-an",
+   "title": "an + 四格",
+   "titleZh": "动词固定搭配",
+   "members": [
+    {
+     "word": "denken an",
+     "zh": "想起",
+     "ex": "Ich denke oft an dich.（我常想起你。）"
+    },
+    {
+     "word": "sich erinnern an",
+     "zh": "记得",
+     "ex": "Erinnerst du dich an ihn?（你记得他吗？）"
+    },
+    {
+     "word": "glauben an",
+     "zh": "相信",
+     "ex": "Sie glaubt an Gott.（她信上帝。）"
+    },
+    {
+     "word": "schreiben an",
+     "zh": "写信给",
+     "ex": "Er schreibt an seine Eltern.（他给父母写信。）"
+    }
+   ],
+   "learn": "rektion",
+   "learnTitle": "动词固定搭配"
+  },
+  {
+   "id": "rektion-ueber",
+   "title": "über + 四格",
+   "titleZh": "动词固定搭配",
+   "members": [
+    {
+     "word": "sprechen über",
+     "zh": "谈论",
+     "ex": "Wir sprechen über den Film.（我们在谈论这部电影。）"
+    },
+    {
+     "word": "sich freuen über",
+     "zh": "为…高兴",
+     "ex": "Ich freue mich über das Geschenk.（我为礼物高兴。）"
+    },
+    {
+     "word": "lachen über",
+     "zh": "嘲笑",
+     "ex": "Lach nicht über ihn!（别嘲笑他！）"
+    },
+    {
+     "word": "nachdenken über",
+     "zh": "思考",
+     "ex": "Denk darüber nach!（好好想想这事！）"
+    }
+   ],
+   "learn": "rektion",
+   "learnTitle": "动词固定搭配"
+  },
+  {
+   "id": "rektion-dat",
+   "title": "三格固定搭配",
+   "titleZh": "mit / von / zu + 三格",
+   "members": [
+    {
+     "word": "sprechen mit",
+     "zh": "和…交谈",
+     "ex": "Ich spreche mit meinem Lehrer.（我和老师交谈。）"
+    },
+    {
+     "word": "erzählen von",
+     "zh": "讲述",
+     "ex": "Er erzählt von seiner Reise.（他讲述他的旅行。）"
+    },
+    {
+     "word": "abhängen von",
+     "zh": "取决于",
+     "ex": "Es hängt vom Wetter ab.（这取决于天气。）"
+    },
+    {
+     "word": "gehören zu",
+     "zh": "属于",
+     "ex": "Das Buch gehört mir.（这本书属于我。）"
+    },
+    {
+     "word": "passen zu",
+     "zh": "适合；相配",
+     "ex": "Die Schuhe passen zum Kleid.（这鞋配这裙子。）"
+    },
+    {
+     "word": "einladen zu",
+     "zh": "邀请",
+     "ex": "Sie lädt uns zum Essen ein.（她邀请我们吃饭。）"
+    }
+   ],
+   "learn": "rektion",
+   "learnTitle": "动词固定搭配"
+  },
+  {
+   "id": "konj2",
+   "title": "第二虚拟式",
+   "titleZh": "非真实条件 · würde + 原形",
+   "members": [
+    {
+     "word": "wäre",
+     "zh": "是",
+     "ex": "Wenn ich reich wäre, …（如果我有钱，…）"
+    },
+    {
+     "word": "hätte",
+     "zh": "有",
+     "ex": "Wenn ich Zeit hätte, …（如果我有时间，…）"
+    },
+    {
+     "word": "würde",
+     "zh": "将会",
+     "ex": "Ich würde gern kommen.（我很想来。）"
+    },
+    {
+     "word": "könnte",
+     "zh": "能够",
+     "ex": "Könntest du mir helfen?（你能帮我吗？）"
+    },
+    {
+     "word": "müsste",
+     "zh": "必须",
+     "ex": "Ich müsste mehr lernen.（我应该多学。）"
+    },
+    {
+     "word": "sollte",
+     "zh": "应该",
+     "ex": "Du solltest zum Arzt gehen.（你该去看医生。）"
+    }
+   ],
+   "learn": "konjunktiv2",
+   "learnTitle": "第二虚拟式"
+  },
+  {
+   "id": "zeit-praep",
+   "title": "时间介词",
+   "titleZh": "um / am / im + 时间",
+   "members": [
+    {
+     "word": "um",
+     "zh": "在…点钟",
+     "ex": "um 8 Uhr（八点）"
+    },
+    {
+     "word": "am",
+     "zh": "在星期/日期",
+     "ex": "am Montag（周一）"
+    },
+    {
+     "word": "im",
+     "zh": "在月份/季节/年",
+     "ex": "im Mai（五月）· im Sommer（夏天）"
+    },
+    {
+     "word": "vor",
+     "zh": "…之前",
+     "ex": "vor dem Essen（饭前）"
+    },
+    {
+     "word": "nach",
+     "zh": "…之后",
+     "ex": "nach der Arbeit（下班后）"
+    },
+    {
+     "word": "ab",
+     "zh": "从…起",
+     "ex": "ab nächster Woche（从下周起）"
+    }
+   ],
+   "learn": "praep_temporal",
+   "learnTitle": "时间介词"
+  },
+  {
+   "id": "satz-haupt",
+   "title": "主句语序",
+   "titleZh": "动词位置决定句型",
+   "members": [
+    {
+     "word": "陈述句",
+     "zh": "动词永远第二位",
+     "ex": "Ich lerne heute Deutsch.（我今天学德语。）"
+    },
+    {
+     "word": "是非疑问句",
+     "zh": "动词第一位",
+     "ex": "Lernst du Deutsch?（你学德语吗？）"
+    },
+    {
+     "word": "特殊疑问句",
+     "zh": "疑问词 + 动词第二位",
+     "ex": "Was lernst du?（你学什么？）"
+    },
+    {
+     "word": "祈使句",
+     "zh": "动词第一位",
+     "ex": "Mach die Tür zu!（把门关上！）"
+    }
+   ],
+   "learn": "fragen",
+   "learnTitle": "疑问句"
+  },
+  {
+   "id": "satz-neben",
+   "title": "从句语序",
+   "titleZh": "变位动词一律放句末",
+   "members": [
+    {
+     "word": "weil 从句",
+     "zh": "动词句末",
+     "ex": "Ich bleibe zu Hause, weil ich krank bin.（我待在家里，因为我病了。）"
+    },
+    {
+     "word": "dass 从句",
+     "zh": "动词句末",
+     "ex": "Ich weiß, dass du morgen kommst.（我知道你明天来。）"
+    },
+    {
+     "word": "情态动词从句",
+     "zh": "情态动词最后",
+     "ex": "Ich lerne, weil ich bestehen muss.（我学习，因为我必须通过。）"
+    },
+    {
+     "word": "完成时从句",
+     "zh": "助动词最后",
+     "ex": "Ich bin müde, weil ich viel gelernt habe.（我累了，因为我学了很多。）"
+    }
+   ],
+   "learn": "nebensatz",
+   "learnTitle": "从句与连词"
+  },
+  {
+   "id": "satzklammer",
+   "title": "句框结构",
+   "titleZh": "Satzklammer · 动词框住全句",
+   "members": [
+    {
+     "word": "可分动词",
+     "zh": "前缀扔到句末",
+     "ex": "Ich mache die Tür zu.（我把门关上。）"
+    },
+    {
+     "word": "情态动词",
+     "zh": "不定式放句末",
+     "ex": "Ich will nach Hause gehen.（我想回家。）"
+    },
+    {
+     "word": "完成时",
+     "zh": "第二分词放句末",
+     "ex": "Ich habe das Buch gelesen.（我读过这本书。）"
+    },
+    {
+     "word": "将来时",
+     "zh": "不定式放句末",
+     "ex": "Ich werde dich morgen anrufen.（我明天给你打电话。）"
+    }
+   ],
+   "learn": "satzklammer",
+   "learnTitle": "句框结构"
+  },
+  {
+   "id": "infinitiv",
+   "title": "不定式结构",
+   "titleZh": "≈英语非谓语从句",
+   "members": [
+    {
+     "word": "um zu",
+     "zh": "为了",
+     "ex": "Ich lerne Deutsch, um in Deutschland zu arbeiten.（我学德语为了在德国工作。）"
+    },
+    {
+     "word": "ohne zu",
+     "zh": "而没有…",
+     "ex": "Er ging weg, ohne sich zu verabschieden.（他没告别就走了。）"
+    },
+    {
+     "word": "anstatt zu",
+     "zh": "而不是…",
+     "ex": "Anstatt zu lernen, sieht er fern.（他不学习，反而看电视。）"
+    },
+    {
+     "word": "scheinen zu",
+     "zh": "似乎",
+     "ex": "Sie scheint glücklich zu sein.（她似乎很幸福。）"
+    },
+    {
+     "word": "brauchen nicht zu",
+     "zh": "不必",
+     "ex": "Du brauchst heute nicht zu kommen.（你今天不必来。）"
+    }
+   ],
+   "learn": "infinitiv_zu",
+   "learnTitle": "不定式 zu"
+  },
+  {
+   "id": "perfekt",
+   "title": "完成时与过去时",
+   "titleZh": "haben/sein + 第二分词",
+   "members": [
+    {
+     "word": "haben完成时",
+     "zh": "大多数动词",
+     "ex": "Ich habe gelernt.（我学过了。）"
+    },
+    {
+     "word": "sein完成时",
+     "zh": "位移+状态变化",
+     "ex": "Ich bin nach Berlin gefahren.（我去了柏林。）"
+    },
+    {
+     "word": "war / hatte",
+     "zh": "sein/haben 的过去时",
+     "ex": "Er war krank. / Sie hatte Zeit.（他病了。/她有时间。）"
+    },
+    {
+     "word": "不规则三形式",
+     "zh": "原形-过去式-分词",
+     "ex": "gehen-ging-gegangen（去）"
+    },
+    {
+     "word": "可分动词分词",
+     "zh": "ge 加在前缀后",
+     "ex": "Ich habe angerufen.（我打过电话了。）"
+    }
+   ],
+   "learn": "perfekt",
+   "learnTitle": "现在完成时 Perfekt"
+  },
+  {
+   "id": "artikel",
+   "title": "冠词变格",
+   "titleZh": "der/die/das/die(复数)",
+   "members": [
+    {
+     "word": "一格 der·die·das·die",
+     "zh": "主语",
+     "ex": "Der Mann ist nett.（这男人人很好。）"
+    },
+    {
+     "word": "四格 den·die·das·die",
+     "zh": "直接宾语",
+     "ex": "Ich sehe den Mann.（我看见这男人。）"
+    },
+    {
+     "word": "三格 dem·der·dem·den",
+     "zh": "间接宾语",
+     "ex": "Ich helfe dem Mann.（我帮这男人。）"
+    },
+    {
+     "word": "二格 des·der·des·der",
+     "zh": "所属",
+     "ex": "Das Auto des Mannes.（这男人的车。）"
+    }
+   ],
+   "learn": "artikel",
+   "learnTitle": "冠词：der / die / das"
+  },
+  {
+   "id": "reflexiv",
+   "title": "反身动词",
+   "titleZh": "sich + 三/四格",
+   "members": [
+    {
+     "word": "sich freuen auf",
+     "zh": "期待(+四格)",
+     "ex": "Ich freue mich auf dich.（我期待见到你。）"
+    },
+    {
+     "word": "sich erinnern an",
+     "zh": "记得(+四格)",
+     "ex": "Erinnerst du dich an mich?（你记得我吗？）"
+    },
+    {
+     "word": "sich waschen",
+     "zh": "洗(+四格)",
+     "ex": "Ich wasche mich.（我洗漱。）"
+    },
+    {
+     "word": "sich vorstellen",
+     "zh": "自我介绍",
+     "ex": "Ich stelle mich dir vor.（我向你自我介绍。）"
+    },
+    {
+     "word": "sich bedanken bei",
+     "zh": "感谢(+三格)",
+     "ex": "Ich bedanke mich bei dir.（我谢谢你。）"
+    }
+   ],
+   "learn": "reflexiv",
+   "learnTitle": "反身动词"
+  },
+  {
+   "id": "komparativ",
+   "title": "形容词比较级",
+   "titleZh": "-er / am -sten",
+   "members": [
+    {
+     "word": "规则变化",
+     "zh": "schnell-schneller",
+     "ex": "Er läuft schneller als ich.（他跑得比我快。）"
+    },
+    {
+     "word": "变音",
+     "zh": "a/o/u → ä/ö/ü",
+     "ex": "groß-größer-am größten（大）"
+    },
+    {
+     "word": "gut",
+     "zh": "不规则",
+     "ex": "gut-besser-am besten（好）"
+    },
+    {
+     "word": "viel",
+     "zh": "不规则",
+     "ex": "viel-mehr-am meisten（多）"
+    },
+    {
+     "word": "比较句型",
+     "zh": "als / so…wie",
+     "ex": "Er ist größer als ich.（他比我高。）"
+    }
+   ],
+   "learn": "komparativ",
+   "learnTitle": "比较级与最高级"
+  },
+  {
+   "id": "pp3",
+   "title": "第二分词的三用法",
+   "titleZh": "Partizip II · 一形三用",
+   "members": [
+    {
+     "word": "完成时",
+     "zh": "haben/sein + 分词",
+     "ex": "Ich habe das gemacht.（我做过这事。）"
+    },
+    {
+     "word": "被动态",
+     "zh": "werden + 分词",
+     "ex": "Es wird gemacht.（这事被做了。）"
+    },
+    {
+     "word": "作定语",
+     "zh": "分词当前置定语",
+     "ex": "das gelesene Buch（读过的书）"
+    }
+   ],
+   "learn": "partizip_attr",
+   "learnTitle": "分词作定语"
+  },
+  {
+   "id": "werden3",
+   "title": "werden的三用法",
+   "titleZh": "一词三用 · 将来/被动/虚拟",
+   "members": [
+    {
+     "word": "将来时",
+     "zh": "werde + 不定式",
+     "ex": "Ich werde kommen.（我会来。）"
+    },
+    {
+     "word": "被动态",
+     "zh": "wird + 分词",
+     "ex": "Es wird gemacht.（被做。）"
+    },
+    {
+     "word": "第二虚拟式",
+     "zh": "würde + 不定式",
+     "ex": "Ich würde kommen.（我本来会来。）"
+    }
+   ]
+  },
+  {
+   "id": "passiv",
+   "title": "被动态",
+   "titleZh": "werden + 第二分词 · 关联：完成时",
+   "members": [
+    {
+     "word": "现在时被动",
+     "zh": "wird + 分词",
+     "ex": "Das Haus wird gebaut.（房子在建。）"
+    },
+    {
+     "word": "过去时被动",
+     "zh": "wurde + 分词",
+     "ex": "Das Haus wurde gebaut.（房子建成了。）"
+    },
+    {
+     "word": "情态被动",
+     "zh": "muss + 分词 + werden",
+     "ex": "Das muss gemacht werden.（这必须做。）"
+    },
+    {
+     "word": "von",
+     "zh": "动作发出者",
+     "ex": "Es wird von ihm gemacht.（这由他来做。）"
+    }
+   ],
+   "learn": "passiv",
+   "learnTitle": "被动态"
+  },
+  {
+   "id": "relativ",
+   "title": "关系从句",
+   "titleZh": "关系代词≈冠词 · 动词句末",
+   "members": [
+    {
+     "word": "der",
+     "zh": "阳性一格",
+     "ex": "Der Mann, der dort steht, …（站在那儿的男人…）"
+    },
+    {
+     "word": "den",
+     "zh": "阳性四格",
+     "ex": "Der Mann, den ich sehe, …（我看见的男人…）"
+    },
+    {
+     "word": "dem",
+     "zh": "三格",
+     "ex": "Der Mann, dem ich helfe, …（我帮助的男人…）"
+    },
+    {
+     "word": "dessen",
+     "zh": "二格(阳/中)",
+     "ex": "Der Mann, dessen Auto…（那个男人的车…）"
+    }
+   ],
+   "learn": "relativsatz",
+   "learnTitle": "关系从句"
+  },
+  {
+   "id": "adj-dekl",
+   "title": "形容词词尾",
+   "titleZh": "der gut-e / den gut-en Mann",
+   "members": [
+    {
+     "word": "一格阳性",
+     "zh": "der gut-e Mann",
+     "ex": "Der gute Mann hilft.（好心人帮忙。）"
+    },
+    {
+     "word": "四格阳性",
+     "zh": "den gut-en Mann",
+     "ex": "Ich sehe den guten Mann.（我看见那个好心人。）"
+    },
+    {
+     "word": "三格",
+     "zh": "dem gut-en Mann",
+     "ex": "Ich danke dem guten Mann.（我谢谢那个好心人。）"
+    },
+    {
+     "word": "ein-词",
+     "zh": "ein gut-er Mann",
+     "ex": "Das ist ein guter Mann.（这是个好心人。）"
+    },
+    {
+     "word": "无冠词复数",
+     "zh": "gut-e Männer",
+     "ex": "Gute Männer helfen.（好心人们帮忙。）"
+    }
+   ],
+   "learn": "adj_deklination",
+   "learnTitle": "形容词词尾"
+  },
+  {
+   "id": "konj1",
+   "title": "第一虚拟式",
+   "titleZh": "间接引语 · er sei / er habe",
+   "members": [
+    {
+     "word": "sein → sei",
+     "zh": "是",
+     "ex": "Er sagt, er sei krank.（他说他病了。）"
+    },
+    {
+     "word": "haben → habe",
+     "zh": "有",
+     "ex": "Sie sagt, sie habe Zeit.（她说她有时间。）"
+    },
+    {
+     "word": "werden → werde",
+     "zh": "将",
+     "ex": "Er sagt, er werde kommen.（他说他会来。）"
+    },
+    {
+     "word": "können → könne",
+     "zh": "能",
+     "ex": "Sie sagt, sie könne helfen.（她说她能帮忙。）"
+    }
+   ],
+   "learn": "konjunktiv1",
+   "learnTitle": "第一虚拟式（转述）"
+  }
+ ]
+}
