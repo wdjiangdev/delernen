@@ -1205,6 +1205,10 @@
    [
     "Der Sprecher erklärt, die Lage habe sich verbessert.",
     "发言人解释说情况已改善。"
+   ],
+   [
+    "Er sagt, er komme morgen.",
+    "他说他明天来。"
    ]
   ]
  },
@@ -1240,6 +1244,10 @@
    [
     "Ein gut bezahlter Job ist schwer zu finden.",
     "高薪工作难找。"
+   ],
+   [
+    "Das laufende Wasser ist sehr kalt.",
+    "流动的水非常冷。"
    ]
   ]
  },
@@ -1275,6 +1283,10 @@
    [
     "Er hilft dem Jungen.",
     "他帮助那个男孩。"
+   ],
+   [
+    "Der Name des Herrn ist Müller.",
+    "那位先生的名字是穆勒。"
    ]
   ]
  },
@@ -1310,6 +1322,10 @@
    [
     "Das Wichtigste ist die Gesundheit.",
     "最重要的是健康。"
+   ],
+   [
+    "Der Kranke muss im Bett bleiben.",
+    "病人必须卧床休息。"
    ]
   ]
  }
