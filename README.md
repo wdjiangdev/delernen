@@ -25,6 +25,7 @@
 - `index.html`：首页
 - `a1a2/`、`a1b2/`：`index.html`（星图页面）+ `verb_groups.json`（动词）+ `word_families.json`（词族）+ `grammar.json`（语法星图）
 - `grammatik/`：`index.html`（语法学习页）+ `grammar_learn.json`（28 个语法点数据）
+- `scripts/`：内容生成脚本（动词提取/词族/语法点源数据），JSON 为构建产物，可直接改 JSON
 
 ## 数据来源
 
