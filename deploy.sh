@@ -35,7 +35,7 @@ cp -f "$SRC/deploy/nginx.conf" "$DEPLOY_DIR/conf/nginx.conf"
 # 监听端口可通过 PORT 环境变量覆盖
 sed -i "s/127.0.0.1:18095/127.0.0.1:$PORT/" "$DEPLOY_DIR/conf/nginx.conf"
 # 同步网站文件（排除构建脚本与部署文件）
-cp -rf "$SRC/index.html" "$SRC/a1a2" "$SRC/a1b2" "$SRC/grammatik" "$SRC/a1-kurs" "$SRC/a2-kurs" "$SRC/b1-kurs" "$SRC/b2-kurs" "$SRC/practice" "$DEPLOY_DIR/www/"
+cp -rf "$SRC/index.html" "$SRC/a1a2" "$SRC/a1b2" "$SRC/grammatik" "$SRC/a1-kurs" "$SRC/a2-kurs" "$SRC/b1-kurs" "$SRC/b2-kurs" "$SRC/c1-kurs" "$SRC/practice" "$DEPLOY_DIR/www/"
 chmod -R a+rX "$DEPLOY_DIR/www"
 
 echo "==> [4/5] 启动容器"
