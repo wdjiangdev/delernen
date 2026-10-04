@@ -116,5 +116,1592 @@
     "他对一切都好奇。"
    ]
   ]
+ },
+ {
+  "num": "M21-17",
+  "id": "wetter_sprache",
+  "cat": "vokabel",
+  "title": "天气与语言",
+  "titleDe": "Das Wetter und die Sprachen",
+  "explain": "C1 主题词汇：天气预报、天气与健康、语言英语化、学语言、非语言交际。复合名词多（die Wettervorhersage、die Höchsttemperatur、die Wetterfühligkeit），按构词拆分记；注意动词搭配：in Strömen regnen（倾盆大雨）、einer Tätigkeit nachgehen（从事某项活动）；sich vollziehen（发生）是正式书面语。\n\n🇬🇧 英语对照：英语 weather forecast / body language；德语同样大量复合词，但 die Körpersprache、der Gesichtsausdruck 这类词要整体背。",
+  "table": [
+   [
+    "主题",
+    "德语",
+    "中文"
+   ],
+   [
+    "天气预报用语",
+    "die Höchst-/Tiefsttemperatur",
+    "最高/最低气温"
+   ],
+   [
+    "天气预报用语",
+    "steigen / sinken",
+    "上升/下降"
+   ],
+   [
+    "天气预报用语",
+    "das Hoch / das Tief",
+    "高压/低压"
+   ],
+   [
+    "天气预报用语",
+    "die Aufheiterung",
+    "放晴"
+   ],
+   [
+    "天气预报用语",
+    "bewölkt",
+    "多云"
+   ],
+   [
+    "天气预报用语",
+    "der Schauer",
+    "阵雨"
+   ],
+   [
+    "天气预报用语",
+    "der Niederschlag",
+    "降水"
+   ],
+   [
+    "天气预报用语",
+    "niederschlagsfrei",
+    "无降水"
+   ],
+   [
+    "天气预报用语",
+    "der Schnee",
+    "雪"
+   ],
+   [
+    "天气预报用语",
+    "der Schneefall",
+    "降雪"
+   ],
+   [
+    "天气预报用语",
+    "der Nebel",
+    "雾"
+   ],
+   [
+    "天气预报用语",
+    "das Nebelfeld",
+    "雾区"
+   ],
+   [
+    "天气预报用语",
+    "der Wind",
+    "风"
+   ],
+   [
+    "天气预报用语",
+    "die Sturmböe",
+    "强阵风"
+   ],
+   [
+    "天气预报用语",
+    "das Unwetter",
+    "恶劣天气"
+   ],
+   [
+    "天气预报用语",
+    "das Gewitter",
+    "雷暴"
+   ],
+   [
+    "天气预报用语",
+    "der Regen",
+    "雨"
+   ],
+   [
+    "天气预报用语",
+    "in Strömen regnen",
+    "倾盆大雨"
+   ],
+   [
+    "天气预报用语",
+    "der Donner",
+    "雷声"
+   ],
+   [
+    "天气预报用语",
+    "donnern",
+    "打雷"
+   ],
+   [
+    "天气预报用语",
+    "der Blitz",
+    "闪电"
+   ],
+   [
+    "天气预报用语",
+    "der Blitzeinschlag",
+    "雷击"
+   ],
+   [
+    "天气预报用语",
+    "blitzen",
+    "闪电划过"
+   ],
+   [
+    "天气预报",
+    "die Wettervorhersage",
+    "天气预报"
+   ],
+   [
+    "天气预报",
+    "die Wetteraussicht",
+    "天气展望"
+   ],
+   [
+    "天气预报",
+    "das Wetterphänomen",
+    "天气现象"
+   ],
+   [
+    "天气预报",
+    "der Wetterverlauf",
+    "天气过程"
+   ],
+   [
+    "天气预报",
+    "die Bauernregel",
+    "农谚"
+   ],
+   [
+    "天气预报",
+    "die Überlieferung",
+    "流传"
+   ],
+   [
+    "天气预报",
+    "das Stationsnetz",
+    "观测站网"
+   ],
+   [
+    "天气预报",
+    "die Wetterbeobachtung",
+    "气象观测"
+   ],
+   [
+    "天气预报",
+    "vereinheitlichen",
+    "统一"
+   ],
+   [
+    "天气预报",
+    "analysieren",
+    "分析"
+   ],
+   [
+    "天气预报",
+    "der Wetterdienst",
+    "气象服务"
+   ],
+   [
+    "天气预报",
+    "die Treffsicherheit",
+    "准确度"
+   ],
+   [
+    "天气预报",
+    "zuverlässig",
+    "可靠的"
+   ],
+   [
+    "天气与健康",
+    "die Wetterfühligkeit",
+    "天气敏感"
+   ],
+   [
+    "天气与健康",
+    "wetterfühlig",
+    "对天气敏感的"
+   ],
+   [
+    "天气与健康",
+    "das Wohlbefinden",
+    "健康幸福感"
+   ],
+   [
+    "天气与健康",
+    "beeinflussen",
+    "影响"
+   ],
+   [
+    "天气与健康",
+    "das Krankheitssymptom",
+    "疾病症状"
+   ],
+   [
+    "天气与健康",
+    "einer Tätigkeit nachgehen",
+    "从事某项活动"
+   ],
+   [
+    "天气与健康",
+    "klagen",
+    "抱怨"
+   ],
+   [
+    "天气与健康",
+    "der Schmerz",
+    "疼痛"
+   ],
+   [
+    "天气与健康",
+    "die Beschwerde",
+    "不适"
+   ],
+   [
+    "天气与健康",
+    "hervorrufen",
+    "引起"
+   ],
+   [
+    "天气与健康",
+    "das Leiden",
+    "痛苦"
+   ],
+   [
+    "天气与健康",
+    "die Wetterlage",
+    "天气形势"
+   ],
+   [
+    "天气与健康",
+    "die Hitze",
+    "炎热"
+   ],
+   [
+    "天气与健康",
+    "die UV-Strahlung",
+    "紫外线辐射"
+   ],
+   [
+    "天气与健康",
+    "das Hautkrebsrisiko",
+    "皮肤癌风险"
+   ],
+   [
+    "天气与健康",
+    "die Warnung",
+    "警告"
+   ],
+   [
+    "天气与健康",
+    "der Meteorologe",
+    "气象学家"
+   ],
+   [
+    "天气与健康",
+    "subjektiv",
+    "主观的"
+   ],
+   [
+    "天气与健康",
+    "die Einschätzung",
+    "评估"
+   ],
+   [
+    "语言英语化",
+    "sich vollziehen",
+    "发生"
+   ],
+   [
+    "语言英语化",
+    "die Ausdrucksweise",
+    "表达方式"
+   ],
+   [
+    "语言英语化",
+    "das Forschungsergebnis",
+    "研究成果"
+   ],
+   [
+    "语言英语化",
+    "veröffentlichen",
+    "发表"
+   ],
+   [
+    "语言英语化",
+    "die Welthilfssprache",
+    "世界辅助语言"
+   ],
+   [
+    "语言英语化",
+    "heranwachsen",
+    "发展成为"
+   ],
+   [
+    "语言英语化",
+    "die Sprachbarriere",
+    "语言障碍"
+   ],
+   [
+    "语言英语化",
+    "aus dem Weg räumen",
+    "消除"
+   ],
+   [
+    "语言英语化",
+    "die Verkehrssprache",
+    "通用语"
+   ],
+   [
+    "语言英语化",
+    "der Widerstand",
+    "抵制"
+   ],
+   [
+    "语言英语化",
+    "die Landessprache",
+    "本国语言"
+   ],
+   [
+    "语言英语化",
+    "das Verständigungsmittel",
+    "交际工具"
+   ],
+   [
+    "语言英语化",
+    "sich entfremden",
+    "疏远"
+   ],
+   [
+    "学语言",
+    "erlernen",
+    "学会"
+   ],
+   [
+    "学语言",
+    "verlernen",
+    "遗忘"
+   ],
+   [
+    "学语言",
+    "nachschlagen",
+    "查阅"
+   ],
+   [
+    "学语言",
+    "übersetzen",
+    "翻译"
+   ],
+   [
+    "学语言",
+    "umschreiben",
+    "释义"
+   ],
+   [
+    "学语言",
+    "der Kontext",
+    "语境"
+   ],
+   [
+    "学语言",
+    "festigen",
+    "巩固"
+   ],
+   [
+    "学语言",
+    "der Lernstoff",
+    "学习材料"
+   ],
+   [
+    "学语言",
+    "erfassen",
+    "掌握"
+   ],
+   [
+    "学语言",
+    "das Gehirn",
+    "大脑"
+   ],
+   [
+    "学语言",
+    "stimulieren",
+    "刺激"
+   ],
+   [
+    "学语言",
+    "der Lerntyp",
+    "学习类型"
+   ],
+   [
+    "学语言",
+    "der Biorhythmus",
+    "生物节律"
+   ],
+   [
+    "学语言",
+    "die Gelegenheit",
+    "机会"
+   ],
+   [
+    "学语言",
+    "nutzen",
+    "利用"
+   ],
+   [
+    "非语言交际",
+    "die Körpersprache",
+    "肢体语言"
+   ],
+   [
+    "非语言交际",
+    "die Mimik",
+    "面部表情"
+   ],
+   [
+    "非语言交际",
+    "der Gesichtsausdruck",
+    "面部表情"
+   ],
+   [
+    "非语言交际",
+    "die Gestik",
+    "手势"
+   ],
+   [
+    "非语言交际",
+    "die Körperhaltung",
+    "姿态"
+   ],
+   [
+    "非语言交际",
+    "die Körperbewegung",
+    "身体动作"
+   ],
+   [
+    "非语言交际",
+    "unbewusst",
+    "无意识地"
+   ],
+   [
+    "非语言交际",
+    "die Botschaft",
+    "信息"
+   ],
+   [
+    "非语言交际",
+    "verraten",
+    "透露"
+   ],
+   [
+    "非语言交际",
+    "seelisch",
+    "心理的"
+   ],
+   [
+    "非语言交际",
+    "die Aufmerksamkeit",
+    "注意"
+   ],
+   [
+    "非语言交际",
+    "signalisieren",
+    "发出信号"
+   ],
+   [
+    "非语言交际",
+    "kontrollieren",
+    "控制"
+   ],
+   [
+    "非语言交际",
+    "der Gefühlszustand",
+    "情绪状态"
+   ],
+   [
+    "非语言交际",
+    "zum Ausdruck bringen",
+    "表达"
+   ]
+  ],
+  "examples": [
+   [
+    "Die Höchsttemperatur liegt bei 25 Grad.",
+    "最高气温 25 度。"
+   ],
+   [
+    "Es regnet in Strömen.",
+    "正下着倾盆大雨。"
+   ],
+   [
+    "Die Körpersprache verrät viel.",
+    "肢体语言透露了很多。"
+   ],
+   [
+    "Man muss den Wortschatz festigen.",
+    "必须巩固词汇。"
+   ]
+  ]
+ },
+ {
+  "num": "M22-18",
+  "id": "glueck_gefuehle",
+  "cat": "vokabel",
+  "title": "幸福与其他情感",
+  "titleDe": "Glück und andere Gefühle",
+  "explain": "C1 主题词汇：幸福与不幸、压力、笑与幽默、愚人节玩笑。注意：①谚语 Jeder ist seines Glückes Schmied（每个人都是自己幸福的铁匠）；②压力主题多为学术/职场词汇（die Gratifikationskrise 奖酬危机、die Verausgabung 付出）；③笑的表达极其丰富（sich krummlachen、sich totlachen、sich ausschütten）；④愚人节固定说法：in den April schicken、auf den Arm nehmen。\n\n🇬🇧 英语对照：英语 make fun of / play a trick on；德语 auf den Arm nehmen、hereinlegen 都是\"捉弄\"的地道说法。",
+  "table": [
+   [
+    "主题",
+    "德语",
+    "中文"
+   ],
+   [
+    "幸福与不幸",
+    "sich Gedanken machen",
+    "思考"
+   ],
+   [
+    "幸福与不幸",
+    "empirisch",
+    "经验的"
+   ],
+   [
+    "幸福与不幸",
+    "die Untersuchung",
+    "研究"
+   ],
+   [
+    "幸福与不幸",
+    "die Frohnatur",
+    "乐天派"
+   ],
+   [
+    "幸福与不幸",
+    "die Stimmung",
+    "情绪"
+   ],
+   [
+    "幸福与不幸",
+    "die Glücksfähigkeit",
+    "感受幸福的能力"
+   ],
+   [
+    "幸福与不幸",
+    "angeboren",
+    "天生的"
+   ],
+   [
+    "幸福与不幸",
+    "das Glücksniveau",
+    "幸福水平"
+   ],
+   [
+    "幸福与不幸",
+    "die Zufriedenheit",
+    "满意"
+   ],
+   [
+    "幸福与不幸",
+    "der Wohlstand",
+    "富足"
+   ],
+   [
+    "幸福与不幸",
+    "Jeder ist seines Glückes Schmied",
+    "每个人都是自己幸福的创造者（谚语）"
+   ],
+   [
+    "幸福与不幸",
+    "der Lebensumstand",
+    "生活状况"
+   ],
+   [
+    "幸福与不幸",
+    "abhängen (von)",
+    "取决于"
+   ],
+   [
+    "幸福与不幸",
+    "sich gewöhnen (an)",
+    "习惯"
+   ],
+   [
+    "幸福与不幸",
+    "der Pechvogel",
+    "倒霉鬼"
+   ],
+   [
+    "幸福与不幸",
+    "unglücklich",
+    "不幸的"
+   ],
+   [
+    "幸福与不幸",
+    "die Emotion",
+    "情绪"
+   ],
+   [
+    "幸福与不幸",
+    "in den Griff bekommen",
+    "控制"
+   ],
+   [
+    "幸福与不幸",
+    "die Angst",
+    "害怕"
+   ],
+   [
+    "幸福与不幸",
+    "die Enttäuschung",
+    "失望"
+   ],
+   [
+    "幸福与不幸",
+    "erleben",
+    "经历"
+   ],
+   [
+    "幸福与不幸",
+    "die Vergangenheit",
+    "过去"
+   ],
+   [
+    "压力",
+    "stressig",
+    "有压力的"
+   ],
+   [
+    "压力",
+    "leiden (unter)",
+    "遭受"
+   ],
+   [
+    "压力",
+    "der Überlebensreflex",
+    "生存反射"
+   ],
+   [
+    "压力",
+    "die Hilflosigkeit",
+    "无助"
+   ],
+   [
+    "压力",
+    "belasten / entlasten",
+    "负担/减负"
+   ],
+   [
+    "压力",
+    "die Anforderung",
+    "要求"
+   ],
+   [
+    "压力",
+    "die Karriere",
+    "事业"
+   ],
+   [
+    "压力",
+    "das Erfolgserlebnis",
+    "成功体验"
+   ],
+   [
+    "压力",
+    "der Anspruch",
+    "期望"
+   ],
+   [
+    "压力",
+    "die Wirklichkeit",
+    "现实"
+   ],
+   [
+    "压力",
+    "sich identifizieren (mit)",
+    "认同"
+   ],
+   [
+    "压力",
+    "die Belohnungschance",
+    "回报机会"
+   ],
+   [
+    "压力",
+    "die Gratifikationskrise",
+    "奖酬危机"
+   ],
+   [
+    "压力",
+    "die Wertschätzung",
+    "尊重"
+   ],
+   [
+    "压力",
+    "die Anerkennung",
+    "表彰"
+   ],
+   [
+    "压力",
+    "die Motivation",
+    "动力"
+   ],
+   [
+    "压力",
+    "die Balance",
+    "平衡"
+   ],
+   [
+    "压力",
+    "die Priorität",
+    "优先事项"
+   ],
+   [
+    "压力",
+    "die Stärke",
+    "优势"
+   ],
+   [
+    "笑与幽默",
+    "lachen",
+    "笑"
+   ],
+   [
+    "笑与幽默",
+    "lustig / amüsant",
+    "有趣的"
+   ],
+   [
+    "笑与幽默",
+    "sich krummlachen",
+    "笑弯腰"
+   ],
+   [
+    "笑与幽默",
+    "sich totlachen",
+    "笑死了"
+   ],
+   [
+    "笑与幽默",
+    "sich ausschütten (vor Lachen)",
+    "爆笑"
+   ],
+   [
+    "笑与幽默",
+    "der Humor",
+    "幽默"
+   ],
+   [
+    "笑与幽默",
+    "der Witz",
+    "笑话"
+   ],
+   [
+    "笑与幽默",
+    "Witze erzählen / reißen",
+    "讲笑话"
+   ],
+   [
+    "笑与幽默",
+    "mit etwas ist nicht zu spaßen",
+    "某事开不得玩笑"
+   ],
+   [
+    "笑与幽默",
+    "die Gesundheit",
+    "健康"
+   ],
+   [
+    "笑与幽默",
+    "die soziale Beziehung",
+    "社会关系"
+   ],
+   [
+    "愚人节玩笑",
+    "in den April schicken",
+    "开愚人节玩笑"
+   ],
+   [
+    "愚人节玩笑",
+    "auf den Arm nehmen",
+    "捉弄"
+   ],
+   [
+    "愚人节玩笑",
+    "hinters Licht führen",
+    "欺骗"
+   ],
+   [
+    "愚人节玩笑",
+    "hereinlegen",
+    "欺骗"
+   ],
+   [
+    "愚人节玩笑",
+    "der Scherz",
+    "玩笑"
+   ],
+   [
+    "愚人节玩笑",
+    "der Streich",
+    "恶作剧"
+   ],
+   [
+    "愚人节玩笑",
+    "veralbern / verspotten / auslachen",
+    "愚弄/嘲笑"
+   ],
+   [
+    "愚人节玩笑",
+    "schadenfroh",
+    "幸灾乐祸"
+   ],
+   [
+    "愚人节玩笑",
+    "der Brauch",
+    "习俗"
+   ]
+  ],
+  "examples": [
+   [
+    "Jeder ist seines Glückes Schmied.",
+    "每个人都是自己幸福的创造者。"
+   ],
+   [
+    "Man muss die Balance halten.",
+    "要保持平衡。"
+   ],
+   [
+    "Wir haben uns totgelacht.",
+    "我们笑死了。"
+   ],
+   [
+    "Das ist nur ein Scherz.",
+    "这只是个玩笑。"
+   ]
+  ]
+ },
+ {
+  "num": "M23-19",
+  "id": "erfolg_niederlage",
+  "cat": "vokabel",
+  "title": "成功与失败",
+  "titleDe": "Erfolge und Niederlagen",
+  "explain": "C1 主题词汇：体育成功、职业成功、公司介绍、失败的艺术。注意：①体育习语 an den Nagel hängen（放弃，字面\"挂在钉子上\"）；②职场 fixed 搭配 Karriere machen、die Chance ergreifen；③谈失败的地道说法 in den Sand setzen（搞砸）、aus Misserfolgen lernen（从失败中学习）；④公司介绍类是典型商务德语（wettbewerbsfähig 未出现但同类词多）。\n\n🇬🇧 英语对照：英语 hang up ones boots（退役）；德语 an den Nagel hängen 异曲同工，都是具象习语。",
+  "table": [
+   [
+    "主题",
+    "德语",
+    "中文"
+   ],
+   [
+    "体育成功",
+    "teilnehmen (an)",
+    "参加"
+   ],
+   [
+    "体育成功",
+    "gewinnen",
+    "赢得"
+   ],
+   [
+    "体育成功",
+    "der Meister / die Meisterin",
+    "冠军"
+   ],
+   [
+    "体育成功",
+    "der Titel",
+    "头衔"
+   ],
+   [
+    "体育成功",
+    "der Profi",
+    "职业（选手）"
+   ],
+   [
+    "体育成功",
+    "der Amateur",
+    "业余（选手）"
+   ],
+   [
+    "体育成功",
+    "die Silbermedaille",
+    "银牌"
+   ],
+   [
+    "体育成功",
+    "der Erfolgsdruck",
+    "成功压力"
+   ],
+   [
+    "体育成功",
+    "olympisch",
+    "奥林匹克的"
+   ],
+   [
+    "体育成功",
+    "das Dabeisein",
+    "参与"
+   ],
+   [
+    "体育成功",
+    "die Leistungsfähigkeit",
+    "运动能力"
+   ],
+   [
+    "体育成功",
+    "steigern",
+    "提高"
+   ],
+   [
+    "体育成功",
+    "das Aufputschmittel",
+    "兴奋剂"
+   ],
+   [
+    "体育成功",
+    "die Nebenwirkung",
+    "副作用"
+   ],
+   [
+    "体育成功",
+    "die Dopingkontrolle",
+    "兴奋剂检测"
+   ],
+   [
+    "体育成功",
+    "disqualifizieren",
+    "取消资格"
+   ],
+   [
+    "体育成功",
+    "an den Nagel hängen",
+    "放弃（习语）"
+   ],
+   [
+    "体育成功",
+    "die Karriere beenden",
+    "结束职业生涯"
+   ],
+   [
+    "职业成功",
+    "Karriere machen",
+    "创事业"
+   ],
+   [
+    "职业成功",
+    "die Abschlussnote",
+    "毕业成绩"
+   ],
+   [
+    "职业成功",
+    "aussagekräftig",
+    "有说服力的"
+   ],
+   [
+    "职业成功",
+    "die Sozialkompetenz",
+    "社交能力"
+   ],
+   [
+    "职业成功",
+    "die Teamfähigkeit",
+    "团队能力"
+   ],
+   [
+    "职业成功",
+    "besitzen",
+    "具备"
+   ],
+   [
+    "职业成功",
+    "gefragt",
+    "受欢迎的"
+   ],
+   [
+    "职业成功",
+    "durchschauen",
+    "看透"
+   ],
+   [
+    "职业成功",
+    "der Stellenantritt",
+    "入职"
+   ],
+   [
+    "职业成功",
+    "die Zielvereinbarung",
+    "目标协议"
+   ],
+   [
+    "职业成功",
+    "sich zurückhalten",
+    "克制"
+   ],
+   [
+    "职业成功",
+    "der Besserwisser",
+    "万事通"
+   ],
+   [
+    "职业成功",
+    "lästern",
+    "说坏话"
+   ],
+   [
+    "职业成功",
+    "der Arbeitgeber",
+    "雇主"
+   ],
+   [
+    "职业成功",
+    "die Chance ergreifen",
+    "抓住机会"
+   ],
+   [
+    "职业成功",
+    "das Hindernis",
+    "障碍"
+   ],
+   [
+    "职业成功",
+    "überwinden",
+    "克服"
+   ],
+   [
+    "职业成功",
+    "das Risiko eingehen",
+    "承担风险"
+   ],
+   [
+    "职业成功",
+    "sich orientieren",
+    "定位"
+   ],
+   [
+    "公司介绍",
+    "weltweit führend",
+    "世界领先"
+   ],
+   [
+    "公司介绍",
+    "das Unternehmen",
+    "公司"
+   ],
+   [
+    "公司介绍",
+    "das Produkt",
+    "产品"
+   ],
+   [
+    "公司介绍",
+    "entwickeln",
+    "开发"
+   ],
+   [
+    "公司介绍",
+    "herstellen",
+    "生产"
+   ],
+   [
+    "公司介绍",
+    "maßgeschneidert",
+    "定制的"
+   ],
+   [
+    "公司介绍",
+    "die Dienstleistung",
+    "服务"
+   ],
+   [
+    "公司介绍",
+    "die Lösung",
+    "解决方案"
+   ],
+   [
+    "公司介绍",
+    "anbieten",
+    "提供"
+   ],
+   [
+    "公司介绍",
+    "innovativ",
+    "创新的"
+   ],
+   [
+    "公司介绍",
+    "die Technik",
+    "技术"
+   ],
+   [
+    "公司介绍",
+    "das Know-how",
+    "专业知识"
+   ],
+   [
+    "公司介绍",
+    "der Mitarbeiter",
+    "员工"
+   ],
+   [
+    "公司介绍",
+    "der Wettbewerbsvorteil",
+    "竞争优势"
+   ],
+   [
+    "公司介绍",
+    "die Verantwortung übernehmen",
+    "承担责任"
+   ],
+   [
+    "公司介绍",
+    "der Aktionär",
+    "股东"
+   ],
+   [
+    "失败的艺术",
+    "der Misserfolg",
+    "失败"
+   ],
+   [
+    "失败的艺术",
+    "scheitern",
+    "失败"
+   ],
+   [
+    "失败的艺术",
+    "versagen",
+    "失败"
+   ],
+   [
+    "失败的艺术",
+    "der Versager",
+    "失败者"
+   ],
+   [
+    "失败的艺术",
+    "in den Sand setzen",
+    "搞砸"
+   ],
+   [
+    "失败的艺术",
+    "der Traum zerplatzt",
+    "梦想破灭"
+   ],
+   [
+    "失败的艺术",
+    "aus Misserfolgen lernen",
+    "从失败中学习"
+   ],
+   [
+    "失败的艺术",
+    "die Niederlage",
+    "失败"
+   ],
+   [
+    "失败的艺术",
+    "mit Niederlagen umgehen",
+    "应对失败"
+   ],
+   [
+    "失败的艺术",
+    "der Umgang",
+    "应对"
+   ]
+  ],
+  "examples": [
+   [
+    "Er will Karriere machen.",
+    "他想创一番事业。"
+   ],
+   [
+    "Sie hat die Chance ergriffen.",
+    "她抓住了机会。"
+   ],
+   [
+    "Das Projekt ist in den Sand gesetzt.",
+    "这个项目搞砸了。"
+   ],
+   [
+    "Aus Misserfolgen lernen wir am meisten.",
+    "我们从失败中学到最多。"
+   ]
+  ]
+ },
+ {
+  "num": "M24-27",
+  "id": "fortschritt_umwelt",
+  "cat": "vokabel",
+  "title": "进步与环境",
+  "titleDe": "Fortschritt und Umwelt",
+  "explain": "C1 主题词汇：进步、新媒体、语言变化、环境与气候、水。注意：①科技 environmental 复合词多（die Pro-Kopf-Emission、die Wassernachfrage），拆分记；②网络用语进入正课（chatten、bloggen、das Emoticon、der Tippfehler）；③固定搭配：in die Flucht treiben（驱赶）、aufmerksam machen auf（提醒注意）；④ prekär（岌岌可危）是 C1 高频书面形容词。\n\n🇬🇧 英语对照：英语 carbon footprint / data privacy；德语 die Pro-Kopf-Emission / der Datenschutz，构词逻辑相通。",
+  "table": [
+   [
+    "主题",
+    "德语",
+    "中文"
+   ],
+   [
+    "进步",
+    "meistern",
+    "克服"
+   ],
+   [
+    "进步",
+    "die Geschwindigkeit",
+    "速度"
+   ],
+   [
+    "进步",
+    "jährlich",
+    "每年"
+   ],
+   [
+    "进步",
+    "der Stau",
+    "拥堵"
+   ],
+   [
+    "进步",
+    "die Parkplatzsuche",
+    "找车位"
+   ],
+   [
+    "进步",
+    "die Lebenserwartung",
+    "预期寿命"
+   ],
+   [
+    "进步",
+    "die Lebensqualität",
+    "生活质量"
+   ],
+   [
+    "进步",
+    "abhängen (von)",
+    "取决于"
+   ],
+   [
+    "进步",
+    "sogenannt",
+    "所谓的"
+   ],
+   [
+    "新媒体",
+    "abrufen",
+    "获取"
+   ],
+   [
+    "新媒体",
+    "die Suchmaschine",
+    "搜索引擎"
+   ],
+   [
+    "新媒体",
+    "digital",
+    "数字的"
+   ],
+   [
+    "新媒体",
+    "die Spur hinterlassen",
+    "留下痕迹"
+   ],
+   [
+    "新媒体",
+    "die Privatsphäre",
+    "隐私"
+   ],
+   [
+    "新媒体",
+    "der Datenschutz",
+    "数据保护"
+   ],
+   [
+    "新媒体",
+    "das Urheberrecht",
+    "版权"
+   ],
+   [
+    "新媒体",
+    "die Suchanfrage",
+    "搜索请求"
+   ],
+   [
+    "新媒体",
+    "durchsuchen",
+    "搜遍"
+   ],
+   [
+    "新媒体",
+    "der Datenverkehr",
+    "数据流量"
+   ],
+   [
+    "新媒体",
+    "analysieren",
+    "分析"
+   ],
+   [
+    "新媒体",
+    "digitalisieren",
+    "数字化"
+   ],
+   [
+    "新媒体",
+    "die Anzeige platzieren",
+    "投放广告"
+   ],
+   [
+    "新媒体",
+    "zur Verfügung stellen",
+    "提供"
+   ],
+   [
+    "新媒体",
+    "warnen (vor)",
+    "警告"
+   ],
+   [
+    "新媒体",
+    "das Risiko bergen",
+    "带来风险"
+   ],
+   [
+    "新媒体",
+    "unaufhaltsam",
+    "不可阻挡的"
+   ],
+   [
+    "新媒体",
+    "der Aufstieg",
+    "上升"
+   ],
+   [
+    "语言变化",
+    "chatten / bloggen / mailen / googeln",
+    "聊天/写博客/发邮件/谷歌"
+   ],
+   [
+    "语言变化",
+    "der Verfall",
+    "衰落"
+   ],
+   [
+    "语言变化",
+    "der Tippfehler",
+    "打字错误"
+   ],
+   [
+    "语言变化",
+    "sich häufen",
+    "增加"
+   ],
+   [
+    "语言变化",
+    "die Großschreibung",
+    "大写"
+   ],
+   [
+    "语言变化",
+    "verzichten (auf)",
+    "放弃"
+   ],
+   [
+    "语言变化",
+    "das Emoticon",
+    "表情符号"
+   ],
+   [
+    "语言变化",
+    "ausdrücken",
+    "表达"
+   ],
+   [
+    "语言变化",
+    "die Rechtschreibung",
+    "拼写"
+   ],
+   [
+    "语言变化",
+    "der Satzbau",
+    "句法"
+   ],
+   [
+    "语言变化",
+    "der Wortschatz",
+    "词汇"
+   ],
+   [
+    "环境与气候",
+    "die globale Erwärmung",
+    "全球变暖"
+   ],
+   [
+    "环境与气候",
+    "der Klimawandel",
+    "气候变化"
+   ],
+   [
+    "环境与气候",
+    "die Gefahr",
+    "危险"
+   ],
+   [
+    "环境与气候",
+    "das Bewusstsein",
+    "意识"
+   ],
+   [
+    "环境与气候",
+    "das Treibhausgas",
+    "温室气体"
+   ],
+   [
+    "环境与气候",
+    "ausstoßen",
+    "排放"
+   ],
+   [
+    "环境与气候",
+    "die Pro-Kopf-Emission",
+    "人均排放"
+   ],
+   [
+    "环境与气候",
+    "der Biosprit",
+    "生物燃料"
+   ],
+   [
+    "环境与气候",
+    "kostspielig",
+    "昂贵的"
+   ],
+   [
+    "环境与气候",
+    "der Treibhauseffekt",
+    "温室效应"
+   ],
+   [
+    "环境与气候",
+    "verschlimmern",
+    "恶化"
+   ],
+   [
+    "环境与气候",
+    "die Wassernachfrage",
+    "用水需求"
+   ],
+   [
+    "环境与气候",
+    "sich verdoppeln",
+    "加倍"
+   ],
+   [
+    "环境与气候",
+    "die Abholzung",
+    "砍伐"
+   ],
+   [
+    "环境与气候",
+    "in die Flucht treiben",
+    "驱赶"
+   ],
+   [
+    "环境与气候",
+    "der Lebensmittelpreis",
+    "食品价格"
+   ],
+   [
+    "环境与气候",
+    "explodieren",
+    "暴涨"
+   ],
+   [
+    "环境与气候",
+    "aufmerksam machen auf",
+    "提醒注意"
+   ],
+   [
+    "水",
+    "prekär",
+    "岌岌可危"
+   ],
+   [
+    "水",
+    "mangeln (an)",
+    "缺乏"
+   ],
+   [
+    "水",
+    "die Wasserknappheit",
+    "缺水"
+   ],
+   [
+    "水",
+    "knapp",
+    "稀缺的"
+   ],
+   [
+    "水",
+    "das Trinkwasser",
+    "饮用水"
+   ],
+   [
+    "水",
+    "der Wasserverbrauch",
+    "用水量"
+   ],
+   [
+    "水",
+    "ansteigen",
+    "上升"
+   ],
+   [
+    "水",
+    "das Abwasser",
+    "废水"
+   ],
+   [
+    "水",
+    "das Leck",
+    "漏洞"
+   ],
+   [
+    "水",
+    "ungenutzt",
+    "未被利用的"
+   ],
+   [
+    "水",
+    "die Dürre",
+    "干旱"
+   ],
+   [
+    "水",
+    "leiden (unter)",
+    "遭受"
+   ],
+   [
+    "水",
+    "die Landwirtschaft",
+    "农业"
+   ]
+  ],
+  "examples": [
+   [
+    "Der Klimawandel schreitet voran.",
+    "气候变化在推进。"
+   ],
+   [
+    "Man muss sparsam mit Wasser umgehen.",
+    "必须节约用水。"
+   ],
+   [
+    "Der Datenschutz wird immer wichtiger.",
+    "数据保护越来越重要。"
+   ],
+   [
+    "Die Preise explodieren.",
+    "价格暴涨。"
+   ]
+  ]
  }
 ]
