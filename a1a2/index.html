@@ -84,7 +84,7 @@ header p{font-size:12px;color:var(--text3);margin-top:4px}
 <button class="tab" data-tab="family">词族</button>
 <button class="tab" data-tab="grammar">语法</button>
 </div>
-<div id="legend" style="display:none">
+<div id="legend">
 <span><i class="dot" style="background:var(--accent2)"></i>动词</span>
 <span><i class="dot" style="background:var(--green)"></i>名词</span>
 <span><i class="dot" style="background:var(--orange)"></i>形容词</span>
@@ -299,7 +299,7 @@ function renderNav(groups){
 function switchTab(tab){
   activeTab=tab;
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===tab));
-  document.getElementById('legend').style.display=tab==='family'?'flex':'none';
+  
   const groups=tab==='verb'?verbData.groups:tab==='family'?familyData.families:grammarData.groups;
   renderNav(groups);
   if(groups.length)renderGroup(groups[0]);
