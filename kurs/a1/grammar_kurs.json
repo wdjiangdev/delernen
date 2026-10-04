@@ -1088,7 +1088,7 @@
   "cat": "xingrong",
   "title": "形容词的名词化",
   "titleDe": "Nominalisierte Adjektive",
-  "explain": "形容词首字母大写、去掉后接名词即名词化（angestellt→der Angestellte 雇员）；词尾变化完全按形容词词尾规则（零冠词取定冠词词尾）。阳/阴性名词化通常指人（der/die Alte 老人），中性指物（das Interessante 令人感兴趣的事、das Gesagte 说过的话）。特例：Deutscher（德国人）是形容词名词化（Ich bin Deutscher），其他国籍如 Chinese/Chinesin、Amerikaner 是普通名词、不按形容词变格。说语言：用\"说 + Deutsch\"（Ich spreche gut Deutsch）或\"用 + das Deutsche\"（vom Chinesischen ins Deutsche，固定搭配）。不是所有形容词都能名词化，约定俗成要背。\n\n🇬🇧 英语对照：英语 the rich / the poor 也有形容词作名词，但不变格；德语名词化后完整走一遍性数格。",
+  "explain": "构成：形容词首字母大写、去掉后面名词即完成名词化（如 der Angestellte 雇员、der Fremde 陌生人）。名词化形容词按形容词词尾变化走弱变化；零冠词时阳性单数主格为 -er（如 ein Angestellter、zwei Angestellte）。中性名词化表抽象事物：das Deutsche（德语）、das Interessante（令人感兴趣的事）、das Schlimme（糟糕的事）。类比记忆：英语 the young/the rich 也是形容词名词化，德语同理，只是变化更复杂。中国学生常见错误：用\"形容词 + Ding/Leute/Mann\"绕开名词化（如\"糟糕的事\"），要学会直接用 das Schlimme 这类形式。helfen 只支配三格：Wir sollen den Alten helfen. 中 den Alten 是三格复数（\"帮助那些老人\"），不能理解为四格单数。Schlimmes 在 Es ist schon Schlimmes passiert. 中是真正主语，es 是形式主语——德语喜欢把真实主语后置。中性名词化表示语言：vom Chinesischen ins Deutsche（从中文到德语），介词后冠词缩合。\n\n🇬🇧 英语对照：英语 the rich（形容词名词化）；德语一样，但名词化后还要变格。",
   "table": [
    [
     "",
@@ -1113,20 +1113,20 @@
   ],
   "examples": [
    [
-    "Ein Deutscher wohnt nebenan.",
-    "一个德国人住在隔壁。"
+    "Ich bin Deutscher.",
+    "我是德国人。"
    ],
    [
-    "Hast du etwas Neues gehört?",
-    "你听到什么新鲜事了吗？"
+    "Wir sollen den Alten helfen.",
+    "我们应该帮助那些老人。（helfen+三格）"
    ],
    [
-    "Das Beste kommt noch.",
-    "最好的还在后头。"
+    "Kennst du den Fremden?",
+    "你认识那个陌生人吗？"
    ],
    [
-    "Ich spreche gut Deutsch.",
-    "我说德语说得很好。"
+    "Es ist schon Schlimmes passiert.",
+    "糟糕的事情已经发生了。（es 形式主语）"
    ]
   ]
  },
@@ -1136,7 +1136,7 @@
   "cat": "xingrong",
   "title": "形容词词尾的特殊变化",
   "titleDe": "Besondere Adjektive",
-  "explain": "-el 结尾：去 e 再加词尾（dunkel→dunklen、sensibel→sensibles、übel→üble）。-auer/-euer 结尾：去 e 再加词尾（teuer→teuren、sauer→saures）。hoch→hoh 再加词尾（einen hohen Berg）。永远不加词尾的：rosa/lila/prima/extra/mega（a 结尾）、beige/orange/türkis（颜色外来词）、super/klasse。\n\n🇬🇧 英语对照：类似英语的不规则（good→better），都是高频词的特殊形式，单独记。",
+  "explain": "以 -el 结尾的形容词加词尾前先去 e（dunkel→dunklen、sensibel→sensibles、übel→üble、parallel→parallelen），前提是不影响发音。以 -auer/-euer 结尾的形容词先去 e 再加词尾（teuer→teuren、ungeheuer→ungeheures、sauer→saures）。hoch 加词尾时先变为 hoh（hoch→hohen）。永远不加词尾的形容词要单独背：rosa、lila、prima、extra、mega、beige、orange、türkis、super、klasse。\"穿过\"的强调靠介词 durch（表\"经过、穿过\"）；口语常省略介词，但要强调\"穿越\"最好保留 durch。变元音配合去 e：übel→üble 加词尾时同时变元音（u→ü）。易错点：去 e 规则只改变词干，词尾变化表照常套用；特例形容词必须单独记忆。表语形容词永远不加词尾，只有作定语时才触发上述特殊变化。\n\n🇬🇧 英语对照：英语形容词无变化；德语少数形容词连词干都要先\"整形\"再加词尾。",
   "table": [
    [
     "形容词",
@@ -1166,20 +1166,20 @@
   ],
   "examples": [
    [
-    "Der Berg ist sehr hoch.",
-    "这山很高。"
+    "Wir müssen durch den dunklen Wald durchgehen.",
+    "我们必须穿过这片阴暗的树林。（dunkel 去 e）"
    ],
    [
-    "Ein hohes Haus steht dort.",
-    "那里有一栋高楼。"
+    "Wir diskutieren ein ganz sensibles Thema.",
+    "我们在讨论一个非常敏感的话题。"
    ],
    [
-    "Das Zimmer ist dunkel.",
-    "房间很暗。"
+    "Er fährt einen teuren Wagen.",
+    "他开一辆昂贵的车。（teuer 去 e）"
    ],
    [
-    "Sie trägt eine rosa Blume im Haar.",
-    "她头发上戴着一朵粉色的花。"
+    "Ich sehe einen hohen Berg.",
+    "我看见一座高山。（hoch→hoh）"
    ]
   ]
  },
@@ -1189,7 +1189,7 @@
   "cat": "xingrong",
   "title": "viel(e) 和 wenig(e) 的用法",
   "titleDe": "viel / wenig",
-  "explain": "viel/wenig 修饰不可数名词（= much / a little），viele/wenige 修饰复数可数名词（= many / a few）；wie viel / wie viele 对应 how much / how many。修饰不可数名词的 viel/wenig：前面有冠词时按普通形容词加词尾（das viele Geld），无冠词时不加词尾（viel Milch）。修饰可数名词的 viele/wenige：无论有无冠词一律按形容词加词尾（vielen hundert Jahren）。书面语 ein wenig = ein bisschen；viel/wenig 前不可能出现不定冠词 ein。\n\n🇬🇧 英语对照：英语 much/many 按可数不可数区分，德语按\"修饰可数还是不可数\"决定用哪套，再看有无冠词决定加不加词尾。",
+  "explain": "词义对应：viel（很多，修饰不可数名词）/ wenig（很少，修饰不可数）/ viele（很多，修饰可数复数）/ wenige（少数几个，修饰可数复数）。疑问句：Wie viel + 不可数名词（Wie viel Geld hast du?）；Wie viele + 复数可数名词（Wie viele Zimmer hat die Wohnung?）。变格规则：viele/wenige 修饰可数名词时始终按普通形容词变格（Viele junge Leute）；viel/wenig 修饰不可数名词时，只有前面有定冠词才变格（das viele Geld），无冠词时不变（mit viel Milch）。viel/wenig 前面不可能出现不定冠词 ein 和否定冠词 kein；不可数名词如 Geld 前永远不会有 ein。书面表达：ein wenig 可替代 ein bisschen 表\"一点点\"。易错点：im Zentrum von München, wenige Minuten vom Hauptbahnhof entfernt 中，介词 von 的宾语是 Hauptbahnhof，wenige Minuten 是主语（一格），不要误判格位。判断词尾三步法：先看名词可数还是不可数；可数→viel/wenig 当形容词正常加词尾；不可数→看前面有没有定冠词。\n\n🇬🇧 英语对照：英语 much/many 按可数分；德语 viel/wenig 也一样，只是多了变格这一步。",
   "table": [
    [
     "",
@@ -1209,20 +1209,20 @@
   ],
   "examples": [
    [
-    "Ich habe viel Arbeit.",
-    "我有很多工作。"
+    "Ja, mit viel Milch, aber wenig Zucker.",
+    "好的，加很多牛奶，但少加糖。（无冠词不变）"
    ],
    [
-    "Er hat wenig Geld.",
-    "他没什么钱。"
+    "Viele junge Leute übernachten dort.",
+    "很多年轻人在那里过夜。（正常变格）"
    ],
    [
-    "Viele Leute warten draußen.",
-    "很多人在外面等。"
+    "Wie viel Geld hast du?",
+    "你有多少钱？（不可数）"
    ],
    [
-    "Wie viel kostet das?",
-    "这个多少钱？"
+    "Wie viele Zimmer hat die Wohnung?",
+    "这套房子有几个房间？（可数复数）"
    ]
   ]
  },
@@ -1232,7 +1232,7 @@
   "cat": "mingci",
   "title": "日期、月份、年份和序数词",
   "titleDe": "Datum & Ordinalzahlen",
-  "explain": "星期、月份都是阳性（12 个月份拼写近英语，别混淆）。序数词：1–19 加 -te（erste/zweite/dritte 特例），20 以上加 -ste；wievielte- 提问\"第几\"，按形容词加词尾。年份读法：2000 年及以后 zweitausend+（2026 = zweitausendsechsundzwanzig），1000–1999 用 hundert（1995 = neunzehnhundertfünfundneunzig）。\"在几月几号\"用 an（am 23. Oktober）；省略月份时序数词名词化大写（am Dreiundzwanzigsten）；日期顺序日-月-年，用点分隔。不带介词的时间状语用第四格（den 5. Juni）。\n\n🇬🇧 英语对照：英语 October 23rd / on Monday；德语日期用序数词 + 三格（am dreiundzwanzigsten Oktober），和英语 on the 23rd of October 思路接近。",
+  "explain": "星期和月份均为阳性；日期用\"日-月-年\"点式书写（01.02.2009），不用斜杠。读缩写日期：日和月按序数词读、年按基数词读（der 01.02.2009 = der erste zweite zweitausendneun；am 01.02.2009 = am ersten zweiten zweitausendneun）。提问\"第几个\"用 wievielte-，按普通形容词加词尾（mein/dein 后强变化：Dein wievieltes；den 后永远 -en：den wievielten）。\"als + 名词化的序数词\"表示\"作为第几个人\"，紧跟在变位动词后（Ich muss als Erster die Aufgabe beenden.）；名词化序数词的性与隐含名词一致。问星期几：Welchen Wochentag haben wir heute?（Wochentag 四格阳性用 welchen）；口语问日期常用 Der Wievielte ist heute?（默认隐含 der Tag）；问\"几号\"用 Welches Datum ist heute?。Was ist denn heute für ein Tag? 中 was für 是固定搭配意为\"什么样的\"，für 在此作连词而非介词，所以 ein 不用变成 einen。表达观点顺序用副词：erstens、zweitens、drittens。am Montag, dem 5. Juni 与 am Montag, den 5. Juni 都可：dem 是继续作 an 的宾语（静三），den 则是脱离 an 作无介词四格时间状语。\n\n🇬🇧 英语对照：英语 the 1st of February；德语 der erste zweite，月日都用序数词。",
   "table": [
    [
     "表达",
@@ -1261,20 +1261,20 @@
   ],
   "examples": [
    [
-    "Heute ist der vierte Oktober.",
-    "今天是十月四号。"
+    "Welchen Wochentag haben wir heute?",
+    "今天星期几？"
    ],
    [
-    "Wir treffen uns am Montag.",
-    "我们周一见。"
+    "Das ist mein erstes Auto.",
+    "这是我的第一辆车。"
    ],
    [
-    "Mein Geburtstag ist am zwölften Mai.",
-    "我生日是五月十二号。"
+    "Dein wievieltes Auto ist das?",
+    "这是你的第几辆车？"
    ],
    [
-    "Er wurde am ersten Januar geboren.",
-    "他出生在一月一日。"
+    "Ich muss als Erster die Aufgabe beenden.",
+    "我必须第一个完成任务。"
    ]
   ]
  },
@@ -1284,7 +1284,7 @@
   "cat": "mingci",
   "title": "世纪与年代",
   "titleDe": "Jahrhundert",
-  "explain": "世纪 = das Jahrhundert，配序数词（aus dem 20. Jahrhundert，读 zwanzigsten）。基数词加 -er 名词化：der Zehner（10 元面值/10 路车/十位）、die Zwanziger（20 年代，复数）、die Zwanzigerin（20 多岁的女人）。\"XX 年代\"：in den Zwanzigern / in den 20er-Jahren，前面可加世纪（in den 1920ern）。注意不是所有基数词加 -er 都能表货币，约定俗成。\n\n🇬🇧 英语对照：英语 the 20th century / the 90s；德语 Jahrhundert 中性、年代加 -er，基数词大写变名词。",
+  "explain": "Jahrhundert 是中性；\"在某世纪\"用 im + 序数词（im zwanzigsten Jahrhundert）。二十年代（不特指某世纪）的说法：den Zwanzigern、in den Zwanzigern、in den zwanziger Jahren；特指 1920 年代：in den 1920ern、in den 1920er-Jahren。Zehner 双重含义：10 路公交车（der Zehner，复数 die Zehner）和十欧元纸币/硬币；口语 haste = hast du，'nen = einen。易错：im zwanzigsten Jahrhundert = 1900–1999（二十世纪）；中文\"十九世纪\"对应 im neunzehnten Jahrhundert（1800–1899）。aus dem 15. bis zum 18. Jahrhundert：表示作品/藏品\"来自\"某世纪区间用 aus 表来源。序数词读法：\"20.\" 读 zwanzigsten；\"15. bis zum 18.\" 读 fünfzehnten bis zum achtzehnten。1920 年代口语还可说 Neunzehnhundertzwanziger Jahre。\n\n🇬🇧 英语对照：英语 in the 20th century；德语 im zwanzigsten Jahrhundert，世纪=Jahrhundert（百年）。",
   "table": [
    [
     "表达",
@@ -1309,20 +1309,20 @@
   ],
   "examples": [
    [
-    "Das war im 20. Jahrhundert.",
-    "那是二十世纪的事。"
+    "Die Pinakothek der Moderne zeigt bedeutende Kunstwerke aus dem 20. Jahrhundert.",
+    "慕尼黑现代艺术陈列馆展示了来自二十世纪的重要艺术作品。"
    ],
    [
-    "Die Musik der 80er ist toll.",
-    "八十年代的音乐很棒。"
+    "Sie kam im 16. Jahrhundert mit spanischen Seefahrern von Südamerika nach Europa.",
+    "它在16世纪和西班牙水手们一起从南美洲来到了欧洲。"
    ],
    [
-    "In den 1920ern war Berlin wild.",
-    "1920 年代的柏林很狂野。"
+    "Sie ist ein international bedeutendes Museum für Kunst aus dem 20. Jahrhundert.",
+    "它是国际知名的20世纪艺术博物馆。"
    ],
    [
-    "Sie ist in den Zwanzigern.",
-    "她二十多岁。"
+    "Haste mal 'nen Zehner für mich?",
+    "你有十欧元能给我吗？（口语）"
    ]
   ]
  },
@@ -1332,7 +1332,7 @@
   "cat": "xingrong",
   "title": "比较级和最高级：规则变化",
   "titleDe": "Komparativ & Superlativ",
-  "explain": "德语不分单/多音节：比较级一律 +er，最高级一律 +st。作表语的比较级：+er（ist interessanter）；作定语：+er 后再按形容词词尾变（ein schöneres Haus）。作表语的最高级：am + -sten（am schönsten，与主语性别无关，固定形式）；南德口语可用 das schönste。作定语的最高级：定冠词 + 原级 + st + 词尾（das schönste Haus、den billigsten Tisch）。副词比较级/最高级构成同表语形容词（schneller、am schnellsten）。表语只跟 sein/bleiben/werden 系动词。\n\n🇬🇧 英语对照：和英语 faster / the fastest 几乎一一对应；am + -sten 是固定形式，不跟主语变。",
+  "explain": "规则：比较级 = 形容词原级 + er；最高级 = am + 形容词原级 + sten（作表语/状语）或 定冠词 + 形容词原级 + ste + 形容词词尾（作定语）。am + 最高级作表语/状语（Das Haus ist am schönsten.）；冠词 + 最高级 + 词尾作定语（das schönste Haus；den billigsten Tisch）。最高级的词尾变化完全套用形容词原级的词尾规则，只是把词干换成最高级形式——记住这一点就不用背新表。易错点：作定语的最高级必须跟冠词并加词尾；表语最高级只能用 am + sten。英语思路不适用：德语没有\"多音节词配 more/the most\"结构，规则变化范围内所有形容词都用统一的 -er/-ste 后缀。解题三步法：定词性（表语还是定语）→ 定级（比较还是最高）→ 定词尾。\n\n🇬🇧 英语对照：英语 more beautiful / the most beautiful；德语 schöner / am schönsten，一律加后缀。",
   "table": [
    [
     "",
@@ -1361,20 +1361,20 @@
   ],
   "examples": [
    [
-    "Mein Auto ist schneller als deins.",
-    "我的车比你的快。"
+    "Das Buch ist interessanter.",
+    "这本书更有意思。"
    ],
    [
-    "Sie ist größer als ihr Bruder.",
-    "她比她哥哥高。"
+    "Das ist ein schöneres Haus.",
+    "这是一栋更漂亮的房子。"
    ],
    [
-    "Das ist der schönste Tag!",
-    "这是最美好的一天！"
+    "Ich habe einen billigeren Tisch.",
+    "我有一张更便宜的桌子。"
    ],
    [
-    "Er läuft am schnellsten.",
-    "他跑得最快。"
+    "Das Haus ist am schönsten.",
+    "这房子最漂亮。（表语 am+sten）"
    ]
   ]
  },
@@ -1384,7 +1384,7 @@
   "cat": "xingrong",
   "title": "比较级和最高级：半规则变化",
   "titleDe": "Halbregelmäßige Steigerung",
-  "explain": "-el/-auer/-euer 类同样去 e 再加比较级词尾（dunkel→dunkler、teuer→teurer）。-en/-er 结尾：作定语去 e（den trockneren Wein），作表语/副词保留 e（ist trockener）。最高级：-t/-haft/-s/-sk/-ß/-x/-z 结尾先加 -e 再加 -st（am interessantesten、am süßesten）；-d/-sch 结尾的单音节或部分双音节也先加 -e（am rundesten），多音节直接加 -st（am bedeutendsten）。部分单音节加 Umlaut（共 21 个）：alt→älter、jung→jünger、kurz→kürzer、kalt、klug、stark；部分可加可不加（gesund、glatt、nass）；英文借词双写辅音（fit→fitter）。定语用法：先完成特殊变化，再按性数格加词尾（das interessanteste Buch）。\n\n🇬🇧 英语对照：英语也有\"半规则\"（narrow→narrower 可加可不加 more）；德语的规则更细，但高频词就那 21 个变元音的。",
+  "explain": "半规则定义：部分形容词加比较级/最高级词尾前，词干需发生特殊变化（去 e、加变音、加 e 再加 st 等），规律性弱于规则变化但有迹可循。以 -el/-er 结尾的形容词（如 trocken、bitter）加比较级时，作表语/副词保留词干 e（trockener、bitterer），作定语则去 e 再加词尾（den trockneren Wein）。以 -t、-haft、-s、-sk、-ß、-x、-z 结尾的形容词，加最高级时先加 -e 再加 -st（am interessantesten），避免辅音丛难读。单音节及部分双音节形容词加变音：alt→älter、jung→jünger、kurz→kürzer、kalt→kälter、warm→wärmer 等；老师用\"红与黑\"故事帮助记忆全部变音形容词。部分形容词变音可加可不加：口语（尤南德）多用变音形式（gesünder），书面语多用无变音形式（gesunder）。易错点：作定语的比较级/最高级仍要按性数格加词尾（den trockneren Wein）——半规则只管词干，词尾规则照常。发音细节：der、schneller、Kellner 三个 -er 结尾的元音都是 [ɐ]，但 der 是长音 [deːɐ]。\n\n🇬🇧 英语对照：英语 good→better 是彻底不规则；德语\"半规则\"=词干小整形，程度轻得多。",
   "table": [
    [
     "类型",
@@ -1414,20 +1414,20 @@
   ],
   "examples": [
    [
-    "Der dunklere Wein schmeckt besser.",
-    "颜色更深的酒更好喝。"
+    "Dieser Wein ist trockener.",
+    "这种葡萄酒更干。（表语保留 e）"
    ],
    [
-    "Das ist das interessanteste Buch.",
-    "这是最有意思的书。"
+    "Ich mag den trockneren Wein.",
+    "我喜欢更干的那种葡萄酒。（定语去 e）"
    ],
    [
-    "Er ist älter als ich.",
-    "他比我大。"
+    "Dieses Gericht schmeckt bitterer.",
+    "这道菜尝起来更苦。"
    ],
    [
-    "Sie wird immer schöner.",
-    "她越来越漂亮。"
+    "Das Buch ist am interessantesten.",
+    "这本书最有意思。（先加 e 再加 st）"
    ]
   ]
  },
@@ -1437,7 +1437,7 @@
   "cat": "xingrong",
   "title": "比较级和最高级：不规则变化",
   "titleDe": "Unregelmäßige Steigerung",
-  "explain": "不规则表死记：gut→besser→am besten；gern→lieber→am liebsten；hoch→höher→am höchsten；viel→mehr→am meisten；wenig→weniger→am wenigsten；nah→näher→am nächsten；groß→größer→am größten；bald→eher→am ehesten。nächste 已独立为\"下一个\"，作四格时间状语时不加定冠词（nächste Woche、nächstes Jahr）。mehr/weniger 永远只能作副词，不加词尾（Ich habe weniger Geld als du.）；meisten/wenigsten 在定冠词后作形容词时要加词尾（Die meisten Leute）。定语用 das größte Haus，不用 am。\n\n🇬🇧 英语对照：和英语 good→better→best、much→more→most 一样，都是最高频词的不规则变化。",
+  "explain": "不规则表必须死记：bald→eher→am ehesten；gern→lieber→am liebsten；groß→größer→am größten；gut→besser→am besten；hoch→höher→am höchsten；nah→näher→am nächsten；viel→mehr→am meisten；wenig→weniger/minder→am wenigsten/mindesten。nächste 已独立为\"下一个\"：作四格时间状语时前不加定冠词（Nächstes Jahr reise ich...），要加则用 im（Im nächsten Jahr...）。mehr/weniger 永远只能作副词，不能作定语形容词、不加词尾（Ich habe weniger Geld als du. 中修饰 Geld）。meisten/wenigsten 跟在定冠词后可当形容词用，需加词尾（das berühmteste Wirtshaus）。minder 只用于书面/正式场合：mehr oder minder（大体上）作方式状语；nicht minder（不亚于、同样地）修饰其后形容词/动词。\"Ich bin der Meinung, dass...\" 是二格固定搭配（类似英语 of the opinion that），需整体背诵。发音：am wenigsten 中 g 发 [ç]。\n\n🇬🇧 英语对照：英语 good→better→best；德语 gut→besser→am besten，路数一样，逐个背。",
   "table": [
    [
     "原级",
@@ -1467,20 +1467,20 @@
   ],
   "examples": [
    [
-    "Das Wetter wird immer besser.",
-    "天气越来越好。"
+    "Ich zahle lieber mit Kreditkarte.",
+    "我宁愿用信用卡付。"
    ],
    [
-    "Ich trinke lieber Tee als Kaffee.",
-    "比起咖啡我更爱喝茶。"
+    "Ich habe weniger Geld als du.",
+    "我没有你那么多钱。（weniger 作副词）"
    ],
    [
-    "Er hat die meisten Punkte.",
-    "他得分最高。"
+    "München bietet noch viel mehr, zum Beispiel das berühmteste Wirtshaus der Welt.",
+    "慕尼黑还有更多，比如世界上最著名的啤酒馆。"
    ],
    [
-    "Nächste Woche fliege ich weg.",
-    "下周我飞走。（四格不加冠词）"
+    "Wir waren mehr oder minder einer Meinung.",
+    "我们大体上意见一致。（书面 minder）"
    ]
   ]
  },
@@ -1490,7 +1490,7 @@
   "cat": "xingrong",
   "title": "比较级和最高级：用法总结",
   "titleDe": "Gebrauch der Steigerung",
-  "explain": "A>B：比较连词 als（≠介词，后面名词格位与被比较对象一致：Ich liebe dich mehr als sie. 有歧义，格位定意思）；noch/viel/etwas/ein bisschen + 比较级表程度；um/四格名词表差异（um 50%、einen Monat jünger 小一个月）；immer + 比较级 = 越来越；aller- + 最高级强调独一无二（der allerschnellste Wagen）；序数词去 e + 最高级（zweitbeste 第二好、drittgrößte）。A=B：so…wie…（so schnell wie möglich 尽量快）、ebenso/genauso 强调完全一致。A<B：weniger + 原级 / am wenigsten（原级按需加词尾：das am wenigsten teure Auto）；\"最不\"常用反义词最高级代替（billigste 最便宜 = 最不贵）。\n\n🇬🇧 英语对照：als = than（但 als 是连词，格位跟比较对象一致）；so…wie = as…as；immer + 比较级 = more and more。",
+  "explain": "三种比较关系：A>B 用 als + 比较级；A=B 用 so...wie...（可替换为 ebenso/genauso 或副词 gleich）；A<B 用 weniger + 原级或 am wenigsten + 原级（词尾照常加）。强调与程度副词：noch + 比较级（甚至更……）、viel + 比较级（更得多）、etwas/ein bisschen + 比较级（稍……一点）、immer + 比较级（越来越……）、um + 四格或直接四格表差异程度（um einen Monat jünger）。最高级前加 aller- 强调独一无二（der allerschnellste Wagen）；序数词去 e 加最高级前表\"第几最\"（die zweitschönste Frau；die drittgrößte Stadt）。als/wie 是连词非介词：比较对象的格位须与被比较对象一致（Peter ist älter als ich. 用一格 ich）。weniger/wenigsten 作副词修饰形容词时，后面的形容词用原级但仍加词尾（das am wenigsten teure Auto；teuer 去 e）。易错：表语最高级用 am + sten，作定语则定冠词 + 最高级词尾；不能混淆。语言习惯：meine zweite Schwester 不说 meine zweitälteste Schwester；表达\"最不……\"时优先用反义词的最高级。Ich habe dein zweitbestes Buch gelesen. 中 dein 替代了定冠词，不可再加冠词。\n\n🇬🇧 英语对照：英语 than 后接宾格（than me 口语）；德语 als 后格位与被比较对象一致（als ich）。",
   "table": [
    [
     "含义",
@@ -1525,20 +1525,20 @@
   ],
   "examples": [
    [
-    "Er ist einen Monat jünger als ich.",
-    "他比我小一个月。"
+    "Peter ist älter als ich.",
+    "Peter 比我年长。（als 后用一格）"
    ],
    [
-    "Das Wetter wird immer besser.",
-    "天气越来越好。"
+    "Er ist um einen Monat jünger als ich.",
+    "他比我小一个月。（um+四格表差异）"
    ],
    [
-    "So schnell wie möglich!",
-    "越快越好！"
+    "Das ist das am wenigsten teure Auto.",
+    "这是最不贵的那辆车。"
    ],
    [
-    "Das ist das zweitbeste Ergebnis.",
-    "这是第二好的成绩。"
+    "Ich liebe dich mehr als sie.",
+    "我爱你胜过爱她。/我比她更爱你。（歧义句）"
    ]
   ]
  },
@@ -1548,7 +1548,7 @@
   "cat": "jufa",
   "title": "dass 引导的名词性从句",
   "titleDe": "dass-Satz",
-  "explain": "尾语序：变位动词永远居从句最后一位，非变位动词（过去分词、动词原形）倒数第二位；可分动词在从句中不再分开（einkauft、mitkommt）。书面语中 dass 和逗号不可省略；口语中主句动词为 finden/hoffen/denken/glauben（感觉/希望/认为/相信）时 dass 可省略，其他动词后一般不省略。dass 还可引导主语从句/同位语从句（Schön, dass ihr da seid!；Er ist der Meinung, dass… 后者是第二格固定搭配），这些 dass 都不能省略。主从句时态不必一致，尊重事实；从句整体占首位时主句倒装（变位动词第二位）。\n\n🇬🇧 英语对照：和英语 that 从句意思一样，但英语语序不变（I think that you are right），德语动词必须放从句末尾。",
+  "explain": "dass 从句是名词性从句（可作主语、宾语、表语、补语）；dass 旧时写作 daß，1996 年正字法改革后统一写作 dass。书面语中 dass 及其前面的逗号都不能省略。口语中 dass 可省略（Er sagt, er kommt aus Deutschland.），但否定句中 dass 一般不省略。口语中主句动词为 finden/hoffen/denken/glauben（感觉、希望、认为、相信）时 dass 可省略；其他动词后不能省略；schön 后的从句 dass 也不能省略（Schön, dass ihr da seid!）。dass 从句提前作主语时主句要倒装（Dass er mein Geschenk nicht mag, hat mich ziemlich überrascht.）。从句中动词位置：变位动词居句末（dass er aus Deutschland kommt；dass sie mir ein Geschenk gekauft hat）。易错：Ich glaube, du kannst ein ausgezeichneter Schauspieler werden. 中 werden/sein/bleiben 是系动词，表语用主格（ein ausgezeichneter Schauspieler）而非四格。从句时态独立于主句，按从句所表达的时间确定（Sie hat gesagt, dass sie morgen mitkommt. 用现在时表将来）。\n\n🇬🇧 英语对照：英语 that 从句（I think (that) he is right）；德语 dass 口语可省、书面不可省，且从句动词蹲句末。",
   "table": [
    [
     "",
@@ -1573,20 +1573,20 @@
   ],
   "examples": [
    [
-    "Ich denke, dass du recht hast.",
-    "我觉得你是对的。"
+    "Er sagt, dass er aus Deutschland kommt.",
+    "他说他来自德国。"
    ],
    [
-    "Er sagt, dass er keine Zeit hat.",
-    "他说他没时间。"
+    "Er sagt, er kommt aus Deutschland.",
+    "他说他来自德国。（口语省 dass）"
    ],
    [
-    "Ich hoffe, dass das Wetter gut bleibt.",
-    "我希望天气保持晴朗。"
+    "Dass er mein Geschenk nicht mag, hat mich ziemlich überrascht.",
+    "他不喜欢我的礼物，这让我很惊讶。（从句前置主句倒装）"
    ],
    [
-    "Schön, dass ihr da seid!",
-    "你们能来真好！"
+    "Ich glaube, du kannst ein ausgezeichneter Schauspieler werden.",
+    "我相信你能成为一名优秀的演员。（表语用主格）"
    ]
   ]
  },
@@ -1596,7 +1596,7 @@
   "cat": "dongci",
   "title": "将来时",
   "titleDe": "Futur I",
-  "explain": "将来时 = werden 变位 + 动词原形居句尾（框架结构）；从句中 werden 按尾语序放最后（…, die ich hier essen werde）。将来时带有承诺/希望/预言的感情色彩（政客、推销、算命常用）。日常生活中德国人一般用现在时代替将来时（Ich studiere nächstes Jahr in den USA.），除非明确表达承诺/期待。别和英语 will 画等号滥用。\n\n🇬🇧 英语对照：对应英语 will + 动词，但德语口语更爱用现在时表将来（类似英语 I am calling you tomorrow 用进行时表将来）。",
+  "explain": "构成：werden（变位，第二位）+ 动词不定式（句末），服从框型结构。情感色彩：将来时带有强烈的\"承诺、希望、预言\"色彩，常被政客、推销员、算命师使用。德国人日常谈论未来多用现在时，即使事情离现在很远（Ich studiere nächstes Jahr in den USA.；Meine Mutter besucht morgen einen Freund von ihr.；Ich komme bald.）。从句中的将来时：变位动词居从句末（die letzte Pizza, die ich hier essen werde）。易错：将来时不是德语表达未来的默认方式，不要像英语一样逢未来就用 werden 对应 will。bald 表\"马上（短时间内）\"，gleich/sofort 表\"立即\"；Ich komme bald. 是约定好的近未来。\n\n🇬🇧 英语对照：英语 will 表未来是默认选项；德语默认用现在时，将来时自带\"承诺/预言\"语气。",
   "table": [
    [
     "",
@@ -1621,20 +1621,20 @@
   ],
   "examples": [
    [
-    "Ich werde dich morgen anrufen.",
-    "我明天给你打电话。"
+    "Wir werden deine Tasche sicher finden.",
+    "我们一定会找到你的包的。（承诺）"
    ],
    [
-    "Es wird morgen regnen.",
-    "明天会下雨。"
+    "Ich studiere nächstes Jahr in den USA.",
+    "我明年将在美国学习。（现在时表未来）"
    ],
    [
-    "Morgen besuche ich meine Oma.",
-    "明天我去看奶奶。（口语更常用）"
+    "Ich komme bald.",
+    "我马上过来。"
    ],
    [
-    "Wirst du mir helfen?",
-    "你会帮我吗？"
+    "Er wird sicher gleich kommen.",
+    "他肯定很快就会来的。"
    ]
   ]
  },
@@ -1644,7 +1644,7 @@
   "cat": "dongci",
   "title": "一般过去时",
   "titleDe": "Präteritum",
-  "explain": "一般过去时主要用于书面语；口语用现在完成时，但 sein/haben/情态动词/es gibt 在口语中也常用过去时。规则动词：词干 + te + 人称词尾（fragte、arbeitete），特殊词干规则与现在时相同。haben→hatte、sein→war；情态动词：musste/konnte/sollte/durfte/wollte/mochte。不规则动词按元音变换死记：e→a→e（geben→gab→gegeben）、i→a→u（finden→fand→gefunden）、ei→ie（schreiben→schrieb）、o→a（kommen→kam）、ie→o（fliegen→flog）。过去时词尾 -te/-test/-tet/-ten 中的 e 读 [ə]。\n\n🇬🇧 英语对照：对应英语过去时 did/went，但德语口语里完成时抢了它的活，分工比英语更彻底。",
+  "explain": "两种表过去的方法：一般过去时（Präteritum）主要用于书面语；口语中一般用现在完成时（但 sein、haben、情态动词、es gibt 即使在口语中也常用一般过去时）。构成规则：规则动词：词干 + te + 人称词尾（wohnte）；不规则动词：换词干 + 人称词尾（war、hatte、ging、kam）。一、三人称单数在规则动词过去时中形式相同（ich/er/sie/es wohnte）；不规则动词也相同（ich war/er war；ich hatte/er hatte）。不规则动词过去时词干记忆规律（老师口诀）：e→a→e（geben–gab、lesen–las、sehen–sah、essen–aß、vergessen–vergaß）；i→a→u（finden–fand、trinken–trank、singen–sang、beginnen–begann）；ei→ie→ie（bleiben–blieb、schreiben–schrieb、steigen–stieg、leihen–lieh）。其他词干变化组：a→ie（schlafen–schlief、laufen–lief、lassen–ließ、halten–hielt）；ie→o（schließen–schloss、fliegen–flog、ziehen–zog）；o→a（kommen–kam）；u→a（tun–tat）。例句语序：并列句中第二个分句语序正常（und ich war...；aber letztes Jahr hatte ich...）。易错：弱变化动词过去时一、三人称单数是 -te（wohnte），不要与完成时混淆。\n\n🇬🇧 英语对照：英语过去时天天用（went/had）；德语过去时主攻书面语，口语让位给完成时。",
   "table": [
    [
     "",
@@ -1674,20 +1674,20 @@
   ],
   "examples": [
    [
+    "Ich bin jetzt Angestellter, und ich war im Jahr 2000 Student.",
+    "我现在是职员，2000 年时是学生。"
+   ],
+   [
+    "Ich habe im Moment nur eine Tasche, aber letztes Jahr hatte ich drei Taschen.",
+    "现在我只有一个包，但去年我有三个包。"
+   ],
+   [
+    "Er wohnt in China seit zehn Jahren, und wohnte vor zehn Jahren in den USA.",
+    "他在中国住了十年，十年前住在美国。"
+   ],
+   [
     "Er ging nach Hause.",
-    "他回家了。（书面/叙述）"
-   ],
-   [
-    "Sie kam zu spät.",
-    "她迟到了。"
-   ],
-   [
-    "Ich konnte nicht schlafen.",
-    "我睡不着。（情态动词口语也用过去时）"
-   ],
-   [
-    "Es gab ein Problem.",
-    "出了个问题。"
+    "他回家了。（不规则过去时）"
    ]
   ]
  },
@@ -1697,49 +1697,55 @@
   "cat": "vokabel",
   "title": "基数词",
   "titleDe": "Kardinalzahlen",
-  "explain": "1–12 硬背；13–19 = 个位 + zehn（sechzehn 去 s，siebzehn 去 en）；整十 = 数字 + zig（dreißig 写 ß）；21–99 = 个位 + und + 十位（einundzwanzig）；100 = (ein)hundert，1000 = (ein)tausend。eins 后接词时去掉 s（ein Apfel）。读音：vierzehn 的 vier 是短音（例外）；und 的 d 吞音；sechs/sechzehn 的 ch 读 [ks]；zehn 读 [tseːn] 不读 [tsiːn]。\n\n🇬🇧 英语对照：英语 13–19 也是\"个位+teen\"，21–99 也是\"十位-个位\"（twenty-one）；德语把个位放前面（einundzwanzig），顺序反的。",
+  "explain": "1–12 必须死记硬背，没有规律可推。13–19 = 个位 + zehn：sechzehn 中 6 去 s，siebzehn 中 7 去 en；vierzehn 中 vier 发短音是例外。整十数 = 数字 + zig：dreißig 中 3 变 ß，sechzig 中 6 去 s，siebzig 中 7 去 en。21–99 = 个位 + und + 十位（个位在前、十位在后），10–20 之间不能加 und。加减法读法：plus（加）、minus（减）、ist gleich（等于）。eins 后面接其他词时去掉 s（如 ein Apfel）。21–99 中 und 的 d 吞音（不读）。100 = (ein)hundert，1000 = (ein)tausend，10000 = zehntausend。\n\n🇬🇧 英语对照：英语 twenty-one（十位在前）；德语 einundzwanzig（个位在前），顺序反过来。",
   "table": [
    [
     "数字",
-    "德语"
+    "德语",
+    "备注"
    ],
    [
     "0–12",
-    "null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf"
+    "null, eins, zwei … zwölf",
+    "死记"
    ],
    [
-    "13–19",
-    "dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn"
+    "16 / 17",
+    "sechzehn / siebzehn",
+    "6去s，7去en"
    ],
    [
-    "整十",
-    "zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig"
+    "30",
+    "dreißig",
+    "3变ß"
    ],
    [
     "21",
-    "einundzwanzig（个位+und+十位）"
+    "einundzwanzig",
+    "个位+und+十位"
    ],
    [
     "100 / 1000",
-    "(ein)hundert / (ein)tausend"
+    "(ein)hundert / (ein)tausend",
+    ""
    ]
   ],
   "examples": [
    [
-    "Wie alt bist du? – Ich bin zwanzig.",
-    "你多大了？——我二十岁。"
+    "Sieben plus drei ist gleich zehn.",
+    "7+3=10"
    ],
    [
-    "Das Buch kostet zwölf Euro.",
-    "这本书十二欧。"
+    "Neun minus fünf ist gleich vier.",
+    "9−5=4"
    ],
    [
-    "Ein Apfel und eine Birne, bitte.",
-    "请来一个苹果、一个梨。"
+    "Vierundzwanzig plus siebzehn ist gleich einundvierzig.",
+    "24+17=41"
    ],
    [
-    "Hundert minus zwanzig ist achtzig.",
-    "100 减 20 等于 80。"
+    "Dreiundsiebzig minus dreizehn ist gleich sechzig.",
+    "73−13=60"
    ]
   ]
  },
@@ -1749,67 +1755,79 @@
   "cat": "vokabel",
   "title": "国名、语言和国籍",
   "titleDe": "Länder, Sprachen & Nationalitäten",
-  "explain": "国民词两类：中/英/法/俄/土/瑞典等男国民以 -e 结尾（der Chinese），复数 +n；其余男国民以 -er 结尾、单复同形（der Amerikaner）。女性一律加 -in，复数 +nen（die Chinesin/die Chinesinnen）——所有女性国民复数都是 +nen。语言词尾几乎都是 -isch（印度 Hindi 例外），形容词也都是 -isch。特殊国名：die USA、die Niederlande 是复数；die Türkei、die Schweiz 阴性；der Iran 阳性；其余中性。der/die 国名冠词不可省；中性国名通常不带冠词（有形容词修饰时可加 das：das schöne China）。读音：元音前 s 读 [z]（Syrien）；Chinesin 的 i 是短音。\n\n🇬🇧 英语对照：英语 China→Chinese 男女同形；德语男女国民词分开，且女性复数一律 -nen，规则得多。",
+  "explain": "国名性别要单记：der Iran（阳性）；die USA、die Niederlande（复数）；die Türkei、die Schweiz（阴性）；其余大多中性。阳性（der）和阴性/复数（die）国名前冠词绝对不能省略；中性国名一般不加冠词，但形容词修饰等特定情况可加 das。国民词规律：中英法俄土耳其瑞典六国，男性国民词尾 -e（复数 +n），女性在男性基础上去 e 加 in（复数加 nen）；其他国家男性国民词尾 -er（复数不变），女性直接加 in（复数加 nen）。所有女性国民词复数一律加 -nen。语言名称词尾都是 -isch（印度 Hindi 例外）；国名形容词词尾也都是 -isch（包括 indisch）。国家、语言、形容词三者高度关联，连带记忆效率最高。发音细节：Syrien 的 s 在元音前发 [z]；Frankreich 是复合词（Frank-reich），中间辅音不分开；Chinesin 中 i 是短音。\n\n🇬🇧 英语对照：英语 German 既是德国人又是德语还是形容词；德语 der Deutsche / Deutsch / deutsch 三个形式分工明确。",
   "table": [
    [
     "国家",
     "语言",
-    "男国民",
-    "女国民",
+    "国民（男/女）",
     "形容词"
    ],
    [
-    "中国",
-    "Chinesisch",
-    "der Chinese",
-    "die Chinesin",
-    "chinesisch"
-   ],
-   [
-    "美国",
-    "Englisch",
-    "der Amerikaner",
-    "die Amerikanerin",
-    "amerikanisch"
-   ],
-   [
-    "德国",
+    "Deutschland",
     "Deutsch",
-    "der Deutsche",
-    "die Deutsche",
+    "der Deutsche / die Deutsche",
     "deutsch"
    ],
    [
-    "法国",
+    "China",
+    "Chinesisch",
+    "der Chinese / die Chinesin",
+    "chinesisch"
+   ],
+   [
+    "Frankreich",
     "Französisch",
-    "der Franzose",
-    "die Französin",
+    "der Franzose / die Französin",
     "französisch"
    ],
    [
-    "日本",
+    "die USA",
+    "Englisch",
+    "der Amerikaner / die Amerikanerin",
+    "amerikanisch"
+   ],
+   [
+    "Russland",
+    "Russisch",
+    "der Russe / die Russin",
+    "russisch"
+   ],
+   [
+    "Japan",
     "Japanisch",
-    "der Japaner",
-    "die Japanerin",
+    "der Japaner / die Japanerin",
     "japanisch"
+   ],
+   [
+    "die Schweiz",
+    "—",
+    "der Schweizer / die Schweizerin",
+    "schweizerisch"
+   ],
+   [
+    "die Türkei",
+    "Türkisch",
+    "der Türke / die Türkin",
+    "türkisch"
    ]
   ],
   "examples": [
    [
-    "Ich komme aus China.",
-    "我来自中国。"
+    "Er kommt aus China.",
+    "他来自中国。"
    ],
    [
-    "Er ist Amerikaner, sie ist Amerikanerin.",
-    "他是美国人，她是美国人（女）。"
+    "Sie spricht Französisch.",
+    "她说法语。"
    ],
    [
-    "Sprichst du Deutsch?",
-    "你会说德语吗？"
+    "Der Schweizer spricht Deutsch.",
+    "这位瑞士人说德语。"
    ],
    [
-    "Die Schweiz ist sehr schön.",
-    "瑞士很美。"
+    "Die Türkin wohnt in Berlin.",
+    "这位土耳其女士住在柏林。"
    ]
   ]
  },
@@ -1819,65 +1837,53 @@
   "cat": "vokabel",
   "title": "学业和职业",
   "titleDe": "Studium & Beruf",
-  "explain": "lernen（学习，泛指）vs studieren（上大学）。学校：die Schule（中小学）/ der Schüler（中小学生）/ die Universität / der Student（大学生）。女性职业词以 -in 结尾、复数 +nen；男性以 -er 结尾单复同形；以 t 结尾的男性复数 +en；Koch→Köche、Arzt→Ärzte 加变元音。以 -tik 结尾的名词是阴性（die Informatik）。Kommissar 指刑侦警探，Polizist 是警察统称。\n\n🇬🇧 英语对照：英语 teacher/student 不分男女；德语职业词分阴阳性，女性统一 -in，和法语 -euse 思路类似。",
+  "explain": "lernen vs studieren：lernen 泛指\"学习\"（语言、技能）；studieren 专指大学及以上阶段的学习和研究。学习阶段名词配套：die Schule/der Schüler 指中小学；die Universität/der Student 指大学——两者不可混用。学科名词性别规律：-tik/-ik 后缀几乎都是阴性（Mathematik、Physik、Musik），多源自希腊语；-tät/-ität 也是阴性（如 die Universität）；例外如 der Maschinenbau（阳性）要单独记。女性职业统一以 -in 结尾、复数加 -nen；男性职业复数：-er 结尾单复同形（Lehrer、Ingenieur），-t 结尾加 en（Student、Assistent），-r 结尾加 e（Kommissar），另有变元音加 e 的特殊形式（Koch→Köche、Arzt→Ärzte）。询问职业的常用表达：Was sind Sie von Beruf?（您是做什么工作的？）复合词拆分记忆：Betriebswirtschaft = Betrieb（企业）+ Wirtschaft（经济）。外来词发音：英语借词 Manager 中的 a 在德语里发 [ε] 而非 [æ]。\n\n🇬🇧 英语对照：英语 study 通吃；德语 lernen（学东西）vs studieren（上大学）分工明确。",
   "table": [
    [
-    "职业",
-    "阳性",
-    "阴性"
+    "词",
+    "中文"
    ],
    [
-    "老师",
-    "der Lehrer",
-    "die Lehrerin"
+    "die Schule / der Schüler",
+    "中小学 / 中小学生"
    ],
    [
-    "医生",
-    "der Arzt",
-    "die Ärztin"
+    "die Universität / der Student",
+    "大学 / 大学生"
    ],
    [
-    "大学生",
-    "der Student",
-    "die Studentin"
+    "Informatik / Medizin / Jura",
+    "计算机科学 / 医学 / 法律"
    ],
    [
-    "工程师",
-    "der Ingenieur",
-    "die Ingenieurin"
+    "der Ingenieur / der Arzt",
+    "工程师 / 医生"
    ],
    [
-    "厨师",
-    "der Koch",
-    "die Köchin"
+    "der Lehrer / der Koch",
+    "老师 / 厨师"
    ],
    [
-    "学科",
-    "die Architektur（建筑）",
-    "die Informatik（计算机）"
-   ],
-   [
-    "学科",
-    "die Medizin（医学）",
-    "Jura（法律，无冠词）"
+    "Was sind Sie von Beruf?",
+    "您是做什么工作的？"
    ]
   ],
   "examples": [
    [
-    "Ich studiere Medizin in Berlin.",
-    "我在柏林学医。"
+    "Was sind Sie von Beruf?",
+    "您是做什么工作的？"
    ],
    [
-    "Meine Mutter ist Lehrerin.",
-    "我妈妈是老师。"
+    "Er studiert Medizin.",
+    "他学医。（大学阶段）"
    ],
    [
-    "Er arbeitet als Ingenieur.",
-    "他当工程师。"
+    "Sie ist Lehrerin.",
+    "她是老师。（女性职业 -in）"
    ],
    [
-    "Was bist du von Beruf?",
-    "你是做什么工作的？"
+    "Ich lerne Deutsch.",
+    "我在学德语。（lernen 泛指）"
    ]
   ]
  },
@@ -1887,70 +1893,53 @@
   "cat": "vokabel",
   "title": "颜色的表达",
   "titleDe": "Farben",
-  "explain": "形容词首字母大写即变为中性名词（das Rot 红色）。hell-/dunkel- 前缀表浅深（hellblau 浅蓝）。本土颜色词作定语要加词尾（ein schwarzes Auto）；外来颜色词作定语不加词尾（ein rosa Auto）——\"ein rosanes Auto\"这种写法连本族人都常犯错。提问：Welche Farbe hat…?（…是什么颜色？）\n\n🇬🇧 英语对照：英语 pink/blue 作定语永远不变；德语本土颜色词要加词尾，外来词不加——这是个\"土著 vs 外来\"的双轨制。",
+  "explain": "询问颜色的固定句型：Welche Farbe hat XXX? 回答：Das Auto ist rot.。两种词尾规则：德语自有颜色词（schwarz、weiß、rot、blau、grün、gelb、braun、grau）作定语要加词尾（einen schwarzen Tisch）；外来语颜色词（rosa、pink、lila、beige、orange、türkis）永远不加词尾（mein neues rosa Auto）。易错点：\"ein rosanes Auto\"\"eine orangene Tasche\" 虽母语者也常说，但按规则是错误的——书面语和考试中必须用不变形式。hell-（浅）/dunkel-（深）作前缀直接复合（hellblau、dunkelblau）；hell 可单独作形容词用（浅的、明亮的）。颜色形容词首字母大写即变成中性名词（das Gelb）；但 Türkis 情况特殊：der Türkis 是阳性名词（绿松石），形容词形式 türkis 不变词尾。加了 -farbig/-farben 后缀（\"……色的\"）的词必须加词尾（türkisfarben → einen türkisfarbenen Tisch）。发音：beige 作表语读 [be:ʃ]，orange 读法语鼻音；die Farbe 是阴性名词，复数 Farben。\n\n🇬🇧 英语对照：英语 pink 作定语不变；德语自有颜色词要变，外来颜色词不变——看词源。",
   "table": [
    [
     "颜色",
-    "形容词",
-    "名词"
+    "说明"
    ],
    [
-    "红",
-    "rot",
-    "das Rot"
+    "schwarz / weiß / rot",
+    "黑色/白色/红色（加词尾）"
    ],
    [
-    "蓝",
-    "blau",
-    "das Blau"
+    "gelb / blau / grün",
+    "黄色/蓝色/绿色（加词尾）"
    ],
    [
-    "绿",
-    "grün",
-    "das Grün"
+    "braun / grau",
+    "棕色/灰色（加词尾）"
    ],
    [
-    "黄",
-    "gelb",
-    "das Gelb"
+    "rosa / pink / lila",
+    "粉色/紫色（永不加词尾）"
    ],
    [
-    "黑",
-    "schwarz",
-    "das Schwarz"
+    "beige / orange",
+    "米色/橘红（永不加词尾）"
    ],
    [
-    "白",
-    "weiß",
-    "das Weiß"
-   ],
-   [
-    "粉（外来，不变）",
-    "rosa",
-    "das Rosa"
-   ],
-   [
-    "紫（外来，不变）",
-    "lila",
-    "das Lila"
+    "hellblau / dunkelblau",
+    "浅蓝/深蓝（复合词）"
    ]
   ],
   "examples": [
    [
-    "Welche Farbe hat dein Auto? – Es ist rot.",
-    "你车什么颜色？——红色的。"
+    "Welche Farbe hat das Auto?",
+    "那辆车是什么颜色的？"
    ],
    [
-    "Sie trägt ein blaues Kleid.",
-    "她穿着一条蓝裙子。"
+    "Das Auto ist rot.",
+    "那辆车是红色的。"
    ],
    [
-    "Das Rosa steht dir gut.",
-    "粉色很适合你。"
+    "Ich habe einen schwarzen Tisch.",
+    "我有一张黑色的桌子。（加词尾）"
    ],
    [
-    "Ich mag dunkelblau.",
-    "我喜欢深蓝色。"
+    "Du kannst mein neues rosa Auto fahren.",
+    "你可以开我的新粉色车。（不加词尾）"
    ]
   ]
  },
@@ -1960,45 +1949,45 @@
   "cat": "vokabel",
   "title": "一年四季",
   "titleDe": "Jahreszeiten",
-  "explain": "春 der Frühling、夏 der Sommer、秋 der Herbst、冬 der Winter——四个全是阳性。季节前用 im（im Frühling 在春天）。天气动词：regnen（下雨）、schneien（下雪），主语用 es：Es regnet. / Es schneit.。\n\n🇬🇧 英语对照：英语 in spring / in summer；德语 im = in dem（三格），季节是阳性所以用 dem。",
+  "explain": "四季名称均为阳性：der Frühling、der Sommer、der Herbst、der Winter。天气动词用无人称主语 es：Es regnet.（下雨）/ Es schneit.（下雪）——表示天气现象时主语必须是 es。复数规律：der Frühling→Frühlinge；die Wolke→Wolken（-e 变 -n）；der Sturm→Stürme（变元音 + e）；das Gewitter→Gewitter（不变）。名词辨析：der Regen（雨，阳性）、der Nebel（雾，阳性）、das Eis（冰，中性）、die Kälte（寒冷，阴性）、der Frost（霜冻，阳性）——词性各不相同，需分别记忆。表示温度：Temperatur: 35 Grad（35 度）；Temperatur: minus 10 Grad（零下 10 度）。常用短句：Der Wind weht.（刮风了）/ Die Sonne scheint.（艳阳高照）/ Man friert.（人们挨冻）/ der blaue Himmel（蓝天）。按春夏秋冬的天气现象成组背单词：春（Regen、Wolke）、夏（Sonne、Hitze、Gewitter）、秋（Sturm、Nebel）、冬（Schnee、Eis、Kälte、Frost）。\n\n🇬🇧 英语对照：英语 It rains / It snows；德语 Es regnet / Es schneit，无人称 es 一一对应。",
   "table": [
    [
-    "季节",
-    "词汇"
+    "季节/天气",
+    "词"
    ],
    [
-    "春 der Frühling",
-    "der Regen（雨）、Es regnet.、der Wind（风）、die Wolke（云）"
+    "春天/夏天/秋天/冬天",
+    "der Frühling / Sommer / Herbst / Winter（阳性）"
    ],
    [
-    "夏 der Sommer",
-    "Die Sonne scheint.、die Hitze（酷热）、das Gewitter（雷暴）"
+    "下雨/下雪",
+    "Es regnet. / Es schneit."
    ],
    [
-    "秋 der Herbst",
-    "der Sturm（暴风雨）、der Nebel（雾）"
+    "云/风暴/雾",
+    "die Wolke / der Sturm / der Nebel"
    ],
    [
-    "冬 der Winter",
-    "der Schnee（雪）、Es schneit.、das Eis（冰）、die Kälte（寒冷）"
+    "冰/寒冷/霜冻",
+    "das Eis / die Kälte / der Frost"
    ]
   ],
   "examples": [
    [
-    "Im Frühling blühen die Blumen.",
-    "春天花开。"
+    "Es regnet.",
+    "下雨了。（无人称 es）"
    ],
    [
-    "Im Sommer ist es sehr heiß.",
-    "夏天很热。"
+    "Es schneit.",
+    "下雪了。"
    ],
    [
-    "Im Herbst fällt das Laub.",
-    "秋天落叶。"
+    "Der Wind weht.",
+    "刮风了。"
    ],
    [
-    "Im Winter schneit es oft.",
-    "冬天经常下雪。"
+    "Die Sonne scheint.",
+    "艳阳高照。"
    ]
   ]
  },
@@ -2008,41 +1997,57 @@
   "cat": "vokabel",
   "title": "个人物品",
   "titleDe": "Persönliche Gegenstände",
-  "explain": "三类：箱包、衣物、随身物品。Rucksack 是双肩包，Mappe 是夹在腋下的小包/文件夹。女套装区分：Kostüm（裙式套装）、Hosenanzug（裤式套装）、Badeanzug（连体泳衣）vs Bikini（分体）。\n\n🇬🇧 英语对照：英语 backpack/handbag；德语箱包词多且细（Koffer 箱子 vs Tasche 包），买错词会闹笑话。",
+  "explain": "Rucksack vs Mappe：背在背上的书包是 der Rucksack；Mappe 一般是夹在腋下的小包，更多时候指文件夹。西装细分：der Anzug 指男士西装；der Hosenanzug 指配有长裤的成套女西装；das Kostüm 指配有半身裙的成套女西装。泳衣细分：der Badeanzug 指连体泳衣、女士泳衣（泛指）；der Bikini 指比基尼（两截式）；die Badehose 指泳裤。复数要点：der Rucksack→Rucksäcke、der Anzug→Anzüge、der Mantel→Mäntel（变元音 + e）；das Hemd→Hemden（-en）；das Kleid→Kleider（-er）；英语借词复数加 -s（das T-Shirt→T-Shirts）。词性记忆：箱包类多为 der/die（der Koffer、die Handtasche），随身物品多为 der（der Pass、der Laptop、der Regenschirm），但 das Handy、die Kreditkarte、das Geld 例外。同义区分：der Schlafanzug（睡衣，阳性，分体式）与 das Nachthemd（睡衣，罩衫式）同义但词性不同。旅行必备词可与 Reise 主题联记：das Geld（钱）、der Führerschein（驾照）、der Fotoapparat（照相机）。\n\n🇬🇧 英语对照：英语 suit 通吃男女西装；德语 Anzug/Hosenanzug/Kostüm 按性别款式细分。",
   "table": [
    [
-    "类别",
-    "词汇"
+    "词",
+    "中文"
    ],
    [
-    "箱包",
-    "der Koffer（箱子）、der Rucksack（双肩包）、die Handtasche（手提包）"
+    "der Koffer / der Rucksack",
+    "行李箱 / 背包"
    ],
    [
-    "衣物",
-    "das Hemd（衬衫）、die Hose（裤子）、das Kleid（连衣裙）、der Mantel（大衣）、der Pullover（毛衣）、die Socke（袜子）"
+    "die Handtasche",
+    "手提包"
    ],
    [
-    "随身",
-    "das Geld（钱）、der Pass（护照）、das Handy（手机）、der Regenschirm（雨伞）、die Sonnenbrille（墨镜）、der Führerschein（驾照）"
+    "der Anzug / das Hemd",
+    "男士西装 / 衬衫"
+   ],
+   [
+    "der Mantel / das Kleid",
+    "大衣 / 连衣裙"
+   ],
+   [
+    "der Pass / die Kreditkarte",
+    "护照 / 信用卡"
+   ],
+   [
+    "das Handy / der Laptop",
+    "手机 / 笔记本电脑"
+   ],
+   [
+    "der Regenschirm / die Sonnenbrille",
+    "雨伞 / 墨镜"
    ]
   ],
   "examples": [
+   [
+    "Ich packe meinen Koffer.",
+    "我在收拾行李箱。"
+   ],
    [
     "Wo ist mein Pass?",
     "我的护照在哪？"
    ],
    [
-    "Nimm einen Regenschirm mit!",
-    "带把伞！"
+    "Er trägt einen Anzug.",
+    "他穿着西装。"
    ],
    [
-    "Die Hose ist zu lang.",
-    "这裤子太长了。"
-   ],
-   [
-    "Hast du dein Handy dabei?",
-    "你带手机了吗？"
+    "Nimm den Regenschirm mit!",
+    "带上雨伞！"
    ]
   ]
  },
@@ -2052,49 +2057,65 @@
   "cat": "vokabel",
   "title": "建筑、居家与方位",
   "titleDe": "Gebäude, Wohnen & Richtung",
-  "explain": "方位：in der Stadt（城里）vs auf dem Land（乡下，介词不同！）、am Stadtrand（城郊）；东西南北 der Osten/Westen/Süden/Norden；links 左转、rechts 右转、geradeaus 直走。楼层：das Erdgeschoss 是底楼（德语从 0 开始，erste Stock = 我们的二楼！）。电梯 der Aufzug/Fahrstuhl。Keller 多指昏暗的地窖式地下室，Untergeschoss 可指商场地下一层。室内地面 der Boden vs 室外 die Erde。问洗手间：餐厅用 Toilette，别用 Bad/Badezimmer（必须带洗澡设施）；Klo 是口语，正式场合不用。Balkon 小阳台 vs Terrasse 大平台/露台。\n\n🇬🇧 英语对照：英语 first floor 在英美还不一样（英=我们的二楼，美=一楼）；德语 Erdgeschoss + erste Stock 跟英式一致，租房看房时别走错层。",
+  "explain": "介词搭配：城市用 in（in der Stadt），农村用 auf（auf dem Land），郊区用 an（am Stadtrand）——记忆时把常用介词一起记。Keller 指地窖式昏暗地下室；Untergeschoss 指超市/商场地下一层（不昏暗，和其他楼层差不多）。Erde vs Boden：室外地面用 Erde，室内地面用 Boden；抽象的土地/耕地/土壤用 Boden，具体的泥土（如手捧的）用 Erde。卫生间细分：Bad/Badezimmer（带洗澡设施的浴室，餐厅里别说）；Toilette（通用卫生间，餐厅可用）；WC（water closet）；Klo（口语\"厕所\"，正式场合别用）。Balkon（小阳台）vs Terrasse（大平台/露台，一般在一楼地面或楼顶）。楼层词汇：Erdgeschoss（一楼地面层）、Obergeschoss（非地面层）、Dachgeschoss（顶层）、Untergeschoss/Keller（地下室）；Etage/Stock/Stockwerk/Geschoss 都表\"层\"。复数：das Dach→Dächer；der Keller→Keller（不变）；der Stuhl→Stühle；der Fahrstuhl→Fahrstühle。\n\n🇬🇧 英语对照：英语 ground floor（英）/ first floor（美）各地不同；德语 Erdgeschoss（一楼）全国统一。",
   "table": [
    [
-    "类别",
-    "词汇"
+    "表达",
+    "中文"
    ],
    [
-    "方位",
-    "in der Stadt（城里）、auf dem Land（乡下）、links/rechts/geradeaus"
+    "in der Stadt / auf dem Land",
+    "在城市 / 在农村"
    ],
    [
-    "建筑",
-    "das Haus（房子）、die Wohnung（公寓）、das Hochhaus（高楼）、die Villa（别墅）"
+    "am Stadtrand",
+    "在郊区"
    ],
    [
-    "楼层",
-    "das Erdgeschoss（底楼）、der erste Stock、der Aufzug（电梯）、die Treppe（楼梯）"
+    "nach links / nach rechts",
+    "左转 / 右转"
    ],
    [
-    "房间",
-    "das Wohnzimmer（客厅）、das Schlafzimmer（卧室）、die Küche（厨房）、der Balkon（阳台）"
+    "geradeaus gehen",
+    "直走"
    ],
    [
-    "周边",
-    "der Bahnhof（火车站）、die Apotheke（药店）、das Rathaus（市政厅）"
+    "das Gebäude / das Hochhaus",
+    "建筑物 / 高楼"
+   ],
+   [
+    "die Villa / das Reihenhaus",
+    "别墅 / 联排别墅"
+   ],
+   [
+    "das Erdgeschoss",
+    "一楼（地面层）"
+   ],
+   [
+    "der Aufzug / der Lift",
+    "电梯"
+   ],
+   [
+    "das Wohnzimmer / das Schlafzimmer",
+    "客厅 / 卧室"
    ]
   ],
   "examples": [
    [
-    "Ich wohne auf dem Land.",
-    "我住在乡下。"
+    "Ich wohne in der Stadt.",
+    "我住在城市。"
    ],
    [
-    "Gehen Sie geradeaus, dann links.",
-    "直走，然后左转。"
+    "Gehen Sie geradeaus.",
+    "请直走。"
    ],
    [
-    "Wir wohnen im dritten Stock.",
-    "我们住在三楼（德语 3 层）。"
+    "Die Wohnung ist im Erdgeschoss.",
+    "这套房在一楼。"
    ],
    [
-    "Wo ist die Toilette, bitte?",
-    "请问洗手间在哪？"
+    "Wo ist die Toilette?",
+    "卫生间在哪？"
    ]
   ]
  },
@@ -2104,70 +2125,65 @@
   "cat": "vokabel",
   "title": "住房申请",
   "titleDe": "Wohnungsbewerbung",
-  "explain": "模拟租房申请表（中介 Immobilienmaklerbüro）。个人信息：Name（姓）、Vorname（名）、Geburtsdatum（出生日期）、Geschlecht（性别）、Geburtsort（出生地）、Nationalität（国籍）、Arbeitgeber（雇主）、Monatliches Einkommen（月收入）。住房要求：Anzahl der Zimmer（房间数）、Größe in Quadratmeter（平米）、Maximale Miete inkl. NK（最高租金含杂费）、Etage（楼层）、Lage（位置）、Ausstattung（配置）。Makler 可以是个人或机构，Agentur 只能指机构。金额写法 2900,– Euro（逗号是小数点，短横表示整）。\n\n🇬🇧 英语对照：英语租房也填 application form；德语 NK = Nebenkosten（杂费），看房时租金分 Kaltmiete（冷租）和 Warmmiete（暖租含杂费），问价要问 inkl. NK。",
+  "explain": "Fragen zur Person 中 zu 表\"针对、向\"，表示方向：Fragen zur Person = 针对租客的问题；类似 Fragen zur Arbeit、ein Buch zum Thema。性别栏第三选项 divers（多样），适用于非男非女的申请人。\"问题\"的介词：一般只能用 zu（eine Frage zu + 三格），只有讨论深奥哲学问题时可用 nach（eine Frage nach dem Sinn des Lebens）。收入写法：2900,– Euro — 德语小数点用逗号，,– 表示\"整\"（无小数）；不是英文式写法。Anzahl der Zimmer 可写成复合词 Zimmeranzahl（数量词 + 名词复合），两者等价。Makler vs Agentur：Makler 可指个人也可指机构，Agentur 只能指机构不能指人——不可完全互换。表格实务：Etage 填\"nicht Erdgeschoss\"表不租一楼；Lage 填\"Stadtmitte/Osten\"；Ausstattung 列所需设施（Bad, Balkon）；Miete 后\"inkl. NK\"表含附加费用。复合词拆分：Immobilienmaklerbüro = Immobilien（不动产）+ Makler（中介）+ Büro（办公室），德语复合名词拆分理解更高效。\n\n🇬🇧 英语对照：英语 2,900 euros（逗号分位）；德语 2900,– Euro（逗号小数点），写法反过来。",
   "table": [
    [
-    "字段",
-    "德语",
+    "词",
     "中文"
    ],
    [
-    "姓名",
-    "der Name / der Vorname",
-    "姓 / 名"
+    "der Immobilienmakler",
+    "房屋中介"
    ],
    [
-    "出生日期",
+    "der Vorname / der Name",
+    "名 / 姓"
+   ],
+   [
     "das Geburtsdatum",
-    ""
+    "出生日期"
    ],
    [
-    "国籍",
+    "das Geschlecht",
+    "性别（männlich/weiblich/divers）"
+   ],
+   [
     "die Nationalität",
-    ""
+    "国籍"
    ],
    [
-    "雇主",
     "der Arbeitgeber",
-    ""
+    "雇主"
    ],
    [
-    "月收入",
     "das monatliche Einkommen",
-    ""
+    "月收入"
    ],
    [
-    "房间数",
-    "die Anzahl der Zimmer",
-    ""
+    "die Miete / die Nebenkosten",
+    "房租 / 附加费用"
    ],
    [
-    "面积",
-    "die Größe in Quadratmeter",
-    "平米"
-   ],
-   [
-    "租金",
-    "die Miete inkl. NK",
-    "含杂费"
+    "die Ausstattung",
+    "设施配置"
    ]
   ],
   "examples": [
    [
-    "Wie hoch ist die Miete inkl. NK?",
-    "含杂费租金多少？"
+    "Wie hoch ist die Miete?",
+    "房租多少？"
    ],
    [
-    "Die Wohnung hat drei Zimmer.",
-    "这公寓有三个房间。"
+    "Ist die Miete inkl. Nebenkosten?",
+    "房租含附加费用吗？"
    ],
    [
-    "Was ist Ihr monatliches Einkommen?",
-    "您的月收入是多少？"
+    "Die Wohnung liegt in der Stadtmitte.",
+    "这套房在市中心。"
    ],
    [
-    "Die Wohnung liegt im zweiten Stock.",
-    "公寓在二楼。"
+    "Wir suchen eine Wohnung mit Balkon.",
+    "我们在找带阳台的房子。"
    ]
   ]
  },
@@ -2177,82 +2193,43 @@
   "cat": "vokabel",
   "title": "身体部位",
   "titleDe": "Körperteile",
-  "explain": "23 个词，复数要一起背。注意变音复数：Hand→Hände、Zahn→Zähne、Fuß→Füße、Kopf→Köpfe、Mund→Münder、Arm→Arme（不加变音也对，常用 Arme）、Finger 单复同形。说\"哪疼\"：Dativ + wehtun（Mein Kopf tut weh. 我头疼）。\n\n🇬🇧 英语对照：英语 tooth→teeth、foot→feet 也是变元音复数；德语变音复数（ä/ö/ü）是对应现象，成体系得多。",
+  "explain": "身体部位词性各不相同，记忆时必须连冠词一起背。复数规律：die Hand→Hände、der Zahn→Zähne、der Fuß→Füße、der Kopf→Köpfe、der Hals→Hälse、der Mund→Münder（变元音 + e）；das Ohr→Ohren（+en）；das Auge→Augen（-en）；der Rücken、der Ellenbogen、der Finger（仅 +e 或不变）。复合词拆分：das Handgelenk（手腕）、das Fußgelenk（脚踝）——Gelenk（关节）通用。das Haar 单数指\"一根头发\"，常用复数 die Haare 表\"头发\"。从头到脚顺序记忆：Kopf→Auge→Nase→Mund→Hals→Brust→Bauch→Rücken→Arm→Hand→Bein→Knie→Fuß。音近区分：das Haar（头发）与 der Hals（脖子）音近，注意区分；der Bauch（肚子）复数变元音 Bäuche。der Po（屁股）是口语常用词，正式场合可用 der Hintern 替代。\n\n🇬🇧 英语对照：英语 hand→hands 规则复数；德语身体部位复数多变元音（Hand→Hände），逐个记。",
   "table": [
    [
-    "部位",
-    "单数",
-    "复数"
+    "词",
+    "中文"
    ],
    [
-    "头",
-    "der Kopf",
-    "die Köpfe"
+    "der Kopf / das Auge",
+    "头 / 眼睛"
    ],
    [
-    "眼",
-    "das Auge",
-    "die Augen"
+    "die Nase / der Mund",
+    "鼻子 / 嘴巴"
    ],
    [
-    "鼻",
-    "die Nase",
-    "die Nasen"
+    "der Hals / der Rücken",
+    "脖子 / 后背"
    ],
    [
-    "嘴",
-    "der Mund",
-    "die Münder"
+    "der Arm / die Hand",
+    "胳膊 / 手"
    ],
    [
-    "牙",
-    "der Zahn",
-    "die Zähne"
+    "der Finger / das Handgelenk",
+    "手指 / 手腕"
    ],
    [
-    "手",
-    "die Hand",
-    "die Hände"
+    "die Brust / der Bauch",
+    "胸部 / 肚子"
    ],
    [
-    "手指",
-    "der Finger",
-    "die Finger"
+    "das Bein / das Knie",
+    "腿 / 膝盖"
    ],
    [
-    "胳膊",
-    "der Arm",
-    "die Arme"
-   ],
-   [
-    "腿",
-    "das Bein",
-    "die Beine"
-   ],
-   [
-    "脚",
-    "der Fuß",
-    "die Füße"
-   ],
-   [
-    "膝",
-    "das Knie",
-    "die Knie"
-   ],
-   [
-    "背",
-    "der Rücken",
-    "die Rücken"
-   ],
-   [
-    "肚",
-    "der Bauch",
-    "die Bäuche"
-   ],
-   [
-    "耳",
-    "das Ohr",
-    "die Ohren"
+    "der Fuß / die Zehe",
+    "脚 / 脚趾"
    ]
   ],
   "examples": [
@@ -2261,12 +2238,12 @@
     "我头疼。"
    ],
    [
-    "Er hat blaue Augen.",
-    "他有蓝眼睛。"
-   ],
-   [
     "Wasch dir die Hände!",
     "洗手！"
+   ],
+   [
+    "Er hat blaue Augen.",
+    "他有蓝眼睛。"
    ],
    [
     "Mein Fuß tut weh.",
