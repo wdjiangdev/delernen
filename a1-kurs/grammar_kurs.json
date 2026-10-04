@@ -1,0 +1,1503 @@
+[
+ {
+  "num": "A1-01~04",
+  "id": "aussprache",
+  "cat": "yuyin",
+  "title": "字母表与发音规则",
+  "titleDe": "Alphabet & Aussprache",
+  "explain": "德语字母表 = 26 个拉丁字母 + ä ö ü ß。发音基本\"见字读音\"，但几个组合要单记：sch 读 sh（Schule），sp- 读 shp-（Sport），st- 读 sht-（Stadt），ei 读\"爱\"（mein），ie 读\"伊\"（Liebe），eu/äu 读\"奥伊\"（heute），ch 在 ich 里是轻擦音，w 读 v（Wasser），v 读 f（Vater），z 读 ts（Zeit），ß 就是 ss（Straße）。\n\n🇬🇧 英语对照：英语发音例外多（though/through），德语基本按拼读；但德语有英语没有的音：ch（ich）、小舌音 r、变元音 ä ö ü。",
+  "table": [
+   [
+    "拼写",
+    "发音",
+    "例子"
+   ],
+   [
+    "sch",
+    "sh",
+    "die Schule（学校）"
+   ],
+   [
+    "sp- / st-",
+    "shp- / sht-",
+    "der Sport / die Stadt"
+   ],
+   [
+    "ei / ie",
+    "爱 / 伊",
+    "mein / die Liebe"
+   ],
+   [
+    "eu / äu",
+    "奥伊",
+    "heute（今天）"
+   ],
+   [
+    "w / v / z",
+    "v / f / ts",
+    "Wasser / Vater / Zeit"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich spreche Deutsch.",
+    "我说德语。"
+   ],
+   [
+    "Die Schule ist groß.",
+    "学校很大。"
+   ],
+   [
+    "Mein Vater wohnt in Berlin.",
+    "我父亲住在柏林。"
+   ],
+   [
+    "Heute ist das Wetter schön.",
+    "今天天气很好。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-05",
+  "id": "artikel_nomen",
+  "cat": "mingci",
+  "title": "冠词和名词",
+  "titleDe": "Artikel & Nomen",
+  "explain": "德语名词有三种性：阳性 der、阴性 die、中性 das，复数统一 die。名词首字母永远大写。性没有绝对规则（倾向：-ung/-heit/-keit 多为阴性，-chen/-lein 多为中性），只能和单词一起背。不定冠词：ein（阳/中）、eine（阴）。\n\n🇬🇧 英语对照：英语只有 the/a/an 不分性；德语冠词要随性、数、格变化，是德语最需要死记的部分。",
+  "table": [
+   [
+    "",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "定冠词",
+    "der Mann",
+    "die Frau",
+    "das Kind",
+    "die Kinder"
+   ],
+   [
+    "不定冠词",
+    "ein Mann",
+    "eine Frau",
+    "ein Kind",
+    "—"
+   ]
+  ],
+  "examples": [
+   [
+    "Der Mann trinkt Kaffee.",
+    "那个男人在喝咖啡。"
+   ],
+   [
+    "Die Frau liest ein Buch.",
+    "那个女人在读书。"
+   ],
+   [
+    "Das Kind spielt im Garten.",
+    "孩子在花园里玩。"
+   ],
+   [
+    "Die Kinder sind müde.",
+    "孩子们累了。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-06",
+  "id": "konjugation",
+  "cat": "dongci",
+  "title": "人称代词和动词变位",
+  "titleDe": "Personalpronomen & Konjugation",
+  "explain": "德语动词按人称变位：词干 + 词尾（ich -e，du -st，er/sie/es -t，wir -en，ihr -t，sie/Sie -en）。元音变化动词只在 du 和 er/sie/es 变：e→i（sprechen→spricht）、e→ie（sehen→sieht）、a→ä（fahren→fährt）。\n\n🇬🇧 英语对照：英语只有三单加 -s（he makes），德语 6 个人称 5 套词尾；英语不规则动词（go-went-gone）对应德语的元音变化，思路一样。",
+  "table": [
+   [
+    "人称",
+    "词尾",
+    "machen"
+   ],
+   [
+    "ich",
+    "-e",
+    "mache"
+   ],
+   [
+    "du",
+    "-st",
+    "machst"
+   ],
+   [
+    "er/sie/es",
+    "-t",
+    "macht"
+   ],
+   [
+    "wir",
+    "-en",
+    "machen"
+   ],
+   [
+    "ihr",
+    "-t",
+    "macht"
+   ],
+   [
+    "sie/Sie",
+    "-en",
+    "machen"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich lerne Deutsch.",
+    "我在学德语。"
+   ],
+   [
+    "Du sprichst gut Deutsch.",
+    "你德语说得很好。"
+   ],
+   [
+    "Er sieht einen Film.",
+    "他在看电影。"
+   ],
+   [
+    "Wir fahren nach Berlin.",
+    "我们开车去柏林。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-07",
+  "id": "satzbau",
+  "cat": "jufa",
+  "title": "句子的语序",
+  "titleDe": "Satzbau",
+  "explain": "陈述句动词永远在第二位（是第二个\"成分\"不是第二个词：Heute gehe ich…）。是非疑问句动词放句首（Kommst du?）。特殊疑问句疑问词第一、动词第二（Wo wohnst du?）。\n\n🇬🇧 英语对照：英语疑问句也是\"疑问词+助动词+主语\"；德语铁律是主句动词第二位，时间地点状语前置时主语要后移，这是德语特有的。",
+  "table": [
+   [
+    "类型",
+    "结构",
+    "例子"
+   ],
+   [
+    "陈述句",
+    "主语 + 动词2位",
+    "Ich lerne Deutsch."
+   ],
+   [
+    "状语前置",
+    "时间 + 动词2位 + 主语",
+    "Heute lerne ich Deutsch."
+   ],
+   [
+    "是非问句",
+    "动词1位 + 主语",
+    "Lernst du Deutsch?"
+   ],
+   [
+    "特殊问句",
+    "疑问词 + 动词2位 + 主语",
+    "Was lernst du?"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich wohne in Shanghai.",
+    "我住在上海。"
+   ],
+   [
+    "Heute bleibe ich zu Hause.",
+    "今天我待在家里。"
+   ],
+   [
+    "Kommst du mit?",
+    "你一起来吗？"
+   ],
+   [
+    "Wo arbeitest du?",
+    "你在哪里工作？"
+   ]
+  ]
+ },
+ {
+  "num": "A1-12",
+  "id": "possessiv",
+  "cat": "mingci",
+  "title": "物主代词",
+  "titleDe": "Possessivpronomen",
+  "explain": "mein 我的、dein 你的、sein 他的/它的、ihr 她的/它们的、unser 我们的、euer 你们的、Ihr 您的（尊称大写）。词尾变化和 ein 完全一样：mein Vater / meine Mutter / mein Kind / meine Eltern。\n\n🇬🇧 英语对照：英语 my/your 永远不变，德语物主代词要随后面名词的性、数、格加词尾，和冠词 ein 的变法一致。",
+  "table": [
+   [
+    "",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "一格",
+    "mein Vater",
+    "meine Mutter",
+    "mein Kind",
+    "meine Eltern"
+   ],
+   [
+    "四格",
+    "meinen Vater",
+    "meine Mutter",
+    "mein Kind",
+    "meine Eltern"
+   ]
+  ],
+  "examples": [
+   [
+    "Das ist mein Bruder.",
+    "这是我哥哥。"
+   ],
+   [
+    "Ihre Tasche ist rot.",
+    "她的包是红色的。"
+   ],
+   [
+    "Unser Lehrer ist nett.",
+    "我们的老师人很好。"
+   ],
+   [
+    "Ist das euer Auto?",
+    "这是你们的车吗？"
+   ]
+  ]
+ },
+ {
+  "num": "A1-18",
+  "id": "trennbar",
+  "cat": "dongci",
+  "title": "可分动词",
+  "titleDe": "Trennbare Verben",
+  "explain": "可分动词 = 前缀 + 动词（如 ankommen）。陈述句和疑问句中前缀分开、蹦到句末（Ich komme um 8 Uhr an.）；从句、过去分词（angekommen）、不定式中不分开。\n\n🇬🇧 英语对照：英语动词短语 pick up / turn off 也有分离（pick it up）；德语是前缀分离，位置固定在句末。",
+  "table": [
+   [
+    "",
+    "陈述句",
+    "从句"
+   ],
+   [
+    "ankommen",
+    "Ich komme an.",
+    "…, weil ich ankomme."
+   ],
+   [
+    "aufstehen",
+    "Ich stehe auf.",
+    "…, weil ich aufstehe."
+   ]
+  ],
+  "examples": [
+   [
+    "Der Zug kommt um 8 Uhr an.",
+    "火车8点到达。"
+   ],
+   [
+    "Mach bitte das Licht an!",
+    "请开灯！"
+   ],
+   [
+    "Ruf mich später an.",
+    "晚点给我打电话。"
+   ],
+   [
+    "Sie steht früh auf.",
+    "她起得很早。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-19",
+  "id": "modal",
+  "cat": "dongci",
+  "title": "情态动词",
+  "titleDe": "Modalverben",
+  "explain": "六个：können 能、müssen 必须、dürfen 可以（被允许）、sollen 应该、wollen 想要、mögen 喜欢（möchten 更委婉）。变位不规则（ich kann, du kannst…），句中另一个动词用原形放句末：Ich kann Deutsch sprechen.。\n\n🇬🇧 英语对照：和英语 can/must/may/shall/will 一一对应，位置也一样在主要动词前；区别是德语主要动词被踢到句末。",
+  "table": [
+   [
+    "",
+    "können",
+    "müssen",
+    "wollen"
+   ],
+   [
+    "ich",
+    "kann",
+    "muss",
+    "will"
+   ],
+   [
+    "du",
+    "kannst",
+    "musst",
+    "willst"
+   ],
+   [
+    "er/sie/es",
+    "kann",
+    "muss",
+    "will"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich kann gut schwimmen.",
+    "我很会游泳。"
+   ],
+   [
+    "Du musst mir helfen.",
+    "你必须帮我。"
+   ],
+   [
+    "Wir wollen nach Hause gehen.",
+    "我们想回家。"
+   ],
+   [
+    "Darf ich hier parken?",
+    "我可以在这停车吗？"
+   ]
+  ]
+ },
+ {
+  "num": "A1-20",
+  "id": "negation",
+  "cat": "jufa",
+  "title": "否定句",
+  "titleDe": "Negation",
+  "explain": "kein 否定名词（= 没有），nicht 否定其他一切（动词、形容词、整个句子）。kein 的词尾和 ein 一样变。nicht 在句中的位置看否定对象，初学记住\"nicht 常放句末\"基本够用。\n\n🇬🇧 英语对照：英语 no/not 分工类似（no + 名词，not + 动词）；德语 kein 要变格是英语没有的。",
+  "table": [
+   [
+    "",
+    "kein（+名词）",
+    "nicht（其他）"
+   ],
+   [
+    "例子",
+    "kein Geld（没有钱）",
+    "nicht gut（不好）"
+   ],
+   [
+    "变格",
+    "随 ein 变",
+    "不变"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe kein Auto.",
+    "我没有车。"
+   ],
+   [
+    "Das ist keine gute Idee.",
+    "这不是个好主意。"
+   ],
+   [
+    "Ich komme heute nicht.",
+    "我今天不来。"
+   ],
+   [
+    "Der Film ist nicht interessant.",
+    "这电影没意思。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-21",
+  "id": "imperativ",
+  "cat": "dongci",
+  "title": "命令式",
+  "titleDe": "Imperativ",
+  "explain": "对 du 说话用动词词干（Komm! Mach!），元音变化动词保留变化（Sprich! Lies!）；对 ihr 加 -t（Kommt!）；对 Sie 用\"Sie + 原形\"（Kommen Sie!）。加 bitte 语气变礼貌。\n\n🇬🇧 英语对照：英语命令式也是动词原形（Come!）；德语多了 du/ihr/Sie 三套，Sie 式最正式。",
+  "table": [
+   [
+    "对象",
+    "形式",
+    "例子"
+   ],
+   [
+    "du",
+    "词干",
+    "Komm her!"
+   ],
+   [
+    "ihr",
+    "词干 + t",
+    "Kommt her!"
+   ],
+   [
+    "Sie",
+    "Sie + 原形",
+    "Kommen Sie bitte her!"
+   ]
+  ],
+  "examples": [
+   [
+    "Komm bitte her!",
+    "请过来！"
+   ],
+   [
+    "Sprich langsamer!",
+    "说慢一点！"
+   ],
+   [
+    "Macht die Tür zu!",
+    "把门关上！（对你们说）"
+   ],
+   [
+    "Nehmen Sie bitte Platz!",
+    "请坐！（尊称）"
+   ]
+  ]
+ },
+ {
+  "num": "A1-45",
+  "id": "akkusativ",
+  "cat": "gejie",
+  "title": "第四格",
+  "titleDe": "Akkusativ",
+  "explain": "第四格 = 直接宾语，回答\"谁/什么\"（wen/was）。只有阳性单数冠词变化：der→den、ein→einen；阴性、中性、复数和一格一样。记住：变化只发生在阳性单数。\n\n🇬🇧 英语对照：英语宾格只有代词变化（he→him），名词本身不变；德语是冠词变化，且只变阳性单数。",
+  "table": [
+   [
+    "格",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "一格",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "四格",
+    "den",
+    "die",
+    "das",
+    "die"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich sehe den Mann.",
+    "我看见那个男人。"
+   ],
+   [
+    "Sie kauft einen Apfel.",
+    "她买一个苹果。"
+   ],
+   [
+    "Wir lieben das Wetter.",
+    "我们喜欢这天气。"
+   ],
+   [
+    "Er besucht seine Freunde.",
+    "他拜访他的朋友们。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-46",
+  "id": "dativ",
+  "cat": "gejie",
+  "title": "第三格",
+  "titleDe": "Dativ",
+  "explain": "第三格 = 间接宾语，回答\"给谁/为谁\"（wem）。变化：der→dem、die→der、das→dem、die（复数）→den + 名词加 n。固定支配三格的动词：helfen（帮助）、danken（感谢）、gratulieren（祝贺）、gehören（属于）。\n\n🇬🇧 英语对照：英语 I give him a book 里 him 兼任宾格与格；德语把直接/间接宾语用四格/三格严格区分。",
+  "table": [
+   [
+    "格",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "一格",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "三格",
+    "dem",
+    "der",
+    "dem",
+    "den + n"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich helfe dem Mann.",
+    "我帮助那个男人。"
+   ],
+   [
+    "Sie dankt der Frau.",
+    "她感谢那位女士。"
+   ],
+   [
+    "Das gehört mir.",
+    "这属于我。"
+   ],
+   [
+    "Er gratuliert seinem Freund.",
+    "他祝贺他的朋友。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-47",
+  "id": "praep_dativ",
+  "cat": "gejie",
+  "title": "支配三格的介词",
+  "titleDe": "Präpositionen mit Dativ",
+  "explain": "固定支配三格的介词：aus（从…出来）、bei（在…处）、mit（和…一起/用）、nach（往…去/…之后）、seit（自从）、von（来自）、zu（向…去）。死记不如造句用熟。\n\n🇬🇧 英语对照：英语介词不支配格；德语这些介词后面永远跟三格，按固定搭配记。",
+  "table": [
+   [
+    "介词",
+    "含义",
+    "例子"
+   ],
+   [
+    "aus",
+    "从…里出来",
+    "Ich komme aus China."
+   ],
+   [
+    "bei",
+    "在…处",
+    "Er wohnt bei seinen Eltern."
+   ],
+   [
+    "mit",
+    "和…/用…",
+    "Ich fahre mit dem Bus."
+   ],
+   [
+    "nach",
+    "往…/…之后",
+    "Nach dem Essen gehe ich."
+   ],
+   [
+    "seit",
+    "自从",
+    "Seit einem Jahr lerne ich Deutsch."
+   ],
+   [
+    "von / zu",
+    "来自 / 向…",
+    "ein Geschenk von mir / zu meiner Freundin"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich komme aus Shanghai.",
+    "我来自上海。"
+   ],
+   [
+    "Er wohnt bei seinen Eltern.",
+    "他和父母住在一起。"
+   ],
+   [
+    "Ich fahre mit dem Fahrrad zur Arbeit.",
+    "我骑车上班。"
+   ],
+   [
+    "Seit einem Jahr lerne ich Deutsch.",
+    "我学德语一年了。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-48",
+  "id": "praep_akk",
+  "cat": "gejie",
+  "title": "支配四格的介词",
+  "titleDe": "Präpositionen mit Akkusativ",
+  "explain": "固定支配四格的介词：durch（穿过）、für（为了）、gegen（反对/撞上）、ohne（没有）、um（围绕；也表钟点）。für + 四格最常用。\n\n🇬🇧 英语对照：同样按固定搭配记；um 很有意思，既表\"围绕\"又表钟点（um 8 Uhr 八点钟）。",
+  "table": [
+   [
+    "介词",
+    "含义",
+    "例子"
+   ],
+   [
+    "durch",
+    "穿过",
+    "Er geht durch den Park."
+   ],
+   [
+    "für",
+    "为了",
+    "Das ist für dich."
+   ],
+   [
+    "gegen",
+    "反对/撞上",
+    "Das Auto fährt gegen einen Baum."
+   ],
+   [
+    "ohne",
+    "没有",
+    "Ohne dich gehe ich nicht."
+   ],
+   [
+    "um",
+    "围绕/在…点",
+    "um den Tisch / um 8 Uhr"
+   ]
+  ],
+  "examples": [
+   [
+    "Das Geschenk ist für dich.",
+    "这礼物是给你的。"
+   ],
+   [
+    "Er geht durch den Park.",
+    "他穿过公园。"
+   ],
+   [
+    "Ohne Kaffee kann ich nicht arbeiten.",
+    "没有咖啡我没法工作。"
+   ],
+   [
+    "Der Unterricht beginnt um 9 Uhr.",
+    "课九点开始。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-50",
+  "id": "uhrzeit",
+  "cat": "jufa",
+  "title": "时间的询问与表达",
+  "titleDe": "Uhrzeit",
+  "explain": "问时间：Wie spät ist es? / Wie viel Uhr ist es? 整点：um 8 Uhr。半点：halb neun = 8:30（\"九点的一半\"，不是八点半！）。一刻钟：viertel nach acht（8:15）、viertel vor neun（8:45）。正式场合用 24 小时制直读。\n\n🇬🇧 英语对照：英语 half past eight 是\"八点过半\"，德语 halb neun 是\"离九点差一半\"——方向是反的，最容易错。",
+  "table": [
+   [
+    "时间",
+    "说法"
+   ],
+   [
+    "8:00",
+    "acht Uhr"
+   ],
+   [
+    "8:15",
+    "viertel nach acht"
+   ],
+   [
+    "8:30",
+    "halb neun"
+   ],
+   [
+    "8:45",
+    "viertel vor neun"
+   ]
+  ],
+  "examples": [
+   [
+    "Wie spät ist es?",
+    "现在几点了？"
+   ],
+   [
+    "Es ist halb neun.",
+    "现在八点半。"
+   ],
+   [
+    "Der Film beginnt um viertel nach acht.",
+    "电影八点一刻开始。"
+   ],
+   [
+    "Wir treffen uns um halb zehn.",
+    "我们九点半见。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-68",
+  "id": "mengen",
+  "cat": "mingci",
+  "title": "量词的使用",
+  "titleDe": "Mengenangaben",
+  "explain": "量词 + 名词：ein Glas Wasser（一杯水）、eine Tasse Kaffee、ein Stück Kuchen。注意：量词后的名词用一格单数、不加词尾（zwei Glas Wasser，不说 Gläser）。viel/wenig 后面直接跟名词也不加词尾（viel Wasser）。\n\n🇬🇧 英语对照：英语 a glass of water 有 of，德语直接并列；英语 two glasses 用复数，德语量词不变。",
+  "table": [
+   [
+    "量词",
+    "例子"
+   ],
+   [
+    "ein Glas",
+    "ein Glas Wasser（一杯水）"
+   ],
+   [
+    "eine Tasse",
+    "eine Tasse Tee（一杯茶）"
+   ],
+   [
+    "ein Stück",
+    "ein Stück Kuchen（一块蛋糕）"
+   ],
+   [
+    "eine Flasche",
+    "eine Flasche Wein（一瓶酒）"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich trinke ein Glas Wasser.",
+    "我喝一杯水。"
+   ],
+   [
+    "Zwei Tassen Kaffee, bitte!",
+    "请来两杯咖啡！"
+   ],
+   [
+    "Er isst ein Stück Kuchen.",
+    "他吃一块蛋糕。"
+   ],
+   [
+    "Wir brauchen viel Mehl.",
+    "我们需要很多面粉。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-70",
+  "id": "wechsel",
+  "cat": "gejie",
+  "title": "“静三动四”：双向介词",
+  "titleDe": "Wechselpräpositionen",
+  "explain": "双向介词 an、auf、hinter、in、neben、über、unter、vor、zwischen：表静态位置跟三格（\"静三\"），表方向移动跟四格（\"动四\"）。Ich bin in der Schule（我在学校，三格）vs Ich gehe in die Schule（我去学校，四格）。\n\n🇬🇧 英语对照：英语用不同介词区分（in vs into），德语用同一个介词、靠格来区分——这是德语格系统最漂亮的地方。",
+  "table": [
+   [
+    "介词",
+    "静三（位置）",
+    "动四（方向）"
+   ],
+   [
+    "in",
+    "Ich bin in der Schule.",
+    "Ich gehe in die Schule."
+   ],
+   [
+    "auf",
+    "Das Buch liegt auf dem Tisch.",
+    "Ich lege das Buch auf den Tisch."
+   ],
+   [
+    "an",
+    "Das Bild hängt an der Wand.",
+    "Er hängt das Bild an die Wand."
+   ]
+  ],
+  "examples": [
+   [
+    "Die Katze sitzt auf dem Stuhl.",
+    "猫坐在椅子上。"
+   ],
+   [
+    "Die Katze springt auf den Stuhl.",
+    "猫跳上椅子。"
+   ],
+   [
+    "Er hängt das Bild an die Wand.",
+    "他把画挂到墙上。"
+   ],
+   [
+    "Das Bild hängt an der Wand.",
+    "画挂在墙上。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-71",
+  "id": "adjektiv",
+  "cat": "xingrong",
+  "title": "形容词词尾",
+  "titleDe": "Adjektivdeklination",
+  "explain": "形容词作定语要加词尾，分三种：定冠词后加弱词尾 -e/-en（der gute Mann, den guten Mann）；不定冠词后混合变化（ein guter Mann）；无冠词后强变化（guter Mann, mit kaltem Wasser）。初学先记最常用的：der/die/das + 形容词 + -e（der neue Film）。\n\n🇬🇧 英语对照：英语形容词永远不变（a good man / the good man），德语形容词词尾是 A1 最大的记忆负担，靠高频句型磨熟。",
+  "table": [
+   [
+    "",
+    "阳性",
+    "阴性",
+    "中性"
+   ],
+   [
+    "定冠词后",
+    "der gute Mann",
+    "die gute Frau",
+    "das gute Kind"
+   ],
+   [
+    "不定冠词后",
+    "ein guter Mann",
+    "eine gute Frau",
+    "ein gutes Kind"
+   ]
+  ],
+  "examples": [
+   [
+    "Der neue Film ist spannend.",
+    "这部新电影很刺激。"
+   ],
+   [
+    "Ich kaufe einen roten Apfel.",
+    "我买一个红苹果。"
+   ],
+   [
+    "Sie hat eine schöne Stimme.",
+    "她有动听的嗓音。"
+   ],
+   [
+    "Die kleinen Kinder spielen draußen.",
+    "小孩子们在外面玩。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-73",
+  "id": "perfekt",
+  "cat": "dongci",
+  "title": "现在完成时",
+  "titleDe": "Perfekt",
+  "explain": "现在完成时 = haben/sein + 过去分词，口语里说过去的事都用它。haben 用于绝大多数动词；sein 给表位移/状态变化的（gehen→ist gegangen, aufstehen→ist aufgestanden）。过去分词：规则 ge + 词干 + t（gemacht），不规则要背（gesehen, getrunken, gefahren）。\n\n🇬🇧 英语对照：结构对应英语现在完成时 have done（Ich habe gesehen = I have seen）；但德语口语里它承担了英语过去时 did 的工作。",
+  "table": [
+   [
+    "",
+    "haben",
+    "sein"
+   ],
+   [
+    "结构",
+    "ich habe gemacht",
+    "ich bin gegangen"
+   ],
+   [
+    "用于",
+    "大多数动词",
+    "位移 + 状态变化"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe gestern viel gearbeitet.",
+    "我昨天工作了很多。"
+   ],
+   [
+    "Sie ist nach Berlin gefahren.",
+    "她开车去了柏林。"
+   ],
+   [
+    "Wir haben einen Film gesehen.",
+    "我们看了一部电影。"
+   ],
+   [
+    "Bist du schon aufgestanden?",
+    "你起床了吗？"
+   ]
+  ]
+ },
+ {
+  "num": "A1-74",
+  "id": "praet_hs",
+  "cat": "dongci",
+  "title": "haben 和 sein 的过去时",
+  "titleDe": "Präteritum von haben/sein",
+  "explain": "haben 和 sein 的过去时用 Präteritum：ich hatte, ich war。口语里说\"我当时是/有…\"就用这两个（Ich war müde.），不用完成时。这是德语最高频的两个过去式，先背熟。\n\n🇬🇧 英语对照：对应英语 had / was，和英语一样是最高频的不规则过去式。",
+  "table": [
+   [
+    "",
+    "haben",
+    "sein"
+   ],
+   [
+    "ich",
+    "hatte",
+    "war"
+   ],
+   [
+    "du",
+    "hattest",
+    "warst"
+   ],
+   [
+    "er/sie/es",
+    "hatte",
+    "war"
+   ],
+   [
+    "wir",
+    "hatten",
+    "waren"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich hatte keine Zeit.",
+    "我没有时间。"
+   ],
+   [
+    "Er war gestern krank.",
+    "他昨天病了。"
+   ],
+   [
+    "Wir waren im Kino.",
+    "我们在电影院。"
+   ],
+   [
+    "Hattest du Spaß?",
+    "你玩得开心吗？"
+   ]
+  ]
+ },
+ {
+  "num": "A1-93",
+  "id": "adj_nom",
+  "cat": "xingrong",
+  "title": "形容词的名词化",
+  "titleDe": "Nominalisierte Adjektive",
+  "explain": "形容词可以名词化：首字母大写、按名词变格。表人：der Deutsche 德国人（die Deutsche, die Deutschen）；表物：etwas Neues（新东西）、nichts Besonderes（没什么特别的）。词尾按形容词词尾规则加。\n\n🇬🇧 英语对照：英语 the rich / the poor 也有形容词作名词，但不变格；德语名词化后完整走一遍性数格。",
+  "table": [
+   [
+    "",
+    "单数",
+    "复数"
+   ],
+   [
+    "表人（阳）",
+    "der Deutsche",
+    "die Deutschen"
+   ],
+   [
+    "表物（中）",
+    "etwas Neues",
+    "—"
+   ],
+   [
+    "例子",
+    "das Gute（好事）",
+    "—"
+   ]
+  ],
+  "examples": [
+   [
+    "Ein Deutscher wohnt nebenan.",
+    "一个德国人住在隔壁。"
+   ],
+   [
+    "Hast du etwas Neues gehört?",
+    "你听到什么新鲜事了吗？"
+   ],
+   [
+    "Das Beste kommt noch.",
+    "最好的还在后头。"
+   ],
+   [
+    "Nichts Besonderes.",
+    "没什么特别的。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-94",
+  "id": "adj_sonder",
+  "cat": "xingrong",
+  "title": "特殊的形容词词尾变化",
+  "titleDe": "Besondere Adjektive",
+  "explain": "几个形容词词尾变化特殊：hoch→hoh-（ein hoher Berg）；以 -el 结尾的去 e（dunkel→ein dunkles Zimmer）；teuer 保留 e（eine teure Uhr）。还有 rosa / lila / prima / orange 作定语时永远不变（eine rosa Blume）。\n\n🇬🇧 英语对照：类似英语的不规则（good→better），都是高频词的特殊形式，单独记。",
+  "table": [
+   [
+    "形容词",
+    "变化",
+    "例子"
+   ],
+   [
+    "hoch",
+    "→ hoh-",
+    "ein hoher Berg（一座高山）"
+   ],
+   [
+    "dunkel",
+    "→ dunkl-",
+    "ein dunkles Zimmer"
+   ],
+   [
+    "teuer",
+    "→ teur-",
+    "eine teure Uhr"
+   ],
+   [
+    "rosa / lila",
+    "不变",
+    "eine rosa Blume"
+   ]
+  ],
+  "examples": [
+   [
+    "Der Berg ist sehr hoch.",
+    "这山很高。"
+   ],
+   [
+    "Ein hohes Haus steht dort.",
+    "那里有一栋高楼。"
+   ],
+   [
+    "Das Zimmer ist dunkel.",
+    "房间很暗。"
+   ],
+   [
+    "Sie trägt eine rosa Blume im Haar.",
+    "她头发上戴着一朵粉色的花。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-95",
+  "id": "viel_wenig",
+  "cat": "xingrong",
+  "title": "viel 和 wenig 的词尾变化",
+  "titleDe": "viel / wenig",
+  "explain": "viel（多）和 wenig（少）单数时永远不变（viel Wasser, wenig Zeit）；复数时按形容词强变化加词尾（viele Leute, wenigen Freunden）。考试常考点。\n\n🇬🇧 英语对照：英语 much/many 按可数不可数区分，德语按单复数决定变不变。",
+  "table": [
+   [
+    "",
+    "单数（不变）",
+    "复数（强变化）"
+   ],
+   [
+    "viel",
+    "viel Geld",
+    "viele Freunde"
+   ],
+   [
+    "wenig",
+    "wenig Zeit",
+    "wenige Fehler"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe viel Arbeit.",
+    "我有很多工作。"
+   ],
+   [
+    "Er hat wenig Geld.",
+    "他没什么钱。"
+   ],
+   [
+    "Viele Leute warten draußen.",
+    "很多人在外面等。"
+   ],
+   [
+    "Mit wenigen Worten erklärte er alles.",
+    "他用寥寥数语解释了一切。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-96",
+  "id": "datum",
+  "cat": "mingci",
+  "title": "日期、月份和序数词",
+  "titleDe": "Datum & Ordinalzahlen",
+  "explain": "日期：am 4. Oktober（在10月4日，序数词 + 三格）。星期：am Montag。年份：im Jahr 2026。序数词：1–19 加 -t（der vierte），20 以上加 -st（der zwanzigste）；不规则：der erste（第一）、der dritte（第三）、der siebte、der achte。\n\n🇬🇧 英语对照：英语 October 4th / on Monday；德语日期用序数词 + 三格（am vierten Oktober），和英语 on the 4th of October 思路接近。",
+  "table": [
+   [
+    "表达",
+    "德语"
+   ],
+   [
+    "在某天",
+    "am 4. Oktober"
+   ],
+   [
+    "在星期几",
+    "am Montag"
+   ],
+   [
+    "在某年",
+    "im Jahr 2026"
+   ],
+   [
+    "序数词",
+    "der erste, der zweite, der dritte"
+   ]
+  ],
+  "examples": [
+   [
+    "Heute ist der vierte Oktober.",
+    "今天是十月四号。"
+   ],
+   [
+    "Wir treffen uns am Montag.",
+    "我们周一见。"
+   ],
+   [
+    "Mein Geburtstag ist am zwölften Mai.",
+    "我生日是五月十二号。"
+   ],
+   [
+    "Er wurde am ersten Januar geboren.",
+    "他出生在一月一日。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-97",
+  "id": "jahrhundert",
+  "cat": "mingci",
+  "title": "世纪、年代和基数词的名词化",
+  "titleDe": "Jahrhundert & Zahlennominalisierung",
+  "explain": "世纪：das 20. Jahrhundert（二十世纪，序数词）。年代：die 90er（Jahre）（九十年代）。基数词名词化：die Eins（一这个数字）、die Million（百万，阴性！）。\n\n🇬🇧 英语对照：英语 the 20th century / the 90s；德语 Jahrhundert 中性、年代加 -er，基数词大写变名词。",
+  "table": [
+   [
+    "表达",
+    "德语"
+   ],
+   [
+    "世纪",
+    "das 21. Jahrhundert"
+   ],
+   [
+    "年代",
+    "in den 80er Jahren"
+   ],
+   [
+    "数字名词",
+    "die Eins, die Zwei"
+   ],
+   [
+    "百万",
+    "eine Million Euro"
+   ]
+  ],
+  "examples": [
+   [
+    "Das war im 20. Jahrhundert.",
+    "那是二十世纪的事。"
+   ],
+   [
+    "Die Musik der 80er ist toll.",
+    "八十年代的音乐很棒。"
+   ],
+   [
+    "Eine Million Menschen leben hier.",
+    "一百万人住在这里。"
+   ],
+   [
+    "Schreib eine Eins an die Tafel!",
+    "在黑板上写个\"1\"！"
+   ]
+  ]
+ },
+ {
+  "num": "A1-113",
+  "id": "komparativ",
+  "cat": "xingrong",
+  "title": "比较级和最高级：基本规则",
+  "titleDe": "Komparativ & Superlativ",
+  "explain": "比较级：形容词 + -er（schnell→schneller）；最高级：am + -sten（am schnellsten），或定冠词 + -ste（der schnellste）。比较用 als（比），同级用 so…wie / genauso…wie。单音节形容词常变元音（groß→größer, alt→älter, jung→jünger）。\n\n🇬🇧 英语对照：和英语 faster / the fastest 几乎一一对应；als = than，so…wie = as…as。",
+  "table": [
+   [
+    "原级",
+    "比较级",
+    "最高级"
+   ],
+   [
+    "schnell",
+    "schneller",
+    "am schnellsten"
+   ],
+   [
+    "groß",
+    "größer",
+    "am größten"
+   ],
+   [
+    "teuer",
+    "teurer",
+    "am teuersten"
+   ]
+  ],
+  "examples": [
+   [
+    "Mein Auto ist schneller als deins.",
+    "我的车比你的快。"
+   ],
+   [
+    "Sie ist größer als ihr Bruder.",
+    "她比她哥哥高。"
+   ],
+   [
+    "Das ist der schönste Tag!",
+    "这是最美好的一天！"
+   ],
+   [
+    "Er läuft am schnellsten.",
+    "他跑得最快。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-114/115",
+  "id": "komparativ_unreg",
+  "cat": "xingrong",
+  "title": "比较级和最高级：不规则变化",
+  "titleDe": "Unregelmäßige Steigerung",
+  "explain": "不规则比较级必须死记：gut→besser→am besten；viel→mehr→am meisten；gern→lieber→am liebsten；nah→näher→am nächsten；hoch→höher→am höchsten。半规则：以 -el/-er 结尾的去 e（dunkel→dunkler, teuer→teurer）。\n\n🇬🇧 英语对照：和英语 good→better→best、much→more→most 一样，都是最高频词的不规则变化。",
+  "table": [
+   [
+    "原级",
+    "比较级",
+    "最高级"
+   ],
+   [
+    "gut",
+    "besser",
+    "am besten"
+   ],
+   [
+    "viel",
+    "mehr",
+    "am meisten"
+   ],
+   [
+    "gern",
+    "lieber",
+    "am liebsten"
+   ],
+   [
+    "hoch",
+    "höher",
+    "am höchsten"
+   ]
+  ],
+  "examples": [
+   [
+    "Das Wetter wird immer besser.",
+    "天气越来越好。"
+   ],
+   [
+    "Ich trinke lieber Tee als Kaffee.",
+    "比起咖啡我更爱喝茶。"
+   ],
+   [
+    "Er hat die meisten Punkte.",
+    "他得分最高。"
+   ],
+   [
+    "Mir geht es am besten.",
+    "我感觉棒极了。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-137",
+  "id": "dass_satz",
+  "cat": "jufa",
+  "title": "dass 引导的从句",
+  "titleDe": "dass-Satz",
+  "explain": "dass 引导名词性从句，相当于英语的 that：Ich denke, dass du recht hast. 规则：dass 后整个从句的变位动词被踢到句末；主句和从句之间加逗号。\n\n🇬🇧 英语对照：和英语 that 从句意思一样，但英语语序不变（I think that you are right），德语动词必须放从句末尾。",
+  "table": [
+   [
+    "",
+    "主句",
+    "从句"
+   ],
+   [
+    "基本",
+    "Ich weiß,",
+    "dass er heute kommt."
+   ],
+   [
+    "带情态",
+    "Ich glaube,",
+    "dass sie Deutsch lernen will."
+   ]
+  ],
+  "examples": [
+   [
+    "Ich denke, dass du recht hast.",
+    "我觉得你是对的。"
+   ],
+   [
+    "Er sagt, dass er keine Zeit hat.",
+    "他说他没时间。"
+   ],
+   [
+    "Ich hoffe, dass das Wetter gut bleibt.",
+    "我希望天气保持晴朗。"
+   ],
+   [
+    "Weißt du, dass sie aus Berlin kommt?",
+    "你知道她来自柏林吗？"
+   ]
+  ]
+ },
+ {
+  "num": "A1-145",
+  "id": "futur",
+  "cat": "dongci",
+  "title": "将来时",
+  "titleDe": "Futur I",
+  "explain": "将来时 = werden + 动词原形（Ich werde dich anrufen.）。常见错误：口语里说将来多用\"现在时 + 时间状语\"（Morgen rufe ich dich an.），比将来时更自然；werden 将来时多用于承诺、预测。别和英语 will 画等号滥用。\n\n🇬🇧 英语对照：对应英语 will + 动词，但德语口语更爱用现在时表将来（类似英语 I am calling you tomorrow 用进行时表将来）。",
+  "table": [
+   [
+    "",
+    "结构",
+    "例子"
+   ],
+   [
+    "将来时",
+    "werden + 原形",
+    "Ich werde dir helfen."
+   ],
+   [
+    "口语常用",
+    "现在时 + 时间",
+    "Morgen helfe ich dir."
+   ]
+  ],
+  "examples": [
+   [
+    "Ich werde dich morgen anrufen.",
+    "我明天给你打电话。"
+   ],
+   [
+    "Es wird morgen regnen.",
+    "明天会下雨。"
+   ],
+   [
+    "Morgen besuche ich meine Oma.",
+    "明天我去看奶奶。（口语更常用）"
+   ],
+   [
+    "Wirst du mir helfen?",
+    "你会帮我吗？"
+   ]
+  ]
+ },
+ {
+  "num": "A1-151",
+  "id": "seit_zeit",
+  "cat": "gejie",
+  "title": "seit 等时间介词",
+  "titleDe": "Temporale Präpositionen",
+  "explain": "时间介词三兄弟：seit（自从…以来，三格：seit einem Jahr）；vor（…之前，三格：vor einer Woche 一周前）；in（…之后，四格：in einer Woche 一周后）。für + 四格表持续时间（für zwei Wochen 两周时间）。\n\n🇬🇧 英语对照：对应英语 since / ago / in；德语 seit（从过去到现在）vs vor（过去某点）vs in（未来），格还不一样。",
+  "table": [
+   [
+    "介词",
+    "含义",
+    "格",
+    "例子"
+   ],
+   [
+    "seit",
+    "自从",
+    "三格",
+    "seit einem Jahr"
+   ],
+   [
+    "vor",
+    "…之前",
+    "三格",
+    "vor einer Woche"
+   ],
+   [
+    "in",
+    "…之后",
+    "四格",
+    "in zwei Tagen"
+   ],
+   [
+    "für",
+    "持续…",
+    "四格",
+    "für drei Wochen"
+   ]
+  ],
+  "examples": [
+   [
+    "Seit einem Jahr wohne ich in Berlin.",
+    "我在柏林住了一年了。"
+   ],
+   [
+    "Vor einer Woche war ich krank.",
+    "一周前我病了。"
+   ],
+   [
+    "In zwei Tagen fliege ich nach München.",
+    "两天后我飞慕尼黑。"
+   ],
+   [
+    "Ich bleibe für drei Wochen hier.",
+    "我在这里待三周。"
+   ]
+  ]
+ },
+ {
+  "num": "A1-155",
+  "id": "praeteritum",
+  "cat": "dongci",
+  "title": "一般过去时",
+  "titleDe": "Präteritum",
+  "explain": "一般过去时：规则动词词干 + -te（machte, lernte）；不规则动词元音变化（ging, kam, sah, aß）。口语只用在 haben/sein/情态动词（war, hatte, konnte…）和书面语；日常口语说过去用完成时。这是德语的\"书面过去时\"。\n\n🇬🇧 英语对照：对应英语过去时 did/went，但德语口语里完成时抢了它的活，分工比英语更彻底。",
+  "table": [
+   [
+    "",
+    "规则",
+    "不规则"
+   ],
+   [
+    "结构",
+    "词干 + te",
+    "元音变化"
+   ],
+   [
+    "ich",
+    "machte",
+    "ging"
+   ],
+   [
+    "du",
+    "machtest",
+    "gingst"
+   ],
+   [
+    "er",
+    "machte",
+    "ging"
+   ]
+  ],
+  "examples": [
+   [
+    "Er ging nach Hause.",
+    "他回家了。（书面/叙述）"
+   ],
+   [
+    "Sie kam zu spät.",
+    "她迟到了。"
+   ],
+   [
+    "Ich konnte nicht schlafen.",
+    "我睡不着。（情态动词口语也用过去时）"
+   ],
+   [
+    "Das war eine schöne Zeit.",
+    "那是一段美好的时光。"
+   ]
+  ]
+ }
+]

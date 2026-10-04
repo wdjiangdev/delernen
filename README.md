@@ -12,6 +12,7 @@
 | `/a1a2/` | A1-A2 单词星图：26 组动词词干 + 16 组词族 + 19 组语法星图 |
 | `/a1b2/` | A1-B2 单词星图：82 组动词词干 + 28 组词族 + 29 组语法星图，A1/A2/B1/B2 级别徽章 |
 | `/grammatik/` | 德语语法 A1-B2：28 个语法点，中文讲解 + 规则表 + 例句（德+中）+ 英语对照 |
+| `/a1-kurs/` | 德语 A1 课程语法：30 个语法点，按课程顺序，中文讲解 + 英语对照 + 例句（独立目录，可单独拆分） |
 
 ## 功能
 
@@ -25,6 +26,7 @@
 - `index.html`：首页
 - `a1a2/`、`a1b2/`：`index.html`（星图页面）+ `verb_groups.json`（动词）+ `word_families.json`（词族）+ `grammar.json`（语法星图）
 - `grammatik/`：`index.html`（语法学习页）+ `grammar_learn.json`（28 个语法点数据）
+- `a1-kurs/`：`index.html`（A1 课程语法页）+ `grammar_kurs.json`（30 个语法点数据，独立目录可单独拆分）
 - `scripts/`：内容生成脚本（动词提取/词族/语法点源数据），JSON 为构建产物，可直接改 JSON
 
 ## 数据来源

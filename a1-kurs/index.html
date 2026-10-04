@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>德语 A1 课程语法</title>
+<style>
+:root{--bg:#0a0e1a;--bg-card:#111830;--bg-elev:#141b30;--bg-deep:#0d1326;--bg-input:#0e1428;
+--text:#e0e6f0;--text2:#b0b8d0;--text3:#8a93a8;--text4:#6a7490;--text5:#5a6378;
+--border:#2a3350;--border2:#232c48;--border3:#1a2340;
+--accent:#4a7aca;--accent2:#6ab0ff;--accentbg:#2a4a8a;--accentdeep:#1a2a5a;--link:#2a3a5a;--nodebd:#3a4a70;
+--green:#7dd87d;--orange:#ffb84d;--purple:#9d7bff;--red:#ff7d7d;--yellow:#ffd479}
+[data-theme="light"]{--bg:#f4f6fa;--bg-card:#ffffff;--bg-elev:#e9edf4;--bg-deep:#e2e8f1;--bg-input:#f0f3f8;
+--text:#1c2536;--text2:#3c4c66;--text3:#5c6e88;--text4:#8a9bb5;--text5:#aab8cc;
+--border:#cfd8e6;--border2:#dfe6f0;--border3:#e8edf4;
+--accent:#3868c8;--accent2:#2c5ab5;--accentbg:#d4e2fa;--accentdeep:#e6eefc;--link:#b8c8e0;--nodebd:#9ab0d0;
+--green:#2a8a3a;--orange:#c87a1a;--purple:#7a5cc8;--red:#c83a3a;--yellow:#8a6a1a}
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+header{position:sticky;top:0;z-index:10;background:var(--bg);backdrop-filter:blur(8px);padding:14px 16px 10px;border-bottom:1px solid #1a2340}
+header h1{font-size:19px;font-weight:700;text-align:center;letter-spacing:1px}
+header .sub{font-size:12px;color:var(--text4);text-align:center;margin-top:4px}
+#tabs{display:flex;gap:8px;justify-content:center;padding:10px 0 2px;flex-wrap:wrap}
+.tab{padding:7px 18px;border-radius:18px;border:1px solid #2a3350;background:var(--bg-elev);color:var(--text2);font-size:13px;cursor:pointer}
+.tab.active{background:var(--accentbg);border-color:var(--accent);color:#fff;font-weight:600}
+[data-theme="light"] .tab.active{color:#1c2536}
+#toc{padding:10px 16px;display:flex;flex-wrap:wrap;gap:6px}
+.toc-item{font-size:12px;padding:6px 10px;border-radius:12px;background:var(--bg-elev);border:1px solid #232c48;color:var(--text3);cursor:pointer}
+.toc-item:active{background:var(--border2)}
+main{padding:0 16px 40px;max-width:720px;margin:0 auto}
+.card{background:var(--bg-card);border:1px solid #232c48;border-radius:14px;padding:16px;margin:14px 0;scroll-margin-top:130px}
+.card h2{font-size:17px;margin-bottom:2px}
+.card h2 .de{font-size:12px;color:var(--text4);font-weight:400;margin-left:8px}
+.num{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:8px;margin-right:8px;vertical-align:middle;background:var(--accentbg);color:var(--accent2)}
+.explain{font-size:14px;color:var(--text2);line-height:1.7;margin:10px 0;white-space:pre-line}
+.explain.en-cmp{background:var(--bg-deep);border-left:3px solid #6ab0ff;padding:8px 12px;border-radius:0 8px 8px 0;font-size:13px}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px;overflow-x:auto;display:block}
+th,td{border:1px solid #2a3350;padding:7px 9px;text-align:left;white-space:nowrap}
+th{background:var(--border3);color:var(--accent2);font-weight:600}
+td{color:var(--text)}
+.ex{margin:8px 0;padding:10px 12px;background:var(--bg-deep);border-left:3px solid #4a7aca;border-radius:0 8px 8px 0}
+.ex .de{font-size:15px;color:var(--text);font-weight:500}
+.ex .zh{font-size:13px;color:var(--text3);margin-top:3px}
+.sec-title{font-size:12px;color:var(--text4);margin:12px 0 4px;letter-spacing:1px}
+</style>
+</head>
+<body>
+<header>
+<h1>德语 A1 课程语法</h1>
+<div class="sub">按课程顺序 · 30 个语法点 · 中文讲解 + 英语对照</div>
+<div id="tabs">
+<button class="tab active" data-cat="all">全部</button>
+<button class="tab" data-cat="yuyin">语音</button>
+<button class="tab" data-cat="mingci">名词</button>
+<button class="tab" data-cat="dongci">动词</button>
+<button class="tab" data-cat="gejie">格与介词</button>
+<button class="tab" data-cat="xingrong">形容词</button>
+<button class="tab" data-cat="jufa">句法</button>
+</div>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" style="position:absolute;top:12px;right:12px;background:var(--bg-elev);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:50">🔄</button></header>
+<div id="toc"></div>
+<main id="list"></main>
+<script>
+let DATA=[];
+const list=document.getElementById('list'), toc=document.getElementById('toc');
+let curCat='all';
+
+function render(){
+  const items=DATA.filter(p=>curCat==='all'||p.cat===curCat);
+  toc.innerHTML='';
+  list.innerHTML='';
+  items.forEach(p=>{
+    const t=document.createElement('button');
+    t.className='toc-item';t.textContent=p.num+' '+p.title;
+    t.onclick=()=>document.getElementById('k-'+p.id).scrollIntoView({behavior:'smooth'});
+    toc.appendChild(t);
+
+    const c=document.createElement('div');
+    c.className='card';c.id='k-'+p.id;
+    let h='<h2><span class="num">'+p.num+'</span>'+p.title+'<span class="de">'+p.titleDe+'</span></h2>';
+    h+='<div class="explain">'+p.explain.replace(/\n\n/g,'</div><div class="explain en-cmp">').replace(/\n/g,'<br>')+'</div>';
+    if(p.table&&p.table.length){
+      h+='<div class="sec-title">规则</div><table>';
+      p.table.forEach((row,i)=>{
+        h+='<tr>'+row.map(cell=>i===0?'<th>'+cell+'</th>':'<td>'+cell+'</td>').join('')+'</tr>';
+      });
+      h+='</table>';
+    }
+    if(p.examples&&p.examples.length){
+      h+='<div class="sec-title">例句</div>';
+      p.examples.forEach(e=>{
+        h+='<div class="ex"><div class="de">'+e[0]+'</div><div class="zh">'+e[1]+'</div></div>';
+      });
+    }
+    c.innerHTML=h;
+    list.appendChild(c);
+  });
+}
+document.querySelectorAll('.tab').forEach(t=>{
+  t.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');curCat=t.dataset.cat;render();
+    window.scrollTo({top:0,behavior:'smooth'});
+  };
+});
+function goHash(){var m=/^#k-([a-z0-9_]+)$/.exec(location.hash||'');if(!m)return;curCat='all';document.querySelectorAll('.tab').forEach(function(x){x.classList.toggle('active',x.dataset.cat==='all');});render();var c=document.getElementById('k-'+m[1]);if(c)setTimeout(function(){c.scrollIntoView({behavior:'smooth'});},80);}
+window.addEventListener('hashchange',goHash);
+fetch('grammar_kurs.json').then(r=>r.json()).then(d=>{DATA=d;render();goHash();})
+.catch(e=>{list.innerHTML='<p style="color:#e08080;padding:20px">加载失败：'+e+'</p>';});
+</script>
+
+<script>
+// 主题：light / dark / auto（跟随系统）
+(function(){
+  function apply(t){
+    var root=document.documentElement;
+    if(t==='auto'){root.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}
+    else root.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');
+    if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';
+  }
+  var cur=localStorage.getItem('delernen-theme')||'auto';
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').matches;
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
+})();
+</script>
+</body>
+</html>
