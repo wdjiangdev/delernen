@@ -5,7 +5,7 @@
   "cat": "yufa",
   "title": "支配第三格的动词（二）",
   "titleDe": "Verben mit Dativ (2)",
-  "explain": "补充 A2 之后剩余的支配第三格的动词，主体是可分动词：beistehen（援助）、nachstellen（尾随）、nachstreben（追求）、nachgeben（让步）、nachkommen（履行/跟上）、nachlaufen（追随）、zulaufen（跑向），以及 beiwohnen（出席）、entsagen（放弃）、widerstehen（抵挡）和反身动词 sich widersetzen（反抗）。易错：nachkommen、nachgeben 等形式上容易被误用四格，必须整体记忆\"动词 + 三格\"的固定搭配；sich widersetzen 是反身代词 + 三格宾语的双重结构（sich dem Plan widersetzen），两部分都不能丢；部分动词偏书面正式（beiwohnen、entsagen、widerstehen），要结合语义场景掌握；易混字形：beistehen（援助）vs bestehen（存在/通过），按前缀区分。\n\n🇬🇧 英语对照：英语 help sb（无介词）；德语 beistehen + 三格——三格动词必须连格一起整体背。",
+  "explain": "支配第三格的动词（二）。① 本课是 A2 阶段三格动词的延续，收录此前未讲的三格动词，属于查漏补缺性质。② 核心是带可分前缀的三格动词家族：bei-（beistehen 帮助、beiwohnen 出席）、entgegen-（entgegengehen 走向、entgegenwirken 对抗）、nach-（nachgeben 让步、nachkommen 履行、nachlaufen 追随、nachstellen 追求、nachstreben 效仿）、wider-（widerstehen 抵抗）。③ 易错点：beistehen（三格\"帮助\"）不要写成 bestehen（\"由…组成/通过\"，用法完全不同）；sich widersetzen 是三格反身动词（Ich habe mich dem Plan widersetzt），不要漏掉反身代词；widerstehen（不及物，三格）与 widerlegen（四格\"反驳\"）是两词。④ 记忆技巧：前缀 nach-/entgegen-/wider- 带有\"朝向/逆向\"的方向感，这类动词多支配三格；geschehen（发生）是典型无人称三格动词（was in jenem Jahr geschehen war）。⑤ entsagen（三格\"放弃\"）后常接抽象名词三格复数（den Freuden des Lebens），写作中可替换口语化的 aufgeben。⑥ 语序注意：这些动词在从句中居句尾（was in jenem Jahr geschehen war）。\n\n🇬🇧 英语对照：英语 attend/resist 无介词；德语 beiwohnen/widerstehen + 三格，前缀家族整批背。",
   "table": [
    [
     "动词",
@@ -40,20 +40,20 @@
   ],
   "examples": [
    [
-    "Er steht mir in schweren Zeiten bei.",
-    "他在困难时期援助我。"
+    "Sie müssen der Gerichtsverhandlung beiwohnen.",
+    "你们必须出席庭审。（beiwohnen+三格）"
    ],
    [
-    "Sie kommt ihrer Pflicht nach.",
-    "她履行了职责。"
+    "Du musst den Freuden des Lebens nicht entsagen.",
+    "你不必放弃人生的乐趣。（entsagen+三格）"
    ],
    [
-    "Er widersteht der Versuchung nicht.",
-    "他抵挡不住诱惑。"
+    "Offenkundig hat sie der Versuchung widerstanden.",
+    "显然她抵挡住了诱惑。（widerstehen+三格）"
    ],
    [
-    "Sie widersetzt sich dem Plan.",
-    "她反抗这个计划。"
+    "Alle Studenten hier strebten ihrem Lehrer nach.",
+    "这里所有学生都效仿他们的老师。"
    ]
   ]
  },
@@ -63,7 +63,7 @@
   "cat": "vokabel",
   "title": "形容词和介词的搭配总结",
   "titleDe": "Adjektiv + Präposition",
-  "explain": "按介词归纳最常用的形容词固定搭配（约 50 组）：von / auf / an / zu / bei / gegenüber / gegen / für / mit / nach / in / über。易错：表情绪的形容词介词不统一——ärgerlich、böse、wütend、eifersüchtig、neidisch、stolz 接 auf，而 glücklich、froh、erfreut、erstaunt、traurig、verwundert 接 über，不能想当然互换。近义形容词搭配不同：befreundet、verwandt、zufrieden、beschäftigt、fertig 统一接 mit；erfahren、unerfahren、nachlässig 接 in；fähig、unfähig、bereit 接 zu。高频组合整体背记：begeistert / überzeugt / enttäuscht / erfüllt + von，neugierig + auf，interessiert + an，不能按中文直译套介词。易混 gegenüber 与 gegen：zurückhaltend、aufgeschlossen 接 gegenüber（对人的态度），empfindlich、immun 接 gegen（对事物的敏感/免疫）。\n\n🇬🇧 英语对照：英语 interested in / proud of；德语 interessiert an / stolz auf——介词和英语对不上，必须连介词一起整体背。",
+  "explain": "形容词和介词的搭配总结。① 形容词固定搭配介词是 C1 考试高频考点，不能按中文\"对…\"直译成一个介词，必须逐个记忆。② von（+三格）表来源/原因：abhängig von、begeistert von、enttäuscht von、überzeugt von；注意 von dem 缩合为 vom（begeistert vom Gesang）。③ auf（+四格）表情绪指向：stolz auf、neugierig auf、eifersüchtig auf、neidisch auf；对象是被指向的人或事。④ an（+三格）表关联：interessiert an、erkrankt an、reich an、schuld an、beteiligt an；注意 an dem 缩合为 am。⑤ mit（+三格）表伴随/一致：zufrieden mit、einverstanden mit、versöhnt mit。⑥ 易错点：überzeugt von 不要说成 überzeugt über；interessiert an 不要混成 interessiert für；ärgerlich 既可接 auf 也可接 über，含义侧重不同。⑦ 记忆技巧：按介词（von/auf/an/mit）归类成表记忆，而不是按形容词字母顺序背；多为 sein + 形容词 + 介词的表语结构。\n\n🇬🇧 英语对照：英语 proud of/interested in；德语 stolz auf/interessiert an，介词逐个死记，按介词归类。",
   "table": [
    [
     "搭配",
@@ -100,20 +100,20 @@
   ],
   "examples": [
    [
-    "Ich bin stolz auf dich.",
-    "我为你骄傲。"
+    "Das ist von den Umständen abhängig.",
+    "这取决于情况。"
    ],
    [
-    "Sie ist an Musik interessiert.",
-    "她对音乐感兴趣。"
+    "Ich bin davon überzeugt, dass er der Täter ist.",
+    "我确信他就是凶手。（überzeugt von）"
    ],
    [
-    "Bist du mit dem Ergebnis zufrieden?",
-    "你对结果满意吗？"
+    "Er ist sehr stolz auf seine Tochter.",
+    "他为女儿感到骄傲。（stolz auf）"
    ],
    [
-    "Er ist neugierig auf alles.",
-    "他对一切都好奇。"
+    "Ich bin mit seiner Antwort nicht zufrieden.",
+    "我对他的回答不满意。（zufrieden mit）"
    ]
   ]
  },
@@ -123,7 +123,7 @@
   "cat": "vokabel",
   "title": "天气与语言",
   "titleDe": "Das Wetter und die Sprachen",
-  "explain": "C1 主题词汇：天气预报、天气与健康、语言英语化、学语言、非语言交际。复合名词多（die Wettervorhersage、die Höchsttemperatur、die Wetterfühligkeit），按构词拆分记；注意动词搭配：in Strömen regnen（倾盆大雨）、einer Tätigkeit nachgehen（从事某项活动）；sich vollziehen（发生）是正式书面语。\n\n🇬🇧 英语对照：英语 weather forecast / body language；德语同样大量复合词，但 die Körpersprache、der Gesichtsausdruck 这类词要整体背。",
+  "explain": "主题词汇：天气与语言（Das Wetter und die Sprachen）。① 本课实际包含两大主题六个词汇段：天气（天气预报用语、天气与健康）+ 语言（语言变化、语言学习、非语言交际）。② 天气预报表达高度固定：温度用 liegen bei/steigen auf/sinken auf，高低压用 das Hoch/das Tief，降水按强度分为 Schauer（阵雨）/Regen（雨）/Schneefall（降雪）/Gewitter（雷暴）/Unwetter（恶劣天气）。③ 固定搭配记忆：der Nebel löst sich auf（雾散）、in Strömen regnen（倾盆大雨）、mit Unwetter ist zu rechnen（预计有恶劣天气）。④ \"天气与健康\"段引入 Wetterfühligkeit（天气敏感）等 C1 话题词，适合口语和写作中谈论健康与环境话题。⑤ \"语言\"段核心词 Anglisierung（英语化）、Verkehrssprache（通用语）、Sprachbarrieren（语言障碍），可用于讨论语言政策、英语影响类议论文。⑥ 非语言交际三词辨析：Körpersprache（身体语言，总称）/ Mimik（面部表情）/ Gestik（手势），写作描述人物时常用。⑦ 易错：die Wettervorhersage 是阴性；der Schauer（阵雨）不要与作\"恐怖\"解的 Schauer 混淆；Tiefsttemperatur 注意复数形式 Tiefsttemperaturen。⑧ 记忆技巧：按\"预报—现象—健康\"和\"语言—学习—交际\"两条线分组记；动词多与名词固定搭配出现，背搭配不背孤词。\n\n🇬🇧 英语对照：英语 weather forecast；德语 die Wettervorhersage，预报用语高度固定，整句背。",
   "table": [
    [
     "主题",
@@ -623,20 +623,20 @@
   ],
   "examples": [
    [
-    "Die Höchsttemperatur liegt bei 25 Grad.",
-    "最高气温 25 度。"
+    "Die Höchsttemperaturen liegen bei 30 Grad.",
+    "最高温度 30 度。"
    ],
    [
-    "Es regnet in Strömen.",
-    "正下着倾盆大雨。"
+    "Es gibt einige Schauer.",
+    "有一些阵雨。"
    ],
    [
-    "Die Körpersprache verrät viel.",
-    "肢体语言透露了很多。"
+    "Der Nebel löst sich auf.",
+    "雾散了。"
    ],
    [
-    "Man muss den Wortschatz festigen.",
-    "必须巩固词汇。"
+    "sich mit der Bedeutung der Körpersprache beschäftigen",
+    "研究肢体语言的意义。"
    ]
   ]
  },
@@ -646,7 +646,7 @@
   "cat": "vokabel",
   "title": "幸福与其他情感",
   "titleDe": "Glück und andere Gefühle",
-  "explain": "C1 主题词汇：幸福与不幸、压力、笑与幽默、愚人节玩笑。注意：①谚语 Jeder ist seines Glückes Schmied（每个人都是自己幸福的铁匠）；②压力主题多为学术/职场词汇（die Gratifikationskrise 奖酬危机、die Verausgabung 付出）；③笑的表达极其丰富（sich krummlachen、sich totlachen、sich ausschütten）；④愚人节固定说法：in den April schicken、auf den Arm nehmen。\n\n🇬🇧 英语对照：英语 make fun of / play a trick on；德语 auf den Arm nehmen、hereinlegen 都是\"捉弄\"的地道说法。",
+  "explain": "主题词汇：幸福与其他情感（Glück und andere Gefühle）。① 本课围绕\"幸福\"与\"情感\"分 4 段：幸福与不幸、压力、笑与幽默、愚人节玩笑，情绪话题词汇密集。② 幸福研究类多为 Glück- 复合名词：Glücksfähigkeit（幸福能力）、Glücksniveau（幸福水平）、Glücksempfinden、Zufriedenheitsgefühl，适合 C1 写作论述\"幸福\"话题，可成组记忆。③ 压力段是职场话题核心表达：unter Stress leiden（承受压力）、die Psyche wird belastet/entlastet、die Gratifikationskrise（付出—回报危机），以及 Anspruch und Wirklichkeit klaffen auseinander（期望与现实脱节）。④ 幽默段口语表达丰富：sich totlachen（笑死）、Witze reißen（讲笑话）、mit etwas ist nicht zu spaßen（某事开不得玩笑）；近义词 Spaßvogel/Witzbold/Scherzkeks/Ulknudel 都是\"爱开玩笑的人\"。⑤ 愚人节段是文化词汇：Aprilscherz、jemanden in den April schicken（和某人开愚人节玩笑）、hinters Licht führen（欺骗），了解德国 4 月 1 日习俗。⑥ 易错：Glück 一词多义（幸福/运气），die Glücksfähigkeit 指\"获得幸福的能力\"；schadenfroh（幸灾乐祸的）是形容词；der Stress 为阳性。⑦ 记忆技巧：Glück- 复合词家族一起记；压力段按\"压力源—身心反应—应对\"链条记（Anforderungen steigen → Psyche wird belastet → Balance finden）。\n\n🇬🇧 英语对照：英语 happiness；德语 das Glück（幸福/运气），Glück- 复合词家族成组背。",
   "table": [
    [
     "主题",
@@ -961,20 +961,20 @@
   ],
   "examples": [
    [
-    "Jeder ist seines Glückes Schmied.",
-    "每个人都是自己幸福的创造者。"
+    "Die Glücksfähigkeit ist zum Teil angeboren.",
+    "幸福能力在一定程度上是天生的。"
    ],
    [
-    "Man muss die Balance halten.",
-    "要保持平衡。"
+    "unter Stress leiden",
+    "承受压力。"
    ],
    [
-    "Wir haben uns totgelacht.",
-    "我们笑死了。"
+    "sich totlachen",
+    "笑死。"
    ],
    [
-    "Das ist nur ein Scherz.",
-    "这只是个玩笑。"
+    "Aprilscherze sind seit dem 16. Jahrhundert verbürgt.",
+    "愚人节恶作剧从 16 世纪起就有记载。"
    ]
   ]
  },
@@ -984,7 +984,7 @@
   "cat": "vokabel",
   "title": "成功与失败",
   "titleDe": "Erfolge und Niederlagen",
-  "explain": "C1 主题词汇：体育成功、职业成功、公司介绍、失败的艺术。注意：①体育习语 an den Nagel hängen（放弃，字面\"挂在钉子上\"）；②职场 fixed 搭配 Karriere machen、die Chance ergreifen；③谈失败的地道说法 in den Sand setzen（搞砸）、aus Misserfolgen lernen（从失败中学习）；④公司介绍类是典型商务德语（wettbewerbsfähig 未出现但同类词多）。\n\n🇬🇧 英语对照：英语 hang up ones boots（退役）；德语 an den Nagel hängen 异曲同工，都是具象习语。",
+  "explain": "主题词汇：成功与失败（Erfolge und Niederlagen）。① 本课 4 段：体育中的成功、职业成功、公司介绍、失败的艺术，\"成功与失败\"正反两面都覆盖，适合议论文正反论证。② 体育成功表达：den Titel holen/erringen（夺得头衔）、den ersten Platz belegen（获得第一名）；兴奋剂话题链 Doping—Dopingkontrolle—disqualifiziert（取消资格）。③ 职业成功关键词：Erfolg im Beruf、die Sozialkompetenz（社交能力）、die Teamfähigkeit（团队能力）、Chancen suchen und ergreifen（寻找并抓住机会），求职与面试话题高频词。④ \"失败的艺术\"是本课特色段：Misserfolge erleiden（遭受失败）、ein Traum zerplatzt（梦想破灭）、das Projekt in den Sand setzen（把项目搞砸），学习积极、得体地谈论失败的表达。⑤ 固定搭配：die Verantwortung (anderen) in die Schuhe schieben（推卸责任给他人）、den Sport an den Nagel hängen（告别体坛，字面\"把运动挂在钉子上\"）。⑥ 易错：der Erfolg（成功）vs das Ergebnis（结果）；scheitern（失败）是不及物动词（das Projekt ist gescheitert）；die Niederlage（战败/失败）vs der Misserfolg（不成功）。⑦ 记忆技巧：按\"成功三段 + 失败一段\"结构记；失败段重点记动词搭配 erleiden/versagen/misslingen/missglücken 的区别。\n\n🇬🇧 英语对照：英语 success/failure；德语 der Erfolg/die Niederlage，失败段学\"得体地谈失败\"。",
   "table": [
    [
     "主题",
@@ -1309,20 +1309,20 @@
   ],
   "examples": [
    [
-    "Er will Karriere machen.",
-    "他想创一番事业。"
+    "den Titel holen / erringen",
+    "夺得冠军头衔。"
    ],
    [
-    "Sie hat die Chance ergriffen.",
-    "她抓住了机会。"
+    "Dopingkontrollen durchführen",
+    "进行兴奋剂检查。"
    ],
    [
-    "Das Projekt ist in den Sand gesetzt.",
-    "这个项目搞砸了。"
+    "Chancen suchen und ergreifen",
+    "寻找并抓住机会。"
    ],
    [
-    "Aus Misserfolgen lernen wir am meisten.",
-    "我们从失败中学到最多。"
+    "ein Traum zerplatzt",
+    "梦想破灭。"
    ]
   ]
  },
@@ -1332,7 +1332,7 @@
   "cat": "vokabel",
   "title": "进步与环境",
   "titleDe": "Fortschritt und Umwelt",
-  "explain": "C1 主题词汇：进步、新媒体、语言变化、环境与气候、水。注意：①科技 environmental 复合词多（die Pro-Kopf-Emission、die Wassernachfrage），拆分记；②网络用语进入正课（chatten、bloggen、das Emoticon、der Tippfehler）；③固定搭配：in die Flucht treiben（驱赶）、aufmerksam machen auf（提醒注意）；④ prekär（岌岌可危）是 C1 高频书面形容词。\n\n🇬🇧 英语对照：英语 carbon footprint / data privacy；德语 die Pro-Kopf-Emission / der Datenschutz，构词逻辑相通。",
+  "explain": "主题词汇：进步与环境（Fortschritt und Umwelt）。① 本课 6 段：进步、新媒体、语言变化、环境、水资源，主题是\"进步\"与\"环境\"的辩证关系，议论文素材丰富。② 进步段讨论科技利弊：Lebenserwartung steigt（寿命延长）vs im Stau stehen（堵车）、Annehmlichkeiten（便利），适合\"科技进步利弊\"类写作正反论述。③ 新媒体段聚焦隐私：die Privatsphäre gegen Bequemlichkeit eintauschen（为了便利交换隐私）、digitale Spuren hinterlassen（留下数字足迹）、der Datenschutz，是 C1 写作互联网话题的高频词。④ 语言变化段：chatten/bloggen/mailen/googeln 等英语借词动词化，auf die Großschreibung verzichten（放弃大写）反映网络语言特点。⑤ 环境段核心词链：Klimawandel/globale Erwärmung（气候变化）— Treibhausgase werden ausgestoßen（温室气体排放）— Pro-Kopf-Emissionen（人均排放）；水资源段：Wasserknappheit、Dürre、Flüsse versickern（河流干涸）。⑥ 易错：der Klimawandel（阳性）、die Dürre（阴性）、das Treibhausgas（中性复合词）；der Stau（堵车）不要与 der Staub（灰尘）混淆。⑦ 记忆技巧：按\"进步—代价\"链条记（Stau、Privatsphäre 换取 Lebenserwartung、Annehmlichkeiten）；环境段按\"原因—现象—对策\"记（Emissionen—Erwärmung—Aufklärungsarbeit）。\n\n🇬🇧 英语对照：英语 climate change；德语 der Klimawandel，\"进步—代价\"链条背议论文素材。",
   "table": [
    [
     "主题",
@@ -1687,20 +1687,20 @@
   ],
   "examples": [
    [
+    "Die Lebenserwartung steigt.",
+    "预期寿命在上升。"
+   ],
+   [
     "Der Klimawandel schreitet voran.",
-    "气候变化在推进。"
+    "气候变化正在加剧。"
    ],
    [
-    "Man muss sparsam mit Wasser umgehen.",
-    "必须节约用水。"
+    "Treibhausgase werden ausgestoßen.",
+    "温室气体被排放。"
    ],
    [
-    "Der Datenschutz wird immer wichtiger.",
-    "数据保护越来越重要。"
-   ],
-   [
-    "Die Preise explodieren.",
-    "价格暴涨。"
+    "jährlich viele Stunden im Stau verbringen",
+    "每年花很多小时堵在路上。"
    ]
   ]
  }
