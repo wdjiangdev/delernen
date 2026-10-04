@@ -1686,8 +1686,8 @@
     "他在中国住了十年，十年前住在美国。"
    ],
    [
-    "Er ging nach Hause.",
-    "他回家了。（不规则过去时）"
+    "geben → gab（不规则过去时）",
+    "给：课程变位表中的原始词形（ich/er gab）。"
    ]
   ]
  },
@@ -1814,20 +1814,20 @@
   ],
   "examples": [
    [
-    "Er kommt aus China.",
-    "他来自中国。"
+    "Deutschland — 德国",
+    "国名（中性，无冠词）。"
    ],
    [
-    "Sie spricht Französisch.",
-    "她说法语。"
+    "die Universität — 大学",
+    "阴性名词。"
    ],
    [
-    "Der Schweizer spricht Deutsch.",
-    "这位瑞士人说德语。"
+    "der Koffer — 行李箱",
+    "阳性名词。"
    ],
    [
-    "Die Türkin wohnt in Berlin.",
-    "这位土耳其女士住在柏林。"
+    "in der Stadt — 在城市",
+    "在城市里。"
    ]
   ]
  },
@@ -1870,20 +1870,20 @@
   ],
   "examples": [
    [
-    "Was sind Sie von Beruf?",
-    "您是做什么工作的？"
+    "die Schule / der Schüler — 中小学 / 中小学生",
+    "学业阶段词。"
    ],
    [
-    "Er studiert Medizin.",
-    "他学医。（大学阶段）"
+    "die Universität / der Student — 大学 / 大学生",
+    "大学阶段词。"
    ],
    [
-    "Sie ist Lehrerin.",
-    "她是老师。（女性职业 -in）"
+    "der Ingenieur / der Arzt — 工程师 / 医生",
+    "职业词。"
    ],
    [
-    "Ich lerne Deutsch.",
-    "我在学德语。（lernen 泛指）"
+    "Was sind Sie von Beruf? — 您是做什么工作的？",
+    "问职业的固定句。"
    ]
   ]
  },
@@ -2034,20 +2034,20 @@
   ],
   "examples": [
    [
-    "Ich packe meinen Koffer.",
-    "我在收拾行李箱。"
+    "der Koffer / der Rucksack — 行李箱 / 背包",
+    "旅行物品。"
    ],
    [
-    "Wo ist mein Pass?",
-    "我的护照在哪？"
+    "der Anzug / das Hemd — 男士西装 / 衬衫",
+    "服装。"
    ],
    [
-    "Er trägt einen Anzug.",
-    "他穿着西装。"
+    "der Pass / die Kreditkarte — 护照 / 信用卡",
+    "证件。"
    ],
    [
-    "Nimm den Regenschirm mit!",
-    "带上雨伞！"
+    "der Regenschirm / die Sonnenbrille — 雨伞 / 墨镜",
+    "随身物品。"
    ]
   ]
  },
@@ -2102,20 +2102,20 @@
   ],
   "examples": [
    [
-    "Ich wohne in der Stadt.",
-    "我住在城市。"
+    "in der Stadt / auf dem Land — 在城市 / 在农村",
+    "方位表达。"
    ],
    [
-    "Gehen Sie geradeaus.",
-    "请直走。"
+    "geradeaus gehen — 直走",
+    "指路动词短语。"
    ],
    [
-    "Die Wohnung ist im Erdgeschoss.",
-    "这套房在一楼。"
+    "das Erdgeschoss — 一楼（地面层）",
+    "建筑词。"
    ],
    [
-    "Wo ist die Toilette?",
-    "卫生间在哪？"
+    "das Wohnzimmer / das Schlafzimmer — 客厅 / 卧室",
+    "房间词。"
    ]
   ]
  },
@@ -2170,20 +2170,20 @@
   ],
   "examples": [
    [
-    "Wie hoch ist die Miete?",
-    "房租多少？"
+    "der Immobilienmakler — 房屋中介",
+    "租房申请相关。"
    ],
    [
-    "Ist die Miete inkl. Nebenkosten?",
-    "房租含附加费用吗？"
+    "das Geburtsdatum — 出生日期",
+    "申请表用词。"
    ],
    [
-    "Die Wohnung liegt in der Stadtmitte.",
-    "这套房在市中心。"
+    "die Miete / die Nebenkosten — 房租 / 附加费用",
+    "租房费用。"
    ],
    [
-    "Wir suchen eine Wohnung mit Balkon.",
-    "我们在找带阳台的房子。"
+    "die Ausstattung — 设施配置",
+    "房源描述词。"
    ]
   ]
  },
@@ -2234,20 +2234,20 @@
   ],
   "examples": [
    [
-    "Mein Kopf tut weh.",
-    "我头疼。"
+    "der Kopf / das Auge — 头 / 眼睛",
+    "身体部位。"
    ],
    [
-    "Wasch dir die Hände!",
-    "洗手！"
+    "der Arm / die Hand — 胳膊 / 手",
+    "身体部位。"
    ],
    [
-    "Er hat blaue Augen.",
-    "他有蓝眼睛。"
+    "das Bein / das Knie — 腿 / 膝盖",
+    "身体部位。"
    ],
    [
-    "Mein Fuß tut weh.",
-    "我脚疼。"
+    "der Fuß / die Zehe — 脚 / 脚趾",
+    "身体部位。"
    ]
   ]
  }
