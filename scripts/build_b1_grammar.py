@@ -1,6 +1,6 @@
 # B1 课程语法与词汇（按站内实际模块顺序，15 张卡片）
 # 数据源：站内课程目录+课件要点（已登录核验）；讲解与例句均为原创，不含视频内容
-# 生成：python3 scripts/build_b1_grammar.py -> b1-kurs/grammar_b1.json
+# 生成：python3 scripts/build_b1_grammar.py -> kurs/b1/grammar_b1.json
 import json, os
 
 GRAMMAR_POINTS = [
@@ -203,7 +203,7 @@ GRAMMAR_POINTS = [
 def main():
     for p in GRAMMAR_POINTS:
         assert len(p['examples']) == 4, p['id']
-    out = os.path.join(os.path.dirname(__file__), '..', 'b1-kurs', 'grammar_b1.json')
+    out = os.path.join(os.path.dirname(__file__), '..', 'kurs', 'b1', 'grammar_b1.json')
     with open(out, 'w', encoding='utf-8') as f:
         json.dump(GRAMMAR_POINTS, f, ensure_ascii=False, indent=1)
     print(f"wrote {len(GRAMMAR_POINTS)} cards -> {out}")

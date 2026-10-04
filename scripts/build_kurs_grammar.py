@@ -1,6 +1,6 @@
 # A1 课程整理（按站内实际模块顺序：32 个语法点 + 9 个词汇点）
 # 数据源：站内课程目录+课件要点（已登录核验）；讲解与例句均为原创，不含视频内容
-# 生成：python3 scripts/build_kurs_grammar.py -> a1-kurs/grammar_kurs.json
+# 生成：python3 scripts/build_kurs_grammar.py -> kurs/a1/grammar_kurs.json
 import json, os
 
 GRAMMAR_POINTS = [
@@ -556,7 +556,7 @@ GRAMMAR_POINTS = [
 
 
 def main():
-    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'a1-kurs')
+    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'kurs', 'a1')
     os.makedirs(out_dir, exist_ok=True)
     data = []
     for p in GRAMMAR_POINTS:

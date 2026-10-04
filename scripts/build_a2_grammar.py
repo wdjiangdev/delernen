@@ -1,6 +1,6 @@
 # A2 课程语法（按站内实际模块顺序，18 个语法点）
 # 数据源：站内课程目录+课件要点（已登录核验）；讲解与例句均为原创，不含视频内容
-# 生成：python3 scripts/build_a2_grammar.py -> a2-kurs/grammar_a2.json
+# 生成：python3 scripts/build_a2_grammar.py -> kurs/a2/grammar_a2.json
 import json, os
 
 GRAMMAR_POINTS = [
@@ -242,7 +242,7 @@ GRAMMAR_POINTS = [
 ]
 
 def main():
-    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'a2-kurs')
+    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'kurs', 'a2')
     os.makedirs(out_dir, exist_ok=True)
     data = []
     for p in GRAMMAR_POINTS:
