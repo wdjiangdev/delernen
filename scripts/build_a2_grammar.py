@@ -1,245 +1,455 @@
 # A2 课程语法（按站内实际模块顺序，18 个语法点）
-# 数据源：站内课程目录+课件要点（已登录核验）；讲解与例句均为原创，不含视频内容
+# 数据源：站内课程目录+课件要点（已登录核验）；讲解为原创重写（贴近原文要点），例句采用课程原文短句，不含视频内容
 # 生成：python3 scripts/build_a2_grammar.py -> kurs/a2/grammar_a2.json
 import json, os
 
-GRAMMAR_POINTS = [
-{'num': 'M09-02', 'id': 'genitiv', 'cat': 'ge', 'title': '第二格', 'titleDe': 'Genitiv',
- 'explain': '第二格表所属/所有关系，提问用 wessen（谁的）。冠词：der→des、die→der、das→des、die（复数）→der。阳性、中性名词单数词干后加 -s，s/st/zt/sch/x/z/ß 结尾加 -es（des Hauses）；阴性、复数不加词尾。人称代词第二格（meiner、deiner…）只用于搭配支配第二格的动词或介词。"因为我"三种说法：wegen mir（较正式）、wegen meiner（较书面）、meinetwegen（口语）。口语常避开第二格，改用 von + 第三格（von meiner Frau）。\n\n🇬🇧 英语对照：英语用 s 或 of；德语第二格口语萎缩、书面语用，口语多用 von + 三格代替。',
- 'table': [['', '阳性', '阴性', '中性', '复数'],
-           ['一格', 'der Mann', 'die Frau', 'das Kind', 'die Kinder'],
-           ['二格', 'des Mannes', 'der Frau', 'des Kindes', 'der Kinder']],
- 'examples': [
-     ('Das ist das Auto meines Vaters.', '这是我父亲的车。'),
-     ('Wegen des Wetters bleiben wir zu Hause.', '因为天气我们待在家里。'),
-     ('Die Meinung der Experten ist wichtig.', '专家们的意见很重要。'),
-     ('Trotz des Regens gehen wir spazieren.', '尽管下雨我们还是去散步。'),
- ]},
-{'num': 'M09-03', 'id': 'n_deklination', 'cat': 'mingci', 'title': '阳性弱变化', 'titleDe': 'N-Deklination',
- 'explain': '少数阳性名词在二、三、四格（单复数皆如此）词干后加 -n 或 -en，判断靠拼写/词尾而非含义。三类：以 -e 结尾的阳性名词（der Junge）；大部分 -and/-ant/-ent/-ist 等结尾的外来词（der Student）；一小撮日耳曼词（Herr、Bauer、Nachbar、Mensch）。8 个特殊词第二格还要加 -s：Name、Buchstabe、Friede、Funke、Glaube、Gedanke、Same、Wille。das Herz 是唯一服从弱变化的中性词（des Herzens）。易错：名词化形容词（如 den Alten）不是弱变化；加完 -en 后绝不再加 s；无冠词时不加 -n/-en（der Herr 除外）。\n\n🇬🇧 英语对照：英语完全没有这种现象；只能按词尾类型记，是德语名词最"不讲理"的部分之一。',
- 'table': [['一格', '二/三/四格'],
-           ['der Junge', 'des/dem/den Jungen'],
-           ['der Student', 'des/dem/den Studenten'],
-           ['der Herr', 'des/dem/den Herrn'],
-           ['der Name', 'des Namens（特殊+ s）']],
- 'examples': [
-     ('Ich sehe den Jungen.', '我看见那个男孩。'),
-     ('Das ist der Name des Studenten.', '这是那个学生的名字。'),
-     ('Er hilft dem Herrn.', '他帮助那位先生。'),
-     ('Jeder Mensch hat Träume.', '每个人都有梦想。'),
- ]},
-{'num': 'M09-04', 'id': 'reflexiv', 'cat': 'dongci', 'title': '反身动词', 'titleDe': 'Reflexive Verben',
- 'explain': '反身代词：第一二人称与人称代词同形（mich/dich/uns/euch），三人称一律 sich（er/sie/es/wir? 不，wir 是 uns；ihr 是 euch；sie/Sie 是 sich）。真反身动词：sich 是动词必要组成部分，去掉就不完整（sich freuen、sich befinden、sich kümmern um），需逐个记。假反身动词：sich 本身承载意思（如 sich etwas überlegen 表"认真考虑"）。sich 表"互相"可换成 einander（较书面）。易错：Ich wasche mir die Hände（洗手），不能说 meine Hände；真反身动词助动词通常用 haben。\n\n🇬🇧 英语对照：英语 enjoy oneself / each other；德语真假反身要逐个记，假反身的 sich 有实在含义。',
- 'table': [['人称', '三格', '四格'],
-           ['ich', 'mir', 'mich'],
-           ['du', 'dir', 'dich'],
-           ['er/sie/es', 'sich', 'sich'],
-           ['wir', 'uns', 'uns'],
-           ['ihr', 'euch', 'euch'],
-           ['sie/Sie', 'sich', 'sich']],
- 'examples': [
-     ('Ich freue mich auf dich.', '我很期待见到你。'),
-     ('Sie interessiert sich für Musik.', '她对音乐感兴趣。'),
-     ('Wir treffen uns morgen.', '我们明天见。'),
-     ('Ich wasche mir die Hände.', '我洗手。'),
- ]},
-{'num': 'M09-05', 'id': 'wenn_als', 'cat': 'congju', 'title': 'wenn / als / wann / ob 从句', 'titleDe': 'wenn, als, wann, ob',
- 'explain': 'ob = 是否（间接疑问句）。als = 过去一次性事件（纵然一生只发生一次，如十岁那年）。wenn = 现在/将来/过去重复多次的事（过去重复常配 immer/jedes Mal 加强频率）。wann = 何时（疑问句用），wenn = 当……时。从句前置时从句整体占主句第一位，主句变位动词仍在第二位。表示时长/频率的时间状语可用第四格直接做，不需介词（jeden Tag 每天）。\n\n🇬🇧 英语对照：英语 when 兼任 als/wenn；德语按"过去一次性"vs"重复/现在将来"严格区分，这是中式思维重灾区。',
- 'table': [['连词', '用法', '例子'],
-           ['als', '过去一次性', 'Als ich zehn war, …'],
-           ['wenn', '重复/现在/将来', 'Wenn es regnet, …'],
-           ['wann', '何时（疑问）', 'Wann kommst du?'],
-           ['ob', '是否', 'Ich weiß nicht, ob …']],
- 'examples': [
-     ('Als ich ein Kind war, wohnten wir in Berlin.', '我小时候我们住在柏林。'),
-     ('Wenn ich Zeit habe, lese ich.', '我有空就读书。'),
-     ('Weißt du, ob er kommt?', '你知道他来不来吗？'),
-     ('Ruf mich an, wenn du fertig bist!', '你弄完给我打电话！'),
- ]},
-{'num': 'M09-10', 'id': 'da_wo', 'cat': 'qita', 'title': '代副词', 'titleDe': 'Pronominaladverbien',
- 'explain': 'da(r) + 介词（指示）、wo(r) + 介词（疑问），前提：介词后面是无生命名词（darauf、womit）。有人参与时用"人称代词 + 介词"（mit ihm），对人提问用 wer/wen/wem + 介词。常见副词化用法：damit（以便，连词）、darum/daher（因此）、dabei sein（加入；dabei sein + zu 不定式 = 正在做某事）、dabeihaben（带上，可分动词）。易错：别和表地点的 wo（哪里）混淆；副词不能跟主语抢第一位。\n\n🇬🇧 英语对照：英语 thereof/whereby 已死亡，德语代副词极其常用；可以理解为"介词的代词化"。',
- 'table': [['介词', 'da-（指示）', 'wo-（疑问）'],
-           ['mit', 'damit', 'womit'],
-           ['für', 'dafür', 'wofür'],
-           ['auf', 'darauf', 'worauf'],
-           ['über', 'darüber', 'worüber']],
- 'examples': [
-     ('Womit fährst du? – Mit dem Bus.', '你坐什么去？——公交。'),
-     ('Ich denke oft daran.', '我常想起它。'),
-     ('Wofür interessierst du dich?', '你对什么感兴趣？'),
-     ('Bist du dabei?', '你加入吗？'),
- ]},
-{'num': 'M10-01', 'id': 'stehen_stellen', 'cat': 'dongci', 'title': '近义词辨析：位置动词', 'titleDe': 'stehen/stellen, sitzen/setzen …',
- 'explain': '状态（不及物，表静止）vs 动作（及物，改变物体状态）：stehen/stellen（站立/放站）、sitzen/setzen（坐/放坐）、liegen/legen（躺/放躺）、hängen（悬挂 gehangen / 挂放 gehängt）、stecken（插入）。按物体姿势选词：liegen 躺、stehen 站立或有底座、sitzen 屈膝坐、hängen 悬挂、stecken 插入。特殊：Schuh/Topf/Pfanne 底面接触用 stehen；Laptop 开着用 stehen、合上用 liegen。"戴帽子"用地道表达：Ich setze mir einen Hut auf den Kopf（反身代词 + 定冠词）。\n\n🇬🇧 英语对照：英语 lie/lay、sit/set 也有对应区分；德语多一组 stehen/stellen，逻辑完全一样。',
- 'table': [['状态（不及物）', '动作（及物）'],
-           ['stehen（站着）', 'stellen（放站）'],
-           ['sitzen（坐着）', 'setzen（放坐）'],
-           ['liegen（躺着）', 'legen（放躺）'],
-           ['hängen（悬挂, gehangen）', 'hängen（挂放, gehängt）']],
- 'examples': [
-     ('Das Buch liegt auf dem Tisch.', '书躺在桌上。'),
-     ('Ich lege das Buch auf den Tisch.', '我把书放到桌上。'),
-     ('Er sitzt auf dem Stuhl.', '他坐在椅子上。'),
-     ('Setz dich bitte!', '请坐！'),
- ]},
-{'num': 'M10-02', 'id': 'zu_infinitiv', 'cat': 'dongci', 'title': '带 zu 的不定式', 'titleDe': 'Infinitiv mit zu',
- 'explain': '形式：zu + 动词原形，其支配的宾语/状语放 zu 前面（尾语序），整段放句末逗号后。作主语（Es ist schön, dich zu sehen.）、作宾语（versuchen/anfangen/vergessen/versprechen + zu）、作名词补语（die Lust, …zu…）、作形容词补语。um + zu（为了，要求主从句主语一致）、ohne + zu（没有…就…）。易错：wissen 后面不能接带 zu 不定式（死记）。\n\n🇬🇧 英语对照：对应英语 to do；德语要求尾语序，且 um…zu 要求主语一致是英语没有的限制。',
- 'table': [['用法', '例子'],
-           ['作主语', 'Es ist schön, dich zu sehen.'],
-           ['作宾语', 'Ich versuche, früh zu kommen.'],
-           ['um + zu（为了）', 'Ich lerne, um zu bestehen.'],
-           ['ohne + zu', 'Er ging, ohne zu grüßen.']],
- 'examples': [
-     ('Es freut mich, dich zu sehen.', '见到你我很高兴。'),
-     ('Ich habe vergessen, ihn anzurufen.', '我忘了给他打电话。'),
-     ('Um pünktlich zu sein, stehe ich früh auf.', '为了准时，我早起。'),
-     ('Er hofft, bald zu kommen.', '他希望快点来。'),
- ]},
-{'num': 'M10-03', 'id': 'nach_zu', 'cat': 'ge', 'title': '表示"去"的介词', 'titleDe': 'Präpositionen der Richtung',
- 'explain': 'nach + 无冠词名词：地名（城市、国家）、方位副词（nach Hause/rechts/links/oben/unten）。in + 可"进去"的地点（Kino、Mensa、Berge、Schweiz、USA、Iran、Ausland）；带冠词的国家（die USA、der Iran）用 in 不用 nach。zu：zum/zur + 具体的人或地点（nach Hause 除外）、交通工具。auf + 露天地点（Straße、Sportplatz、Land）；an + 某物边上（Fenster、Strand、Grenze、See）。易错：in = 进去 vs zu = 朝…走（不一定进）；单座 Berg 不用 in。\n\n🇬🇧 英语对照：英语 go to 一词打天下；德语按"地名/可进入/露天/边上"选介词，只能分类记。',
- 'table': [['介词', '用于', '例子'],
-           ['nach', '无冠词地名', 'nach Berlin / nach Hause'],
-           ['in', '可进入的地点', 'ins Kino / in die Schweiz'],
-           ['zu', '人/具体地点', 'zu meiner Freundin'],
-           ['auf', '露天', 'auf den Sportplatz'],
-           ['an', '边上', 'an den Strand']],
- 'examples': [
-     ('Ich fahre nach Berlin.', '我去柏林。'),
-     ('Wir gehen ins Kino.', '我们去电影院。'),
-     ('Kommst du zu mir?', '你来我这吗？'),
-     ('Die Kinder spielen auf der Straße.', '孩子们在街上玩。'),
- ]},
+GRAMMAR_POINTS = [{'num': 'M09-02',
+  'id': 'genitiv',
+  'cat': 'ge',
+  'title': '第二格',
+  'titleDe': 'Genitiv',
+  'explain': '第二格（Genitiv）表示"所属关系"，一般译为"的"，是德语四大格中最后一个学的。专有名词（人名/城市名/国名）表所属可直接加 s（Yaras '
+             "Fahrradladen），以 s 结尾的只加撇号（Hans' Bruder）；通用替代是 von + 专有名词（der Bruder von "
+             'Hans）。书面语可将"被拥有者"前置：ein Freund Karls；但拥有者带称呼（Herr Karl）时不能后置，要说 ein Freund von Herrn '
+             'Karl。冠词变格：der/die/das/die → des/der/des/der；ein/eine/ein → '
+             'eines/einer/eines；阳/中性名词词尾加 s（des Lehrers），以 s、st、zt、sch、x、z、ß 结尾加 es（des '
+             'Passes）；-ismus 结尾是例外，不加 '
+             's。二格定冠词的性数由拥有者决定，与被拥有者无关。人称代词二格（meiner、deiner…）现代德语很少用，口语用三格代替（wegen '
+             'mir）或换动词；meinetwegen 除"因为我"外还有"对我来说/我没意见"的用法。口语中二格可用 von + 三格代替。对二格提问用 wessen，不变格。\n'
+             '\n'
+             "🇬🇧 英语对照：英语 John's book / the book of John；德语 Yaras Fahrradladen / der Bruder von "
+             'Hans，路数一样。',
+  'table': [['', '阳性', '阴性', '中性', '复数'],
+            ['一格', 'der Mann', 'die Frau', 'das Kind', 'die Kinder'],
+            ['二格', 'des Mannes', 'der Frau', 'des Kindes', 'der Kinder']],
+  'examples': [['Das ist Yaras Fahrradladen.', '这是 Yara 的自行车店。（专有名词加 s）'],
+               ['Das ist der Bruder von Hans.', '这是 Hans 的哥哥。（von 通用替代）'],
+               ['Ich habe die Tochter der Frau gesehen.', '我见到了那个女人的女儿。（二格定冠词）'],
+               ['Wessen Buch ist das?', '这是谁的书？（wessen 提问）']]},
+ {'num': 'M09-03',
+  'id': 'n_deklination',
+  'cat': 'mingci',
+  'title': '阳性弱变化',
+  'titleDe': 'N-Deklination',
+  'explain': '阳性弱变化（N-Deklination）：一小部分阳性名词在单数二、三、四格词尾加 -n/-en；这是这类名词的天然属性。三大类：① -e 结尾的阳性名词（除 '
+             'Käse、Charme），如 Bote、Franzose、Junge；② 以 '
+             '-and/-ant/-aph/-arch/-at/-ent/-et/-ist/-krat/-nom/-on 结尾的阳性外来词，如 '
+             'Student、Polizist、Astronom；③ 一小部分日耳曼语源词，如 '
+             'Herr、Mensch、Bär、Papagei、Nachbar、Bauer。前面无冠词时，为避免与复数混淆，即使非主格也不加 -n/-en（Präsident der '
+             'USA 不能写成 Präsidenten）；Herrn 是例外。口语中常省略单数词尾的 -n/-en；反之 Autor、Moderator、Typ '
+             '在口语里常被误当弱变化用。8 个特殊词单数二格还要再加 '
+             '-s：Name、Buchstabe、Friede、Glaube、Funke、Gedanke、Same、Wille。易混：阳性弱变化 vs 形容词名词化——den '
+             'Jungen（弱变化）vs den Alten（-en 是形容词尾）；用 ein Junge vs ein Alter '
+             '的一格形式区分；一个单词不可能既是名词化形容词又是弱变化名词。das Herz 是唯一的非阳性弱变化名词，仅二、三格服从弱变化（des Herzens、dem '
+             'Herzen）。\n'
+             '\n'
+             '🇬🇧 英语对照：英语没有这种变化；德语弱变化名词单记三类，8 个特殊词二格加 -s。',
+  'table': [['一格', '二/三/四格'],
+            ['der Junge', 'des/dem/den Jungen'],
+            ['der Student', 'des/dem/den Studenten'],
+            ['der Herr', 'des/dem/den Herrn'],
+            ['der Name', 'des Namens（特殊+ s）']],
+  'examples': [['Ich habe den Boten gesehen.', '我见到了信使。（弱变化四格）'],
+               ['Sie ist mit dem Franzosen ins Kino gegangen.', '她和那个法国人去看电影了。（三格）'],
+               ['Das ist die Tasche des Polizisten.', '这是那个警察的包。（二格）'],
+               ['Ich habe den Jungen gefangen.', '我抓住了那个男孩。（vs den Alten 形容词尾）']]},
+ {'num': 'M09-04',
+  'id': 'reflexiv',
+  'cat': 'dongci',
+  'title': '反身动词',
+  'titleDe': 'Reflexive Verben',
+  'explain': '反身人称代词：一、二人称与普通代词同形（mir/mich、dir/dich），三人称一律 sich（Sie 的 sich '
+             '也不大写）；动作发出者=承受者时用反身代词。表"互相"可换 einander（稍书面）；介词后 sich 与 einander 意义不同（von sich 表自己 vs '
+             'voneinander 表彼此）；有歧义时加 selbst 或 gegenseitig 消歧。真反身动词必须带 sich（如 sich beeilen、sich '
+             'erkälten）；sich 默认第四格，若已有另一个四格宾语则 sich 作三格。假反身四类：①主语对自己施加动作（sich '
+             'setzen）；②被动含义、主语未发出动作（sich erklären→Das erklärt sich leicht）；③三格表"认真地"（Sind Sie sich '
+             'sicher?）；④部分真部分假（sich irren）。背诵要带固定搭配连同支配的格一起背。易错：Ich wasche mir die Hände 不能写成 Ich '
+             'wasche meine Hände（课上重点强调）；sich 不能共享。真反身动词助动词一般是 haben，但表示"彼此"的 sich + 不及物动词仍用 '
+             'sein（如 Anna und Bernd sind sich ausgewichen）。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 wash my hands；德语 Ich wasche mir die Hände（三格反身+定冠词），结构完全不同。',
+  'table': [['人称', '三格', '四格'],
+            ['ich', 'mir', 'mich'],
+            ['du', 'dir', 'dich'],
+            ['er/sie/es', 'sich', 'sich'],
+            ['wir', 'uns', 'uns'],
+            ['ihr', 'euch', 'euch'],
+            ['sie/Sie', 'sich', 'sich']],
+  'examples': [['Ich wasche mir die Hände.', '我洗手。（三格反身，不能写 meine Hände）'],
+               ['Ich muss mich beeilen.', '我得抓紧。（真反身）'],
+               ['Das erklärt sich leicht.', '这很容易解释。（被动含义）'],
+               ['Sie sprechen voneinander.', '他们在谈论彼此。（voneinander 表互相）']]},
+ {'num': 'M09-05',
+  'id': 'wenn_als',
+  'cat': 'congju',
+  'title': 'wenn / als / wann / ob 从句',
+  'titleDe': 'wenn, als, wann, ob',
+  'explain': '所有从句（dass、ob、wenn、als、wann 引导的）都服从尾语序，动词放最后。ob 引名词性从句=是否；wann 引名词性从句=什么时候。易混点：wann '
+             '用于疑问句提问时间，wenn 用于"当……时/如果"，不要混淆。als '
+             '引导时间状语从句=过去一件具体的事/不再重复的事（过去单次）；wenn=可重复的、习惯性的、尚未发生的事；过去经常发生的事也用 wenn。记忆技巧："一个人只有一次 '
+             '10 岁的机会，一旦 11 岁就回不去了"——Als ich zehn Jahre alt war 用 als（过去单次），习惯性动作才用 wenn。wenn '
+             '表过去习惯性行为时常加 immer/jedes Mal 强调频率。wenn '
+             '还可引导条件状语从句=如果；从句可置主句前（占主句第一位）或后。叙述故事用过去时、生活琐事/口语用完成时，北德偏爱完成时、南德偏爱过去时。bleiben 是系动词（与 '
+             'sein、werden 同类），bleib mir fern 中 mir 是三格表"离我远点"。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 when 通吃；德语 als（过去单次）/wenn（重复/未来）/wann（疑问何时）三分天下。',
+  'table': [['连词', '用法', '例子'],
+            ['als', '过去一次性', 'Als ich zehn war, …'],
+            ['wenn', '重复/现在/将来', 'Wenn es regnet, …'],
+            ['wann', '何时（疑问）', 'Wann kommst du?'],
+            ['ob', '是否', 'Ich weiß nicht, ob …']],
+  'examples': [['Ich weiß nicht, ob der Politiker morgen kommt.', '我不知道那个政客明天来不来。（ob=是否）'],
+               ['Als ich zehn Jahre alt war, habe ich jeden Nachmittag Fußball gespielt.',
+                '我十岁时每天下午踢球。（过去单次用 als）'],
+               ['Ruf mich an, wenn du fertig bist.', '你好了给我打电话。（wenn=当…时）'],
+               ['Immer wenn ich im Garten saß, sangen die Vögel.', '每当我坐在花园里，鸟儿就唱歌。（习惯性）']]},
+ {'num': 'M09-10',
+  'id': 'da_wo',
+  'cat': 'qita',
+  'title': '代副词',
+  'titleDe': 'Pronominaladverbien',
+  'explain': '代副词 = da(r)/wo(r) + 介词；指示代副词 da(r)+介词，疑问代副词 wo(r)+介词。er/sie/es 不能代指"介词后无生命名词"（Ja, '
+             'ich komme mit ihm 是错的，必须说 Ja, ich komme damit）。介词首字母是元音时加 '
+             '-r-（daran、darüber、worauf）；介词后名词单复数无差别，复数也可用代副词。代副词只代指无生命物品/事件；有生命的人或动物用普通人称代词（an '
+             'ihn、über sie）。疑问代副词的 wo 翻译为"什么"，不要与表示"哪里"的 wo 混淆；问人则用 '
+             'wen/wem。damit、darum、daher、dahin、dabei、danach 兼作普通副词，各有侧重：damit 强调方式、darum 强调原因、daher '
+             '强调原因/出发点、dahin 强调方向、danach 强调时间先后。dabei 的多义副词用法：dabei sein 表赞同参与（Klar, ich bin '
+             'dabei!）；dabei sein + zu Inf 表正在做某事；dabei 表"做……时"（两件事同时发生）；口语中表"尽管"。damit '
+             '还可作连词引导目的从句=为了/以便；dabeihaben 是可分动词=带着。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 it/them 通吃；德语介词+无生命名词必须缩成代副词（damit），这是硬规则。',
+  'table': [['介词', 'da-（指示）', 'wo-（疑问）'],
+            ['mit', 'damit', 'womit'],
+            ['für', 'dafür', 'wofür'],
+            ['auf', 'darauf', 'worauf'],
+            ['über', 'darüber', 'worüber']],
+  'examples': [['Ja, ich komme damit.', '好的，我带这个来。（无生命用 damit）'],
+               ['Ja, ich denke oft an ihn.', '是的，我常想起他。（有生命用 an ihn）'],
+               ['Womit fahren Sie nach Beijing?', '您坐什么去北京？（疑问代副词）'],
+               ['Ich spreche langsam, damit du mich besser verstehst.', '我说慢点以便你听懂。（damit=以便）']]},
+ {'num': 'M10-01',
+  'id': 'stehen_stellen',
+  'cat': 'dongci',
+  'title': '近义词辨析：位置动词',
+  'titleDe': 'stehen/stellen, sitzen/setzen …',
+  'explain': '"放"按物体形状和姿势选词：liegen 躺着（平放物品）、stehen 站立（人、动物、有腿/底座的物品）、sitzen '
+             '坐着（有膝盖的活物，另有帽子/眼镜拟人用法）、hängen 挂、stecken 插。鞋、锅两可：鞋底/锅底接触地面用 stehen，否则 liegen；笔记本电脑打开 '
+             'stehen、合上 '
+             'liegen。静三动四对应：liegen→legen、stehen→stellen、sitzen→setzen（前者表状态+三格，后者表使役动作+四格）；stecken '
+             '主语既可以是人也可以是物。hängen 两词区分：hängt, gehangen（不及物"挂着"表状态）vs hängt, '
+             'gehängt（及物"挂上去"表动作）。固定搭配死记：Platz 搭配 an（an den besten Platz），Stuhl 搭配 auf；setzen '
+             '只能支配一个直接宾语，不能支配双宾语。地道表达：Ich setze mir einen Hut auf den Kopf——加 mir、用定冠词代替 mein '
+             '更地道。记忆口诀：有底部且与水平面接触都是 stehen；sitzen 要求像人一样有膝盖和臀部、双腿弯曲；legen/stellen/setzen '
+             '强调人去"使"物体改变状态。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 put/lay 通吃；德语按姿势分家，状态（liegen）vs 使役（legen）是两套词。',
+  'table': [['状态（不及物）', '动作（及物）'],
+            ['stehen（站着）', 'stellen（放站）'],
+            ['sitzen（坐着）', 'setzen（放坐）'],
+            ['liegen（躺着）', 'legen（放躺）'],
+            ['hängen（悬挂, gehangen）', 'hängen（挂放, gehängt）']],
+  'examples': [['Eine Banane liegt auf dem Teller.', '一根香蕉躺在盘子上。（liegen 状态）'],
+               ['Der Tisch steht im Zimmer.', '桌子立在房间里。'],
+               ['Ich stelle den Teller auf den Tisch.', '我把盘子放到桌上。（stellen 使役）'],
+               ['Der Schlüssel steckt im Schloss.', '钥匙插在锁里。']]},
+ {'num': 'M10-02',
+  'id': 'zu_infinitiv',
+  'cat': 'dongci',
+  'title': '带 zu 的不定式',
+  'titleDe': 'Infinitiv mit zu',
+  'explain': 'zu + 动词原形构成带 zu 不定式；所支配的宾语/状语放 zu 前构成尾语序，整个结构一般放句尾；可分动词的 zu '
+             '加在前缀和词干之间（anzurufen），kennenlernen '
+             '例外（两种写法都对）。逗号规则："简单不定式"前不加逗号，"扩展不定式"前通常加逗号；但规则不严格，重点是句式美观且不影响理解。与英语不同，德语 zu '
+             '后面可以直接加情态动词原形（Er hofft, schon bald abreisen zu können）。三大句法功能：作主语（Es ist '
+             'schwierig…）、作宾语（anfangen、versuchen、vergessen 等；不及物动词的介词变代副词）、作名词补语（die Zeit、die '
+             'Lust、der Spaß 等抽象名词）或形容词补语。um + zu Inf 表目的（=为了）、ohne + zu Inf '
+             '表"没有……就……"，放句尾并用逗号隔开；只有 um...zu 要求主语一致，普通带 zu 不定式不要求。带 zu 不定式要放在框架结构外面。易错：英语 tell sb '
+             'to do、know what to do 不能逐字译成德语，必须用从句；wissen 后永远不能加带 zu 不定式，必须死记。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 to do 前后主语可不同；德语 um...zu 要求主语一致，wissen 后永不跟 zu。',
+  'table': [['用法', '例子'],
+            ['作主语', 'Es ist schön, dich zu sehen.'],
+            ['作宾语', 'Ich versuche, früh zu kommen.'],
+            ['um + zu（为了）', 'Ich lerne, um zu bestehen.'],
+            ['ohne + zu', 'Er ging, ohne zu grüßen.']],
+  'examples': [['Es ist schwierig, Deutsch zu lernen.', '学德语很难。（作主语）'],
+               ['Susanne hat früh angefangen, den Schreibtisch aufzuräumen.',
+                'Susanne 很早就开始收拾书桌了。'],
+               ['Aber ich brauche Kunden, um meine Miete zu bezahlen.', '但我需要客户来付房租。（um...zu 表目的）'],
+               ['Hanna ist nach Hause gefahren, ohne ein Wort zu sagen.',
+                'Hanna 一句话没说就回家了。（ohne...zu）']]},
+ {'num': 'M10-03',
+  'id': 'nach_zu',
+  'cat': 'ge',
+  'title': '表示"去"的介词',
+  'titleDe': 'Präpositionen der Richtung',
+  'explain': '表"去"的介词按名词类型选：nach 用于无冠词名词（nach Hause、中性国名 nach Deutschland、城市 nach Shanghai、方向 nach '
+             'rechts）；in 用于可"进去"的地点（ins Kino、in die Schweiz、in die USA、in den Iran）。zu 的典型场景：固定搭配 '
+             'zu Hause/zu Fuß、去某人家（zu meinem Freund）、去某物处（zum Auto）、城市传统行业（zum Friseur/zum '
+             'Bäcker）；auf 用于露天场所（auf die Straße、auf den Sportplatz、aufs Land）。an 强调"走到边上"（an den '
+             'Strand、an das Fenster）；zu vs in 的细微差别：zu=朝那走但不一定进去，in=朝那走并走进去（zur/in die '
+             'Schule）。Uni/Bank/Post/Bahnhof/Toilette 可用 zu，但"暗示主语是这所大学学生"等地道用法用 '
+             'auf。最常用的表"给某人"结构是三格宾语，无需介词。写信：人前用 an（ein Brief an deine Freundin），地名前用 nach（Ich '
+             'schreibe einen Brief nach Amerika）；an 后用第四格。易错：城市名都是中性且永远省略定冠词；单座 Berg 不能用 '
+             'in；Ausland 虽中性但必须用 in（ins Ausland，因为它不是地名）。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 go to 通吃；德语 nach/in/zu/auf/an 按"能不能进去"细分。',
+  'table': [['介词', '用于', '例子'],
+            ['nach', '无冠词地名', 'nach Berlin / nach Hause'],
+            ['in', '可进入的地点', 'ins Kino / in die Schweiz'],
+            ['zu', '人/具体地点', 'zu meiner Freundin'],
+            ['auf', '露天', 'auf den Sportplatz'],
+            ['an', '边上', 'an den Strand']],
+  'examples': [['Ich schreibe einen Brief nach Amerika.', '我往美国写信。（地名前 nach）'],
+               ['Rudi schreibt ein paar Briefe nach Hamburg an seine Familie.',
+                'Rudi 往汉堡给家人写了几封信。（地名 nach，人 an）'],
+               ['Er geht in ein europäisches Land.', '他去一个欧洲国家。（in=走进去）'],
+               ['Ich habe meinem Freund das Buch gegeben.', '我把书给了朋友。（三格表给，无需介词）']]},
+ {'num': 'M10-04',
+  'id': 'nebenssatz',
+  'cat': 'congju',
+  'title': '原因 / 结果 / 目的 / 让步',
+  'titleDe': 'Kausal-, Konsekutiv-, Final-, Konzessivsätze',
+  'explain': '原因的多层表达：denn（并列连词=因为，不占位、不能放句首）、nämlich（放变位动词后）、weil（从属连词+尾语序）、wegen（支配二格，口语可三格，与宾语整体占一位）、deshalb/deswegen/folglich/darum（占位副词，语气依次减弱）、da（放主句前表众所周知的原因）、nun '
+             'da（=既然）。易错：weil 和 deshalb 不能在同一句连用（类似英语 because 和 so 不能连用），例外是"Deshalb, weil + '
+             '从句"（只是因为…）。weshalb（强调主句是从句的原因）vs sodass（强调主句是从句的起因/导火索）；口语把 sodass 当 damit '
+             '用是错误的。连接副词在句中占一位，且原因句必须在前、结果句在后；dadurch 是副词不能引从句。目的：damit（从属连词=以便，主语可不同）vs '
+             'um...zu（要求主语一致）；主语不同时只能用 '
+             'damit。让步：obwohl（从属连词+尾语序）、trotz（支配二格，口语可三格）、trotzdem（副词=尽管如此）；口语用 trotzdem 代 obwohl '
+             '不正式。分辨口诀：从属连词引从句+尾语序；并列连词只有 5 个（und、aber、oder、sondern、denn）；其余都是占位的连接副词；副词不能引导句子。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 because/so 不连用；德语 weil/deshalb 也不连用，路数一样。',
+  'table': [['含义', '并列（主句语序）', '附属（尾语序）'],
+            ['原因', 'denn', 'weil / da'],
+            ['结果', 'daher', 'sodass'],
+            ['目的', '—', 'damit / um…zu…'],
+            ['让步', 'trotzdem（副词）', 'obwohl']],
+  'examples': [['Er konnte sie nicht verstehen, denn er war taub.', '他听不懂她，因为他聋了。（denn 并列）'],
+               ['Er konnte sie nicht verstehen, weil er taub war.', '他听不懂她，因为他聋了。（weil 从属）'],
+               ['Wegen der Krankheit seines Vaters blieb er zu Hause.', '因为父亲生病，他待在家里。（wegen+二格）'],
+               ['Er ist überhaupt nicht müde, obwohl er die ganze Nacht nicht geschlafen hat.',
+                '他一点不困，尽管整晚没睡。（obwohl 让步）']]},
+ {'num': 'M10-05',
+  'id': 'passiv',
+  'cat': 'dongci',
+  'title': '被动语态',
+  'titleDe': 'Passiv',
+  'explain': '两种被动：Vorgangspassiv（werden + 过去分词，强调动作过程）vs Zustandspassiv（sein + '
+             '过去分词，强调动作完成后的状态/结果）；Der Tisch wird gedeckt（正在摆）vs Der Tisch ist gedeckt（已摆好）；新闻文学偏爱 '
+             'sein 被动态（强调状态）。只有能引起明确结果的动词（bauen、öffnen、reparieren、schreiben…）才有 '
+             'Zustandspassiv；sehen、loben、brauchen 等几乎没有。记忆口诀：被动语态时过去分词是 worden（Das Buch ist '
+             'gelesen worden），其他时候都是 '
+             'geworden。口语中主动语态的过去时被完成时取代，但被动语态的过去时仍然很常用。只有四格直接宾语能变被动主语；三格/二格/介词宾语变被动后省略主语或用 '
+             'es（Ihnen wird geholfen；Es wird im Nebenzimmer '
+             'getanzt）；双宾语只有四格变主语，三格仍是三格。无主语句也可以变被动：Man tanzt → Im Nebenzimmer wird '
+             'getanzt；被动还可表命令、建议、规定（Hier darf nicht geraucht '
+             'werden）。例外动词（bedeuten、bekommen、besitzen、haben、kennen、wissen 等）不能用 werden 被动态，改用 man '
+             '主句或转述。von vs durch：对动作有绝对控制的发出者（人）用 von；无绝对控制或仅引方式/媒介（物）用 durch；mit 引具体工具。geboren '
+             '用法：不表年月日用 sein（Ich bin in Hamburg geboren），表年月日用 werden（Ich wurde 1998 in Hamburg '
+             'geboren）。\n'
+             '\n'
+             '🇬🇧 英语对照：英语只有一种被动；德语 werden（过程）vs sein（状态）两种，含义不同。',
+  'table': [['类型', '结构', '例子'],
+            ['过程被动', 'werden + 过去分词', 'Das Haus wird gebaut.'],
+            ['状态被动', 'sein + 过去分词', 'Das Haus ist gebaut.'],
+            ['施动者', 'von（人）/ durch（媒介）', 'von ihm / durch den Sturm']],
+  'examples': [['Das Buch wird (von mir) gelesen.', '这本书（被我）读着。（过程被动）'],
+               ['Als ich um fünf kam, war die Tür geschlossen.', '我五点到时门关着。（状态被动）'],
+               ['Ihnen wird geholfen.', '有人帮你们。（三格变被动无主语）'],
+               ['Hier darf nicht geraucht werden.', '这里禁止吸烟。（被动表规定）']]},
+ {'num': 'M10-06',
+  'id': 'relativsatz',
+  'cat': 'congju',
+  'title': '关系代词和关系从句',
+  'titleDe': 'Relativsätze',
+  'explain': '关系代词"性、数由主句定，格由从句定"；从句服从尾语序；关系代词不可省略（与英语不同）；作介词宾语时介词提前到关系代词前（mit dem ich gekommen '
+             'bin）。二格关系代词=whose：dessen（阳/中）/deren（阴/复）；dessen 不再变化（dessem 是母语者错误）；deren '
+             '后若不跟名词，很多人用 derer 代替，现已被大部分专家接受。先行词是一、二人称代词且紧邻从句时，代词在从句中重写一遍且动词按代词变位。was 引关系从句的 4 '
+             '大场景：修饰 etwas/nichts/alles、中性名词化形容词、指示代词 das、代指上文整句话；非母语者建议一律用 was。wer ≠ 英语 who：wer '
+             '引无先行词关系从句=……"的人（Wer viele Freunde hat, ist glücklich）；修饰先行词必须用 '
+             'der/die/das。地点状语：wo/wohin/woher 可代替"介词+名词"；先行词无冠词时只能用 wo；方式用 wie，原因用 '
+             'warum。口语中从句不用尾语序是错误用法，书面语要避免；welch- 作关系代词非常书面，不常用。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 which/that 可省略；德语关系代词永不省略，且"性数看主句、格看从句"。',
+  'table': [['先行词', '一格', '四格', '二格'],
+            ['阳性', 'der', 'den', 'dessen'],
+            ['阴性', 'die', 'die', 'deren'],
+            ['中性', 'das', 'das', 'dessen'],
+            ['复数', 'die', 'die', 'deren']],
+  'examples': [['Kennst du die Frau, die heute kommt?', '你认识今天来的那个女人吗？'],
+               ['Kennst du den Mann, mit dem ich gekommen bin?', '你认识和我一起来的那个男人吗？（介词提前）'],
+               ['Ich habe die Frau getroffen, deren Namen ich immer vergesse.',
+                '我遇到了那个我总忘名字的女人。（deren=whose）'],
+               ['Wer viele Freunde hat, ist glücklich.', '朋友多的人是幸福的。（wer=…的人）']]},
+ {'num': 'M10-07',
+  'id': 'konjunktiv2',
+  'cat': 'dongci',
+  'title': '第二虚拟式',
+  'titleDe': 'Konjunktiv II',
+  'explain': '三大使用场景：礼貌请求（Würden Sie bitte…/Könnten Sie bitte…/Sie '
+             'sollten…）、表愿望、表不真实陈述（与事实相反的假设）。变位三步（不规则动词基于一般过去时）：a/o/u 加 '
+             'Umlaut（fuhr→führe）；一、三人称单数过去时不以 e 结尾则加 e（war→wäre）；加 -st/-n/-t/-n '
+             '得其余人称（wärst/wären）；规则动词二虚=过去时。除 sein、haben、werden 和情态动词外，其他动词二虚用"würden + '
+             '动词原形"代替，使用时注意维持框架结构。愿望的细分：日常礼貌愿望（Ich hätte gern/Ich möchte）、宏大愿望、与事实相悖的愿望。wenn + nur '
+             '+ 二虚="要是……就好了"；Ich wünschte, du würdest kommen 省略了 '
+             'dass。主句用二虚则从句也要用二虚，反之亦然；尽量避免主从句同时用"würden+动词"——最地道的说法是 Wenn du nicht arbeitetest, '
+             'würden wir ins Kino gehen。"本可以/本应该/本想"表与过去相反的假设，必须用"haben 的二虚 + 情态动词"。易错：Wenn du '
+             'würdest kommen 是错的，应为 Wenn du kommen könntest；虚拟句也要遵守尾语序。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 If I were you；德语 Wenn ich du wäre，二虚表假设，路数一样。',
+  'table': [['动词', '第二虚拟式'],
+            ['sein', 'wäre'],
+            ['haben', 'hätte'],
+            ['werden', 'würde'],
+            ['können', 'könnte'],
+            ['müssen', 'müsste'],
+            ['kommen', 'käme（或 würde kommen）']],
+  'examples': [['Würden Sie bitte hereinkommen?', '请进。（礼貌请求）'],
+               ['Wenn das Wetter nur besser wäre.', '要是天气好一点就好了。（愿望）'],
+               ['Wenn du ein Junge wärst, könnten wir zusammen in den Urlaub gehen.',
+                '如果你是男孩，我们就能一起去度假了。（假设）'],
+               ['Wenn du nicht arbeitetest, würden wir ins Kino gehen.',
+                '如果你不工作，我们就去看电影了。（避免双 würden）']]},
+ {'num': 'M11-01',
+  'id': 'wortstellung2',
+  'cat': 'jufa',
+  'title': '语序（中高级篇）',
+  'titleDe': 'Wortstellung (B)',
+  'explain': '基本准则：先说不重要的/旧的信息，后说重要的/新的信息；句首第一位是最重要的强调位（变位动词占第二位除外）；主语不在第一位时必须紧跟变位动词。最常用语序：代词宾语 → '
+             '状语和确指（或带物主人称代词）的名词宾语 → 不确指（泛指/零冠词）名词宾语 → 表示方向的状语 → 介词宾语。两个宾语：代词在名词前；都是代词则四格在三格前（Sie '
+             "hat es ihm gegeben），es 缩写成 's 时例外；都是名词则三格在四格前（Sie hat Thomas das Buch "
+             'gegeben）。多个同等重要的状语按"态度 → 时间 → 原因 → 独立地点 → 方式 → 补充说明动词的地点"排列——这是对 A1 的 TMP '
+             '的扩展而非推翻。状语与确指名词宾语顺序不固定，更重要的成分放后面。sich 一般被认为比普通人称代词更不重要，主语是名词且不在第一位时 sich '
+             '常放主语前面。口语倾向把代词尽量往前放，代词宾语可放名词主语前面，但不包括介词宾语。"语法是死的、语言是活的"，文学/新闻可能打破规则把重要的成分往后放。\n'
+             '\n'
+             '🇬🇧 英语对照：英语语序相对固定；德语中场是"信息重要性"的竞技场，越重要越靠后。',
+  'table': [['位置', '放什么', '例子'],
+            ['中场前', '代词宾语', 'Ich gebe es dir.'],
+            ['中场中', '状语 + 确指宾语', 'Ich gebe dir das Buch heute.'],
+            ['中场后', '介词宾语', 'Ich denke an dich.']],
+  'examples': [['Ich gehe morgen ins Kino.', '我明天去看电影。'],
+               ['Sie hat ihm das Buch gegeben.', '她把书给了他。（代词宾语前）'],
+               ['Sie hat es Thomas gegeben.', '她把它给了 Thomas。（双代词四格在前）'],
+               ['Karl wollte seine Freundin schon früh anrufen.', 'Karl 想尽早给女朋友打电话。（强调尽早）']]},
+ {'num': 'M11-02',
+  'id': 'dativ_verben',
+  'cat': 'dongci',
+  'title': '只支配第三格的动词',
+  'titleDe': 'Verben mit Dativ',
+  'explain': '四类只能支配三格的动词：①表"发生"的动词（geschehen、passieren、vorkommen、bevorstehen…），主语通常是物/事件；②带 '
+             'zu-、nach-、wider-、bei-、ent-、entgegen- '
+             '前缀的动词（zuhören、zustimmen、beitreten、entsprechen、widersprechen…）；③主语是物、宾语是人，表想到/记起/遗忘/感觉/喜欢的动词（schmecken、gefallen、fehlen、einfallen、einleuchten…）；④表"有利/不利"的动词（helfen、danken、gratulieren、schaden、drohen、nutzen…）。理解框架：第一类可理解为"对他来说发生了…"（对谁而言），主语是物；其他类是固定搭配，英语思维易误用四格，需死记。例外：个别前缀动词有时可支配四格；verzeihen '
+             '宽恕"人"用四格。glauben 三用法：物作四格（Das glaubst du doch selbst nicht）、人作三格（Niemand wollte ihm '
+             'glauben）、an + 四格表更深的信念（Ich glaube an ihn，类似 believe in 与 believe '
+             '的区别）；vertrauen、trauen 支配的人也是三格。易错点："我想你"=Du fehlst mir；bevorstehen 的助动词是 '
+             'haben；widersprechen 永远三格。etwas/alles/nichts 后形容词名词化：etwas/nichts 按中性单数零冠词（etwas '
+             'Wunderbares），alles 按中性单数定冠词（alles Wunderbare）。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 help sb 无介词；德语 helfen + 三格，三格动词连格一起背。',
+  'table': [['类别', '动词', '例子'],
+            ['发生', 'geschehen / gelingen', 'Es geschieht mir oft.'],
+            ['前缀动词', 'zuhören / widersprechen', 'Ich höre dir zu.'],
+            ['感觉评价', 'gefallen / wehtun', 'Das gefällt mir.'],
+            ['人际', 'helfen / gratulieren', 'Ich helfe dir.']],
+  'examples': [['Wie kann ich Ihnen helfen?', '我能帮您什么？（helfen+三格）'],
+               ['Sie ähnelt ihrer Mutter.', '她长得像她妈妈。（ähneln+三格）'],
+               ['Die Arbeit gefällt mir.', '我喜欢这份工作。（gefallen+三格）'],
+               ['Meine Eltern hören mir auch nie zu.', '我父母也从不听我的。（zuhören+三格）']]},
+ {'num': 'M11-03',
+  'id': 'artikel_pronomen',
+  'cat': 'mingci',
+  'title': '冠词作代词',
+  'titleDe': 'Artikel als Pronomen',
+  'explain': '定冠词作代词：与关系代词同形，只在二格（dessen/deren）和三格复数（denen）处与普通冠词不同；用于指代上文提过的人或物（Ja, der ist '
+             'dort）；可加 da 表"那个"。deren 可表所属、消除歧义（Sie hat die Frau und deren Freunde '
+             'getroffen="那个女人的朋友们"）；复数二格作代词可写 deren 或 derer。不定冠词作代词变化：einer/eine/eines（一格中性可用 '
+             'eins）；不知性别时默认阳性（Keiner von uns）。不定冠词作代词四大用法：①表"之一"（einen der Männer）；②表"某人/有人"（类似 '
+             'jemand，但不如 jemand 礼貌）；③作形容词表"特定的一个"，首字母不大写；④固定搭配 der eine…der '
+             'andere…（"一个…另一个…/一些…另一些…"）。易错：Die einen singen 中 einen 词尾是 -en（复数定冠词后形容词词尾永远是 '
+             '-en）；Dieses eine Buch 的 eine 是形容词词尾。andere- 本质上是代词，首字母不大写（Ich will etwas anderes）。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 one/ones 作代词；德语 der/die/das 和 einer 直接顶上，还要变格。',
+  'table': [['作代词', '一格', '三格'],
+            ['der', 'der da', 'dem da'],
+            ['die（复数）', 'die da', 'denen（特例！）'],
+            ['einer', 'einer von uns', 'einem von uns']],
+  'examples': [['Die sind mir zu teuer.', '那些对我来说太贵了。（定冠词作代词）'],
+               ['Mein Traum und der meines Bruders.', '我的梦想和我哥哥的。（der 代 Traum）'],
+               ['Einer muss es tun.', '总得有人做。（einer=某人）'],
+               ['Die einen singen, die anderen tanzen.', '一些人唱歌，另一些人跳舞。']]},
+ {'num': 'M11-04',
+  'id': 'tiere',
+  'cat': 'mingci',
+  'title': '动物',
+  'titleDe': 'Tiere',
+  'explain': '纯词汇课，核心是连冠词一起记：每个单词的冠词（der Hund、die Katze、das '
+             'Pferd）都要记住，因为复数和属格变化都依赖冠词。多个动物是阳性弱变化名词（der Bär, -en / der Papagei, -en / der '
+             'Elefant, -en / der Löwe, -n / der Affe, -n），二、三、四格加 '
+             '-n/-en，与阳性弱变化呼应。复合词拆分记忆：Fledermaus（蝙蝠=飞行鼠）、Eisbär（北极熊=冰熊）、Flusspferd（河马）、Schildkröte（乌龟=盾牌蛤蟆）等，按构词法拆解。发音提示：注意词尾清化（如 '
+             'Hund 读 [hunt]）。易混辨析：Hase（野兔）vs Kaninchen（家兔）；Frosch（青蛙）vs Kröte（癞蛤蟆）；Maus（老鼠）vs '
+             'Fledermaus（蝙蝠）。复数加变音的词：Vogel→Vögel、Frosch→Frösche、Wolf→Wölfe、Maus→Mäuse、Gans→Gänse、Kuh→Kühe。性别死记：die '
+             'Spinne（蜘蛛）、die Biene（蜜蜂）、das Krokodil（鳄鱼）、der Hai（鲨鱼）。这是 A2 '
+             '高频话题（宠物、动物园、自然），优先掌握常见词及其冠词。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 a dog；德语 der Hund，冠词连性一起记，复数变化全靠它。',
+  'table': [['词', '中文'],
+            ['der Hund / die Katze', '狗 / 猫'],
+            ['der Vogel → Vögel', '鸟'],
+            ['das Pferd / der Fisch', '马 / 鱼'],
+            ['der Löwe / der Bär', '狮子 / 熊（弱变化）'],
+            ['die Schlange / die Maus', '蛇 / 老鼠（→Mäuse）'],
+            ['der Affe', '猴（弱变化）']],
+  'examples': [['Der Hund bellt.', '狗在叫。'],
+               ['Die Katze schläft.', '猫在睡觉。'],
+               ['Das Pferd läuft schnell.', '马跑得快。'],
+               ['Der Bär ist groß.', '熊很大。']]},
+ {'num': 'M12-01',
+  'id': 'der_ein_woerter',
+  'cat': 'mingci',
+  'title': 'der-Wörter 和 ein-Wörter',
+  'titleDe': 'der-Wörter / ein-Wörter',
+  'explain': 'ein-Wörter（所有物主人称代词+kein）词尾和其后形容词词尾同不定冠词；der-Wörter（dies-、jed-、manch-、solch-、welch-、all-、jen-）同定冠词。记忆口诀：常见的 '
+             'ein-Wörter 包括所有的物主人称代词和 kein；常见的 der-Wörter 有 '
+             'dies-、jed-、manch-、solch-、welch-、all-、jen-。二者都可作代词使用，规则分别类似于不定冠词/定冠词作代词（Bei uns kennt '
+             'jeder jeden）。易错：der-Wörter 作限定词还是代词，二格词尾都一样（dieses/dieser），不像定冠词作代词要变为 '
+             'dessen/deren——这一点和定冠词作代词不同。der-Wörter 二格作代词现代德语很少用（太书面），口语 Ich bedarf dieses 会被说成 '
+             'Ich brauche dieses。alles vs alle：alles 表"所有事情"，alle 表"所有人"；manch- 后名词省略时非人东西一律中性 '
+             'manches。andere- 本质上是代词，首字母不大写。Döner mit allem 用 allem 单数因为"食物"概念不可数。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 this/every 只有一套；德语 der-Wörter 和 ein-Wörter 各跟一套冠词变格。',
+  'table': [['类别', '成员', '变格路线'],
+            ['ein-Wörter', 'mein-, dein-, kein-…', '走不定冠词路线'],
+            ['der-Wörter', 'dies-, jed-, welch-, all-…', '走定冠词路线'],
+            ['all-', 'alles（事情）/ alle（人）', '不可数 vs 可数']],
+  'examples': [['Dieser Kaffee ist teuer.', '这咖啡很贵。'],
+               ['Welche anderen Sprachen sprichst du?', '你还会说哪些语言？'],
+               ['Bei uns kennt jeder jeden.', '在我们这儿人人都认识。（jeder 作代词）'],
+               ['Alles klar.', '都清楚了。（alles=所有事）']]},
+ {'num': 'M12-02',
+  'id': 'kriegen_passiv',
+  'cat': 'dongci',
+  'title': 'kriegen / bekommen 的被动',
+  'titleDe': 'bekommen-Passiv',
+  'explain': '特殊被动：口语/非正式书面语中 bekommen/kriegen/erhalten 可引导被动，把原本的三格间接宾语变为主格（Mein Bruder bekommt '
+             'das Buch geschenkt）；不同于 werden '
+             '被动只有四格才能变主语。适用动词特点：都让三格宾语因动作"得到/获得"了什么（schenken、überreichen、auszahlen、zeigen、gratulieren、helfen、widersprechen）；schenken '
+             '可以但 geben 不行。ähneln、begegnen、gefallen、gehören、schaden 只有三格宾语但无直观动作，不能用 '
+             'kriegen/bekommen 引导被动。kriegen 和 bekommen 在此用法完全可以互换；erhalten 非常少见。对应英语 "have/get sth '
+             'done"：强调主语没亲自做（Sie kriegte ihren Wagen repariert=她找人修好了车）。主语对应四格的两种情况：①双宾语动词（如 '
+             'lehren）；②对英语 have sth done 的直译，极口语化，书面语应当避免。南方口语中 gehören 可引导被动=应该被做（Der Typ gehört '
+             'eingesperrt=那个家伙应该被关起来）。用被动即因发出者不重要而省略发出者。\n'
+             '\n'
+             '🇬🇧 英语对照：英语 He got his car repaired；德语 Sie kriegte ihren Wagen repariert，kriegen '
+             '被动一一对应。',
+  'table': [['结构', '例子', '含义'],
+            ['bekommen + 过去分词', 'Er bekommt das Auto repariert.', '他的车被修了'],
+            ['kriegen + 过去分词', 'Er kriegt das Geld überwiesen.', '他收到汇款'],
+            ['gehören + 过去分词', 'Der Wagen gehört repariert.', '这车该修了']],
+  'examples': [['Mein Bruder kriegt das Buch von mir geschenkt.', '我弟弟从我这儿获赠这本书。（三格变主语）'],
+               ['Sie bekam gratuliert.', '她收到了祝贺。'],
+               ['Sie kriegte ihren Wagen repariert.', '她找人修好了车。（=have sth done）'],
+               ['Der Typ gehört eingesperrt.', '那家伙应该被关起来。（南方口语）']]}]
 
-{'num': 'M10-04', 'id': 'nebenssatz', 'cat': 'congju', 'title': '原因 / 结果 / 目的 / 让步', 'titleDe': 'Kausal-, Konsekutiv-, Final-, Konzessivsätze',
- 'explain': '原因：并列连词 denn（不占位、不能放句首）/ nämlich（放变位动词后）；附属连词 weil / da；介词 wegen（书面支配二格，口语可三格）。结果：并列连词 daher；附属连词 sodass；副词 deshalb / deswegen / darum（占一位）。目的：附属连词 damit；um…zu…（要求主从句主语一致）。让步：附属连词 obwohl；介词 trotz（支配二格）；副词 trotzdem。易错：用了 weil 就不能再加 deshalb；口语里 trotzdem 不能代替 obwohl。\n\n🇬🇧 英语对照：英语 because / so / although；德语 denn（并列）vs weil（附属尾语序）的区分是重点。',
- 'table': [['含义', '并列（主句语序）', '附属（尾语序）'],
-           ['原因', 'denn', 'weil / da'],
-           ['结果', 'daher', 'sodass'],
-           ['目的', '—', 'damit / um…zu…'],
-           ['让步', 'trotzdem（副词）', 'obwohl']],
- 'examples': [
-     ('Ich bleibe zu Hause, weil ich krank bin.', '因为我病了，我待在家里。'),
-     ('Es regnet, daher bleiben wir hier.', '下雨，所以我们待在这。'),
-     ('Ich lerne Deutsch, um in Deutschland zu studieren.', '我学德语是为了去德国读书。'),
-     ('Obwohl es regnet, gehen wir spazieren.', '尽管下雨，我们还是去散步。'),
- ]},
-{'num': 'M10-05', 'id': 'passiv', 'cat': 'dongci', 'title': '被动语态', 'titleDe': 'Passiv',
- 'explain': 'Vorgangspassiv（werden + 过去分词，强调动作过程）vs Zustandspassiv（sein + 过去分词，强调动作完成后的状态）。Zustandspassiv 只有能产生明确结果的动词可用；它的现在时约等于 Vorgangspassiv 的完成时。规则：只有四格直接宾语能变成被动主语；三格/二格/介词宾语不行，此时常用无人称形式（Es wird getanzt. 有人在跳舞）。von = 对动作有绝对控制的人；durch = 物/媒介/方式；mit = 具体工具。易错：被动句中过去分词的助动词是 worden（其他情况是 geworden）；bedeuten、besitzen、enthalten、haben、kennen、wissen 等及物动词例外，不能变被动，用 man 作主语表达。\n\n🇬🇧 英语对照：英语 be done 一套打天下；德语分"过程被动"和"状态被动"，是英语没有的精细区分。',
- 'table': [['类型', '结构', '例子'],
-           ['过程被动', 'werden + 过去分词', 'Das Haus wird gebaut.'],
-           ['状态被动', 'sein + 过去分词', 'Das Haus ist gebaut.'],
-           ['施动者', 'von（人）/ durch（媒介）', 'von ihm / durch den Sturm']],
- 'examples': [
-     ('Das Auto wird repariert.', '车正在被修。（过程）'),
-     ('Das Auto ist repariert.', '车修好了。（状态）'),
-     ('Die Tür wurde von ihm geöffnet.', '门被他打开了。'),
-     ('Es wird viel getanzt.', '大家跳了很多舞。（无人称）'),
- ]},
-{'num': 'M10-06', 'id': 'relativsatz', 'cat': 'congju', 'title': '关系代词和关系从句', 'titleDe': 'Relativsätze',
- 'explain': '关系代词的性数看先行词，格看它在从句中的成分；紧跟被修饰名词。二格：dessen（阳/中）、deren（阴/复）——dessem 是母语者常犯的错误。先行词是第一/二人称代词时，从句中重复人称代词且动词与其变位一致。was 引导关系从句的四种场景：修饰 etwas / nichts / alles、名词化中性形容词、指示代词 das、代指整句话。was 作介词宾语时须与介词合并成代副词（worauf）。wo 代替"介词 + 地点状语"时，先行词无冠词只能用 wo。\n\n🇬🇧 英语对照：英语 who/which/that；德语关系代词要变格，二格 dessen/deren 是英语没有的。',
- 'table': [['先行词', '一格', '四格', '二格'],
-           ['阳性', 'der', 'den', 'dessen'],
-           ['阴性', 'die', 'die', 'deren'],
-           ['中性', 'das', 'das', 'dessen'],
-           ['复数', 'die', 'die', 'deren']],
- 'examples': [
-     ('Der Mann, der dort steht, ist mein Lehrer.', '站在那的男人是我老师。'),
-     ('Das Buch, das ich lese, ist spannend.', '我正在读的书很刺激。'),
-     ('Die Frau, deren Auto kaputt ist, wartet.', '车坏了的那位女士在等。'),
-     ('Alles, was er sagt, stimmt.', '他说的都对。'),
- ]},
-{'num': 'M10-07', 'id': 'konjunktiv2', 'cat': 'dongci', 'title': '第二虚拟式', 'titleDe': 'Konjunktiv II',
- 'explain': '形成：规则动词二虚 = 一般过去时；不规则动词 = 过去时词干加变音 + 一三单加 -e 补齐。除 sein/haben/werden/情态动词外，其余动词都用 würden + 动词原形代替。用法：礼貌愿望/请求（Würden Sie bitte…）、与事实相悖的愿望（wenn…würde…）、假设。"Ich hätte es wissen müssen." = 本该知道（表与过去事实相反）。易错：würden 不能直接连带情态动词；主从句时态/虚拟形式保持一致。\n\n🇬🇧 英语对照：英语 If I were / would；德语 würde + 原形是万能钥匙，sein/haben/werden/情态动词才用真二虚。',
- 'table': [['动词', '第二虚拟式'],
-           ['sein', 'wäre'],
-           ['haben', 'hätte'],
-           ['werden', 'würde'],
-           ['können', 'könnte'],
-           ['müssen', 'müsste'],
-           ['kommen', 'käme（或 würde kommen）']],
- 'examples': [
-     ('Wenn ich Zeit hätte, käme ich mit.', '我有空的话就跟你去。'),
-     ('Würden Sie mir bitte helfen?', '能请您帮我一下吗？'),
-     ('Ich wäre gern dabei.', '我很想参加。'),
-     ('An deiner Stelle würde ich das nicht tun.', '换作我不会这么做。'),
- ]},
-{'num': 'M11-01', 'id': 'wortstellung2', 'cat': 'jufa', 'title': '语序（中高级篇）', 'titleDe': 'Wortstellung (B)',
- 'explain': '核心原则：先说不重要/旧信息，后说重要/新信息。中场成分层级链：代词宾语 → 状语和确指名词宾语 → 泛指/零冠词名词宾语 → 表示方向的状语 → 介词宾语。两个代词宾语时四格在三格前。同一级别的状语顺序：态度副词 → 时间 → 原因 → 地点 → 方式。从句前置占主句第一位时，主句动词仍在第二位。\n\n🇬🇧 英语对照：英语语序相对固定 SVO；德语中场是按"信息重要性"排序的，这是德语语感的核心。',
- 'table': [['位置', '放什么', '例子'],
-           ['中场前', '代词宾语', 'Ich gebe es dir.'],
-           ['中场中', '状语 + 确指宾语', 'Ich gebe dir das Buch heute.'],
-           ['中场后', '介词宾语', 'Ich denke an dich.']],
- 'examples': [
-     ('Ich habe es ihm gestern gegeben.', '我昨天把它给他了。'),
-     ('Er hat mir das Buch aus Berlin mitgebracht.', '他从柏林给我带来了这本书。'),
-     ('Weil er krank ist, bleibt er zu Hause.', '因为他病了，他待在家里。'),
-     ('Gib es mir bitte!', '请把它给我！'),
- ]},
-{'num': 'M11-02', 'id': 'dativ_verben', 'cat': 'dongci', 'title': '只支配第三格的动词', 'titleDe': 'Verben mit Dativ',
- 'explain': '四类归纳：①表"发生"（geschehen、passieren、gelingen，助动词 sein；bevorstehen 临近用 haben）②zu-/nach-/bei-/ent- 前缀动词（zuhören、zusehen、zustimmen、entsprechen、widersprechen）③主语是物表感觉/评价（gefallen、fehlen、schmecken、wehtun、auffallen）④表人际（gratulieren、helfen、gehören、folgen、danken）。易错：glauben + 人 = 三格（Niemand wollte ihm glauben.），+ 物 = 四格，glauben an = 更深层的相信；erfolgen 不支配宾语。\n\n🇬🇧 英语对照：英语无此概念；只能按"动词词典"逐个记——A1 的 helfen/danken 只是冰山一角。',
- 'table': [['类别', '动词', '例子'],
-           ['发生', 'geschehen / gelingen', 'Es geschieht mir oft.'],
-           ['前缀动词', 'zuhören / widersprechen', 'Ich höre dir zu.'],
-           ['感觉评价', 'gefallen / wehtun', 'Das gefällt mir.'],
-           ['人际', 'helfen / gratulieren', 'Ich helfe dir.']],
- 'examples': [
-     ('Das Konzert gefällt mir sehr.', '我很喜欢这场音乐会。'),
-     ('Hör mir bitte zu!', '请听我说！'),
-     ('Er gratuliert seiner Schwester.', '他祝贺他姐姐。'),
-     ('Der Schlüssel gehört mir.', '这钥匙是我的。'),
- ]},
-{'num': 'M11-03', 'id': 'artikel_pronomen', 'cat': 'mingci', 'title': '冠词作代词', 'titleDe': 'Artikel als Pronomen',
- 'explain': '定冠词作代词相当于"这个/那个…"，变格与冠词一致，但复数三格是 denen（不是 den）、复数二格 deren/derer；可加重读音表强调。einer + von/nach 两类用法："他们中的一个"和"一个这样的人"。不定冠词作代词：①"一群中的一个"（英语 one of）②"某人"（较 jemand 不礼貌）③固定搭配 der eine…, der andere…（一个…另一个…/一些…另一些…）。易错：复数三格代词是 denen 而不是 den；andere- 是代词不是形容词名词化（etwas anderes 小写）。\n\n🇬🇧 英语对照：英语 one/ones；德语直接拿冠词当代词用，复数三格 denen 是特例。',
- 'table': [['作代词', '一格', '三格'],
-           ['der', 'der da', 'dem da'],
-           ['die（复数）', 'die da', 'denen（特例！）'],
-           ['einer', 'einer von uns', 'einem von uns']],
- 'examples': [
-     ('Der da drüben ist mein Bruder.', '那边那个是我哥哥。'),
-     ('Denen kann man nicht trauen.', '那些人不可信。'),
-     ('Einer von uns muss gehen.', '我们中得去一个。'),
-     ('Der eine lacht, der andere weint.', '一个笑，一个哭。'),
- ]},
-{'num': 'M11-04', 'id': 'tiere', 'cat': 'mingci', 'title': '动物', 'titleDe': 'Tiere',
- 'explain': '以单词表为核心，每词标冠词和复数，冠词大多靠死记。性别分布：阳性居多（der Hund/Hase/Löwe/Affe/Elefant）；中性如 das Kaninchen/Huhn/Schaf/Pferd；阴性如 die Katze/Kuh/Maus/Spinne。不只动物名词本身是弱变化（der Hase→den Hasen、der Bär→den Bären、der Löwe→den Löwen）。易错/趣点：der Hase（野兔）vs das Kaninchen（家兔）；der Moskito（蚊子，阳性）vs die Mücke（蚊子，阴性）。\n\n🇬🇧 英语对照：英语 animal 词无性；德语动物名词阳性占大头，性多靠死记。',
- 'table': [['动物', '冠词', '复数'],
-           ['狗', 'der Hund', 'die Hunde'],
-           ['猫', 'die Katze', 'die Katzen'],
-           ['野兔', 'der Hase', 'die Hasen'],
-           ['家兔', 'das Kaninchen', 'die Kaninchen'],
-           ['马', 'das Pferd', 'die Pferde'],
-           ['鸟', 'der Vogel', 'die Vögel']],
- 'examples': [
-     ('Der Hund bellt.', '狗在叫。'),
-     ('Die Katze schläft auf dem Sofa.', '猫在沙发上睡觉。'),
-     ('Ein Hase läuft über die Wiese.', '一只野兔跑过草地。'),
-     ('Das Pferd ist schnell.', '马跑得快。'),
- ]},
-{'num': 'M12-01', 'id': 'der_ein_woerter', 'cat': 'mingci', 'title': 'der-Wörter 和 ein-Wörter', 'titleDe': 'der-Wörter / ein-Wörter',
- 'explain': 'ein-Wörter = 所有物主代词（mein-、dein-…）+ kein；der-Wörter = dies-、jed-、manch-、solch-、welch-、all-、jen-。作代词使用时，ein-/der-Wörter 的变格分别服从不定冠词/定冠词作代词的规则。all- 作代词：alles = 所有事情（中性不可数），alle = 所有人（复数可数）。manches = 一些事情（中性不可数），manche = 一些人。易错：der-Wörter 二格词尾与冠词作代词的二格不同。\n\n🇬🇧 英语对照：英语 this/every/such；德语把这类词系统化为 der-Wörter，变格走定冠词路线。',
- 'table': [['类别', '成员', '变格路线'],
-           ['ein-Wörter', 'mein-, dein-, kein-…', '走不定冠词路线'],
-           ['der-Wörter', 'dies-, jed-, welch-, all-…', '走定冠词路线'],
-           ['all-', 'alles（事情）/ alle（人）', '不可数 vs 可数']],
- 'examples': [
-     ('Jedes Kind bekommt ein Geschenk.', '每个孩子都得到一份礼物。'),
-     ('Manche Leute mögen keinen Kaffee.', '有些人不喜欢咖啡。'),
-     ('Alles ist fertig.', '一切都准备好了。'),
-     ('Welches Buch liest du?', '你在读哪本书？'),
- ]},
-{'num': 'M12-02', 'id': 'kriegen_passiv', 'cat': 'dongci', 'title': 'kriegen / bekommen 的被动', 'titleDe': 'bekommen-Passiv',
- 'explain': '口语/非正式书面语中 bekommen/kriegen（罕见 erhalten）可引导被动，原第三格间接宾语变为第一格主语（Er bekommt einen Brief geschrieben. 他收到一封信/有人给他写了信）。对应英语 have/get sth done：请人做某事、自己不亲自做（Ich bekomme die Haare geschnitten. 我让人剪头发）。gehören 本身支配三格，也有被动含义：Der Wagen gehört repariert.（这车该修了）。易错：kriegen/bekommen 的被动用法很口语，正式书面语应避免；gratulieren、helfen 等三格动词是典型例子。\n\n🇬🇧 英语对照：对应英语 get sth done；德语用 bekommen/kriegen 实现，口语常用、考试少考。',
- 'table': [['结构', '例子', '含义'],
-           ['bekommen + 过去分词', 'Er bekommt das Auto repariert.', '他的车被修了'],
-           ['kriegen + 过去分词', 'Er kriegt das Geld überwiesen.', '他收到汇款'],
-           ['gehören + 过去分词', 'Der Wagen gehört repariert.', '这车该修了']],
- 'examples': [
-     ('Ich bekomme die Haare geschnitten.', '我让人剪头发。'),
-     ('Er kriegt das Geld überwiesen.', '他收到汇款。'),
-     ('Der Wagen gehört repariert.', '这车该修了。'),
-     ('Sie bekommt ein Paket geschickt.', '她收到一个包裹。'),
- ]},
-]
 
 def main():
     out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'kurs', 'a2')
