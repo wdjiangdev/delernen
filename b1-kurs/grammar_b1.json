@@ -1,0 +1,768 @@
+[
+ {
+  "num": "M13-01",
+  "id": "all_alle",
+  "cat": "pron",
+  "title": "all / alle / alles",
+  "titleDe": "all-, alle, alles",
+  "explain": "作定语时 all- 按 dies- 变格、后接形容词弱变化；在定冠词/其他限定词前可不加词尾。加词尾与不加词尾含义无区别（老师强调不要徒劳区分），但 solch- 前必须用加词尾的 all-。与人称代词连用主格分开写（wir alle），代词本身要变格（bei uns allen）。只有 alles 能和物质名词/动词搭配。易错：Sind das alle?（可数，这些是全部吗）vs Ist das alles?（不可数，就这些吗）不能混用。\n\n🇬🇧 英语对照：英语 all / everything；德语 alle（可数复数）vs alles（不可数/事情）的区分是重点。",
+  "table": [
+   [
+    "用法",
+    "例子"
+   ],
+   [
+    "作定语",
+    "alle meine Freunde"
+   ],
+   [
+    "与代词连用",
+    "wir alle / bei uns allen"
+   ],
+   [
+    "alles",
+    "Alles ist gut."
+   ]
+  ],
+  "examples": [
+   [
+    "Alle meine Freunde kommen.",
+    "我所有的朋友都来。"
+   ],
+   [
+    "Wir alle sind müde.",
+    "我们都很累。"
+   ],
+   [
+    "Ist das alles?",
+    "就这些吗？"
+   ],
+   [
+    "Bei uns allen war es kalt.",
+    "我们那儿都很冷。"
+   ]
+  ]
+ },
+ {
+  "num": "M13-02",
+  "id": "beide",
+  "cat": "pron",
+  "title": "beide / beides",
+  "titleDe": "beide, beides",
+  "explain": "作代词时 beide 指两个人或两个事物，不可数事物用 beides。作限定词时像复数定冠词变格（die beiden）；省去名词时代词变格相同。与人称代词连用主格分开写（wir beide）、非主格按形容词词尾（uns beiden），第二人称例外（euch beide）。\"两个都\"不能说 nicht beide，应用 sowohl…als auch / entweder…oder / weder…noch。\n\n🇬🇧 英语对照：英语 both；德语 beide 作限定词还要变格（die beiden），是英语没有的。",
+  "table": [
+   [
+    "用法",
+    "例子"
+   ],
+   [
+    "作代词",
+    "Beide sind gekommen."
+   ],
+   [
+    "作限定词",
+    "die beiden Kinder"
+   ],
+   [
+    "与代词连用",
+    "wir beide / uns beiden"
+   ],
+   [
+    "两个都",
+    "sowohl…als auch"
+   ]
+  ],
+  "examples": [
+   [
+    "Beide sind gekommen.",
+    "两个都来了。"
+   ],
+   [
+    "Die beiden Kinder spielen.",
+    "那两个孩子在玩。"
+   ],
+   [
+    "Wir beide gehen ins Kino.",
+    "我们俩去看电影。"
+   ],
+   [
+    "Sowohl er als auch sie kommen.",
+    "他和她都来。"
+   ]
+  ]
+ },
+ {
+  "num": "M13-03",
+  "id": "jemand",
+  "cat": "pron",
+  "title": "jemand / niemand",
+  "titleDe": "jemand, niemand",
+  "explain": "变格：三格 jemandem、四格 jemanden（口语可用原形），二格 -es 只用于书面语，否则用 von + 第三格。后续代词用阳性单数（es ist seine Pflicht）。口语中 einer/wer 代替 jemand、keiner 代替 niemand。后跟形容词时三、四格不变格，形容词名词化加词尾（jemand Kluges）。与 anders 连用时 jemand/niemand 不变格、anders 小写且永不变格。\n\n🇬🇧 英语对照：英语 someone/anyone；德语 jemand 要变格，且后续形容词名词化是特色。",
+  "table": [
+   [
+    "格",
+    "jemand",
+    "niemand"
+   ],
+   [
+    "一格",
+    "jemand",
+    "niemand"
+   ],
+   [
+    "三格",
+    "jemandem",
+    "niemandem"
+   ],
+   [
+    "四格",
+    "jemanden",
+    "niemanden"
+   ]
+  ],
+  "examples": [
+   [
+    "Hat jemand angerufen?",
+    "有人打电话吗？"
+   ],
+   [
+    "Ich habe niemanden gesehen.",
+    "我谁也没见着。"
+   ],
+   [
+    "Jemand Kluges hat das gesagt.",
+    "某个聪明人说的。"
+   ],
+   [
+    "Niemand ist perfekt.",
+    "没有人是完美的。"
+   ]
+  ]
+ },
+ {
+  "num": "M13-04",
+  "id": "irgend",
+  "cat": "pron",
+  "title": "irgend- 前缀",
+  "titleDe": "irgend-",
+  "explain": "共 11 个词：irgendetwas/was、irgendwann、irgendwie、irgendeine-、irgendwelche-、irgendjemand、irgendwer、irgendwo/wohin/woher、irgend so ein-。irgendeine- 作限定词按不定冠词变格（无复数），作代词按定冠词词尾变格。irgendwelche- 用于不可数/抽象/复数名词，按 welche- 变格。口语中 irgendetwas 常简化为 irgendwas。\n\n🇬🇧 英语对照：英语 some-/any-；德语 irgend- = \"某个不确定的\"，比 some- 更强调不确定。",
+  "table": [
+   [
+    "词",
+    "含义",
+    "例子"
+   ],
+   [
+    "irgendjemand",
+    "某人",
+    "Irgendjemand ruft an."
+   ],
+   [
+    "irgendwann",
+    "某个时候",
+    "Komm irgendwann vorbei!"
+   ],
+   [
+    "irgendwo",
+    "某处",
+    "Er ist irgendwo."
+   ],
+   [
+    "irgendwelche-",
+    "一些（复数）",
+    "irgendwelche Fragen"
+   ]
+  ],
+  "examples": [
+   [
+    "Irgendjemand hat angerufen.",
+    "有人打过电话。"
+   ],
+   [
+    "Komm irgendwann vorbei!",
+    "改天过来！"
+   ],
+   [
+    "Hast du irgendwelche Fragen?",
+    "有什么问题吗？"
+   ],
+   [
+    "Irgendwas stimmt nicht.",
+    "有点不对劲。"
+   ]
+  ]
+ },
+ {
+  "num": "M13-05",
+  "id": "ander",
+  "cat": "pron",
+  "title": "ander / anders / verschieden",
+  "titleDe": "ander-, anders, verschieden",
+  "explain": "anders = 与\"上文提到的\"作横向对比；作定语时去 s 再加形容词词尾（andere Biere = 和第一家酒吧不同的啤酒）。verschieden/unterschiedlich = 同一范围内部的多样性（\"好几种不同的啤酒\"），二者基本是同义词。带 s 的 anders 只能作表语。anders 还有\"其他的\"之义。易错：老师明确指出 Deutschland ist anders 不能换成 unterschiedlich（会变成\"不同时期的德国\"的纵向对比），且 unterschiedlich 画面感更\"混乱\"。\n\n🇬🇧 英语对照：英语 different/other；德语 anders（横向对比）vs verschieden（内部多样）的区分是精髓。",
+  "table": [
+   [
+    "词",
+    "含义",
+    "例子"
+   ],
+   [
+    "anders（表语）",
+    "不一样（横向对比）",
+    "Deutschland ist anders."
+   ],
+   [
+    "andere-（定语）",
+    "不同的",
+    "andere Biere"
+   ],
+   [
+    "verschieden",
+    "多种多样的",
+    "verschiedene Probleme"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich möchte ein anderes Bier.",
+    "我想换种啤酒。"
+   ],
+   [
+    "Wir haben verschiedene Probleme.",
+    "我们有各种不同的问题。"
+   ],
+   [
+    "Das ist etwas anderes.",
+    "那是另一回事。"
+   ],
+   [
+    "Sie ist anders als ihre Schwester.",
+    "她和她姐姐不一样。"
+   ]
+  ]
+ },
+ {
+  "num": "M14-01",
+  "id": "dativ_e",
+  "cat": "ge",
+  "title": "三格词尾 -e（旧式）",
+  "titleDe": "Dativ-e",
+  "explain": "20 世纪中叶前的旧德语中，阳性/中性名词第三格单数加 -e（Hause, Tage, Jahre, Laufe, Falle, Maße, Grade, Sinne）。现代德语中 -e 为可选项，仅保留在固定表达中：zu Hause（在家）、nach Hause（回家）、im Falle（万一）、im Laufe（在…过程中）、im Grunde（基本上）、in diesem Sinne（在此意义上）。注意 im Grunde 表示\"基本\"而非\"到底\"。im Falle von Katastrophen 用 von + 第三格代替第二格。\n\n🇬🇧 英语对照：类似英语古语 thou/thee 的残留；现代德语只在固定搭配里见到，认出来就行。",
+  "table": [
+   [
+    "固定表达",
+    "含义"
+   ],
+   [
+    "zu Hause",
+    "在家"
+   ],
+   [
+    "nach Hause",
+    "回家"
+   ],
+   [
+    "im Falle",
+    "万一"
+   ],
+   [
+    "im Laufe",
+    "在…过程中"
+   ],
+   [
+    "im Grunde",
+    "基本上"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich bin zu Hause.",
+    "我在家。"
+   ],
+   [
+    "Im Falle eines Falles ruf an.",
+    "万一有事打电话。"
+   ],
+   [
+    "Im Laufe der Zeit ändert sich alles.",
+    "随着时间一切都会变。"
+   ],
+   [
+    "Er geht nach Hause.",
+    "他回家了。"
+   ]
+  ]
+ },
+ {
+  "num": "M14-02",
+  "id": "genitiv_praep",
+  "cat": "ge",
+  "title": "支配第二格的介词",
+  "titleDe": "Präpositionen mit Genitiv",
+  "explain": "四个最常用：statt/anstatt（可作连词，支配与比较对象相同的格）、trotz、während（\"期间/始终\"，也可作连词表同时或对比）、wegen（固定结构 von…wegen）。八个空间介词：außerhalb、innerhalb、oberhalb、unterhalb、beidseits、diesseits、jenseits、unweit。其他：anlässlich、anhand、infolge、inklusive、mittels、zwecks。易错：wegen Fahrens 中名词化动词即使无冠词第二格也要加 -s；anfangs dieses Jahres 是第二格（Jahres），不是第三格强变化。\n\n🇬🇧 英语对照：英语 during/instead of/despite；德语这些介词支配二格，是书面语的标志。",
+  "table": [
+   [
+    "介词",
+    "含义",
+    "例子"
+   ],
+   [
+    "statt/anstatt",
+    "代替",
+    "statt des Autos"
+   ],
+   [
+    "trotz",
+    "尽管",
+    "trotz des Regens"
+   ],
+   [
+    "während",
+    "在…期间",
+    "während des Essens"
+   ],
+   [
+    "wegen",
+    "因为",
+    "wegen des Staus"
+   ],
+   [
+    "innerhalb",
+    "在…之内",
+    "innerhalb der Stadt"
+   ]
+  ],
+  "examples": [
+   [
+    "Trotz des Regens gehen wir raus.",
+    "尽管下雨我们还是出去。"
+   ],
+   [
+    "Während des Essens spricht man nicht.",
+    "吃饭时不说话。"
+   ],
+   [
+    "Wegen des Staus komme ich zu spät.",
+    "因为堵车我迟到了。"
+   ],
+   [
+    "Statt des Autos nehme ich das Fahrrad.",
+    "我不坐汽车，骑车去。"
+   ]
+  ]
+ },
+ {
+  "num": "M14-03",
+  "id": "modal_perfekt",
+  "cat": "dongci",
+  "title": "情态动词的现在完成时",
+  "titleDe": "Perfekt der Modalverben",
+  "explain": "特殊结构：haben + 动词原形 + 情态动词原形（Er hat nicht kommen dürfen.），不能用过去分词——这是德语著名的\"双原形\"（Ersatzinfinitiv）。情态动词自身的过去分词形式（gedurft、gekonnt 等）仅在情态动词单独作谓语时使用（Das hat er nicht gedurft.）。易错：带宾语动词时误用过去分词。\n\n🇬🇧 英语对照：英语 had to come；德语用\"双原形\"代替过去分词，是德语特有的怪规则。",
+  "table": [
+   [
+    "结构",
+    "例子"
+   ],
+   [
+    "haben + 原形 + 情态原形",
+    "Er hat nicht kommen dürfen."
+   ],
+   [
+    "情态单独作谓语",
+    "Das hat er nicht gedurft."
+   ]
+  ],
+  "examples": [
+   [
+    "Er hat nicht kommen dürfen.",
+    "他不被允许来。"
+   ],
+   [
+    "Sie hat das nicht gewollt.",
+    "她不想要那个。"
+   ],
+   [
+    "Ich habe ihn nicht verstehen können.",
+    "我没能理解他。"
+   ],
+   [
+    "Das hat er nicht gedurft.",
+    "他不被允许做那个。"
+   ]
+  ]
+ },
+ {
+  "num": "M14-04",
+  "id": "lassen",
+  "cat": "dongci",
+  "title": "lassen 的用法总结",
+  "titleDe": "lassen",
+  "explain": "lassen 有 6 种用法：①基本义\"什么都不做/算了\"（machen 的反义词）；②\"允许\"（Der Lehrer lässt die Kinder nicht spielen.）；③\"命令\"（Der Lehrer lässt die Kinder in der Klasse bleiben.）；④\"建议/邀请\"（Lass uns…）；⑤使役\"让别人做\"（Ich habe mir die Haare schneiden lassen.）；⑥lassen + sich + 副词/动词原形 = 被动意义，主语一般是物（Die Tür lässt sich nicht öffnen.）。完成时中 lassen 用原形代替过去分词（类似情态动词）。\n\n🇬🇧 英语对照：英语 let/have/make/get；德语一个 lassen 覆盖了 let、allow、order、have sth done、can be done 多个意思。",
+  "table": [
+   [
+    "用法",
+    "例子"
+   ],
+   [
+    "允许",
+    "Der Lehrer lässt die Kinder spielen."
+   ],
+   [
+    "命令",
+    "Er lässt die Kinder bleiben."
+   ],
+   [
+    "建议",
+    "Lass uns gehen!"
+   ],
+   [
+    "使役",
+    "sich die Haare schneiden lassen"
+   ],
+   [
+    "被动意义",
+    "Die Tür lässt sich nicht öffnen."
+   ]
+  ],
+  "examples": [
+   [
+    "Lass uns gehen!",
+    "我们走吧！"
+   ],
+   [
+    "Der Lehrer lässt die Kinder spielen.",
+    "老师让孩子们玩。"
+   ],
+   [
+    "Die Tür lässt sich nicht öffnen.",
+    "这门打不开。"
+   ],
+   [
+    "Ich habe mir die Haare schneiden lassen.",
+    "我去理了发。"
+   ]
+  ]
+ },
+ {
+  "num": "M14-05",
+  "id": "partizip_adj",
+  "cat": "xingrong",
+  "title": "分词作形容词",
+  "titleDe": "Partizip als Adjektiv",
+  "explain": "分词作形容词加正常形容词词尾，也可作副词，还可被名词化（Angestellte 雇员、Bekannte 熟人）。第一分词表主动/进行（boiling water 开水）。第二分词：不及物动词表完成/主动（angekommen = 已经到达），及物动词表被动（verloren 丢失的、gewarnt 被警告的）。第一分词 + zu 表被动的必要性（nicht zu übersehender Fehler = 不能忽视的错误）。易错：Den Schildern folgend（状语，跟着路标走）vs Den folgenden Schildern（定语，接下来的路标）含义不同。\n\n🇬🇧 英语对照：英语 a crying baby / a broken window；德语规则相同，但分词要按形容词变格。",
+  "table": [
+   [
+    "分词",
+    "含义",
+    "例子"
+   ],
+   [
+    "第一分词",
+    "主动/进行",
+    "die weinende Frau"
+   ],
+   [
+    "第二分词（不及物）",
+    "完成/主动",
+    "der angekommene Zug"
+   ],
+   [
+    "第二分词（及物）",
+    "被动",
+    "der verlorene Schlüssel"
+   ],
+   [
+    "第一分词+zu",
+    "被动必要",
+    "nicht zu übersehender Fehler"
+   ]
+  ],
+  "examples": [
+   [
+    "Die weinende Frau braucht Hilfe.",
+    "哭泣的女人需要帮助。"
+   ],
+   [
+    "Der verlorene Schlüssel ist wieder da.",
+    "丢失的钥匙又找到了。"
+   ],
+   [
+    "Die Angestellten streiken.",
+    "雇员们在罢工。"
+   ],
+   [
+    "Das ist ein nicht zu übersehender Fehler.",
+    "这是个不能忽视的错误。"
+   ]
+  ]
+ },
+ {
+  "num": "M14-06",
+  "id": "infinitiv_verben",
+  "cat": "dongci",
+  "title": "搭配动词原形的动词",
+  "titleDe": "Verben mit Infinitiv",
+  "explain": "感官动词 sehen/hören/fühlen/spüren + 第四格 + 动词原形（acI 结构），完成时仍用原形代替过去分词（Ich habe ihn kommen sehen.）。gehen/kommen/fahren/schicken + 动词原形。bleiben/finden/haben + 方位动词（sitzen bleiben 留级等固定搭配）。heißen（命令）/helfen/lehren/lernen + 动词原形或带 zu 不定式；heißen（意味着）/nennen 只能 + 动词原形。tun + 动词原形在口语中表强调，书面语避免。固定搭配 sich schlafen legen。\n\n🇬🇧 英语对照：英语 see sb do / help sb (to) do；德语感官动词后也是\"四格+原形\"，完成时同样用双原形。",
+  "table": [
+   [
+    "动词",
+    "结构",
+    "例子"
+   ],
+   [
+    "sehen/hören",
+    "四格+原形",
+    "Ich habe ihn kommen sehen."
+   ],
+   [
+    "bleiben",
+    "方位动词",
+    "sitzen bleiben"
+   ],
+   [
+    "helfen/lernen",
+    "原形或zu不定式",
+    "Er hilft mir tragen."
+   ],
+   [
+    "heißen（意味着）",
+    "只能原形",
+    "Das heißt arbeiten."
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe ihn kommen sehen.",
+    "我看见他来了。"
+   ],
+   [
+    "Sie bleibt sitzen.",
+    "她留级了。"
+   ],
+   [
+    "Er hilft mir tragen.",
+    "他帮我搬。"
+   ],
+   [
+    "Lass ihn gehen!",
+    "让他走！"
+   ]
+  ]
+ },
+ {
+  "num": "M15-01",
+  "id": "plusquamperfekt",
+  "cat": "tempus",
+  "title": "过去完成时",
+  "titleDe": "Plusquamperfekt",
+  "explain": "构成：haben/sein 的过去时 + 过去分词（hatte gemacht）。用法：\"过去的过去\"——先发生的动作用过去完成时，常与 bevor/nachdem 配合。老师特别强调的易错点：不要因为\"事情发生在过去\"就把 haben/sein 改成过去时——现在完成时和一般过去时含义基本等价，*\"2001 hatte ich mein Studium abgeschlossen\" 是错误的（2001 年毕业直接用完成时/过去时即可）。\n\n🇬🇧 英语对照：英语 had done；德语 had done = hatte gemacht，结构一一对应，但别滥用。",
+  "table": [
+   [
+    "时态",
+    "构成",
+    "例子"
+   ],
+   [
+    "过去完成时",
+    "hatte/war + 过去分词",
+    "hatte gemacht"
+   ],
+   [
+    "现在完成时",
+    "habe + 过去分词",
+    "habe gemacht"
+   ],
+   [
+    "过去时",
+    "动词过去式",
+    "machte"
+   ]
+  ],
+  "examples": [
+   [
+    "Nachdem er gegessen hatte, ging er.",
+    "他吃完饭后走了。"
+   ],
+   [
+    "Sie war schon gegangen, als ich kam.",
+    "我到时她已经走了。"
+   ],
+   [
+    "Als wir ankamen, war der Film schon zu Ende.",
+    "我们到时电影已经结束了。"
+   ],
+   [
+    "Er hatte viel gelernt und bestand die Prüfung.",
+    "他学了很多，通过了考试。"
+   ]
+  ]
+ },
+ {
+  "num": "M15-02",
+  "id": "gleich_derselbe",
+  "cat": "pron",
+  "title": "gleich vs derselbe",
+  "titleDe": "gleich, derselbe",
+  "explain": "gleich = 两个一样的对象（相似，同款）；derselbe = 同一个对象（同一）。derselbe 变格时 der 和 selbe 都要变格；介词后冠词与介词缩合（am/beim/zur selben）。易错：连德国人都常混淆——想表达\"同一间办公室\"应说 Wir arbeiten im selben Büro 而非 im gleichen Büro。\n\n🇬🇧 英语对照：英语 the same（模糊）vs 德语 gleich（相似）/derselbe（同一）的精确区分，是德语更细的地方。",
+  "table": [
+   [
+    "词",
+    "含义",
+    "例子"
+   ],
+   [
+    "gleich",
+    "相似的（两个对象）",
+    "das gleiche Auto"
+   ],
+   [
+    "derselbe",
+    "同一个（同一对象）",
+    "im selben Büro"
+   ],
+   [
+    "介词缩合",
+    "zur selben Zeit",
+    "在同一时间"
+   ]
+  ],
+  "examples": [
+   [
+    "Wir haben das gleiche Auto.",
+    "我们有同款车。"
+   ],
+   [
+    "Wir arbeiten im selben Büro.",
+    "我们在同一间办公室。"
+   ],
+   [
+    "Zur selben Zeit war er da.",
+    "同一时间他在那儿。"
+   ],
+   [
+    "Das ist nicht dasselbe!",
+    "那不是同一回事！"
+   ]
+  ]
+ },
+ {
+  "num": "M15-03",
+  "id": "hin_her",
+  "cat": "qita",
+  "title": "表示方向的副词 hin-/her-",
+  "titleDe": "hin-, her-",
+  "explain": "her- = 朝向说话人（herauf 上来、herunter 下来、herein 进来、herüber 过来），hin- = 远离说话人（hinauf 上去、hinunter 下去、hinein 进去、hinüber 过去）。口语缩写：rauf、runter、rein、rüber。hinterher 是固定搭配（Otto geht dir hinterher 他跟在你后面）。易错：gehen 是不及物动词，不能支配第四格直接宾语，所以 hinterher 后用第三格（dir 而非 dich）。\n\n🇬🇧 英语对照：英语 come in（朝我）/ go in（离我）；德语把方向编进了前缀 her-/hin-，更系统。",
+  "table": [
+   [
+    "前缀",
+    "方向",
+    "例子"
+   ],
+   [
+    "her-",
+    "朝向说话人",
+    "herein 进来"
+   ],
+   [
+    "hin-",
+    "远离说话人",
+    "hinaus 出去"
+   ],
+   [
+    "口语缩写",
+    "—",
+    "rein/rüber/runter"
+   ]
+  ],
+  "examples": [
+   [
+    "Komm herein!",
+    "进来！"
+   ],
+   [
+    "Geh hinaus!",
+    "出去！"
+   ],
+   [
+    "Er läuft dir hinterher.",
+    "他跟在你后面跑。"
+   ],
+   [
+    "Kommst du mit runter?",
+    "你跟我一起下去吗？"
+   ]
+  ]
+ },
+ {
+  "num": "M16-17",
+  "id": "abkuerzungen",
+  "cat": "vokabel",
+  "title": "德语常用缩写总结",
+  "titleDe": "Abkürzungen",
+  "explain": "19 个常用缩写：Abo（订阅）、Akku（电池）、Azubi（学徒）、bzw（beziehungsweise 即/或者）、ca（circa 大约）、d. h.（das heißt 即）、EG（Erdgeschoss 底楼）/OG（楼上）/UG（地下）、Kfz（机动车）、Lkw（卡车）、Pkw（小汽车）、usw（und so weiter 等等）、vgl（vergleiche 比较）、WC、WG（Wohngemeinschaft 合租）、SMS、z. B.（zum Beispiel 例如）。CH = Confoederatio Helvetica（瑞士联邦，拉丁语）。易错：usw 与 und 列举连用不重复（Äpfel, Birnen usw.）。\n\n🇬🇧 英语对照：英语 e.g./i.e./etc.；德语 z. B./d. h./usw 一一对应。",
+  "table": [
+   [
+    "缩写",
+    "全称",
+    "中文"
+   ],
+   [
+    "z. B.",
+    "zum Beispiel",
+    "例如"
+   ],
+   [
+    "d. h.",
+    "das heißt",
+    "即"
+   ],
+   [
+    "usw.",
+    "und so weiter",
+    "等等"
+   ],
+   [
+    "bzw.",
+    "beziehungsweise",
+    "即/或者"
+   ],
+   [
+    "ca.",
+    "circa",
+    "大约"
+   ],
+   [
+    "WG",
+    "Wohngemeinschaft",
+    "合租"
+   ],
+   [
+    "EG/OG/UG",
+    "Erdgeschoss…",
+    "底楼/楼上/地下"
+   ],
+   [
+    "vgl.",
+    "vergleiche",
+    "比较"
+   ]
+  ],
+  "examples": [
+   [
+    "Zum Beispiel: Äpfel, Birnen usw.",
+    "例如：苹果、梨等等。"
+   ],
+   [
+    "Das heißt, du kommst nicht?",
+    "也就是说你不来了？"
+   ],
+   [
+    "Er wohnt in einer WG.",
+    "他住在合租房里。"
+   ],
+   [
+    "Vgl. Seite 10.",
+    "参见第 10 页。"
+   ]
+  ]
+ }
+]
