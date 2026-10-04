@@ -33,3 +33,19 @@
 - B2 动词：歌德 B2 考纲常见词汇
 - 词性校验：TU Chemnitz ding 德英词典（GPL-2.0+）
 - 词族、语法例句、三形式：手工整理核对
+
+## 一键部署（换服务器）
+
+在新服务器上以 root 执行一条命令即可（Debian/Ubuntu；会自动装 docker）：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash
+```
+
+做完的事：下载本站文件 → 写入 `/opt/docker/delernen`（`conf/nginx.conf` + `www/`）→ 启动 `delernen-web` 容器（nginx:alpine，监听 `127.0.0.1:18095`）→ 健康检查。
+
+最后一步手动做：在 Cloudflare Tunnel 里加一条 Public Hostname，Service 指向 `http://127.0.0.1:18095`。
+
+- 换端口：`PORT=18096 bash deploy.sh`
+- 换目录：`DEPLOY_DIR=/srv/delernen bash deploy.sh`
+- 重新执行即更新站点文件并重启容器（幂等）。
