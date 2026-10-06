@@ -166,12 +166,15 @@ function key(src,de){return src+'|'+de;}
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
 /* ---------- 数据源加载 ---------- */
-function loadSource(src){
+function getSource(id){return SOURCES.filter(function(s){return s.id===id;})[0];}
+function loadSource(id){
+  var src=getSource(id);
   return new Promise(function(res,rej){
-    if(dataCache[src.id])return res(dataCache[src.id]);
+    if(!src)return rej(new Error('unknown source '+id));
+    if(dataCache[id])return res(dataCache[id]);
     var sc=document.createElement('script');
     sc.src=src.file;
-    sc.onload=function(){try{var d=window[src.v];if(!d)throw new Error('no data');dataCache[src.id]=d;res(d);}catch(e){rej(e);}};
+    sc.onload=function(){try{var d=window[src.v];if(!d)throw new Error('no data');dataCache[id]=d;res(d);}catch(e){rej(e);}};
     sc.onerror=rej;
     document.head.appendChild(sc);
   });
