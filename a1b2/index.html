@@ -364,8 +364,17 @@ Promise.all([fetch('verb_groups.json').then(r=>r.json()),fetch('word_families.js
     if(r.tab==='verb')showVerbDetail(r.m,g);
     else if(r.tab==='family')showFamilyDetail(r.m,g);
     else showGrammarDetail(r.m,g);
+    var hadFocus=(document.activeElement===box);
     box.blur();
-    document.getElementById('detail').scrollIntoView({block:'nearest'});
+    var goDetail=function(){document.getElementById('detail').scrollIntoView({block:'nearest'});};
+    if(hadFocus&&window.visualViewport){
+      // iOS 键盘收起会异步恢复旧滚动位置, 等视口恢复完成后再定位
+      var done=false,vv=window.visualViewport;
+      var go=function(){if(done)return;done=true;goDetail();};
+      var h=function(){vv.removeEventListener('resize',h);setTimeout(go,120);};
+      vv.addEventListener('resize',h);
+      setTimeout(go,900);
+    }else{goDetail();}
   }
   function doSearch(){
     const q=box.value.trim().toLowerCase();
