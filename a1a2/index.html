@@ -128,7 +128,9 @@ const NS='http://www.w3.org/2000/svg';
 (function(){
   const c=document.getElementById('stars'),x=c.getContext('2d');
   function rs(){c.width=innerWidth;c.height=innerHeight;}
-  rs();addEventListener('resize',rs);
+  rs();
+  // 只在横竖屏切换时重设 canvas, 工具栏显隐触发的 resize 不再重置, 避免布局抖动丢滚动位置
+  addEventListener('orientationchange',()=>setTimeout(rs,120));
   const N=120,ps=[];
   for(let i=0;i<N;i++)ps.push({x:Math.random(),y:Math.random(),r:Math.random()*1.5+0.3,s:Math.random()*0.3+0.05});
   (function anim(){
