@@ -68,6 +68,8 @@ header p{font-size:12px;color:var(--text3);margin-top:4px}
 #detail p{font-size:13px;color:var(--text2);line-height:1.6}
 #detail p.zh{font-size:15px;color:var(--text);font-weight:600;margin-bottom:2px}
 #detail p.en{font-size:12px;color:var(--text3);font-style:italic}
+#detail p.pfxnote{font-size:13px;color:var(--text2);background:var(--bg-input);border:1px dashed var(--border);border-radius:8px;padding:8px 10px;margin:8px 0 2px}
+#detail p.pfxnote b{color:var(--accent2)}
 #detail .forms{display:flex;gap:12px;margin:10px 0}
 #detail .forms div{flex:1;background:var(--bg-input);border:1px solid #2a3350;border-radius:8px;padding:8px 10px}
 #detail .forms span{display:block;font-size:10px;color:var(--text4);margin-bottom:2px}
@@ -135,6 +137,7 @@ let verbData=null, familyData=null, grammarData=null;
 
 const POS_COLORS={v:'#6ab0ff',n:'#7dd87d',a:'#ffb84d'};
 const POS_NAMES={v:'动词',n:'名词',a:'形容词'};
+const PREFIX_MEAN={ab:'离开、去掉',an:'接触、朝向',auf:'向上、打开',aus:'向外、出去',be:'使及物、作用于',bei:'附带、在旁',dar:'表"在那里"',durch:'穿过',ein:'向内、进入',ent:'脱离、去除',er:'得出结果',fest:'固定、确定',ge:'表集合、完成',her:'朝说话人来',hin:'朝远处去',mit:'一起、随同',um:'围绕、转变',unter:'在下、从属',ver:'偏离、做错、完成',vor:'在前、预先',weg:'拿走、离开',wider:'反对',wieder:'再次、重复',zu:'合上、朝向','zurück':'返回','zusammen':'共同','über':'越过、在上'};
 
 function renderGroup(g){
   svg.innerHTML='';
@@ -263,8 +266,13 @@ function showVerbDetail(m,g){
     forms='<div class="forms"><div><span>过去式</span><b>'+(m.past||'-')+'</b></div>'+
       '<div><span>过去分词</span><b>'+(m.pp||'-')+'</b></div></div>';
   }
-  d.innerHTML='<h3>'+title+'</h3><p class="zh">'+(m.zh||g.stemZh||'')+'</p><p class="en">'+(m.def||'')+'</p>'+forms+
-    '<div class="meta">词族 '+g.stem+' · 共 '+g.members.length+' 个'+(m.count?' · 在 Nicos Weg 出现 '+m.count+' 次':'')+(g.level?' · <span class="lv lv-'+g.level+'">'+g.level+'</span>':'')+'</div>';
+  let pfxNote='';
+  if(m.prefix&&PREFIX_MEAN[m.prefix]){
+    const stemZh=(((g.members||[]).find(x=>!x.prefix))||{}).zh||'';
+    pfxNote='<p class="pfxnote">🧩 <b>'+m.prefix+'-</b>（'+PREFIX_MEAN[m.prefix]+'） + '+g.stem+'（'+stemZh+'） → <b>'+(m.zh||'')+'</b></p>';
+  }
+  d.innerHTML='<h3>'+title+'</h3><p class="zh">'+(m.zh||g.stemZh||'')+'</p><p class="en">'+(m.def||'')+'</p>'+pfxNote+forms+
+    '<div class="meta">词族 '+g.stem+' · 共 '+g.members.length+' 个'+(m.count?' · 在 Nicos Weg 出现 '+m.count+' 次':'')+'</div>';
 }
 
 function showFamilyDetail(m,g){
@@ -290,7 +298,7 @@ function renderNav(groups){
     const b=document.createElement('button');
     b.className='gbtn'+(i===0?' active':'');
     const label=activeTab==='verb'?g.stem:activeTab==='family'?g.root:g.title;
-    const lv=g.level?'<span class="lv lv-'+g.level+'">'+g.level+'</span>':'';
+    const lv=(g.level&&activeTab!=='verb')?'<span class="lv lv-'+g.level+'">'+g.level+'</span>':'';
     b.innerHTML=label+lv+'<small>'+g.members.length+'</small>';
     b.addEventListener('click',()=>{
       document.querySelectorAll('.gbtn').forEach(x=>x.classList.remove('active'));
