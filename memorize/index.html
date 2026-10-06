@@ -122,6 +122,7 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 <button id="gFuzzy" onclick="grade(1)">模糊</button>
 <button id="gGot" onclick="grade(2)">记得</button>
 </div>
+<div style="text-align:center;margin-top:10px"><a href="#" id="undoBtn" onclick="undoGrade();return false;" style="display:none;color:var(--text2);font-size:13px">↩ 撤销上次打分</a></div>
 <div style="text-align:center;margin-top:14px"><a href="#" onclick="quitSession();return false;" style="color:var(--text2);font-size:13px">结束本次</a></div>
 </div>
 
@@ -155,7 +156,7 @@ var LSKEY='delernen-srs-v1';
 var store=loadStore();
 var dataCache={};   // srcId -> array
 var selSources=['nicos_a1'];
-var queue=[],qIdx=0,sessStats={due:0,fresh:0,forgot:0};
+var queue=[],qIdx=0,sessStats={due:0,fresh:0,forgot:0},undoStack=[];
 
 function loadStore(){
   try{var s=JSON.parse(localStorage.getItem(LSKEY)||'{}');}catch(e){s={};}
@@ -243,7 +244,7 @@ function startSession(){
       alert('🎉 太棒了！所选范围内今日没有到期的单词。');
       return;
     }
-    qIdx=0;sessStats={due:due.length,fresh:Math.min(allowed,fresh.length),forgot:0,done:0};
+    qIdx=0;sessStats={due:due.length,fresh:Math.min(allowed,fresh.length),forgot:0,done:0};undoStack=[];
     showView('vStudy');
     renderCard();
   }).catch(function(e){
@@ -276,6 +277,7 @@ function renderCard(){
   var tip=document.getElementById('cTip');
   if(cur.w.tip){tip.textContent='💡 '+cur.w.tip;tip.style.display='block';}else{tip.style.display='none';}
   document.getElementById('grades').classList.add('hide');
+  updateUndoBtn();
   var pct=Math.round(qIdx/queue.length*100);
   document.getElementById('progBar').style.width=pct+'%';
   document.getElementById('progText').textContent=(qIdx+1)+' / '+queue.length;
@@ -300,6 +302,8 @@ if('speechSynthesis' in window){speechSynthesis.getVoices();}
 
 window.grade=function(g){
   var now=Date.now(),k=cur.k;
+  var prev=store.words[k]?{box:store.words[k].box,next:store.words[k].next}:null;
+  undoStack.push({qIdx:qIdx,k:k,prev:prev,newCount:store.newCount,done:sessStats.done,forgot:sessStats.forgot});
   var st=store.words[k]||{box:0,next:0};
   var isNew=!store.words[k];
   if(g===0){st.box=0;st.next=now+10*60*1000;sessStats.forgot++;}
@@ -310,9 +314,25 @@ window.grade=function(g){
   sessStats.done++;
   saveStore();
   qIdx++;
+  updateUndoBtn();
   if(qIdx<queue.length)renderCard();
   else finishSession();
 };
+window.undoGrade=function(){
+  var u=undoStack.pop();
+  if(!u)return;
+  if(u.prev)store.words[u.k]=u.prev; else delete store.words[u.k];
+  store.newCount=u.newCount;
+  sessStats.done=u.done;sessStats.forgot=u.forgot;
+  saveStore();
+  qIdx=u.qIdx;
+  showView('vStudy');
+  renderCard();
+};
+function updateUndoBtn(){
+  var b=document.getElementById('undoBtn');
+  if(b)b.style.display=undoStack.length?'inline':'none';
+}
 window.quitSession=function(){finishSession(true);};
 
 function boxName(b){return b>=MASTER_BOX?'已掌握':'Box '+b;}
