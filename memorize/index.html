@@ -90,6 +90,7 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 <div class="stat"><b id="stTotal">0</b><span>已收录</span></div>
 </div>
 <button class="btn" id="startBtn" onclick="startSession()">开始背单词</button>
+<div id="loadErr" style="display:none;color:var(--red);font-size:13px;margin-top:10px;line-height:1.6"></div>
 <button class="btn ghost" onclick="clearProgress()">清空本机进度</button>
 <div class="note">💡 三档自评：<b style="color:var(--red)">忘了</b> = 完全想不起来，打回重学；<b style="color:var(--orange)">模糊</b> = 犹豫/猜对，维持当前进度再巩固一次；<b style="color:var(--green)">记得</b> = 干脆答对，进入下一间隔。诚实打分效果最好。</div>
 </div>
@@ -170,7 +171,7 @@ function loadSource(src){
     if(dataCache[src.id])return res(dataCache[src.id]);
     var sc=document.createElement('script');
     sc.src=src.file;
-    sc.onload=function(){try{var d=(0,eval)(src.v);dataCache[src.id]=d;res(d);}catch(e){rej(e);}};
+    sc.onload=function(){try{var d=window[src.v];if(!d)throw new Error('no data');dataCache[src.id]=d;res(d);}catch(e){rej(e);}};
     sc.onerror=rej;
     document.head.appendChild(sc);
   });
@@ -240,7 +241,11 @@ function startSession(){
     qIdx=0;sessStats={due:due.length,fresh:Math.min(allowed,fresh.length),forgot:0,done:0};
     showView('vStudy');
     renderCard();
-  }).catch(function(){alert('词库加载失败，请检查网络后重试');});
+  }).catch(function(e){
+    var el=document.getElementById('loadErr');
+    el.style.display='block';
+    el.textContent='词库加载失败：'+(e&&e.message?e.message:e)+'，请检查网络后重试';
+  });
 }
 
 function showView(id){
