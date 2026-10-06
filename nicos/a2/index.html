@@ -103,7 +103,7 @@ function render(){
     if(it.tip){
       tipHtml='<button class="tipbtn" onclick="this.nextElementSibling.classList.toggle(\'show\');this.textContent=this.textContent===\'💡 记忆提示 ▼\'?\'💡 记忆提示 ▲\':\'💡 记忆提示 ▼\'">💡 记忆提示 ▼</button><div class="tip">'+esc(it.tip)+'</div>';
     }
-    out.push('<div class="card"><div class="top"><div class="de">'+esc(it.de)+'</div><button class="speak" data-i="'+i+'" title="朗读">🔈</button></div><div class="mean"><span class="en">'+esc(it.en)+'</span> · <span class="zh">'+esc(it.zh)+'</span></div>'+(it.past&&it.pp?'<div class="vforms"><small>过去式·过去分词</small> '+esc(it.past)+' · '+esc(it.pp)+'</div>':'')<div class="meta"><span class="tag">'+esc(posMap[it.pos]||it.pos)+'</span><span class="tag">'+esc(it.topic)+'</span></div>'+tipHtml+'</div>');
+    out.push('<div class="card"><div class="top"><div class="de">'+esc(it.de)+'</div><button class="speak" data-i="'+i+'" title="朗读">🔈</button></div><div class="mean"><span class="en">'+esc(it.en)+'</span> · <span class="zh">'+esc(it.zh)+'</span></div>'+(it.past&&it.pp?'<div class="vforms"><small>过去式·过去分词</small> '+esc(it.past)+' · '+esc(it.pp)+'</div>':'')+'<div class="meta"><span class="tag">'+esc(posMap[it.pos]||it.pos)+'</span><span class="tag">'+esc(it.topic)+'</span></div>'+tipHtml+'</div>');
     if(n>=400)break;
   }
   list.innerHTML=out.join('')||'<div class="empty">没有找到匹配的单词</div>';
