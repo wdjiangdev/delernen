@@ -106,7 +106,7 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 <div class="de" id="cDe"></div>
 <div class="tag" id="cTag"></div>
 <button class="speak" id="cSpeak" onclick="event.stopPropagation();speakWord()" title="朗读">🔈</button>
-<div class="hint">点击卡片翻面看释义</div>
+<div class="hint">点击卡片翻面，再点可翻回</div>
 </div>
 <div class="face back">
 <div class="de" id="cDe2"></div>
@@ -283,9 +283,9 @@ function renderCard(){
   document.getElementById('progText').textContent=(qIdx+1)+' / '+queue.length;
 }
 window.flipCard=function(){
-  if(flipped)return;flipped=true;
-  document.getElementById('card').classList.add('flipped');
-  document.getElementById('grades').classList.remove('hide');
+  flipped=!flipped;
+  document.getElementById('card').classList.toggle('flipped',flipped);
+  if(flipped)document.getElementById('grades').classList.remove('hide');
 };
 function speakWord(){
   try{
