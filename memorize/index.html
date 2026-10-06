@@ -342,6 +342,7 @@ window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'aut
 
 refreshStats();
 window.startSession=startSession;
+window.showSetup=showSetup;
 window.clearProgress=function(){if(confirm('确定清空所有背单词进度吗？')){try{localStorage.removeItem(LSKEY);}catch(e){}location.reload();}};
 })();
 </script>
