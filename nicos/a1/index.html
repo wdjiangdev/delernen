@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicos Weg A1 词汇 · Deutsch Lernen</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0e1a;--card:#141b30;--text:#e0e6f0;--text2:#8a93a8;--border:#2a3350;--accent:#4a7aca;--green:#7dd87d;--orange:#ffb84d;--purple:#9d7bff;--chip:#1a2340}
+[data-theme="light"]{--bg:#f4f6fa;--card:#ffffff;--text:#1c2536;--text2:#5c6e88;--border:#cfd8e6;--accent:#3868c8;--green:#2e8b57;--orange:#c47b12;--purple:#6a4fc8;--chip:#e8edf5}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:720px;margin:0 auto;padding:16px 14px 60px}
+header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+header h1{font-size:20px;flex:1}
+#themeBtn{background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;color:var(--text)}
+.back{color:var(--accent);text-decoration:none;font-size:14px}
+.sub{color:var(--text2);font-size:13px;margin:6px 0 14px;line-height:1.6}
+.search{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0}
+.search input{width:100%;padding:12px 14px;font-size:16px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);outline:none}
+.search input:focus{border-color:var(--accent)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.chip{padding:7px 13px;border-radius:20px;border:1px solid var(--border);background:var(--chip);color:var(--text);font-size:13px;cursor:pointer;user-select:none}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.posrow{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
+.count{color:var(--text2);font-size:13px;margin:8px 0}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px 14px;margin-bottom:10px}
+.card .top{display:flex;align-items:flex-start;gap:8px}
+.card .de{font-size:17px;font-weight:700;flex:1;line-height:1.4}
+.speak{background:none;border:1px solid var(--border);border-radius:50%;width:34px;height:34px;font-size:16px;cursor:pointer;flex-shrink:0;color:var(--text)}
+.speak:active{transform:scale(.92);background:var(--chip)}
+.card .mean{margin-top:6px;font-size:14px;line-height:1.6}
+.card .en{color:var(--green)}
+.card .zh{color:var(--text)}
+.card .meta{margin-top:6px;font-size:12px;color:var(--text2);display:flex;gap:8px;flex-wrap:wrap}
+.tag{background:var(--chip);border-radius:6px;padding:2px 8px}
+.tip{margin-top:8px;font-size:13px;color:var(--orange);background:var(--chip);border-radius:8px;padding:8px 10px;line-height:1.6;display:none}
+.tip.show{display:block}
+.tipbtn{margin-top:8px;font-size:13px;color:var(--accent);background:none;border:none;cursor:pointer;padding:0}
+.empty{text-align:center;color:var(--text2);padding:40px 0;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="back" href="../../">← 首页</a>
+<h1>🎙️ Nicos Weg A1 词汇</h1>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题">🔄</button>
+</header>
+<div class="sub">按 Nicos Weg A1 常见场景整理的核心词汇（825 词），德-英-中三语，带记忆提示。点击 🔊 听德语发音（浏览器语音）。<br>词表为重新整理，非 Anki 牌组原文。</div>
+<div class="search"><input id="q" type="search" placeholder="搜索德语 / 英语 / 中文…" autocomplete="off"></div>
+<div class="filters" id="topicF"></div>
+<div class="posrow" id="posF"></div>
+<div class="count" id="count"></div>
+<div id="list"></div>
+</div>
+<script src="vocab.js"></script>
+<script>
+(function(){
+"use strict";
+var topics=["全部","问候介绍·数字时间","家庭人物·身体健康","饮食购物","住房方位·交通","工作学习·日常作息","旅行休闲·天气自然"];
+var posMap={all:"全部",noun:"名词",verb:"动词",adj:"形容词",adv:"副词",other:"其他"};
+var curTopic="全部",curPos="all",kw="";
+var topicF=document.getElementById('topicF'),posF=document.getElementById('posF'),
+    list=document.getElementById('list'),count=document.getElementById('count'),
+    q=document.getElementById('q');
+topics.forEach(function(t){
+  var s=document.createElement('span');s.className='chip'+(t==="全部"?' on':'');s.textContent=t;
+  s.onclick=function(){curTopic=t;topicF.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on')});s.classList.add('on');render();};
+  topicF.appendChild(s);
+});
+Object.keys(posMap).forEach(function(p){
+  var s=document.createElement('span');s.className='chip'+(p==='all'?' on':'');s.textContent=posMap[p];
+  s.onclick=function(){curPos=p;posF.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on')});s.classList.add('on');render();};
+  posF.appendChild(s);
+});
+q.addEventListener('input',function(){kw=q.value.trim().toLowerCase();render();});
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text);
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+if('speechSynthesis' in window){speechSynthesis.getVoices();}
+function render(){
+  var out=[],n=0;
+  for(var i=0;i<NICOS_A1.length;i++){
+    var it=NICOS_A1[i];
+    if(curTopic!=="全部"&&it.topic!==curTopic)continue;
+    if(curPos!=="all"&&it.pos!==curPos)continue;
+    if(kw){
+      var hay=(it.de+' '+it.en+' '+it.zh).toLowerCase();
+      if(hay.indexOf(kw)<0)continue;
+    }
+    n++;
+    var tipHtml='';
+    if(it.tip){
+      tipHtml='<button class="tipbtn" onclick="this.nextElementSibling.classList.toggle(\'show\');this.textContent=this.textContent===\'💡 记忆提示 ▼\'?\'💡 记忆提示 ▲\':\'💡 记忆提示 ▼\'">💡 记忆提示 ▼</button><div class="tip">'+esc(it.tip)+'</div>';
+    }
+    out.push('<div class="card"><div class="top"><div class="de">'+esc(it.de)+'</div><button class="speak" data-i="'+i+'" title="朗读">🔈</button></div><div class="mean"><span class="en">'+esc(it.en)+'</span> · <span class="zh">'+esc(it.zh)+'</span></div><div class="meta"><span class="tag">'+esc(posMap[it.pos]||it.pos)+'</span><span class="tag">'+esc(it.topic)+'</span></div>'+tipHtml+'</div>');
+    if(n>=400)break;
+  }
+  list.innerHTML=out.join('')||'<div class="empty">没有找到匹配的单词</div>';
+  count.textContent='共 '+n+' 条'+(n>=400?'（仅显示前 400 条，请细化搜索）':'');
+  list.querySelectorAll('.speak').forEach(function(b){
+    b.onclick=function(){speak(NICOS_A1[+b.getAttribute('data-i')].de.replace(/^(der|die|das)\s+/,'').split(',')[0],b);};
+  });
+}
+render();
+// theme
+function apply(t){var r=document.documentElement;
+  if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  else r.setAttribute('data-theme',t);
+  var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+var cur=localStorage.getItem('delernen-theme')||'auto';apply(cur);
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
+})();
+</script>
+</body>
+</html>
