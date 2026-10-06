@@ -32,7 +32,8 @@
     }
    ],
    "learn": "akkusativ",
-   "learnTitle": "第四格 Akkusativ"
+   "learnTitle": "第四格 Akkusativ",
+   "level": "A1"
   },
   {
    "id": "prep_dat",
@@ -76,7 +77,8 @@
     }
    ],
    "learn": "dativ",
-   "learnTitle": "第三格 Dativ"
+   "learnTitle": "第三格 Dativ",
+   "level": "A1"
   },
   {
    "id": "prep_wech",
@@ -130,7 +132,8 @@
     }
    ],
    "learn": "wechsel",
-   "learnTitle": "双向介词"
+   "learnTitle": "双向介词",
+   "level": "A2"
   },
   {
    "id": "verb_dat",
@@ -209,7 +212,8 @@
     }
    ],
    "learn": "dativ",
-   "learnTitle": "第三格 Dativ"
+   "learnTitle": "第三格 Dativ",
+   "level": "A2"
   },
   {
    "id": "modal",
@@ -260,7 +264,8 @@
     }
    ],
    "learn": "modalverben",
-   "learnTitle": "情态动词"
+   "learnTitle": "情态动词",
+   "level": "A1"
   },
   {
    "id": "trennbar",
@@ -329,7 +334,8 @@
     }
    ],
    "learn": "trennbar",
-   "learnTitle": "可分动词"
+   "learnTitle": "可分动词",
+   "level": "A1"
   },
   {
    "id": "konj-neben",
@@ -363,7 +369,8 @@
     }
    ],
    "learn": "nebensatz",
-   "learnTitle": "从句与连词"
+   "learnTitle": "从句与连词",
+   "level": "A1"
   },
   {
    "id": "konj-unter",
@@ -412,7 +419,8 @@
     }
    ],
    "learn": "nebensatz",
-   "learnTitle": "从句与连词"
+   "learnTitle": "从句与连词",
+   "level": "A2"
   },
   {
    "id": "pronomen",
@@ -461,7 +469,8 @@
     }
    ],
    "learn": "pronomen",
-   "learnTitle": "人称代词"
+   "learnTitle": "人称代词",
+   "level": "A1"
   },
   {
    "id": "satz-haupt",
@@ -490,7 +499,8 @@
     }
    ],
    "learn": "fragen",
-   "learnTitle": "疑问句"
+   "learnTitle": "疑问句",
+   "level": "A1"
   },
   {
    "id": "satz-neben",
@@ -519,7 +529,8 @@
     }
    ],
    "learn": "nebensatz",
-   "learnTitle": "从句与连词"
+   "learnTitle": "从句与连词",
+   "level": "A2"
   },
   {
    "id": "satzklammer",
@@ -548,7 +559,8 @@
     }
    ],
    "learn": "satzklammer",
-   "learnTitle": "句框结构"
+   "learnTitle": "句框结构",
+   "level": "A2"
   },
   {
    "id": "infinitiv",
@@ -582,7 +594,8 @@
     }
    ],
    "learn": "infinitiv_zu",
-   "learnTitle": "不定式 zu"
+   "learnTitle": "不定式 zu",
+   "level": "A2"
   },
   {
    "id": "perfekt",
@@ -616,7 +629,8 @@
     }
    ],
    "learn": "perfekt",
-   "learnTitle": "现在完成时 Perfekt"
+   "learnTitle": "现在完成时 Perfekt",
+   "level": "A1"
   },
   {
    "id": "artikel",
@@ -645,7 +659,8 @@
     }
    ],
    "learn": "artikel",
-   "learnTitle": "冠词：der / die / das"
+   "learnTitle": "冠词：der / die / das",
+   "level": "A1"
   },
   {
    "id": "reflexiv",
@@ -679,7 +694,8 @@
     }
    ],
    "learn": "reflexiv",
-   "learnTitle": "反身动词"
+   "learnTitle": "反身动词",
+   "level": "A2"
   },
   {
    "id": "komparativ",
@@ -713,7 +729,8 @@
     }
    ],
    "learn": "komparativ",
-   "learnTitle": "比较级与最高级"
+   "learnTitle": "比较级与最高级",
+   "level": "A2"
   },
   {
    "id": "pp3",
@@ -737,7 +754,8 @@
     }
    ],
    "learn": "partizip_attr",
-   "learnTitle": "分词作定语"
+   "learnTitle": "分词作定语",
+   "level": "B1"
   },
   {
    "id": "werden3",
@@ -759,7 +777,8 @@
      "zh": "würde + 不定式",
      "ex": "Ich würde kommen.（我本来会来。）"
     }
-   ]
+   ],
+   "level": "B1"
   }
  ]
 }
