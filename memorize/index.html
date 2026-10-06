@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>背单词 · 艾宾浩斯记忆法 · Deutsch Lernen</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0e1a;--card:#141b30;--text:#e0e6f0;--text2:#8a93a8;--border:#2a3350;--accent:#4a7aca;--green:#7dd87d;--orange:#ffb84d;--red:#ff7b7b;--purple:#9d7bff;--chip:#1a2340}
+[data-theme="light"]{--bg:#f4f6fa;--card:#ffffff;--text:#1c2536;--text2:#5c6e88;--border:#cfd8e6;--accent:#3868c8;--green:#2e8b57;--orange:#c47b12;--red:#d33;--purple:#6a4fc8;--chip:#e8edf5}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:640px;margin:0 auto;padding:16px 14px 60px}
+header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+header h1{font-size:20px;flex:1}
+#themeBtn{background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;color:var(--text)}
+.back{color:var(--accent);text-decoration:none;font-size:14px}
+.sub{color:var(--text2);font-size:13px;margin:6px 0 14px;line-height:1.7}
+.view{display:none}.view.on{display:block}
+.srcitem{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px 14px;margin-bottom:10px;cursor:pointer;user-select:none}
+.srcitem input{width:20px;height:20px;accent-color:var(--accent);flex-shrink:0}
+.srcitem .nm{flex:1}.srcitem .nm b{font-size:15px;display:block}.srcitem .nm span{font-size:12px;color:var(--text2)}
+.srcitem .cnt{font-size:13px;color:var(--accent);font-weight:700}
+.row{display:flex;gap:10px;align-items:center;margin:14px 0;flex-wrap:wrap}
+.row label{font-size:14px;color:var(--text2)}
+select{background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:9px 12px;font-size:15px}
+.btn{display:block;width:100%;padding:14px;font-size:17px;font-weight:700;border:none;border-radius:14px;background:var(--accent);color:#fff;cursor:pointer;margin-top:8px}
+.btn:active{transform:scale(.98)}
+.btn.ghost{background:var(--card);color:var(--text);border:1px solid var(--border);font-weight:400;font-size:14px;margin-top:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 4px;text-align:center}
+.stat b{font-size:19px;display:block}.stat span{font-size:11px;color:var(--text2)}
+.stat b.due{color:var(--orange)}.stat b.learn{color:var(--accent)}.stat b.done{color:var(--green)}
+/* study view */
+.prog{height:8px;background:var(--chip);border-radius:4px;overflow:hidden;margin:10px 0}
+.prog i{display:block;height:100%;background:var(--accent);border-radius:4px;transition:width .3s}
+.ptext{font-size:13px;color:var(--text2);text-align:center;margin-bottom:12px}
+.stage{perspective:1200px;margin:6px 0 16px}
+.cinner{position:relative;min-height:300px;transition:transform .45s;transform-style:preserve-3d;cursor:pointer}
+.cinner.flipped{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:1px solid var(--border);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:26px 20px;text-align:center}
+.face.back{transform:rotateY(180deg)}
+.face .de{font-size:32px;font-weight:800;line-height:1.3;margin-bottom:10px}
+.face .hint{font-size:13px;color:var(--text2);margin-top:14px}
+.face .en{font-size:21px;color:var(--green);font-weight:700;margin-bottom:6px}
+.face .zh{font-size:19px;margin-bottom:10px}
+.face .tip{font-size:13px;color:var(--orange);background:var(--chip);border-radius:8px;padding:8px 10px;margin-top:8px;line-height:1.6;max-width:100%}
+.face .tag{font-size:12px;color:var(--text2);margin-top:8px}
+.speak{background:none;border:1px solid var(--border);border-radius:50%;width:40px;height:40px;font-size:18px;cursor:pointer;color:var(--text);margin-top:12px}
+.grades{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:4px}
+.grades button{padding:14px 4px;font-size:15px;font-weight:700;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer}
+.grades button:active{transform:scale(.95)}
+#gForgot{border-color:var(--red);color:var(--red)}
+#gFuzzy{border-color:var(--orange);color:var(--orange)}
+#gGot{border-color:var(--green);color:var(--green)}
+.grades.hide{display:none}
+.donebox{text-align:center;padding:30px 10px}
+.donebox .big{font-size:52px;margin-bottom:12px}
+.donebox h2{font-size:20px;margin-bottom:10px}
+.donebox p{color:var(--text2);font-size:14px;line-height:1.8;margin-bottom:18px}
+.kv{display:flex;justify-content:space-between;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 14px;margin-bottom:8px;font-size:14px}
+.kv b{font-size:16px}
+.note{font-size:12px;color:var(--text2);line-height:1.7;margin-top:14px;background:var(--card);border:1px dashed var(--border);border-radius:10px;padding:10px 12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="back" href="../">← 首页</a>
+<h1>📝 背单词</h1>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题">🔄</button>
+</header>
+
+<!-- 设置视图 -->
+<div class="view on" id="vSetup">
+<div class="sub">艾宾浩斯间隔重复：记得 → 间隔拉长（20分钟 → 1天 → 3天 → 7天 → 15天 → 30天 → 60天）；忘了 → 打回重学。每天先复习到期的，再学新词。进度保存在本机浏览器。</div>
+<div id="srcList"></div>
+<div class="row">
+<label>每天新词：</label>
+<select id="newPerDay">
+<option value="10">10 个</option>
+<option value="20" selected>20 个</option>
+<option value="30">30 个</option>
+<option value="50">50 个</option>
+</select>
+</div>
+<div class="stats" id="statsRow">
+<div class="stat"><b class="due" id="stDue">0</b><span>今日待复习</span></div>
+<div class="stat"><b class="learn" id="stLearn">0</b><span>学习中</span></div>
+<div class="stat"><b class="done" id="stDone">0</b><span>已掌握</span></div>
+<div class="stat"><b id="stTotal">0</b><span>已收录</span></div>
+</div>
+<button class="btn" id="startBtn" onclick="startSession()">开始背单词</button>
+<button class="btn ghost" onclick="if(confirm('确定清空所有背单词进度吗？')){localStorage.removeItem(LSKEY);location.reload();}">清空本机进度</button>
+<div class="note">💡 三档自评：<b style="color:var(--red)">忘了</b> = 完全想不起来，打回重学；<b style="color:var(--orange)">模糊</b> = 犹豫/猜对，维持当前进度再巩固一次；<b style="color:var(--green)">记得</b> = 干脆答对，进入下一间隔。诚实打分效果最好。</div>
+</div>
+
+<!-- 背诵视图 -->
+<div class="view" id="vStudy">
+<div class="prog"><i id="progBar" style="width:0%"></i></div>
+<div class="ptext" id="progText"></div>
+<div class="stage">
+<div class="cinner" id="card" onclick="flipCard()">
+<div class="face front">
+<div class="de" id="cDe"></div>
+<div class="tag" id="cTag"></div>
+<button class="speak" id="cSpeak" onclick="event.stopPropagation();speakWord()" title="朗读">🔈</button>
+<div class="hint">点击卡片翻面看释义</div>
+</div>
+<div class="face back">
+<div class="en" id="cEn"></div>
+<div class="zh" id="cZh"></div>
+<div class="tip" id="cTip" style="display:none"></div>
+<div class="tag" id="cTag2"></div>
+</div>
+</div>
+</div>
+<div class="grades hide" id="grades">
+<button id="gForgot" onclick="grade(0)">忘了</button>
+<button id="gFuzzy" onclick="grade(1)">模糊</button>
+<button id="gGot" onclick="grade(2)">记得</button>
+</div>
+<div style="text-align:center;margin-top:14px"><a href="#" onclick="quitSession();return false;" style="color:var(--text2);font-size:13px">结束本次</a></div>
+</div>
+
+<!-- 完成视图 -->
+<div class="view" id="vDone">
+<div class="donebox">
+<div class="big">🎉</div>
+<h2 id="doneTitle">本轮完成！</h2>
+<p id="doneSub"></p>
+<div id="doneStats"></div>
+<button class="btn" onclick="showSetup()">返回</button>
+</div>
+</div>
+</div>
+
+<script>
+(function(){
+"use strict";
+/* ---------- 数据源 ---------- */
+var SOURCES=[
+ {id:'sep_a1a2',name:'A1-A2 可分动词',file:'sep_a1a2.js',v:'SEP_A1A2',count:28},
+ {id:'sep_a1b2',name:'A1-B2 可分动词',file:'sep_a1b2.js',v:'SEP_A1B2',count:50},
+ {id:'nicos_a1',name:'Nicos Weg A1 单词',file:'../nicos/a1/vocab.js',v:'NICOS_A1',count:1726},
+ {id:'nicos_a2',name:'Nicos Weg A2 单词',file:'../nicos/a2/vocab.js',v:'NICOS_A2',count:1732},
+ {id:'nicos_b1',name:'Nicos Weg B1 单词',file:'../nicos/b1/vocab.js',v:'NICOS_B1',count:963}
+];
+/* 艾宾浩斯间隔（记得后进入下一级时的等待时间） */
+var NEXT=[0,20*60*1000,86400*1000,3*86400*1000,7*86400*1000,15*86400*1000,30*86400*1000,60*86400*1000];
+var MASTER_BOX=7;
+var LSKEY='delernen-srs-v1';
+var store=loadStore();
+var dataCache={};   // srcId -> array
+var selSources=['nicos_a1'];
+var queue=[],qIdx=0,sessStats={due:0,fresh:0,forgot:0};
+
+function loadStore(){
+  try{var s=JSON.parse(localStorage.getItem(LSKEY)||'{}');}catch(e){s={};}
+  s.words=s.words||{};s.newPerDay=s.newPerDay||20;
+  s.newDate=s.newDate||'';s.newCount=s.newCount||0;
+  return s;
+}
+function saveStore(){try{localStorage.setItem(LSKEY,JSON.stringify(store));}catch(e){}}
+function key(src,de){return src+'|'+de;}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+/* ---------- 数据源加载 ---------- */
+function loadSource(src){
+  return new Promise(function(res,rej){
+    if(dataCache[src.id])return res(dataCache[src.id]);
+    var sc=document.createElement('script');
+    sc.src=src.file;
+    sc.onload=function(){try{var d=eval(src.v);dataCache[src.id]=d;res(d);}catch(e){rej(e);}};
+    sc.onerror=rej;
+    document.head.appendChild(sc);
+  });
+}
+
+/* ---------- 设置视图 ---------- */
+var srcList=document.getElementById('srcList');
+SOURCES.forEach(function(s){
+  var d=document.createElement('label');
+  d.className='srcitem';
+  d.innerHTML='<input type="checkbox" value="'+s.id+'"'+(selSources.indexOf(s.id)>=0?' checked':'')+'><span class="nm"><b>'+esc(s.name)+'</b><span>艾宾浩斯间隔重复 · 进度本机保存</span></span><span class="cnt">'+s.count+' 词</span>';
+  srcList.appendChild(d);
+});
+srcList.addEventListener('change',function(){
+  selSources=Array.prototype.map.call(srcList.querySelectorAll('input:checked'),function(i){return i.value;});
+  refreshStats();
+});
+document.getElementById('newPerDay').value=String(store.newPerDay);
+document.getElementById('newPerDay').addEventListener('change',function(){
+  store.newPerDay=parseInt(this.value,10);saveStore();
+});
+
+function refreshStats(){
+  var now=Date.now(),due=0,learn=0,done=0,total=0;
+  selSources.forEach(function(id){
+    var src=SOURCES.filter(function(s){return s.id===id;})[0];
+    total+=src.count;
+    Object.keys(store.words).forEach(function(k){
+      if(k.indexOf(id+'|')!==0)return;
+      var st=store.words[k];
+      if(st.box>=MASTER_BOX)done++;
+      else if(st.box>0)learn++;
+      if(st.next<=now)due++;
+    });
+  });
+  // 学习中包含 box0 已见过的
+  document.getElementById('stDue').textContent=due;
+  document.getElementById('stLearn').textContent=learn;
+  document.getElementById('stDone').textContent=done;
+  document.getElementById('stTotal').textContent=total;
+  var btn=document.getElementById('startBtn');
+  btn.textContent=due>0?('开始复习（'+due+' 个到期）'):'开始背单词';
+}
+
+/* ---------- 会话 ---------- */
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+
+function startSession(){
+  if(!selSources.length){alert('请至少选择一个单词范围');return;}
+  Promise.all(selSources.map(loadSource)).then(function(){
+    var now=Date.now(),due=[],fresh=[];
+    var today=new Date().toDateString();
+    if(store.newDate!==today){store.newDate=today;store.newCount=0;}
+    selSources.forEach(function(id,si){
+      dataCache[id].forEach(function(w){
+        var k=key(id,w.de),st=store.words[k];
+        if(!st)fresh.push({src:id,w:w,k:k});
+        else if(st.next<=now)due.push({src:id,w:w,k:k,st:st});
+      });
+    });
+    var allowed=Math.max(0,store.newPerDay-store.newCount);
+    queue=shuffle(due).concat(shuffle(fresh).slice(0,allowed));
+    if(!queue.length){
+      alert('🎉 太棒了！所选范围内今日没有到期的单词。');
+      return;
+    }
+    qIdx=0;sessStats={due:due.length,fresh:Math.min(allowed,fresh.length),forgot:0,done:0};
+    showView('vStudy');
+    renderCard();
+  }).catch(function(){alert('词库加载失败，请检查网络后重试');});
+}
+
+function showView(id){
+  document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on');});
+  document.getElementById(id).classList.add('on');
+  window.scrollTo(0,0);
+}
+function showSetup(){showView('vSetup');refreshStats();}
+
+var cur=null,flipped=false;
+function renderCard(){
+  cur=queue[qIdx];flipped=false;
+  var card=document.getElementById('card');
+  card.classList.remove('flipped');
+  document.getElementById('cDe').textContent=cur.w.de;
+  var srcName=SOURCES.filter(function(s){return s.id===cur.src;})[0].name;
+  var tag=(cur.w.pos==='noun'?'名词':cur.w.pos==='verb'?'动词':cur.w.pos==='adj'?'形容词':cur.w.pos==='adv'?'副词':'')+' · '+srcName;
+  document.getElementById('cTag').textContent=tag;
+  document.getElementById('cTag2').textContent=tag;
+  document.getElementById('cEn').textContent=cur.w.en;
+  document.getElementById('cZh').textContent=cur.w.zh;
+  var tip=document.getElementById('cTip');
+  if(cur.w.tip){tip.textContent='💡 '+cur.w.tip;tip.style.display='block';}else{tip.style.display='none';}
+  document.getElementById('grades').classList.add('hide');
+  var pct=Math.round(qIdx/queue.length*100);
+  document.getElementById('progBar').style.width=pct+'%';
+  document.getElementById('progText').textContent=(qIdx+1)+' / '+queue.length;
+}
+window.flipCard=function(){
+  if(flipped)return;flipped=true;
+  document.getElementById('card').classList.add('flipped');
+  document.getElementById('grades').classList.remove('hide');
+};
+function speakWord(){
+  try{
+    speechSynthesis.cancel();
+    var t=cur.w.de.replace(/^(der|die|das)\s+/,'').split(',')[0];
+    var u=new SpeechSynthesisUtterance(t);u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+window.speakWord=speakWord;
+if('speechSynthesis' in window){speechSynthesis.getVoices();}
+
+window.grade=function(g){
+  var now=Date.now(),k=cur.k;
+  var st=store.words[k]||{box:0,next:0};
+  var isNew=!store.words[k];
+  if(g===0){st.box=0;st.next=now+10*60*1000;sessStats.forgot++;}
+  else if(g===1){st.next=now+(st.box>0?NEXT[st.box]:10*60*1000);}
+  else{st.box=Math.min(MASTER_BOX,st.box+1);st.next=now+NEXT[st.box];}
+  store.words[k]=st;
+  if(isNew){store.newCount++;}
+  sessStats.done++;
+  saveStore();
+  qIdx++;
+  if(qIdx<queue.length)renderCard();
+  else finishSession();
+};
+window.quitSession=function(){finishSession(true);};
+
+function boxName(b){return b>=MASTER_BOX?'已掌握':'Box '+b;}
+function finishSession(quit){
+  var s=sessStats;
+  document.getElementById('doneTitle').textContent=quit?'本次结束':'本轮完成！🎉';
+  document.getElementById('doneSub').textContent=quit?'进度已保存，下次继续。':'今日任务完成，记得明天回来复习！';
+  var now=Date.now(),dueTomorrow=0;
+  Object.keys(store.words).forEach(function(k){
+    var st=store.words[k];
+    if(st.next>now&&st.next<=now+24*3600*1000)dueTomorrow++;
+  });
+  document.getElementById('doneStats').innerHTML=
+    '<div class="kv"><span>本轮完成</span><b>'+s.done+' 个</b></div>'+
+    '<div class="kv"><span>其中复习</span><b>'+Math.min(s.done,s.due)+' 个</b></div>'+
+    '<div class="kv"><span>其中新学</span><b>'+Math.max(0,s.done-Math.min(s.done,s.due))+' 个</b></div>'+
+    '<div class="kv"><span>没记住</span><b style="color:var(--red)">'+s.forgot+' 个</b></div>'+
+    '<div class="kv"><span>未来24小时到期</span><b>'+dueTomorrow+' 个</b></div>';
+  showView('vDone');
+}
+
+/* ---------- 主题 ---------- */
+function apply(t){var r=document.documentElement;
+  if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  else r.setAttribute('data-theme',t);
+  var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+var cur=localStorage.getItem('delernen-theme')||'auto';apply(cur);
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
+
+refreshStats();
+window.startSession=startSession;
+})();
+</script>
+</body>
+</html>
