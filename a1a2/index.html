@@ -362,8 +362,8 @@ Promise.all([fetch('verb_groups.json').then(r=>r.json()),fetch('word_families.js
     if(r.tab==='verb')showVerbDetail(r.m,g);
     else if(r.tab==='family')showFamilyDetail(r.m,g);
     else showGrammarDetail(r.m,g);
-    document.getElementById('detail').scrollIntoView({behavior:'smooth',block:'nearest'});
     box.blur();
+    document.getElementById('detail').scrollIntoView({block:'nearest'});
   }
   function doSearch(){
     const q=box.value.trim().toLowerCase();
