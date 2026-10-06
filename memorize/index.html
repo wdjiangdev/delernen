@@ -40,7 +40,9 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:1px solid var(--border);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:26px 20px;text-align:center}
 .face.back{transform:rotateY(180deg)}
 .face .de{font-size:32px;font-weight:800;line-height:1.3;margin-bottom:10px}
-.back .de{font-size:24px;margin-bottom:12px}
+.back .de{font-size:24px;margin-bottom:8px}
+.vforms{font-size:16px;color:var(--accent);font-weight:600;margin-bottom:10px}
+.vforms small{font-weight:400;color:var(--text2);font-size:12px;margin-right:6px}
 .face .hint{font-size:13px;color:var(--text2);margin-top:14px}
 .face .en{font-size:21px;color:var(--green);font-weight:700;margin-bottom:6px}
 .face .zh{font-size:19px;margin-bottom:10px}
@@ -110,6 +112,7 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 </div>
 <div class="face back">
 <div class="de" id="cDe2"></div>
+<div class="vforms" id="cForms" style="display:none"></div>
 <div class="en" id="cEn"></div>
 <div class="zh" id="cZh"></div>
 <div class="tip" id="cTip" style="display:none"></div>
@@ -143,11 +146,11 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 "use strict";
 /* ---------- 数据源 ---------- */
 var SOURCES=[
- {id:'sep_a1a2',name:'A1-A2 可分动词',file:'/memorize/sep_a1a2.js?v=2',v:'SEP_A1A2',count:28},
- {id:'sep_a1b2',name:'A1-B2 可分动词',file:'/memorize/sep_a1b2.js?v=2',v:'SEP_A1B2',count:50},
- {id:'nicos_a1',name:'Nicos Weg A1 单词',file:'/nicos/a1/vocab.js?v=1726m',v:'NICOS_A1',count:1726},
- {id:'nicos_a2',name:'Nicos Weg A2 单词',file:'/nicos/a2/vocab.js?v=1732m',v:'NICOS_A2',count:1732},
- {id:'nicos_b1',name:'Nicos Weg B1 单词',file:'/nicos/b1/vocab.js?v=963m',v:'NICOS_B1',count:963}
+ {id:'sep_a1a2',name:'A1-A2 可分动词',file:'/memorize/sep_a1a2.js?v=3',v:'SEP_A1A2',count:28},
+ {id:'sep_a1b2',name:'A1-B2 可分动词',file:'/memorize/sep_a1b2.js?v=3',v:'SEP_A1B2',count:50},
+ {id:'nicos_a1',name:'Nicos Weg A1 单词',file:'/nicos/a1/vocab.js?v=1726m2',v:'NICOS_A1',count:1726},
+ {id:'nicos_a2',name:'Nicos Weg A2 单词',file:'/nicos/a2/vocab.js?v=1732m2',v:'NICOS_A2',count:1732},
+ {id:'nicos_b1',name:'Nicos Weg B1 单词',file:'/nicos/b1/vocab.js?v=963m2',v:'NICOS_B1',count:963}
 ];
 /* 艾宾浩斯间隔（记得后进入下一级时的等待时间） */
 var NEXT=[0,20*60*1000,86400*1000,3*86400*1000,7*86400*1000,15*86400*1000,30*86400*1000,60*86400*1000];
@@ -268,6 +271,11 @@ function renderCard(){
   card.classList.remove('flipped');
   document.getElementById('cDe').textContent=cur.w.de;
   document.getElementById('cDe2').textContent=cur.w.de;
+  var fm=document.getElementById('cForms');
+  if(cur.w.past&&cur.w.pp){
+    fm.innerHTML='<small>过去式·过去分词</small>'+esc(cur.w.past)+' · '+esc(cur.w.pp);
+    fm.style.display='block';
+  }else{fm.style.display='none';}
   var srcName=SOURCES.filter(function(s){return s.id===cur.src;})[0].name;
   var tag=(cur.w.pos==='noun'?'名词':cur.w.pos==='verb'?'动词':cur.w.pos==='adj'?'形容词':cur.w.pos==='adv'?'副词':'')+' · '+srcName;
   document.getElementById('cTag').textContent=tag;
