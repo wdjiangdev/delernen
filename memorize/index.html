@@ -90,7 +90,7 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 <div class="stat"><b id="stTotal">0</b><span>已收录</span></div>
 </div>
 <button class="btn" id="startBtn" onclick="startSession()">开始背单词</button>
-<button class="btn ghost" onclick="if(confirm('确定清空所有背单词进度吗？')){localStorage.removeItem(LSKEY);location.reload();}">清空本机进度</button>
+<button class="btn ghost" onclick="clearProgress()">清空本机进度</button>
 <div class="note">💡 三档自评：<b style="color:var(--red)">忘了</b> = 完全想不起来，打回重学；<b style="color:var(--orange)">模糊</b> = 犹豫/猜对，维持当前进度再巩固一次；<b style="color:var(--green)">记得</b> = 干脆答对，进入下一间隔。诚实打分效果最好。</div>
 </div>
 
@@ -170,7 +170,7 @@ function loadSource(src){
     if(dataCache[src.id])return res(dataCache[src.id]);
     var sc=document.createElement('script');
     sc.src=src.file;
-    sc.onload=function(){try{var d=eval(src.v);dataCache[src.id]=d;res(d);}catch(e){rej(e);}};
+    sc.onload=function(){try{var d=(0,eval)(src.v);dataCache[src.id]=d;res(d);}catch(e){rej(e);}};
     sc.onerror=rej;
     document.head.appendChild(sc);
   });
@@ -334,6 +334,7 @@ window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'aut
 
 refreshStats();
 window.startSession=startSession;
+window.clearProgress=function(){if(confirm('确定清空所有背单词进度吗？')){try{localStorage.removeItem(LSKEY);}catch(e){}location.reload();}};
 })();
 </script>
 </body>
