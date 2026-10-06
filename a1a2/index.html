@@ -270,7 +270,7 @@ function showVerbDetail(m,g){
     pfxNote='<p class="pfxnote">🧩 <b>'+m.prefix+'-</b>（'+PREFIX_MEAN[m.prefix]+'） + '+g.stem+'（'+stemZh+'） → <b>'+(m.zh||'')+'</b></p>';
   }
   d.innerHTML='<h3>'+title+'</h3><p class="zh">'+(m.zh||g.stemZh||'')+'</p><p class="en">'+(m.def||'')+'</p>'+pfxNote+forms+
-    pfxNote+'<div class="meta">词族 '+g.stem+' · 共 '+g.members.length+' 个 · 在 Nicos Weg 出现 '+m.count+' 次</div>';
+    '<div class="meta">词族 '+g.stem+' · 共 '+g.members.length+' 个 · 在 Nicos Weg 出现 '+m.count+' 次</div>';
 }
 
 function showFamilyDetail(m,g){
