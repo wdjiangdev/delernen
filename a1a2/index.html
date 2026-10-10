@@ -87,10 +87,6 @@ header p{font-size:12px;color:var(--text3);margin-top:4px}
 #detail .forms span{display:block;font-size:10px;color:var(--text4);margin-bottom:2px}
 #detail .forms b{font-size:14px;color:var(--yellow);font-weight:600}
 #detail .meta{font-size:11px;color:var(--text4);margin-top:8px}
-#detail img.dimg{display:block;width:100%;max-height:280px;object-fit:cover;border-radius:10px;margin:2px 0 8px;background:var(--bg-input)}
-#detail .fhead{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-#detail .fhead img{width:64px;height:64px;object-fit:cover;border-radius:10px;flex:0 0 auto;background:var(--bg-input)}
-#detail .fhead h3{margin:0}
 .hint{text-align:center;color:var(--text5);font-size:11px;padding:0 0 12px;position:relative;z-index:1}
 </style>
 </head>
@@ -220,7 +216,7 @@ function renderVerbGroup(g,cx,cy,R){
   el('circle',{r:38,class:'node-center',stroke:'#4a7aca','stroke-width':2},stemG);
   const st=el('text',{y:2,class:'stem-label'},stemG);st.textContent=g.stem;
   const ss=el('text',{y:22,class:'stem-sub'},stemG);ss.textContent=g.stemZh||'词干';
-  stemG.addEventListener('click',()=>showVerbDetail(members.find(m=>m.prefix===null)||{verb:g.stem,prefix:null,def:g.stemDef,zh:'',count:0},g));
+  stemG.addEventListener('click',()=>showVerbDetail({verb:g.stem,prefix:null,def:g.stemDef,zh:'',count:(members.find(m=>m.prefix===null)||{}).count||0},g));
   members.forEach((m,i)=>{
     if(m.prefix===null)return;
     const a=(i/members.length)*Math.PI*2-Math.PI/2;
@@ -238,7 +234,7 @@ function renderVerbGroup(g,cx,cy,R){
     df.textContent=(m.zh||m.def||'').split('；')[0].slice(0,8);
     node.addEventListener('click',()=>showVerbDetail(m,g));
   });
-  showVerbDetail(members.find(m=>m.prefix===null)||{verb:g.stem,prefix:null,def:g.stemDef,zh:'',past:'',pp:'',count:0},g);
+  showVerbDetail({verb:g.stem,prefix:null,def:g.stemDef,zh:'',past:'',pp:'',count:(members.find(m=>m.prefix===null)||{}).count||0},g);
 }
 
 function renderFamilyGroup(g,cx,cy,R){
@@ -293,8 +289,7 @@ function showVerbDetail(m,g){
     const stemZh=(((g.members||[]).find(x=>!x.prefix))||{}).zh||'';
     pfxNote='<p class="pfxnote">🧩 <b>'+m.prefix+'-</b>（'+PREFIX_MEAN[m.prefix]+'） + '+g.stem+'（'+stemZh+'） → <b>'+(m.zh||'')+'</b></p>';
   }
-  const imgHtml=m.img?'<img class="dimg" src="'+m.img+'" alt="'+m.verb+'" loading="lazy">':'';
-  d.innerHTML='<h3>'+title+'</h3>'+imgHtml+'<p class="zh">'+(m.zh||g.stemZh||'')+'</p><p class="en">'+(m.def||'')+'</p>'+pfxNote+forms+
+  d.innerHTML='<h3>'+title+'</h3><p class="zh">'+(m.zh||g.stemZh||'')+'</p><p class="en">'+(m.def||'')+'</p>'+pfxNote+forms+
     '<div class="meta">词族 '+g.stem+' · 共 '+g.members.length+' 个 · 在 Nicos Weg 出现 '+m.count+' 次</div>';
 }
 
@@ -309,10 +304,7 @@ function showFamilyDetail(m,g){
     const pl=m.plural==='—'?'无复数':m.plural;
     forms='<div class="forms"><div><span>复数</span><b>'+pl+'</b></div></div>';
   }
-  const head=m.img
-    ?'<div class="fhead"><img src="'+m.img+'" alt="'+m.word+'" loading="lazy"><h3>'+m.word+' <span style="font-size:11px;color:'+c+'">'+(POS_NAMES[m.pos]||'')+'</span></h3></div>'
-    :'<h3>'+m.word+' <span style="font-size:11px;color:'+c+'">'+(POS_NAMES[m.pos]||'')+'</span></h3>';
-  d.innerHTML=head+
+  d.innerHTML='<h3>'+m.word+' <span style="font-size:11px;color:'+c+'">'+(POS_NAMES[m.pos]||'')+'</span></h3>'+
     '<p class="zh">'+(m.zh||'')+'</p>'+forms+
     '<div class="meta">词根 '+g.root+' · 词族共 '+g.members.length+' 个</div>';
 }
