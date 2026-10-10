@@ -67,7 +67,8 @@
      "pp": "",
      "plural": "die Fahrräder"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "sprech",
@@ -120,7 +121,8 @@
      "pp": "",
      "plural": "die Versprechen"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "schreib",
@@ -173,7 +175,8 @@
      "pp": "",
      "plural": ""
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "steh",
@@ -234,7 +237,8 @@
      "pp": "",
      "plural": "die Verständnisse"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "zieh",
@@ -287,7 +291,8 @@
      "pp": "",
      "plural": "die Umzüge"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "stell",
@@ -340,7 +345,8 @@
      "pp": "",
      "plural": "die Ausstellungen"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "komm",
@@ -385,7 +391,8 @@
      "pp": "",
      "plural": "—"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "nehm",
@@ -422,7 +429,8 @@
      "pp": "",
      "plural": "die Aufnahmen"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "geb",
@@ -475,7 +483,8 @@
      "pp": "",
      "plural": "die Eingaben"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "seh",
@@ -520,7 +529,8 @@
      "pp": "",
      "plural": "die Aussichten"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "arbeit",
@@ -565,7 +575,8 @@
      "pp": "",
      "plural": ""
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "wohn",
@@ -594,7 +605,8 @@
      "pp": "",
      "plural": "die Bewohner"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "rechn",
@@ -623,7 +635,8 @@
      "pp": "",
      "plural": "die Rechner"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "üb",
@@ -644,7 +657,8 @@
      "pp": "",
      "plural": "die Übungen"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "spiel",
@@ -673,7 +687,8 @@
      "pp": "",
      "plural": "die Spieler"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "lern",
@@ -694,7 +709,8 @@
      "pp": "",
      "plural": "—"
     }
-   ]
+   ],
+   "inA1A2": true
   },
   {
    "root": "werb",

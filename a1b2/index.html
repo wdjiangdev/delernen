@@ -44,6 +44,8 @@ header p{font-size:12px;color:var(--text3);margin-top:4px}
 .gbtn.active{background:var(--accentbg);border-color:var(--accent);color:#fff}
 .gbtn small{color:var(--text4);margin-left:4px}
 .gbtn.active small{color:#a0c0f0}
+.dupbadge{font-size:10px;padding:1px 5px;border-radius:8px;margin-left:5px;vertical-align:middle;white-space:nowrap;background:rgba(106,176,255,.13);color:#8fb4e0}
+[data-theme="light"] .dupbadge{background:rgba(56,104,200,.10);color:#3868c8}
 #legend{position:relative;z-index:1;display:flex;gap:14px;justify-content:center;padding:8px 16px 0;font-size:11px;color:var(--text3)}
 #legend span{display:flex;align-items:center;gap:4px}
 .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
@@ -319,7 +321,8 @@ function renderNav(groups){
     b.className='gbtn'+(i===0?' active':'');
     const label=activeTab==='verb'?g.stem:activeTab==='family'?g.root:g.title;
     const lv=(g.level&&activeTab!=='verb')?'<span class="lv lv-'+g.level+'">'+g.level+'</span>':'';
-    b.innerHTML=label+lv+'<small>'+g.members.length+'</small>';
+    const dup=g.inA1A2?'<span class="dupbadge">A1·A2</span>':'';
+    b.innerHTML=label+dup+lv+'<small>'+g.members.length+'</small>';
     b.addEventListener('click',()=>{
       document.querySelectorAll('.gbtn').forEach(x=>x.classList.remove('active'));
       b.classList.add('active');
