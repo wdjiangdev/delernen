@@ -50,7 +50,7 @@ def build_search_index(dst):
         for g in json.load(open(p, encoding='utf8')):
             ex = ' '.join(' '.join(e) for e in g.get('examples', []))
             add(t='kurs', lv=lv.upper(), title=g.get('title'), sub=(g.get('num', '') + ' ' + g.get('titleDe', '')).strip(),
-                text=(g.get('explain', '') + ' ' + ex)[:1500], url='/kurs/%s/#k-%s' % (lv, g['id']))
+                text=(g.get('explain', '') + ' ' + ex)[:1500], url='/kurs/%s/#%s-%s' % (lv, 'k' if lv == 'a1' else lv, g['id']))
     # 单词星图（a1a2 / a1b2）：动词词干组、词族、语法组
     for sm, name in [('a1a2', 'A1-A2 星图'), ('a1b2', 'A1-B2 星图')]:
         base = os.path.join(dst, sm)

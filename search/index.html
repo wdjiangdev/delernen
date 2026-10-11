@@ -74,7 +74,7 @@ VOCAB.forEach(function(src){
   sc.onload=function(){
     (window[src.v]||[]).forEach(function(w){
       var c=core(w.de);
-      words.push({w:w,src:src,c:norm(c),lc:c.toLowerCase(),raw:c,de:norm(w.de),zh:String(w.zh||''),en:norm(w.en)});
+      words.push({w:w,src:src,c:norm(c),lc:c.toLowerCase(),raw:c,de:norm(w.de),dl:String(w.de).toLowerCase(),zh:String(w.zh||''),en:norm(w.en)});
     });
     loaded();
   };
@@ -82,11 +82,12 @@ VOCAB.forEach(function(src){
   document.head.appendChild(sc);
 });
 fetch(INDEX_URL).then(function(r){return r.ok?r.json():[];}).then(function(d){
-  docs=(d||[]).map(function(x){x._t=norm(x.title);x._s=norm(x.sub);x._x=norm(x.text);return x;});
+  docs=(d||[]).map(function(x){x._t=norm(x.title);x._s=norm(x.sub);x._x=norm(x.text);x._l=String((x.title||'')+' '+(x.sub||'')+' '+(x.text||'')).toLowerCase();return x;});
 }).catch(function(){}).then(loaded);
 
 function scoreWord(e,nq,rq){
   var s=0;
+  if(UML&&e.dl.indexOf(rq.toLowerCase())<0&&e.zh.indexOf(rq)<0)return 0;
   if(e.lc===rq.toLowerCase())s=101;
   else if(e.c===nq)s=100;
   else if(e.c.indexOf(nq)===0)s=80-Math.min(20,e.c.length-nq.length);
@@ -96,6 +97,7 @@ function scoreWord(e,nq,rq){
     if(parts.indexOf(rq)>=0)s=Math.max(s,90);
     else if(e.zh.indexOf(rq)>=0)s=Math.max(s,50);
   }
+  if(!s&&TOK.length>1&&TOK.every(function(t){return e.de.indexOf(t)>=0||e.en.indexOf(t)>=0||e.zh.indexOf(t)>=0;}))s=20;
   if(nq.length>=3){
     var ew=e.en.split(/[^a-z]+/);
     if(ew.indexOf(nq)>=0)s=Math.max(s,45);
@@ -103,29 +105,37 @@ function scoreWord(e,nq,rq){
   }
   return s;
 }
-function scoreDoc(d,nq){
+function scoreDoc(d,nq,rq){
+  if(UML&&d._l.indexOf(rq.toLowerCase())<0)return 0;
   if(d._t.indexOf(nq)>=0)return d._t===nq?100:80;
   if(d._s.indexOf(nq)>=0)return 65;
   if(d._x.indexOf(nq)>=0)return 40;
+  if(TOK.length>1){
+    var all=d._t+' '+d._s+' '+d._x;
+    if(TOK.every(function(t){return all.indexOf(t)>=0;}))return 30;
+  }
   return 0;
 }
+var UML=false,TOK=[];
 function snippet(text,rq){
   if(!text)return '';
   var t=String(text),i=norm(t).indexOf(norm(rq));
+  if(i<0&&TOK.length>1){rq=TOK[0];i=norm(t).indexOf(rq);}
   if(i<0)return esc(t.slice(0,70))+(t.length>70?'…':'');
   var a=Math.max(0,i-24),b=Math.min(t.length,i+rq.length+46);
   return (a>0?'…':'')+esc(t.slice(a,i))+'<mark>'+esc(t.slice(i,i+rq.length))+'</mark>'+esc(t.slice(i+rq.length,b))+(b<t.length?'…':'');
 }
 function run(){
   var rq=q.value.trim(),nq=norm(rq);
+  UML=/[äöüß]/i.test(rq);TOK=nq.split(/\s+/).filter(Boolean);
   try{history.replaceState(null,'',rq?('?q='+encodeURIComponent(rq)):location.pathname);}catch(e){}
   if(ready<need)return;
-  if(!rq){out.innerHTML='';status.textContent='可搜：Nicos Weg A1–B1 单词、可分动词、语法 A1–C1、单词星图、Alice 笔记。德语不分大小写，变元音可以不打（schon = schön）。';return;}
+  if(!rq){out.innerHTML='';status.textContent='可搜：Nicos Weg A1–B1 单词、可分动词、语法 A1–C1、单词星图、Alice 笔记。德语不分大小写，变元音可以不打（schon 也能搜到 schön）；打了变元音则只找带变元音的结果。多个词用空格分开。';return;}
   var ws=[];
   for(var i=0;i<words.length;i++){var s=scoreWord(words[i],nq,rq);if(s>0)ws.push([s,i]);}
   ws.sort(function(a,b){return b[0]-a[0]||words[a[1]].raw.length-words[b[1]].raw.length;});
   var ds=[];
-  docs.forEach(function(d,i){var s=scoreDoc(d,nq);if(s>0)ds.push([s,i]);});
+  docs.forEach(function(d,i){var s=scoreDoc(d,nq,rq);if(s>0)ds.push([s,i]);});
   ds.sort(function(a,b){return b[0]-a[0];});
   var html=[];
   if(ws.length){

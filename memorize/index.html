@@ -177,7 +177,8 @@ var MASTER_BOX=7;
 var LSKEY='delernen-srs-v1';
 var store=loadStore();
 var dataCache={};   // srcId -> array
-var selSources=['nicos_a1'];
+var selSources=(store.sel&&store.sel.length?store.sel:['nicos_a1']).filter(function(id){return SOURCES.some(function(s){return s.id===id;});});
+if(!selSources.length)selSources=['nicos_a1'];
 var queue=[],qIdx=0,sessStats={due:0,fresh:0,forgot:0},undoStack=[];
 
 function loadStore(){
@@ -217,6 +218,7 @@ SOURCES.forEach(function(s){
 });
 srcList.addEventListener('change',function(){
   selSources=Array.prototype.map.call(srcList.querySelectorAll('input:checked'),function(i){return i.value;});
+  store.sel=selSources;saveStore();
   refreshStats();
 });
 document.getElementById('newPerDay').value=String(store.newPerDay);
@@ -235,11 +237,10 @@ function refreshStats(){
       if(k.indexOf(id+'|')!==0)return;
       var st=store.words[k];
       if(st.box>=MASTER_BOX)done++;
-      else if(st.box>0)learn++;
+      else learn++;
       if(st.next<=now)due++;
     });
   });
-  // 学习中包含 box0 已见过的
   document.getElementById('stDue').textContent=due;
   document.getElementById('stLearn').textContent=learn;
   document.getElementById('stDone').textContent=done;
@@ -434,7 +435,7 @@ document.getElementById('impFile').addEventListener('change',function(){
     var s2=data.store;
     if(s2.newDate&&s2.newDate===store.newDate)store.newCount=Math.max(store.newCount,s2.newCount||0);
     saveStore();refreshStats();
-    ioMsg('导入完成：新增 '+added+' 个，更新 '+updated+' 个，本机较新而保留 '+kept+' 个。',true);
+    ioMsg('导入完成：新增 '+added+' 个，更新 '+updated+' 个，相同或本机更新而保留 '+kept+' 个。',true);
   };
   r.readAsText(f);
 });
