@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全站搜索 · Deutsch Lernen</title>
+<meta name="description" content="搜索 DeLernen 全站：Nicos Weg A1–B1 单词、可分动词、语法 A1–C1、单词星图和 Alice 笔记。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0e1a;--card:#141b30;--text:#e0e6f0;--text2:#8a93a8;--border:#2a3350;--accent:#4a7aca;--green:#7dd87d;--orange:#ffb84d;--purple:#9d7bff;--chip:#1a2340}
+[data-theme="light"]{--bg:#f4f6fa;--card:#ffffff;--text:#1c2536;--text2:#5c6e88;--border:#cfd8e6;--accent:#3868c8;--green:#2e8b57;--orange:#c47b12;--purple:#6a4fc8;--chip:#e8edf5}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:720px;margin:0 auto;padding:16px 14px 60px}
+header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+header h1{font-size:20px;flex:1}
+#themeBtn{background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;color:var(--text)}
+.back{color:var(--accent);text-decoration:none;font-size:14px}
+.search{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0}
+.search input{width:100%;padding:12px 14px;font-size:16px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);outline:none}
+.search input:focus{border-color:var(--accent)}
+.status{color:var(--text2);font-size:13px;margin:8px 0 4px;line-height:1.6}
+.sec{font-size:14px;color:var(--text2);margin:18px 0 8px;font-weight:700}
+.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:9px;color:var(--text);text-decoration:none}
+.card:active{transform:scale(.99)}
+.card .de{font-size:16px;font-weight:700;line-height:1.4}
+.card .mean{margin-top:4px;font-size:14px;line-height:1.6}
+.card .en{color:var(--green)}
+.card .sub{margin-top:4px;font-size:12px;color:var(--text2);line-height:1.6}
+.card .snip{margin-top:4px;font-size:13px;color:var(--text2);line-height:1.6}
+.tag{display:inline-block;background:var(--chip);border-radius:6px;padding:1px 7px;font-size:12px;color:var(--text2);margin-right:6px}
+.g-m{color:#4a90e2}.g-f{color:#e5566b}.g-n{color:#3fb37f}.g-x{color:var(--purple)}.g-p{color:var(--text2)}.g-note{color:var(--text2);font-weight:400;font-size:.75em}
+mark{background:none;color:var(--orange);font-weight:700}
+.more{font-size:13px;color:var(--text2);margin:4px 0 0}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="back" href="../">← 首页</a>
+<h1>🔍 全站搜索</h1>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题">🔄</button>
+</header>
+<div class="search"><input id="q" type="search" placeholder="德语 / 中文 / 英语，如 Weg、路、because" autocomplete="off" autofocus></div>
+<div class="status" id="status">正在加载词库…</div>
+<div id="out"></div>
+</div>
+<script>
+(function(){
+"use strict";
+var VOCAB=[
+ {v:'NICOS_A1',f:'/nicos/a1/vocab.js',name:'A1',page:'/nicos/a1/'},
+ {v:'NICOS_A2',f:'/nicos/a2/vocab.js',name:'A2',page:'/nicos/a2/'},
+ {v:'NICOS_B1',f:'/nicos/b1/vocab.js',name:'B1',page:'/nicos/b1/'},
+ {v:'SEP_A1A2',f:'/memorize/sep_a1a2.js',name:'可分动词 A1-A2',page:'/a1a2/'},
+ {v:'SEP_A1B2',f:'/memorize/sep_a1b2.js',name:'可分动词 A1-B2',page:'/a1b2/'}
+];
+var INDEX_URL='/search/index.json';
+var TYPE={grammar:'语法 A1-B2',kurs:'课程语法',star:'单词星图',alice:'Alice 笔记'};
+var words=[],docs=[],ready=0,need=VOCAB.length+1;
+var q=document.getElementById('q'),out=document.getElementById('out'),status=document.getElementById('status');
+
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function norm(s){return String(s||'').toLowerCase().replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ß/g,'ss');}
+function core(de){return String(de).split(/,| \/ /)[0].replace(/\s*\([^)]*\)/g,'').replace(/^(der\/die|der\/das|der|die|das)\s+/,'').replace(/\|/g,'').trim();}
+function deHtml(s){s=esc(s);return s.replace(/(^|\/ )(der\/die|der\/das|der|die|das)(?= )/g,function(m,p,a){var c=a==='der'?'g-m':a==='die'?'g-f':a==='das'?'g-n':'g-x';return p+'<span class="'+c+'">'+a+'</span>';}).replace(/(, )(die)(?= )/g,'$1<span class="g-p">$2</span>').replace(/ (\((?:nur|meist) (?:Sg|Pl)\.\))/g,' <small class="g-note">$1</small>');}
+
+function loaded(){ready++;if(ready>=need){status.textContent='';run();}else status.textContent='正在加载词库…（'+ready+'/'+need+'）';}
+VOCAB.forEach(function(src){
+  var sc=document.createElement('script');sc.src=src.f;
+  sc.onload=function(){
+    (window[src.v]||[]).forEach(function(w){
+      var c=core(w.de);
+      words.push({w:w,src:src,c:norm(c),lc:c.toLowerCase(),raw:c,de:norm(w.de),zh:String(w.zh||''),en:norm(w.en)});
+    });
+    loaded();
+  };
+  sc.onerror=loaded;
+  document.head.appendChild(sc);
+});
+fetch(INDEX_URL).then(function(r){return r.ok?r.json():[];}).then(function(d){
+  docs=(d||[]).map(function(x){x._t=norm(x.title);x._s=norm(x.sub);x._x=norm(x.text);return x;});
+}).catch(function(){}).then(loaded);
+
+function scoreWord(e,nq,rq){
+  var s=0;
+  if(e.lc===rq.toLowerCase())s=101;
+  else if(e.c===nq)s=100;
+  else if(e.c.indexOf(nq)===0)s=80-Math.min(20,e.c.length-nq.length);
+  else if(e.de.indexOf(nq)>=0)s=55;
+  if(rq&&e.zh){
+    var parts=e.zh.split(/[；;，,、（）()\s]+/);
+    if(parts.indexOf(rq)>=0)s=Math.max(s,90);
+    else if(e.zh.indexOf(rq)>=0)s=Math.max(s,50);
+  }
+  if(nq.length>=3){
+    var ew=e.en.split(/[^a-z]+/);
+    if(ew.indexOf(nq)>=0)s=Math.max(s,45);
+    else if(e.en.indexOf(nq)>=0)s=Math.max(s,25);
+  }
+  return s;
+}
+function scoreDoc(d,nq){
+  if(d._t.indexOf(nq)>=0)return d._t===nq?100:80;
+  if(d._s.indexOf(nq)>=0)return 65;
+  if(d._x.indexOf(nq)>=0)return 40;
+  return 0;
+}
+function snippet(text,rq){
+  if(!text)return '';
+  var t=String(text),i=norm(t).indexOf(norm(rq));
+  if(i<0)return esc(t.slice(0,70))+(t.length>70?'…':'');
+  var a=Math.max(0,i-24),b=Math.min(t.length,i+rq.length+46);
+  return (a>0?'…':'')+esc(t.slice(a,i))+'<mark>'+esc(t.slice(i,i+rq.length))+'</mark>'+esc(t.slice(i+rq.length,b))+(b<t.length?'…':'');
+}
+function run(){
+  var rq=q.value.trim(),nq=norm(rq);
+  try{history.replaceState(null,'',rq?('?q='+encodeURIComponent(rq)):location.pathname);}catch(e){}
+  if(ready<need)return;
+  if(!rq){out.innerHTML='';status.textContent='可搜：Nicos Weg A1–B1 单词、可分动词、语法 A1–C1、单词星图、Alice 笔记。德语不分大小写，变元音可以不打（schon = schön）。';return;}
+  var ws=[];
+  for(var i=0;i<words.length;i++){var s=scoreWord(words[i],nq,rq);if(s>0)ws.push([s,i]);}
+  ws.sort(function(a,b){return b[0]-a[0]||words[a[1]].raw.length-words[b[1]].raw.length;});
+  var ds=[];
+  docs.forEach(function(d,i){var s=scoreDoc(d,nq);if(s>0)ds.push([s,i]);});
+  ds.sort(function(a,b){return b[0]-a[0];});
+  var html=[];
+  if(ws.length){
+    html.push('<div class="sec">单词 · '+ws.length+' 条</div>');
+    ws.slice(0,60).forEach(function(x){
+      var e=words[x[1]],w=e.w,url=e.src.page+(e.src.page.indexOf('/nicos/')===0?'?q='+encodeURIComponent(e.raw):'');
+      html.push('<a class="card" href="'+url+'"><div class="de">'+deHtml(w.de)+'</div><div class="mean"><span class="en">'+esc(w.en)+'</span>'+(w.zh?' · '+esc(w.zh):'')+'</div><div class="sub"><span class="tag">'+esc(e.src.name)+'</span>'+(w.past&&w.pp?esc(w.past+' · '+w.pp):'')+'</div></a>');
+    });
+    if(ws.length>60)html.push('<div class="more">只显示前 60 条，输入更完整的词可缩小范围。</div>');
+  }
+  var groups={};
+  ds.forEach(function(x){var d=docs[x[1]];(groups[d.t]=groups[d.t]||[]).push(d);});
+  ['grammar','kurs','star','alice'].forEach(function(t){
+    var arr=groups[t];if(!arr)return;
+    html.push('<div class="sec">'+TYPE[t]+' · '+arr.length+' 条</div>');
+    arr.slice(0,20).forEach(function(d){
+      html.push('<a class="card" href="'+esc(d.url)+'"><div class="de">'+esc(d.title)+'</div><div class="sub">'+(d.lv?'<span class="tag">'+esc(d.lv)+'</span>':'')+esc(d.sub||'')+'</div><div class="snip">'+snippet(d.text,rq)+'</div></a>');
+    });
+    if(arr.length>20)html.push('<div class="more">只显示前 20 条。</div>');
+  });
+  out.innerHTML=html.join('');
+  status.textContent=html.length?'':'没有找到“'+rq+'”。试试换个写法，或只输入词的一部分。';
+}
+var tm=null;
+q.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,150);});
+try{var qp=new URLSearchParams(location.search).get('q');if(qp)q.value=qp;}catch(e){}
+
+function apply(t){var r=document.documentElement;
+  if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  else r.setAttribute('data-theme',t);
+  var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+var thm=localStorage.getItem('delernen-theme')||'auto';apply(thm);
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(thm==='auto')apply('auto');});
+window.toggleTheme=function(){thm=thm==='auto'?'light':thm==='light'?'dark':'auto';localStorage.setItem('delernen-theme',thm);apply(thm);};
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

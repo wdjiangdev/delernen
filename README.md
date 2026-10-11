@@ -44,10 +44,15 @@
 curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash
 ```
 
-做完的事：下载本站文件 → 写入 `/opt/docker/delernen`（`conf/nginx.conf` + `www/`）→ 启动 `delernen-web` 容器（nginx:alpine，监听 `127.0.0.1:18095`）→ 健康检查。
+做完的事：下载本站文件 → 构建（`scripts/build_site.py`：给页面引用的 js/json 自动加内容哈希版本号、生成全站搜索索引、生成离线缓存清单）→ 写入 `/opt/docker/delernen`（`conf/nginx.conf` + `www/`）→ 启动 `delernen-web` 容器（nginx:alpine，监听 `127.0.0.1:18095`）→ 健康检查。
 
 最后一步手动做：在 Cloudflare Tunnel 里加一条 Public Hostname，Service 指向 `http://127.0.0.1:18095`。
 
 - 换端口：`PORT=18096 bash deploy.sh`
 - 换目录：`DEPLOY_DIR=/srv/delernen bash deploy.sh`
-- 重新执行即更新站点文件并重启容器（幂等）。
+- 重新执行即更新站点文件并重载 nginx（幂等）。
+- 开启自动部署（每 5 分钟检查 GitHub master，有新提交自动更新，日志 `/var/log/delernen-deploy.log`）：
+  `curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash -s -- --install-auto`
+- 关闭自动部署：同上，参数换成 `--remove-auto`。
+- 改词库/数据后**不需要**手动改 `?v=`，构建时按文件内容自动生成。
+- 本地预览构建结果：`python3 scripts/build_site.py . /tmp/dist && cd /tmp/dist && python3 -m http.server`

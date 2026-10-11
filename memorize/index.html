@@ -65,6 +65,10 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 .kv b{font-size:16px}
 .note{font-size:12px;color:var(--text2);line-height:1.7;margin-top:14px;background:var(--card);border:1px dashed var(--border);border-radius:10px;padding:10px 12px}
 </style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 </head>
 <body>
 <div class="wrap">
@@ -76,7 +80,7 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 
 <!-- 设置视图 -->
 <div class="view on" id="vSetup">
-<div class="sub">艾宾浩斯间隔重复：记得 → 间隔拉长（20分钟 → 1天 → 3天 → 7天 → 15天 → 30天 → 60天）；忘了 → 打回重学。每天先复习到期的，再学新词。进度保存在本机浏览器。</div>
+<div class="sub">艾宾浩斯间隔重复：记得 → 间隔拉长（20分钟 → 1天 → 3天 → 7天 → 15天 → 30天 → 60天）；忘了 → 打回重学。每天先复习到期的，再学新词。进度保存在本机浏览器，可导出备份或导入到其他设备。</div>
 <div id="srcList"></div>
 <div class="row">
 <label>每天新词：</label>
@@ -87,6 +91,14 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 <option value="50">50 个</option>
 </select>
 </div>
+<div class="row">
+<label>出题顺序：</label>
+<select id="order">
+<option value="mix">全部乱序（复习和新词混在一起）</option>
+<option value="split">先复习、再新词（各自乱序）</option>
+<option value="list">按词表顺序</option>
+</select>
+</div>
 <div class="stats" id="statsRow">
 <div class="stat"><b class="due" id="stDue">0</b><span>今日待复习</span></div>
 <div class="stat"><b class="learn" id="stLearn">0</b><span>学习中</span></div>
@@ -95,6 +107,12 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 </div>
 <button class="btn" id="startBtn" onclick="startSession()">开始背单词</button>
 <div id="loadErr" style="display:none;color:var(--red);font-size:13px;margin-top:10px;line-height:1.6"></div>
+<div class="row" style="margin-top:12px">
+<button class="btn ghost" style="flex:1;margin-top:0" onclick="exportProgress()">⬇ 导出进度</button>
+<button class="btn ghost" style="flex:1;margin-top:0" onclick="document.getElementById('impFile').click()">⬆ 导入进度</button>
+<input type="file" id="impFile" accept=".json,application/json" style="display:none">
+</div>
+<div id="ioMsg" style="display:none;font-size:13px;line-height:1.6;margin-top:4px"></div>
 <button class="btn ghost" onclick="clearProgress()">清空本机进度</button>
 <div class="note">💡 三档自评：<b style="color:var(--red)">忘了</b> = 完全想不起来，打回重学；<b style="color:var(--orange)">模糊</b> = 犹豫/猜对，维持当前进度再巩固一次；<b style="color:var(--green)">记得</b> = 干脆答对，进入下一间隔。诚实打分效果最好。</div>
 </div>
@@ -165,7 +183,7 @@ var queue=[],qIdx=0,sessStats={due:0,fresh:0,forgot:0},undoStack=[];
 function loadStore(){
   try{var s=JSON.parse(localStorage.getItem(LSKEY)||'{}');}catch(e){s={};}
   s.words=s.words||{};s.newPerDay=s.newPerDay||20;
-  s.newDate=s.newDate||'';s.newCount=s.newCount||0;
+  s.newDate=s.newDate||'';s.newCount=s.newCount||0;s.order=s.order||'mix';
   return s;
 }
 function saveStore(){try{localStorage.setItem(LSKEY,JSON.stringify(store));}catch(e){}}
@@ -205,6 +223,8 @@ document.getElementById('newPerDay').value=String(store.newPerDay);
 document.getElementById('newPerDay').addEventListener('change',function(){
   store.newPerDay=parseInt(this.value,10);saveStore();
 });
+document.getElementById('order').value=store.order;
+document.getElementById('order').addEventListener('change',function(){store.order=this.value;saveStore();});
 
 function refreshStats(){
   var now=Date.now(),due=0,learn=0,done=0,total=0;
@@ -245,7 +265,14 @@ function startSession(){
       });
     });
     var allowed=Math.max(0,store.newPerDay-store.newCount);
-    queue=shuffle(due).concat(shuffle(fresh).slice(0,allowed));
+    if(store.order==='list'){
+      due.sort(function(a,b){return a.st.next-b.st.next;});
+      queue=due.concat(fresh.slice(0,allowed));
+    }else if(store.order==='split'){
+      queue=shuffle(due).concat(shuffle(fresh).slice(0,allowed));
+    }else{
+      queue=shuffle(due.concat(shuffle(fresh).slice(0,allowed)));
+    }
     if(!queue.length){
       alert('🎉 太棒了！所选范围内今日没有到期的单词。');
       return;
@@ -370,15 +397,50 @@ function apply(t){var r=document.documentElement;
   if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
   else r.setAttribute('data-theme',t);
   var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
-var cur=localStorage.getItem('delernen-theme')||'auto';apply(cur);
-matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
-window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
+var thm=localStorage.getItem('delernen-theme')||'auto';apply(thm);
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(thm==='auto')apply('auto');});
+window.toggleTheme=function(){thm=thm==='auto'?'light':thm==='light'?'dark':'auto';localStorage.setItem('delernen-theme',thm);apply(thm);};
 
 refreshStats();
 window.startSession=startSession;
 window.showSetup=showSetup;
-window.clearProgress=function(){if(confirm('确定清空所有背单词进度吗？')){try{localStorage.removeItem(LSKEY);}catch(e){}location.reload();}};
+function ioMsg(t,ok){var el=document.getElementById('ioMsg');el.style.display='block';el.style.color=ok?'var(--green)':'var(--red)';el.textContent=t;}
+window.exportProgress=function(){
+  var n=Object.keys(store.words).length;
+  if(!n){ioMsg('还没有进度可导出。',false);return;}
+  var data={app:'delernen',type:'srs-progress',version:1,exportedAt:new Date().toISOString(),store:store};
+  var d=new Date(),pad=function(x){return (x<10?'0':'')+x;};
+  var name='delernen-进度-'+d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+'.json';
+  var blob=new Blob([JSON.stringify(data)],{type:'application/json'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1000);
+  ioMsg('已导出 '+n+' 个单词的进度：'+name+'。换设备时在这里点“导入进度”选这个文件即可。',true);
+};
+document.getElementById('impFile').addEventListener('change',function(){
+  var f=this.files&&this.files[0];this.value='';if(!f)return;
+  var r=new FileReader();
+  r.onload=function(){
+    var data;try{data=JSON.parse(r.result);}catch(e){ioMsg('文件不是有效的进度文件。',false);return;}
+    var inc=data&&data.store&&data.store.words;
+    if(!inc||data.app!=='delernen'){ioMsg('文件不是 DeLernen 的进度文件。',false);return;}
+    var added=0,updated=0,kept=0;
+    Object.keys(inc).forEach(function(k){
+      var a=store.words[k],b=inc[k];
+      if(!b||typeof b.box!=='number')return;
+      if(!a){store.words[k]={box:b.box,next:b.next||0};added++;}
+      else if(b.box>a.box||(b.box===a.box&&(b.next||0)>a.next)){store.words[k]={box:b.box,next:b.next||0};updated++;}
+      else kept++;
+    });
+    var s2=data.store;
+    if(s2.newDate&&s2.newDate===store.newDate)store.newCount=Math.max(store.newCount,s2.newCount||0);
+    saveStore();refreshStats();
+    ioMsg('导入完成：新增 '+added+' 个，更新 '+updated+' 个，本机较新而保留 '+kept+' 个。',true);
+  };
+  r.readAsText(f);
+});
+window.clearProgress=function(){if(confirm('确定清空所有背单词进度吗？建议先导出备份。')){try{localStorage.removeItem(LSKEY);}catch(e){}location.reload();}};
 })();
 </script>
+<script src="/pwa.js"></script>
 </body>
 </html>

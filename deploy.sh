@@ -1,54 +1,96 @@
 #!/usr/bin/env bash
-# DeLernen 一键部署脚本
-# 在新服务器上以 root 执行一次即可：
-#   curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash
-# 或： bash deploy.sh
+# DeLernen 一键部署脚本（以 root 执行）
+#
+#   部署/更新到最新版：
+#     curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash
+#   同时开启自动部署（每 5 分钟检查 GitHub，有新提交就自动更新）：
+#     curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash -s -- --install-auto
+#   关闭自动部署：
+#     curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash -s -- --remove-auto
+#
 # 部署完成后，在 Cloudflare Tunnel 里加一条 Public Hostname 指向 http://127.0.0.1:18095
 set -euo pipefail
 
+REPO="wdjiangdev/delernen"
 DEPLOY_DIR="${DEPLOY_DIR:-/opt/docker/delernen}"
 PORT="${PORT:-18095}"
-REPO_TARBALL="https://github.com/wdjiangdev/delernen/archive/refs/heads/master.tar.gz"
+REF="${REF:-master}"
+AUTO_BIN="/usr/local/bin/delernen-autodeploy"
+CRON_FILE="/etc/cron.d/delernen-autodeploy"
+LOG="/var/log/delernen-deploy.log"
 
-echo "==> [1/5] 检查 docker"
+install_auto() {
+  cat > "$AUTO_BIN" <<EOS
+#!/usr/bin/env bash
+# DeLernen 自动部署：GitHub master 有新提交时自动部署（由 cron 每 5 分钟调用）
+set -euo pipefail
+exec 9>/run/delernen-autodeploy.lock
+flock -n 9 || exit 0
+SHA=\$(curl -fsSL -H 'Accept: application/vnd.github.sha' "https://api.github.com/repos/$REPO/commits/master") || exit 0
+[ \${#SHA} -eq 40 ] || exit 0
+CUR=\$(cat "$DEPLOY_DIR/.deployed_sha" 2>/dev/null || true)
+[ "\$SHA" = "\$CUR" ] && exit 0
+echo "[\$(date '+%F %T')] 部署 \$SHA（当前 \${CUR:-无}）"
+curl -fsSL "https://raw.githubusercontent.com/$REPO/\$SHA/deploy.sh" | DEPLOY_DIR="$DEPLOY_DIR" PORT="$PORT" REF="\$SHA" bash
+EOS
+  chmod 755 "$AUTO_BIN"
+  echo "*/5 * * * * root $AUTO_BIN >> $LOG 2>&1" > "$CRON_FILE"
+  chmod 644 "$CRON_FILE"
+  echo "OK：已开启自动部署（每 5 分钟检查一次），日志：$LOG"
+}
+
+case "${1:-}" in
+  --remove-auto) rm -f "$CRON_FILE" "$AUTO_BIN"; echo "OK：已关闭自动部署"; exit 0 ;;
+esac
+
+echo "==> [1/6] 检查 docker / python3"
 if ! command -v docker >/dev/null 2>&1; then
   echo "    未检测到 docker，正在安装…"
   curl -fsSL https://get.docker.com | sh
-else
-  echo "    $(docker --version)"
 fi
 if ! docker compose version >/dev/null 2>&1; then
-  echo "    安装 docker compose 插件…"
   apt-get update -qq && apt-get install -y -qq docker-compose-plugin
 fi
+if ! command -v python3 >/dev/null 2>&1; then
+  apt-get update -qq && apt-get install -y -qq python3
+fi
 
-echo "==> [2/5] 下载站点文件"
+echo "==> [2/6] 下载站点文件（$REF）"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
-curl -fsSL "$REPO_TARBALL" | tar -xz -C "$TMP"
-SRC="$TMP/delernen-master"
+curl -fsSL "https://codeload.github.com/$REPO/tar.gz/$REF" | tar -xz -C "$TMP"
+SRC="$(find "$TMP" -mindepth 1 -maxdepth 1 -type d | head -n1)"
+SHA="$REF"
+if [ ${#SHA} -ne 40 ]; then
+  SHA=$(curl -fsSL -H 'Accept: application/vnd.github.sha' "https://api.github.com/repos/$REPO/commits/$REF" 2>/dev/null || echo "$REF")
+fi
 
-echo "==> [3/5] 写入 $DEPLOY_DIR"
+echo "==> [3/6] 构建（版本号、搜索索引、离线缓存清单）"
+python3 "$SRC/scripts/build_site.py" "$SRC" "$TMP/dist"
+
+echo "==> [4/6] 写入 $DEPLOY_DIR"
 mkdir -p "$DEPLOY_DIR/conf" "$DEPLOY_DIR/www"
 cp -f "$SRC/deploy/docker-compose.yml" "$DEPLOY_DIR/docker-compose.yml"
 cp -f "$SRC/deploy/nginx.conf" "$DEPLOY_DIR/conf/nginx.conf"
-# 监听端口可通过 PORT 环境变量覆盖
 sed -i "s/127.0.0.1:18095/127.0.0.1:$PORT/" "$DEPLOY_DIR/conf/nginx.conf"
-# 同步网站文件（排除构建脚本与部署文件）
-cp -rf "$SRC/index.html" "$SRC/a1a2" "$SRC/a1b2" "$SRC/grammatik" "$SRC/kurs" "$SRC/nicos" "$SRC/memorize" "$SRC/alice" "$DEPLOY_DIR/www/"
+# 先写新文件，再删掉已不存在的旧文件（不替换 www 目录本身，容器挂载不受影响）
+cp -rf "$TMP/dist/." "$DEPLOY_DIR/www/"
+( cd "$TMP/dist" && find . -type f | sort ) > "$TMP/new.lst"
+( cd "$DEPLOY_DIR/www" && find . -type f | sort ) | comm -23 - "$TMP/new.lst" | while read -r f; do rm -f "$DEPLOY_DIR/www/$f"; done
+find "$DEPLOY_DIR/www" -mindepth 1 -type d -empty -delete
 chmod -R a+rX "$DEPLOY_DIR/www"
 
-echo "==> [4/5] 启动容器"
+echo "==> [5/6] 启动容器并重载 nginx 配置"
 cd "$DEPLOY_DIR"
 docker compose up -d --remove-orphans
+docker exec delernen-web nginx -t >/dev/null 2>&1 && docker exec delernen-web nginx -s reload >/dev/null 2>&1 || true
 
-echo "==> [5/5] 健康检查"
+echo "==> [6/6] 健康检查"
 for i in $(seq 1 15); do
   if curl -fs -o /dev/null "http://127.0.0.1:$PORT/"; then
-    echo "OK：站点已在 http://127.0.0.1:$PORT 运行（容器 delernen-web）"
-    echo ""
-    echo "下一步：在 Cloudflare Tunnel 添加 Public Hostname，"
-    echo "      指向 Service http://127.0.0.1:$PORT"
+    echo "$SHA" > "$DEPLOY_DIR/.deployed_sha"
+    echo "OK：站点已在 http://127.0.0.1:$PORT 运行（容器 delernen-web，版本 ${SHA:0:7}）"
+    if [ "${1:-}" = "--install-auto" ]; then install_auto; fi
     exit 0
   fi
   sleep 2

@@ -89,6 +89,10 @@ header p{font-size:12px;color:var(--text3);margin-top:4px}
 #detail .meta{font-size:11px;color:var(--text4);margin-top:8px}
 .hint{text-align:center;color:var(--text5);font-size:11px;padding:0 0 12px;position:relative;z-index:1}
 </style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 </head>
 <body>
 <canvas id="stars"></canvas>
@@ -423,5 +427,6 @@ Promise.all([fetch('verb_groups.json').then(r=>r.json()),fetch('word_families.js
   window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
 })();
 </script>
+<script src="/pwa.js"></script>
 </body>
 </html>

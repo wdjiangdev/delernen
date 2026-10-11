@@ -40,6 +40,10 @@ header h1{font-size:20px;flex:1}
 .tipbtn{margin-top:8px;font-size:13px;color:var(--accent);background:none;border:none;cursor:pointer;padding:0}
 .empty{text-align:center;color:var(--text2);padding:40px 0;font-size:14px}
 </style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 </head>
 <body>
 <div class="wrap">
@@ -76,6 +80,7 @@ Object.keys(posMap).forEach(function(p){
   posF.appendChild(s);
 });
 q.addEventListener('input',function(){kw=q.value.trim().toLowerCase();render();});
+try{var qp=new URLSearchParams(location.search).get('q');if(qp){q.value=qp;kw=qp.trim().toLowerCase();}}catch(e){}
 function deHtml(s){s=esc(s);return s.replace(/(^|\/ )(der\/die|der\/das|der|die|das)(?= )/g,function(m,p,a){var c=a==='der'?'g-m':a==='die'?'g-f':a==='das'?'g-n':'g-x';return p+'<span class="'+c+'">'+a+'</span>';}).replace(/(, )(die)(?= )/g,'$1<span class="g-p">$2</span>').replace(/ (\((?:nur|meist) (?:Sg|Pl)\.\))/g,' <small class="g-note">$1</small>');}
 function sayText(s){return s.split(/,| \/ /)[0].replace(/\s*\([^)]*\)/g,'').replace(/^(der\/die|der\/das|der|die|das)\s+/,'').trim();}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
@@ -126,5 +131,6 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){
 window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
 })();
 </script>
+<script src="/pwa.js"></script>
 </body>
 </html>

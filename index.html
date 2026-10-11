@@ -16,13 +16,21 @@ a.card{display:block;background:var(--card);border:1px solid var(--border);borde
 a.card h2{font-size:18px;margin-bottom:6px}
 a.card p{font-size:13px;color:var(--text2);line-height:1.6}
 a.card:active{transform:scale(.98)}
+.gsearch{width:100%;max-width:420px;margin-bottom:16px}
+.gsearch input{width:100%;padding:13px 15px;font-size:16px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);outline:none}
+.gsearch input:focus{border-color:var(--accent)}
 #themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer}
 </style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 </head>
 <body>
 <button id="themeBtn" onclick="toggleTheme()" title="切换主题">🔄</button>
 <h1>Deutsch Lernen</h1>
 <div class="sub">德语学习 · 词汇与语法</div>
+<form class="gsearch" action="search/" method="get"><input name="q" type="search" placeholder="🔍 搜索全站：单词、语法、笔记" autocomplete="off"></form>
 <div class="grid">
 <a class="card" href="a1a2/"><h2>📚 A1-A2 单词星图</h2><p>26 组 · 动词词干+词族+语法星图，三形式+中文+复数</p></a>
 <a class="card" href="a1b2/"><h2>📚 A1-B2 单词星图</h2><p>82 组 · 动词词干+词族+语法星图，A1～B2 级别徽章，三形式+中文+复数</p></a>
@@ -31,7 +39,7 @@ a.card:active{transform:scale(.98)}
 <a class="card" href="nicos/a1/"><h2>🎙️ Nicos Weg A1 词汇</h2><p>1726 词完整版 · 德英中三语+记忆提示，搜索/筛选/发音</p></a>
 <a class="card" href="nicos/a2/"><h2>🎙️ Nicos Weg A2 词汇</h2><p>1732 词完整版 · 德英中三语+记忆提示，搜索/筛选/发音</p></a>
 <a class="card" href="nicos/b1/"><h2>🎙️ Nicos Weg B1 词汇</h2><p>963 词完整版 · 德英中三语+记忆提示，搜索/筛选/发音</p></a>
-<a class="card" href="memorize/"><h2>📝 背单词</h2><p>艾宾浩斯间隔重复 · 自选范围（可分动词/A1/A2/B1），进度本机保存</p></a>
+<a class="card" href="memorize/"><h2>📝 背单词</h2><p>艾宾浩斯间隔重复 · 自选范围（可分动词/A1/A2/B1），可导出/导入进度，支持乱序</p></a>
 <a class="card" href="alice/"><h2>✨ Alice Learn German 笔记</h2><p>17 篇 · 整理自 Alice 的 Medium 刊物（原站已下线），A2–C1 语法+词汇，原创讲解+英语对照</p></a>
 </div>
 <script>
@@ -45,5 +53,6 @@ a.card:active{transform:scale(.98)}
   window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
 })();
 </script>
+<script src="/pwa.js"></script>
 </body>
 </html>

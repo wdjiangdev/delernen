@@ -44,6 +44,10 @@ td{color:var(--text)}
 .ex .zh{font-size:13px;color:var(--text3);margin-top:3px}
 .sec-title{font-size:12px;color:var(--text4);margin:12px 0 4px;letter-spacing:1px}
 </style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 </head>
 <body>
 <header>
@@ -127,5 +131,6 @@ fetch('grammar_a2.json').then(r=>r.json()).then(d=>{DATA=d;render();goHash();})
   window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';localStorage.setItem('delernen-theme',cur);apply(cur);};
 })();
 </script>
+<script src="/pwa.js"></script>
 </body>
 </html>
