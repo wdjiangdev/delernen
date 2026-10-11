@@ -39,6 +39,7 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 .cinner.flipped{transform:rotateY(180deg)}
 .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:1px solid var(--border);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:26px 20px;text-align:center}
 .face.back{transform:rotateY(180deg)}
+.g-m{color:#4a90e2}.g-f{color:#e5566b}.g-n{color:#3fb37f}.g-x{color:var(--purple)}.g-p{color:var(--text2)}.g-note{color:var(--text2);font-weight:400;font-size:.75em}
 .face .de{font-size:32px;font-weight:800;line-height:1.3;margin-bottom:10px}
 .back .de{font-size:24px;margin-bottom:8px}
 .vforms{font-size:16px;color:var(--accent);font-weight:600;margin-bottom:10px}
@@ -148,9 +149,9 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 var SOURCES=[
  {id:'sep_a1a2',name:'A1-A2 可分动词',file:'/memorize/sep_a1a2.js?v=3',v:'SEP_A1A2',count:27},
  {id:'sep_a1b2',name:'A1-B2 可分动词',file:'/memorize/sep_a1b2.js?v=3',v:'SEP_A1B2',count:49},
- {id:'nicos_a1',name:'Nicos Weg A1 单词',file:'/nicos/a1/vocab.js?v=1726m2',v:'NICOS_A1',count:1726},
- {id:'nicos_a2',name:'Nicos Weg A2 单词',file:'/nicos/a2/vocab.js?v=1732m2',v:'NICOS_A2',count:1732},
- {id:'nicos_b1',name:'Nicos Weg B1 单词',file:'/nicos/b1/vocab.js?v=963m2',v:'NICOS_B1',count:963}
+ {id:'nicos_a1',name:'Nicos Weg A1 单词',file:'/nicos/a1/vocab.js?v=1726m3',v:'NICOS_A1',count:1726},
+ {id:'nicos_a2',name:'Nicos Weg A2 单词',file:'/nicos/a2/vocab.js?v=1732m3',v:'NICOS_A2',count:1732},
+ {id:'nicos_b1',name:'Nicos Weg B1 单词',file:'/nicos/b1/vocab.js?v=963m3',v:'NICOS_B1',count:963}
 ];
 /* 艾宾浩斯间隔（记得后进入下一级时的等待时间） */
 var NEXT=[0,20*60*1000,86400*1000,3*86400*1000,7*86400*1000,15*86400*1000,30*86400*1000,60*86400*1000];
@@ -168,6 +169,8 @@ function loadStore(){
   return s;
 }
 function saveStore(){try{localStorage.setItem(LSKEY,JSON.stringify(store));}catch(e){}}
+function deHtml(s){s=esc(s);return s.replace(/(^|\/ )(der\/die|der\/das|der|die|das)(?= )/g,function(m,p,a){var c=a==='der'?'g-m':a==='die'?'g-f':a==='das'?'g-n':'g-x';return p+'<span class="'+c+'">'+a+'</span>';}).replace(/(, )(die)(?= )/g,'$1<span class="g-p">$2</span>').replace(/ (\((?:nur|meist) (?:Sg|Pl)\.\))/g,' <small class="g-note">$1</small>');}
+function sayText(s){return s.split(/,| \/ /)[0].replace(/\s*\([^)]*\)/g,'').replace(/^(der\/die|der\/das|der|die|das)\s+/,'').trim();}
 function key(src,de){return src+'|'+de;}
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
@@ -236,7 +239,7 @@ function startSession(){
     if(store.newDate!==today){store.newDate=today;store.newCount=0;}
     selSources.forEach(function(id,si){
       dataCache[id].forEach(function(w){
-        var k=key(id,w.de),st=store.words[k];
+        var k=key(id,w.k||w.de),st=store.words[k];
         if(!st)fresh.push({src:id,w:w,k:k});
         else if(st.next<=now)due.push({src:id,w:w,k:k,st:st});
       });
@@ -269,8 +272,8 @@ function renderCard(){
   cur=queue[qIdx];flipped=false;
   var card=document.getElementById('card');
   card.classList.remove('flipped');
-  document.getElementById('cDe').textContent=cur.w.de;
-  document.getElementById('cDe2').textContent=cur.w.de;
+  document.getElementById('cDe').innerHTML=deHtml(cur.w.de);
+  document.getElementById('cDe2').innerHTML=deHtml(cur.w.de);
   var fm=document.getElementById('cForms');
   if(cur.w.past&&cur.w.pp){
     fm.innerHTML='<small>过去式·过去分词</small>'+esc(cur.w.past)+' · '+esc(cur.w.pp);
@@ -298,7 +301,7 @@ window.flipCard=function(){
 function speakWord(){
   try{
     speechSynthesis.cancel();
-    var t=cur.w.de.replace(/^(der|die|das)\s+/,'').split(',')[0];
+    var t=sayText(cur.w.de);
     var u=new SpeechSynthesisUtterance(t);u.lang='de-DE';u.rate=0.85;
     var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
     if(vs.length)u.voice=vs[0];
