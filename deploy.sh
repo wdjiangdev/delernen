@@ -71,8 +71,10 @@ python3 "$SRC/scripts/build_site.py" "$SRC" "$TMP/dist"
 echo "==> [4/6] 写入 $DEPLOY_DIR"
 mkdir -p "$DEPLOY_DIR/conf" "$DEPLOY_DIR/www"
 cp -f "$SRC/deploy/docker-compose.yml" "$DEPLOY_DIR/docker-compose.yml"
-cp -f "$SRC/deploy/nginx.conf" "$DEPLOY_DIR/conf/nginx.conf"
-sed -i "s/127.0.0.1:18095/127.0.0.1:$PORT/" "$DEPLOY_DIR/conf/nginx.conf"
+# nginx.conf 是单文件挂载：必须原地写入（不能 sed -i / mv 换文件），否则容器看到的还是旧文件
+sed "s/127.0.0.1:18095/127.0.0.1:$PORT/" "$SRC/deploy/nginx.conf" > "$TMP/nginx.conf"
+touch "$DEPLOY_DIR/conf/nginx.conf"
+cat "$TMP/nginx.conf" > "$DEPLOY_DIR/conf/nginx.conf"
 # 先写新文件，再删掉已不存在的旧文件（不替换 www 目录本身，容器挂载不受影响）
 cp -rf "$TMP/dist/." "$DEPLOY_DIR/www/"
 ( cd "$TMP/dist" && find . -type f | sort ) > "$TMP/new.lst"
@@ -83,6 +85,10 @@ chmod -R a+rX "$DEPLOY_DIR/www"
 echo "==> [5/6] 启动容器并重载 nginx 配置"
 cd "$DEPLOY_DIR"
 docker compose up -d --remove-orphans
+if ! docker exec delernen-web cat /etc/nginx/nginx.conf 2>/dev/null | cmp -s - "$DEPLOY_DIR/conf/nginx.conf"; then
+  echo "    容器内配置与新配置不一致，重建容器"
+  docker compose up -d --force-recreate --remove-orphans
+fi
 docker exec delernen-web nginx -t >/dev/null 2>&1 && docker exec delernen-web nginx -s reload >/dev/null 2>&1 || true
 
 echo "==> [6/6] 健康检查"
