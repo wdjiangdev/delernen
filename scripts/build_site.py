@@ -13,10 +13,10 @@
 """
 import hashlib, html, json, os, re, shutil, sys
 
-SITE_ITEMS = ['index.html', 'manifest.webmanifest', 'pwa.js', 'sw.js', 'icons', 'search',
+SITE_ITEMS = ['index.html', 'theme.css', 'manifest.webmanifest', 'pwa.js', 'sw.js', 'icons', 'search',
               'a1a2', 'a1b2', 'grammatik', 'kurs', 'nicos', 'memorize', 'alice']
 
-REF_RE = re.compile(r'''(?P<q>["'])(?P<path>(?!https?:|//|data:)[\w./-]+\.(?:js|json))(?:\?v=[\w.-]*)?(?P=q)''')
+REF_RE = re.compile(r'''(?P<q>["'])(?P<path>(?!https?:|//|data:)[\w./-]+\.(?:js|json|css))(?:\?v=[\w.-]*)?(?P=q)''')
 
 
 def h8(path):

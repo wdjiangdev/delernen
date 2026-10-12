@@ -1,0 +1,19 @@
+/* DeLernen 共用配色。深色为默认，浅色用 [data-theme="light"]。
+   浅色下文字色都按 WCAG AA（对比度 ≥ 4.5:1）调过。 */
+:root{
+  --bg:#0a0e1a;--bg-card:#111830;--bg-elev:#141b30;--bg-deep:#0d1326;--bg-input:#0e1428;--card:#141b30;--chip:#1a2340;
+  --text:#e0e6f0;--text2:#b0b8d0;--text3:#8a93a8;--text4:#8590ab;--text5:#5a6378;
+  --border:#2a3350;--border2:#232c48;--border3:#1a2340;--link:#2a3a5a;--nodebd:#3a4a70;
+  --accent:#4a7aca;--accent2:#6ab0ff;--accentbg:#2a4a8a;--accentdeep:#1a2a5a;
+  --green:#7dd87d;--orange:#ffb84d;--red:#ff7d7d;--purple:#9d7bff;--yellow:#ffd479;
+  --g-m:#5a9cf0;--g-f:#f06a7e;--g-n:#4cc28c;
+}
+[data-theme="light"]{
+  --bg:#f4f6fa;--bg-card:#ffffff;--bg-elev:#e9edf4;--bg-deep:#e2e8f1;--bg-input:#f0f3f8;--card:#ffffff;--chip:#e8edf5;
+  --text:#1c2536;--text2:#3c4c66;--text3:#5c6e88;--text4:#5f6f88;--text5:#aab8cc;
+  --border:#cfd8e6;--border2:#dfe6f0;--border3:#e8edf4;--link:#b8c8e0;--nodebd:#9ab0d0;
+  --accent:#3868c8;--accent2:#2c5ab5;--accentbg:#d4e2fa;--accentdeep:#e6eefc;
+  --green:#1f7a30;--orange:#a35c00;--red:#c83a3a;--purple:#6a4fc8;--yellow:#8a6a1a;
+  --g-m:#2563c4;--g-f:#c42d48;--g-n:#1a7548;
+}
+.g-m{color:var(--g-m)}.g-f{color:var(--g-f)}.g-n{color:var(--g-n)}

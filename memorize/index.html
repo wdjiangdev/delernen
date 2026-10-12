@@ -4,51 +4,50 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>背单词 · 艾宾浩斯记忆法 · Deutsch Lernen</title>
+<link rel="stylesheet" href="/theme.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0a0e1a;--card:#141b30;--text:#e0e6f0;--text2:#8a93a8;--border:#2a3350;--accent:#4a7aca;--green:#7dd87d;--orange:#ffb84d;--red:#ff7b7b;--purple:#9d7bff;--chip:#1a2340}
-[data-theme="light"]{--bg:#f4f6fa;--card:#ffffff;--text:#1c2536;--text2:#5c6e88;--border:#cfd8e6;--accent:#3868c8;--green:#2e8b57;--orange:#c47b12;--red:#d33;--purple:#6a4fc8;--chip:#e8edf5}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
 .wrap{max-width:640px;margin:0 auto;padding:16px 14px 60px}
 header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
 header h1{font-size:20px;flex:1}
 #themeBtn{background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;color:var(--text)}
 .back{color:var(--accent);text-decoration:none;font-size:14px}
-.sub{color:var(--text2);font-size:13px;margin:6px 0 14px;line-height:1.7}
+.sub{color:var(--text3);font-size:13px;margin:6px 0 14px;line-height:1.7}
 .view{display:none}.view.on{display:block}
 .srcitem{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px 14px;margin-bottom:10px;cursor:pointer;user-select:none}
 .srcitem input{width:20px;height:20px;accent-color:var(--accent);flex-shrink:0}
-.srcitem .nm{flex:1}.srcitem .nm b{font-size:15px;display:block}.srcitem .nm span{font-size:12px;color:var(--text2)}
+.srcitem .nm{flex:1}.srcitem .nm b{font-size:15px;display:block}.srcitem .nm span{font-size:12px;color:var(--text3)}
 .srcitem .cnt{font-size:13px;color:var(--accent);font-weight:700}
 .row{display:flex;gap:10px;align-items:center;margin:14px 0;flex-wrap:wrap}
-.row label{font-size:14px;color:var(--text2)}
+.row label{font-size:14px;color:var(--text3)}
 select{background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:9px 12px;font-size:15px}
 .btn{display:block;width:100%;padding:14px;font-size:17px;font-weight:700;border:none;border-radius:14px;background:var(--accent);color:#fff;cursor:pointer;margin-top:8px}
 .btn:active{transform:scale(.98)}
 .btn.ghost{background:var(--card);color:var(--text);border:1px solid var(--border);font-weight:400;font-size:14px;margin-top:12px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
 .stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 4px;text-align:center}
-.stat b{font-size:19px;display:block}.stat span{font-size:11px;color:var(--text2)}
+.stat b{font-size:19px;display:block}.stat span{font-size:11px;color:var(--text3)}
 .stat b.due{color:var(--orange)}.stat b.learn{color:var(--accent)}.stat b.done{color:var(--green)}
 /* study view */
 .prog{height:8px;background:var(--chip);border-radius:4px;overflow:hidden;margin:10px 0}
 .prog i{display:block;height:100%;background:var(--accent);border-radius:4px;transition:width .3s}
-.ptext{font-size:13px;color:var(--text2);text-align:center;margin-bottom:12px}
+.ptext{font-size:13px;color:var(--text3);text-align:center;margin-bottom:12px}
 .stage{perspective:1200px;margin:6px 0 16px}
 .cinner{position:relative;min-height:300px;transition:transform .45s;transform-style:preserve-3d;cursor:pointer}
 .cinner.flipped{transform:rotateY(180deg)}
 .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:1px solid var(--border);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:26px 20px;text-align:center}
 .face.back{transform:rotateY(180deg)}
-.g-m{color:#4a90e2}.g-f{color:#e5566b}.g-n{color:#3fb37f}.g-x{color:var(--purple)}.g-p{color:var(--text2)}.g-note{color:var(--text2);font-weight:400;font-size:.75em}
+.g-x{color:var(--purple)}.g-p{color:var(--text3)}.g-note{color:var(--text3);font-weight:400;font-size:.75em}
 .face .de{font-size:32px;font-weight:800;line-height:1.3;margin-bottom:10px}
 .back .de{font-size:24px;margin-bottom:8px}
 .vforms{font-size:16px;color:var(--accent);font-weight:600;margin-bottom:10px}
-.vforms small{font-weight:400;color:var(--text2);font-size:12px;margin-right:6px}
-.face .hint{font-size:13px;color:var(--text2);margin-top:14px}
+.vforms small{font-weight:400;color:var(--text3);font-size:12px;margin-right:6px}
+.face .hint{font-size:13px;color:var(--text3);margin-top:14px}
 .face .en{font-size:21px;color:var(--green);font-weight:700;margin-bottom:6px}
 .face .zh{font-size:19px;margin-bottom:10px}
 .face .tip{font-size:13px;color:var(--orange);background:var(--chip);border-radius:8px;padding:8px 10px;margin-top:8px;line-height:1.6;max-width:100%}
-.face .tag{font-size:12px;color:var(--text2);margin-top:8px}
+.face .tag{font-size:12px;color:var(--text3);margin-top:8px}
 .speak{background:none;border:1px solid var(--border);border-radius:50%;width:40px;height:40px;font-size:18px;cursor:pointer;color:var(--text);margin-top:12px}
 .grades{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:4px}
 .grades button{padding:14px 4px;font-size:15px;font-weight:700;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer}
@@ -60,10 +59,10 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 .donebox{text-align:center;padding:30px 10px}
 .donebox .big{font-size:52px;margin-bottom:12px}
 .donebox h2{font-size:20px;margin-bottom:10px}
-.donebox p{color:var(--text2);font-size:14px;line-height:1.8;margin-bottom:18px}
+.donebox p{color:var(--text3);font-size:14px;line-height:1.8;margin-bottom:18px}
 .kv{display:flex;justify-content:space-between;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 14px;margin-bottom:8px;font-size:14px}
 .kv b{font-size:16px}
-.note{font-size:12px;color:var(--text2);line-height:1.7;margin-top:14px;background:var(--card);border:1px dashed var(--border);border-radius:10px;padding:10px 12px}
+.note{font-size:12px;color:var(--text3);line-height:1.7;margin-top:14px;background:var(--card);border:1px dashed var(--border);border-radius:10px;padding:10px 12px}
 </style>
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#0a0e1a">
@@ -144,8 +143,8 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 <button id="gFuzzy" onclick="grade(1)">模糊</button>
 <button id="gGot" onclick="grade(2)">记得</button>
 </div>
-<div style="text-align:center;margin-top:10px"><a href="#" id="undoBtn" onclick="undoGrade();return false;" style="display:none;color:var(--text2);font-size:13px">↩ 撤销上次打分</a></div>
-<div style="text-align:center;margin-top:14px"><a href="#" onclick="quitSession();return false;" style="color:var(--text2);font-size:13px">结束本次</a></div>
+<div style="text-align:center;margin-top:10px"><a href="#" id="undoBtn" onclick="undoGrade();return false;" style="display:none;color:var(--text3);font-size:13px">↩ 撤销上次打分</a></div>
+<div style="text-align:center;margin-top:14px"><a href="#" onclick="quitSession();return false;" style="color:var(--text3);font-size:13px">结束本次</a></div>
 </div>
 
 <!-- 完成视图 -->
