@@ -167,23 +167,36 @@ select{background:var(--card);color:var(--text);border:1px solid var(--border);b
 var SOURCES=[
  {id:'sep_a1a2',name:'A1-A2 可分动词',file:'/memorize/sep_a1a2.js?v=3',v:'SEP_A1A2',count:27},
  {id:'sep_a1b2',name:'A1-B2 可分动词',file:'/memorize/sep_a1b2.js?v=3',v:'SEP_A1B2',count:49},
- {id:'nicos_a1',name:'Nicos Weg A1 单词',file:'/nicos/a1/vocab.js?v=1726m5',v:'NICOS_A1',count:1726},
- {id:'nicos_a2',name:'Nicos Weg A2 单词',file:'/nicos/a2/vocab.js?v=1732m5',v:'NICOS_A2',count:1732},
- {id:'nicos_b1',name:'Nicos Weg B1 单词',file:'/nicos/b1/vocab.js?v=963m5',v:'NICOS_B1',count:963}
+ {id:'nicos_a1',name:'Nicos Weg A1 单词',file:'/nicos/a1/vocab.js?v=1726m5',v:'NICOS_A1',count:1725},
+ {id:'nicos_a2',name:'Nicos Weg A2 单词',file:'/nicos/a2/vocab.js?v=1732m5',v:'NICOS_A2',count:1731},
+ {id:'nicos_b1',name:'Nicos Weg B1 单词',file:'/nicos/b1/vocab.js?v=963m5',v:'NICOS_B1',count:961}
 ];
 /* 艾宾浩斯间隔（记得后进入下一级时的等待时间） */
 var NEXT=[0,20*60*1000,86400*1000,3*86400*1000,7*86400*1000,15*86400*1000,30*86400*1000,60*86400*1000];
 var MASTER_BOX=7;
 var LSKEY='delernen-srs-v1';
-var store=loadStore();
+var ALIAS={"nicos_a1|der Weg, die Wege": "nicos_a1|weg", "nicos_a2|feste": "nicos_a2|Fest", "nicos_b1|Erde (f., hier nur Singular)": "nicos_b1|Erde, -n (f., meist Singular)", "nicos_b1|Asyl (n., selten im Plural)": "nicos_b1|Asyl, -e (n., meist Singular)"};
+var store=loadStore();saveStore();
 var dataCache={};   // srcId -> array
 var selSources=(store.sel&&store.sel.length?store.sel:['nicos_a1']).filter(function(id){return SOURCES.some(function(s){return s.id===id;});});
 if(!selSources.length)selSources=['nicos_a1'];
 var queue=[],qIdx=0,sessStats={due:0,fresh:0,forgot:0},undoStack=[];
 
+/* 词条合并后，把被删词条的进度并到保留的词条上（保留进度更靠前的那份） */
+function migrate(s){
+  Object.keys(ALIAS).forEach(function(from){
+    var a=s.words[from];if(!a)return;
+    var to=ALIAS[from],b=s.words[to];
+    if(!b||a.box>b.box||(a.box===b.box&&a.next>b.next))s.words[to]=a;
+    delete s.words[from];
+  });
+  return s;
+}
 function loadStore(){
   try{var s=JSON.parse(localStorage.getItem(LSKEY)||'{}');}catch(e){s={};}
-  s.words=s.words||{};s.newPerDay=s.newPerDay||20;
+  s.words=s.words||{};
+  migrate(s);
+  s.newPerDay=s.newPerDay||20;
   s.newDate=s.newDate||'';s.newCount=s.newCount||0;s.order=s.order||'mix';
   return s;
 }
@@ -434,7 +447,7 @@ document.getElementById('impFile').addEventListener('change',function(){
     });
     var s2=data.store;
     if(s2.newDate&&s2.newDate===store.newDate)store.newCount=Math.max(store.newCount,s2.newCount||0);
-    saveStore();refreshStats();
+    store=migrate(store);saveStore();refreshStats();
     ioMsg('导入完成：新增 '+added+' 个，更新 '+updated+' 个，相同或本机更新而保留 '+kept+' 个。',true);
   };
   r.readAsText(f);
