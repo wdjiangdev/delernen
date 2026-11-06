@@ -211,7 +211,7 @@ function renderVerbGroup(g,cx,cy,R){
   el('circle',{r:38,class:'node-center',stroke:'#4a7aca','stroke-width':2},stemG);
   const st=el('text',{y:2,class:'stem-label'},stemG);st.textContent=g.stem;
   const ss=el('text',{y:22,class:'stem-sub'},stemG);ss.textContent=g.stemZh||'词干';
-  stemG.addEventListener('click',()=>showVerbDetail({verb:g.stem,prefix:null,def:g.stemDef,zh:'',count:(members.find(m=>m.prefix===null)||{}).count||0},g));
+  stemG.addEventListener('click',()=>showVerbDetail({verb:g.stem,prefix:null,def:g.stemDef,zh:g.stemZh||'',count:(members.find(m=>m.prefix===null)||{}).count||0},g));
   members.forEach((m,i)=>{
     if(m.prefix===null)return;
     const a=(i/members.length)*Math.PI*2-Math.PI/2;
@@ -229,7 +229,7 @@ function renderVerbGroup(g,cx,cy,R){
     df.textContent=(m.zh||m.def||'').split('；')[0].slice(0,8);
     node.addEventListener('click',()=>showVerbDetail(m,g));
   });
-  showVerbDetail({verb:g.stem,prefix:null,def:g.stemDef,zh:'',past:'',pp:'',count:(members.find(m=>m.prefix===null)||{}).count||0},g);
+  showVerbDetail({verb:g.stem,prefix:null,def:g.stemDef,zh:g.stemZh||'',past:'',pp:'',count:(members.find(m=>m.prefix===null)||{}).count||0},g);
 }
 
 function renderFamilyGroup(g,cx,cy,R){
