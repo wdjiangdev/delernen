@@ -1,6 +1,6 @@
 package com.wdjiangdev.delernen.data
 
-/** 与 assets/data/*.json 一一对应的数据模型。字段以 scripts/build_android_data.py 输出为准。 */
+/** 与 assets/data 下各 JSON 一一对应的数据模型。字段以 scripts/build_android_data.py 输出为准。 */
 
 // ---- nicos/{a1,a2,b1}/vocab.js -> nicos_<level>.json ----
 data class NicosWord(
