@@ -1,0 +1,45 @@
+name: Android CI
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'android/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 配置 JDK 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: 配置 Gradle 8.7
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
+
+      - name: 写入固定签名 keystore
+        run: echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > android/debug.keystore
+
+      - name: 构建 debug APK
+        run: gradle -p android assembleDebug --stacktrace
+
+      - name: 改名 APK
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk delernen-1.0.0.apk
+
+      - name: 发布 Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: android-v1.0.0
+          name: delernen Android v1.0.0
+          files: delernen-1.0.0.apk

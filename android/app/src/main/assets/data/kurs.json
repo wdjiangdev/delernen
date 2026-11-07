@@ -1,0 +1,8602 @@
+[
+ {
+  "num": "M01-01",
+  "id": "zimu",
+  "cat": "yuyin",
+  "title": "德语字母表",
+  "titleDe": "Alphabet",
+  "explain": "德语字母表共 30 个：26 个基本拉丁字母 + 4 个特殊字母（Ä ä、Ö ö、Ü ü、ß）。Ä、Ö、Ü 是变元音；ß 叫 Eszett，读 [ɛs-tsɛt]，只有小写没有大写。最容易和英语搞混的几个优先记：V 读 [fao]、W 读 [ve:]、J 读 [jɔt]、C 读 [tse:]、Z 读 [tsɛt]、Y 读 [ypsilɔn]。R 读 [ɛr]（小舌音）是初学者公认难点，老师原话：没有特别神奇的方法，\"一般只能含着水漱口然后等待缘分的到来\"。德语没有声调，页面录音的字母都读\"一声\"，其他视频里读轻声也对，德国人听不出区别，不要纠结。大小写都要会认：德语所有名词首字母大写，拼写大小写不能错。页面上每个字母可点击播放标准读音，建议用电脑打开（手机浏览器缓存不足会导致部分音频点不开）。\n\n🇬🇧 英语对照：英语 26 个字母，Z 读 [zi:]；德语 Z 读 [tsɛt]，还多了 4 个特殊字母，ß 只在小写出现。",
+  "table": [
+   [
+    "字母",
+    "读音",
+    "备注"
+   ],
+   [
+    "V v",
+    "[fao]",
+    "不读英语的 [vi:]"
+   ],
+   [
+    "W w",
+    "[ve:]",
+    "不读 [ˈdʌbəlju:]"
+   ],
+   [
+    "J j",
+    "[jɔt]",
+    "不读 [dʒei]"
+   ],
+   [
+    "C c",
+    "[tse:]",
+    "不读 [si:]"
+   ],
+   [
+    "Z z",
+    "[tsɛt]",
+    "不读 [zi:]"
+   ],
+   [
+    "Y y",
+    "[ypsilɔn]",
+    "不读 [wai]"
+   ],
+   [
+    "R r",
+    "[ɛr]",
+    "小舌音，公认难点"
+   ],
+   [
+    "ß",
+    "[ɛs-tsɛt]",
+    "叫 Eszett，只有小写"
+   ]
+  ],
+  "examples": [
+   [
+    "V v —— [fao]",
+    "不读英语的 [vi:]"
+   ],
+   [
+    "W w —— [ve:]",
+    "不读 [ˈdʌbəlju:]"
+   ],
+   [
+    "R r —— [ɛr]",
+    "小舌音，含着水漱口练"
+   ],
+   [
+    "ß —— [ɛs-tsɛt]",
+    "叫 Eszett，只有小写"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M01-02~04",
+  "id": "fayin",
+  "cat": "yuyin",
+  "title": "发音规则",
+  "titleDe": "Ausspracheregeln",
+  "explain": "元音长短对立是德语发音的灵魂：长音和短音能区分词义（da [da:] vs dann [dan]），必须发准。拼写判断规律：元音后只跟一个辅音读长音（da、den、du、ihm、Ofen），跟两个及以上辅音读短音（dann、denn、dumm、im、offen）。p/t/k 是送气清音，b/d/g 是不送气浊音；对中文母语者区别主要在\"送气与否\"（类似\"坡/播\"）。词尾清化：b/d/g 在词尾发成 [p]/[t]/[k]（Tag 读 [ta:k]），在词中则正常发音（Tage 的 g 发 [g]）。s 看位置发音：元音前发 [z]（Hansa），词尾/辅音前发 [s]（Hans）；z 永远发 [ts]。f 发 [f]，v 和 w 都发 [v]，常同音，靠拼写区分（如 Fest/West）。ch 的规则：a o u 后读 [x]（Bach），其余读 [ç]（ich），外来词读 [k]，词尾 -ig 读 [iç]。r：词首发 [r]，元音后或词尾发 [ɐ]。组合：sch=[ʃ]，词首 sp=[ʃp]、st=[ʃt]（只在词首！），z=[ts]，ng 的 g 不发音。双元音：ei=[ai]、au=[ao]、eu/äu=[ɔy]。老师强调：长短不分\"也能听懂\"，但想说得地道就必须区分——先保区分度，再求标准度。\n\n🇬🇧 英语对照：英语发音例外更多，德语规则性强得多；但德语有英语没有的音：ch（ich/Bach 对立）、小舌音 r、词尾清化。",
+  "table": [
+   [
+    "规则",
+    "例子"
+   ],
+   [
+    "长音：1辅音/aa/元音+h",
+    "da [da:]、Ofen"
+   ],
+   [
+    "短音：2+辅音",
+    "dann [dan]、offen"
+   ],
+   [
+    "送气：p/t/k vs b/d/g",
+    "Post（送气）vs Boss（不送气）"
+   ],
+   [
+    "s：元音前[z]其余[s]",
+    "Hansa [z] / Hans [s]"
+   ],
+   [
+    "ch：aou后[x]其余[ç]",
+    "Bach [x] / ich [ç]"
+   ],
+   [
+    "词尾清化 bdg→ptk",
+    "Tag→[ta:k]"
+   ],
+   [
+    "词首sp/st→ʃp/ʃt",
+    "Sport、Stadt"
+   ],
+   [
+    "双元音",
+    "mein [ai]、Haus [ao]、heute [ɔy]"
+   ]
+  ],
+  "examples": [
+   [
+    "da [da:] —— dann [dan]",
+    "长音 vs 短音，能区分词义"
+   ],
+   [
+    "Tag [ta:k] —— Tage",
+    "词尾 g 清化，词中正常发音"
+   ],
+   [
+    "Post —— Boss",
+    "[p]送气清音 vs [b]不送气"
+   ],
+   [
+    "Hans [s] —— Hansa [z]",
+    "s 看位置发音"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M01-05",
+  "id": "artikel_nomen",
+  "cat": "mingci",
+  "title": "冠词、名词的性与单复数",
+  "titleDe": "Artikel & Nomen",
+  "explain": "德语名词分三种性：阳性（der）、阴性（die）、中性（das）；背单词必须连同冠词一起背，der/die/das 就是词性标记。不定冠词：阳性/中性 ein，阴性 eine；定冠词 der/die/das；所有复数定冠词统一是 die。老师给了三个\"概率记忆法\"：①67% 的单音节名词是阳性，剩下多是中性；②90% 以字母 e 结尾的名词是阴性；③90% 以 Ge 开头的名词是中性。硬性规则：以 -chen 结尾的都是中性词，表示\"小\"，如 das Mädchen（小女孩）。复数变化逐个记：der Zug → die Züge（加变音+en），die Frage → die Fragen（+n），die Stadt → die Städte，das Haus → die Häuser，das Bild → die Bilder，das Auto → die Autos（+s）。易错点：不要按自然性别猜词性（如 Mädchen 是中性不是阴性），拿不准就查词典。ein/eine 既是\"一\"也是不定冠词（对应英语 a/an）；复数没有不定冠词。\n\n🇬🇧 英语对照：英语 a/an/the 不分性；德语冠词自带\"性数\"标记，是语法的地基。",
+  "table": [
+   [
+    "",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "定冠词",
+    "der Mann",
+    "die Frau",
+    "das Kind",
+    "die Kinder"
+   ],
+   [
+    "不定冠词",
+    "ein Mann",
+    "eine Frau",
+    "ein Kind",
+    "—（没有）"
+   ]
+  ],
+  "examples": [
+   [
+    "ein Tag - a day",
+    "一天（阳性，不定冠词）"
+   ],
+   [
+    "der Tag - the day",
+    "这一天（阳性定冠词）"
+   ],
+   [
+    "die Tage - the days",
+    "这些天（复数定冠词统一 die）"
+   ],
+   [
+    "das Mädchen",
+    "小女孩（-chen 结尾，中性）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M01-06",
+  "id": "konjugation",
+  "cat": "dongci",
+  "title": "人称代词和动词变位",
+  "titleDe": "Personalpronomen & Konjugation",
+  "explain": "代词先跟\"语法性别\"走，不跟自然性别：der Hund→er，die Katze→sie，das Pferd→es；桌子 der Tisch 也用 er 指。规则动词变位口诀：找词干（去 -en/-n），ich+e，du+st，er/sie/es+t，wir/sie 用原形，ihr+t。三个特殊拼写规则：①词干以 t/d/ffn/tm/gn/chn/dn 结尾，先加 e 再变位（du arbeitest）；②词干以 s/ß/x/z 结尾，du 直接加 t（du heißt）；③以 -ern/-eln 结尾，去 n 得词干（wir feiern）。不规则变化只发生在 du 和 er/sie/es：词尾仍规则，词干元音可能加变音（du fährst）或 e→i（du sprichst），辅音有时双写（du nimmst）。sein（ich bin, du bist, er ist）和 haben（ich habe, du hast, er hat）全不规则，单独背。易错点：sie（她/他们/它们）vs Sie（您）大小写决定含义；du（你）vs ihr（你们）vs Sie（您）别混。答疑确认：er/sie/es 的复数形式是 sie；-eln 结尾的动词都读 [əln]，要背下来（如 sammeln）。\n\n🇬🇧 英语对照：英语变位只剩三单加 s；德语六个人称全变，是动词语法的第一道坎。",
+  "table": [
+   [
+    "人称",
+    "词尾",
+    "machen",
+    "备注"
+   ],
+   [
+    "ich",
+    "-e",
+    "mache",
+    ""
+   ],
+   [
+    "du",
+    "-st",
+    "machst",
+    "s/ß/x/z结尾只加-t"
+   ],
+   [
+    "er/sie/es",
+    "-t",
+    "macht",
+    "不规则只变这里"
+   ],
+   [
+    "wir",
+    "-en",
+    "machen",
+    ""
+   ],
+   [
+    "ihr",
+    "-t",
+    "macht",
+    "du的复数是ihr"
+   ],
+   [
+    "sie/Sie",
+    "-en",
+    "machen",
+    ""
+   ]
+  ],
+  "examples": [
+   [
+    "Der Hund schläft. Er ist müde.",
+    "狗在睡觉。它累了。（der Hund→er）"
+   ],
+   [
+    "Die Katze spielt. Sie ist klein.",
+    "猫在玩。它很小。（die Katze→sie）"
+   ],
+   [
+    "Ich komme aus China.",
+    "我来自中国。"
+   ],
+   [
+    "Er heißt Thomas.",
+    "他叫 Thomas。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M01-07",
+  "id": "satzbau",
+  "cat": "jufa",
+  "title": "德语句式结构",
+  "titleDe": "Satzbau",
+  "explain": "陈述句铁律：变位动词永远在第二位，主语通常在第一位（Ich lerne Deutsch in Berlin）。强调技巧：把想强调的成分提前到第一位，主语必须紧跟变位动词——Deutsch lerne ich in Berlin 强调\"学的是德语\"，In Berlin lerne ich Deutsch 强调\"在柏林学\"。一般疑问句：把变位动词提前到句首即可（Lernst du Deutsch in Berlin?），答 Ja/Nein。特殊疑问句 = 疑问词 + 一般疑问句：was（什么）、wie（怎样）、wer（谁，主格）、wo（哪里）、woher（从哪里）、wohin（去哪里）。der/die/das 可直接作代词（类似 this/that）；主系表结构中 das 可代指任何词性的名词，所以永远问 Was ist das?。细节：Wie geht es dir? 主语是 es（\"你的近况对你而言怎么样\"），dir 是\"对你而言\"——不能用汉语翻译反推德语语法。老师纠正：记住两句——\"陈述句想强调什么放句首；把陈述句变位动词提前到句首就变成一般疑问句\"。\n\n🇬🇧 英语对照：英语语序相对固定（SVO）；德语是\"动词第二位\"语言，句首位置是强调位。",
+  "table": [
+   [
+    "类型",
+    "结构",
+    "例子"
+   ],
+   [
+    "陈述句",
+    "主语 + 动词2位",
+    "Ich lerne Deutsch."
+   ],
+   [
+    "状语前置",
+    "时间 + 动词2位 + 主语",
+    "Heute lerne ich Deutsch."
+   ],
+   [
+    "一般问句",
+    "动词1位 + 主语",
+    "Lernst du Deutsch?"
+   ],
+   [
+    "特殊问句",
+    "疑问词 + 动词2位 + 主语",
+    "Woher kommst du?"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich lerne Deutsch in Berlin.",
+    "我在柏林学德语。"
+   ],
+   [
+    "Deutsch lerne ich in Berlin.",
+    "在柏林我学的是德语。（宾语前置表强调）"
+   ],
+   [
+    "Lernst du Deutsch in Berlin?",
+    "你在柏林学德语吗？"
+   ],
+   [
+    "Woher kommen Sie? — Ich komme aus China.",
+    "您从哪里来？——我来自中国。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M01-12",
+  "id": "possessiv",
+  "cat": "mingci",
+  "title": "物主代词",
+  "titleDe": "Possessivpronomen",
+  "explain": "物主代词 = 人称代词词干 + 冠词词尾：mein/dein/Ihr/sein/ihr/unser/euer，词尾变化和不定冠词 ein 完全一样。词尾看\"被拥有者\"的性数格，不是拥有者：mein Name（阳单）、meine Muttersprache（阴单）、mein Land（中单）、meine Lehrer（复数）。易错点：sein（他/它的）vs ihr（她/他们/它们的）；\"您\"的 Ihr 永远大写。euer 的形式：euer Name / eure Muttersprache / euer Land / eure Lehrer。记忆技巧：先背熟 ein/eine 变格表，物主代词直接套用，一通百通（mein 和 ein 长得像不是巧合）。课程把 mein/dein… 称为\"物主代词\"（Possessivpronomen），有的教材叫\"物主冠词\"（Possessivartikel），两种说法都对。\n\n🇬🇧 英语对照：英语 my/your 不变形；德语物主代词要跟着名词变词尾，和 ein 变格一模一样。",
+  "table": [
+   [
+    "",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "mein",
+    "mein Vater",
+    "meine Mutter",
+    "mein Kind",
+    "meine Eltern"
+   ],
+   [
+    "euer",
+    "euer Vater",
+    "eure Mutter",
+    "euer Kind",
+    "eure Eltern"
+   ]
+  ],
+  "examples": [
+   [
+    "mein Name",
+    "我的名字（阳性单数）"
+   ],
+   [
+    "deine Muttersprache",
+    "你的母语（阴性单数）"
+   ],
+   [
+    "Ihr Name",
+    "您的名字（敬称永远大写）"
+   ],
+   [
+    "euer Land",
+    "你们的国家"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M02-01",
+  "id": "trennbar",
+  "cat": "dongci",
+  "title": "可分动词",
+  "titleDe": "Trennbare Verben",
+  "explain": "可分动词 = 可分前缀 + 动词词干；陈述句中前缀分离并放到句尾（fernsehen → Er sieht … fern）。不可分前缀只有 8 个：be-、emp-、ent-、er-、ge-、miss-、ver-、zer-，永远不分离（如 besuchen、verkaufen）。两可前缀 6 个：durch-、über-、um-、unter-、voll-、wieder-，可分不可分意思不同（Ich fahre die Frau um 撞倒 vs Ich umfahre die Frau 绕行）。发音判断法：可分时重音在第一个音节（ˈumfahren=撞倒），不可分时重音一般在第二个音节（umˈfahren=绕行）。框架结构：Ich will die Frau umfahren——情态动词 will 第二位，动词原形蹲句尾，前缀不分离。易错点：不要见前缀就分离；先判断是\"八大不可分\"还是\"两可六兄弟\"，其他的默认全可分。记忆技巧：死记 8 个不可分 + 6 个两可，剩下的默认可分——用排除法比逐个记省力。\n\n🇬🇧 英语对照：英语也有可分短语动词（pick up → pick it up）；德语的前缀是直接粘在动词上的，分离后蹲句尾。",
+  "table": [
+   [
+    "前缀类型",
+    "例子",
+    "重音"
+   ],
+   [
+    "不可分",
+    "be-/ver-/er-…",
+    "第二音节"
+   ],
+   [
+    "可分",
+    "an-/auf-/aus-…",
+    "第一音节"
+   ],
+   [
+    "两用",
+    "umfahren 撞倒/绕行",
+    "按意义"
+   ]
+  ],
+  "examples": [
+   [
+    "Er sieht gerne mit Sarah zu Hause fern.",
+    "他喜欢和 Sarah 在家看电视。（fernsehen 分离）"
+   ],
+   [
+    "Ich fahre die Frau um.",
+    "我把那位女士撞倒了。（可分）"
+   ],
+   [
+    "Ich umfahre die Frau.",
+    "我开车绕过那位女士。（不可分）"
+   ],
+   [
+    "Ich will die Frau umfahren.",
+    "我想开车撞倒那位女士。（框架结构）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M02-02",
+  "id": "modal",
+  "cat": "dongci",
+  "title": "情态动词",
+  "titleDe": "Modalverben",
+  "explain": "六大情态动词：können（能）、müssen（必须）、sollen（应该）、wollen（想要）、mögen（喜欢）、dürfen（被允许）；变位单记（ich kann/muss/soll/will/mag/darf）。框架结构铁律：情态动词变位后居第二位，实义动词原形蹲句尾（Ich kann Deutsch sprechen）；nicht 不能打破框架，只能放动词原形前面。框架内强调规律：越往后的成分越被强调。大坑：müssen 的否定是\"不必须\"（Du musst nicht… = don't have to）；\"必须不\"要用 nicht dürfen（= mustn't）。möchte- 是 mögen 的第二虚拟式，比 wollen 更礼貌委婉，点餐专用（Ich möchte einen Kaffee）；wollen 欲望更强、更不客气。口语偷懒：dürfen 常被 können 代替。所有情态动词都能作实义动词（Ich kann Deutsch. 我会德语；Ich mag dich. 我喜欢你）；表示\"喜欢做某事\"用 gern+实义动词（Ich lerne gern Deutsch），不用 mag 的肯定式。\n\n🇬🇧 英语对照：英语 can/must/may；德语情态动词也要变位，且实义动词原形蹲句尾是框架结构。",
+  "table": [
+   [
+    "",
+    "können",
+    "müssen",
+    "wollen"
+   ],
+   [
+    "ich/er",
+    "kann",
+    "muss",
+    "will"
+   ],
+   [
+    "du",
+    "kannst",
+    "musst",
+    "willst"
+   ],
+   [
+    "否定含义",
+    "—",
+    "nicht müssen=不必",
+    "—"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich kann Deutsch sprechen.",
+    "我会说德语。"
+   ],
+   [
+    "Du musst nicht jeden Tag lesen.",
+    "你不必每天读书。（不必须）"
+   ],
+   [
+    "Entschuldigung, du darfst hier nicht schlafen.",
+    "抱歉，这里不许睡觉。（必须不）"
+   ],
+   [
+    "Ich möchte eine Tasse Kaffee trinken.",
+    "我想喝杯咖啡。（委婉点餐）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M02-03",
+  "id": "negation",
+  "cat": "jufa",
+  "title": "否定句",
+  "titleDe": "Negation",
+  "explain": "分工：kein 只否定\"不确指名词的存在\"（ein Ausgang→kein Ausgang），其他所有情况一律用 nicht。kein 的变格跟着冠词走：kein/keine/keinen/keinem…（Ich trinke keine Milch；Es gibt keinen Kaffee im Zimmer）。nicht 否定动词时\"能多靠后就多靠后\"：无情态动词放句末（Ich arbeite bei BASF nicht）；有情态动词放动词原形前（…nicht ins Restaurant gehen）。nicht 的位置决定否定对象：Nico geht nicht morgen…（否定\"明天\"）vs …mit Lisa nicht zusammen…（否定\"一起\"）——想否定谁就把 nicht 放谁前面。易错点：专有名词是确指的，只能用 nicht（Das ist nicht Deutschland，不用 kein）；否定可分动词时 nicht 放句尾前缀前（Nico geht morgen nicht aus）。主系表结构主语表语都用第一格，所以 Das ist ein Ausgang 的否定是 kein Ausgang（不是 keinen）。\"Nicht Nico geht…\" 中 nicht+Nico 是一个整体占第一位，动词依然在第二位。\n\n🇬🇧 英语对照：英语 no/not 分工类似；德语 kein 要变格，且 nicht 的位置决定否定范围，比英语精细。",
+  "table": [
+   [
+    "",
+    "kein（不确指名词）",
+    "nicht（其他）"
+   ],
+   [
+    "例子",
+    "kein Geld（没有钱）",
+    "nicht gut（不好）"
+   ],
+   [
+    "变格",
+    "随 ein 变",
+    "不变"
+   ],
+   [
+    "位置",
+    "名词前",
+    "常居句末/动词原形前"
+   ]
+  ],
+  "examples": [
+   [
+    "Das ist kein Ausgang.",
+    "这不是出口。（否定不确指名词）"
+   ],
+   [
+    "Ich trinke keine Milch.",
+    "我不喝牛奶。"
+   ],
+   [
+    "Ich arbeite bei BASF nicht.",
+    "我不在 BASF 工作。（nicht 句末）"
+   ],
+   [
+    "Nico möchte morgen nicht ins Restaurant gehen.",
+    "Nico 明天不想去餐厅。（nicht 在动词原形前）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M02-04",
+  "id": "imperativ",
+  "cat": "dongci",
+  "title": "命令式",
+  "titleDe": "Imperativ",
+  "explain": "命令式对象：du、ihr、Sie、wir；Sie/wir 变位同现在时且主语不能省（Lesen Sie…/Lesen wir…），ihr 可省（Lest das Buch），du 必须省。du 的命令式：去词尾，表强调可加 -e（Lies das Buch；Komm(e) her；Schließ(e) das Buch）。必须加 -e：动词原形的词干以 t、d、er、el、chn、fn、tm 结尾时（Öffne die Tür!）。不规则规律：现在时加变音（Umlaut）的，命令式变回规则（schläfst→schlaf!）；加了新字母的保留变化（sprich!、iss!）；wissen 是\"特例中的特例\"（wisse!）只能硬背。sein/haben 全不规则：du sei/hab(e)，ihr seid/habt，Sie/wir seien/haben（Seien Sie bitte still.）。对 Sie 说话习惯加 bitte 表礼貌；命令式动词一般在句首第一位，偶尔前面可加 dann。学员笔记（老师认可）：加 Umlaut 的变化不带入命令式，引入新字母的变化要带入命令式。\n\n🇬🇧 英语对照：英语命令式就是动词原形；德语命令式分四种人称，du 还要去词尾。",
+  "table": [
+   [
+    "对象",
+    "形式",
+    "例子"
+   ],
+   [
+    "du",
+    "去 -st（t/d结尾加-e）",
+    "Komm her! / Arbeite!"
+   ],
+   [
+    "ihr",
+    "同现在时",
+    "Kommt her!"
+   ],
+   [
+    "Sie",
+    "Sie + 原形",
+    "Kommen Sie bitte her!"
+   ],
+   [
+    "不规则",
+    "保留换字母",
+    "Sprich! / Iss! / Lies!"
+   ]
+  ],
+  "examples": [
+   [
+    "Lesen Sie bitte das Buch.",
+    "请读这本书。（Sie）"
+   ],
+   [
+    "Lies das Buch.",
+    "读这本书！（du）"
+   ],
+   [
+    "Lest das Buch.",
+    "读这本书！（ihr）"
+   ],
+   [
+    "Sei ein Mann!",
+    "像个男人！（sein 不规则）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M03-01",
+  "id": "akkusativ",
+  "cat": "gejie",
+  "title": "第四格",
+  "titleDe": "Akkusativ",
+  "explain": "第一格（Nominativ）= 主格：主语和表语都用第一格（Die Tasche ist schön；Das bin ich）——和英语表语用宾格不同。第四格（Akkusativ）= 直接宾格：直接宾语、人称代词、冠词、物主代词都要变格。省力技巧：变格只看\"阳性单数\"——der→den、ein→einen、kein→keinen、mein→meinen；阴性/中性/复数四格形式与一格相同。es gibt 永远支配第四格（Es gibt dort keinen Computer），高频搭配。人称代词四格：mich/dich/ihn/sie/es/uns/euch/sie/Sie；注意 er→ihn，es 不变。易错点：sein/werden/bleiben 连接的是主系表，表语用一格（Das ist kein Ausgang，不是 keinen）。泛指不可数名词/复数前不用冠词（Es gibt morgen Unterricht），但格位依然是四格。\n\n🇬🇧 英语对照：英语宾格只有代词变形（I→me）；德语冠词也要变，但只看阳性单数就行。",
+  "table": [
+   [
+    "格",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "一格",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "四格",
+    "den",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "人称代词",
+    "ihn",
+    "sie",
+    "es",
+    "sie"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe einen Kugelschreiber.",
+    "我有一支圆珠笔。（阳单四格）"
+   ],
+   [
+    "Ich liebe den Kugelschreiber.",
+    "我爱这支圆珠笔。"
+   ],
+   [
+    "Es gibt dort keinen Computer.",
+    "那儿没有电脑。（es gibt 永+四格）"
+   ],
+   [
+    "Meine Freundin liebt mich.",
+    "我女朋友爱我。（代词四格）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M03-02",
+  "id": "dativ",
+  "cat": "gejie",
+  "title": "第三格",
+  "titleDe": "Dativ",
+  "explain": "第三格（Dativ）= 间接宾格：双宾语动词中，直接宾语（物）四格、间接宾语（人）三格（Ich schreibe meinem Lehrer einen Brief）。变格规律：阳性/中性 +(e)m（dem/einem/meinem），阴性 +(e)r（der/einer/meiner），复数 +(e)n（den/meinen）。复数三格名词后加 n（den Lehrern、meinen Kindern），除非复数本身已是 -n/-s 结尾（den Autos）。人称代词三格：mir/dir/ihm/ihr/ihm/uns/euch/ihnen/Ihnen；\"我\"mir、\"你\"dir 单记。介词后也可能出现三格（in dem Restaurant, aus der Schweiz），介词支配的格位单独记。易错点：sie 的三格是 ihr（她）/ ihnen（他们），别和四格的 sie 搞混。老师列了 19 个常见双宾动词（geben、schreiben、schenken、zeigen…）：四格一般是物、三格一般是人，但看语境。\n\n🇬🇧 英语对照：英语 give him a book 语序定乾坤；德语靠格标记，语序更自由。",
+  "table": [
+   [
+    "格",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "一格",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "三格",
+    "dem",
+    "der",
+    "dem",
+    "den + n"
+   ],
+   [
+    "人称代词",
+    "ihm",
+    "ihr",
+    "ihm",
+    "ihnen"
+   ]
+  ],
+  "examples": [
+   [
+    "Gib mir die Tasche.",
+    "把包给我。（mir 三格）"
+   ],
+   [
+    "Ich schreibe meinem Lehrer einen Brief.",
+    "我给老师写信。（人三格+物四格）"
+   ],
+   [
+    "Gib meinen Kindern das Buch.",
+    "把书给我的孩子们。（复数三格加 n）"
+   ],
+   [
+    "Ich komme aus der Schweiz.",
+    "我来自瑞士。（介词+三格）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M03-03",
+  "id": "praep_dativ",
+  "cat": "gejie",
+  "title": "只支配第三格的介词",
+  "titleDe": "Präpositionen mit Dativ",
+  "explain": "十个只支配三格的介词：ab、aus、außer、bei、mit、nach、seit、von、zu、gegenüber。记忆口诀（学员笔记，老师认可）：aus außer 买（bei）米（mit）拿（nach）菜（seit）放（von）醋（zu），再加 ab 和 gegenüber。seit vs ab：seit 是\"自从\"，只能跟过去的时间点（seit drei Monaten）；ab 无此限制（ab 13 Uhr）。nach 表方位时强调\"顺序\"（Nach dem Regal gibt es einen Tisch），纯方位用 hinter；Meiner Meinung nach（依我看）是固定搭配。gegenüber 最特殊：支配名词时可前可后（gegenüber meiner Wohnung / meinem Büro gegenüber），支配代词时必须放后（mir gegenüber）。易错点：判断格位先看\"谁支配谁\"——Es gibt meinem Büro gegenüber ein Restaurant 里 meinem Büro 是 gegenüber 的宾语（三格），ein Restaurant 才是 gibt 的宾语（四格），不能按距离下结论。von 永远支配三格（Was sind Sie von Beruf?）；zum = zu dem，缩写不算错。\n\n🇬🇧 英语对照：英语介词后一律宾格；德语介词各自\"认格\"，十个只认三格。",
+  "table": [
+   [
+    "介词",
+    "含义",
+    "例子"
+   ],
+   [
+    "aus / von",
+    "从…里 / 来自",
+    "aus China / von mir"
+   ],
+   [
+    "bei / mit",
+    "在…处 / 和…",
+    "bei Eltern / mit Bus"
+   ],
+   [
+    "nach / seit",
+    "往…/自从",
+    "nach Hause / seit 2020"
+   ],
+   [
+    "zu",
+    "向…",
+    "zum Arzt（zu+dem）"
+   ],
+   [
+    "gegenüber",
+    "在…对面",
+    "mir gegenüber"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich komme aus China.",
+    "我来自中国。"
+   ],
+   [
+    "Ich lerne seit drei Monaten Deutsch.",
+    "我学了三个月德语。（seit+过去时间点）"
+   ],
+   [
+    "Ich gehe mit meinem Freund.",
+    "我和朋友一起去。"
+   ],
+   [
+    "Mir gegenüber möchte er das nicht sagen.",
+    "他不想当着我的面说。（代词后置）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M03-04",
+  "id": "praep_akk",
+  "cat": "gejie",
+  "title": "只支配第四格的介词",
+  "titleDe": "Präpositionen mit Akkusativ",
+  "explain": "五个只支配四格的介词：durch、ohne、gegen、um、für，首字母连起来是\"dog uf\"——老师给的记忆神器。含义：für（为了/给）、ohne（没有）、gegen（反对/逆）、durch（穿过，= through）、um（围绕 / 在…点）。定冠词的\"确指\"含义：ohne Schinken（不带火腿，泛指）vs ohne den Schinken（不带\"那种\"火腿）——加不加冠词意思不同。易错点：für 后的\"咖啡\"是四格介词宾语（einen Kaffee），不要套用\"直接/间接宾语\"的动词概念分析介词。口语里 Ich kann ohne dich nicht leben 和 Ich kann nicht ohne dich leben 都对，nicht 位置可调。补充：bis 也是只支配四格的介词（答疑区老师确认）。\n\n🇬🇧 英语对照：英语 for/without/against；德语这五个只认四格，首字母 dog uf 一秒记住。",
+  "table": [
+   [
+    "介词",
+    "含义",
+    "例子"
+   ],
+   [
+    "durch",
+    "穿过",
+    "durch den Park"
+   ],
+   [
+    "ohne",
+    "没有",
+    "ohne dich"
+   ],
+   [
+    "gegen",
+    "反对/撞上",
+    "gegen den Baum"
+   ],
+   [
+    "um",
+    "围绕/在…点",
+    "um 8 Uhr"
+   ],
+   [
+    "für",
+    "为了",
+    "für dich"
+   ]
+  ],
+  "examples": [
+   [
+    "Für mich bitte einen Kaffee.",
+    "请给我一杯咖啡。"
+   ],
+   [
+    "Ich kann nicht ohne dich leben.",
+    "没有你我活不下去。"
+   ],
+   [
+    "Er geht um 5 Uhr ins Bett.",
+    "他五点上床睡觉。"
+   ],
+   [
+    "Vielen Dank für die Einladung!",
+    "谢谢邀请！"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M03-06",
+  "id": "uhrzeit",
+  "cat": "jufa",
+  "title": "询问和播报时间",
+  "titleDe": "Uhrzeit",
+  "explain": "问时间三句型：Wie viel Uhr ist es? / Wie spät ist es? / Wie viel Uhr haben Sie?。24 小时制用于正式场合（电视、广播、交通、商务），Uhr 不能省略（Es ist dreizehn Uhr sieben）；12 小时制用于日常口语。12 小时制核心词：nach（过）、vor（差）、Viertel（一刻）、halb（半）；halb 指\"下一个整点的一半\"（halb vier = 三点半）。南部/东部方言：viertel vier（= Viertel nach drei）、dreiviertel vier（= Viertel vor vier）；考试按标准语作答。问\"某事在几点发生\"用 um（Um wie viel Uhr kommt sie?），回答也带 um（Sie kommt um Viertel vor vier）——um 是介词不能省。补充说明早晚：nachts（凌晨）、vormittags（上午）、mittags（中午）、nachmittags（下午）、abends（晚上）、morgens（早上）；半夜十二点直接说 um Mitternacht。强调整点：Punkt neun / genau neun；表大概：ungefähr acht、gegen neun Uhr。易错点：用了 nach/vor 就不再加 Uhr（Es ist fünf nach drei）；Es ist ein Uhr 和 Es ist eins 都对。\n\n🇬🇧 英语对照：英语 half past three；德语 halb vier 是\"向四点去一半\"=三点半，方向反过来。",
+  "table": [
+   [
+    "时间",
+    "说法"
+   ],
+   [
+    "8:00",
+    "acht Uhr"
+   ],
+   [
+    "8:15",
+    "viertel nach acht"
+   ],
+   [
+    "8:30",
+    "halb neun"
+   ],
+   [
+    "8:45",
+    "viertel vor neun"
+   ]
+  ],
+  "examples": [
+   [
+    "Wie viel Uhr ist es?",
+    "几点了？"
+   ],
+   [
+    "Es ist fünf nach halb vier.",
+    "三点三十五。（过半点五分）"
+   ],
+   [
+    "Es ist Viertel vor vier.",
+    "差一刻四点。"
+   ],
+   [
+    "Um wie viel Uhr kommt sie? — Sie kommt um Viertel vor vier.",
+    "她几点来？——她差一刻四点到。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M04-01",
+  "id": "mengen",
+  "cat": "mingci",
+  "title": "量词",
+  "titleDe": "Mengenangaben",
+  "explain": "德语量词是\"放在名词前的名词\"：ein Stück Kuchen、eine Tasse Kaffee、eine Flasche Mineralwasser。数字>1 时：阴性量词变复数（Tasse→Tassen），阳性/中性量词不变（Stück、Glas、Kasten、Paar）；量词后的可数名词也要变复数。量词当普通名词用时三个性都有复数（zwei Gläser、zwei Kästen、zwei Tassen）。口语偷懒：Kaffee/Cola/Tee 前单数量词可省略（Ich möchte einen Kaffee）；数词+mal 代替量词（einmal Kaffee=一杯咖啡，zweimal Tee=两杯茶）。变格时只有量词变，被修饰的名词不变；作主语时动词跟着量词走（Zwei Tassen Kaffee reichen aus，用复数）。易错点：严格说法是 zwei Glas Wasser（生活中很多人说 zwei Gläser Wasser，但严格算错）；Reis/Cola 等液体一般不可数。Glas vs Flasche：Flasche 是细颈瓶（材质不重要），Glas 是玻璃瓶（形状不重要）；Tasse 是茶杯，Glas 是玻璃杯。\n\n🇬🇧 英语对照：英语 a piece of / a cup of；德语量词本身也是名词，有性数格变化。",
+  "table": [
+   [
+    "量词",
+    "例子"
+   ],
+   [
+    "ein Glas",
+    "ein Glas Wasser（一杯水）"
+   ],
+   [
+    "eine Tasse",
+    "eine Tasse Tee（一杯茶）"
+   ],
+   [
+    "ein Stück",
+    "ein Stück Kuchen（一块蛋糕）"
+   ],
+   [
+    "eine Flasche",
+    "eine Flasche Wein（一瓶酒）"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich möchte ein Stück Kuchen.",
+    "我想要一块蛋糕。"
+   ],
+   [
+    "Ich möchte zwei Tassen Kaffee.",
+    "我想要两杯咖啡。（阴性量词变复数）"
+   ],
+   [
+    "Ich möchte zwei Stück Kuchen.",
+    "我想要两块蛋糕。（中性量词不变）"
+   ],
+   [
+    "Ich habe zwei Gläser.",
+    "我有两个玻璃杯。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M04-03",
+  "id": "wechsel",
+  "cat": "gejie",
+  "title": "“静三动四”原则",
+  "titleDe": "Wechselpräpositionen",
+  "explain": "九个\"静三动四\"介词：an、auf、hinter、in、neben、über、unter、vor、zwischen；主语与介词宾语相对静止用三格，相对运动用四格。\"动\"一定是相对的、有方向变化的：在健身房里跑（im，三格）vs 正往健身房里跑（ins，四格）。提问区分：对三格宾语用 wo（Wo läufst du?），对四格宾语用 wohin（Wohin läufst du?）。动静难判的硬记：Ich schreibe auf dem Buch（在书上写字，三格）vs Schreiben Sie bitte die Antworten auf das Buch（写到书上去，四格）。易错点：直接/间接宾语是\"动词\"的概念，不能套用到介词宾语上；静三动四只管方位，不管时间。时态不影响格位：Wir sind in den Urlaub gefahren 里 in 仍是四格——\"静三动四跟时态没关系\"。缩写：in dem=im，in das=ins；先判断动静，再选格位，最后记得缩写。\n\n🇬🇧 英语对照：英语 in/into 靠介词本身区分；德语靠格区分，in+三格=in，in+四格=into。",
+  "table": [
+   [
+    "介词",
+    "静三（wo）",
+    "动四（wohin）"
+   ],
+   [
+    "in",
+    "Ich bin in der Schule.",
+    "Ich gehe in die Schule."
+   ],
+   [
+    "auf",
+    "Das Buch liegt auf dem Tisch.",
+    "Ich lege das Buch auf den Tisch."
+   ],
+   [
+    "an",
+    "Das Bild hängt an der Wand.",
+    "Er hängt das Bild an die Wand."
+   ]
+  ],
+  "examples": [
+   [
+    "Ernst isst jetzt in der Mensa.",
+    "Ernst 正在食堂吃饭。（静止三格）"
+   ],
+   [
+    "Ernst geht heute in die Mensa.",
+    "Ernst 今天去食堂。（运动四格）"
+   ],
+   [
+    "Das Buch liegt auf dem Stuhl.",
+    "书在椅子上。（静止）"
+   ],
+   [
+    "Ich lege das Buch auf den Stuhl.",
+    "我把书放到椅子上。（运动）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M04-04",
+  "id": "adjektiv",
+  "cat": "xingrong",
+  "title": "形容词词尾变化",
+  "titleDe": "Adjektivdeklination",
+  "explain": "形容词作定语才变词尾，作表语不变（Der Kaffee ist gut，不加词尾）。零冠词：形容词词尾 = 定冠词词尾（Guter Kaffee / Guten Tag / mit chinesischem Tee / Frisches Sushi）。定冠词后记\"en 大法\"：den/dem 后、复数 die 后、三格后一律 -en；单数一/四格 der/die/das 后一律 -e。不定冠词/物主代词后：einen/einem/-en/-em 后一律 -en；ein/eine 后跟定冠词词尾走（ein neuer Drucker / eine neue WG / ein neues Auto）。万能口诀（学员总结，老师认可）：①见 -en/-em 后面形容词一律 -en；②复数冠词/物主代词后一律 -en；③三格后一律 -en；④单数一/四格 der/die/das 后一律 -e；⑤ein/eine 后跟 der/die/das 词尾；⑥零冠词时形容词词尾=定冠词词尾。易错点：kein/keine 和物主代词当 ein/eine 看；-in 结尾阴性名词复数加 -nen（Lehrerinnen）；单个名词作时间状语一般是四格（den ganzen Tag）。\n\n🇬🇧 英语对照：英语形容词永远不变；德语形容词词尾是\"冠词词尾的替补\"，哪里缺标记补哪里。",
+  "table": [
+   [
+    "",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "定冠词后",
+    "der gute",
+    "die gute",
+    "das gute",
+    "die guten"
+   ],
+   [
+    "不定冠词后",
+    "ein guter",
+    "eine gute",
+    "ein gutes",
+    "—"
+   ],
+   [
+    "零冠词",
+    "guter",
+    "gute",
+    "gutes",
+    "gute"
+   ]
+  ],
+  "examples": [
+   [
+    "Guten Tag!",
+    "你好！（零冠词，词尾=定冠词词尾）"
+   ],
+   [
+    "Ich mag die neue Lehrerin.",
+    "我喜欢这位新老师。（die 后 -e）"
+   ],
+   [
+    "Das ist ein neuer Drucker!",
+    "这是台新打印机！（ein 后跟 der 词尾）"
+   ],
+   [
+    "Ich wohne in einem alten Haus.",
+    "我住在老房子里。（-em 后 -en）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M04-06",
+  "id": "perfekt",
+  "cat": "dongci",
+  "title": "现在完成时",
+  "titleDe": "Perfekt",
+  "explain": "构成：助动词（haben/sein）+ 过去分词，遵守框架结构（助动词第二位，分词句尾）。规则动词：ge+词干+t（machen→gemacht）；词干以 t/d/ffn/chn/gn/tm/dn 结尾先加 e（arbeiten→gearbeitet）；-ieren 结尾不加 ge（studieren→studiert）。不规则三类：①ge+变元音词干+en（sprechen→gesprochen）；②ge+词干+en（sehen→gesehen）；③ge+变元音词干+t（bringen→gebracht、kennen→gekannt）。用 sein 的三类：①位置变化的不及物动词（gehen/kommen/fahren→gegangen/gekommen/gefahren）；②状态变化（sterben→gestorben）；③系动词 sein/bleiben/werden（gewesen/geblieben/geworden）。前缀规则：不可分前缀不加 ge（besuchen→besucht）；可分前缀=前缀+完整过去分词（ankommen→angekommen）；可分+不可分也不加 ge（vorbereiten→vorbereitet）。用法：德语现在完成时≈英语一般过去时；口语中基本取代一般过去时（sein/haben/情态动词除外）；瑞士等方言区几乎只用完成时。易错点：助动词看\"含义\"不看\"形式\"——fahren 作\"运送\"（及物）用 haben（Er hat einen Verletzten ins Krankenhaus gefahren），作\"行驶\"（不及物+位移）用 sein。\n\n🇬🇧 英语对照：英语 I have done 表\"已完成\"；德语完成时≈英语一般过去时，是口语主力时态。",
+  "table": [
+   [
+    "",
+    "haben",
+    "sein"
+   ],
+   [
+    "结构",
+    "ich habe gemacht",
+    "ich bin gegangen"
+   ],
+   [
+    "用于",
+    "大多数动词",
+    "位移 + 状态变化 + sein/bleiben/werden"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe meine Hausaufgaben gemacht.",
+    "我做完作业了。"
+   ],
+   [
+    "Ich bin nach China gegangen.",
+    "我去过中国。（位移用 sein）"
+   ],
+   [
+    "Er ist gestern gekommen.",
+    "他昨天来了。"
+   ],
+   [
+    "Ich bin in Berlin gewesen.",
+    "我在柏林待过。（sein 用 sein）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M04-07",
+  "id": "praet_hs",
+  "cat": "dongci",
+  "title": "sein 和 haben 的过去时",
+  "titleDe": "Präteritum von sein/haben",
+  "explain": "一般过去时在口语中基本被现在完成时代替，但 sein、haben、情态动词是例外——口语里也要用过去时（war/hatte）。变位：ich war/hatte，du warst/hattest，er war/hatte，wir waren/hatten，ihr wart/hattet，sie/Sie waren/hatten。三种问法意思一样：Warst du schon mal in Berlin?（过去时）= Bist du schon mal in Berlin gewesen?（完成时）；南部/瑞士/奥地利几乎只用完成时。易错点：war/hatte 本身就是过去时变位，不能再加 ge- 或套完成时框架。记忆技巧：war 系列（war/warst/waren/wart）和 hatte 系列（hatte/hattest/hatten/hattet）各记一套，词干 + 人称词尾。\n\n🇬🇧 英语对照：英语 was/had 天天用；德语 war/hatte 也是口语高频，地位对等。",
+  "table": [
+   [
+    "",
+    "haben",
+    "sein"
+   ],
+   [
+    "ich",
+    "hatte",
+    "war"
+   ],
+   [
+    "du",
+    "hattest",
+    "warst"
+   ],
+   [
+    "er/sie/es",
+    "hatte",
+    "war"
+   ],
+   [
+    "wir/sie",
+    "hatten",
+    "waren"
+   ]
+  ],
+  "examples": [
+   [
+    "Warst du schon mal in Berlin?",
+    "你去过柏林吗？（过去时）"
+   ],
+   [
+    "Bist du schon mal in Berlin gewesen?",
+    "你去过柏林吗？（完成时，同义）"
+   ],
+   [
+    "Hattest du einen Hund?",
+    "你养过狗吗？"
+   ],
+   [
+    "Ja, ich hatte einen Hund.",
+    "对，我养过。（口语也要用 hatte）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M05-01",
+  "id": "adj_nom",
+  "cat": "xingrong",
+  "title": "形容词的名词化",
+  "titleDe": "Nominalisierte Adjektive",
+  "explain": "构成：形容词首字母大写、去掉后面名词即完成名词化（如 der Angestellte 雇员、der Fremde 陌生人）。名词化形容词按形容词词尾变化走弱变化；零冠词时阳性单数主格为 -er（如 ein Angestellter、zwei Angestellte）。中性名词化表抽象事物：das Deutsche（德语）、das Interessante（令人感兴趣的事）、das Schlimme（糟糕的事）。类比记忆：英语 the young/the rich 也是形容词名词化，德语同理，只是变化更复杂。中国学生常见错误：用\"形容词 + Ding/Leute/Mann\"绕开名词化（如\"糟糕的事\"），要学会直接用 das Schlimme 这类形式。helfen 只支配三格：Wir sollen den Alten helfen. 中 den Alten 是三格复数（\"帮助那些老人\"），不能理解为四格单数。Schlimmes 在 Es ist schon Schlimmes passiert. 中是真正主语，es 是形式主语——德语喜欢把真实主语后置。中性名词化表示语言：vom Chinesischen ins Deutsche（从中文到德语），介词后冠词缩合。\n\n🇬🇧 英语对照：英语 the rich（形容词名词化）；德语一样，但名词化后还要变格。",
+  "table": [
+   [
+    "",
+    "单数",
+    "复数"
+   ],
+   [
+    "表人（阳）",
+    "der Deutsche",
+    "die Deutschen"
+   ],
+   [
+    "表人（阴）",
+    "die Alte",
+    "die Alten"
+   ],
+   [
+    "表物（中）",
+    "das Beste",
+    "—"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich bin Deutscher.",
+    "我是德国人。"
+   ],
+   [
+    "Wir sollen den Alten helfen.",
+    "我们应该帮助那些老人。（helfen+三格）"
+   ],
+   [
+    "Kennst du den Fremden?",
+    "你认识那个陌生人吗？"
+   ],
+   [
+    "Es ist schon Schlimmes passiert.",
+    "糟糕的事情已经发生了。（es 形式主语）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M05-02",
+  "id": "adj_sonder",
+  "cat": "xingrong",
+  "title": "形容词词尾的特殊变化",
+  "titleDe": "Besondere Adjektive",
+  "explain": "以 -el 结尾的形容词加词尾前先去 e（dunkel→dunklen、sensibel→sensibles、übel→üble、parallel→parallelen），前提是不影响发音。以 -auer/-euer 结尾的形容词先去 e 再加词尾（teuer→teuren、ungeheuer→ungeheures、sauer→saures）。hoch 加词尾时先变为 hoh（hoch→hohen）。永远不加词尾的形容词要单独背：rosa、lila、prima、extra、mega、beige、orange、türkis、super、klasse。\"穿过\"的强调靠介词 durch（表\"经过、穿过\"）；口语常省略介词，但要强调\"穿越\"最好保留 durch。变元音配合去 e：übel→üble 加词尾时同时变元音（u→ü）。易错点：去 e 规则只改变词干，词尾变化表照常套用；特例形容词必须单独记忆。表语形容词永远不加词尾，只有作定语时才触发上述特殊变化。\n\n🇬🇧 英语对照：英语形容词无变化；德语少数形容词连词干都要先\"整形\"再加词尾。",
+  "table": [
+   [
+    "形容词",
+    "变化",
+    "例子"
+   ],
+   [
+    "dunkel",
+    "→ dunkl-",
+    "ein dunkles Zimmer"
+   ],
+   [
+    "teuer",
+    "→ teur-",
+    "eine teure Uhr"
+   ],
+   [
+    "hoch",
+    "→ hoh-",
+    "ein hoher Berg"
+   ],
+   [
+    "rosa / lila",
+    "不变",
+    "eine rosa Blume"
+   ]
+  ],
+  "examples": [
+   [
+    "Wir müssen durch den dunklen Wald durchgehen.",
+    "我们必须穿过这片阴暗的树林。（dunkel 去 e）"
+   ],
+   [
+    "Wir diskutieren ein ganz sensibles Thema.",
+    "我们在讨论一个非常敏感的话题。"
+   ],
+   [
+    "Er fährt einen teuren Wagen.",
+    "他开一辆昂贵的车。（teuer 去 e）"
+   ],
+   [
+    "Ich sehe einen hohen Berg.",
+    "我看见一座高山。（hoch→hoh）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M05-03",
+  "id": "viel_wenig",
+  "cat": "xingrong",
+  "title": "viel(e) 和 wenig(e) 的用法",
+  "titleDe": "viel / wenig",
+  "explain": "词义对应：viel（很多，修饰不可数名词）/ wenig（很少，修饰不可数）/ viele（很多，修饰可数复数）/ wenige（少数几个，修饰可数复数）。疑问句：Wie viel + 不可数名词（Wie viel Geld hast du?）；Wie viele + 复数可数名词（Wie viele Zimmer hat die Wohnung?）。变格规则：viele/wenige 修饰可数名词时始终按普通形容词变格（Viele junge Leute）；viel/wenig 修饰不可数名词时，只有前面有定冠词才变格（das viele Geld），无冠词时不变（mit viel Milch）。viel/wenig 前面不可能出现不定冠词 ein 和否定冠词 kein；不可数名词如 Geld 前永远不会有 ein。书面表达：ein wenig 可替代 ein bisschen 表\"一点点\"。易错点：im Zentrum von München, wenige Minuten vom Hauptbahnhof entfernt 中，介词 von 的宾语是 Hauptbahnhof，wenige Minuten 是主语（一格），不要误判格位。判断词尾三步法：先看名词可数还是不可数；可数→viel/wenig 当形容词正常加词尾；不可数→看前面有没有定冠词。\n\n🇬🇧 英语对照：英语 much/many 按可数分；德语 viel/wenig 也一样，只是多了变格这一步。",
+  "table": [
+   [
+    "",
+    "不可数（viel/wenig）",
+    "可数复数（viele/wenige）"
+   ],
+   [
+    "无冠词",
+    "viel Milch（不加）",
+    "viele Leute（加）"
+   ],
+   [
+    "有冠词",
+    "das viele Geld（加）",
+    "die vielen Leute（加）"
+   ]
+  ],
+  "examples": [
+   [
+    "Ja, mit viel Milch, aber wenig Zucker.",
+    "好的，加很多牛奶，但少加糖。（无冠词不变）"
+   ],
+   [
+    "Viele junge Leute übernachten dort.",
+    "很多年轻人在那里过夜。（正常变格）"
+   ],
+   [
+    "Wie viel Geld hast du?",
+    "你有多少钱？（不可数）"
+   ],
+   [
+    "Wie viele Zimmer hat die Wohnung?",
+    "这套房子有几个房间？（可数复数）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M05-04",
+  "id": "datum",
+  "cat": "mingci",
+  "title": "日期、月份、年份和序数词",
+  "titleDe": "Datum & Ordinalzahlen",
+  "explain": "星期和月份均为阳性；日期用\"日-月-年\"点式书写（01.02.2009），不用斜杠。读缩写日期：日和月按序数词读、年按基数词读（der 01.02.2009 = der erste zweite zweitausendneun；am 01.02.2009 = am ersten zweiten zweitausendneun）。提问\"第几个\"用 wievielte-，按普通形容词加词尾（mein/dein 后强变化：Dein wievieltes；den 后永远 -en：den wievielten）。\"als + 名词化的序数词\"表示\"作为第几个人\"，紧跟在变位动词后（Ich muss als Erster die Aufgabe beenden.）；名词化序数词的性与隐含名词一致。问星期几：Welchen Wochentag haben wir heute?（Wochentag 四格阳性用 welchen）；口语问日期常用 Der Wievielte ist heute?（默认隐含 der Tag）；问\"几号\"用 Welches Datum ist heute?。Was ist denn heute für ein Tag? 中 was für 是固定搭配意为\"什么样的\"，für 在此作连词而非介词，所以 ein 不用变成 einen。表达观点顺序用副词：erstens、zweitens、drittens。am Montag, dem 5. Juni 与 am Montag, den 5. Juni 都可：dem 是继续作 an 的宾语（静三），den 则是脱离 an 作无介词四格时间状语。\n\n🇬🇧 英语对照：英语 the 1st of February；德语 der erste zweite，月日都用序数词。",
+  "table": [
+   [
+    "表达",
+    "德语"
+   ],
+   [
+    "在某天",
+    "am 4. Oktober"
+   ],
+   [
+    "在星期几",
+    "am Montag"
+   ],
+   [
+    "在某年",
+    "im Jahr 2026"
+   ],
+   [
+    "序数词",
+    "der erste, der zweite, der dritte"
+   ],
+   [
+    "无介词时间状语",
+    "den 5. Juni（四格）"
+   ]
+  ],
+  "examples": [
+   [
+    "Welchen Wochentag haben wir heute?",
+    "今天星期几？"
+   ],
+   [
+    "Das ist mein erstes Auto.",
+    "这是我的第一辆车。"
+   ],
+   [
+    "Dein wievieltes Auto ist das?",
+    "这是你的第几辆车？"
+   ],
+   [
+    "Ich muss als Erster die Aufgabe beenden.",
+    "我必须第一个完成任务。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M05-05",
+  "id": "jahrhundert",
+  "cat": "mingci",
+  "title": "世纪与年代",
+  "titleDe": "Jahrhundert",
+  "explain": "Jahrhundert 是中性；\"在某世纪\"用 im + 序数词（im zwanzigsten Jahrhundert）。二十年代（不特指某世纪）的说法：den Zwanzigern、in den Zwanzigern、in den zwanziger Jahren；特指 1920 年代：in den 1920ern、in den 1920er-Jahren。Zehner 双重含义：10 路公交车（der Zehner，复数 die Zehner）和十欧元纸币/硬币；口语 haste = hast du，'nen = einen。易错：im zwanzigsten Jahrhundert = 1900–1999（二十世纪）；中文\"十九世纪\"对应 im neunzehnten Jahrhundert（1800–1899）。aus dem 15. bis zum 18. Jahrhundert：表示作品/藏品\"来自\"某世纪区间用 aus 表来源。序数词读法：\"20.\" 读 zwanzigsten；\"15. bis zum 18.\" 读 fünfzehnten bis zum achtzehnten。1920 年代口语还可说 Neunzehnhundertzwanziger Jahre。\n\n🇬🇧 英语对照：英语 in the 20th century；德语 im zwanzigsten Jahrhundert，世纪=Jahrhundert（百年）。",
+  "table": [
+   [
+    "表达",
+    "德语"
+   ],
+   [
+    "世纪",
+    "aus dem 21. Jahrhundert"
+   ],
+   [
+    "年代",
+    "in den 80er Jahren"
+   ],
+   [
+    "数字名词",
+    "der Zehner（十位/十元）"
+   ],
+   [
+    "二十多岁",
+    "die Zwanzigerin"
+   ]
+  ],
+  "examples": [
+   [
+    "Die Pinakothek der Moderne zeigt bedeutende Kunstwerke aus dem 20. Jahrhundert.",
+    "慕尼黑现代艺术陈列馆展示了来自二十世纪的重要艺术作品。"
+   ],
+   [
+    "Sie kam im 16. Jahrhundert mit spanischen Seefahrern von Südamerika nach Europa.",
+    "它在16世纪和西班牙水手们一起从南美洲来到了欧洲。"
+   ],
+   [
+    "Sie ist ein international bedeutendes Museum für Kunst aus dem 20. Jahrhundert.",
+    "它是国际知名的20世纪艺术博物馆。"
+   ],
+   [
+    "Haste mal 'nen Zehner für mich?",
+    "你有十欧元能给我吗？（口语）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M06-01",
+  "id": "komparativ",
+  "cat": "xingrong",
+  "title": "比较级和最高级：规则变化",
+  "titleDe": "Komparativ & Superlativ",
+  "explain": "规则：比较级 = 形容词原级 + er；最高级 = am + 形容词原级 + sten（作表语/状语）或 定冠词 + 形容词原级 + ste + 形容词词尾（作定语）。am + 最高级作表语/状语（Das Haus ist am schönsten.）；冠词 + 最高级 + 词尾作定语（das schönste Haus；den billigsten Tisch）。最高级的词尾变化完全套用形容词原级的词尾规则，只是把词干换成最高级形式——记住这一点就不用背新表。易错点：作定语的最高级必须跟冠词并加词尾；表语最高级只能用 am + sten。英语思路不适用：德语没有\"多音节词配 more/the most\"结构，规则变化范围内所有形容词都用统一的 -er/-ste 后缀。解题三步法：定词性（表语还是定语）→ 定级（比较还是最高）→ 定词尾。\n\n🇬🇧 英语对照：英语 more beautiful / the most beautiful；德语 schöner / am schönsten，一律加后缀。",
+  "table": [
+   [
+    "",
+    "原级",
+    "比较级",
+    "最高级（表语）"
+   ],
+   [
+    "规则",
+    "schnell",
+    "schneller",
+    "am schnellsten"
+   ],
+   [
+    "变元音",
+    "groß",
+    "größer",
+    "am größten"
+   ],
+   [
+    "定语",
+    "—",
+    "ein schöneres Haus",
+    "das schönste Haus"
+   ]
+  ],
+  "examples": [
+   [
+    "Das Buch ist interessanter.",
+    "这本书更有意思。"
+   ],
+   [
+    "Das ist ein schöneres Haus.",
+    "这是一栋更漂亮的房子。"
+   ],
+   [
+    "Ich habe einen billigeren Tisch.",
+    "我有一张更便宜的桌子。"
+   ],
+   [
+    "Das Haus ist am schönsten.",
+    "这房子最漂亮。（表语 am+sten）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M06-02",
+  "id": "komparativ_halb",
+  "cat": "xingrong",
+  "title": "比较级和最高级：半规则变化",
+  "titleDe": "Halbregelmäßige Steigerung",
+  "explain": "半规则定义：部分形容词加比较级/最高级词尾前，词干需发生特殊变化（去 e、加变音、加 e 再加 st 等），规律性弱于规则变化但有迹可循。以 -el/-er 结尾的形容词（如 trocken、bitter）加比较级时，作表语/副词保留词干 e（trockener、bitterer），作定语则去 e 再加词尾（den trockneren Wein）。以 -t、-haft、-s、-sk、-ß、-x、-z 结尾的形容词，加最高级时先加 -e 再加 -st（am interessantesten），避免辅音丛难读。单音节及部分双音节形容词加变音：alt→älter、jung→jünger、kurz→kürzer、kalt→kälter、warm→wärmer 等；老师用\"红与黑\"故事帮助记忆全部变音形容词。部分形容词变音可加可不加：口语（尤南德）多用变音形式（gesünder），书面语多用无变音形式（gesunder）。易错点：作定语的比较级/最高级仍要按性数格加词尾（den trockneren Wein）——半规则只管词干，词尾规则照常。发音细节：der、schneller、Kellner 三个 -er 结尾的元音都是 [ɐ]，但 der 是长音 [deːɐ]。\n\n🇬🇧 英语对照：英语 good→better 是彻底不规则；德语\"半规则\"=词干小整形，程度轻得多。",
+  "table": [
+   [
+    "类型",
+    "原级",
+    "比较级/最高级"
+   ],
+   [
+    "去e",
+    "dunkel / teuer",
+    "dunkler / teurer"
+   ],
+   [
+    "最高级加e",
+    "interessant",
+    "am interessantesten"
+   ],
+   [
+    "变元音",
+    "alt / jung / kurz",
+    "älter / jünger / kürzer"
+   ],
+   [
+    "借词双写",
+    "fit",
+    "fitter"
+   ]
+  ],
+  "examples": [
+   [
+    "Dieser Wein ist trockener.",
+    "这种葡萄酒更干。（表语保留 e）"
+   ],
+   [
+    "Ich mag den trockneren Wein.",
+    "我喜欢更干的那种葡萄酒。（定语去 e）"
+   ],
+   [
+    "Dieses Gericht schmeckt bitterer.",
+    "这道菜尝起来更苦。"
+   ],
+   [
+    "Das Buch ist am interessantesten.",
+    "这本书最有意思。（先加 e 再加 st）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M06-03",
+  "id": "komparativ_unreg",
+  "cat": "xingrong",
+  "title": "比较级和最高级：不规则变化",
+  "titleDe": "Unregelmäßige Steigerung",
+  "explain": "不规则表必须死记：bald→eher→am ehesten；gern→lieber→am liebsten；groß→größer→am größten；gut→besser→am besten；hoch→höher→am höchsten；nah→näher→am nächsten；viel→mehr→am meisten；wenig→weniger/minder→am wenigsten/mindesten。nächste 已独立为\"下一个\"：作四格时间状语时前不加定冠词（Nächstes Jahr reise ich...），要加则用 im（Im nächsten Jahr...）。mehr/weniger 永远只能作副词，不能作定语形容词、不加词尾（Ich habe weniger Geld als du. 中修饰 Geld）。meisten/wenigsten 跟在定冠词后可当形容词用，需加词尾（das berühmteste Wirtshaus）。minder 只用于书面/正式场合：mehr oder minder（大体上）作方式状语；nicht minder（不亚于、同样地）修饰其后形容词/动词。\"Ich bin der Meinung, dass...\" 是二格固定搭配（类似英语 of the opinion that），需整体背诵。发音：am wenigsten 中 g 发 [ç]。\n\n🇬🇧 英语对照：英语 good→better→best；德语 gut→besser→am besten，路数一样，逐个背。",
+  "table": [
+   [
+    "原级",
+    "比较级",
+    "最高级"
+   ],
+   [
+    "gut",
+    "besser",
+    "am besten"
+   ],
+   [
+    "viel",
+    "mehr",
+    "am meisten"
+   ],
+   [
+    "gern",
+    "lieber",
+    "am liebsten"
+   ],
+   [
+    "hoch",
+    "höher",
+    "am höchsten"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich zahle lieber mit Kreditkarte.",
+    "我宁愿用信用卡付。"
+   ],
+   [
+    "Ich habe weniger Geld als du.",
+    "我没有你那么多钱。（weniger 作副词）"
+   ],
+   [
+    "München bietet noch viel mehr, zum Beispiel das berühmteste Wirtshaus der Welt.",
+    "慕尼黑还有更多，比如世界上最著名的啤酒馆。"
+   ],
+   [
+    "Wir waren mehr oder minder einer Meinung.",
+    "我们大体上意见一致。（书面 minder）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M06-04",
+  "id": "komparativ_use",
+  "cat": "xingrong",
+  "title": "比较级和最高级：用法总结",
+  "titleDe": "Gebrauch der Steigerung",
+  "explain": "三种比较关系：A>B 用 als + 比较级；A=B 用 so...wie...（可替换为 ebenso/genauso 或副词 gleich）；A<B 用 weniger + 原级或 am wenigsten + 原级（词尾照常加）。强调与程度副词：noch + 比较级（甚至更……）、viel + 比较级（更得多）、etwas/ein bisschen + 比较级（稍……一点）、immer + 比较级（越来越……）、um + 四格或直接四格表差异程度（um einen Monat jünger）。最高级前加 aller- 强调独一无二（der allerschnellste Wagen）；序数词去 e 加最高级前表\"第几最\"（die zweitschönste Frau；die drittgrößte Stadt）。als/wie 是连词非介词：比较对象的格位须与被比较对象一致（Peter ist älter als ich. 用一格 ich）。weniger/wenigsten 作副词修饰形容词时，后面的形容词用原级但仍加词尾（das am wenigsten teure Auto；teuer 去 e）。易错：表语最高级用 am + sten，作定语则定冠词 + 最高级词尾；不能混淆。语言习惯：meine zweite Schwester 不说 meine zweitälteste Schwester；表达\"最不……\"时优先用反义词的最高级。Ich habe dein zweitbestes Buch gelesen. 中 dein 替代了定冠词，不可再加冠词。\n\n🇬🇧 英语对照：英语 than 后接宾格（than me 口语）；德语 als 后格位与被比较对象一致（als ich）。",
+  "table": [
+   [
+    "含义",
+    "结构",
+    "例子"
+   ],
+   [
+    "A>B",
+    "als + 比较级",
+    "größer als du"
+   ],
+   [
+    "差异",
+    "um/四格 + 比较级",
+    "um 50% teurer"
+   ],
+   [
+    "越来越",
+    "immer + 比较级",
+    "immer besser"
+   ],
+   [
+    "A=B",
+    "so…wie…",
+    "so groß wie du"
+   ],
+   [
+    "A<B",
+    "weniger + 原级",
+    "weniger teuer"
+   ]
+  ],
+  "examples": [
+   [
+    "Peter ist älter als ich.",
+    "Peter 比我年长。（als 后用一格）"
+   ],
+   [
+    "Er ist um einen Monat jünger als ich.",
+    "他比我小一个月。（um+四格表差异）"
+   ],
+   [
+    "Das ist das am wenigsten teure Auto.",
+    "这是最不贵的那辆车。"
+   ],
+   [
+    "Ich liebe dich mehr als sie.",
+    "我爱你胜过爱她。/我比她更爱你。（歧义句）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M07-01",
+  "id": "dass_satz",
+  "cat": "jufa",
+  "title": "dass 引导的名词性从句",
+  "titleDe": "dass-Satz",
+  "explain": "dass 从句是名词性从句（可作主语、宾语、表语、补语）；dass 旧时写作 daß，1996 年正字法改革后统一写作 dass。书面语中 dass 及其前面的逗号都不能省略。口语中 dass 可省略（Er sagt, er kommt aus Deutschland.），但否定句中 dass 一般不省略。口语中主句动词为 finden/hoffen/denken/glauben（感觉、希望、认为、相信）时 dass 可省略；其他动词后不能省略；schön 后的从句 dass 也不能省略（Schön, dass ihr da seid!）。dass 从句提前作主语时主句要倒装（Dass er mein Geschenk nicht mag, hat mich ziemlich überrascht.）。从句中动词位置：变位动词居句末（dass er aus Deutschland kommt；dass sie mir ein Geschenk gekauft hat）。易错：Ich glaube, du kannst ein ausgezeichneter Schauspieler werden. 中 werden/sein/bleiben 是系动词，表语用主格（ein ausgezeichneter Schauspieler）而非四格。从句时态独立于主句，按从句所表达的时间确定（Sie hat gesagt, dass sie morgen mitkommt. 用现在时表将来）。\n\n🇬🇧 英语对照：英语 that 从句（I think (that) he is right）；德语 dass 口语可省、书面不可省，且从句动词蹲句末。",
+  "table": [
+   [
+    "",
+    "主句",
+    "从句"
+   ],
+   [
+    "基本",
+    "Ich weiß,",
+    "dass er heute kommt."
+   ],
+   [
+    "带情态",
+    "Ich glaube,",
+    "dass sie Deutsch lernen will."
+   ],
+   [
+    "可分动词",
+    "Ich sehe,",
+    "dass er einkauft.（不分开）"
+   ]
+  ],
+  "examples": [
+   [
+    "Er sagt, dass er aus Deutschland kommt.",
+    "他说他来自德国。"
+   ],
+   [
+    "Er sagt, er kommt aus Deutschland.",
+    "他说他来自德国。（口语省 dass）"
+   ],
+   [
+    "Dass er mein Geschenk nicht mag, hat mich ziemlich überrascht.",
+    "他不喜欢我的礼物，这让我很惊讶。（从句前置主句倒装）"
+   ],
+   [
+    "Ich glaube, du kannst ein ausgezeichneter Schauspieler werden.",
+    "我相信你能成为一名优秀的演员。（表语用主格）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M07-09",
+  "id": "futur",
+  "cat": "dongci",
+  "title": "将来时",
+  "titleDe": "Futur I",
+  "explain": "构成：werden（变位，第二位）+ 动词不定式（句末），服从框型结构。情感色彩：将来时带有强烈的\"承诺、希望、预言\"色彩，常被政客、推销员、算命师使用。德国人日常谈论未来多用现在时，即使事情离现在很远（Ich studiere nächstes Jahr in den USA.；Meine Mutter besucht morgen einen Freund von ihr.；Ich komme bald.）。从句中的将来时：变位动词居从句末（die letzte Pizza, die ich hier essen werde）。易错：将来时不是德语表达未来的默认方式，不要像英语一样逢未来就用 werden 对应 will。bald 表\"马上（短时间内）\"，gleich/sofort 表\"立即\"；Ich komme bald. 是约定好的近未来。\n\n🇬🇧 英语对照：英语 will 表未来是默认选项；德语默认用现在时，将来时自带\"承诺/预言\"语气。",
+  "table": [
+   [
+    "",
+    "结构",
+    "例子"
+   ],
+   [
+    "将来时",
+    "werden + 原形",
+    "Ich werde dir helfen."
+   ],
+   [
+    "从句",
+    "尾语序",
+    "…, die ich essen werde."
+   ],
+   [
+    "口语常用",
+    "现在时 + 时间",
+    "Morgen helfe ich dir."
+   ]
+  ],
+  "examples": [
+   [
+    "Wir werden deine Tasche sicher finden.",
+    "我们一定会找到你的包的。（承诺）"
+   ],
+   [
+    "Ich studiere nächstes Jahr in den USA.",
+    "我明年将在美国学习。（现在时表未来）"
+   ],
+   [
+    "Ich komme bald.",
+    "我马上过来。"
+   ],
+   [
+    "Er wird sicher gleich kommen.",
+    "他肯定很快就会来的。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M08-01",
+  "id": "praeteritum",
+  "cat": "dongci",
+  "title": "一般过去时",
+  "titleDe": "Präteritum",
+  "explain": "两种表过去的方法：一般过去时（Präteritum）主要用于书面语；口语中一般用现在完成时（但 sein、haben、情态动词、es gibt 即使在口语中也常用一般过去时）。构成规则：规则动词：词干 + te + 人称词尾（wohnte）；不规则动词：换词干 + 人称词尾（war、hatte、ging、kam）。一、三人称单数在规则动词过去时中形式相同（ich/er/sie/es wohnte）；不规则动词也相同（ich war/er war；ich hatte/er hatte）。不规则动词过去时词干记忆规律（老师口诀）：e→a→e（geben–gab、lesen–las、sehen–sah、essen–aß、vergessen–vergaß）；i→a→u（finden–fand、trinken–trank、singen–sang、beginnen–begann）；ei→ie→ie（bleiben–blieb、schreiben–schrieb、steigen–stieg、leihen–lieh）。其他词干变化组：a→ie（schlafen–schlief、laufen–lief、lassen–ließ、halten–hielt）；ie→o（schließen–schloss、fliegen–flog、ziehen–zog）；o→a（kommen–kam）；u→a（tun–tat）。例句语序：并列句中第二个分句语序正常（und ich war...；aber letztes Jahr hatte ich...）。易错：弱变化动词过去时一、三人称单数是 -te（wohnte），不要与完成时混淆。\n\n🇬🇧 英语对照：英语过去时天天用（went/had）；德语过去时主攻书面语，口语让位给完成时。",
+  "table": [
+   [
+    "",
+    "规则",
+    "不规则"
+   ],
+   [
+    "结构",
+    "词干 + te",
+    "元音变化"
+   ],
+   [
+    "ich",
+    "machte",
+    "ging / gab"
+   ],
+   [
+    "du",
+    "machtest",
+    "gingst / gabst"
+   ],
+   [
+    "er",
+    "machte",
+    "ging / gab"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich bin jetzt Angestellter, und ich war im Jahr 2000 Student.",
+    "我现在是职员，2000 年时是学生。"
+   ],
+   [
+    "Ich habe im Moment nur eine Tasche, aber letztes Jahr hatte ich drei Taschen.",
+    "现在我只有一个包，但去年我有三个包。"
+   ],
+   [
+    "Er wohnt in China seit zehn Jahren, und wohnte vor zehn Jahren in den USA.",
+    "他在中国住了十年，十年前住在美国。"
+   ],
+   [
+    "geben → gab（不规则过去时）",
+    "给：课程变位表中的原始词形（ich/er gab）。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M01-09",
+  "id": "jishu",
+  "cat": "vokabel",
+  "title": "基数词",
+  "titleDe": "Kardinalzahlen",
+  "explain": "1–12 必须死记硬背，没有规律可推。13–19 = 个位 + zehn：sechzehn 中 6 去 s，siebzehn 中 7 去 en；vierzehn 中 vier 发短音是例外。整十数 = 数字 + zig：dreißig 中 3 变 ß，sechzig 中 6 去 s，siebzig 中 7 去 en。21–99 = 个位 + und + 十位（个位在前、十位在后），10–20 之间不能加 und。加减法读法：plus（加）、minus（减）、ist gleich（等于）。eins 后面接其他词时去掉 s（如 ein Apfel）。21–99 中 und 的 d 吞音（不读）。100 = (ein)hundert，1000 = (ein)tausend，10000 = zehntausend。\n\n🇬🇧 英语对照：英语 twenty-one（十位在前）；德语 einundzwanzig（个位在前），顺序反过来。",
+  "table": [
+   [
+    "数字",
+    "德语",
+    "备注"
+   ],
+   [
+    "0–12",
+    "null, eins, zwei … zwölf",
+    "死记"
+   ],
+   [
+    "16 / 17",
+    "sechzehn / siebzehn",
+    "6去s，7去en"
+   ],
+   [
+    "30",
+    "dreißig",
+    "3变ß"
+   ],
+   [
+    "21",
+    "einundzwanzig",
+    "个位+und+十位"
+   ],
+   [
+    "100 / 1000",
+    "(ein)hundert / (ein)tausend",
+    ""
+   ]
+  ],
+  "examples": [
+   [
+    "Sieben plus drei ist gleich zehn.",
+    "7+3=10"
+   ],
+   [
+    "Neun minus fünf ist gleich vier.",
+    "9−5=4"
+   ],
+   [
+    "Vierundzwanzig plus siebzehn ist gleich einundvierzig.",
+    "24+17=41"
+   ],
+   [
+    "Dreiundsiebzig minus dreizehn ist gleich sechzig.",
+    "73−13=60"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M01-10",
+  "id": "guoming",
+  "cat": "vokabel",
+  "title": "国名、语言和国籍",
+  "titleDe": "Länder, Sprachen & Nationalitäten",
+  "explain": "国名性别要单记：der Iran（阳性）；die USA、die Niederlande（复数）；die Türkei、die Schweiz（阴性）；其余大多中性。阳性（der）和阴性/复数（die）国名前冠词绝对不能省略；中性国名一般不加冠词，但形容词修饰等特定情况可加 das。国民词规律：中英法俄土耳其瑞典六国，男性国民词尾 -e（复数 +n），女性在男性基础上去 e 加 in（复数加 nen）；其他国家男性国民词尾 -er（复数不变），女性直接加 in（复数加 nen）。所有女性国民词复数一律加 -nen。语言名称词尾都是 -isch（印度 Hindi 例外）；国名形容词词尾也都是 -isch（包括 indisch）。国家、语言、形容词三者高度关联，连带记忆效率最高。发音细节：Syrien 的 s 在元音前发 [z]；Frankreich 是复合词（Frank-reich），中间辅音不分开；Chinesin 中 i 是短音。\n\n🇬🇧 英语对照：英语 German 既是德国人又是德语还是形容词；德语 der Deutsche / Deutsch / deutsch 三个形式分工明确。",
+  "table": [
+   [
+    "国家",
+    "语言",
+    "国民（男/女）",
+    "形容词"
+   ],
+   [
+    "Deutschland",
+    "Deutsch",
+    "der Deutsche / die Deutsche",
+    "deutsch"
+   ],
+   [
+    "China",
+    "Chinesisch",
+    "der Chinese / die Chinesin",
+    "chinesisch"
+   ],
+   [
+    "Frankreich",
+    "Französisch",
+    "der Franzose / die Französin",
+    "französisch"
+   ],
+   [
+    "die USA",
+    "Englisch",
+    "der Amerikaner / die Amerikanerin",
+    "amerikanisch"
+   ],
+   [
+    "Russland",
+    "Russisch",
+    "der Russe / die Russin",
+    "russisch"
+   ],
+   [
+    "Japan",
+    "Japanisch",
+    "der Japaner / die Japanerin",
+    "japanisch"
+   ],
+   [
+    "die Schweiz",
+    "—",
+    "der Schweizer / die Schweizerin",
+    "schweizerisch"
+   ],
+   [
+    "die Türkei",
+    "Türkisch",
+    "der Türke / die Türkin",
+    "türkisch"
+   ]
+  ],
+  "examples": [
+   [
+    "Deutschland — 德国",
+    "国名（中性，无冠词）。"
+   ],
+   [
+    "die Universität — 大学",
+    "阴性名词。"
+   ],
+   [
+    "der Koffer — 行李箱",
+    "阳性名词。"
+   ],
+   [
+    "in der Stadt — 在城市",
+    "在城市里。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M01-11",
+  "id": "xueye",
+  "cat": "vokabel",
+  "title": "学业和职业",
+  "titleDe": "Studium & Beruf",
+  "explain": "lernen vs studieren：lernen 泛指\"学习\"（语言、技能）；studieren 专指大学及以上阶段的学习和研究。学习阶段名词配套：die Schule/der Schüler 指中小学；die Universität/der Student 指大学——两者不可混用。学科名词性别规律：-tik/-ik 后缀几乎都是阴性（Mathematik、Physik、Musik），多源自希腊语；-tät/-ität 也是阴性（如 die Universität）；例外如 der Maschinenbau（阳性）要单独记。女性职业统一以 -in 结尾、复数加 -nen；男性职业复数：-er 结尾单复同形（Lehrer、Ingenieur），-t 结尾加 en（Student、Assistent），-r 结尾加 e（Kommissar），另有变元音加 e 的特殊形式（Koch→Köche、Arzt→Ärzte）。询问职业的常用表达：Was sind Sie von Beruf?（您是做什么工作的？）复合词拆分记忆：Betriebswirtschaft = Betrieb（企业）+ Wirtschaft（经济）。外来词发音：英语借词 Manager 中的 a 在德语里发 [ε] 而非 [æ]。\n\n🇬🇧 英语对照：英语 study 通吃；德语 lernen（学东西）vs studieren（上大学）分工明确。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "die Schule / der Schüler",
+    "中小学 / 中小学生"
+   ],
+   [
+    "die Universität / der Student",
+    "大学 / 大学生"
+   ],
+   [
+    "Informatik / Medizin / Jura",
+    "计算机科学 / 医学 / 法律"
+   ],
+   [
+    "der Ingenieur / der Arzt",
+    "工程师 / 医生"
+   ],
+   [
+    "der Lehrer / der Koch",
+    "老师 / 厨师"
+   ],
+   [
+    "Was sind Sie von Beruf?",
+    "您是做什么工作的？"
+   ]
+  ],
+  "examples": [
+   [
+    "die Schule / der Schüler — 中小学 / 中小学生",
+    "学业阶段词。"
+   ],
+   [
+    "die Universität / der Student — 大学 / 大学生",
+    "大学阶段词。"
+   ],
+   [
+    "der Ingenieur / der Arzt — 工程师 / 医生",
+    "职业词。"
+   ],
+   [
+    "Was sind Sie von Beruf? — 您是做什么工作的？",
+    "问职业的固定句。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M06-05",
+  "id": "yanse",
+  "cat": "vokabel",
+  "title": "颜色的表达",
+  "titleDe": "Farben",
+  "explain": "询问颜色的固定句型：Welche Farbe hat XXX? 回答：Das Auto ist rot.。两种词尾规则：德语自有颜色词（schwarz、weiß、rot、blau、grün、gelb、braun、grau）作定语要加词尾（einen schwarzen Tisch）；外来语颜色词（rosa、pink、lila、beige、orange、türkis）永远不加词尾（mein neues rosa Auto）。易错点：\"ein rosanes Auto\"\"eine orangene Tasche\" 虽母语者也常说，但按规则是错误的——书面语和考试中必须用不变形式。hell-（浅）/dunkel-（深）作前缀直接复合（hellblau、dunkelblau）；hell 可单独作形容词用（浅的、明亮的）。颜色形容词首字母大写即变成中性名词（das Gelb）；但 Türkis 情况特殊：der Türkis 是阳性名词（绿松石），形容词形式 türkis 不变词尾。加了 -farbig/-farben 后缀（\"……色的\"）的词必须加词尾（türkisfarben → einen türkisfarbenen Tisch）。发音：beige 作表语读 [be:ʃ]，orange 读法语鼻音；die Farbe 是阴性名词，复数 Farben。\n\n🇬🇧 英语对照：英语 pink 作定语不变；德语自有颜色词要变，外来颜色词不变——看词源。",
+  "table": [
+   [
+    "颜色",
+    "说明"
+   ],
+   [
+    "schwarz / weiß / rot",
+    "黑色/白色/红色（加词尾）"
+   ],
+   [
+    "gelb / blau / grün",
+    "黄色/蓝色/绿色（加词尾）"
+   ],
+   [
+    "braun / grau",
+    "棕色/灰色（加词尾）"
+   ],
+   [
+    "rosa / pink / lila",
+    "粉色/紫色（永不加词尾）"
+   ],
+   [
+    "beige / orange",
+    "米色/橘红（永不加词尾）"
+   ],
+   [
+    "hellblau / dunkelblau",
+    "浅蓝/深蓝（复合词）"
+   ]
+  ],
+  "examples": [
+   [
+    "Welche Farbe hat das Auto?",
+    "那辆车是什么颜色的？"
+   ],
+   [
+    "Das Auto ist rot.",
+    "那辆车是红色的。"
+   ],
+   [
+    "Ich habe einen schwarzen Tisch.",
+    "我有一张黑色的桌子。（加词尾）"
+   ],
+   [
+    "Du kannst mein neues rosa Auto fahren.",
+    "你可以开我的新粉色车。（不加词尾）"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M06-06",
+  "id": "siji",
+  "cat": "vokabel",
+  "title": "一年四季",
+  "titleDe": "Jahreszeiten",
+  "explain": "四季名称均为阳性：der Frühling、der Sommer、der Herbst、der Winter。天气动词用无人称主语 es：Es regnet.（下雨）/ Es schneit.（下雪）——表示天气现象时主语必须是 es。复数规律：der Frühling→Frühlinge；die Wolke→Wolken（-e 变 -n）；der Sturm→Stürme（变元音 + e）；das Gewitter→Gewitter（不变）。名词辨析：der Regen（雨，阳性）、der Nebel（雾，阳性）、das Eis（冰，中性）、die Kälte（寒冷，阴性）、der Frost（霜冻，阳性）——词性各不相同，需分别记忆。表示温度：Temperatur: 35 Grad（35 度）；Temperatur: minus 10 Grad（零下 10 度）。常用短句：Der Wind weht.（刮风了）/ Die Sonne scheint.（艳阳高照）/ Man friert.（人们挨冻）/ der blaue Himmel（蓝天）。按春夏秋冬的天气现象成组背单词：春（Regen、Wolke）、夏（Sonne、Hitze、Gewitter）、秋（Sturm、Nebel）、冬（Schnee、Eis、Kälte、Frost）。\n\n🇬🇧 英语对照：英语 It rains / It snows；德语 Es regnet / Es schneit，无人称 es 一一对应。",
+  "table": [
+   [
+    "季节/天气",
+    "词"
+   ],
+   [
+    "春天/夏天/秋天/冬天",
+    "der Frühling / Sommer / Herbst / Winter（阳性）"
+   ],
+   [
+    "下雨/下雪",
+    "Es regnet. / Es schneit."
+   ],
+   [
+    "云/风暴/雾",
+    "die Wolke / der Sturm / der Nebel"
+   ],
+   [
+    "冰/寒冷/霜冻",
+    "das Eis / die Kälte / der Frost"
+   ]
+  ],
+  "examples": [
+   [
+    "Es regnet.",
+    "下雨了。（无人称 es）"
+   ],
+   [
+    "Es schneit.",
+    "下雪了。"
+   ],
+   [
+    "Der Wind weht.",
+    "刮风了。"
+   ],
+   [
+    "Die Sonne scheint.",
+    "艳阳高照。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M06-09",
+  "id": "wupin",
+  "cat": "vokabel",
+  "title": "个人物品",
+  "titleDe": "Persönliche Gegenstände",
+  "explain": "Rucksack vs Mappe：背在背上的书包是 der Rucksack；Mappe 一般是夹在腋下的小包，更多时候指文件夹。西装细分：der Anzug 指男士西装；der Hosenanzug 指配有长裤的成套女西装；das Kostüm 指配有半身裙的成套女西装。泳衣细分：der Badeanzug 指连体泳衣、女士泳衣（泛指）；der Bikini 指比基尼（两截式）；die Badehose 指泳裤。复数要点：der Rucksack→Rucksäcke、der Anzug→Anzüge、der Mantel→Mäntel（变元音 + e）；das Hemd→Hemden（-en）；das Kleid→Kleider（-er）；英语借词复数加 -s（das T-Shirt→T-Shirts）。词性记忆：箱包类多为 der/die（der Koffer、die Handtasche），随身物品多为 der（der Pass、der Laptop、der Regenschirm），但 das Handy、die Kreditkarte、das Geld 例外。同义区分：der Schlafanzug（睡衣，阳性，分体式）与 das Nachthemd（睡衣，罩衫式）同义但词性不同。旅行必备词可与 Reise 主题联记：das Geld（钱）、der Führerschein（驾照）、der Fotoapparat（照相机）。\n\n🇬🇧 英语对照：英语 suit 通吃男女西装；德语 Anzug/Hosenanzug/Kostüm 按性别款式细分。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "der Koffer / der Rucksack",
+    "行李箱 / 背包"
+   ],
+   [
+    "die Handtasche",
+    "手提包"
+   ],
+   [
+    "der Anzug / das Hemd",
+    "男士西装 / 衬衫"
+   ],
+   [
+    "der Mantel / das Kleid",
+    "大衣 / 连衣裙"
+   ],
+   [
+    "der Pass / die Kreditkarte",
+    "护照 / 信用卡"
+   ],
+   [
+    "das Handy / der Laptop",
+    "手机 / 笔记本电脑"
+   ],
+   [
+    "der Regenschirm / die Sonnenbrille",
+    "雨伞 / 墨镜"
+   ]
+  ],
+  "examples": [
+   [
+    "der Koffer / der Rucksack — 行李箱 / 背包",
+    "旅行物品。"
+   ],
+   [
+    "der Anzug / das Hemd — 男士西装 / 衬衫",
+    "服装。"
+   ],
+   [
+    "der Pass / die Kreditkarte — 护照 / 信用卡",
+    "证件。"
+   ],
+   [
+    "der Regenschirm / die Sonnenbrille — 雨伞 / 墨镜",
+    "随身物品。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M07-07",
+  "id": "jianzhu",
+  "cat": "vokabel",
+  "title": "建筑、居家与方位",
+  "titleDe": "Gebäude, Wohnen & Richtung",
+  "explain": "介词搭配：城市用 in（in der Stadt），农村用 auf（auf dem Land），郊区用 an（am Stadtrand）——记忆时把常用介词一起记。Keller 指地窖式昏暗地下室；Untergeschoss 指超市/商场地下一层（不昏暗，和其他楼层差不多）。Erde vs Boden：室外地面用 Erde，室内地面用 Boden；抽象的土地/耕地/土壤用 Boden，具体的泥土（如手捧的）用 Erde。卫生间细分：Bad/Badezimmer（带洗澡设施的浴室，餐厅里别说）；Toilette（通用卫生间，餐厅可用）；WC（water closet）；Klo（口语\"厕所\"，正式场合别用）。Balkon（小阳台）vs Terrasse（大平台/露台，一般在一楼地面或楼顶）。楼层词汇：Erdgeschoss（一楼地面层）、Obergeschoss（非地面层）、Dachgeschoss（顶层）、Untergeschoss/Keller（地下室）；Etage/Stock/Stockwerk/Geschoss 都表\"层\"。复数：das Dach→Dächer；der Keller→Keller（不变）；der Stuhl→Stühle；der Fahrstuhl→Fahrstühle。\n\n🇬🇧 英语对照：英语 ground floor（英）/ first floor（美）各地不同；德语 Erdgeschoss（一楼）全国统一。",
+  "table": [
+   [
+    "表达",
+    "中文"
+   ],
+   [
+    "in der Stadt / auf dem Land",
+    "在城市 / 在农村"
+   ],
+   [
+    "am Stadtrand",
+    "在郊区"
+   ],
+   [
+    "nach links / nach rechts",
+    "左转 / 右转"
+   ],
+   [
+    "geradeaus gehen",
+    "直走"
+   ],
+   [
+    "das Gebäude / das Hochhaus",
+    "建筑物 / 高楼"
+   ],
+   [
+    "die Villa / das Reihenhaus",
+    "别墅 / 联排别墅"
+   ],
+   [
+    "das Erdgeschoss",
+    "一楼（地面层）"
+   ],
+   [
+    "der Aufzug / der Lift",
+    "电梯"
+   ],
+   [
+    "das Wohnzimmer / das Schlafzimmer",
+    "客厅 / 卧室"
+   ]
+  ],
+  "examples": [
+   [
+    "in der Stadt / auf dem Land — 在城市 / 在农村",
+    "方位表达。"
+   ],
+   [
+    "geradeaus gehen — 直走",
+    "指路动词短语。"
+   ],
+   [
+    "das Erdgeschoss — 一楼（地面层）",
+    "建筑词。"
+   ],
+   [
+    "das Wohnzimmer / das Schlafzimmer — 客厅 / 卧室",
+    "房间词。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M07-08",
+  "id": "zhufang",
+  "cat": "vokabel",
+  "title": "住房申请",
+  "titleDe": "Wohnungsbewerbung",
+  "explain": "Fragen zur Person 中 zu 表\"针对、向\"，表示方向：Fragen zur Person = 针对租客的问题；类似 Fragen zur Arbeit、ein Buch zum Thema。性别栏第三选项 divers（多样），适用于非男非女的申请人。\"问题\"的介词：一般只能用 zu（eine Frage zu + 三格），只有讨论深奥哲学问题时可用 nach（eine Frage nach dem Sinn des Lebens）。收入写法：2900,– Euro — 德语小数点用逗号，,– 表示\"整\"（无小数）；不是英文式写法。Anzahl der Zimmer 可写成复合词 Zimmeranzahl（数量词 + 名词复合），两者等价。Makler vs Agentur：Makler 可指个人也可指机构，Agentur 只能指机构不能指人——不可完全互换。表格实务：Etage 填\"nicht Erdgeschoss\"表不租一楼；Lage 填\"Stadtmitte/Osten\"；Ausstattung 列所需设施（Bad, Balkon）；Miete 后\"inkl. NK\"表含附加费用。复合词拆分：Immobilienmaklerbüro = Immobilien（不动产）+ Makler（中介）+ Büro（办公室），德语复合名词拆分理解更高效。\n\n🇬🇧 英语对照：英语 2,900 euros（逗号分位）；德语 2900,– Euro（逗号小数点），写法反过来。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "der Immobilienmakler",
+    "房屋中介"
+   ],
+   [
+    "der Vorname / der Name",
+    "名 / 姓"
+   ],
+   [
+    "das Geburtsdatum",
+    "出生日期"
+   ],
+   [
+    "das Geschlecht",
+    "性别（männlich/weiblich/divers）"
+   ],
+   [
+    "die Nationalität",
+    "国籍"
+   ],
+   [
+    "der Arbeitgeber",
+    "雇主"
+   ],
+   [
+    "das monatliche Einkommen",
+    "月收入"
+   ],
+   [
+    "die Miete / die Nebenkosten",
+    "房租 / 附加费用"
+   ],
+   [
+    "die Ausstattung",
+    "设施配置"
+   ]
+  ],
+  "examples": [
+   [
+    "der Immobilienmakler — 房屋中介",
+    "租房申请相关。"
+   ],
+   [
+    "das Geburtsdatum — 出生日期",
+    "申请表用词。"
+   ],
+   [
+    "die Miete / die Nebenkosten — 房租 / 附加费用",
+    "租房费用。"
+   ],
+   [
+    "die Ausstattung — 设施配置",
+    "房源描述词。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M08-02",
+  "id": "shenti",
+  "cat": "vokabel",
+  "title": "身体部位",
+  "titleDe": "Körperteile",
+  "explain": "身体部位词性各不相同，记忆时必须连冠词一起背。复数规律：die Hand→Hände、der Zahn→Zähne、der Fuß→Füße、der Kopf→Köpfe、der Hals→Hälse、der Mund→Münder（变元音 + e）；das Ohr→Ohren（+en）；das Auge→Augen（-en）；der Rücken、der Ellenbogen、der Finger（仅 +e 或不变）。复合词拆分：das Handgelenk（手腕）、das Fußgelenk（脚踝）——Gelenk（关节）通用。das Haar 单数指\"一根头发\"，常用复数 die Haare 表\"头发\"。从头到脚顺序记忆：Kopf→Auge→Nase→Mund→Hals→Brust→Bauch→Rücken→Arm→Hand→Bein→Knie→Fuß。音近区分：das Haar（头发）与 der Hals（脖子）音近，注意区分；der Bauch（肚子）复数变元音 Bäuche。der Po（屁股）是口语常用词，正式场合可用 der Hintern 替代。\n\n🇬🇧 英语对照：英语 hand→hands 规则复数；德语身体部位复数多变元音（Hand→Hände），逐个记。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "der Kopf / das Auge",
+    "头 / 眼睛"
+   ],
+   [
+    "die Nase / der Mund",
+    "鼻子 / 嘴巴"
+   ],
+   [
+    "der Hals / der Rücken",
+    "脖子 / 后背"
+   ],
+   [
+    "der Arm / die Hand",
+    "胳膊 / 手"
+   ],
+   [
+    "der Finger / das Handgelenk",
+    "手指 / 手腕"
+   ],
+   [
+    "die Brust / der Bauch",
+    "胸部 / 肚子"
+   ],
+   [
+    "das Bein / das Knie",
+    "腿 / 膝盖"
+   ],
+   [
+    "der Fuß / die Zehe",
+    "脚 / 脚趾"
+   ]
+  ],
+  "examples": [
+   [
+    "der Kopf / das Auge — 头 / 眼睛",
+    "身体部位。"
+   ],
+   [
+    "der Arm / die Hand — 胳膊 / 手",
+    "身体部位。"
+   ],
+   [
+    "das Bein / das Knie — 腿 / 膝盖",
+    "身体部位。"
+   ],
+   [
+    "der Fuß / die Zehe — 脚 / 脚趾",
+    "身体部位。"
+   ]
+  ],
+  "level": "A1"
+ },
+ {
+  "num": "M09-02",
+  "id": "genitiv",
+  "cat": "ge",
+  "title": "第二格",
+  "titleDe": "Genitiv",
+  "explain": "第二格（Genitiv）表示\"所属关系\"，一般译为\"的\"，是德语四大格中最后一个学的。专有名词（人名/城市名/国名）表所属可直接加 s（Yaras Fahrradladen），以 s 结尾的只加撇号（Hans' Bruder）；通用替代是 von + 专有名词（der Bruder von Hans）。书面语可将\"被拥有者\"前置：ein Freund Karls；但拥有者带称呼（Herr Karl）时不能后置，要说 ein Freund von Herrn Karl。冠词变格：der/die/das/die → des/der/des/der；ein/eine/ein → eines/einer/eines；阳/中性名词词尾加 s（des Lehrers），以 s、st、zt、sch、x、z、ß 结尾加 es（des Passes）；-ismus 结尾是例外，不加 s。二格定冠词的性数由拥有者决定，与被拥有者无关。人称代词二格（meiner、deiner…）现代德语很少用，口语用三格代替（wegen mir）或换动词；meinetwegen 除\"因为我\"外还有\"对我来说/我没意见\"的用法。口语中二格可用 von + 三格代替。对二格提问用 wessen，不变格。\n\n🇬🇧 英语对照：英语 John's book / the book of John；德语 Yaras Fahrradladen / der Bruder von Hans，路数一样。",
+  "table": [
+   [
+    "",
+    "阳性",
+    "阴性",
+    "中性",
+    "复数"
+   ],
+   [
+    "一格",
+    "der Mann",
+    "die Frau",
+    "das Kind",
+    "die Kinder"
+   ],
+   [
+    "二格",
+    "des Mannes",
+    "der Frau",
+    "des Kindes",
+    "der Kinder"
+   ]
+  ],
+  "examples": [
+   [
+    "Das ist Yaras Fahrradladen.",
+    "这是 Yara 的自行车店。（专有名词加 s）"
+   ],
+   [
+    "Das ist der Bruder von Hans.",
+    "这是 Hans 的哥哥。（von 通用替代）"
+   ],
+   [
+    "Ich habe die Tochter der Frau gesehen.",
+    "我见到了那个女人的女儿。（二格定冠词）"
+   ],
+   [
+    "Wessen Buch ist das?",
+    "这是谁的书？（wessen 提问）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M09-03",
+  "id": "n_deklination",
+  "cat": "mingci",
+  "title": "阳性弱变化",
+  "titleDe": "N-Deklination",
+  "explain": "阳性弱变化（N-Deklination）：一小部分阳性名词在单数二、三、四格词尾加 -n/-en；这是这类名词的天然属性。三大类：① -e 结尾的阳性名词（除 Käse、Charme），如 Bote、Franzose、Junge；② 以 -and/-ant/-aph/-arch/-at/-ent/-et/-ist/-krat/-nom/-on 结尾的阳性外来词，如 Student、Polizist、Astronom；③ 一小部分日耳曼语源词，如 Herr、Mensch、Bär、Papagei、Nachbar、Bauer。前面无冠词时，为避免与复数混淆，即使非主格也不加 -n/-en（Präsident der USA 不能写成 Präsidenten）；Herrn 是例外。口语中常省略单数词尾的 -n/-en；反之 Autor、Moderator、Typ 在口语里常被误当弱变化用。8 个特殊词单数二格还要再加 -s：Name、Buchstabe、Friede、Glaube、Funke、Gedanke、Same、Wille。易混：阳性弱变化 vs 形容词名词化——den Jungen（弱变化）vs den Alten（-en 是形容词尾）；用 ein Junge vs ein Alter 的一格形式区分；一个单词不可能既是名词化形容词又是弱变化名词。das Herz 是唯一的非阳性弱变化名词，仅二、三格服从弱变化（des Herzens、dem Herzen）。\n\n🇬🇧 英语对照：英语没有这种变化；德语弱变化名词单记三类，8 个特殊词二格加 -s。",
+  "table": [
+   [
+    "一格",
+    "二/三/四格"
+   ],
+   [
+    "der Junge",
+    "des/dem/den Jungen"
+   ],
+   [
+    "der Student",
+    "des/dem/den Studenten"
+   ],
+   [
+    "der Herr",
+    "des/dem/den Herrn"
+   ],
+   [
+    "der Name",
+    "des Namens（特殊+ s）"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe den Boten gesehen.",
+    "我见到了信使。（弱变化四格）"
+   ],
+   [
+    "Sie ist mit dem Franzosen ins Kino gegangen.",
+    "她和那个法国人去看电影了。（三格）"
+   ],
+   [
+    "Das ist die Tasche des Polizisten.",
+    "这是那个警察的包。（二格）"
+   ],
+   [
+    "Ich habe den Jungen gefangen.",
+    "我抓住了那个男孩。（vs den Alten 形容词尾）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M09-04",
+  "id": "reflexiv",
+  "cat": "dongci",
+  "title": "反身动词",
+  "titleDe": "Reflexive Verben",
+  "explain": "反身人称代词：一、二人称与普通代词同形（mir/mich、dir/dich），三人称一律 sich（Sie 的 sich 也不大写）；动作发出者=承受者时用反身代词。表\"互相\"可换 einander（稍书面）；介词后 sich 与 einander 意义不同（von sich 表自己 vs voneinander 表彼此）；有歧义时加 selbst 或 gegenseitig 消歧。真反身动词必须带 sich（如 sich beeilen、sich erkälten）；sich 默认第四格，若已有另一个四格宾语则 sich 作三格。假反身四类：①主语对自己施加动作（sich setzen）；②被动含义、主语未发出动作（sich erklären→Das erklärt sich leicht）；③三格表\"认真地\"（Sind Sie sich sicher?）；④部分真部分假（sich irren）。背诵要带固定搭配连同支配的格一起背。易错：Ich wasche mir die Hände 不能写成 Ich wasche meine Hände（课上重点强调）；sich 不能共享。真反身动词助动词一般是 haben，但表示\"彼此\"的 sich + 不及物动词仍用 sein（如 Anna und Bernd sind sich ausgewichen）。\n\n🇬🇧 英语对照：英语 wash my hands；德语 Ich wasche mir die Hände（三格反身+定冠词），结构完全不同。",
+  "table": [
+   [
+    "人称",
+    "三格",
+    "四格"
+   ],
+   [
+    "ich",
+    "mir",
+    "mich"
+   ],
+   [
+    "du",
+    "dir",
+    "dich"
+   ],
+   [
+    "er/sie/es",
+    "sich",
+    "sich"
+   ],
+   [
+    "wir",
+    "uns",
+    "uns"
+   ],
+   [
+    "ihr",
+    "euch",
+    "euch"
+   ],
+   [
+    "sie/Sie",
+    "sich",
+    "sich"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich wasche mir die Hände.",
+    "我洗手。（三格反身，不能写 meine Hände）"
+   ],
+   [
+    "Ich muss mich beeilen.",
+    "我得抓紧。（真反身）"
+   ],
+   [
+    "Das erklärt sich leicht.",
+    "这很容易解释。（被动含义）"
+   ],
+   [
+    "Sie sprechen voneinander.",
+    "他们在谈论彼此。（voneinander 表互相）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M09-05",
+  "id": "wenn_als",
+  "cat": "congju",
+  "title": "wenn / als / wann / ob 从句",
+  "titleDe": "wenn, als, wann, ob",
+  "explain": "所有从句（dass、ob、wenn、als、wann 引导的）都服从尾语序，动词放最后。ob 引名词性从句=是否；wann 引名词性从句=什么时候。易混点：wann 用于疑问句提问时间，wenn 用于\"当……时/如果\"，不要混淆。als 引导时间状语从句=过去一件具体的事/不再重复的事（过去单次）；wenn=可重复的、习惯性的、尚未发生的事；过去经常发生的事也用 wenn。记忆技巧：\"一个人只有一次 10 岁的机会，一旦 11 岁就回不去了\"——Als ich zehn Jahre alt war 用 als（过去单次），习惯性动作才用 wenn。wenn 表过去习惯性行为时常加 immer/jedes Mal 强调频率。wenn 还可引导条件状语从句=如果；从句可置主句前（占主句第一位）或后。叙述故事用过去时、生活琐事/口语用完成时，北德偏爱完成时、南德偏爱过去时。bleiben 是系动词（与 sein、werden 同类），bleib mir fern 中 mir 是三格表\"离我远点\"。\n\n🇬🇧 英语对照：英语 when 通吃；德语 als（过去单次）/wenn（重复/未来）/wann（疑问何时）三分天下。",
+  "table": [
+   [
+    "连词",
+    "用法",
+    "例子"
+   ],
+   [
+    "als",
+    "过去一次性",
+    "Als ich zehn war, …"
+   ],
+   [
+    "wenn",
+    "重复/现在/将来",
+    "Wenn es regnet, …"
+   ],
+   [
+    "wann",
+    "何时（疑问）",
+    "Wann kommst du?"
+   ],
+   [
+    "ob",
+    "是否",
+    "Ich weiß nicht, ob …"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich weiß nicht, ob der Politiker morgen kommt.",
+    "我不知道那个政客明天来不来。（ob=是否）"
+   ],
+   [
+    "Als ich zehn Jahre alt war, habe ich jeden Nachmittag Fußball gespielt.",
+    "我十岁时每天下午踢球。（过去单次用 als）"
+   ],
+   [
+    "Ruf mich an, wenn du fertig bist.",
+    "你好了给我打电话。（wenn=当…时）"
+   ],
+   [
+    "Immer wenn ich im Garten saß, sangen die Vögel.",
+    "每当我坐在花园里，鸟儿就唱歌。（习惯性）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M09-10",
+  "id": "da_wo",
+  "cat": "qita",
+  "title": "代副词",
+  "titleDe": "Pronominaladverbien",
+  "explain": "代副词 = da(r)/wo(r) + 介词；指示代副词 da(r)+介词，疑问代副词 wo(r)+介词。er/sie/es 不能代指\"介词后无生命名词\"（Ja, ich komme mit ihm 是错的，必须说 Ja, ich komme damit）。介词首字母是元音时加 -r-（daran、darüber、worauf）；介词后名词单复数无差别，复数也可用代副词。代副词只代指无生命物品/事件；有生命的人或动物用普通人称代词（an ihn、über sie）。疑问代副词的 wo 翻译为\"什么\"，不要与表示\"哪里\"的 wo 混淆；问人则用 wen/wem。damit、darum、daher、dahin、dabei、danach 兼作普通副词，各有侧重：damit 强调方式、darum 强调原因、daher 强调原因/出发点、dahin 强调方向、danach 强调时间先后。dabei 的多义副词用法：dabei sein 表赞同参与（Klar, ich bin dabei!）；dabei sein + zu Inf 表正在做某事；dabei 表\"做……时\"（两件事同时发生）；口语中表\"尽管\"。damit 还可作连词引导目的从句=为了/以便；dabeihaben 是可分动词=带着。\n\n🇬🇧 英语对照：英语 it/them 通吃；德语介词+无生命名词必须缩成代副词（damit），这是硬规则。",
+  "table": [
+   [
+    "介词",
+    "da-（指示）",
+    "wo-（疑问）"
+   ],
+   [
+    "mit",
+    "damit",
+    "womit"
+   ],
+   [
+    "für",
+    "dafür",
+    "wofür"
+   ],
+   [
+    "auf",
+    "darauf",
+    "worauf"
+   ],
+   [
+    "über",
+    "darüber",
+    "worüber"
+   ]
+  ],
+  "examples": [
+   [
+    "Ja, ich komme damit.",
+    "好的，我带这个来。（无生命用 damit）"
+   ],
+   [
+    "Ja, ich denke oft an ihn.",
+    "是的，我常想起他。（有生命用 an ihn）"
+   ],
+   [
+    "Womit fahren Sie nach Beijing?",
+    "您坐什么去北京？（疑问代副词）"
+   ],
+   [
+    "Ich spreche langsam, damit du mich besser verstehst.",
+    "我说慢点以便你听懂。（damit=以便）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M10-01",
+  "id": "stehen_stellen",
+  "cat": "dongci",
+  "title": "近义词辨析：位置动词",
+  "titleDe": "stehen/stellen, sitzen/setzen …",
+  "explain": "\"放\"按物体形状和姿势选词：liegen 躺着（平放物品）、stehen 站立（人、动物、有腿/底座的物品）、sitzen 坐着（有膝盖的活物，另有帽子/眼镜拟人用法）、hängen 挂、stecken 插。鞋、锅两可：鞋底/锅底接触地面用 stehen，否则 liegen；笔记本电脑打开 stehen、合上 liegen。静三动四对应：liegen→legen、stehen→stellen、sitzen→setzen（前者表状态+三格，后者表使役动作+四格）；stecken 主语既可以是人也可以是物。hängen 两词区分：hängt, gehangen（不及物\"挂着\"表状态）vs hängt, gehängt（及物\"挂上去\"表动作）。固定搭配死记：Platz 搭配 an（an den besten Platz），Stuhl 搭配 auf；setzen 只能支配一个直接宾语，不能支配双宾语。地道表达：Ich setze mir einen Hut auf den Kopf——加 mir、用定冠词代替 mein 更地道。记忆口诀：有底部且与水平面接触都是 stehen；sitzen 要求像人一样有膝盖和臀部、双腿弯曲；legen/stellen/setzen 强调人去\"使\"物体改变状态。\n\n🇬🇧 英语对照：英语 put/lay 通吃；德语按姿势分家，状态（liegen）vs 使役（legen）是两套词。",
+  "table": [
+   [
+    "状态（不及物）",
+    "动作（及物）"
+   ],
+   [
+    "stehen（站着）",
+    "stellen（放站）"
+   ],
+   [
+    "sitzen（坐着）",
+    "setzen（放坐）"
+   ],
+   [
+    "liegen（躺着）",
+    "legen（放躺）"
+   ],
+   [
+    "hängen（悬挂, gehangen）",
+    "hängen（挂放, gehängt）"
+   ]
+  ],
+  "examples": [
+   [
+    "Eine Banane liegt auf dem Teller.",
+    "一根香蕉躺在盘子上。（liegen 状态）"
+   ],
+   [
+    "Der Tisch steht im Zimmer.",
+    "桌子立在房间里。"
+   ],
+   [
+    "Ich stelle den Teller auf den Tisch.",
+    "我把盘子放到桌上。（stellen 使役）"
+   ],
+   [
+    "Der Schlüssel steckt im Schloss.",
+    "钥匙插在锁里。"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M10-02",
+  "id": "zu_infinitiv",
+  "cat": "dongci",
+  "title": "带 zu 的不定式",
+  "titleDe": "Infinitiv mit zu",
+  "explain": "zu + 动词原形构成带 zu 不定式；所支配的宾语/状语放 zu 前构成尾语序，整个结构一般放句尾；可分动词的 zu 加在前缀和词干之间（anzurufen），kennenlernen 例外（两种写法都对）。逗号规则：\"简单不定式\"前不加逗号，\"扩展不定式\"前通常加逗号；但规则不严格，重点是句式美观且不影响理解。与英语不同，德语 zu 后面可以直接加情态动词原形（Er hofft, schon bald abreisen zu können）。三大句法功能：作主语（Es ist schwierig…）、作宾语（anfangen、versuchen、vergessen 等；不及物动词的介词变代副词）、作名词补语（die Zeit、die Lust、der Spaß 等抽象名词）或形容词补语。um + zu Inf 表目的（=为了）、ohne + zu Inf 表\"没有……就……\"，放句尾并用逗号隔开；只有 um...zu 要求主语一致，普通带 zu 不定式不要求。带 zu 不定式要放在框架结构外面。易错：英语 tell sb to do、know what to do 不能逐字译成德语，必须用从句；wissen 后永远不能加带 zu 不定式，必须死记。\n\n🇬🇧 英语对照：英语 to do 前后主语可不同；德语 um...zu 要求主语一致，wissen 后永不跟 zu。",
+  "table": [
+   [
+    "用法",
+    "例子"
+   ],
+   [
+    "作主语",
+    "Es ist schön, dich zu sehen."
+   ],
+   [
+    "作宾语",
+    "Ich versuche, früh zu kommen."
+   ],
+   [
+    "um + zu（为了）",
+    "Ich lerne, um zu bestehen."
+   ],
+   [
+    "ohne + zu",
+    "Er ging, ohne zu grüßen."
+   ]
+  ],
+  "examples": [
+   [
+    "Es ist schwierig, Deutsch zu lernen.",
+    "学德语很难。（作主语）"
+   ],
+   [
+    "Susanne hat früh angefangen, den Schreibtisch aufzuräumen.",
+    "Susanne 很早就开始收拾书桌了。"
+   ],
+   [
+    "Aber ich brauche Kunden, um meine Miete zu bezahlen.",
+    "但我需要客户来付房租。（um...zu 表目的）"
+   ],
+   [
+    "Hanna ist nach Hause gefahren, ohne ein Wort zu sagen.",
+    "Hanna 一句话没说就回家了。（ohne...zu）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M10-03",
+  "id": "nach_zu",
+  "cat": "ge",
+  "title": "表示\"去\"的介词",
+  "titleDe": "Präpositionen der Richtung",
+  "explain": "表\"去\"的介词按名词类型选：nach 用于无冠词名词（nach Hause、中性国名 nach Deutschland、城市 nach Shanghai、方向 nach rechts）；in 用于可\"进去\"的地点（ins Kino、in die Schweiz、in die USA、in den Iran）。zu 的典型场景：固定搭配 zu Hause/zu Fuß、去某人家（zu meinem Freund）、去某物处（zum Auto）、城市传统行业（zum Friseur/zum Bäcker）；auf 用于露天场所（auf die Straße、auf den Sportplatz、aufs Land）。an 强调\"走到边上\"（an den Strand、an das Fenster）；zu vs in 的细微差别：zu=朝那走但不一定进去，in=朝那走并走进去（zur/in die Schule）。Uni/Bank/Post/Bahnhof/Toilette 可用 zu，但\"暗示主语是这所大学学生\"等地道用法用 auf。最常用的表\"给某人\"结构是三格宾语，无需介词。写信：人前用 an（ein Brief an deine Freundin），地名前用 nach（Ich schreibe einen Brief nach Amerika）；an 后用第四格。易错：城市名都是中性且永远省略定冠词；单座 Berg 不能用 in；Ausland 虽中性但必须用 in（ins Ausland，因为它不是地名）。\n\n🇬🇧 英语对照：英语 go to 通吃；德语 nach/in/zu/auf/an 按\"能不能进去\"细分。",
+  "table": [
+   [
+    "介词",
+    "用于",
+    "例子"
+   ],
+   [
+    "nach",
+    "无冠词地名",
+    "nach Berlin / nach Hause"
+   ],
+   [
+    "in",
+    "可进入的地点",
+    "ins Kino / in die Schweiz"
+   ],
+   [
+    "zu",
+    "人/具体地点",
+    "zu meiner Freundin"
+   ],
+   [
+    "auf",
+    "露天",
+    "auf den Sportplatz"
+   ],
+   [
+    "an",
+    "边上",
+    "an den Strand"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich schreibe einen Brief nach Amerika.",
+    "我往美国写信。（地名前 nach）"
+   ],
+   [
+    "Rudi schreibt ein paar Briefe nach Hamburg an seine Familie.",
+    "Rudi 往汉堡给家人写了几封信。（地名 nach，人 an）"
+   ],
+   [
+    "Er geht in ein europäisches Land.",
+    "他去一个欧洲国家。（in=走进去）"
+   ],
+   [
+    "Ich habe meinem Freund das Buch gegeben.",
+    "我把书给了朋友。（三格表给，无需介词）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M10-04",
+  "id": "nebenssatz",
+  "cat": "congju",
+  "title": "原因 / 结果 / 目的 / 让步",
+  "titleDe": "Kausal-, Konsekutiv-, Final-, Konzessivsätze",
+  "explain": "原因的多层表达：denn（并列连词=因为，不占位、不能放句首）、nämlich（放变位动词后）、weil（从属连词+尾语序）、wegen（支配二格，口语可三格，与宾语整体占一位）、deshalb/deswegen/folglich/darum（占位副词，语气依次减弱）、da（放主句前表众所周知的原因）、nun da（=既然）。易错：weil 和 deshalb 不能在同一句连用（类似英语 because 和 so 不能连用），例外是\"Deshalb, weil + 从句\"（只是因为…）。weshalb（强调主句是从句的原因）vs sodass（强调主句是从句的起因/导火索）；口语把 sodass 当 damit 用是错误的。连接副词在句中占一位，且原因句必须在前、结果句在后；dadurch 是副词不能引从句。目的：damit（从属连词=以便，主语可不同）vs um...zu（要求主语一致）；主语不同时只能用 damit。让步：obwohl（从属连词+尾语序）、trotz（支配二格，口语可三格）、trotzdem（副词=尽管如此）；口语用 trotzdem 代 obwohl 不正式。分辨口诀：从属连词引从句+尾语序；并列连词只有 5 个（und、aber、oder、sondern、denn）；其余都是占位的连接副词；副词不能引导句子。\n\n🇬🇧 英语对照：英语 because/so 不连用；德语 weil/deshalb 也不连用，路数一样。",
+  "table": [
+   [
+    "含义",
+    "并列（主句语序）",
+    "附属（尾语序）"
+   ],
+   [
+    "原因",
+    "denn",
+    "weil / da"
+   ],
+   [
+    "结果",
+    "daher",
+    "sodass"
+   ],
+   [
+    "目的",
+    "—",
+    "damit / um…zu…"
+   ],
+   [
+    "让步",
+    "trotzdem（副词）",
+    "obwohl"
+   ]
+  ],
+  "examples": [
+   [
+    "Er konnte sie nicht verstehen, denn er war taub.",
+    "他听不懂她，因为他聋了。（denn 并列）"
+   ],
+   [
+    "Er konnte sie nicht verstehen, weil er taub war.",
+    "他听不懂她，因为他聋了。（weil 从属）"
+   ],
+   [
+    "Wegen der Krankheit seines Vaters blieb er zu Hause.",
+    "因为父亲生病，他待在家里。（wegen+二格）"
+   ],
+   [
+    "Er ist überhaupt nicht müde, obwohl er die ganze Nacht nicht geschlafen hat.",
+    "他一点不困，尽管整晚没睡。（obwohl 让步）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M10-05",
+  "id": "passiv",
+  "cat": "dongci",
+  "title": "被动语态",
+  "titleDe": "Passiv",
+  "explain": "两种被动：Vorgangspassiv（werden + 过去分词，强调动作过程）vs Zustandspassiv（sein + 过去分词，强调动作完成后的状态/结果）；Der Tisch wird gedeckt（正在摆）vs Der Tisch ist gedeckt（已摆好）；新闻文学偏爱 sein 被动态（强调状态）。只有能引起明确结果的动词（bauen、öffnen、reparieren、schreiben…）才有 Zustandspassiv；sehen、loben、brauchen 等几乎没有。记忆口诀：被动语态时过去分词是 worden（Das Buch ist gelesen worden），其他时候都是 geworden。口语中主动语态的过去时被完成时取代，但被动语态的过去时仍然很常用。只有四格直接宾语能变被动主语；三格/二格/介词宾语变被动后省略主语或用 es（Ihnen wird geholfen；Es wird im Nebenzimmer getanzt）；双宾语只有四格变主语，三格仍是三格。无主语句也可以变被动：Man tanzt → Im Nebenzimmer wird getanzt；被动还可表命令、建议、规定（Hier darf nicht geraucht werden）。例外动词（bedeuten、bekommen、besitzen、haben、kennen、wissen 等）不能用 werden 被动态，改用 man 主句或转述。von vs durch：对动作有绝对控制的发出者（人）用 von；无绝对控制或仅引方式/媒介（物）用 durch；mit 引具体工具。geboren 用法：不表年月日用 sein（Ich bin in Hamburg geboren），表年月日用 werden（Ich wurde 1998 in Hamburg geboren）。\n\n🇬🇧 英语对照：英语只有一种被动；德语 werden（过程）vs sein（状态）两种，含义不同。",
+  "table": [
+   [
+    "类型",
+    "结构",
+    "例子"
+   ],
+   [
+    "过程被动",
+    "werden + 过去分词",
+    "Das Haus wird gebaut."
+   ],
+   [
+    "状态被动",
+    "sein + 过去分词",
+    "Das Haus ist gebaut."
+   ],
+   [
+    "施动者",
+    "von（人）/ durch（媒介）",
+    "von ihm / durch den Sturm"
+   ]
+  ],
+  "examples": [
+   [
+    "Das Buch wird (von mir) gelesen.",
+    "这本书（被我）读着。（过程被动）"
+   ],
+   [
+    "Als ich um fünf kam, war die Tür geschlossen.",
+    "我五点到时门关着。（状态被动）"
+   ],
+   [
+    "Ihnen wird geholfen.",
+    "有人帮你们。（三格变被动无主语）"
+   ],
+   [
+    "Hier darf nicht geraucht werden.",
+    "这里禁止吸烟。（被动表规定）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M10-06",
+  "id": "relativsatz",
+  "cat": "congju",
+  "title": "关系代词和关系从句",
+  "titleDe": "Relativsätze",
+  "explain": "关系代词\"性、数由主句定，格由从句定\"；从句服从尾语序；关系代词不可省略（与英语不同）；作介词宾语时介词提前到关系代词前（mit dem ich gekommen bin）。二格关系代词=whose：dessen（阳/中）/deren（阴/复）；dessen 不再变化（dessem 是母语者错误）；deren 后若不跟名词，很多人用 derer 代替，现已被大部分专家接受。先行词是一、二人称代词且紧邻从句时，代词在从句中重写一遍且动词按代词变位。was 引关系从句的 4 大场景：修饰 etwas/nichts/alles、中性名词化形容词、指示代词 das、代指上文整句话；非母语者建议一律用 was。wer ≠ 英语 who：wer 引无先行词关系从句=……\"的人（Wer viele Freunde hat, ist glücklich）；修饰先行词必须用 der/die/das。地点状语：wo/wohin/woher 可代替\"介词+名词\"；先行词无冠词时只能用 wo；方式用 wie，原因用 warum。口语中从句不用尾语序是错误用法，书面语要避免；welch- 作关系代词非常书面，不常用。\n\n🇬🇧 英语对照：英语 which/that 可省略；德语关系代词永不省略，且\"性数看主句、格看从句\"。",
+  "table": [
+   [
+    "先行词",
+    "一格",
+    "四格",
+    "二格"
+   ],
+   [
+    "阳性",
+    "der",
+    "den",
+    "dessen"
+   ],
+   [
+    "阴性",
+    "die",
+    "die",
+    "deren"
+   ],
+   [
+    "中性",
+    "das",
+    "das",
+    "dessen"
+   ],
+   [
+    "复数",
+    "die",
+    "die",
+    "deren"
+   ]
+  ],
+  "examples": [
+   [
+    "Kennst du die Frau, die heute kommt?",
+    "你认识今天来的那个女人吗？"
+   ],
+   [
+    "Kennst du den Mann, mit dem ich gekommen bin?",
+    "你认识和我一起来的那个男人吗？（介词提前）"
+   ],
+   [
+    "Ich habe die Frau getroffen, deren Namen ich immer vergesse.",
+    "我遇到了那个我总忘名字的女人。（deren=whose）"
+   ],
+   [
+    "Wer viele Freunde hat, ist glücklich.",
+    "朋友多的人是幸福的。（wer=…的人）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M10-07",
+  "id": "konjunktiv2",
+  "cat": "dongci",
+  "title": "第二虚拟式",
+  "titleDe": "Konjunktiv II",
+  "explain": "三大使用场景：礼貌请求（Würden Sie bitte…/Könnten Sie bitte…/Sie sollten…）、表愿望、表不真实陈述（与事实相反的假设）。变位三步（不规则动词基于一般过去时）：a/o/u 加 Umlaut（fuhr→führe）；一、三人称单数过去时不以 e 结尾则加 e（war→wäre）；加 -st/-n/-t/-n 得其余人称（wärst/wären）；规则动词二虚=过去时。除 sein、haben、werden 和情态动词外，其他动词二虚用\"würden + 动词原形\"代替，使用时注意维持框架结构。愿望的细分：日常礼貌愿望（Ich hätte gern/Ich möchte）、宏大愿望、与事实相悖的愿望。wenn + nur + 二虚=\"要是……就好了\"；Ich wünschte, du würdest kommen 省略了 dass。主句用二虚则从句也要用二虚，反之亦然；尽量避免主从句同时用\"würden+动词\"——最地道的说法是 Wenn du nicht arbeitetest, würden wir ins Kino gehen。\"本可以/本应该/本想\"表与过去相反的假设，必须用\"haben 的二虚 + 情态动词\"。易错：Wenn du würdest kommen 是错的，应为 Wenn du kommen könntest；虚拟句也要遵守尾语序。\n\n🇬🇧 英语对照：英语 If I were you；德语 Wenn ich du wäre，二虚表假设，路数一样。",
+  "table": [
+   [
+    "动词",
+    "第二虚拟式"
+   ],
+   [
+    "sein",
+    "wäre"
+   ],
+   [
+    "haben",
+    "hätte"
+   ],
+   [
+    "werden",
+    "würde"
+   ],
+   [
+    "können",
+    "könnte"
+   ],
+   [
+    "müssen",
+    "müsste"
+   ],
+   [
+    "kommen",
+    "käme（或 würde kommen）"
+   ]
+  ],
+  "examples": [
+   [
+    "Würden Sie bitte hereinkommen?",
+    "请进。（礼貌请求）"
+   ],
+   [
+    "Wenn das Wetter nur besser wäre.",
+    "要是天气好一点就好了。（愿望）"
+   ],
+   [
+    "Wenn du ein Junge wärst, könnten wir zusammen in den Urlaub gehen.",
+    "如果你是男孩，我们就能一起去度假了。（假设）"
+   ],
+   [
+    "Wenn du nicht arbeitetest, würden wir ins Kino gehen.",
+    "如果你不工作，我们就去看电影了。（避免双 würden）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M11-01",
+  "id": "wortstellung2",
+  "cat": "jufa",
+  "title": "语序（中高级篇）",
+  "titleDe": "Wortstellung (B)",
+  "explain": "基本准则：先说不重要的/旧的信息，后说重要的/新的信息；句首第一位是最重要的强调位（变位动词占第二位除外）；主语不在第一位时必须紧跟变位动词。最常用语序：代词宾语 → 状语和确指（或带物主人称代词）的名词宾语 → 不确指（泛指/零冠词）名词宾语 → 表示方向的状语 → 介词宾语。两个宾语：代词在名词前；都是代词则四格在三格前（Sie hat es ihm gegeben），es 缩写成 's 时例外；都是名词则三格在四格前（Sie hat Thomas das Buch gegeben）。多个同等重要的状语按\"态度 → 时间 → 原因 → 独立地点 → 方式 → 补充说明动词的地点\"排列——这是对 A1 的 TMP 的扩展而非推翻。状语与确指名词宾语顺序不固定，更重要的成分放后面。sich 一般被认为比普通人称代词更不重要，主语是名词且不在第一位时 sich 常放主语前面。口语倾向把代词尽量往前放，代词宾语可放名词主语前面，但不包括介词宾语。\"语法是死的、语言是活的\"，文学/新闻可能打破规则把重要的成分往后放。\n\n🇬🇧 英语对照：英语语序相对固定；德语中场是\"信息重要性\"的竞技场，越重要越靠后。",
+  "table": [
+   [
+    "位置",
+    "放什么",
+    "例子"
+   ],
+   [
+    "中场前",
+    "代词宾语",
+    "Ich gebe es dir."
+   ],
+   [
+    "中场中",
+    "状语 + 确指宾语",
+    "Ich gebe dir das Buch heute."
+   ],
+   [
+    "中场后",
+    "介词宾语",
+    "Ich denke an dich."
+   ]
+  ],
+  "examples": [
+   [
+    "Ich gehe morgen ins Kino.",
+    "我明天去看电影。"
+   ],
+   [
+    "Sie hat ihm das Buch gegeben.",
+    "她把书给了他。（代词宾语前）"
+   ],
+   [
+    "Sie hat es Thomas gegeben.",
+    "她把它给了 Thomas。（双代词四格在前）"
+   ],
+   [
+    "Karl wollte seine Freundin schon früh anrufen.",
+    "Karl 想尽早给女朋友打电话。（强调尽早）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M11-02",
+  "id": "dativ_verben",
+  "cat": "dongci",
+  "title": "只支配第三格的动词",
+  "titleDe": "Verben mit Dativ",
+  "explain": "四类只能支配三格的动词：①表\"发生\"的动词（geschehen、passieren、vorkommen、bevorstehen…），主语通常是物/事件；②带 zu-、nach-、wider-、bei-、ent-、entgegen- 前缀的动词（zuhören、zustimmen、beitreten、entsprechen、widersprechen…）；③主语是物、宾语是人，表想到/记起/遗忘/感觉/喜欢的动词（schmecken、gefallen、fehlen、einfallen、einleuchten…）；④表\"有利/不利\"的动词（helfen、danken、gratulieren、schaden、drohen、nutzen…）。理解框架：第一类可理解为\"对他来说发生了…\"（对谁而言），主语是物；其他类是固定搭配，英语思维易误用四格，需死记。例外：个别前缀动词有时可支配四格；verzeihen 宽恕\"人\"用四格。glauben 三用法：物作四格（Das glaubst du doch selbst nicht）、人作三格（Niemand wollte ihm glauben）、an + 四格表更深的信念（Ich glaube an ihn，类似 believe in 与 believe 的区别）；vertrauen、trauen 支配的人也是三格。易错点：\"我想你\"=Du fehlst mir；bevorstehen 的助动词是 haben；widersprechen 永远三格。etwas/alles/nichts 后形容词名词化：etwas/nichts 按中性单数零冠词（etwas Wunderbares），alles 按中性单数定冠词（alles Wunderbare）。\n\n🇬🇧 英语对照：英语 help sb 无介词；德语 helfen + 三格，三格动词连格一起背。",
+  "table": [
+   [
+    "类别",
+    "动词",
+    "例子"
+   ],
+   [
+    "发生",
+    "geschehen / gelingen",
+    "Es geschieht mir oft."
+   ],
+   [
+    "前缀动词",
+    "zuhören / widersprechen",
+    "Ich höre dir zu."
+   ],
+   [
+    "感觉评价",
+    "gefallen / wehtun",
+    "Das gefällt mir."
+   ],
+   [
+    "人际",
+    "helfen / gratulieren",
+    "Ich helfe dir."
+   ]
+  ],
+  "examples": [
+   [
+    "Wie kann ich Ihnen helfen?",
+    "我能帮您什么？（helfen+三格）"
+   ],
+   [
+    "Sie ähnelt ihrer Mutter.",
+    "她长得像她妈妈。（ähneln+三格）"
+   ],
+   [
+    "Die Arbeit gefällt mir.",
+    "我喜欢这份工作。（gefallen+三格）"
+   ],
+   [
+    "Meine Eltern hören mir auch nie zu.",
+    "我父母也从不听我的。（zuhören+三格）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M11-03",
+  "id": "artikel_pronomen",
+  "cat": "mingci",
+  "title": "冠词作代词",
+  "titleDe": "Artikel als Pronomen",
+  "explain": "定冠词作代词：与关系代词同形，只在二格（dessen/deren）和三格复数（denen）处与普通冠词不同；用于指代上文提过的人或物（Ja, der ist dort）；可加 da 表\"那个\"。deren 可表所属、消除歧义（Sie hat die Frau und deren Freunde getroffen=\"那个女人的朋友们\"）；复数二格作代词可写 deren 或 derer。不定冠词作代词变化：einer/eine/eines（一格中性可用 eins）；不知性别时默认阳性（Keiner von uns）。不定冠词作代词四大用法：①表\"之一\"（einen der Männer）；②表\"某人/有人\"（类似 jemand，但不如 jemand 礼貌）；③作形容词表\"特定的一个\"，首字母不大写；④固定搭配 der eine…der andere…（\"一个…另一个…/一些…另一些…\"）。易错：Die einen singen 中 einen 词尾是 -en（复数定冠词后形容词词尾永远是 -en）；Dieses eine Buch 的 eine 是形容词词尾。andere- 本质上是代词，首字母不大写（Ich will etwas anderes）。\n\n🇬🇧 英语对照：英语 one/ones 作代词；德语 der/die/das 和 einer 直接顶上，还要变格。",
+  "table": [
+   [
+    "作代词",
+    "一格",
+    "三格"
+   ],
+   [
+    "der",
+    "der da",
+    "dem da"
+   ],
+   [
+    "die（复数）",
+    "die da",
+    "denen（特例！）"
+   ],
+   [
+    "einer",
+    "einer von uns",
+    "einem von uns"
+   ]
+  ],
+  "examples": [
+   [
+    "Die sind mir zu teuer.",
+    "那些对我来说太贵了。（定冠词作代词）"
+   ],
+   [
+    "Mein Traum und der meines Bruders.",
+    "我的梦想和我哥哥的。（der 代 Traum）"
+   ],
+   [
+    "Einer muss es tun.",
+    "总得有人做。（einer=某人）"
+   ],
+   [
+    "Die einen singen, die anderen tanzen.",
+    "一些人唱歌，另一些人跳舞。"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M11-04",
+  "id": "tiere",
+  "cat": "mingci",
+  "title": "动物",
+  "titleDe": "Tiere",
+  "explain": "纯词汇课，核心是连冠词一起记：每个单词的冠词（der Hund、die Katze、das Pferd）都要记住，因为复数和属格变化都依赖冠词。多个动物是阳性弱变化名词（der Bär, -en / der Papagei, -en / der Elefant, -en / der Löwe, -n / der Affe, -n），二、三、四格加 -n/-en，与阳性弱变化呼应。复合词拆分记忆：Fledermaus（蝙蝠=飞行鼠）、Eisbär（北极熊=冰熊）、Flusspferd（河马）、Schildkröte（乌龟=盾牌蛤蟆）等，按构词法拆解。发音提示：注意词尾清化（如 Hund 读 [hunt]）。易混辨析：Hase（野兔）vs Kaninchen（家兔）；Frosch（青蛙）vs Kröte（癞蛤蟆）；Maus（老鼠）vs Fledermaus（蝙蝠）。复数加变音的词：Vogel→Vögel、Frosch→Frösche、Wolf→Wölfe、Maus→Mäuse、Gans→Gänse、Kuh→Kühe。性别死记：die Spinne（蜘蛛）、die Biene（蜜蜂）、das Krokodil（鳄鱼）、der Hai（鲨鱼）。这是 A2 高频话题（宠物、动物园、自然），优先掌握常见词及其冠词。\n\n🇬🇧 英语对照：英语 a dog；德语 der Hund，冠词连性一起记，复数变化全靠它。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "der Hund / die Katze",
+    "狗 / 猫"
+   ],
+   [
+    "der Vogel → Vögel",
+    "鸟"
+   ],
+   [
+    "das Pferd / der Fisch",
+    "马 / 鱼"
+   ],
+   [
+    "der Löwe / der Bär",
+    "狮子 / 熊（弱变化）"
+   ],
+   [
+    "die Schlange / die Maus",
+    "蛇 / 老鼠（→Mäuse）"
+   ],
+   [
+    "der Affe",
+    "猴（弱变化）"
+   ]
+  ],
+  "examples": [
+   [
+    "Der Hund bellt.",
+    "狗在叫。"
+   ],
+   [
+    "Die Katze schläft.",
+    "猫在睡觉。"
+   ],
+   [
+    "Das Pferd läuft schnell.",
+    "马跑得快。"
+   ],
+   [
+    "Der Bär ist groß.",
+    "熊很大。"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M12-01",
+  "id": "der_ein_woerter",
+  "cat": "mingci",
+  "title": "der-Wörter 和 ein-Wörter",
+  "titleDe": "der-Wörter / ein-Wörter",
+  "explain": "ein-Wörter（所有物主人称代词+kein）词尾和其后形容词词尾同不定冠词；der-Wörter（dies-、jed-、manch-、solch-、welch-、all-、jen-）同定冠词。记忆口诀：常见的 ein-Wörter 包括所有的物主人称代词和 kein；常见的 der-Wörter 有 dies-、jed-、manch-、solch-、welch-、all-、jen-。二者都可作代词使用，规则分别类似于不定冠词/定冠词作代词（Bei uns kennt jeder jeden）。易错：der-Wörter 作限定词还是代词，二格词尾都一样（dieses/dieser），不像定冠词作代词要变为 dessen/deren——这一点和定冠词作代词不同。der-Wörter 二格作代词现代德语很少用（太书面），口语 Ich bedarf dieses 会被说成 Ich brauche dieses。alles vs alle：alles 表\"所有事情\"，alle 表\"所有人\"；manch- 后名词省略时非人东西一律中性 manches。andere- 本质上是代词，首字母不大写。Döner mit allem 用 allem 单数因为\"食物\"概念不可数。\n\n🇬🇧 英语对照：英语 this/every 只有一套；德语 der-Wörter 和 ein-Wörter 各跟一套冠词变格。",
+  "table": [
+   [
+    "类别",
+    "成员",
+    "变格路线"
+   ],
+   [
+    "ein-Wörter",
+    "mein-, dein-, kein-…",
+    "走不定冠词路线"
+   ],
+   [
+    "der-Wörter",
+    "dies-, jed-, welch-, all-…",
+    "走定冠词路线"
+   ],
+   [
+    "all-",
+    "alles（事情）/ alle（人）",
+    "不可数 vs 可数"
+   ]
+  ],
+  "examples": [
+   [
+    "Dieser Kaffee ist teuer.",
+    "这咖啡很贵。"
+   ],
+   [
+    "Welche anderen Sprachen sprichst du?",
+    "你还会说哪些语言？"
+   ],
+   [
+    "Bei uns kennt jeder jeden.",
+    "在我们这儿人人都认识。（jeder 作代词）"
+   ],
+   [
+    "Alles klar.",
+    "都清楚了。（alles=所有事）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M12-02",
+  "id": "kriegen_passiv",
+  "cat": "dongci",
+  "title": "kriegen / bekommen 的被动",
+  "titleDe": "bekommen-Passiv",
+  "explain": "特殊被动：口语/非正式书面语中 bekommen/kriegen/erhalten 可引导被动，把原本的三格间接宾语变为主格（Mein Bruder bekommt das Buch geschenkt）；不同于 werden 被动只有四格才能变主语。适用动词特点：都让三格宾语因动作\"得到/获得\"了什么（schenken、überreichen、auszahlen、zeigen、gratulieren、helfen、widersprechen）；schenken 可以但 geben 不行。ähneln、begegnen、gefallen、gehören、schaden 只有三格宾语但无直观动作，不能用 kriegen/bekommen 引导被动。kriegen 和 bekommen 在此用法完全可以互换；erhalten 非常少见。对应英语 \"have/get sth done\"：强调主语没亲自做（Sie kriegte ihren Wagen repariert=她找人修好了车）。主语对应四格的两种情况：①双宾语动词（如 lehren）；②对英语 have sth done 的直译，极口语化，书面语应当避免。南方口语中 gehören 可引导被动=应该被做（Der Typ gehört eingesperrt=那个家伙应该被关起来）。用被动即因发出者不重要而省略发出者。\n\n🇬🇧 英语对照：英语 He got his car repaired；德语 Sie kriegte ihren Wagen repariert，kriegen 被动一一对应。",
+  "table": [
+   [
+    "结构",
+    "例子",
+    "含义"
+   ],
+   [
+    "bekommen + 过去分词",
+    "Er bekommt das Auto repariert.",
+    "他的车被修了"
+   ],
+   [
+    "kriegen + 过去分词",
+    "Er kriegt das Geld überwiesen.",
+    "他收到汇款"
+   ],
+   [
+    "gehören + 过去分词",
+    "Der Wagen gehört repariert.",
+    "这车该修了"
+   ]
+  ],
+  "examples": [
+   [
+    "Mein Bruder kriegt das Buch von mir geschenkt.",
+    "我弟弟从我这儿获赠这本书。（三格变主语）"
+   ],
+   [
+    "Sie bekam gratuliert.",
+    "她收到了祝贺。"
+   ],
+   [
+    "Sie kriegte ihren Wagen repariert.",
+    "她找人修好了车。（=have sth done）"
+   ],
+   [
+    "Der Typ gehört eingesperrt.",
+    "那家伙应该被关起来。（南方口语）"
+   ]
+  ],
+  "level": "A2"
+ },
+ {
+  "num": "M13-01",
+  "id": "all_alle",
+  "cat": "pron",
+  "title": "all / alle / alles",
+  "titleDe": "all-, alle, alles",
+  "explain": "all-/alle/alles 的用法总结。① all- 作限定词时词尾与 dies- 一致，其后形容词用弱变化（把 all- 当定冠词看）。② 不带词尾的 all 可直接跟在定冠词或其他限定词前（all das、all die Schüler、all mein Geld），与带词尾形式含义无差别。③ 带词尾的 all- 也可放在限定词前（alle die deutschen Bücher），但在 solch- 前必须加词尾（Alle solchen Frauen…）。④ 与人称代词搭配时 all- 一般紧跟代词，主格时可分开，分开与否影响\"全部\"的强调强度（Sie alle sind gekommen 语气更强）。⑤ 带词尾的 all- 可放在复数名词后作状语（Die Kinder spielen alle im Garten），口语中也可用于单数名词（Das Brot ist alles trocken）。⑥ sein + alles + 复数名词是固定结构，相当于英语 nothing but，表\"不过都是……而已\"（Das sind alles Lügen）。⑦ ganz 含义近似 all- 但位置不同：被夹在限定词和名词中间；单数集合名词、时间名词、地理名称只能用 ganz（die ganze Familie）。⑧ alles/nichts/etwas/vieles/weniges 后的形容词必须名词化且为中性词尾（alles Wichtige），alles/vieles/weniges 相当于定冠词。\n\n🇬🇧 英语对照：英语 all 无词尾；德语 all-/alle/alles 跟着 dies- 的词尾走，规则整齐。",
+  "table": [
+   [
+    "用法",
+    "例子"
+   ],
+   [
+    "作定语",
+    "alle meine Freunde"
+   ],
+   [
+    "与代词连用",
+    "wir alle / bei uns allen"
+   ],
+   [
+    "alles",
+    "Alles ist gut."
+   ]
+  ],
+  "examples": [
+   [
+    "Alle kleinen Kinder spielen gern.",
+    "小孩子都贪玩。"
+   ],
+   [
+    "Ich habe all das schlechte Wetter in Deutschland erfahren.",
+    "我经历过德国所有的坏天气。（all+定冠词）"
+   ],
+   [
+    "Das ist unser aller Hoffnung.",
+    "这是我们所有人的希望。"
+   ],
+   [
+    "Das sind alles Lügen.",
+    "这些不过都是谎言而已。（sein+alles）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M13-02",
+  "id": "beide",
+  "cat": "pron",
+  "title": "beide / beides",
+  "titleDe": "beide, beides",
+  "explain": "beide/beides 的用法总结。① beide 指代两个\"同样\"的事物，谓语用复数；beides 指代两个\"不同\"的事物，谓语用单数（Beide schmecken gut vs Beides ist lecker）。② 指代\"两个人\"时永远用 beide，可在前面加 alle 强调（Alle beide sind gekommen）。③ beide 作限定词时语法作用相当于复数定冠词，其后形容词弱变化（beide neuen Bücher）。④ beide 跟在其他限定词后作普通形容词（seine beiden Brüder），此时定冠词有\"强调整体性\"效果（Die beiden Kinder = 那两个孩子在一起，而 Beide Kinder spielen 只是\"都在玩\"）。⑤ beide 与人称代词连用（wir beide/beiden）时，紧跟代词则 beide/beiden 皆可，分开则只能用 beide。⑥ 英语 \"both A and B\" 不能直译为 beide，要用 sowohl … als (auch) …；对应\"二选一\"用 entweder … oder …，对应\"neither nor\"用 weder … noch …。⑦ 易错：beide 作限定词后形容词词尾是弱变化，不要按强变化加词尾。\n\n🇬🇧 英语对照：英语 both 通吃；德语 beide（同样两样）vs beides（不同两样），谓语数不同。",
+  "table": [
+   [
+    "用法",
+    "例子"
+   ],
+   [
+    "作代词",
+    "Beide sind gekommen."
+   ],
+   [
+    "作限定词",
+    "die beiden Kinder"
+   ],
+   [
+    "与代词连用",
+    "wir beide / uns beiden"
+   ],
+   [
+    "两个都",
+    "sowohl…als auch"
+   ]
+  ],
+  "examples": [
+   [
+    "Beides ist lecker.",
+    "两样都好吃。（不同事物，谓语单数）"
+   ],
+   [
+    "Alle beide sind gekommen.",
+    "两个人全都来了。（指人永远 beide）"
+   ],
+   [
+    "Ich habe beide neuen Bücher gekauft.",
+    "两本新书我都买了。（后形容词弱变化）"
+   ],
+   [
+    "Ich spreche sowohl Englisch als auch Deutsch.",
+    "我英语和德语都会说。（both A and B）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M13-03",
+  "id": "jemand",
+  "cat": "pron",
+  "title": "jemand / niemand",
+  "titleDe": "jemand, niemand",
+  "explain": "jemand（某人）/niemand（没人）的用法总结。① 变格：二格 jemandes/niemandes（罕见，常用 von jemandem 代替），三/四格可变可不变（jemand/jemandem、jemand/jemanden）。② 其他代词回指 jemand/niemand 时用阳性单数形式（Niemand, der es weiß…）。③ 口语中 einer/wer 可替代 jemand，keiner 替代 niemand，变格规律同 diese-（作代词时词尾即定冠词词尾）。④ jemand/niemand 后接形容词时，三/四格的 jemand/niemand 一般不变格，形容词名词化，词尾可用 -es，或三格 -em、四格 -en（jemand Fremdes/em）。⑤ 后接 anders 时 jemand/niemand 通常不变格，anders 首字母不大写（jemand anders）；南德口语给 jemand/niemand 加词尾，但 jemander/niemander 不被标准德语认可。⑥ 易错：jemand/niemand 本身无复数形式，\"一些人\"要用 einige/manche（Ich habe mit einigen Fremden gesprochen）。\n\n🇬🇧 英语对照：英语 someone/no one 不变格；德语 jemand 三四格可变可不变，口语常用 einer/keiner 代替。",
+  "table": [
+   [
+    "格",
+    "jemand",
+    "niemand"
+   ],
+   [
+    "一格",
+    "jemand",
+    "niemand"
+   ],
+   [
+    "三格",
+    "jemandem",
+    "niemandem"
+   ],
+   [
+    "四格",
+    "jemanden",
+    "niemanden"
+   ]
+  ],
+  "examples": [
+   [
+    "Jemand muss das Geschirr abwaschen.",
+    "得有人把碗刷了。"
+   ],
+   [
+    "Ich habe jemand / jemanden gesehen.",
+    "我看见了某个人。（三四格可变可不变）"
+   ],
+   [
+    "Niemand, der es weiß, hat das Unglück überlebt.",
+    "没人活了下来，除了知道这事的人。（回指阳性单数）"
+   ],
+   [
+    "Jemand Fremdes ist gekommen.",
+    "某个陌生人来了。（形容词名词化）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M13-04",
+  "id": "irgend",
+  "cat": "pron",
+  "title": "irgend- 前缀",
+  "titleDe": "irgend-",
+  "explain": "irgend- 前缀的用法总结。① irgend- 表说话人对内容没把握/不确定，相当于英语 some-；irgendetwas/irgendwas = 某物、某事。② irgendwann = 某个（不知什么）时候；irgendwie = 以某种方式；irgendwo/irgendwohin/irgendwoher = 某地/去某地/从某地来。③ irgendeine- 作限定词无复数、词尾同不定冠词；作代词时词尾同定冠词（Irgendeiner verletzt sich immer）。④ irgendwelche- 补充 irgendeine-，用于抽象/不可数名词或复数名词，词尾同 welche-（irgendwelche Probleme）。⑤ irgendjemand/irgendwer ≈ irgendeine- 作代词，分别按 jemand/wer 变格；irgend so ein-（复数 irgend solche）= 任何一个这样的……。⑥ 针对性强弱：irgend- 系列比 jemand- 系列针对性更弱（Irgendeiner verletzt sich immer vs Jemand verletzt sich immer）。⑦ irgend 偶可作 irgendwie 用（wenn es irgend geht），但非常罕见。\n\n🇬🇧 英语对照：英语 some- 系列；德语 irgend- 系列=更不确定、针对性更弱的 some-。",
+  "table": [
+   [
+    "词",
+    "含义",
+    "例子"
+   ],
+   [
+    "irgendjemand",
+    "某人",
+    "Irgendjemand ruft an."
+   ],
+   [
+    "irgendwann",
+    "某个时候",
+    "Komm irgendwann vorbei!"
+   ],
+   [
+    "irgendwo",
+    "某处",
+    "Er ist irgendwo."
+   ],
+   [
+    "irgendwelche-",
+    "一些（复数）",
+    "irgendwelche Fragen"
+   ]
+  ],
+  "examples": [
+   [
+    "Versteht er irgendetwas / irgendwas vom Wein?",
+    "他到底懂不懂葡萄酒？"
+   ],
+   [
+    "Es ist leider irgendwann kaputtgegangen.",
+    "很不幸不知什么时候它被弄坏了。"
+   ],
+   [
+    "Du musst das irgendwie machen.",
+    "你必须想办法把这件事完成。"
+   ],
+   [
+    "Irgendeiner verletzt sich immer.",
+    "总是有人受伤。（针对性弱于 Jemand…）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M13-05",
+  "id": "ander",
+  "cat": "pron",
+  "title": "ander / anders / verschieden",
+  "titleDe": "ander-, anders, verschieden",
+  "explain": "ander/andere/anders 与 verschieden/unterschiedlich 的区别。① anders = 与外部参照物\"不同/其他\"；verschieden/unterschiedlich = 内部\"多种多样、彼此不同\"，二者基本同义。② anders 作表语带 -s（ist anders），作定语时去 s 再加形容词词尾（andere Biere）。③ verschieden/unterschiedlich 既可作表语也可作定语；一定要区分时，unterschiedlich 画面感更\"混乱/不成熟\"（verschiedene Ideen 显想法多而厉害，unterschiedliche Ideen 显想法杂乱）。④ anders 除\"不同的\"外还有\"其他的\"之义（andere Sachen = 其他方法）。⑤ 易错：比较对象在句外/上文时用 anders（如 Deutschland ist anders als die alte Heimat），同一范围内部比较用 verschieden/unterschiedlich（Maria und ihre Schwester sind sehr verschieden=姐妹俩之间差别大，而 sind sehr anders=和上文提到的某些人相比不同）。\n\n🇬🇧 英语对照：英语 different 通吃；德语 anders（与外部比）vs verschieden（内部各不同），看参照物在哪。",
+  "table": [
+   [
+    "词",
+    "含义",
+    "例子"
+   ],
+   [
+    "anders（表语）",
+    "不一样（横向对比）",
+    "Deutschland ist anders."
+   ],
+   [
+    "andere-（定语）",
+    "不同的",
+    "andere Biere"
+   ],
+   [
+    "verschieden",
+    "多种多样的",
+    "verschiedene Probleme"
+   ]
+  ],
+  "examples": [
+   [
+    "In der zweiten Bar habe ich andere Biere probiert.",
+    "第二家酒吧的啤酒和第一家不同。（外部比较）"
+   ],
+   [
+    "In der zweiten Bar habe ich verschiedene Biere probiert.",
+    "第二家酒吧内部好几种不同的啤酒。（内部比较）"
+   ],
+   [
+    "Deutschland ist anders als die alte Heimat.",
+    "德国和老家不同。"
+   ],
+   [
+    "Maria und ihre Schwester sind sehr verschieden.",
+    "Maria 和她姐姐差别很大。（姐妹俩之间）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M14-01",
+  "id": "dativ_e",
+  "cat": "ge",
+  "title": "三格词尾 -e（旧式）",
+  "titleDe": "Dativ-e",
+  "explain": "第三格时强变化的名词词尾 -e。① 历史遗留：20 世纪中叶前德语中性/阳性强变化名词三格加 -e，现代德语已基本抛弃，仅保留在固定搭配中。② 高频必背：nach Hause（回家）/zu Hause（在家）、im Jahr(e) XXXX、im Lauf(e)+二格、im Fall(e)+二格/dass、in diesem Sinn(e)。③ in gewissem Maße（在某种程度上）、bis zu einem gewissen Grad(e)、im Grunde（= eigentlich，基本上）。④ jemanden zurate/zu Rate ziehen（咨询某人）、zum Zug(e) kommen（获得机会）、Dat zum Hals(e) heraushängen（无法忍受）、Dat im Hals(e) stecken bleiben（说不出话）。⑤ 俗语 das Kind mit dem Bade ausschütten（因小失大/因噎废食，字面\"把孩子和洗澡水一起倒掉\"）。⑥ 易错：lassen 句中\"Die Worte bleiben ihm im Halse stecken\" 的 die Worte 是主语（一格），加 lassen 后才变为四格宾语。⑦ im Falle von Katastrophen 中 von+三格是代替无冠词名词二格的手段。\n\n🇬🇧 英语对照：英语无此现象；德语三格 -e 是古德语残留，只在固定搭配里活着，整句背。",
+  "table": [
+   [
+    "固定表达",
+    "含义"
+   ],
+   [
+    "zu Hause",
+    "在家"
+   ],
+   [
+    "nach Hause",
+    "回家"
+   ],
+   [
+    "im Falle",
+    "万一"
+   ],
+   [
+    "im Laufe",
+    "在…过程中"
+   ],
+   [
+    "im Grunde",
+    "基本上"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich muss nach Hause gehen.",
+    "我必须得回家了。"
+   ],
+   [
+    "Ich arbeite zu Hause.",
+    "我在家工作。"
+   ],
+   [
+    "Das Prinzip gilt auch im Falle von Katastrophen.",
+    "这条原则在灾难情况下也适用。"
+   ],
+   [
+    "Deine Lügen hängen mir zum Halse raus!",
+    "我没办法再忍受你的谎言了！"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M14-02",
+  "id": "genitiv_praep",
+  "cat": "ge",
+  "title": "支配第二格的介词",
+  "titleDe": "Präpositionen mit Genitiv",
+  "explain": "支配第二格的介词。① 四大常用二格介词：statt/anstatt（而不是）、trotz（尽管）、während（在……期间）、wegen（因为）。② statt/anstatt 默认是介词，作连词（= und nicht）时后接成分的格与被比较对象一致；后可接 zu 不定式或 dass 从句（前后主语须一致）。③ während 作介词表\"期间\"，注意 during the day/night 习惯说法是 am Tag/in der Nacht 而非 während；während 也可引导从句表\"同时/对比\"（≈ while），文学用 indes/indessen、法律用 wohingegen 代替。④ wegen 一般前置，极书面可后置（der Schafe wegen）；口语 von wegen+三格 未被标准德语接受；单独成句 \"Von wegen!\" 表反对（没门儿！）。⑤ 八个空间二格介词：außerhalb/innerhalb/oberhalb/unterhalb/beidseits/diesseits/jenseits/unweit，非书面场合可用 von+三格替换（außerhalb der Stadt = außerhalb von der Stadt）。⑥ 书面介词群（广告/媒体）：anlässlich、infolge、mittels、namens、zwecks、aufgrund、trotz 类推等，需长期积累。⑦ 现实提醒：口语及瑞士书面语中四大介词常被用成三格，母语者也常不知其支配二格，正式写作仍须用二格。\n\n🇬🇧 英语对照：英语介词不带格；德语 statt/trotz/während/wegen 支配二格，正式写作是硬规则。",
+  "table": [
+   [
+    "介词",
+    "含义",
+    "例子"
+   ],
+   [
+    "statt/anstatt",
+    "代替",
+    "statt des Autos"
+   ],
+   [
+    "trotz",
+    "尽管",
+    "trotz des Regens"
+   ],
+   [
+    "während",
+    "在…期间",
+    "während des Essens"
+   ],
+   [
+    "wegen",
+    "因为",
+    "wegen des Staus"
+   ],
+   [
+    "innerhalb",
+    "在…之内",
+    "innerhalb der Stadt"
+   ]
+  ],
+  "examples": [
+   [
+    "Statt eines Fernsehers hat sie sich eine neue Stereoanlage gekauft.",
+    "她买了音响，而没有买电视机。"
+   ],
+   [
+    "Wir sind am Sonntag trotz des starken Regens nach Eulbach gewandert.",
+    "我们周日冒着大雨去 Eulbach 徒步了。"
+   ],
+   [
+    "Sie hat während der Vorlesung geschlafen.",
+    "她在讲座期间睡着了。"
+   ],
+   [
+    "Sie wohnt außerhalb der Stadt.",
+    "她住在城外。"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M14-03",
+  "id": "modal_perfekt",
+  "cat": "dongci",
+  "title": "情态动词的现在完成时",
+  "titleDe": "Perfekt der Modalverben",
+  "explain": "情态动词的现在完成时。① 情态动词过去分词：gesollt/gedurft/gekonnt/gemocht/gemusst/gewollt，助动词一律 haben。② 核心规则：句末情态动词为过去分词、且其前还有另一动词原形时，过去分词还原为动词原形（Ich habe Deutsch sprechen können，不能说 gekonnt）——这就是\"双原形\"结构。③ 服从尾语序的从句中，haben 放在两个动词原形前面（dass er Deutsch hat sprechen können）。④ 语义：Ich habe Deutsch gekonnt 暗示\"现在已经不会了\"，是完成时\"曾经拥有\"的典型含义。⑤ 易错：无另一动词原形时保留过去分词（Ich habe Deutsch gekonnt）；有则必须用双原形结构。\n\n🇬🇧 英语对照：英语 I have been able to；德语 Ich habe sprechen können，过去分词退回原形。",
+  "table": [
+   [
+    "结构",
+    "例子"
+   ],
+   [
+    "haben + 原形 + 情态原形",
+    "Er hat nicht kommen dürfen."
+   ],
+   [
+    "情态单独作谓语",
+    "Das hat er nicht gedurft."
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe Deutsch gekonnt.",
+    "我曾经会德语（现在已经不会了）。"
+   ],
+   [
+    "Ich habe Deutsch sprechen können.",
+    "我曾经会说德语。（双原形）"
+   ],
+   [
+    "Ich habe meine Kinder schon immer zweisprachig erziehen wollen.",
+    "我一直想把孩子培养成双语。"
+   ],
+   [
+    "Er sagt, dass er Deutsch hat sprechen können.",
+    "他说他曾经会说德语。（从句 haben 前置）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M14-04",
+  "id": "lassen",
+  "cat": "dongci",
+  "title": "lassen 的用法总结",
+  "titleDe": "lassen",
+  "explain": "lassen 的用法总结。① 基本义\"算了/什么也不做\"（≈ machen 反义词）：Lass das!（别这么做！）/ Lass es.（es 比 das 针对性弱，表\"还是算了吧\"）。② \"让某物保持某种状态\"：Ich lasse das Bild, wie es ist. / Ich lasse meine Haare wachsen.（留长发）/ lass mir was übrig（给我留点剩饭）。③ \"允许\"：Lass mich rein.（让我进去。）/ Ich lasse mich nicht verarschen.（我不允许自己被欺负。）④ \"命令\"与\"建议/邀请\"：Der König lässt seine Soldaten kommen.（国王命令士兵来。）/ Lass uns ein Bier trinken.（我们去喝一杯吧。）⑤ \"让别人做/使……\"：Ich ließ mein Fahrrad reparieren.（我找人修了自行车。）/ Ich lasse mich scheiden.（我要离婚。）/ sich Aspirin verschreiben lassen（让医生开药）。⑥ lassen + sich + 动词原形表被动，主语多为物（Das Problem lässt sich leicht lösen = Das Problem kann leicht gelöst werden）；形式主语 es 不在句首时可省略（Darüber lässt (es) sich streiten）。⑦ 完成时构成类情态动词：双原形（hat übersetzen lassen），从句中 haben 前置（…dass uns der Lehrer den Text hat übersetzen lassen）。⑧ 易错：Mein Auto hat sich reparieren lassen 不地道，应说 Ich habe mein Auto reparieren lassen。\n\n🇬🇧 英语对照：英语 let/have/make 分工；德语 lassen 一词包办\"让/使/允许/算了\"，语境定含义。",
+  "table": [
+   [
+    "用法",
+    "例子"
+   ],
+   [
+    "允许",
+    "Der Lehrer lässt die Kinder spielen."
+   ],
+   [
+    "命令",
+    "Er lässt die Kinder bleiben."
+   ],
+   [
+    "建议",
+    "Lass uns gehen!"
+   ],
+   [
+    "使役",
+    "sich die Haare schneiden lassen"
+   ],
+   [
+    "被动意义",
+    "Die Tür lässt sich nicht öffnen."
+   ]
+  ],
+  "examples": [
+   [
+    "Lass mich mal in Ruhe!",
+    "让我安静一下！"
+   ],
+   [
+    "Ich lasse mir die Rechnung bringen.",
+    "我让服务员把账单拿过来。"
+   ],
+   [
+    "Lass uns ein Bier trinken.",
+    "我们去喝一杯啤酒吧。"
+   ],
+   [
+    "Das Problem lässt sich leicht lösen.",
+    "这个问题很容易解决。（lassen 被动）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M14-05",
+  "id": "partizip_adj",
+  "cat": "xingrong",
+  "title": "分词作形容词",
+  "titleDe": "Partizip als Adjektiv",
+  "explain": "分词作形容词。① 第一分词（动词原形+d）表\"主动、正在进行\"（德语无现在进行时，故多作形容词/副词）：das kochende Wasser（正在沸腾的水）。② 第二分词作形容词时，及物动词表被动、不及物动词表\"已经发生\"（der verlorene Mantel 丢掉的外套；angekommen=已到达，无被动义）。③ 分词作形容词与普通形容词无异：加正常词尾、可作副词、可名词化（der Angestellte 雇员、der/die Bekannte 熟人、der Fortgeschrittene 进阶者）。④ 瞬时动作的过去分词可强调该动作先于主句动作发生（von seinen Freunden gewarnt…verließ 先警告、后逃离）。⑤ 第一分词 + zu 表被动且强调\"必要性\"（ein nicht zu übersehender Fehler 无法被忽视的错误；anzuerkennende Leistung 必须被承认的成就；Auszubildender 学徒），词尾按普通形容词加。⑥ 德语分词短语可向左展开成带完整动宾的结构（die um ihre Arbeitsplätze fürchtenden Stahlarbeiter），英语只能用向右的定语从句；多见于新闻/公文，口语少用。⑦ 易错：Den Schildern folgend, fanden sie das Krankenhaus 中 folgend 是状语不是定语（句已有主谓宾，不能再加名词短语）。\n\n🇬🇧 英语对照：英语 boiling water；德语 das kochende Wasser，分词作形容词路数一样，还能向左展开。",
+  "table": [
+   [
+    "分词",
+    "含义",
+    "例子"
+   ],
+   [
+    "第一分词",
+    "主动/进行",
+    "die weinende Frau"
+   ],
+   [
+    "第二分词（不及物）",
+    "完成/主动",
+    "der angekommene Zug"
+   ],
+   [
+    "第二分词（及物）",
+    "被动",
+    "der verlorene Schlüssel"
+   ],
+   [
+    "第一分词+zu",
+    "被动必要",
+    "nicht zu übersehender Fehler"
+   ]
+  ],
+  "examples": [
+   [
+    "Den Schildern folgend, fanden sie das Krankenhaus.",
+    "跟着路标找到了医院。（folgend 作状语）"
+   ],
+   [
+    "Er verletzte sich mit dem kochenden Wasser.",
+    "他被沸腾的水烫伤了。"
+   ],
+   [
+    "Sie hat meinen verlorenen Mantel gefunden.",
+    "她找到了我丢掉的外套。"
+   ],
+   [
+    "ein nicht zu übersehender Fehler",
+    "一个无法被忽视的错误。（第一分词+zu 表必要）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M14-06",
+  "id": "infinitiv_verben",
+  "cat": "dongci",
+  "title": "搭配动词原形的动词",
+  "titleDe": "Verben mit Infinitiv",
+  "explain": "搭配动词原形的动词。① 可接动词原形的动词群：情态动词、lassen、感官动词（sehen/hören/fühlen/spüren）、tun、gehen/kommen/fahren/schicken、bleiben/finden/haben（+方位动词）、heißen/helfen/lehren/lernen/nennen。② 只有情态动词、lassen、感官动词三类的过去分词用动词原形代替，且从句中助动词 haben 置于两原形前；其余动词过去分词不变、从句变位动词永远居末。③ tun + 原形表口语强调，书面禁用；口语 sein 过去式后可直接加原形（Ich war heute Morgen schwimmen = Ich bin schwimmen gegangen）。④ bleiben/finden/haben 后接表方位的动词原形（sitzen/stehen/liegen/wohnen）；stehen bleiben（停留）/sitzen bleiben（留级）已成固定搭配。⑤ heißen（命令）/helfen/lehren/lernen 后可接原形或 zu 不定式；heißen（意味着）/nennen 后只能接原形。⑥ 固定搭配：sich schlafen legen（Ich legte mich schlafen = 我去睡觉了）。\n\n🇬🇧 英语对照：英语 see sb do；德语 Ich habe ihn kommen sehen，感官动词后接原形，路数一样。",
+  "table": [
+   [
+    "动词",
+    "结构",
+    "例子"
+   ],
+   [
+    "sehen/hören",
+    "四格+原形",
+    "Ich habe ihn kommen sehen."
+   ],
+   [
+    "bleiben",
+    "方位动词",
+    "sitzen bleiben"
+   ],
+   [
+    "helfen/lernen",
+    "原形或zu不定式",
+    "Er hilft mir tragen."
+   ],
+   [
+    "heißen（意味着）",
+    "只能原形",
+    "Das heißt arbeiten."
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe ihn ins Zimmer kommen sehen.",
+    "我看见他进了房间。"
+   ],
+   [
+    "Er tut ja immer noch essen.",
+    "他还在吃呢。（口语强调）"
+   ],
+   [
+    "Kommst du heute schwimmen?",
+    "你今天来游泳吗？"
+   ],
+   [
+    "Er blieb im Zimmer sitzen.",
+    "他一直坐在房间里。"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M15-01",
+  "id": "plusquamperfekt",
+  "cat": "tempus",
+  "title": "过去完成时",
+  "titleDe": "Plusquamperfekt",
+  "explain": "过去完成时。① 构成：haben/sein 的一般过去时 + 过去分词，专用于\"过去的过去\"。② 核心易错：现在完成时与一般过去时含义等价，不要因\"发生在过去\"就滥用过去完成时——只有一个过去时间点时用完成时/过去时即可（Er ist 2000 nach Deutschland umgezogen，不要说 Er war 2000…umgezogen）。③ bevor/nachdem 可用于任何时态，时态选择看句义；不涉及\"过去的过去\"时也可用现在时（Bevor ich anfange, trinke ich noch einen Kaffee）。④ 典型结构：Nachdem…hatte/war…，主句用过去时/完成时，形成\"先完成、后发生\"的先后链（Nachdem er seine Fahrprüfung bestanden hatte, feierte er…）。⑤ 助动词选择沿用完成时规则（sein 用于位移动词等），只是把 haben/sein 换成过去时形式。\n\n🇬🇧 英语对照：英语 past perfect（had done）；德语 hatte/war + 过去分词，专管\"过去的过去\"。",
+  "table": [
+   [
+    "时态",
+    "构成",
+    "例子"
+   ],
+   [
+    "过去完成时",
+    "hatte/war + 过去分词",
+    "hatte gemacht"
+   ],
+   [
+    "现在完成时",
+    "habe + 过去分词",
+    "habe gemacht"
+   ],
+   [
+    "过去时",
+    "动词过去式",
+    "machte"
+   ]
+  ],
+  "examples": [
+   [
+    "Bevor wir das Restaurant aufgemacht haben, hatte ich als Elektriker gearbeitet.",
+    "开餐厅之前，我曾当过电工。"
+   ],
+   [
+    "Nachdem er seine Fahrprüfung bestanden hatte, feierte er die ganze Nacht.",
+    "他通过驾考后，庆祝了一整晚。"
+   ],
+   [
+    "Nachdem er auf dem Bahnhof angekommen war, fuhr er mit dem Taxi nach Hause.",
+    "他到火车站后，打车回家了。"
+   ],
+   [
+    "Er ist 2000 nach Deutschland umgezogen.",
+    "他 2000 年搬到了德国。（单个过去时间点不用过去完成时）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M15-02",
+  "id": "gleich_derselbe",
+  "cat": "pron",
+  "title": "gleich vs derselbe",
+  "titleDe": "gleich, derselbe",
+  "explain": "gleich 和 derselbe 的区别。① gleich = 两个一样的对象；derselbe = 同一个对象，这是根本区别（der gleiche Hut 两顶一样的帽子 vs derselbe Hut 同一顶帽子）。② derselbe 变格：der 部分按定冠词变，selbe 部分按形容词词尾变（mit derselben Tasse）。③ 介词后定冠词可与 selbe 分开并与介词缩合：am selben Tag、beim selben Arzt、zur selben Zeit。④ zur selben Zeit = 同时/同一时刻；zur gleichen Zeit = 不同日期的同一时间，二者不可混同。⑤ 母语者也常混用，如\"Wir arbeiten im gleichen Büro\"规范应为\"im selben Büro\"。⑥ derselbe 可作代词用：Das ist doch ein und dasselbe（还是一样）；Sie ist immer noch dieselbe wie damals（她一点没变）。\n\n🇬🇧 英语对照：英语 the same 含糊；德语 gleich（两样相同）vs derselbe（同一件），分得清清楚楚。",
+  "table": [
+   [
+    "词",
+    "含义",
+    "例子"
+   ],
+   [
+    "gleich",
+    "相似的（两个对象）",
+    "das gleiche Auto"
+   ],
+   [
+    "derselbe",
+    "同一个（同一对象）",
+    "im selben Büro"
+   ],
+   [
+    "介词缩合",
+    "zur selben Zeit",
+    "在同一时间"
+   ]
+  ],
+  "examples": [
+   [
+    "Ist das derselbe Hut wie bei der letzten Party?",
+    "是上次派对上那顶帽子吗？（同一顶）"
+   ],
+   [
+    "Ist das der gleiche Hut wie bei der letzten Party?",
+    "是和上次那顶一样的帽子吗？（两顶）"
+   ],
+   [
+    "Ich trinke immer mit derselben Tasse meinen Kaffee.",
+    "我一直用同一个杯子喝咖啡。"
+   ],
+   [
+    "Wir lesen dasselbe Buch.",
+    "我们读的是同一本书。（轮流读或一起读）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M15-03",
+  "id": "hin_her",
+  "cat": "qita",
+  "title": "表示方向的副词 hin-/her-",
+  "titleDe": "hin-, her-",
+  "explain": "表示方向的副词（hin-/her-）。① 核心逻辑：her- = 朝说话人所在方向（来），hin- = 远离说话人方向（去），这是全部方向副词的核心。② 九个方向副词：herauf/hinauf（上）、herunter/hinunter（下）、herein/hinein（进）、herüber/hinüber（过）、hinterher（跟着）。③ 口语缩略：herauf/hinauf→rauf，herunter/hinunter→runter，herein/hinein→rein，herüber/hinüber→rüber；缩略后不再区分来去。④ hinterher = 跟在后面，后接三格（Otto geht dir hinterher）；注意 gehen 是不及物动词，不能带四格宾语。⑤ 方向副词与可分动词前缀同形但用法不同，学习时注意区分副词独立用法与动词前缀用法。\n\n🇬🇧 英语对照：英语 come/go 表来去；德语 her-/hin- 贴在方向词上，来去方向一目了然。",
+  "table": [
+   [
+    "前缀",
+    "方向",
+    "例子"
+   ],
+   [
+    "her-",
+    "朝向说话人",
+    "herein 进来"
+   ],
+   [
+    "hin-",
+    "远离说话人",
+    "hinaus 出去"
+   ],
+   [
+    "口语缩写",
+    "—",
+    "rein/rüber/runter"
+   ]
+  ],
+  "examples": [
+   [
+    "Otto geht herauf / hinauf.",
+    "Otto 上来 / 上去。（her-=来，hin-=去）"
+   ],
+   [
+    "Otto geht herein / hinein.",
+    "Otto 进来 / 进去。"
+   ],
+   [
+    "Otto geht herunter / runter.",
+    "Otto 下来。（口语缩略）"
+   ],
+   [
+    "Otto geht dir hinterher.",
+    "Otto 跟着你。（hinterher+三格）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M16-17",
+  "id": "abkuerzungen",
+  "cat": "vokabel",
+  "title": "德语常用缩写总结",
+  "titleDe": "Abkürzungen",
+  "explain": "德语常用缩写总结。① 缩写多为首字母缩略，德语缩写一般每个字母后加小点（z. B. / d. h. / ca. / vgl.），纯大写字母词（Kfz/Lkw/Pkw/PC/CD/DVD/WC/WG/SMS）无点。② Kfz/Lkw/Pkw 复数只加 -s（Pkws/Lkws），不加变音；das Abo 复数 das Abos。③ bzw. 与 d. h. 都表解释说明，bzw. 偏\"更准确地说\"，d. h. 偏\"也就是说\"。④ EG/OG/UG 与楼层表述相关，注意奥地利拼写 Erdgeschoß（ß）与德国 Erdgeschoss（ss）差异。⑤ 歌德/德福考纲要求掌握常用缩写，正式写作考试中可直接使用。⑥ der Akku（电池）、der Azubi（学徒）、die SMS 等已完全融入日常口语，属必须掌握的高频词。⑦ vgl. = vergleiche（参见），用于引用（vgl. Abb. S.3）；usw. 列举时前面仍保留 und 连接最后两项（Äpfel, Birnen usw.）。⑧ CH = Confoederatio Helvetica（瑞士联邦，拉丁语）。\n\n🇬🇧 英语对照：英语 e.g./i.e./etc.；德语 z. B./d. h./usw.，一一对应。",
+  "table": [
+   [
+    "缩写",
+    "全称",
+    "中文"
+   ],
+   [
+    "z. B.",
+    "zum Beispiel",
+    "例如"
+   ],
+   [
+    "d. h.",
+    "das heißt",
+    "即"
+   ],
+   [
+    "usw.",
+    "und so weiter",
+    "等等"
+   ],
+   [
+    "bzw.",
+    "beziehungsweise",
+    "即/或者"
+   ],
+   [
+    "ca.",
+    "circa",
+    "大约"
+   ],
+   [
+    "WG",
+    "Wohngemeinschaft",
+    "合租"
+   ],
+   [
+    "EG/OG/UG",
+    "Erdgeschoss…",
+    "底楼/楼上/地下"
+   ],
+   [
+    "vgl.",
+    "vergleiche",
+    "比较"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe das Abo / Abonnement gekündigt.",
+    "我取消了订阅。"
+   ],
+   [
+    "Ich werde vielleicht morgen damit fertig bzw. spätestens übermorgen.",
+    "我也许明天做完，最迟后天。（bzw.=更准确地说）"
+   ],
+   [
+    "Zwölf Kinder, d. h. fast die Hälfte der Klasse, waren krank.",
+    "12 个孩子，也就是说近半个班，生病了。"
+   ],
+   [
+    "Es gab Kuchen, Gebäck, Milch und Kaffee usw.",
+    "有蛋糕、点心、牛奶和咖啡等等。"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M16-18",
+  "id": "b1_verben",
+  "cat": "vokabel",
+  "title": "B1 动词词汇补充",
+  "titleDe": "Verben (B1)",
+  "explain": "B1 动词词汇补充（约 80 个）。① 特点：可分动词多（abmachen、ausmachen、zumachen、anmachen），重点在可分前缀动词的精确含义与搭配。② 反身动词的格是考点：sich anschnallen（四格反身，dich 是直接宾语）vs sich nähern（+三格，Er nähert sich dem Unfallort）。③ 前缀决定反义但不能想当然：an-↔aus-（anmachen/ausmachen），但 anschnallen 的反义是 abschnallen 而非 ausschnallen；einmachen 意思完全不同（密封装瓶）。④ 命令式的口语替代形式：\"宾语+动词原形\"（Die Tablette bitte in Wasser auflösen）无主语，属上级对下级的指令语气，不太礼貌。⑤ 表\"敲门/敲窗\"时 klopfen 是不及物动词，必须加介词 an + 四格（ans Fenster klopfen）。⑥ 近义词辨析靠\"画面感\"：blitzen（闪）比 glänzen（泛光）更刺眼、更突然；näherkommen 强调\"更近了\"的字面差别。⑦ 一词多义：aufheben 既可\"捡起来\"也可\"收好\"；ausmachen 还有\"约定、组成、熄灭\"等多重含义。⑧ helfen 后可接原形或 zu 不定式，两种都对。\n\n🇬🇧 英语对照：英语 phrasal verbs 靠介词副词变义；德语靠可分前缀变义，前缀一换意思全变。",
+  "table": [
+   [
+    "德语",
+    "中文"
+   ],
+   [
+    "ablehnen",
+    "拒绝"
+   ],
+   [
+    "abmachen",
+    "商定、约定"
+   ],
+   [
+    "abonnieren",
+    "订阅"
+   ],
+   [
+    "anlassen",
+    "让……开着（如收音机）"
+   ],
+   [
+    "annähen",
+    "缝上"
+   ],
+   [
+    "sich anschnallen",
+    "系安全带"
+   ],
+   [
+    "aufheben",
+    "捡起、妥善保管"
+   ],
+   [
+    "auflösen",
+    "溶解"
+   ],
+   [
+    "ausmachen",
+    "让……关掉；不介意"
+   ],
+   [
+    "ausmessen",
+    "测量"
+   ],
+   [
+    "(Fieber) messen",
+    "量（体温）"
+   ],
+   [
+    "berechnen",
+    "计算、收取（费用）"
+   ],
+   [
+    "bestrafen",
+    "处罚"
+   ],
+   [
+    "blitzen",
+    "打闪、闪光"
+   ],
+   [
+    "donnern",
+    "打雷、轰隆隆地响"
+   ],
+   [
+    "atmen",
+    "呼吸"
+   ],
+   [
+    "einatmen",
+    "吸气"
+   ],
+   [
+    "ausatmen",
+    "呼气"
+   ],
+   [
+    "festnehmen",
+    "逮捕"
+   ],
+   [
+    "entgegenbringen",
+    "给予、表示"
+   ],
+   [
+    "enttäuschen",
+    "使失望"
+   ],
+   [
+    "erschrecken",
+    "（受到）震惊/吓"
+   ],
+   [
+    "faulenzen",
+    "闲逛、偷懒"
+   ],
+   [
+    "fortsetzen",
+    "继续"
+   ],
+   [
+    "beschließen",
+    "决定"
+   ],
+   [
+    "freihalten",
+    "保持畅通、请客买单"
+   ],
+   [
+    "füttern",
+    "喂食"
+   ],
+   [
+    "grillieren",
+    "烧烤"
+   ],
+   [
+    "hageln",
+    "下冰雹"
+   ],
+   [
+    "anrichten",
+    "造成（损害）"
+   ],
+   [
+    "hinfallen",
+    "跌倒"
+   ],
+   [
+    "weh tun",
+    "疼痛"
+   ],
+   [
+    "sich integrieren",
+    "融入"
+   ],
+   [
+    "helfen",
+    "有助于"
+   ],
+   [
+    "kaputtmachen",
+    "弄坏"
+   ],
+   [
+    "kleben",
+    "粘贴"
+   ],
+   [
+    "klicken",
+    "点击"
+   ],
+   [
+    "anklicken",
+    "点击"
+   ],
+   [
+    "markieren",
+    "标记"
+   ],
+   [
+    "korrigieren",
+    "纠正"
+   ],
+   [
+    "klopfen",
+    "敲"
+   ],
+   [
+    "missverstehen",
+    "误解"
+   ],
+   [
+    "nachschlagen",
+    "查阅"
+   ],
+   [
+    "nachsehen",
+    "查看"
+   ],
+   [
+    "nachsenden",
+    "转寄"
+   ],
+   [
+    "sich nähern (+Dat)",
+    "接近"
+   ],
+   [
+    "parkieren",
+    "停车（瑞士用法）"
+   ],
+   [
+    "pflanzen",
+    "种植"
+   ],
+   [
+    "sich rasieren",
+    "刮胡子"
+   ],
+   [
+    "reinigen",
+    "清洁"
+   ],
+   [
+    "Schwarzfahren",
+    "逃票"
+   ],
+   [
+    "transportieren",
+    "运输"
+   ],
+   [
+    "überholen",
+    "超车"
+   ],
+   [
+    "überreden",
+    "说服"
+   ],
+   [
+    "umarmen",
+    "拥抱"
+   ],
+   [
+    "sich ummelden",
+    "搬家后重新登记"
+   ],
+   [
+    "unterlassen",
+    "停止、禁止"
+   ],
+   [
+    "unterstreichen",
+    "画线强调"
+   ],
+   [
+    "versäumen",
+    "错过"
+   ],
+   [
+    "impfen",
+    "接种疫苗"
+   ],
+   [
+    "anbieten",
+    "提供"
+   ],
+   [
+    "verurteilen",
+    "判刑、处以（罚款）"
+   ],
+   [
+    "vorkommen",
+    "发生"
+   ],
+   [
+    "winken",
+    "挥手"
+   ],
+   [
+    "zelten",
+    "露营"
+   ],
+   [
+    "(mit)nehmen",
+    "带上"
+   ],
+   [
+    "zumachen",
+    "关上"
+   ],
+   [
+    "ausmachen",
+    "关（电器）"
+   ],
+   [
+    "anmachen",
+    "打开（电器/开关）"
+   ],
+   [
+    "basteln",
+    "手工制作"
+   ],
+   [
+    "(voll)tanken",
+    "加（满）油"
+   ],
+   [
+    "bloggen",
+    "写博客"
+   ],
+   [
+    "googeln",
+    "用谷歌搜索"
+   ],
+   [
+    "jobben",
+    "打工"
+   ],
+   [
+    "mailen",
+    "发邮件"
+   ],
+   [
+    "twittern",
+    "发推文"
+   ],
+   [
+    "chatten",
+    "网上聊天"
+   ],
+   [
+    "ausrichten",
+    "转达"
+   ],
+   [
+    "kopieren",
+    "复印"
+   ]
+  ],
+  "examples": [
+   [
+    "Vergiss nicht, dich anzuschnallen.",
+    "别忘了系安全带。（反义是 abschnallen）"
+   ],
+   [
+    "Die Tablette bitte in Wasser auflösen.",
+    "请把药片溶于水。（口语代命令式）"
+   ],
+   [
+    "Da klopft jemand ans Fenster.",
+    "有人在敲窗。（klopfen+an+四格）"
+   ],
+   [
+    "Die Quittung müssen Sie gut aufheben.",
+    "收据请收好。（vs 捡起来）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M16-19",
+  "id": "b1_nomen",
+  "cat": "vokabel",
+  "title": "B1 名词词汇补充",
+  "titleDe": "Nomen (B1)",
+  "explain": "B1 名词词汇补充（265 个，冠词和复数连词一起背）。① 大量收录奥地利/瑞士地区词（Erdäpfel、Marillen、Faschiertes、Semmeln、Jause、Znüni、Billett、Perron 等），备考需注意地区变体。② 介词+形容词固定搭配无规律、只能死记（如 von Drogen abhängig、auf 130 beschränkt）。③ 正式文书高频词：die Unterschrift、die Zustimmung、die Anmeldefrist、die Steuerkarte、der Strafzettel 等。④ 疑问词 wie/was 的语用分工：向陌生人问号码、姓名、地址等隐私信息用 wie（Wie ist die Vorwahl von Hamburg?），正式场合一律 wie（Wie bitte?）；但问职业用 Was sind Sie von Beruf。⑤ 否定词 nicht/kein 的选择改变句义：nicht Dialekt sprechen（请你不要说方言）vs keinen Dialekt sprechen（你不会说方言）。⑥ 命令语气分级：动词后置无主语句（Bitte den Rasen nicht betreten!）> 命令式 > \"宾语+动词原形\"口语式。⑦ 近义词辨析：der Schreck（一瞬间\"吓一跳\"）vs der Schrecken（持续的恐慌）；die Ansage（广义宣布）vs die Durchsage（仅公共广播里的通知）。\n\n🇬🇧 英语对照：英语 a noun；德语 der/die/das + 复数，冠词复数连词背，地区词当彩蛋收。",
+  "table": [
+   [
+    "名词",
+    "中文"
+   ],
+   [
+    "der Abfalleimer, -",
+    "垃圾桶"
+   ],
+   [
+    "der Abflug, ¨e",
+    "起飞"
+   ],
+   [
+    "der Absender, -",
+    "发件人"
+   ],
+   [
+    "der Abwart, -e（瑞）",
+    "看门人"
+   ],
+   [
+    "der Weg, -e",
+    "路"
+   ],
+   [
+    "das Tal, ¨er",
+    "山谷"
+   ],
+   [
+    "die Alkoholsucht",
+    "酒瘾"
+   ],
+   [
+    "die Ansage, -n",
+    "公告、广播通知"
+   ],
+   [
+    "der Antwortbogen, ¨",
+    "答题纸/答题卡"
+   ],
+   [
+    "die Aprikose, -n",
+    "杏子"
+   ],
+   [
+    "die Apfelsine, -n",
+    "橙子"
+   ],
+   [
+    "die Erdbeere, -n",
+    "草莓"
+   ],
+   [
+    "das Arbeitsverhältnis, -se",
+    "雇佣关系"
+   ],
+   [
+    "der Aufenthaltsraum, ¨e",
+    "休息室"
+   ],
+   [
+    "die Ausfahrt, -en",
+    "（高速）出口"
+   ],
+   [
+    "die Aushilfe, -n",
+    "帮工"
+   ],
+   [
+    "der Ausländer, - / die Ausländerin, -nen",
+    "外国人"
+   ],
+   [
+    "die Aussprache, -n",
+    "发音"
+   ],
+   [
+    "der Babysitter, -",
+    "保姆"
+   ],
+   [
+    "die Backform, -en",
+    "烤盘"
+   ],
+   [
+    "die Badewanne, -n",
+    "浴缸"
+   ],
+   [
+    "der Bankomat, -en（奥）",
+    "自动取款机"
+   ],
+   [
+    "das Bankkonto, -konten",
+    "银行账户"
+   ],
+   [
+    "die Bedienungsanleitung, -en",
+    "操作说明"
+   ],
+   [
+    "die Betreuerin, -nen",
+    "照看人（女）"
+   ],
+   [
+    "der Betriebsrat, ¨e",
+    "职工委员会"
+   ],
+   [
+    "das Billett, -e（瑞）",
+    "票"
+   ],
+   [
+    "die Brieftasche, -n",
+    "钱包"
+   ],
+   [
+    "das Kleingeld",
+    "零钱"
+   ],
+   [
+    "die Briefträgerin, -nen",
+    "女邮递员"
+   ],
+   [
+    "der Briefumschlag, ¨e",
+    "信封"
+   ],
+   [
+    "die Briefmarke, -n",
+    "邮票"
+   ],
+   [
+    "das Brötli, -（瑞）",
+    "面包卷"
+   ],
+   [
+    "die Buchhandlung, -en",
+    "书店"
+   ],
+   [
+    "die Bürste, -n",
+    "刷子/梳子"
+   ],
+   [
+    "der Busfahrer, -",
+    "公交司机"
+   ],
+   [
+    "der Beruf, -e",
+    "职业"
+   ],
+   [
+    "die Castingshow, -s",
+    "选秀节目"
+   ],
+   [
+    "die Veranstaltung, -en",
+    "活动"
+   ],
+   [
+    "die Fernsehsendung, -en",
+    "电视节目"
+   ],
+   [
+    "der Sänger, -",
+    "歌手"
+   ],
+   [
+    "der Tänzer, -",
+    "舞者"
+   ],
+   [
+    "das Model, -s",
+    "模特"
+   ],
+   [
+    "der Akrobat, -en",
+    "杂技演员"
+   ],
+   [
+    "der Chat, -s",
+    "网络聊天"
+   ],
+   [
+    "der Coiffeur, -e（瑞）",
+    "理发师"
+   ],
+   [
+    "das Kuvert, -s（瑞）",
+    "信封"
+   ],
+   [
+    "der Dialekt, -e",
+    "方言"
+   ],
+   [
+    "die Disko, -s / die Diskothek, -en",
+    "迪斯科舞厅"
+   ],
+   [
+    "das Doppelbett, -en",
+    "双人床"
+   ],
+   [
+    "das Einzelbett, -en",
+    "单人床"
+   ],
+   [
+    "das Waschmittel, -",
+    "清洁剂"
+   ],
+   [
+    "die Drogerie, -n",
+    "药妆店"
+   ],
+   [
+    "die ec-Karte, -n",
+    "银行卡"
+   ],
+   [
+    "die Einbahnstraße, -n",
+    "单向街"
+   ],
+   [
+    "der Einbrecher, -",
+    "入室盗窃犯"
+   ],
+   [
+    "der Einfall, ¨e",
+    "想法、灵感"
+   ],
+   [
+    "die Einzahlung, -en",
+    "存款、押金"
+   ],
+   [
+    "die Einzelheit, -en",
+    "细节"
+   ],
+   [
+    "das Elektrogeschäft, -e",
+    "电子产品商店"
+   ],
+   [
+    "das Handy, -s",
+    "手机"
+   ],
+   [
+    "der Elektroherd, -e",
+    "电炉"
+   ],
+   [
+    "die Küche, -n",
+    "厨房"
+   ],
+   [
+    "die Nahrung, -en",
+    "食物"
+   ],
+   [
+    "der Elektroingenieur, -e",
+    "电气工程师"
+   ],
+   [
+    "das Endspiel, -e",
+    "决赛"
+   ],
+   [
+    "die Enttäuschung, -en",
+    "失望"
+   ],
+   [
+    "die Entfernung, -en",
+    "距离"
+   ],
+   [
+    "der Entschluss, ¨e",
+    "决定"
+   ],
+   [
+    "der Erdapfel, ¨（奥）",
+    "土豆"
+   ],
+   [
+    "die Erkältung, -en",
+    "感冒"
+   ],
+   [
+    "die Nase, -n",
+    "鼻子"
+   ],
+   [
+    "die Ermäßigung, -en",
+    "折扣"
+   ],
+   [
+    "die Erziehung, -en",
+    "教育、抚养"
+   ],
+   [
+    "die Computerfachfrau, -en",
+    "计算机专家（女）"
+   ],
+   [
+    "der Fahrplan, ¨e",
+    "时刻表"
+   ],
+   [
+    "der Familienstand, ¨e",
+    "婚姻状况"
+   ],
+   [
+    "die Fantasie, -n",
+    "想象力"
+   ],
+   [
+    "das Faschierte（奥）",
+    "肉末"
+   ],
+   [
+    "der Fasching",
+    "狂欢节（巴伐利亚/奥/萨克森）"
+   ],
+   [
+    "die Fasnacht, -en（瑞）",
+    "狂欢节"
+   ],
+   [
+    "das Kostüm, -e",
+    "服装"
+   ],
+   [
+    "der Fauteuil, -s",
+    "扶手椅"
+   ],
+   [
+    "die Firma, -en",
+    "公司"
+   ],
+   [
+    "das Feuerzeug, -e",
+    "打火机"
+   ],
+   [
+    "der Fleck, -e",
+    "污渍"
+   ],
+   [
+    "die Bluse, -n",
+    "女衬衫"
+   ],
+   [
+    "der Fleischhauer, -（奥）",
+    "屠夫"
+   ],
+   [
+    "die Wurst, ¨e",
+    "香肠"
+   ],
+   [
+    "die Folie, -n",
+    "幻灯片"
+   ],
+   [
+    "die Fortbildung, -en",
+    "进修"
+   ],
+   [
+    "das Forum, Foren",
+    "论坛"
+   ],
+   [
+    "der Franken, -",
+    "法郎"
+   ],
+   [
+    "der Rappen, -",
+    "生丁"
+   ],
+   [
+    "der Führerausweis, -e（瑞）",
+    "驾驶执照"
+   ],
+   [
+    "das Gasthaus, ¨er",
+    "餐馆"
+   ],
+   [
+    "das Bier, -e",
+    "啤酒"
+   ],
+   [
+    "die Geburtstagsfeier, -n",
+    "生日聚会"
+   ],
+   [
+    "das Geschirr",
+    "餐具"
+   ],
+   [
+    "die Geburtstagsparty, -s",
+    "生日派对"
+   ],
+   [
+    "der Gehsteig, -e（奥）",
+    "人行道"
+   ],
+   [
+    "die Geldbörse, -n",
+    "钱包"
+   ],
+   [
+    "der Gerichtssaal, -säle",
+    "法庭"
+   ],
+   [
+    "der Prozess, -e",
+    "诉讼"
+   ],
+   [
+    "die Geschwindigkeitsbeschränkung, -en",
+    "限速"
+   ],
+   [
+    "der Getränkeautomat, -en",
+    "饮料自动售货机"
+   ],
+   [
+    "das Getreide",
+    "谷物"
+   ],
+   [
+    "die Gratulation, -en",
+    "祝贺"
+   ],
+   [
+    "das Grundstück, -e",
+    "地块"
+   ],
+   [
+    "das Hackfleisch",
+    "肉末"
+   ],
+   [
+    "das Hühnchen, -",
+    "鸡肉"
+   ],
+   [
+    "das Hallenbad, ¨er",
+    "室内游泳池"
+   ],
+   [
+    "die Hauptrolle, -n",
+    "主角"
+   ],
+   [
+    "das Stück, -e",
+    "剧"
+   ],
+   [
+    "die Hausordnung, -en",
+    "房屋守则"
+   ],
+   [
+    "der Mieter, -",
+    "租户"
+   ],
+   [
+    "das Hendl, -（奥）",
+    "鸡肉"
+   ],
+   [
+    "das Hilfsmittel, -",
+    "辅助工具"
+   ],
+   [
+    "das Mobiltelefon, -e",
+    "手机"
+   ],
+   [
+    "das Wörterbuch, ¨er",
+    "字典"
+   ],
+   [
+    "der Teppich, -e",
+    "地毯"
+   ],
+   [
+    "der Holzfußboden, ¨",
+    "木地板"
+   ],
+   [
+    "der Imbiss, -e",
+    "小吃"
+   ],
+   [
+    "die Infektion, -en",
+    "感染"
+   ],
+   [
+    "die Tablette, -n",
+    "药片"
+   ],
+   [
+    "das Inserat, -e",
+    "报纸广告"
+   ],
+   [
+    "die Jause, -n（奥）",
+    "点心"
+   ],
+   [
+    "das Kabel, -",
+    "电缆"
+   ],
+   [
+    "der Fernsehkanal, ¨e",
+    "电视频道"
+   ],
+   [
+    "die Tasse, -n",
+    "杯子"
+   ],
+   [
+    "das Kännchen, -",
+    "咖啡小壶"
+   ],
+   [
+    "die Musikkassette, -n",
+    "音乐磁带"
+   ],
+   [
+    "das Ketchup",
+    "番茄酱"
+   ],
+   [
+    "das Brot, -e",
+    "面包"
+   ],
+   [
+    "der Kiosk, -e",
+    "售货亭"
+   ],
+   [
+    "die Ecke, -n",
+    "拐角"
+   ],
+   [
+    "die Kindertagesstätte, -n",
+    "托儿所"
+   ],
+   [
+    "die Kita, -s",
+    "托儿所（简称）"
+   ],
+   [
+    "die Klimaanlage, -n",
+    "空调"
+   ],
+   [
+    "der Knödel, -（奥）",
+    "丸子"
+   ],
+   [
+    "der Knopfdruck, ¨e",
+    "按键"
+   ],
+   [
+    "der Kompromiss, -e",
+    "妥协"
+   ],
+   [
+    "die Konfitüre, -n",
+    "果酱"
+   ],
+   [
+    "das Glas, ¨er",
+    "玻璃罐"
+   ],
+   [
+    "das Visum, Visa",
+    "签证"
+   ],
+   [
+    "das Konsulat, -e",
+    "领事馆"
+   ],
+   [
+    "die Botschaft, -en",
+    "大使馆"
+   ],
+   [
+    "das Kopfkissen, -",
+    "枕头"
+   ],
+   [
+    "der Korridor, -e",
+    "走廊"
+   ],
+   [
+    "der Krankenpfleger, -",
+    "护士（男）"
+   ],
+   [
+    "das Krankenhaus, ¨er",
+    "医院"
+   ],
+   [
+    "die Kursleiterin, -nen",
+    "课程负责人"
+   ],
+   [
+    "der Computerraum, ¨e",
+    "计算机房"
+   ],
+   [
+    "die Kurve, -n",
+    "弯道"
+   ],
+   [
+    "das Couvert, -s",
+    "信封"
+   ],
+   [
+    "die Landung, -en",
+    "着陆"
+   ],
+   [
+    "das Lineal, -e",
+    "尺子"
+   ],
+   [
+    "die Länge, -n",
+    "长度"
+   ],
+   [
+    "die Langeweile",
+    "无聊"
+   ],
+   [
+    "das Laufwerk, -e",
+    "驱动器"
+   ],
+   [
+    "die Ansprache, -n",
+    "演讲"
+   ],
+   [
+    "der Lautsprecher, -",
+    "扬声器"
+   ],
+   [
+    "die Lehrstelle, -n",
+    "学徒职位"
+   ],
+   [
+    "der Leserbrief, -e",
+    "读者来信"
+   ],
+   [
+    "die Lohnerhöhung, -en",
+    "加薪"
+   ],
+   [
+    "der Magen, ¨",
+    "胃"
+   ],
+   [
+    "die Magenschmerzen pl",
+    "胃痛"
+   ],
+   [
+    "die Marille, -n（奥）",
+    "杏子"
+   ],
+   [
+    "die Mehrwertsteuer, -n",
+    "增值税"
+   ],
+   [
+    "das Prozent, -e",
+    "百分比"
+   ],
+   [
+    "der Metzger, -",
+    "屠夫"
+   ],
+   [
+    "der Mitgliedsausweis, -e",
+    "会员卡"
+   ],
+   [
+    "der Mitspieler, -",
+    "队友"
+   ],
+   [
+    "das Modul, -e",
+    "模块"
+   ],
+   [
+    "die Möhre, -n",
+    "胡萝卜"
+   ],
+   [
+    "die Probe, -n",
+    "样本"
+   ],
+   [
+    "der Mond, -e",
+    "月球"
+   ],
+   [
+    "das Mountainbike, -s",
+    "山地车"
+   ],
+   [
+    "die Müllabfuhr",
+    "垃圾清运"
+   ],
+   [
+    "die Münze, -n",
+    "硬币"
+   ],
+   [
+    "die Nachspeise, -n",
+    "甜点"
+   ],
+   [
+    "der Nagel, ¨",
+    "钉子"
+   ],
+   [
+    "die Wand, ¨e",
+    "墙"
+   ],
+   [
+    "der Fingernagel, ¨",
+    "指甲"
+   ],
+   [
+    "der Nasentropfen, -",
+    "鼻滴剂"
+   ],
+   [
+    "die Notaufnahme, -n",
+    "急诊室"
+   ],
+   [
+    "der Notausgang, ¨e",
+    "紧急出口"
+   ],
+   [
+    "die Treppe, -n",
+    "楼梯"
+   ],
+   [
+    "der Ober, -",
+    "服务员"
+   ],
+   [
+    "die Dichte, -n",
+    "密度"
+   ],
+   [
+    "das Öl, -e",
+    "油"
+   ],
+   [
+    "der Ordner, -",
+    "文件夹"
+   ],
+   [
+    "der Paradeiser, -（奥）",
+    "西红柿"
+   ],
+   [
+    "die Pensionistin, -nen",
+    "退休女性"
+   ],
+   [
+    "der Perron, -s（瑞）",
+    "站台"
+   ],
+   [
+    "die Personalien pl",
+    "个人信息"
+   ],
+   [
+    "der Personenstand, ¨e（瑞）",
+    "婚姻状况"
+   ],
+   [
+    "der Pinguin, -e",
+    "企鹅"
+   ],
+   [
+    "die Pflaume, -n",
+    "李子"
+   ],
+   [
+    "der Pflaumenkuchen, -",
+    "李子蛋糕"
+   ],
+   [
+    "die Pflegerin, -nen",
+    "护士（女）"
+   ],
+   [
+    "das Picknick, -s",
+    "野餐"
+   ],
+   [
+    "der Berg, -e",
+    "山"
+   ],
+   [
+    "die Pille, -n",
+    "药片"
+   ],
+   [
+    "die Pöstlerin, -nen（瑞）",
+    "邮递员（女）"
+   ],
+   [
+    "die Postsendung, -en",
+    "邮递包裹"
+   ],
+   [
+    "das Poulet, -s（瑞）",
+    "鸡肉"
+   ],
+   [
+    "die Präsentation, -en",
+    "演讲"
+   ],
+   [
+    "der Inhalt, -e",
+    "内容"
+   ],
+   [
+    "die Struktur, -en",
+    "结构"
+   ],
+   [
+    "das Puzzle, -s",
+    "拼图"
+   ],
+   [
+    "der Rabatt, -e",
+    "折扣"
+   ],
+   [
+    "der Rasen",
+    "草坪"
+   ],
+   [
+    "das Referat, -e",
+    "专题报告"
+   ],
+   [
+    "der Tropfen, -",
+    "滴"
+   ],
+   [
+    "die Reklame, -n",
+    "广告"
+   ],
+   [
+    "der Briefkasten, ¨",
+    "信箱"
+   ],
+   [
+    "der Rennfahrer, -",
+    "赛车手"
+   ],
+   [
+    "die Reservierung, -en",
+    "预订"
+   ],
+   [
+    "der Richter, -",
+    "法官"
+   ],
+   [
+    "das Urteil, -e",
+    "判决"
+   ],
+   [
+    "die Rückmeldung, -en",
+    "反馈"
+   ],
+   [
+    "das Rüebli, -（瑞）",
+    "胡萝卜"
+   ],
+   [
+    "der Ruhetag, -e",
+    "休息日"
+   ],
+   [
+    "die S-Bahn, -en",
+    "城市快铁"
+   ],
+   [
+    "die Straßenbahn, -en",
+    "有轨电车"
+   ],
+   [
+    "die Schulferien pl",
+    "学校假期"
+   ],
+   [
+    "die Saison, -s",
+    "旺季"
+   ],
+   [
+    "die Friseurin, -nen",
+    "美发师（女）"
+   ],
+   [
+    "der Salon, -s",
+    "沙龙"
+   ],
+   [
+    "der Schatten, -",
+    "阴凉"
+   ],
+   [
+    "das Grad, -e",
+    "度"
+   ],
+   [
+    "die Zahnschmerzen pl",
+    "牙痛"
+   ],
+   [
+    "das Schmerzmittel, -",
+    "止痛药"
+   ],
+   [
+    "das Schokoladeneis",
+    "巧克力冰淇淋"
+   ],
+   [
+    "der Nachtisch, -e",
+    "甜点"
+   ],
+   [
+    "der Schreck, -e",
+    "一瞬间的惊吓"
+   ],
+   [
+    "der Schrecken, -",
+    "持续的恐慌"
+   ],
+   [
+    "das Schwammerl, -n（奥/巴伐利亚）",
+    "蘑菇"
+   ],
+   [
+    "die Schwiegereltern pl",
+    "公婆/岳父母"
+   ],
+   [
+    "die Schwiegertochter, ¨",
+    "儿媳"
+   ],
+   [
+    "der Schwiegerbruder, ¨",
+    "姐夫/妹夫"
+   ],
+   [
+    "der Schwiegervater, ¨",
+    "岳父/公公"
+   ],
+   [
+    "die Semmel, -n（奥）",
+    "面包卷"
+   ],
+   [
+    "das Silvester, -",
+    "除夕"
+   ],
+   [
+    "das Pfingsten, -",
+    "圣灵降临节"
+   ],
+   [
+    "der Snack, -s",
+    "零食"
+   ],
+   [
+    "die Pause, -n",
+    "休息"
+   ],
+   [
+    "die Software, -s",
+    "软件"
+   ],
+   [
+    "die Planung, -en",
+    "计划"
+   ],
+   [
+    "das Sommerfest, -e",
+    "夏日派对"
+   ],
+   [
+    "der Sonnabend, -e",
+    "星期六"
+   ],
+   [
+    "der Speisewagen, -",
+    "餐车"
+   ],
+   [
+    "der Stecker, -",
+    "插头"
+   ],
+   [
+    "die Steckdose, -n",
+    "插座"
+   ],
+   [
+    "der Poststempel, -",
+    "邮戳"
+   ],
+   [
+    "das Datum, Daten",
+    "日期"
+   ],
+   [
+    "das Paket, -e",
+    "包裹"
+   ],
+   [
+    "die Steuerkarte, -n",
+    "税卡"
+   ],
+   [
+    "die Strafe, -n",
+    "罚款"
+   ],
+   [
+    "die Stewardess, -en",
+    "空姐"
+   ],
+   [
+    "der Steward, -s",
+    "空少"
+   ],
+   [
+    "das Mittagessen",
+    "午餐"
+   ],
+   [
+    "der Stiefel, -",
+    "靴子"
+   ],
+   [
+    "das Stiegenhaus, ¨er（奥）",
+    "楼梯间"
+   ],
+   [
+    "der Strafzettel, -",
+    "罚单"
+   ],
+   [
+    "der Straßenrand, ¨er",
+    "路边"
+   ],
+   [
+    "die Schachtel, -n",
+    "盒"
+   ],
+   [
+    "das Streichholz, ¨er",
+    "火柴"
+   ],
+   [
+    "das Medikament, -e",
+    "药物"
+   ],
+   [
+    "das Suchtmittel, -",
+    "上瘾物"
+   ],
+   [
+    "die Tabelle, -n",
+    "表格"
+   ],
+   [
+    "die Information, -en",
+    "信息"
+   ],
+   [
+    "das Taschengeld",
+    "零用钱"
+   ],
+   [
+    "der Monat, -e",
+    "月"
+   ],
+   [
+    "das Terminal, -s",
+    "航站楼"
+   ],
+   [
+    "der Textaufbau",
+    "文本结构"
+   ],
+   [
+    "die Anrede, -n",
+    "称呼"
+   ],
+   [
+    "die Einleitung, -en",
+    "引言"
+   ],
+   [
+    "die Reihenfolge, -n",
+    "顺序"
+   ],
+   [
+    "der Inhaltspunkt, -e",
+    "内容点"
+   ],
+   [
+    "der Schluss, ¨e",
+    "结尾"
+   ],
+   [
+    "der Tierpark, -s",
+    "动物园"
+   ],
+   [
+    "das Kind, -er",
+    "孩子"
+   ],
+   [
+    "die Gegnerin, -nen",
+    "反对者（女）"
+   ],
+   [
+    "der Tierversuch, -e",
+    "动物实验"
+   ],
+   [
+    "die Träne, -n",
+    "眼泪"
+   ],
+   [
+    "das Trottoir, -s（瑞）",
+    "人行道"
+   ],
+   [
+    "die Überschrift, -en",
+    "标题"
+   ],
+   [
+    "der Artikel, -",
+    "文章"
+   ],
+   [
+    "die Überzeugung, -en",
+    "信念"
+   ],
+   [
+    "der Sturm, ¨e",
+    "暴风雨"
+   ],
+   [
+    "das Schiff, -e",
+    "船"
+   ],
+   [
+    "das Ufer, -",
+    "岸"
+   ],
+   [
+    "die Ukraine",
+    "乌克兰"
+   ],
+   [
+    "der Ukrainer, -",
+    "乌克兰人（男）"
+   ],
+   [
+    "das Ukrainisch",
+    "乌克兰语"
+   ],
+   [
+    "die Umleitung, -en",
+    "绕行"
+   ],
+   [
+    "der Unfall, ¨e",
+    "事故"
+   ],
+   [
+    "die Uniform, -en",
+    "校服"
+   ],
+   [
+    "die Schule, -n",
+    "学校"
+   ],
+   [
+    "die Unterschrift, -en",
+    "签名"
+   ],
+   [
+    "die Urkunde, -n",
+    "证书"
+   ],
+   [
+    "das Spiel, -e",
+    "比赛"
+   ],
+   [
+    "der Einbruch, ¨e",
+    "入室盗窃"
+   ],
+   [
+    "das Gemälde, -",
+    "画作"
+   ],
+   [
+    "das Internetportal, -e",
+    "互联网门户"
+   ],
+   [
+    "der User, -",
+    "用户"
+   ],
+   [
+    "der Entwickler, -",
+    "开发者"
+   ],
+   [
+    "die Anregung, -en",
+    "建议"
+   ],
+   [
+    "die Idee, -n",
+    "想法"
+   ],
+   [
+    "die Programmfunktion, -en",
+    "程序功能"
+   ],
+   [
+    "das Velo, -s（瑞）",
+    "自行车"
+   ],
+   [
+    "das Verkehrszeichen, -",
+    "交通标志"
+   ],
+   [
+    "die Verletzung, -en",
+    "受伤"
+   ],
+   [
+    "die Verliererin, -nen",
+    "失败者（女）"
+   ],
+   [
+    "die Vermietung, -en",
+    "出租"
+   ],
+   [
+    "die Wohnung, -en",
+    "公寓"
+   ],
+   [
+    "die Versammlung, -en",
+    "大会"
+   ],
+   [
+    "der Minister, -",
+    "部长"
+   ],
+   [
+    "die Rede, -n",
+    "演讲"
+   ],
+   [
+    "der Vollmond, -e",
+    "满月"
+   ],
+   [
+    "die Vorwahl, -en",
+    "区号"
+   ],
+   [
+    "der Vorwurf, ¨e",
+    "指责"
+   ],
+   [
+    "die Warteschlange, -n",
+    "排队长龙"
+   ],
+   [
+    "die Waschmaschine, -n",
+    "洗衣机"
+   ],
+   [
+    "die Garantie, -n",
+    "保修"
+   ],
+   [
+    "das Wechselgeld",
+    "找零"
+   ],
+   [
+    "die Weltreise, -n",
+    "环球旅行"
+   ],
+   [
+    "das Werkzeug, -e",
+    "工具"
+   ],
+   [
+    "die Reparatur, -en",
+    "维修"
+   ],
+   [
+    "der Wochentag, -e",
+    "星期"
+   ],
+   [
+    "die Filiale, -n",
+    "分行"
+   ],
+   [
+    "der Bankangestellte, -",
+    "银行职员"
+   ],
+   [
+    "die Wohnfläche, -n",
+    "居住面积"
+   ],
+   [
+    "der Quadratmeter, -",
+    "平方米"
+   ],
+   [
+    "das Würstchen, -",
+    "小香肠"
+   ],
+   [
+    "die Pommes frites pl",
+    "炸薯条"
+   ],
+   [
+    "der Zahnarzt, ¨e",
+    "牙医"
+   ],
+   [
+    "die Zahnbürste, -n",
+    "牙刷"
+   ],
+   [
+    "die Zahncreme, -s / die Zahnpasta, -pasten",
+    "牙膏"
+   ],
+   [
+    "das Zeltlager, -",
+    "露营"
+   ],
+   [
+    "der Zirkus, -se",
+    "马戏团"
+   ],
+   [
+    "der Zivilstand, ¨e（瑞）",
+    "婚姻状况"
+   ],
+   [
+    "das Znüni, -s / das Zvieri, -s（瑞）",
+    "上午/下午点心"
+   ],
+   [
+    "der Zünder, -",
+    "打火机/引信"
+   ],
+   [
+    "das Zündholz, ¨er（瑞）",
+    "火柴"
+   ],
+   [
+    "der Zuschlag, ¨e",
+    "附加费"
+   ],
+   [
+    "der Zug, ¨e",
+    "火车"
+   ],
+   [
+    "die Zustimmung, -en",
+    "同意"
+   ],
+   [
+    "die Werbung",
+    "广告"
+   ],
+   [
+    "der Tarif, -e",
+    "票价"
+   ],
+   [
+    "die Bahn",
+    "铁路"
+   ],
+   [
+    "der Bericht, -e",
+    "报告"
+   ],
+   [
+    "die Einnahme, -n",
+    "收入"
+   ],
+   [
+    "das Quartal, -e",
+    "季度"
+   ],
+   [
+    "der Untertitel, -",
+    "字幕"
+   ],
+   [
+    "der Film, -e",
+    "电影"
+   ],
+   [
+    "die Uhrzeit, -en",
+    "时间"
+   ],
+   [
+    "die Glocke, -n",
+    "钟"
+   ],
+   [
+    "der Zufall, ¨e",
+    "偶然"
+   ],
+   [
+    "der Leib, -er",
+    "身体"
+   ],
+   [
+    "die Episode, -n",
+    "插曲"
+   ],
+   [
+    "der Soldat, -en",
+    "士兵"
+   ],
+   [
+    "das Wetter",
+    "天气"
+   ],
+   [
+    "das Heer, -e",
+    "军队"
+   ],
+   [
+    "die Schlacht, -en",
+    "战斗"
+   ],
+   [
+    "die Region, -en",
+    "地区"
+   ],
+   [
+    "der Tourismus",
+    "旅游业"
+   ],
+   [
+    "der Ausdruck, ¨e",
+    "表达/打印件"
+   ],
+   [
+    "die E-Mail, -s",
+    "邮件"
+   ]
+  ],
+  "examples": [
+   [
+    "Wie ist die Vorwahl von Hamburg?",
+    "汉堡的区号是多少？（问隐私信息用 wie）"
+   ],
+   [
+    "Die Geschwindigkeit ist auf 130 beschränkt.",
+    "限速 130。（beschränkt auf 固定搭配）"
+   ],
+   [
+    "Bitte den Rasen nicht betreten!",
+    "请勿践踏草坪！（动词后置=最强命令）"
+   ],
+   [
+    "Ich verstehe dich besser, wenn du nicht Dialekt sprichst.",
+    "你不说方言我听得更清楚。（nicht vs keinen 改变句义）"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M16-20",
+  "id": "b1_andere",
+  "cat": "vokabel",
+  "title": "B1 其他类词汇补充",
+  "titleDe": "Adjektive & Adverbien (B1)",
+  "explain": "B1 其他类词汇补充（81 条形容词/副词/固定表达，是 B1 写作与口语的直接弹药）。① 一词多义需看语境：unentschieden 既可\"平局\"（Es steht unentschieden）也可\"犹豫不决\"（Ich bin noch immer unentschieden）；vorläufig 既可副词\"暂时\"也可形容词\"暂时的\"。② 形容词的\"可形容对象\"有限制：gleichgültig 只能形容人的表情/声音/态度，不能直接形容人（Er ist gleichgültig 错误）。③ 固定搭配只能死记：äußerlich anwenden（外敷，不可换成 außen；反义 innerlich anwenden 内服）、auf stumm（调至静音）、von…abhängig（依赖于）、zur Verfügung stellen。④ 正式书信格式是考点：称呼后用逗号；不知姓名时用 Sehr geehrte Damen und Herren，知姓氏则用 Sehr geehrte Frau/Herr + 姓（Dame 日常少用）。⑤ 口语合法省略：Ich möchte einen eckigen Tisch, keinen runden（省略第二个 Tisch）。⑥ 方向/位置类副词高频：aufwärts、vorwärts、senkrecht（垂直）/waagerecht（水平），与模块15方向副词课呼应。\n\n🇬🇧 英语对照：英语 on silent；德语 auf stumm，固定搭配只能整句背。",
+  "table": [
+   [
+    "词汇",
+    "中文"
+   ],
+   [
+    "stündlich",
+    "每小时的"
+   ],
+   [
+    "fettarm",
+    "低脂的"
+   ],
+   [
+    "befreit (von)",
+    "免于……的"
+   ],
+   [
+    "blond",
+    "金色的"
+   ],
+   [
+    "lila",
+    "紫色的"
+   ],
+   [
+    "abwesend",
+    "缺席的"
+   ],
+   [
+    "außen",
+    "外面的"
+   ],
+   [
+    "äußerlich",
+    "外用的（药物）"
+   ],
+   [
+    "aufwärts",
+    "向上的"
+   ],
+   [
+    "zuständig",
+    "负责的、主管的"
+   ],
+   [
+    "betrunken",
+    "喝醉的"
+   ],
+   [
+    "geehrt",
+    "尊敬的"
+   ],
+   [
+    "gratis",
+    "免费的"
+   ],
+   [
+    "online",
+    "在线的"
+   ],
+   [
+    "eckig",
+    "方的"
+   ],
+   [
+    "rund",
+    "圆的"
+   ],
+   [
+    "erforderlich",
+    "必要的"
+   ],
+   [
+    "persönlich",
+    "亲自的"
+   ],
+   [
+    "unentschieden",
+    "（比分）平局的、未决定的"
+   ],
+   [
+    "farbig",
+    "彩色的"
+   ],
+   [
+    "weiß",
+    "白色的"
+   ],
+   [
+    "alkoholfrei",
+    "不含酒精的"
+   ],
+   [
+    "rezeptfrei",
+    "无需处方的"
+   ],
+   [
+    "fröhlich",
+    "欢乐的"
+   ],
+   [
+    "gleichberechtigt",
+    "平等的"
+   ],
+   [
+    "interkulturell",
+    "跨文化的"
+   ],
+   [
+    "neblig",
+    "有雾的"
+   ],
+   [
+    "vorsichtig",
+    "小心的"
+   ],
+   [
+    "nochmals",
+    "再次"
+   ],
+   [
+    "parallel",
+    "平行的"
+   ],
+   [
+    "pauschal",
+    "套餐形式的"
+   ],
+   [
+    "pensioniert",
+    "退休的"
+   ],
+   [
+    "sichtbar",
+    "明显的"
+   ],
+   [
+    "trotzdem",
+    "尽管如此"
+   ],
+   [
+    "senkrecht",
+    "垂直的"
+   ],
+   [
+    "soviel",
+    "（soviel ich weiß 据我所知）"
+   ],
+   [
+    "auf keinen Fall",
+    "在任何情况下都不"
+   ],
+   [
+    "problemlos",
+    "毫无问题的"
+   ],
+   [
+    "solange",
+    "只要、长达"
+   ],
+   [
+    "städtisch",
+    "市政的"
+   ],
+   [
+    "stilistisch",
+    "风格上的"
+   ],
+   [
+    "stumm",
+    "静音的"
+   ],
+   [
+    "leise",
+    "轻声的"
+   ],
+   [
+    "strafbar",
+    "应受惩罚的"
+   ],
+   [
+    "sympathisch",
+    "讨人喜欢的"
+   ],
+   [
+    "unheimlich",
+    "吓人的、诡异的"
+   ],
+   [
+    "die Verabredung, -en",
+    "约会"
+   ],
+   [
+    "vorläufig",
+    "暂时的"
+   ],
+   [
+    "vorwärts",
+    "向前的"
+   ],
+   [
+    "vorbei",
+    "经过、过去"
+   ],
+   [
+    "voraussichtlich",
+    "预计的"
+   ],
+   [
+    "vorgestern",
+    "前天"
+   ],
+   [
+    "waagerecht",
+    "水平的"
+   ],
+   [
+    "zugänglich",
+    "可进入的"
+   ],
+   [
+    "unten",
+    "在底部"
+   ],
+   [
+    "gelassen",
+    "平静的"
+   ],
+   [
+    "sicherlich",
+    "当然、无疑"
+   ],
+   [
+    "zur Verfügung",
+    "提供（zur Verfügung stellen）"
+   ],
+   [
+    "erneuerbar",
+    "可再生的"
+   ],
+   [
+    "jene",
+    "那个（指示代词）"
+   ],
+   [
+    "positiv",
+    "积极的"
+   ],
+   [
+    "negativ",
+    "消极的"
+   ],
+   [
+    "unbestritten",
+    "无可争议的"
+   ],
+   [
+    "europaweit",
+    "欧洲范围内的"
+   ],
+   [
+    "total",
+    "完全的"
+   ],
+   [
+    "sowohl...als auch",
+    "既……又……"
+   ],
+   [
+    "höher",
+    "更高的"
+   ],
+   [
+    "mit Gewalt",
+    "用暴力"
+   ],
+   [
+    "logisch",
+    "逻辑的"
+   ],
+   [
+    "teuer",
+    "昂贵的"
+   ],
+   [
+    "gegenteilig",
+    "相反的"
+   ],
+   [
+    "abschaffen",
+    "废除"
+   ],
+   [
+    "das Fazit, -s",
+    "结论"
+   ],
+   [
+    "virtuell",
+    "虚拟的"
+   ],
+   [
+    "strikt",
+    "严格的"
+   ],
+   [
+    "abhängig (von)",
+    "上瘾的、依赖于……的"
+   ],
+   [
+    "zusätzlich",
+    "额外的"
+   ],
+   [
+    "rechtlich",
+    "法律上的"
+   ],
+   [
+    "verbindlich",
+    "有约束力的"
+   ],
+   [
+    "konsularisch",
+    "领事的"
+   ],
+   [
+    "sämtlich",
+    "所有的"
+   ],
+   [
+    "(sich) aufhalten",
+    "停留"
+   ],
+   [
+    "untersagen",
+    "禁止"
+   ],
+   [
+    "einschließlich",
+    "包括（介词）"
+   ],
+   [
+    "wie...auch",
+    "和……一样"
+   ],
+   [
+    "aufstellen",
+    "搭起"
+   ],
+   [
+    "aufbewahren",
+    "保存"
+   ],
+   [
+    "erheben",
+    "征收"
+   ],
+   [
+    "geistig",
+    "精神的、智力的"
+   ],
+   [
+    "zynisch",
+    "尖酸刻薄的"
+   ],
+   [
+    "verkehrt",
+    "错误的"
+   ],
+   [
+    "gleichgültig",
+    "不在乎的"
+   ],
+   [
+    "die Quelle, -n",
+    "来源、渠道"
+   ],
+   [
+    "voraussagen",
+    "预言"
+   ]
+  ],
+  "examples": [
+   [
+    "Es steht unentschieden zwischen den beiden Mannschaften.",
+    "两队打平了。（一词多义：平局 vs 犹豫不决）"
+   ],
+   [
+    "Es ist mir gleichgültig, ob du mitkommst.",
+    "你来不来我无所谓。（不能直接形容人）"
+   ],
+   [
+    "Das Medikament dürfen Sie nur äußerlich anwenden.",
+    "这药只能外敷。（固定搭配）"
+   ],
+   [
+    "Der Zug hat voraussichtlich 20 Minuten Verspätung.",
+    "这趟车预计晚点 20 分钟。"
+   ]
+  ],
+  "level": "B1"
+ },
+ {
+  "num": "M17-01",
+  "id": "zu_passiv",
+  "cat": "yufa",
+  "title": "带 zu 不定式的被动含义",
+  "titleDe": "Infinitiv mit zu (passivisch)",
+  "explain": "带 zu 不定式的被动含义。① \"带 zu 不定式\"作表语/主语成分时可带被动含义，引导它的动词语义相当于情态动词 können / müssen / sollen，具体是哪个要看上下文。② sein + zu + 不定式：相当于 können、müssen 或 sollen（Die Anträge sind im Rathaus abzuholen）。③ bleiben + zu + 不定式：相当于 müssen（Vieles bleibt zu erledigen）。④ gehen + zu + 不定式：相当于 können，常用于否定句（Das Bild geht nicht zu befestigen）。⑤ stehen + zu + 不定式：相当于 müssen，主语一般是 es，且通常只与 befürchten（担心）和 erwarten（预计）搭配（Es steht zu befürchten, dass…）。⑥ es gibt + zu + 不定式：相当于 müssen（Es gibt noch vieles zu tun）。⑦ 易错点：改写成 sein zu 结构时，若原句的不定式带有直接宾语（有动作执行者），要先删掉该宾语，否则结构错误。\n\n🇬🇧 英语对照：英语 These applications are to be collected；德语 sind abzuholen，sein+zu 表被动含义，路数一样。",
+  "table": [
+   [
+    "结构",
+    "相当于",
+    "例子"
+   ],
+   [
+    "sein + zu",
+    "können/müssen/sollen",
+    "Die Anträge sind abzuholen."
+   ],
+   [
+    "bleiben + zu",
+    "müssen",
+    "Es bleibt zu hoffen."
+   ],
+   [
+    "gehen + zu",
+    "können",
+    "Das geht nicht zu ändern."
+   ],
+   [
+    "stehen + zu",
+    "müssen",
+    "es steht zu erwarten"
+   ],
+   [
+    "es gibt + zu",
+    "müssen",
+    "Es gibt viel zu tun."
+   ]
+  ],
+  "examples": [
+   [
+    "Die Anträge sind im Rathaus abzuholen.",
+    "这些申请须到市政厅领取。（sein+zu）"
+   ],
+   [
+    "Diese Frage ist noch zu erörtern.",
+    "这个问题还有待讨论。"
+   ],
+   [
+    "Vieles bleibt zu erledigen.",
+    "还有许多事有待完成。（bleiben+zu≈müssen）"
+   ],
+   [
+    "Es steht zu befürchten, dass sich die Vorfälle häufen.",
+    "恐怕这些事件会越来越多。（stehen+zu，只与 befürchten/erwarten 搭配）"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M19-08",
+  "id": "konjunktiv1",
+  "cat": "yufa",
+  "title": "第一虚拟式",
+  "titleDe": "Konjunktiv I",
+  "explain": "第一虚拟式（Konjunktiv I）。① 主要用来引述第三方的话，强调所说的话不是说话人自己说的、体现中立态度，因此多出现在新闻、广播、电视、报纸等媒体语体中。② 构成：在原型词干上加 e 词尾（如 sei、habe、fehle、zerstöre）；记忆技巧：一虚在\"原型词干\"上变化，二虚在\"过去式\"上变化，词尾一样。③ 当一虚变位与直陈式现在时相同时，必须改用二虚代替（如 sie würden fehlen），否则听者无法判断是虚拟式还是直陈式——这是最易错的点。④ 一虚的第二人称几乎不用、第一人称很少用，因为转述的本质是\"别人说的\"，绝大多数句子的主语都是第三人称。⑤ 过去时构成：一虚和二虚都是\"haben/sein 的虚拟式 + 过去分词\"（er sei in Frankreich gewesen）。⑥ 口语中要避免使用一虚，引用别人的话时用直陈式或二虚（Paul hat gesagt, er kommt nicht）。⑦ 易错辨析：als sei 不表示主观感受（那该用二虚 wäre），它强调的是从对方刚才说的话中可以听出来的客观事实，而非作者的主观理解。\n\n🇬🇧 英语对照：英语间接引语用时态回退；德语第一虚拟式专管\"引述\"，sei/habe/fehle 一眼可辨。",
+  "table": [
+   [
+    "用法",
+    "例子"
+   ],
+   [
+    "转述（中立）",
+    "Er sagt, er sei krank."
+   ],
+   [
+    "与直陈式相同时改用二虚",
+    "sie würden fehlen"
+   ],
+   [
+    "口语中避免",
+    "口语用直陈式或二虚"
+   ]
+  ],
+  "examples": [
+   [
+    "Die Ergebnisse seien alarmierend.",
+    "据称结果令人担忧。"
+   ],
+   [
+    "Von den Tätern fehle jede Spur.",
+    "据称作案者毫无踪迹。"
+   ],
+   [
+    "Der Minister sagte, er sei in Frankreich gewesen.",
+    "部长说他曾在法国。（一虚过去时）"
+   ],
+   [
+    "Paul hat gesagt, er kommt nicht.",
+    "Paul 说他不来。（口语用直陈式）"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M20-01",
+  "id": "dopp_akk",
+  "cat": "yufa",
+  "title": "支配两个四格宾语的动词",
+  "titleDe": "Verben mit zwei Akkusativobjekten",
+  "explain": "支配两个四格宾语的动词。① 德语中支配两个四格宾语的动词分四类：(1) kosten/lehren；(2) abfragen/abhören；(3) fragen/bitten；(4) angehen。② kosten 和 lehren 支配两个四格宾语（表示人 + 表示事）：Der Flug hat meinen Vater 5000 Euro gekostet.。③ 口语中 kosten/lehren 后表示人的四格有时被说成三格（如 Das kann ihn/ihm den Hals kosten），但这种说法在书面语中要尽量避免——口语/书面语分界的易错点。④ abfragen/abhören 表示人的宾语可用三格或四格；但如果表示人的宾语是句中唯一的宾语，必须用四格（Der Lehrer hat ihn abgefragt）。⑤ fragen 和 bitten 后的表示人的间接宾语要用四格（Hast du ihn etwas gefragt? / Das möchte ich dich bitten）。⑥ bitten 很少接双宾语，更常见用法是\"表示人的四格宾语 + um + 介词宾语\"（Ich möchte dich darum bitten）或\"表示人的四格宾语 + 带 zu 不定式\"。⑦ angehen 固定结构：表示人的四格 + nichts/etwas 等表示不确定数量或程度的四格名词/不定代词（Das geht dich nichts an 这不关你的事；Das geht mich einen Dreck an 这跟我有个毛的关系）。⑧ 德国北部一些地区会把 angehen 结构中表示人的第四格换成第三格，但这种说法未被标准德语接受。\n\n🇬🇧 英语对照：英语 teach sb sth 无介词；德语 lehren/fragen/bitten 四类动词直接带两个四格，整批背。",
+  "table": [
+   [
+    "动词",
+    "结构",
+    "例子"
+   ],
+   [
+    "kosten/lehren",
+    "四格 + 四格",
+    "Das kostet mich viel Zeit."
+   ],
+   [
+    "abfragen/abhören",
+    "人三/四格 + 物四格",
+    "Er fragt ihn die Vokabeln ab."
+   ],
+   [
+    "fragen/bitten",
+    "人四格",
+    "Ich frage dich etwas."
+   ],
+   [
+    "angehen",
+    "人四格 + nichts/etwas",
+    "Das geht dich nichts an."
+   ]
+  ],
+  "examples": [
+   [
+    "Der Flug hat meinen Vater 5000 Euro gekostet.",
+    "这趟航班花了我父亲 5000 欧元。（kosten+双四格）"
+   ],
+   [
+    "Sie hat mich Deutsch gelehrt.",
+    "她教我德语。"
+   ],
+   [
+    "Der Lehrer hat ihn die englischen Vokabeln abgefragt.",
+    "老师抽查了他英语单词。（唯一宾语必须四格）"
+   ],
+   [
+    "Das geht dich nichts an.",
+    "这不关你的事。（angehen 固定结构）"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M17-08",
+  "id": "personen",
+  "cat": "vokabel",
+  "title": "Personen und Lebensläufe（人物与简历）",
+  "titleDe": "Personen und Lebensläufe",
+  "explain": "主题词汇：人物与简历（Personen und Lebensläufe）。① 本课六大主题：个人信息、学校与教育（上学时/毕业后）、简历与工作经历、人际关系（两节）、名人事迹，覆盖求职与自我介绍场景。② Schule 指中小学阶段，Studium 指大学阶段：\"上学\"用 zur Schule gehen；大学学业用 Studium beginnen / unterbrechen / weiterführen / abschließen。③ 考试词汇：通过用 bestehen，挂科用 durch eine Prüfung fallen；升学用 versetzt werden，留级用 sitzen bleiben。④ 简历写作固定搭配：sich bewerben 接 um/auf/für 三个介词都行；Erfahrungen sammeln（积累经验）；über Fachkenntnisse verfügen（具备专业知识）；verantwortlich für … sein（负责……）。⑤ 名人事迹表达：einen Beitrag leisten（做出贡献）、eine Theorie entwickeln（提出理论）、etwas entdecken/erfinden（发现/发明）、einen Staat gründen（建立国家）。⑥ 人际关系：sich in jn. verlieben（四格反身动词）、eine Ehe schließen（结婚）。⑦ 老师强调：erarbeiten 多用于企业团队语境（高级词汇），个人小计划用 machen 就够了；anführen 强调\"带领/冲在第一线\"，führen/leiten 是抽象的\"领导\"。⑧ 记忆技巧：词汇按人生时间线编排——个人信息→学校→求职→工作→婚恋→名人事迹，可按时间顺序记忆。\n\n🇬🇧 英语对照：英语 résumé/CV；德语 der Lebenslauf，求职自我介绍词汇按人生时间线背。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "das Abitur",
+    "高中毕业考/高考"
+   ],
+   [
+    "sitzen bleiben",
+    "留级"
+   ],
+   [
+    "ledig",
+    "单身（未婚）"
+   ],
+   [
+    "die Bewerbung",
+    "申请/求职信"
+   ],
+   [
+    "anführen",
+    "率领（冲锋在前）"
+   ],
+   [
+    "erarbeiten",
+    "（协作）制定"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich habe die (deutsche) Staatsbürgerschaft.",
+    "我拥有（德国）公民身份。"
+   ],
+   [
+    "das Abitur machen / ablegen",
+    "取得高中毕业证书。"
+   ],
+   [
+    "sich um / auf / für eine Stelle bewerben",
+    "申请工作岗位。"
+   ],
+   [
+    "sich in jemanden verlieben",
+    "爱上某人。（四格反身）"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M17-13",
+  "id": "daheim",
+  "cat": "vokabel",
+  "title": "Daheim und unterwegs（家与旅途）",
+  "titleDe": "Daheim und unterwegs",
+  "explain": "主题词汇：家与旅途（Daheim und unterwegs）。① 本课四大场景：居住（租房）、德国城市、旅行、酒店，词汇围绕生活服务展开。② 德国租房特色词：die Kaution（押金）、die Kaltmiete（冷租）、die Nebenkosten（附加费用）；老师答疑：Miete 单数指每次支付的租金，Mieten 指多次支付的总和。③ einbehalten 的固定主语是房东：Der Vermieter hat die Kaution einbehalten（房东扣押了押金），固定说法要背下来。④ beklagen 可作及物动词，表示\"为……而惋惜/痛惜\"（如发帖呼吁改变现状），不等同于普通\"抱怨\"。⑤ 旅行谚语：die Katze im Sack kaufen（瞎买/买不了解的东西）、tief in die Tasche greifen（大把花钱/掏腰包）；sich an Stränden sonnen 是日光浴（泛指多个沙滩，am Strand 则特指某一个沙滩）。⑥ Wert auf Akk legen 译作\"重视/善用、利用好\"（auf ein kostenloses Frühstück Wert legen）。⑦ 城市描写搭配：besuchen（去某地）、besichtigen（参观景点）、den Grundstein für etw. legen（为……奠基）。\n\n🇬🇧 英语对照：英语 rent/deposit；德语 Kaution/Kaltmiete/Nebenkosten，租房词汇是德国生活必备。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "die Miete, -n",
+    "房租"
+   ],
+   [
+    "der Preisaufschlag",
+    "涨价/加价"
+   ],
+   [
+    "die Frühstückspension",
+    "供早餐的民宿"
+   ],
+   [
+    "der Wellnessbereich",
+    "康乐区"
+   ],
+   [
+    "Wert auf Akk. legen",
+    "重视…"
+   ]
+  ],
+  "examples": [
+   [
+    "bei Mietbeginn eine Kaution bezahlen",
+    "租赁开始时支付押金。"
+   ],
+   [
+    "die Kaltmiete / die Nebenkosten beträgt…",
+    "冷租/附加费用是……"
+   ],
+   [
+    "die Katze im Sack kaufen",
+    "瞎买（买不了解的东西）。"
+   ],
+   [
+    "für den Urlaub tief in die Tasche greifen",
+    "为度假掏腰包。"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M18-08",
+  "id": "kulturen",
+  "cat": "vokabel",
+  "title": "Zwischen den Kulturen（文化之间）",
+  "titleDe": "Zwischen den Kulturen",
+  "explain": "主题词汇：文化之间（Zwischen den Kulturen）。① 本课分五部分：欧洲与德国人、海外冒险、文化差异、认识索布人（两节）。② 第一节是\"统计数据\"主题词汇：Wirtschaftsdaten（经济数据）、im Mittelfeld liegen / an der Spitze / unter dem Durchschnitt / einsam vorn（中游/顶端/低于平均/单独领先）；统计报道固定句 der Statistik zufolge / statistisch gesehen。③ 易错点：unterhalb 与 unter 意思一样，但 unterhalb 是非常书面的说法。④ 第二节海外工作/生活词汇：Ausschau halten nach（寻找机会）、sich an + Akk gewöhnen（适应）、sich mit seiner Heimat verbunden fühlen（感受到与祖国的联系）、von einem besseren Leben träumen（憧憬更好的生活）；成对记忆 ins Ausland ziehen（迁往国外）vs an die Heimat denken（思乡）。⑤ 第三节跨文化商务礼仪：sich über die Gewohnheiten informieren（了解习惯）、Aufforderungen nicht direkt, immer höflich formulieren（委婉提要求）、核心价值观 Bescheidenheit（谦逊）与 Kompromissbereitschaft（妥协意愿）、Die Hierarchien sind ausgeprägt/flach（层级分明/扁平）。⑥ 第四、五节介绍德国少数民族索布人：Minderheit（少数群体）、sich ansiedeln（定居）、die Eigenständigkeit bewahren（保持独立）、die Entwicklung der Sprache und Kultur fördern（促进语言文化发展）。⑦ 记忆技巧：成群记忆动词组合，如 begrüßen/empfangen/willkommen heißen（接待）、pflegen/begehen/feiern（庆祝节日）；或按\"反义词对\"串联记忆。\n\n🇬🇧 英语对照：英语 cross-cultural；德语 Zwischen den Kulturen，统计句式+商务礼仪成组背。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "der Statistik zufolge",
+    "据统计"
+   ],
+   [
+    "im Mittelfeld liegen",
+    "处于中游"
+   ],
+   [
+    "das Heimweh",
+    "思乡"
+   ],
+   [
+    "die Minderheit",
+    "少数民族"
+   ],
+   [
+    "unterhalb（书面）",
+    "在…之下"
+   ]
+  ],
+  "examples": [
+   [
+    "Die Deutschen liegen im Mittelfeld.",
+    "德国人处于中游。"
+   ],
+   [
+    "der Statistik zufolge",
+    "据统计。"
+   ],
+   [
+    "auf Höflichkeit Wert legen",
+    "重视礼貌。"
+   ],
+   [
+    "traditionelle Feste pflegen / begehen / feiern",
+    "维持/庆祝传统节日。"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M18-15",
+  "id": "arbeit",
+  "cat": "vokabel",
+  "title": "Arbeit und Studium（工作与学习）",
+  "titleDe": "Arbeit und Studium",
+  "explain": "主题词汇：工作与学习（Arbeit und Studium）。① 本课分八部分：打电话（16 个子场景）、日常工作、工作续、电子邮件、会议、大学、商务信函、信件称呼与问候。② 电话场景按通话流程组织：接电话→找人→转接/问名→人不在→提供帮助→留言→询问事由→说明事由→索取信息→约人→提议时间→回应提议→取消预约→承诺跟进→结束（Danke für Ihren Anruf / Auf Wiederhören）。③ 易错细节：Wie war Ihr Name?（来电者已说过名字时复述确认）vs Wie ist Ihr Name?（来电者还没说名字时询问）——过去时与现在时的礼貌分工。④ 电话留言常用虚拟二式委婉句：Könnten Sie Herrn … ausrichten, dass …? / Könnten Sie Herrn … bitte sagen, er/sie soll mich zurückrufen.。⑤ 约会时间表达群：Geht/Ginge es am … um … Uhr? / Passt es Ihnen am …? / Hätten Sie nächste Woche Zeit?；回应：Der Termin kommt mir sehr gelegen. / Das trifft sich gut. / Mir ist leider etwas dazwischengekommen（临时有事）。⑥ 工作生活词汇：die E-Mail-Flut（邮件泛滥）、ständig erreichbar sein（随时在线）与保护员工的对策对应（nach Arbeitsende keine E-Mails mehr weiterleiten 下班后不再转发邮件）；会议效率表达 als Zeitfresser gelten（被视为时间杀手）、einen Zeitpuffer einplanen（预留缓冲时间）。⑦ 大学场景：sich für ein Studienfach entscheiden（选专业）、BAföG（国家助学金）是德国特有概念。⑧ 信件称呼三档：正式 Sehr geehrte Damen und Herren（Sie 大写）、半正式 Liebe Frau (Müller) + Mit besten Grüßen、非正式 Liebe Petra + Mit herzlichen Grüßen；正式称呼的 Sie/Ihnen 必须大写。\n\n🇬🇧 英语对照：英语 make an appointment；德语 einen Termin vereinbaren/absagen，电话流程按 16 步背。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "der Zeitfresser",
+    "时间杀手（低效会议）"
+   ],
+   [
+    "das BAföG",
+    "助学金"
+   ],
+   [
+    "die Frist",
+    "截止日期"
+   ],
+   [
+    "weiterleiten",
+    "转接（电话）"
+   ],
+   [
+    "Sehr geehrte/r …",
+    "尊敬的…"
+   ]
+  ],
+  "examples": [
+   [
+    "Ich würde gern mit Ihnen einen Termin vereinbaren.",
+    "我想与您预约。"
+   ],
+   [
+    "Ich muss den Termin leider absagen.",
+    "遗憾的是我必须取消预约。"
+   ],
+   [
+    "die E-Mail-Flut bewältigen",
+    "应对大量邮件。"
+   ],
+   [
+    "sich an einer Universität einschreiben",
+    "注册入学。"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M19-07",
+  "id": "zeit",
+  "cat": "vokabel",
+  "title": "Zeit und Tätigkeit（时间与活动）",
+  "titleDe": "Zeit und Tätigkeit",
+  "explain": "主题词汇：时间与活动（Zeit und Tätigkeit）。① 本课分四部分：时间与活动、休闲与阅读、运动时间、特别活动与爱好。② 第一节是时间管理词汇群：die Zeiteinteilung（时间划分）、die Zeit verschwenden/vergeuden（浪费时间）、etwas raubt jemandem die Zeit（某事占用时间）；时间拟人短句 Die Zeit läuft/drängt/geht vorbei（时间流逝/紧迫）。③ 第二节休闲趋势：an Bedeutung gewinnen（重要性增加）、fließende Grenzen zwischen Arbeitszeit und Freizeit（工作与休闲界限模糊）、Angst haben, etwas zu verpassen（害怕错过）——与社交媒体时代语境相连。④ 第三节运动词汇：球类用 spielen（Fußball spielen）、an einer Weltmeisterschaft teilnehmen（参加世锦赛）、einen Weltrekord aufstellen（创世界纪录）、Mitglied der Nationalmannschaft sein（国家队成员）。⑤ 第四节\"小众爱好\"词汇：Wasserski fahren（滑水）、Honig schleudern（取蜜）、der Imker（养蜂人）、die Geheimschrift（密码）；动词搭配 sich für das Außergewöhnliche begeistern（对非凡事物充满热情）。⑥ 记忆技巧：按\"动词+名词\"固定搭配成组记，如 Trends feststellen（确定趋势）、Regeln festlegen（制定规则）、einen Fußballverband gründen（成立足协）。\n\n🇬🇧 英语对照：英语 waste time；德语 die Zeit verschwenden/vergeuden，动词+名词固定搭配成组背。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "der Stau",
+    "堵车"
+   ],
+   [
+    "Zeit verschwenden",
+    "浪费时间"
+   ],
+   [
+    "der Weltrekord",
+    "世界纪录"
+   ],
+   [
+    "das Bienenvolk",
+    "蜂群"
+   ],
+   [
+    "die Freizeitgestaltung",
+    "休闲安排"
+   ]
+  ],
+  "examples": [
+   [
+    "die Zeit verschwenden / vergeuden",
+    "浪费时间。"
+   ],
+   [
+    "sich die Zeit einteilen",
+    "安排时间。"
+   ],
+   [
+    "im Schichtdienst arbeiten",
+    "轮班工作。"
+   ],
+   [
+    "einen Weltrekord aufstellen",
+    "创造世界纪录。"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M19-41",
+  "id": "spannung",
+  "cat": "vokabel",
+  "title": "Spannung und Entspannung（紧张与放松）",
+  "titleDe": "Spannung und Entspannung",
+  "explain": "主题词汇：紧张与放松（Spannung und Entspannung）。① 本课分四部分：世界新闻、电视犯罪剧、政治、犯罪——\"紧张\"主题贯穿新闻价值与犯罪话题；注意：标题中的\"Entspannung\"（放松）并未单独成节，本课内容实际偏向\"紧张/刺激\"一侧。② 新闻价值八要素（本课核心清单）：Aktualität（时事性）、Überraschung（惊喜性）、Bekanntheit（熟悉性）、Personalisierung（个性化）、Spannung（紧张性）、Kuriosität（好奇性）、Nähe（亲近性）、Identifikation（认同感）——成串记忆。③ 犯罪剧词汇群：den Tatort untersuchen（调查现场）、Beweise sammeln（收集证据）、den Täter überführen（给凶手定罪）、das Geständnis ablegen（坦白）；固定搭配 dem Täter auf der Spur sein（追踪凶手）。④ 犯罪统计表达：die Kriminalitätsrangliste anführen（犯罪率排名第一）、die Aufklärungsquote（破案率）、aus der Polizeilichen Kriminalstatistik (PKS) hervorgehen（出自警方犯罪统计）。⑤ 反腐词汇群：den Kampf gegen die Korruption antreten（打响反腐斗争）、Macht missbrauchen（滥用权力）、Bestechungsgelder zahlen/annehmen（行贿/受贿）、das Vertrauen in die staatliche Verwaltung verlieren（失去对政府的信任）。⑥ 政治冷漠表达：die Politikverdrossenheit（厌恶政治）、Das politische Interesse sinkt/steigt/bleibt gleich；生动比喻 auf eine Mauer des Schweigens stoßen（碰到沉默之墙）、sich um mehr Transparenz bemühen（努力提高透明度）。\n\n🇬🇧 英语对照：英语 crime drama；德语 der Tatort/die Aufklärungsquote，新闻价值八要素成串背。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "der Tatort",
+    "犯罪现场（刑侦剧）"
+   ],
+   [
+    "aufklären",
+    "查明/破案"
+   ],
+   [
+    "die Politikverdrossenheit",
+    "政治冷漠"
+   ],
+   [
+    "die Bestechung",
+    "贿赂"
+   ],
+   [
+    "die Einschaltquote",
+    "收视率"
+   ]
+  ],
+  "examples": [
+   [
+    "dem Täter auf der Spur sein",
+    "追踪凶手。"
+   ],
+   [
+    "ein Verbrechen verüben / begehen",
+    "犯罪。"
+   ],
+   [
+    "Neugier erregen / wecken",
+    "引起好奇心。"
+   ],
+   [
+    "Bestechungsgelder zahlen / annehmen",
+    "行贿/受贿。"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M20-62",
+  "id": "technik",
+  "cat": "vokabel",
+  "title": "Technik und Trends（技术与趋势）",
+  "titleDe": "Technik und Trends",
+  "explain": "主题词汇：技术与趋势（Technik und Trends）。① 本课分四块主题：日常生活中的设备与产品（含计划性报废 Obsoleszenz）、电脑安全、新旧学习技巧、发明专利。② 设备操作词汇群：benutzen/einschalten/ausschalten/bedienen（使用/打开/关闭/操作）；部件词 Knopf/Schalter/Hebel/Taste；位置描述固定句式\"befindet sich an der linken/rechten/oberen/unteren Seite\"。③ Obsoleszenz（计划性报废）是本课关键词：eingebaute Fehler（内置缺陷）、nach einer bestimmten Zeit den Geist aufgeben（到时停止运转）、den Verkauf ankurbeln（刺激销量）；对立面词汇 schärfere Vorschriften fordern / Maßnahmen ergreifen（要求更严格规定/采取措施）。④ 产品命名与市场：Die Nachfrage nach einem unverwechselbaren Namen wächst（对独特名称的需求增长）、注重性价比 auf das Preis-Leistungs-Verhältnis achten、sich auf dem Markt durchsetzen（市场胜出）。⑤ 电脑安全词汇群：Schädling（恶意软件）、infizieren（感染）、einnisten（潜入）、verschlüsseln（加密）、Passwort knacken（破解密码）；防范表达 sich durch Anti-Viren-Programme schützen（用杀毒软件保护自己）。⑥ 学习技巧部分强调记忆与大脑：Hippocampus（海马体）、mit stärkeren Emotionen verknüpft sein（与更强烈的情绪相连）。⑦ 发明专利词汇：Erfindung（发明）与 Entdeckung（发现）要区分；Die Patentanmeldung wird beim Patentamt eingereicht（向专利局提交申请）、Das Patent wird seinem Erfinder zugesprochen（专利被授予发明人）。\n\n🇬🇧 英语对照：英语 planned obsolescence；德语 die Obsoleszenz，本课关键词，设备+安全+专利三块背。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "die Obsoleszenz",
+    "计划报废"
+   ],
+   [
+    "büffeln",
+    "死记硬背"
+   ],
+   [
+    "die Datensicherung",
+    "数据备份"
+   ],
+   [
+    "das Patent",
+    "专利"
+   ],
+   [
+    "die Firewall",
+    "防火墙"
+   ]
+  ],
+  "examples": [
+   [
+    "Der Knopf befindet sich an der linken Seite.",
+    "旋钮位于左侧。"
+   ],
+   [
+    "den Verkauf ankurbeln",
+    "增加销量。"
+   ],
+   [
+    "sich auf dem Markt durchsetzen",
+    "在市场上获得成功。"
+   ],
+   [
+    "Daten verschlüsseln",
+    "加密数据。"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M20-70",
+  "id": "gesundheit",
+  "cat": "vokabel",
+  "title": "Gesundheit und Umwelt（健康与环境）",
+  "titleDe": "Gesundheit und Umwelt",
+  "explain": "主题词汇：健康与环境（Gesundheit und Umwelt）。① 本课分五部分：健康生活、健康问题、食物与环境、环境问题与人类负担、健康睡眠。② 健康生活核心句型群：Krankheiten vermeiden/verhindern（避免/预防疾病）、sich ausgewogen ernähren（均衡饮食）、auf Zigaretten und Alkohol verzichten（戒烟酒）；危险因素用 Risikofaktor 串联（falsche Ernährung / mangelnde Bewegung）。③ 就医表达易错点：an (einer Krankheit) leiden（患病用 an）与 unter (Schmerzen) leiden（遭受痛苦用 unter）的介词区别；Schulmedizin（主流医学）与 alternative Heilmethoden（替代疗法）对应。④ 食物与环境部分多为警示短句：Die Alarmglocken sollten läuten（警钟应响起）、der Raubbau an der Natur（过度开发自然）、Die Tierbestände müssen sich regenerieren（动物种群必须再生）、Die Nachfrage übersteigt das Angebot（需求超过供应）。⑤ 环境政策动词群：Plastiktüten verbieten（禁用塑料袋）、mehr Hausmüll recyceln（回收更多生活垃圾）、herkömmliche Busse durch Elektrobusse ersetzen（电动公交取代传统公交）、Fördermittel zur Verfügung stellen（提供资助资金）。⑥ 健康睡眠文化点：午睡在德国名声不好（in Deutschland einen schlechten Ruf haben / als schwach oder faul gelten）；Schlafstörungen/Schlafmangel 与 die Konzentrationsfähigkeit beeinträchtigen（损害注意力）搭配。⑦ 记忆技巧：按\"问题—对策\"成对记忆，如 Gesundheitliche Beschwerden nehmen zu（问题）与 Initiativen zum Schutz der Mitarbeiter starten（对策）。\n\n🇬🇧 英语对照：英语 suffer from；德语 an (Krankheit) leiden vs unter (Schmerzen) leiden，介词分工记牢。",
+  "table": [
+   [
+    "词",
+    "中文"
+   ],
+   [
+    "die Krankenkasse",
+    "医保/健康保险公司"
+   ],
+   [
+    "die Zivilisationskrankheit",
+    "文明病"
+   ],
+   [
+    "die Innenstadtmaut",
+    "市中心通行费"
+   ],
+   [
+    "die Erhebung",
+    "征收"
+   ],
+   [
+    "die Überfischung",
+    "过度捕捞"
+   ]
+  ],
+  "examples": [
+   [
+    "Die Meere sind überfischt.",
+    "海洋被过度捕捞。"
+   ],
+   [
+    "Die Luftverschmutzung bleibt nach wie vor ein Gefahrenherd.",
+    "空气污染仍然是一个危险。"
+   ],
+   [
+    "Es kommt zu einem Engpass.",
+    "出现短缺。"
+   ],
+   [
+    "an einer Krankheit leiden / unter Schmerzen leiden",
+    "患病/遭受痛苦。（介词分工）"
+   ]
+  ],
+  "level": "B2"
+ },
+ {
+  "num": "M21-01",
+  "id": "dativ_verben2",
+  "cat": "yufa",
+  "title": "支配第三格的动词（二）",
+  "titleDe": "Verben mit Dativ (2)",
+  "explain": "支配第三格的动词（二）。① 本课是 A2 阶段三格动词的延续，收录此前未讲的三格动词，属于查漏补缺性质。② 核心是带可分前缀的三格动词家族：bei-（beistehen 帮助、beiwohnen 出席）、entgegen-（entgegengehen 走向、entgegenwirken 对抗）、nach-（nachgeben 让步、nachkommen 履行、nachlaufen 追随、nachstellen 追求、nachstreben 效仿）、wider-（widerstehen 抵抗）。③ 易错点：beistehen（三格\"帮助\"）不要写成 bestehen（\"由…组成/通过\"，用法完全不同）；sich widersetzen 是三格反身动词（Ich habe mich dem Plan widersetzt），不要漏掉反身代词；widerstehen（不及物，三格）与 widerlegen（四格\"反驳\"）是两词。④ 记忆技巧：前缀 nach-/entgegen-/wider- 带有\"朝向/逆向\"的方向感，这类动词多支配三格；geschehen（发生）是典型无人称三格动词（was in jenem Jahr geschehen war）。⑤ entsagen（三格\"放弃\"）后常接抽象名词三格复数（den Freuden des Lebens），写作中可替换口语化的 aufgeben。⑥ 语序注意：这些动词在从句中居句尾（was in jenem Jahr geschehen war）。\n\n🇬🇧 英语对照：英语 attend/resist 无介词；德语 beiwohnen/widerstehen + 三格，前缀家族整批背。",
+  "table": [
+   [
+    "动词",
+    "含义",
+    "例子"
+   ],
+   [
+    "beistehen",
+    "援助",
+    "Er steht mir bei."
+   ],
+   [
+    "nachgeben",
+    "让步",
+    "Er gibt dem Druck nach."
+   ],
+   [
+    "nachkommen",
+    "履行/跟上",
+    "Sie kommt ihrer Pflicht nach."
+   ],
+   [
+    "widerstehen",
+    "抵挡",
+    "Er widersteht der Versuchung."
+   ],
+   [
+    "sich widersetzen",
+    "反抗",
+    "Sie widersetzt sich dem Plan."
+   ]
+  ],
+  "examples": [
+   [
+    "Sie müssen der Gerichtsverhandlung beiwohnen.",
+    "你们必须出席庭审。（beiwohnen+三格）"
+   ],
+   [
+    "Du musst den Freuden des Lebens nicht entsagen.",
+    "你不必放弃人生的乐趣。（entsagen+三格）"
+   ],
+   [
+    "Offenkundig hat sie der Versuchung widerstanden.",
+    "显然她抵挡住了诱惑。（widerstehen+三格）"
+   ],
+   [
+    "Alle Studenten hier strebten ihrem Lehrer nach.",
+    "这里所有学生都效仿他们的老师。"
+   ]
+  ],
+  "level": "C1"
+ },
+ {
+  "num": "M22-01",
+  "id": "adj_praep",
+  "cat": "vokabel",
+  "title": "形容词和介词的搭配总结",
+  "titleDe": "Adjektiv + Präposition",
+  "explain": "形容词和介词的搭配总结。① 形容词固定搭配介词是 C1 考试高频考点，不能按中文\"对…\"直译成一个介词，必须逐个记忆。② von（+三格）表来源/原因：abhängig von、begeistert von、enttäuscht von、überzeugt von；注意 von dem 缩合为 vom（begeistert vom Gesang）。③ auf（+四格）表情绪指向：stolz auf、neugierig auf、eifersüchtig auf、neidisch auf；对象是被指向的人或事。④ an（+三格）表关联：interessiert an、erkrankt an、reich an、schuld an、beteiligt an；注意 an dem 缩合为 am。⑤ mit（+三格）表伴随/一致：zufrieden mit、einverstanden mit、versöhnt mit。⑥ 易错点：überzeugt von 不要说成 überzeugt über；interessiert an 不要混成 interessiert für；ärgerlich 既可接 auf 也可接 über，含义侧重不同。⑦ 记忆技巧：按介词（von/auf/an/mit）归类成表记忆，而不是按形容词字母顺序背；多为 sein + 形容词 + 介词的表语结构。\n\n🇬🇧 英语对照：英语 proud of/interested in；德语 stolz auf/interessiert an，介词逐个死记，按介词归类。",
+  "table": [
+   [
+    "搭配",
+    "中文"
+   ],
+   [
+    "stolz / böse / wütend + auf",
+    "为…骄傲 / 生…的气"
+   ],
+   [
+    "glücklich / traurig + über",
+    "对…高兴 / 难过"
+   ],
+   [
+    "interessiert + an",
+    "对…感兴趣"
+   ],
+   [
+    "zufrieden / fertig + mit",
+    "对…满意 / 完成"
+   ],
+   [
+    "fähig / bereit + zu",
+    "有能力… / 准备好…"
+   ],
+   [
+    "neugierig + auf",
+    "对…好奇"
+   ],
+   [
+    "begeistert / enttäuscht + von",
+    "为…着迷 / 失望"
+   ]
+  ],
+  "examples": [
+   [
+    "Das ist von den Umständen abhängig.",
+    "这取决于情况。"
+   ],
+   [
+    "Ich bin davon überzeugt, dass er der Täter ist.",
+    "我确信他就是凶手。（überzeugt von）"
+   ],
+   [
+    "Er ist sehr stolz auf seine Tochter.",
+    "他为女儿感到骄傲。（stolz auf）"
+   ],
+   [
+    "Ich bin mit seiner Antwort nicht zufrieden.",
+    "我对他的回答不满意。（zufrieden mit）"
+   ]
+  ],
+  "level": "C1"
+ },
+ {
+  "num": "M21-17",
+  "id": "wetter_sprache",
+  "cat": "vokabel",
+  "title": "天气与语言",
+  "titleDe": "Das Wetter und die Sprachen",
+  "explain": "主题词汇：天气与语言（Das Wetter und die Sprachen）。① 本课实际包含两大主题六个词汇段：天气（天气预报用语、天气与健康）+ 语言（语言变化、语言学习、非语言交际）。② 天气预报表达高度固定：温度用 liegen bei/steigen auf/sinken auf，高低压用 das Hoch/das Tief，降水按强度分为 Schauer（阵雨）/Regen（雨）/Schneefall（降雪）/Gewitter（雷暴）/Unwetter（恶劣天气）。③ 固定搭配记忆：der Nebel löst sich auf（雾散）、in Strömen regnen（倾盆大雨）、mit Unwetter ist zu rechnen（预计有恶劣天气）。④ \"天气与健康\"段引入 Wetterfühligkeit（天气敏感）等 C1 话题词，适合口语和写作中谈论健康与环境话题。⑤ \"语言\"段核心词 Anglisierung（英语化）、Verkehrssprache（通用语）、Sprachbarrieren（语言障碍），可用于讨论语言政策、英语影响类议论文。⑥ 非语言交际三词辨析：Körpersprache（身体语言，总称）/ Mimik（面部表情）/ Gestik（手势），写作描述人物时常用。⑦ 易错：die Wettervorhersage 是阴性；der Schauer（阵雨）不要与作\"恐怖\"解的 Schauer 混淆；Tiefsttemperatur 注意复数形式 Tiefsttemperaturen。⑧ 记忆技巧：按\"预报—现象—健康\"和\"语言—学习—交际\"两条线分组记；动词多与名词固定搭配出现，背搭配不背孤词。\n\n🇬🇧 英语对照：英语 weather forecast；德语 die Wettervorhersage，预报用语高度固定，整句背。",
+  "table": [
+   [
+    "主题",
+    "德语",
+    "中文"
+   ],
+   [
+    "天气预报用语",
+    "die Höchst-/Tiefsttemperatur",
+    "最高/最低气温"
+   ],
+   [
+    "天气预报用语",
+    "steigen / sinken",
+    "上升/下降"
+   ],
+   [
+    "天气预报用语",
+    "das Hoch / das Tief",
+    "高压/低压"
+   ],
+   [
+    "天气预报用语",
+    "die Aufheiterung",
+    "放晴"
+   ],
+   [
+    "天气预报用语",
+    "bewölkt",
+    "多云"
+   ],
+   [
+    "天气预报用语",
+    "der Schauer",
+    "阵雨"
+   ],
+   [
+    "天气预报用语",
+    "der Niederschlag",
+    "降水"
+   ],
+   [
+    "天气预报用语",
+    "niederschlagsfrei",
+    "无降水"
+   ],
+   [
+    "天气预报用语",
+    "der Schnee",
+    "雪"
+   ],
+   [
+    "天气预报用语",
+    "der Schneefall",
+    "降雪"
+   ],
+   [
+    "天气预报用语",
+    "der Nebel",
+    "雾"
+   ],
+   [
+    "天气预报用语",
+    "das Nebelfeld",
+    "雾区"
+   ],
+   [
+    "天气预报用语",
+    "der Wind",
+    "风"
+   ],
+   [
+    "天气预报用语",
+    "die Sturmböe",
+    "强阵风"
+   ],
+   [
+    "天气预报用语",
+    "das Unwetter",
+    "恶劣天气"
+   ],
+   [
+    "天气预报用语",
+    "das Gewitter",
+    "雷暴"
+   ],
+   [
+    "天气预报用语",
+    "der Regen",
+    "雨"
+   ],
+   [
+    "天气预报用语",
+    "in Strömen regnen",
+    "倾盆大雨"
+   ],
+   [
+    "天气预报用语",
+    "der Donner",
+    "雷声"
+   ],
+   [
+    "天气预报用语",
+    "donnern",
+    "打雷"
+   ],
+   [
+    "天气预报用语",
+    "der Blitz",
+    "闪电"
+   ],
+   [
+    "天气预报用语",
+    "der Blitzeinschlag",
+    "雷击"
+   ],
+   [
+    "天气预报用语",
+    "blitzen",
+    "闪电划过"
+   ],
+   [
+    "天气预报",
+    "die Wettervorhersage",
+    "天气预报"
+   ],
+   [
+    "天气预报",
+    "die Wetteraussicht",
+    "天气展望"
+   ],
+   [
+    "天气预报",
+    "das Wetterphänomen",
+    "天气现象"
+   ],
+   [
+    "天气预报",
+    "der Wetterverlauf",
+    "天气过程"
+   ],
+   [
+    "天气预报",
+    "die Bauernregel",
+    "农谚"
+   ],
+   [
+    "天气预报",
+    "die Überlieferung",
+    "流传"
+   ],
+   [
+    "天气预报",
+    "das Stationsnetz",
+    "观测站网"
+   ],
+   [
+    "天气预报",
+    "die Wetterbeobachtung",
+    "气象观测"
+   ],
+   [
+    "天气预报",
+    "vereinheitlichen",
+    "统一"
+   ],
+   [
+    "天气预报",
+    "analysieren",
+    "分析"
+   ],
+   [
+    "天气预报",
+    "der Wetterdienst",
+    "气象服务"
+   ],
+   [
+    "天气预报",
+    "die Treffsicherheit",
+    "准确度"
+   ],
+   [
+    "天气预报",
+    "zuverlässig",
+    "可靠的"
+   ],
+   [
+    "天气与健康",
+    "die Wetterfühligkeit",
+    "天气敏感"
+   ],
+   [
+    "天气与健康",
+    "wetterfühlig",
+    "对天气敏感的"
+   ],
+   [
+    "天气与健康",
+    "das Wohlbefinden",
+    "健康幸福感"
+   ],
+   [
+    "天气与健康",
+    "beeinflussen",
+    "影响"
+   ],
+   [
+    "天气与健康",
+    "das Krankheitssymptom",
+    "疾病症状"
+   ],
+   [
+    "天气与健康",
+    "einer Tätigkeit nachgehen",
+    "从事某项活动"
+   ],
+   [
+    "天气与健康",
+    "klagen",
+    "抱怨"
+   ],
+   [
+    "天气与健康",
+    "der Schmerz",
+    "疼痛"
+   ],
+   [
+    "天气与健康",
+    "die Beschwerde",
+    "不适"
+   ],
+   [
+    "天气与健康",
+    "hervorrufen",
+    "引起"
+   ],
+   [
+    "天气与健康",
+    "das Leiden",
+    "痛苦"
+   ],
+   [
+    "天气与健康",
+    "die Wetterlage",
+    "天气形势"
+   ],
+   [
+    "天气与健康",
+    "die Hitze",
+    "炎热"
+   ],
+   [
+    "天气与健康",
+    "die UV-Strahlung",
+    "紫外线辐射"
+   ],
+   [
+    "天气与健康",
+    "das Hautkrebsrisiko",
+    "皮肤癌风险"
+   ],
+   [
+    "天气与健康",
+    "die Warnung",
+    "警告"
+   ],
+   [
+    "天气与健康",
+    "der Meteorologe",
+    "气象学家"
+   ],
+   [
+    "天气与健康",
+    "subjektiv",
+    "主观的"
+   ],
+   [
+    "天气与健康",
+    "die Einschätzung",
+    "评估"
+   ],
+   [
+    "语言英语化",
+    "sich vollziehen",
+    "发生"
+   ],
+   [
+    "语言英语化",
+    "die Ausdrucksweise",
+    "表达方式"
+   ],
+   [
+    "语言英语化",
+    "das Forschungsergebnis",
+    "研究成果"
+   ],
+   [
+    "语言英语化",
+    "veröffentlichen",
+    "发表"
+   ],
+   [
+    "语言英语化",
+    "die Welthilfssprache",
+    "世界辅助语言"
+   ],
+   [
+    "语言英语化",
+    "heranwachsen",
+    "发展成为"
+   ],
+   [
+    "语言英语化",
+    "die Sprachbarriere",
+    "语言障碍"
+   ],
+   [
+    "语言英语化",
+    "aus dem Weg räumen",
+    "消除"
+   ],
+   [
+    "语言英语化",
+    "die Verkehrssprache",
+    "通用语"
+   ],
+   [
+    "语言英语化",
+    "der Widerstand",
+    "抵制"
+   ],
+   [
+    "语言英语化",
+    "die Landessprache",
+    "本国语言"
+   ],
+   [
+    "语言英语化",
+    "das Verständigungsmittel",
+    "交际工具"
+   ],
+   [
+    "语言英语化",
+    "sich entfremden",
+    "疏远"
+   ],
+   [
+    "学语言",
+    "erlernen",
+    "学会"
+   ],
+   [
+    "学语言",
+    "verlernen",
+    "遗忘"
+   ],
+   [
+    "学语言",
+    "nachschlagen",
+    "查阅"
+   ],
+   [
+    "学语言",
+    "übersetzen",
+    "翻译"
+   ],
+   [
+    "学语言",
+    "umschreiben",
+    "释义"
+   ],
+   [
+    "学语言",
+    "der Kontext",
+    "语境"
+   ],
+   [
+    "学语言",
+    "festigen",
+    "巩固"
+   ],
+   [
+    "学语言",
+    "der Lernstoff",
+    "学习材料"
+   ],
+   [
+    "学语言",
+    "erfassen",
+    "掌握"
+   ],
+   [
+    "学语言",
+    "das Gehirn",
+    "大脑"
+   ],
+   [
+    "学语言",
+    "stimulieren",
+    "刺激"
+   ],
+   [
+    "学语言",
+    "der Lerntyp",
+    "学习类型"
+   ],
+   [
+    "学语言",
+    "der Biorhythmus",
+    "生物节律"
+   ],
+   [
+    "学语言",
+    "die Gelegenheit",
+    "机会"
+   ],
+   [
+    "学语言",
+    "nutzen",
+    "利用"
+   ],
+   [
+    "非语言交际",
+    "die Körpersprache",
+    "肢体语言"
+   ],
+   [
+    "非语言交际",
+    "die Mimik",
+    "面部表情"
+   ],
+   [
+    "非语言交际",
+    "der Gesichtsausdruck",
+    "面部表情"
+   ],
+   [
+    "非语言交际",
+    "die Gestik",
+    "手势"
+   ],
+   [
+    "非语言交际",
+    "die Körperhaltung",
+    "姿态"
+   ],
+   [
+    "非语言交际",
+    "die Körperbewegung",
+    "身体动作"
+   ],
+   [
+    "非语言交际",
+    "unbewusst",
+    "无意识地"
+   ],
+   [
+    "非语言交际",
+    "die Botschaft",
+    "信息"
+   ],
+   [
+    "非语言交际",
+    "verraten",
+    "透露"
+   ],
+   [
+    "非语言交际",
+    "seelisch",
+    "心理的"
+   ],
+   [
+    "非语言交际",
+    "die Aufmerksamkeit",
+    "注意"
+   ],
+   [
+    "非语言交际",
+    "signalisieren",
+    "发出信号"
+   ],
+   [
+    "非语言交际",
+    "kontrollieren",
+    "控制"
+   ],
+   [
+    "非语言交际",
+    "der Gefühlszustand",
+    "情绪状态"
+   ],
+   [
+    "非语言交际",
+    "zum Ausdruck bringen",
+    "表达"
+   ]
+  ],
+  "examples": [
+   [
+    "Die Höchsttemperaturen liegen bei 30 Grad.",
+    "最高温度 30 度。"
+   ],
+   [
+    "Es gibt einige Schauer.",
+    "有一些阵雨。"
+   ],
+   [
+    "Der Nebel löst sich auf.",
+    "雾散了。"
+   ],
+   [
+    "sich mit der Bedeutung der Körpersprache beschäftigen",
+    "研究肢体语言的意义。"
+   ]
+  ],
+  "level": "C1"
+ },
+ {
+  "num": "M22-18",
+  "id": "glueck_gefuehle",
+  "cat": "vokabel",
+  "title": "幸福与其他情感",
+  "titleDe": "Glück und andere Gefühle",
+  "explain": "主题词汇：幸福与其他情感（Glück und andere Gefühle）。① 本课围绕\"幸福\"与\"情感\"分 4 段：幸福与不幸、压力、笑与幽默、愚人节玩笑，情绪话题词汇密集。② 幸福研究类多为 Glück- 复合名词：Glücksfähigkeit（幸福能力）、Glücksniveau（幸福水平）、Glücksempfinden、Zufriedenheitsgefühl，适合 C1 写作论述\"幸福\"话题，可成组记忆。③ 压力段是职场话题核心表达：unter Stress leiden（承受压力）、die Psyche wird belastet/entlastet、die Gratifikationskrise（付出—回报危机），以及 Anspruch und Wirklichkeit klaffen auseinander（期望与现实脱节）。④ 幽默段口语表达丰富：sich totlachen（笑死）、Witze reißen（讲笑话）、mit etwas ist nicht zu spaßen（某事开不得玩笑）；近义词 Spaßvogel/Witzbold/Scherzkeks/Ulknudel 都是\"爱开玩笑的人\"。⑤ 愚人节段是文化词汇：Aprilscherz、jemanden in den April schicken（和某人开愚人节玩笑）、hinters Licht führen（欺骗），了解德国 4 月 1 日习俗。⑥ 易错：Glück 一词多义（幸福/运气），die Glücksfähigkeit 指\"获得幸福的能力\"；schadenfroh（幸灾乐祸的）是形容词；der Stress 为阳性。⑦ 记忆技巧：Glück- 复合词家族一起记；压力段按\"压力源—身心反应—应对\"链条记（Anforderungen steigen → Psyche wird belastet → Balance finden）。\n\n🇬🇧 英语对照：英语 happiness；德语 das Glück（幸福/运气），Glück- 复合词家族成组背。",
+  "table": [
+   [
+    "主题",
+    "德语",
+    "中文"
+   ],
+   [
+    "幸福与不幸",
+    "sich Gedanken machen",
+    "思考"
+   ],
+   [
+    "幸福与不幸",
+    "empirisch",
+    "经验的"
+   ],
+   [
+    "幸福与不幸",
+    "die Untersuchung",
+    "研究"
+   ],
+   [
+    "幸福与不幸",
+    "die Frohnatur",
+    "乐天派"
+   ],
+   [
+    "幸福与不幸",
+    "die Stimmung",
+    "情绪"
+   ],
+   [
+    "幸福与不幸",
+    "die Glücksfähigkeit",
+    "感受幸福的能力"
+   ],
+   [
+    "幸福与不幸",
+    "angeboren",
+    "天生的"
+   ],
+   [
+    "幸福与不幸",
+    "das Glücksniveau",
+    "幸福水平"
+   ],
+   [
+    "幸福与不幸",
+    "die Zufriedenheit",
+    "满意"
+   ],
+   [
+    "幸福与不幸",
+    "der Wohlstand",
+    "富足"
+   ],
+   [
+    "幸福与不幸",
+    "Jeder ist seines Glückes Schmied",
+    "每个人都是自己幸福的创造者（谚语）"
+   ],
+   [
+    "幸福与不幸",
+    "der Lebensumstand",
+    "生活状况"
+   ],
+   [
+    "幸福与不幸",
+    "abhängen (von)",
+    "取决于"
+   ],
+   [
+    "幸福与不幸",
+    "sich gewöhnen (an)",
+    "习惯"
+   ],
+   [
+    "幸福与不幸",
+    "der Pechvogel",
+    "倒霉鬼"
+   ],
+   [
+    "幸福与不幸",
+    "unglücklich",
+    "不幸的"
+   ],
+   [
+    "幸福与不幸",
+    "die Emotion",
+    "情绪"
+   ],
+   [
+    "幸福与不幸",
+    "in den Griff bekommen",
+    "控制"
+   ],
+   [
+    "幸福与不幸",
+    "die Angst",
+    "害怕"
+   ],
+   [
+    "幸福与不幸",
+    "die Enttäuschung",
+    "失望"
+   ],
+   [
+    "幸福与不幸",
+    "erleben",
+    "经历"
+   ],
+   [
+    "幸福与不幸",
+    "die Vergangenheit",
+    "过去"
+   ],
+   [
+    "压力",
+    "stressig",
+    "有压力的"
+   ],
+   [
+    "压力",
+    "leiden (unter)",
+    "遭受"
+   ],
+   [
+    "压力",
+    "der Überlebensreflex",
+    "生存反射"
+   ],
+   [
+    "压力",
+    "die Hilflosigkeit",
+    "无助"
+   ],
+   [
+    "压力",
+    "belasten / entlasten",
+    "负担/减负"
+   ],
+   [
+    "压力",
+    "die Anforderung",
+    "要求"
+   ],
+   [
+    "压力",
+    "die Karriere",
+    "事业"
+   ],
+   [
+    "压力",
+    "das Erfolgserlebnis",
+    "成功体验"
+   ],
+   [
+    "压力",
+    "der Anspruch",
+    "期望"
+   ],
+   [
+    "压力",
+    "die Wirklichkeit",
+    "现实"
+   ],
+   [
+    "压力",
+    "sich identifizieren (mit)",
+    "认同"
+   ],
+   [
+    "压力",
+    "die Belohnungschance",
+    "回报机会"
+   ],
+   [
+    "压力",
+    "die Gratifikationskrise",
+    "奖酬危机"
+   ],
+   [
+    "压力",
+    "die Wertschätzung",
+    "尊重"
+   ],
+   [
+    "压力",
+    "die Anerkennung",
+    "表彰"
+   ],
+   [
+    "压力",
+    "die Motivation",
+    "动力"
+   ],
+   [
+    "压力",
+    "die Balance",
+    "平衡"
+   ],
+   [
+    "压力",
+    "die Priorität",
+    "优先事项"
+   ],
+   [
+    "压力",
+    "die Stärke",
+    "优势"
+   ],
+   [
+    "笑与幽默",
+    "lachen",
+    "笑"
+   ],
+   [
+    "笑与幽默",
+    "lustig / amüsant",
+    "有趣的"
+   ],
+   [
+    "笑与幽默",
+    "sich krummlachen",
+    "笑弯腰"
+   ],
+   [
+    "笑与幽默",
+    "sich totlachen",
+    "笑死了"
+   ],
+   [
+    "笑与幽默",
+    "sich ausschütten (vor Lachen)",
+    "爆笑"
+   ],
+   [
+    "笑与幽默",
+    "der Humor",
+    "幽默"
+   ],
+   [
+    "笑与幽默",
+    "der Witz",
+    "笑话"
+   ],
+   [
+    "笑与幽默",
+    "Witze erzählen / reißen",
+    "讲笑话"
+   ],
+   [
+    "笑与幽默",
+    "mit etwas ist nicht zu spaßen",
+    "某事开不得玩笑"
+   ],
+   [
+    "笑与幽默",
+    "die Gesundheit",
+    "健康"
+   ],
+   [
+    "笑与幽默",
+    "die soziale Beziehung",
+    "社会关系"
+   ],
+   [
+    "愚人节玩笑",
+    "in den April schicken",
+    "开愚人节玩笑"
+   ],
+   [
+    "愚人节玩笑",
+    "auf den Arm nehmen",
+    "捉弄"
+   ],
+   [
+    "愚人节玩笑",
+    "hinters Licht führen",
+    "欺骗"
+   ],
+   [
+    "愚人节玩笑",
+    "hereinlegen",
+    "欺骗"
+   ],
+   [
+    "愚人节玩笑",
+    "der Scherz",
+    "玩笑"
+   ],
+   [
+    "愚人节玩笑",
+    "der Streich",
+    "恶作剧"
+   ],
+   [
+    "愚人节玩笑",
+    "veralbern / verspotten / auslachen",
+    "愚弄/嘲笑"
+   ],
+   [
+    "愚人节玩笑",
+    "schadenfroh",
+    "幸灾乐祸"
+   ],
+   [
+    "愚人节玩笑",
+    "der Brauch",
+    "习俗"
+   ]
+  ],
+  "examples": [
+   [
+    "Die Glücksfähigkeit ist zum Teil angeboren.",
+    "幸福能力在一定程度上是天生的。"
+   ],
+   [
+    "unter Stress leiden",
+    "承受压力。"
+   ],
+   [
+    "sich totlachen",
+    "笑死。"
+   ],
+   [
+    "Aprilscherze sind seit dem 16. Jahrhundert verbürgt.",
+    "愚人节恶作剧从 16 世纪起就有记载。"
+   ]
+  ],
+  "level": "C1"
+ },
+ {
+  "num": "M23-19",
+  "id": "erfolg_niederlage",
+  "cat": "vokabel",
+  "title": "成功与失败",
+  "titleDe": "Erfolge und Niederlagen",
+  "explain": "主题词汇：成功与失败（Erfolge und Niederlagen）。① 本课 4 段：体育中的成功、职业成功、公司介绍、失败的艺术，\"成功与失败\"正反两面都覆盖，适合议论文正反论证。② 体育成功表达：den Titel holen/erringen（夺得头衔）、den ersten Platz belegen（获得第一名）；兴奋剂话题链 Doping—Dopingkontrolle—disqualifiziert（取消资格）。③ 职业成功关键词：Erfolg im Beruf、die Sozialkompetenz（社交能力）、die Teamfähigkeit（团队能力）、Chancen suchen und ergreifen（寻找并抓住机会），求职与面试话题高频词。④ \"失败的艺术\"是本课特色段：Misserfolge erleiden（遭受失败）、ein Traum zerplatzt（梦想破灭）、das Projekt in den Sand setzen（把项目搞砸），学习积极、得体地谈论失败的表达。⑤ 固定搭配：die Verantwortung (anderen) in die Schuhe schieben（推卸责任给他人）、den Sport an den Nagel hängen（告别体坛，字面\"把运动挂在钉子上\"）。⑥ 易错：der Erfolg（成功）vs das Ergebnis（结果）；scheitern（失败）是不及物动词（das Projekt ist gescheitert）；die Niederlage（战败/失败）vs der Misserfolg（不成功）。⑦ 记忆技巧：按\"成功三段 + 失败一段\"结构记；失败段重点记动词搭配 erleiden/versagen/misslingen/missglücken 的区别。\n\n🇬🇧 英语对照：英语 success/failure；德语 der Erfolg/die Niederlage，失败段学\"得体地谈失败\"。",
+  "table": [
+   [
+    "主题",
+    "德语",
+    "中文"
+   ],
+   [
+    "体育成功",
+    "teilnehmen (an)",
+    "参加"
+   ],
+   [
+    "体育成功",
+    "gewinnen",
+    "赢得"
+   ],
+   [
+    "体育成功",
+    "der Meister / die Meisterin",
+    "冠军"
+   ],
+   [
+    "体育成功",
+    "der Titel",
+    "头衔"
+   ],
+   [
+    "体育成功",
+    "der Profi",
+    "职业（选手）"
+   ],
+   [
+    "体育成功",
+    "der Amateur",
+    "业余（选手）"
+   ],
+   [
+    "体育成功",
+    "die Silbermedaille",
+    "银牌"
+   ],
+   [
+    "体育成功",
+    "der Erfolgsdruck",
+    "成功压力"
+   ],
+   [
+    "体育成功",
+    "olympisch",
+    "奥林匹克的"
+   ],
+   [
+    "体育成功",
+    "das Dabeisein",
+    "参与"
+   ],
+   [
+    "体育成功",
+    "die Leistungsfähigkeit",
+    "运动能力"
+   ],
+   [
+    "体育成功",
+    "steigern",
+    "提高"
+   ],
+   [
+    "体育成功",
+    "das Aufputschmittel",
+    "兴奋剂"
+   ],
+   [
+    "体育成功",
+    "die Nebenwirkung",
+    "副作用"
+   ],
+   [
+    "体育成功",
+    "die Dopingkontrolle",
+    "兴奋剂检测"
+   ],
+   [
+    "体育成功",
+    "disqualifizieren",
+    "取消资格"
+   ],
+   [
+    "体育成功",
+    "an den Nagel hängen",
+    "放弃（习语）"
+   ],
+   [
+    "体育成功",
+    "die Karriere beenden",
+    "结束职业生涯"
+   ],
+   [
+    "职业成功",
+    "Karriere machen",
+    "创事业"
+   ],
+   [
+    "职业成功",
+    "die Abschlussnote",
+    "毕业成绩"
+   ],
+   [
+    "职业成功",
+    "aussagekräftig",
+    "有说服力的"
+   ],
+   [
+    "职业成功",
+    "die Sozialkompetenz",
+    "社交能力"
+   ],
+   [
+    "职业成功",
+    "die Teamfähigkeit",
+    "团队能力"
+   ],
+   [
+    "职业成功",
+    "besitzen",
+    "具备"
+   ],
+   [
+    "职业成功",
+    "gefragt",
+    "受欢迎的"
+   ],
+   [
+    "职业成功",
+    "durchschauen",
+    "看透"
+   ],
+   [
+    "职业成功",
+    "der Stellenantritt",
+    "入职"
+   ],
+   [
+    "职业成功",
+    "die Zielvereinbarung",
+    "目标协议"
+   ],
+   [
+    "职业成功",
+    "sich zurückhalten",
+    "克制"
+   ],
+   [
+    "职业成功",
+    "der Besserwisser",
+    "万事通"
+   ],
+   [
+    "职业成功",
+    "lästern",
+    "说坏话"
+   ],
+   [
+    "职业成功",
+    "der Arbeitgeber",
+    "雇主"
+   ],
+   [
+    "职业成功",
+    "die Chance ergreifen",
+    "抓住机会"
+   ],
+   [
+    "职业成功",
+    "das Hindernis",
+    "障碍"
+   ],
+   [
+    "职业成功",
+    "überwinden",
+    "克服"
+   ],
+   [
+    "职业成功",
+    "das Risiko eingehen",
+    "承担风险"
+   ],
+   [
+    "职业成功",
+    "sich orientieren",
+    "定位"
+   ],
+   [
+    "公司介绍",
+    "weltweit führend",
+    "世界领先"
+   ],
+   [
+    "公司介绍",
+    "das Unternehmen",
+    "公司"
+   ],
+   [
+    "公司介绍",
+    "das Produkt",
+    "产品"
+   ],
+   [
+    "公司介绍",
+    "entwickeln",
+    "开发"
+   ],
+   [
+    "公司介绍",
+    "herstellen",
+    "生产"
+   ],
+   [
+    "公司介绍",
+    "maßgeschneidert",
+    "定制的"
+   ],
+   [
+    "公司介绍",
+    "die Dienstleistung",
+    "服务"
+   ],
+   [
+    "公司介绍",
+    "die Lösung",
+    "解决方案"
+   ],
+   [
+    "公司介绍",
+    "anbieten",
+    "提供"
+   ],
+   [
+    "公司介绍",
+    "innovativ",
+    "创新的"
+   ],
+   [
+    "公司介绍",
+    "die Technik",
+    "技术"
+   ],
+   [
+    "公司介绍",
+    "das Know-how",
+    "专业知识"
+   ],
+   [
+    "公司介绍",
+    "der Mitarbeiter",
+    "员工"
+   ],
+   [
+    "公司介绍",
+    "der Wettbewerbsvorteil",
+    "竞争优势"
+   ],
+   [
+    "公司介绍",
+    "die Verantwortung übernehmen",
+    "承担责任"
+   ],
+   [
+    "公司介绍",
+    "der Aktionär",
+    "股东"
+   ],
+   [
+    "失败的艺术",
+    "der Misserfolg",
+    "失败"
+   ],
+   [
+    "失败的艺术",
+    "scheitern",
+    "失败"
+   ],
+   [
+    "失败的艺术",
+    "versagen",
+    "失败"
+   ],
+   [
+    "失败的艺术",
+    "der Versager",
+    "失败者"
+   ],
+   [
+    "失败的艺术",
+    "in den Sand setzen",
+    "搞砸"
+   ],
+   [
+    "失败的艺术",
+    "der Traum zerplatzt",
+    "梦想破灭"
+   ],
+   [
+    "失败的艺术",
+    "aus Misserfolgen lernen",
+    "从失败中学习"
+   ],
+   [
+    "失败的艺术",
+    "die Niederlage",
+    "失败"
+   ],
+   [
+    "失败的艺术",
+    "mit Niederlagen umgehen",
+    "应对失败"
+   ],
+   [
+    "失败的艺术",
+    "der Umgang",
+    "应对"
+   ]
+  ],
+  "examples": [
+   [
+    "den Titel holen / erringen",
+    "夺得冠军头衔。"
+   ],
+   [
+    "Dopingkontrollen durchführen",
+    "进行兴奋剂检查。"
+   ],
+   [
+    "Chancen suchen und ergreifen",
+    "寻找并抓住机会。"
+   ],
+   [
+    "ein Traum zerplatzt",
+    "梦想破灭。"
+   ]
+  ],
+  "level": "C1"
+ },
+ {
+  "num": "M24-27",
+  "id": "fortschritt_umwelt",
+  "cat": "vokabel",
+  "title": "进步与环境",
+  "titleDe": "Fortschritt und Umwelt",
+  "explain": "主题词汇：进步与环境（Fortschritt und Umwelt）。① 本课 6 段：进步、新媒体、语言变化、环境、水资源，主题是\"进步\"与\"环境\"的辩证关系，议论文素材丰富。② 进步段讨论科技利弊：Lebenserwartung steigt（寿命延长）vs im Stau stehen（堵车）、Annehmlichkeiten（便利），适合\"科技进步利弊\"类写作正反论述。③ 新媒体段聚焦隐私：die Privatsphäre gegen Bequemlichkeit eintauschen（为了便利交换隐私）、digitale Spuren hinterlassen（留下数字足迹）、der Datenschutz，是 C1 写作互联网话题的高频词。④ 语言变化段：chatten/bloggen/mailen/googeln 等英语借词动词化，auf die Großschreibung verzichten（放弃大写）反映网络语言特点。⑤ 环境段核心词链：Klimawandel/globale Erwärmung（气候变化）— Treibhausgase werden ausgestoßen（温室气体排放）— Pro-Kopf-Emissionen（人均排放）；水资源段：Wasserknappheit、Dürre、Flüsse versickern（河流干涸）。⑥ 易错：der Klimawandel（阳性）、die Dürre（阴性）、das Treibhausgas（中性复合词）；der Stau（堵车）不要与 der Staub（灰尘）混淆。⑦ 记忆技巧：按\"进步—代价\"链条记（Stau、Privatsphäre 换取 Lebenserwartung、Annehmlichkeiten）；环境段按\"原因—现象—对策\"记（Emissionen—Erwärmung—Aufklärungsarbeit）。\n\n🇬🇧 英语对照：英语 climate change；德语 der Klimawandel，\"进步—代价\"链条背议论文素材。",
+  "table": [
+   [
+    "主题",
+    "德语",
+    "中文"
+   ],
+   [
+    "进步",
+    "meistern",
+    "克服"
+   ],
+   [
+    "进步",
+    "die Geschwindigkeit",
+    "速度"
+   ],
+   [
+    "进步",
+    "jährlich",
+    "每年"
+   ],
+   [
+    "进步",
+    "der Stau",
+    "拥堵"
+   ],
+   [
+    "进步",
+    "die Parkplatzsuche",
+    "找车位"
+   ],
+   [
+    "进步",
+    "die Lebenserwartung",
+    "预期寿命"
+   ],
+   [
+    "进步",
+    "die Lebensqualität",
+    "生活质量"
+   ],
+   [
+    "进步",
+    "abhängen (von)",
+    "取决于"
+   ],
+   [
+    "进步",
+    "sogenannt",
+    "所谓的"
+   ],
+   [
+    "新媒体",
+    "abrufen",
+    "获取"
+   ],
+   [
+    "新媒体",
+    "die Suchmaschine",
+    "搜索引擎"
+   ],
+   [
+    "新媒体",
+    "digital",
+    "数字的"
+   ],
+   [
+    "新媒体",
+    "die Spur hinterlassen",
+    "留下痕迹"
+   ],
+   [
+    "新媒体",
+    "die Privatsphäre",
+    "隐私"
+   ],
+   [
+    "新媒体",
+    "der Datenschutz",
+    "数据保护"
+   ],
+   [
+    "新媒体",
+    "das Urheberrecht",
+    "版权"
+   ],
+   [
+    "新媒体",
+    "die Suchanfrage",
+    "搜索请求"
+   ],
+   [
+    "新媒体",
+    "durchsuchen",
+    "搜遍"
+   ],
+   [
+    "新媒体",
+    "der Datenverkehr",
+    "数据流量"
+   ],
+   [
+    "新媒体",
+    "analysieren",
+    "分析"
+   ],
+   [
+    "新媒体",
+    "digitalisieren",
+    "数字化"
+   ],
+   [
+    "新媒体",
+    "die Anzeige platzieren",
+    "投放广告"
+   ],
+   [
+    "新媒体",
+    "zur Verfügung stellen",
+    "提供"
+   ],
+   [
+    "新媒体",
+    "warnen (vor)",
+    "警告"
+   ],
+   [
+    "新媒体",
+    "das Risiko bergen",
+    "带来风险"
+   ],
+   [
+    "新媒体",
+    "unaufhaltsam",
+    "不可阻挡的"
+   ],
+   [
+    "新媒体",
+    "der Aufstieg",
+    "上升"
+   ],
+   [
+    "语言变化",
+    "chatten / bloggen / mailen / googeln",
+    "聊天/写博客/发邮件/谷歌"
+   ],
+   [
+    "语言变化",
+    "der Verfall",
+    "衰落"
+   ],
+   [
+    "语言变化",
+    "der Tippfehler",
+    "打字错误"
+   ],
+   [
+    "语言变化",
+    "sich häufen",
+    "增加"
+   ],
+   [
+    "语言变化",
+    "die Großschreibung",
+    "大写"
+   ],
+   [
+    "语言变化",
+    "verzichten (auf)",
+    "放弃"
+   ],
+   [
+    "语言变化",
+    "das Emoticon",
+    "表情符号"
+   ],
+   [
+    "语言变化",
+    "ausdrücken",
+    "表达"
+   ],
+   [
+    "语言变化",
+    "die Rechtschreibung",
+    "拼写"
+   ],
+   [
+    "语言变化",
+    "der Satzbau",
+    "句法"
+   ],
+   [
+    "语言变化",
+    "der Wortschatz",
+    "词汇"
+   ],
+   [
+    "环境与气候",
+    "die globale Erwärmung",
+    "全球变暖"
+   ],
+   [
+    "环境与气候",
+    "der Klimawandel",
+    "气候变化"
+   ],
+   [
+    "环境与气候",
+    "die Gefahr",
+    "危险"
+   ],
+   [
+    "环境与气候",
+    "das Bewusstsein",
+    "意识"
+   ],
+   [
+    "环境与气候",
+    "das Treibhausgas",
+    "温室气体"
+   ],
+   [
+    "环境与气候",
+    "ausstoßen",
+    "排放"
+   ],
+   [
+    "环境与气候",
+    "die Pro-Kopf-Emission",
+    "人均排放"
+   ],
+   [
+    "环境与气候",
+    "der Biosprit",
+    "生物燃料"
+   ],
+   [
+    "环境与气候",
+    "kostspielig",
+    "昂贵的"
+   ],
+   [
+    "环境与气候",
+    "der Treibhauseffekt",
+    "温室效应"
+   ],
+   [
+    "环境与气候",
+    "verschlimmern",
+    "恶化"
+   ],
+   [
+    "环境与气候",
+    "die Wassernachfrage",
+    "用水需求"
+   ],
+   [
+    "环境与气候",
+    "sich verdoppeln",
+    "加倍"
+   ],
+   [
+    "环境与气候",
+    "die Abholzung",
+    "砍伐"
+   ],
+   [
+    "环境与气候",
+    "in die Flucht treiben",
+    "驱赶"
+   ],
+   [
+    "环境与气候",
+    "der Lebensmittelpreis",
+    "食品价格"
+   ],
+   [
+    "环境与气候",
+    "explodieren",
+    "暴涨"
+   ],
+   [
+    "环境与气候",
+    "aufmerksam machen auf",
+    "提醒注意"
+   ],
+   [
+    "水",
+    "prekär",
+    "岌岌可危"
+   ],
+   [
+    "水",
+    "mangeln (an)",
+    "缺乏"
+   ],
+   [
+    "水",
+    "die Wasserknappheit",
+    "缺水"
+   ],
+   [
+    "水",
+    "knapp",
+    "稀缺的"
+   ],
+   [
+    "水",
+    "das Trinkwasser",
+    "饮用水"
+   ],
+   [
+    "水",
+    "der Wasserverbrauch",
+    "用水量"
+   ],
+   [
+    "水",
+    "ansteigen",
+    "上升"
+   ],
+   [
+    "水",
+    "das Abwasser",
+    "废水"
+   ],
+   [
+    "水",
+    "das Leck",
+    "漏洞"
+   ],
+   [
+    "水",
+    "ungenutzt",
+    "未被利用的"
+   ],
+   [
+    "水",
+    "die Dürre",
+    "干旱"
+   ],
+   [
+    "水",
+    "leiden (unter)",
+    "遭受"
+   ],
+   [
+    "水",
+    "die Landwirtschaft",
+    "农业"
+   ]
+  ],
+  "examples": [
+   [
+    "Die Lebenserwartung steigt.",
+    "预期寿命在上升。"
+   ],
+   [
+    "Der Klimawandel schreitet voran.",
+    "气候变化正在加剧。"
+   ],
+   [
+    "Treibhausgase werden ausgestoßen.",
+    "温室气体被排放。"
+   ],
+   [
+    "jährlich viele Stunden im Stau verbringen",
+    "每年花很多小时堵在路上。"
+   ]
+  ],
+  "level": "C1"
+ }
+]

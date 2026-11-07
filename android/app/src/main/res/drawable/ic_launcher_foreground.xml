@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 星图主题启动图标：中央一颗星（accent2 #6AB0FF），108dp 视窗，内容保持在安全区 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#6AB0FF"
+        android:pathData="M54,26 L60.6,45.1 L80.6,45.6 L64.7,57.7 L70.6,77.4 L54,65.9 L37.4,77.4 L43.3,57.7 L27.4,45.6 L47.4,45.1 Z" />
+</vector>

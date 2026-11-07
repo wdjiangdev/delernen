@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 配色取自网站 theme.css（深色默认） -->
+    <color name="background">#0A0E1A</color>
+    <color name="ic_launcher_background">#0A0E1A</color>
+</resources>
