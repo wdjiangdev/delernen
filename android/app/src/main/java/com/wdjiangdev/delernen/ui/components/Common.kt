@@ -22,6 +22,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -41,8 +42,8 @@ fun SegmentedRow(options: List<String>, selected: String, onSelect: (String) -> 
                 onClick = { onSelect(opt) },
                 shape = SegmentedButtonDefaults.itemShape(index = i, count = options.size),
                 colors = SegmentedButtonDefaults.colors(
-                    containerColor = DelernenColors.Chip,
-                    selectedContainerColor = DelernenColors.AccentBg
+                    inactiveContainerColor = DelernenColors.Chip,
+                    activeContainerColor = DelernenColors.AccentBg
                 )
             ) {
                 Text(opt, fontSize = 13.sp)

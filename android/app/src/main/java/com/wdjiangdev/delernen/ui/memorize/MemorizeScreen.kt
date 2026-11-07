@@ -5,7 +5,9 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -319,7 +321,7 @@ private fun StudyView(vm: MemorizeViewModel) {
 }
 
 @Composable
-private fun StudyCard(card: SrsCard, flipped: Boolean, onFlip: () -> Unit) {
+private fun ColumnScope.StudyCard(card: SrsCard, flipped: Boolean, onFlip: () -> Unit) {
     CardSurface(
         modifier = Modifier
             .fillMaxWidth()
@@ -419,7 +421,7 @@ private fun StudyCard(card: SrsCard, flipped: Boolean, onFlip: () -> Unit) {
 }
 
 @Composable
-private fun GradeButton(label: String, tint: Color, onClick: () -> Unit) {
+private fun RowScope.GradeButton(label: String, tint: Color, onClick: () -> Unit) {
     Surface(
         onClick = onClick,
         shape = MaterialTheme.shapes.medium,

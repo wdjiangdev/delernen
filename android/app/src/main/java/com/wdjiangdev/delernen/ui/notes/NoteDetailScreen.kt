@@ -87,7 +87,7 @@ private fun BlockView(b: AliceBlock) {
         "li" -> Row(
             Modifier
                 .fillMaxWidth()
-                .padding(start = 20.dp, end = 16.dp, vertical = 3.dp)
+                .padding(start = 20.dp, top = 3.dp, end = 16.dp, bottom = 3.dp)
         ) {
             Text("• ", style = MaterialTheme.typography.bodyMedium, color = DelernenColors.Accent2)
             Text(

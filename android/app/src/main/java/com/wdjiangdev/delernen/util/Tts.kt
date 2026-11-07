@@ -12,7 +12,7 @@ import java.util.Locale
  */
 class TtsHelper private constructor(context: Context) {
 
-    val ready by mutableStateOf(false)
+    var ready by mutableStateOf(false)
     var germanAvailable by mutableStateOf(false)
         private set
 
@@ -22,9 +22,9 @@ class TtsHelper private constructor(context: Context) {
         try {
             tts = TextToSpeech(context.applicationContext) { status ->
                 if (status == TextToSpeech.SUCCESS) {
-                    val r = tts?.isLanguageAvailable(Locale.GERMAN) ?: TextToSpeech.LANG_NOT_FOUND
+                    val r = tts?.isLanguageAvailable(Locale.GERMAN) ?: TextToSpeech.LANG_NOT_SUPPORTED
                     germanAvailable = r != TextToSpeech.LANG_MISSING_DATA &&
-                            r != TextToSpeech.LANG_NOT_FOUND
+                            r != TextToSpeech.LANG_NOT_SUPPORTED
                 }
                 ready = true
             }

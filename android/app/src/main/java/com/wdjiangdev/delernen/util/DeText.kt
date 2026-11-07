@@ -4,6 +4,7 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.unit.sp
 import com.wdjiangdev.delernen.ui.theme.DelernenColors
 
 /**
@@ -39,7 +40,7 @@ object DeText {
         val noteMatch = NOTE_RE.find(rest)
         if (noteMatch != null) {
             append(rest.substring(0, noteMatch.range.first))
-            withStyle(SpanStyle(fontSize = androidx.compose.ui.unit.Sp(11), color = DelernenColors.Text3)) {
+            withStyle(SpanStyle(fontSize = 11.sp, color = DelernenColors.Text3)) {
                 append(noteMatch.groupValues[1])
             }
             append(rest.substring(noteMatch.range.last + 1))

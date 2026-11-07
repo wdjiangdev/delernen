@@ -1,8 +1,8 @@
 package com.wdjiangdev.delernen.ui.star
 
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
@@ -18,7 +19,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Canvas
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -37,13 +37,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.drawscope.Stroke
-import androidx.compose.ui.graphics.toArgb
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.IntOffset
+import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.wdjiangdev.delernen.data.VerbGroup
@@ -56,6 +56,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlin.math.cos
 import kotlin.math.min
+import kotlin.math.roundToInt
 import kotlin.math.sin
 
 /**
@@ -201,16 +202,26 @@ private fun StarGraph(
     onStem: () -> Unit
 ) {
     val n = group.members.size
-    var boxSize by remember { mutableStateOf(Size.Zero) }
+    var boxSize by remember { mutableStateOf(IntSize.Zero) }
 
-    // 成员按角度环绕（同一公式用于绘制与点击命中检测）
+    // px 换算只在 composable 作用域做一次；DrawScope 内一律直接用像素值
+    val density = LocalDensity.current
+    val marginPx = with(density) { 24.dp.toPx() }
+    val nodeRadiusPx = with(density) { 6.dp.toPx() }
+    val strokePx = with(density) { 1.dp.toPx() }
+    val stemHaloPx = with(density) { 34.dp.toPx() }
+    val labelOffsetPx = with(density) { 18.dp.toPx() }
+    val labelDyPx = with(density) { 4.dp.toPx() }
+    val numDyPx = with(density) { 12.dp.toPx() }
+
+    // 成员按角度环绕（同一公式用于 Canvas 绘制与文字/点击定位）
     val positions: List<Offset> = remember(n, boxSize.width, boxSize.height) {
-        if (boxSize.width == 0f || boxSize.height == 0f || n == 0) {
+        if (boxSize.width == 0 || boxSize.height == 0 || n == 0) {
             emptyList()
         } else {
             val cx = boxSize.width / 2f
             val cy = boxSize.height / 2f
-            val r = min(cx, cy) - 24.dp.toPx()
+            val r = min(cx, cy) - marginPx
             (0 until n).map { i ->
                 val a = 2 * Math.PI * i / n - Math.PI / 2
                 Offset(
@@ -227,33 +238,18 @@ private fun StarGraph(
             .height(300.dp)
             .padding(horizontal = 8.dp)
             .onSizeChanged { boxSize = it }
-            .pointerInput(n, positions) {
-                detectTapGestures { off ->
-                    var bestIdx = -1
-                    var bestD = Float.MAX_VALUE
-                    positions.forEachIndexed { i, p ->
-                        val d = (p - off).getDistance()
-                        if (d < bestD) {
-                            bestD = d
-                            bestIdx = i
-                        }
-                    }
-                    if (bestIdx >= 0 && bestD <= 34.dp.toPx()) {
-                        onMember(group.members[bestIdx])
-                    }
-                }
-            }
     ) {
+        // 线与圆画在 Canvas 内：坐标直接用 size（像素），不用 toPx/Density/drawIntoCanvas
         Canvas(Modifier.fillMaxSize()) {
             val cx = size.width / 2f
             val cy = size.height / 2f
-            val r = min(cx, cy) - 24.dp.toPx()
+            val r = min(cx, cy) - marginPx
 
             // 星轨
             drawCircle(
                 color = DelernenColors.Accent.copy(alpha = 0.18f),
                 radius = r,
-                style = Stroke(width = 1.dp.toPx())
+                style = Stroke(width = strokePx)
             )
             drawCircle(
                 color = DelernenColors.Accent.copy(alpha = 0.08f),
@@ -266,38 +262,66 @@ private fun StarGraph(
                     color = DelernenColors.Accent.copy(alpha = 0.45f),
                     start = Offset(cx, cy),
                     end = p,
-                    strokeWidth = 1.dp.toPx()
+                    strokeWidth = strokePx
                 )
-                drawCircle(color = DelernenColors.Accent2, radius = 6.dp.toPx(), center = p)
+                drawCircle(color = DelernenColors.Accent2, radius = nodeRadiusPx, center = p)
             }
 
-            // 中心词干圆
-            drawCircle(color = DelernenColors.Accent2.copy(alpha = 0.22f), radius = 34.dp.toPx(), center = Offset(cx, cy))
-            drawCircle(color = DelernenColors.Accent2, radius = 26.dp.toPx(), center = Offset(cx, cy))
+            // 中心词干光晕（实心词干圆由下方 52dp 圆形 Box 承担）
+            drawCircle(
+                color = DelernenColors.Accent2.copy(alpha = 0.22f),
+                radius = stemHaloPx,
+                center = Offset(cx, cy)
+            )
+        }
 
-            // 标签
-            drawIntoCanvas { c ->
-                val paint = android.graphics.Paint().apply {
-                    isAntiAlias = true
-                    textAlign = android.graphics.Paint.Align.CENTER
-                }
-                if (n <= 14) {
-                    paint.textSize = 11.dp.toPx()
-                    paint.color = DelernenColors.Text.toArgb()
-                    positions.forEachIndexed { i, p ->
-                        val a = 2 * Math.PI * i / n - Math.PI / 2
-                        val lx = p.x + (18.dp.toPx() * cos(a)).toFloat()
-                        val ly = p.y + (18.dp.toPx() * sin(a)).toFloat() + 4.dp.toPx()
-                        c.nativeCanvas.drawText(group.members[i].verb, lx, ly, paint)
-                    }
-                } else {
-                    // 成员过多时画编号，避免重叠（下方列表可按编号对照）
-                    paint.textSize = 10.dp.toPx()
-                    paint.color = DelernenColors.Text3.toArgb()
-                    positions.forEachIndexed { i, p ->
-                        c.nativeCanvas.drawText("#${i + 1}", p.x, p.y - 12.dp.toPx(), paint)
-                    }
-                }
+        // 成员标签与点击区：不画进 Canvas，用定位 Text / 圆形 Box 叠上去
+        val cx = boxSize.width / 2f
+        val cy = boxSize.height / 2f
+        positions.forEachIndexed { i, p ->
+            val a = 2 * Math.PI * i / n - Math.PI / 2
+            val member = group.members[i]
+
+            // 点击热区（透明圆形 Box，clip CircleShape + clickable，不在 Canvas 上命中）
+            Box(
+                Modifier
+                    .align(Alignment.Center)
+                    .offset { IntOffset((p.x - cx).roundToInt(), (p.y - cy).roundToInt()) }
+                    .size(48.dp)
+                    .clip(CircleShape)
+                    .clickable { onMember(member) }
+            )
+
+            if (n <= 14) {
+                // 标签：节点外侧 18dp 处
+                Text(
+                    member.verb,
+                    fontSize = 11.sp,
+                    color = DelernenColors.Text,
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .offset {
+                            IntOffset(
+                                (p.x + labelOffsetPx * cos(a) - cx).roundToInt(),
+                                (p.y + labelOffsetPx * sin(a) + labelDyPx - cy).roundToInt()
+                            )
+                        }
+                )
+            } else {
+                // 成员过多时画编号，避免重叠（下方列表可按编号对照）
+                Text(
+                    "#${i + 1}",
+                    fontSize = 10.sp,
+                    color = DelernenColors.Text3,
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                        .offset {
+                            IntOffset(
+                                (p.x - cx).roundToInt(),
+                                (p.y - numDyPx - cy).roundToInt()
+                            )
+                        }
+                )
             }
         }
 
