@@ -24,7 +24,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['与代词连用', 'wir alle / bei uns allen'],
             ['alles', 'Alles ist gut.']],
   'examples': [['Alle kleinen Kinder spielen gern.', '小孩子都贪玩。'],
-               ['Ich habe all das schlechte Wetter in Deutschland erfahren.',
+               ['Ich habe all das schlechte Wetter in Deutschland erlebt.',
                 '我经历过德国所有的坏天气。（all+定冠词）'],
                ['Das ist unser aller Hoffnung.', '这是我们所有人的希望。'],
                ['Das sind alles Lügen.', '这些不过都是谎言而已。（sein+alles）']]},
@@ -73,7 +73,8 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['四格', 'jemanden', 'niemanden']],
   'examples': [['Jemand muss das Geschirr abwaschen.', '得有人把碗刷了。'],
                ['Ich habe jemand / jemanden gesehen.', '我看见了某个人。（三四格可变可不变）'],
-               ['Niemand, der es weiß, hat das Unglück überlebt.', '没人活了下来，除了知道这事的人。（回指阳性单数）'],
+               ['Niemand, der es weiß, hat das Unglück überlebt.',
+                '知道这件事的人，没有一个在那场事故中活下来。（关系代词 der 回指阳性单数）'],
                ['Jemand Fremdes ist gekommen.', '某个陌生人来了。（形容词名词化）']]},
  {'num': 'M13-04',
   'id': 'irgend',
@@ -96,7 +97,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['irgendwo', '某处', 'Er ist irgendwo.'],
             ['irgendwelche-', '一些（复数）', 'irgendwelche Fragen']],
   'examples': [['Versteht er irgendetwas / irgendwas vom Wein?', '他到底懂不懂葡萄酒？'],
-               ['Es ist leider irgendwann kaputtgegangen.', '很不幸不知什么时候它被弄坏了。'],
+               ['Es ist leider irgendwann kaputtgegangen.', '可惜它不知什么时候坏掉了。'],
                ['Du musst das irgendwie machen.', '你必须想办法把这件事完成。'],
                ['Irgendeiner verletzt sich immer.', '总是有人受伤。（针对性弱于 Jemand…）']]},
  {'num': 'M13-05',
@@ -105,11 +106,12 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
   'title': 'ander / anders / verschieden',
   'titleDe': 'ander-, anders, verschieden',
   'explain': 'ander/andere/anders 与 verschieden/unterschiedlich 的区别。① anders = '
-             '与外部参照物"不同/其他"；verschieden/unterschiedlich = 内部"多种多样、彼此不同"，二者基本同义。② anders 作表语带 '
-             '-s（ist anders），作定语时去 s 再加形容词词尾（andere Biere）。③ verschieden/unterschiedlich '
+             '与外部参照物"不同/其他"；verschieden/unterschiedlich = 内部"多种多样、彼此不同"，二者基本同义。② ander- 和 anders '
+             '是两个词：ander- 是形容词，作定语按形容词加词尾（andere Biere、ein anderes Buch）；anders '
+             '是副词，作表语/状语（Deutschland ist anders；Er denkt anders）。③ verschieden/unterschiedlich '
              '既可作表语也可作定语；一定要区分时，unterschiedlich 画面感更"混乱/不成熟"（verschiedene Ideen '
-             '显想法多而厉害，unterschiedliche Ideen 显想法杂乱）。④ anders 除"不同的"外还有"其他的"之义（andere Sachen = '
-             '其他方法）。⑤ 易错：比较对象在句外/上文时用 anders（如 Deutschland ist anders als die alte '
+             '显想法多而厉害，unterschiedliche Ideen 显想法杂乱）。④ ander- 除"不同的"外还有"其他的"之义（andere Sachen = '
+             '别的东西/别的事）。⑤ 易错：比较对象在句外/上文时用 anders（如 Deutschland ist anders als die alte '
              'Heimat），同一范围内部比较用 verschieden/unterschiedlich（Maria und ihre Schwester sind sehr '
              'verschieden=姐妹俩之间差别大，而 sind sehr anders=和上文提到的某些人相比不同）。\n'
              '\n'
@@ -203,14 +205,14 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
   'explain': 'lassen 的用法总结。① 基本义"算了/什么也不做"（≈ machen 反义词）：Lass das!（别这么做！）/ Lass es.（es 比 das '
              '针对性弱，表"还是算了吧"）。② "让某物保持某种状态"：Ich lasse das Bild, wie es ist. / Ich lasse meine Haare '
              'wachsen.（留长发）/ lass mir was übrig（给我留点剩饭）。③ "允许"：Lass mich rein.（让我进去。）/ Ich lasse '
-             'mich nicht verarschen.（我不允许自己被欺负。）④ "命令"与"建议/邀请"：Der König lässt seine Soldaten '
-             'kommen.（国王命令士兵来。）/ Lass uns ein Bier trinken.（我们去喝一杯吧。）⑤ "让别人做/使……"：Ich ließ mein '
-             'Fahrrad reparieren.（我找人修了自行车。）/ Ich lasse mich scheiden.（我要离婚。）/ sich Aspirin '
-             'verschreiben lassen（让医生开药）。⑥ lassen + sich + 动词原形表被动，主语多为物（Das Problem lässt sich '
-             'leicht lösen = Das Problem kann leicht gelöst werden）；形式主语 es 不在句首时可省略（Darüber lässt '
-             '(es) sich streiten）。⑦ 完成时构成类情态动词：双原形（hat übersetzen lassen），从句中 haben 前置（…dass uns '
-             'der Lehrer den Text hat übersetzen lassen）。⑧ 易错：Mein Auto hat sich reparieren lassen '
-             '不地道，应说 Ich habe mein Auto reparieren lassen。\n'
+             'mich nicht verarschen.（我可不让人耍我。verarschen 是粗俗口语）④ "命令"与"建议/邀请"：Der König lässt seine '
+             'Soldaten kommen.（国王命令士兵来。）/ Lass uns ein Bier trinken.（我们去喝一杯吧。）⑤ "让别人做/使……"：Ich '
+             'ließ mein Fahrrad reparieren.（我找人修了自行车。）/ Ich lasse mich scheiden.（我要离婚。）/ sich '
+             'Aspirin verschreiben lassen（让医生开药）。⑥ lassen + sich + 动词原形表被动，主语多为物（Das Problem lässt '
+             'sich leicht lösen = Das Problem kann leicht gelöst werden）；形式主语 es 不在句首时可省略（Darüber '
+             'lässt (es) sich streiten）。⑦ 完成时构成类情态动词：双原形（hat übersetzen lassen），从句中 haben 前置（…dass '
+             'uns der Lehrer den Text hat übersetzen lassen）。⑧ 易错：Mein Auto hat sich reparieren '
+             'lassen 不地道，应说 Ich habe mein Auto reparieren lassen。\n'
              '\n'
              '🇬🇧 英语对照：英语 let/have/make 分工；德语 lassen 一词包办"让/使/允许/算了"，语境定含义。',
   'table': [['用法', '例子'],
@@ -304,9 +306,10 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
   'explain': 'gleich 和 derselbe 的区别。① gleich = 两个一样的对象；derselbe = 同一个对象，这是根本区别（der gleiche Hut '
              '两顶一样的帽子 vs derselbe Hut 同一顶帽子）。② derselbe 变格：der 部分按定冠词变，selbe 部分按形容词词尾变（mit '
              'derselben Tasse）。③ 介词后定冠词可与 selbe 分开并与介词缩合：am selben Tag、beim selben Arzt、zur selben '
-             'Zeit。④ zur selben Zeit = 同时/同一时刻；zur gleichen Zeit = 不同日期的同一时间，二者不可混同。⑤ '
-             '母语者也常混用，如"Wir arbeiten im gleichen Büro"规范应为"im selben Büro"。⑥ derselbe 可作代词用：Das '
-             'ist doch ein und dasselbe（还是一样）；Sie ist immer noch dieselbe wie damals（她一点没变）。\n'
+             'Zeit。④ 严格区分时：zur selben Zeit = 同时/同一时刻，zur gleichen Zeit = （不同日期的）同一钟点；但 Duden '
+             '指出语境清楚时不必死抠，日常 zur gleichen Zeit 也常表示"同时"（= gleichzeitig）。⑤ 母语者也常混用，如"Wir arbeiten '
+             'im gleichen Büro"规范应为"im selben Büro"。⑥ derselbe 可作代词用：Das ist doch ein und '
+             'dasselbe（还是一样）；Sie ist immer noch dieselbe wie damals（她一点没变）。\n'
              '\n'
              '🇬🇧 英语对照：英语 the same 含糊；德语 gleich（两样相同）vs derselbe（同一件），分得清清楚楚。',
   'table': [['词', '含义', '例子'],
@@ -344,11 +347,12 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
   'titleDe': 'Abkürzungen',
   'explain': '德语常用缩写总结。① 缩写多为首字母缩略，德语缩写一般每个字母后加小点（z. B. / d. h. / ca. / '
              'vgl.），纯大写字母词（Kfz/Lkw/Pkw/PC/CD/DVD/WC/WG/SMS）无点。② Kfz/Lkw/Pkw 复数只加 '
-             '-s（Pkws/Lkws），不加变音；das Abo 复数 das Abos。③ bzw. 与 d. h. 都表解释说明，bzw. 偏"更准确地说"，d. h. '
+             '-s（Pkws/Lkws），不加变音；das Abo 复数 die Abos。③ bzw. 与 d. h. 都表解释说明，bzw. 偏"更准确地说"，d. h. '
              '偏"也就是说"。④ EG/OG/UG 与楼层表述相关，注意奥地利拼写 Erdgeschoß（ß）与德国 Erdgeschoss（ss）差异。⑤ '
              '歌德/德福考纲要求掌握常用缩写，正式写作考试中可直接使用。⑥ der Akku（电池）、der Azubi（学徒）、die SMS '
-             '等已完全融入日常口语，属必须掌握的高频词。⑦ vgl. = vergleiche（参见），用于引用（vgl. Abb. S.3）；usw. 列举时前面仍保留 und '
-             '连接最后两项（Äpfel, Birnen usw.）。⑧ CH = Confoederatio Helvetica（瑞士联邦，拉丁语）。\n'
+             '等已完全融入日常口语，属必须掌握的高频词。⑦ vgl. = vergleiche（参见），用于引用（vgl. Abb. S.3）；usw. 本身就含 und（und '
+             'so weiter），所以前面不再用 und，也不加逗号（Äpfel, Birnen usw.）。⑧ CH = Confoederatio '
+             'Helvetica（瑞士联邦，拉丁语）。\n'
              '\n'
              '🇬🇧 英语对照：英语 e.g./i.e./etc.；德语 z. B./d. h./usw.，一一对应。',
   'table': [['缩写', '全称', '中文'],
@@ -365,7 +369,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
                 '我也许明天做完，最迟后天。（bzw.=更准确地说）'],
                ['Zwölf Kinder, d. h. fast die Hälfte der Klasse, waren krank.',
                 '12 个孩子，也就是说近半个班，生病了。'],
-               ['Es gab Kuchen, Gebäck, Milch und Kaffee usw.', '有蛋糕、点心、牛奶和咖啡等等。']]},
+               ['Es gab Kuchen, Gebäck, Milch, Kaffee usw.', '有蛋糕、点心、牛奶和咖啡等等。']]},
  {'num': 'M16-18',
   'id': 'b1_verben',
   'cat': 'vokabel',
@@ -410,7 +414,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['beschließen', '决定'],
             ['freihalten', '保持畅通、请客买单'],
             ['füttern', '喂食'],
-            ['grillieren', '烧烤'],
+            ['grillieren（瑞）', '烧烤（德国说 grillen）'],
             ['hageln', '下冰雹'],
             ['anrichten', '造成（损害）'],
             ['hinfallen', '跌倒'],
@@ -433,13 +437,13 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['pflanzen', '种植'],
             ['sich rasieren', '刮胡子'],
             ['reinigen', '清洁'],
-            ['Schwarzfahren', '逃票'],
+            ['schwarzfahren', '逃票'],
             ['transportieren', '运输'],
             ['überholen', '超车'],
             ['überreden', '说服'],
             ['umarmen', '拥抱'],
             ['sich ummelden', '搬家后重新登记'],
-            ['unterlassen', '停止、禁止'],
+            ['unterlassen', '不做、放弃（避免做某事）'],
             ['unterstreichen', '画线强调'],
             ['versäumen', '错过'],
             ['impfen', '接种疫苗'],
@@ -680,7 +684,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['die Pensionistin, -nen', '退休女性'],
             ['der Perron, -s（瑞）', '站台'],
             ['die Personalien pl', '个人信息'],
-            ['der Personenstand, ¨e（瑞）', '婚姻状况'],
+            ['der Personenstand, ¨e', '婚姻状况'],
             ['der Pinguin, -e', '企鹅'],
             ['die Pflaume, -n', '李子'],
             ['der Pflaumenkuchen, -', '李子蛋糕'],
@@ -715,7 +719,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['die Friseurin, -nen', '美发师（女）'],
             ['der Salon, -s', '沙龙'],
             ['der Schatten, -', '阴凉'],
-            ['das Grad, -e', '度'],
+            ['der Grad, -e（数量后不变：30 Grad）', '度'],
             ['die Zahnschmerzen pl', '牙痛'],
             ['das Schmerzmittel, -', '止痛药'],
             ['das Schokoladeneis', '巧克力冰淇淋'],
@@ -780,7 +784,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['das Ufer, -', '岸'],
             ['die Ukraine', '乌克兰'],
             ['der Ukrainer, -', '乌克兰人（男）'],
-            ['das Ukrainisch', '乌克兰语'],
+            ['(das) Ukrainisch / das Ukrainische', '乌克兰语'],
             ['die Umleitung, -en', '绕行'],
             ['der Unfall, ¨e', '事故'],
             ['die Uniform, -en', '校服'],
@@ -817,7 +821,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['die Reparatur, -en', '维修'],
             ['der Wochentag, -e', '星期'],
             ['die Filiale, -n', '分行'],
-            ['der Bankangestellte, -', '银行职员'],
+            ['der Bankangestellte, -n（ein Bankangestellter）', '银行职员'],
             ['die Wohnfläche, -n', '居住面积'],
             ['der Quadratmeter, -', '平方米'],
             ['das Würstchen, -', '小香肠'],
@@ -829,7 +833,7 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['der Zirkus, -se', '马戏团'],
             ['der Zivilstand, ¨e（瑞）', '婚姻状况'],
             ['das Znüni, -s / das Zvieri, -s（瑞）', '上午/下午点心'],
-            ['der Zünder, -', '打火机/引信'],
+            ['der Zünder, -', '引信、雷管；（奥，复数）火柴'],
             ['das Zündholz, ¨er（瑞）', '火柴'],
             ['der Zuschlag, ¨e', '附加费'],
             ['der Zug, ¨e', '火车'],
@@ -867,11 +871,13 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
   'titleDe': 'Adjektive & Adverbien (B1)',
   'explain': 'B1 其他类词汇补充（81 条形容词/副词/固定表达，是 B1 写作与口语的直接弹药）。① 一词多义需看语境：unentschieden 既可"平局"（Es steht '
              'unentschieden）也可"犹豫不决"（Ich bin noch immer unentschieden）；vorläufig '
-             '既可副词"暂时"也可形容词"暂时的"。② 形容词的"可形容对象"有限制：gleichgültig 只能形容人的表情/声音/态度，不能直接形容人（Er ist '
-             'gleichgültig 错误）。③ 固定搭配只能死记：äußerlich anwenden（外敷，不可换成 außen；反义 innerlich anwenden '
-             '内服）、auf stumm（调至静音）、von…abhängig（依赖于）、zur Verfügung stellen。④ '
-             '正式书信格式是考点：称呼后用逗号；不知姓名时用 Sehr geehrte Damen und Herren，知姓氏则用 Sehr geehrte Frau/Herr + '
-             '姓（Dame 日常少用）。⑤ 口语合法省略：Ich möchte einen eckigen Tisch, keinen runden（省略第二个 Tisch）。⑥ '
+             '既可副词"暂时"也可形容词"暂时的"。② gleichgültig 两种用法都要会：形容人"冷漠、漠不关心"（Er ist allem gegenüber '
+             'gleichgültig；ein gleichgültiger Mensch；mit gleichgültiger Stimme）；表示"某事对某人无所谓"（Es '
+             'ist mir gleichgültig, ob …）。③ 固定搭配只能死记：äußerlich anwenden（外敷，不可换成 außen；反义 innerlich '
+             'anwenden 内服）、auf stumm（调至静音）、von…abhängig（依赖于）、zur Verfügung stellen。④ '
+             '正式书信格式是考点：称呼后用逗号；不知姓名时用 Sehr geehrte Damen und Herren，知姓氏则用 Sehr geehrte Frau + 姓 / '
+             'Sehr geehrter Herr + 姓（Herr 是阳性，形容词用 -er）（Dame 日常少用）。⑤ 口语合法省略：Ich möchte einen '
+             'eckigen Tisch, keinen runden（省略第二个 Tisch）。⑥ '
              '方向/位置类副词高频：aufwärts、vorwärts、senkrecht（垂直）/waagerecht（水平），与模块15方向副词课呼应。\n'
              '\n'
              '🇬🇧 英语对照：英语 on silent；德语 auf stumm，固定搭配只能整句背。',
@@ -972,7 +978,8 @@ GRAMMAR_POINTS = [{'num': 'M13-01',
             ['voraussagen', '预言']],
   'examples': [['Es steht unentschieden zwischen den beiden Mannschaften.',
                 '两队打平了。（一词多义：平局 vs 犹豫不决）'],
-               ['Es ist mir gleichgültig, ob du mitkommst.', '你来不来我无所谓。（不能直接形容人）'],
+               ['Es ist mir gleichgültig, ob du mitkommst.',
+                '你来不来我无所谓。（etw. ist jmdm. gleichgültig）'],
                ['Das Medikament dürfen Sie nur äußerlich anwenden.', '这药只能外敷。（固定搭配）'],
                ['Der Zug hat voraussichtlich 20 Minuten Verspätung.', '这趟车预计晚点 20 分钟。']]}]
 

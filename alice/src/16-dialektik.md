@@ -1,0 +1,175 @@
+<!-- title: [C1]📌 文本语法标注：Die neue Dialektik -->
+<!-- level: C1 -->
+来源：C1 — Die neue Dialektik text analyze — Alice (Medium) https://alicelearngerman.medium.com/c1-die-neue-dialektik-text-analyze-9eba4c5de799
+（alicelearngerman，2024-06-17。她对一篇 C1 阅读文本（关于德国方言复兴）逐句做语法标注。原文照录；"中："为学习层译注。注意：标题里的 "Dialektik" 是文字游戏——文章讲的是 Dialekt（方言）。）
+
+# C1 — Die neue Dialektik text analyze
+
+analyze the text sentence by sentence, highlighting important grammar points (B1, B2, C1), important noun-verb combinations (Nominal-Verb-Verbindungen), important reflexive verbs, and verbs with fixed prepositions.
+
+> 中：逐句分析课文，标出重要语法点（B1/B2/C1）、名词-动词固定搭配、重要反身动词和固定介词搭配的动词。
+
+---
+
+Die allermeisten Menschen, die heute erwachsen sind und statt Hochdeutsch zuerst einmal einen Dialekt gelernt haben, dürften eine solche oder ähnliche Geschichte erlebt haben:
+
+> 中：如今已成年、最先学会的不是标准德语而是方言的绝大多数人，大概都经历过这样或类似的故事：
+
+Grammar Points:
+Konjunktiv II (B2): dürften
+Noun-Verb Combinations: eine Geschichte erleben
+
+> 中：语法点：dürften 是第二虚拟式，在这里表示**推测**（"大概、想必"），不是"被允许"。搭配：eine Geschichte erleben 经历一件事。
+
+---
+
+Sie hatten sich verliebt, fragil noch war die Partnerschaft, und dann klingelte irgendwann das Telefon, und die Mutter war dran. Oder der Vater. Oder ein alter Freund von früher.
+
+> 中：他们恋爱了，关系还很脆弱，然后某天电话响了，是母亲打来的。或者是父亲。或者是以前的一个老朋友。
+
+Grammar Points:
+Inversion (C1): fragil noch war die Partnerschaft
+Reflexive Verbs: sich verlieben
+
+> 中：语法点：倒装——把表语 fragil 提到句首以示强调（正常语序：die Partnerschaft war noch fragil）。反身动词：sich verlieben 爱上（Plusquamperfekt：hatten sich verliebt）。
+
+---
+
+Und zum allerersten Mal hörte einen der neue Partner Dialekt sprechen.
+Die Angerufenen fürchteten nach solchen Telefonaten, sofort wieder verlassen zu werden.
+
+> 中：于是新伴侣生平第一次听到自己说方言。（einen = man 的四格，"自己/某人"；hören + 四格 + 不定式）接电话的人在这类通话后都害怕马上又会被甩。
+
+Grammar Points:
+Passiv (B1): Die Angerufenen
+Noun-Verb Combinations: verlassen werden: to be left
+
+> 中：⚠ 原文标注不准：die Angerufenen 是第二分词名词化（"被叫通电话的人"），本身不是被动句；这句真正的被动是不定式 **verlassen zu werden**（被抛弃）。
+
+---
+
+Bis vor wenigen Jahren galt, wer Dialekt spricht, als ungebildet, als ein bisschen minderbemittelt.
+
+> 中：直到几年前，说方言的人还被视为没文化、有点"脑子不太灵光"。
+
+Grammar Points:
+Verbs with Prepositions: gelten als: etw./j-d gilt als/für etw. Er gilt als großer Künstler. 他被视为一位伟大的艺术家。
+
+> 中：gelten als + 一格：被看作……（这里主语是 wer 引导的从句"说方言的人"）。
+
+---
+
+Wer etwas auf sich hielt, legte seinen Dialekt ab, lernte Hochdeutsch und vermied, den Dialekt auch nur anklingen zu lassen.
+
+> 中：凡是有点自尊、在乎形象的人，都会丢掉方言、学习标准德语，甚至避免流露出一丁点方言口音。
+
+Grammar Points:
+Vergangenheit (B1): legte ab, lernte, vermied
+Noun-Verb Combinations: Dialekt ablegen: to abandon dialect, Dialekt anklingen lassen: to let dialect resonate
+
+> 中：过去时：ablegen（丢掉、摒弃）、lernen、vermeiden（避免，不规则：vermied）。搭配：etwas auf sich halten 注重自己的形象；den Dialekt anklingen lassen 让方言口音隐约流露。
+
+---
+
+Seit einigen Jahren löst sich dieses Stigma langsam auf.
+
+> 中：几年来，这种污名正慢慢消散。
+
+Grammar Points:
+Reflexive Verbs: sich auflösen
+
+> 中：反身动词 sich auflösen 消散、解散。
+
+---
+
+In Niedersachsen bringen einige Schulen Kindern Platt bei. In Hamburg dürfen offizielle Stadttafeln in dieser Sprache aufgestellt werden. In Bayern bilden Theaterleute junge Schauspieler im Bairischen aus. In ganz Deutschland sind Radio-Tatorte zu hören, in denen die Kommissare einen noch stärkeren Dialekt sprechen als die Kommissare im Fernsehen, und Asterix-Bände sind mittlerweile in 22 deutschen Dialekten erschienen, Däm Asterix singe Jung heißt Der Sohn des Asterix auf Kölsch.
+
+> 中：在下萨克森，一些学校教孩子低地德语（Platt）。在汉堡，官方的城市标牌可以用这种语言竖立。在巴伐利亚，戏剧人用巴伐利亚方言培训年轻演员。在全德国都能听到广播版《犯罪现场》，里面的探长说的方言比电视里的探长还重；《阿斯特里克斯》漫画如今已出了 22 种德语方言版，"Däm Asterix singe Jung" 就是科隆话版的《阿斯特里克斯之子》。
+
+Grammar Points:
+beibringen: to teach
+Passiv (B1): dürfen aufgestellt werden
+Noun-Verb Combinations: Stadttafeln aufstellen: to erect city signs
+ausbilden in: to train in
+Noun-Verb Combinations: in Dialekten erscheinen: to appear in dialects
+Verbs with Prepositions: sprechen als: to speak as, erscheinen in: to appear in
+
+> 中：jmdm. (三格) etw. (四格) beibringen 教某人某事；情态被动 dürfen aufgestellt werden 可以被竖立；jmdn. in etw. ausbilden 在……方面培训某人；sind zu hören = können gehört werden（sein + zu 表被动可能）；erscheinen in 以……出版。⚠ "sprechen als" 在这里不是固定搭配：als 是比较连词（einen noch stärkeren Dialekt … **als** die Kommissare im Fernsehen 比……更重）。
+
+---
+
+Dabei passt es besonders gut, dass die Geschichten des Galliers Asterix als Vorlage dienen. Mit ein bisschen Fantasie ist die Übermacht der Römer mit der Hochsprache gleichzusetzen. Wer die Hefte liest, denkt sich: „Ganz Deutschland ist vom Hochdeutsch beherrscht … Ganz Deutschland? Nein!"
+
+> 中：而且用高卢人阿斯特里克斯的故事作蓝本特别合适。稍加想象，就可以把罗马人的强势等同于标准语。读这些漫画的人会想："整个德国都被标准德语统治了……整个德国？不！"（套用漫画开头"整个高卢都被罗马人占领了……整个高卢？不！"）
+
+Grammar Points:
+Reflexive Verbs: sich denken
+Verbs with Prepositions: beherrscht von: dominated by
+Verbs with Prepositions: gleichsetzen mit: to equate with
+Noun-Verb Combinations: als Vorlage dienen: to serve as a template
+Verbs with Prepositions: dienen als: to serve as
+
+> 中：sich (三格) etw. denken 心想；von … beherrscht sein 被……统治（状态被动）；etw. mit etw. gleichsetzen 把……等同于……（ist … gleichzusetzen = kann gleichgesetzt werden，sein + zu）；als Vorlage dienen 用作蓝本。
+
+---
+
+Jahrelang überlebte der Dialekt in Deutschland fast ausschließlich in zwei Formen: im Komödienstadel und in der Politik. Kabarettisten benutzen den Dialekt, um komisch zu wirken. Ein Satz auf Sächsisch, und das Publikum lachte. Und Politiker sprachen Dialekt, weil sie glaubten, damit den Menschen in ihrem Wahlkreis imponieren zu können. Jetzt vermehrt sich der Dialekt auch anderswo: im ernsthaften Theater, im Film, in der Musik, in der Werbung. Es gibt eine Renaissance der Dialekte.
+
+> 中：多年来，方言在德国几乎只以两种形式存活：在乡土喜剧（Komödienstadel）里和在政治中。小品演员用方言来制造滑稽效果。一句萨克森话，观众就笑了。政客说方言，是因为他们相信这样能打动自己选区的人。如今方言也在别处增多：在严肃戏剧、电影、音乐和广告里。方言正在复兴。
+
+Grammar Points:
+überleben der Dialekt
+komisch wirken: to appear funny
+imponieren können: to be able to impress
+Reflexive Verbs: sich vermehren
+
+> 中：überleben 存活（这里主语 der Dialekt 在动词后：倒装）；komisch wirken 显得滑稽（um … zu 目的）；jmdm. (三格) imponieren 给某人留下深刻印象；sich vermehren 增多。
+
+---
+
+Es gibt keine wissenschaftlichen Zahlen darüber, wie angesehen Dialekte zu welchen Zeiten waren und es heute sind. Alfred Lameli vom Forschungsinstitut für deutsche Sprache in Marburg sagt, dass zwar von Jahr zu Jahr weniger Menschen einen echten Dialekt sprechen, weil die Alten, die ihn noch beherrschen, sterben und weil es für die Jungen immer weniger Gelegenheiten gibt, ihn zu sprechen: Aus den Schulen, den Büros, den Ämtern wurde der Dialekt vertrieben. Allerdings scheint es so, als steige im gleichen Maße, wie die ursprünglichen Dialektsprecher verschwinden, die Liebe der Nachkommen zu diesen Dialekten. Vor ein paar Jahren ist es Lameli zum ersten Mal aufgefallen: Die Nachrichtensprecher im Privatradio sprechen kein Hochdeutsch, sondern eine Mischform aus Dialekt und Hochdeutsch, Regiolekt nennt er das. Die Menschen sollen von Vertrautem zu hören bekommen, das Radio will ihre Gefühle erreichen, nicht nur ihren Verstand. Dann fiel Lameli auf, dass auch die Moderatoren der Fernsehnachrichten kein perfektes Hochdeutsch mehr sprechen, nicht die der privaten Sender und auch nicht die des ZDF. Im Grunde genommen, sagt Lameli, gebe es das Hochdeutsch in seiner Reinform nur noch in der Tagesschau und in den Tagesthemen.
+
+> 中：关于方言在各个时期以及今天受尊重的程度，并没有科学数据。马尔堡德语研究所的 Alfred Lameli 说，虽然说地道方言的人一年比一年少——因为还掌握方言的老人在去世，年轻人说方言的机会也越来越少：方言已被赶出了学校、办公室和政府机关。不过，看起来随着原本说方言的人消失，后代对这些方言的喜爱也在同等程度地上升。几年前 Lameli 第一次注意到：私营电台的新闻播音员说的不是标准德语，而是方言和标准语的混合体，他称之为"地区方言"（Regiolekt）。人们应该听到熟悉的东西，电台想打动的是听众的感情，而不只是理智。后来 Lameli 又发现，电视新闻主持人也不再说完美的标准德语了，私营台不说，连 ZDF 的也不说。Lameli 说，归根结底，纯正的标准德语只剩下《每日新闻》（Tagesschau）和《今日话题》（Tagesthemen）里还有。
+
+Grammar Points:
+angesehen sein: to be respected
+einen Dialekt beherrschen: to master a dialect
+vertrieben aus: to be expelled from
+im gleichen Maße steigen: to increase in the same measure
+Liebe zu etwas: love for something
+Allerdings scheint es so 然而，似乎是这样
+zum ersten Mal auffallen
+eine Mischform aus Dialekt und Hochdeutsch: a mixture of dialect and Standard German
+Gefühle erreichen: to reach feelings
+
+> 中：angesehen sein 受人尊敬；einen Dialekt beherrschen 精通方言；aus … vertrieben werden 被赶出（过去时被动 wurde vertrieben）；im gleichen Maße steigen 同等程度地上升；die Liebe zu + 三格 对……的爱；es scheint so, als steige … 看起来似乎……（als + 第一虚拟式 steige，动词紧跟 als）；jmdm. auffallen 引起某人注意（ist … aufgefallen）；eine Mischform aus … 由……混合而成的形式；von Vertrautem zu hören bekommen 听到熟悉的东西；gebe es（第一虚拟式，间接引语）。
+
+---
+
+Mitte der zwanziger Jahre haben viele Deutsche zum allerersten Mal Hochdeutsch gehört — weil es das Radio gab. Das Radio hat nicht nur Nachrichten verbreitet, sondern auch das Hochdeutsch im Land. Heute hören die meisten Menschen im Radio und im Fernsehen keine reine Hochsprache mehr. Es ist anzunehmen, dass sie diese Sprache so langsam wieder verlieren. Lameli hat zwei seiner Studenten einen Versuch machen lassen. Sie spielten zwei Gruppen von Testpersonen verschiedene um die Stadt Kassel herum gesprochene Dialekte vor. In der ersten Gruppe waren die Menschen zwischen 60 und 70 Jahren. Die zweite Gruppe bestand aus Schülern der neunten Klasse. Sie alle sollten die Himmelsrichtung angeben, von der sie glaubten, dass der jeweilige Dialekt, von Kassel aus betrachtet, gesprochen werde. Was Lameli und seine Studenten verblüfft hat: Die Jüngeren schnitten dabei besser ab als die Alten, obwohl sie früher mehr Dialekt gesprochen wurde. Die Jüngeren haben offenbar ein besseres Gehör, ein größeres Interesse für die Unterschiede.
+
+> 中：二十年代中期，很多德国人第一次听到标准德语——因为有了广播。广播不仅传播了新闻，也把标准德语传遍了全国。如今大多数人在广播和电视里再也听不到纯正的标准语了。可以推测，他们会慢慢地再次失去这种语言。Lameli 让他的两个学生做了一个实验。他们给两组受试者播放卡塞尔周边地区的各种方言。第一组是 60 到 70 岁的人，第二组由九年级学生组成。所有人都要说出：从卡塞尔看，他们认为各个方言是在哪个方向上说的。让 Lameli 和学生们惊讶的是：年轻人的表现比老人更好，尽管以前方言说得更多。年轻人显然耳朵更灵，对差异也更感兴趣。⚠ 原文 "obwohl sie früher mehr Dialekt gesprochen wurde" 有误，应为 "obwohl früher mehr Dialekt gesprochen wurde"（无人称被动，没有 sie）。
+
+Grammar Points:
+Nachrichten verbreiten: to spread news
+eine Sprache verlieren: to lose a language
+Angenommen, sie kommt nicht, was machen wir dann?
+假设她不来，我们怎么办呢？
+einen Versuch machen: to conduct an experiment
+Dialekte vorspielen: to play dialects
+bestehen aus: to consist of
+sprechen aus: to speak from
+verblüffen: to astonish
+besser abschneiden: to perform better
+Interesse für etwas haben: to have interest in something
+
+> 中：Nachrichten verbreiten 传播新闻；es ist anzunehmen, dass … 可以推测……（sein + zu；她另举 "Angenommen, …" 假设……的例句）；jmdn. etw. machen lassen 让某人做某事（hat … machen lassen 双不定式）；jmdm. etw. vorspielen 给某人播放/演奏；bestehen aus + 三格 由……组成；verblüffen 使惊讶；gut/besser abschneiden 表现好/更好；Interesse für (an) etw. haben 对……感兴趣。⚠ "sprechen aus" 不是这里的搭配（原句是 um die Stadt Kassel herum gesprochene Dialekte，"卡塞尔周围说的方言"，分词作定语）。
+
+---
+
+# 中文要点
+
+- 这篇示范了 C1 阅读怎么拆：先标出虚拟式、倒装、被动等语法，再把名词 + 动词搭配一条条摘出来。
+- dürften 在文中是第二虚拟式表推测（"大概、想必"），不是"被允许"。
+- 先挑几个能用的搭配：Interesse für etwas haben、einen Versuch machen、zum ersten Mal auffallen、als Vorlage dienen；gelten als / dienen als 后接一格。
+- bestehen aus + 三格（由……组成）。

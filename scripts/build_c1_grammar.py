@@ -8,15 +8,16 @@ GRAMMAR_POINTS = [{'num': 'M21-01',
   'cat': 'yufa',
   'title': '支配第三格的动词（二）',
   'titleDe': 'Verben mit Dativ (2)',
-  'explain': '支配第三格的动词（二）。① 本课是 A2 阶段三格动词的延续，收录此前未讲的三格动词，属于查漏补缺性质。② 核心是带可分前缀的三格动词家族：bei-（beistehen '
-             '帮助、beiwohnen 出席）、entgegen-（entgegengehen 走向、entgegenwirken 对抗）、nach-（nachgeben '
-             '让步、nachkommen 履行、nachlaufen 追随、nachstellen 追求、nachstreben 效仿）、wider-（widerstehen '
-             '抵抗）。③ 易错点：beistehen（三格"帮助"）不要写成 bestehen（"由…组成/通过"，用法完全不同）；sich widersetzen '
-             '是三格反身动词（Ich habe mich dem Plan widersetzt），不要漏掉反身代词；widerstehen（不及物，三格）与 '
-             'widerlegen（四格"反驳"）是两词。④ 记忆技巧：前缀 nach-/entgegen-/wider- '
-             '带有"朝向/逆向"的方向感，这类动词多支配三格；geschehen（发生）是典型无人称三格动词（was in jenem Jahr geschehen war）。⑤ '
-             'entsagen（三格"放弃"）后常接抽象名词三格复数（den Freuden des Lebens），写作中可替换口语化的 aufgeben。⑥ '
-             '语序注意：这些动词在从句中居句尾（was in jenem Jahr geschehen war）。\n'
+  'explain': '支配第三格的动词（二）。① 本课是 A2 阶段三格动词的延续，收录此前未讲的三格动词，属于查漏补缺性质。② '
+             '核心是带前缀的三格动词家族，可分前缀有：bei-（beistehen 帮助、beiwohnen 出席）、entgegen-（entgegengehen '
+             '走向、entgegenwirken 对抗）、nach-（nachgeben 让步、nachkommen 履行、nachlaufen 追随、nachstellen '
+             '追求、nachstreben 效仿）；另有带不可分前缀 wider- 的三格动词（widerstehen 抵抗、widersprechen 反驳：er '
+             'widersteht, hat widerstanden）。③ 易错点：beistehen（三格"帮助"）不要写成 '
+             'bestehen（"由…组成/通过"，用法完全不同）；sich widersetzen 的反身代词是四格（mich），另外再带一个三格宾语（Ich habe mich '
+             'dem Plan widersetzt），不要漏掉反身代词；widerstehen（不及物，三格）与 widerlegen（四格"反驳"）是两词。④ 记忆技巧：前缀 '
+             'nach-/entgegen-/wider- 带有"朝向/逆向"的方向感，这类动词多支配三格；geschehen（发生）是典型无人称三格动词（was in jenem '
+             'Jahr geschehen war）。⑤ entsagen（三格"放弃"）后常接抽象名词三格复数（den Freuden des Lebens），写作中可替换口语化的 '
+             'aufgeben。⑥ 语序注意：这些动词在从句中居句尾（was in jenem Jahr geschehen war）。\n'
              '\n'
              '🇬🇧 英语对照：英语 attend/resist 无介词；德语 beiwohnen/widerstehen + 三格，前缀家族整批背。',
   'table': [['动词', '含义', '例子'],
@@ -272,8 +273,8 @@ GRAMMAR_POINTS = [{'num': 'M21-01',
              'Doping—Dopingkontrolle—disqualifiziert（取消资格）。③ 职业成功关键词：Erfolg im Beruf、die '
              'Sozialkompetenz（社交能力）、die Teamfähigkeit（团队能力）、Chancen suchen und '
              'ergreifen（寻找并抓住机会），求职与面试话题高频词。④ "失败的艺术"是本课特色段：Misserfolge erleiden（遭受失败）、ein Traum '
-             'zerplatzt（梦想破灭）、das Projekt in den Sand setzen（把项目搞砸），学习积极、得体地谈论失败的表达。⑤ 固定搭配：die '
-             'Verantwortung (anderen) in die Schuhe schieben（推卸责任给他人）、den Sport an den Nagel '
+             'zerplatzt（梦想破灭）、das Projekt in den Sand setzen（把项目搞砸），学习积极、得体地谈论失败的表达。⑤ 固定搭配：jmdm. '
+             'die Schuld / etw. in die Schuhe schieben（把过错推给别人）、den Sport an den Nagel '
              'hängen（告别体坛，字面"把运动挂在钉子上"）。⑥ 易错：der Erfolg（成功）vs das '
              'Ergebnis（结果）；scheitern（失败）是不及物动词（das Projekt ist gescheitert）；die '
              'Niederlage（战败/失败）vs der Misserfolg（不成功）。⑦ 记忆技巧：按"成功三段 + 失败一段"结构记；失败段重点记动词搭配 '
@@ -310,7 +311,7 @@ GRAMMAR_POINTS = [{'num': 'M21-01',
             ['职业成功', 'der Stellenantritt', '入职'],
             ['职业成功', 'die Zielvereinbarung', '目标协议'],
             ['职业成功', 'sich zurückhalten', '克制'],
-            ['职业成功', 'der Besserwisser', '万事通'],
+            ['职业成功', 'der Besserwisser', '自以为是、爱抬杠的人（贬义的"万事通"）'],
             ['职业成功', 'lästern', '说坏话'],
             ['职业成功', 'der Arbeitgeber', '雇主'],
             ['职业成功', 'die Chance ergreifen', '抓住机会'],
@@ -353,7 +354,7 @@ GRAMMAR_POINTS = [{'num': 'M21-01',
   'cat': 'vokabel',
   'title': '进步与环境',
   'titleDe': 'Fortschritt und Umwelt',
-  'explain': '主题词汇：进步与环境（Fortschritt und Umwelt）。① 本课 6 '
+  'explain': '主题词汇：进步与环境（Fortschritt und Umwelt）。① 本课 5 '
              '段：进步、新媒体、语言变化、环境、水资源，主题是"进步"与"环境"的辩证关系，议论文素材丰富。② 进步段讨论科技利弊：Lebenserwartung '
              'steigt（寿命延长）vs im Stau stehen（堵车）、Annehmlichkeiten（便利），适合"科技进步利弊"类写作正反论述。③ '
              '新媒体段聚焦隐私：die Privatsphäre gegen Bequemlichkeit eintauschen（为了便利交换隐私）、digitale Spuren '
