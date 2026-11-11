@@ -82,6 +82,11 @@ q.addEventListener('input',function(){kw=q.value.trim().toLowerCase();render();}
 try{var qp=new URLSearchParams(location.search).get('q');if(qp){q.value=qp;kw=qp.trim().toLowerCase();}}catch(e){}
 function deHtml(s){s=esc(s);return s.replace(/(^|\/ )(der\/die|der\/das|der|die|das)(?= )/g,function(m,p,a){var c=a==='der'?'g-m':a==='die'?'g-f':a==='das'?'g-n':'g-x';return p+'<span class="'+c+'">'+a+'</span>';}).replace(/(, )(die)(?= )/g,'$1<span class="g-p">$2</span>').replace(/ (\((?:nur|meist) (?:Sg|Pl)\.\))/g,' <small class="g-note">$1</small>');}
 function sayText(s){return s.split(/,| \/ /)[0].replace(/\s*\([^)]*\)/g,'').replace(/^(der\/die|der\/das|der|die|das)\s+/,'').trim();}
+// 搜索：去掉可分动词的 |（auf|stehen → aufstehen），再加上全站搜索用的 core 形式；变元音可不打（与全站搜索一致）
+function normK(s){return String(s||'').toLowerCase().replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ß/g,'ss');}
+function coreDe(de){return String(de).split(/,| \/ /)[0].replace(/\s*\([^)]*\)/g,'').replace(/^(der\/die|der\/das|der|die|das)\s+/,'').replace(/\|/g,'').trim();}
+function hayOf(it){if(!it._hay){var raw=(String(it.de).replace(/\|/g,'')+' '+coreDe(it.de)+' '+it.en+' '+it.zh).toLowerCase();it._hay={raw:raw,n:normK(raw)};}return it._hay;}
+function matchKw(it,kw){var h=hayOf(it);if(h.raw.indexOf(kw)>=0)return true;return !/[äöüß]/.test(kw)&&h.n.indexOf(normK(kw))>=0;}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function speak(text,btn){
   try{
@@ -101,20 +106,17 @@ function render(){
     var it=NICOS_A1[i];
     if(curTopic!=="全部"&&it.topic!==curTopic)continue;
     if(curPos!=="all"&&it.pos!==curPos)continue;
-    if(kw){
-      var hay=(it.de+' '+it.en+' '+it.zh).toLowerCase();
-      if(hay.indexOf(kw)<0)continue;
-    }
+    if(kw&&!matchKw(it,kw))continue;
     n++;
+    if(out.length>=400)continue;
     var tipHtml='';
     if(it.tip){
       tipHtml='<button class="tipbtn" onclick="this.nextElementSibling.classList.toggle(\'show\');this.textContent=this.textContent===\'💡 记忆提示 ▼\'?\'💡 记忆提示 ▲\':\'💡 记忆提示 ▼\'">💡 记忆提示 ▼</button><div class="tip">'+esc(it.tip)+'</div>';
     }
     out.push('<div class="card"><div class="top"><div class="de">'+deHtml(it.de)+'</div><button class="speak" data-i="'+i+'" title="朗读">🔈</button></div><div class="mean"><span class="en">'+esc(it.en)+'</span> · <span class="zh">'+esc(it.zh)+'</span></div>'+(it.past&&it.pp?'<div class="vforms"><small>过去式·过去分词</small> '+esc(it.past)+' · '+esc(it.pp)+'</div>':'')+'<div class="meta"><span class="tag">'+esc(posMap[it.pos]||it.pos)+'</span><span class="tag">'+esc(it.topic)+'</span></div>'+tipHtml+'</div>');
-    if(n>=400)break;
   }
   list.innerHTML=out.join('')||'<div class="empty">没有找到匹配的单词</div>';
-  count.textContent='共 '+n+' 条'+(n>=400?'（仅显示前 400 条，请细化搜索）':'');
+  count.textContent='共 '+n+' 条'+(n>400?'（显示前 400 条，请细化搜索）':'');
   list.querySelectorAll('.speak').forEach(function(b){
     b.onclick=function(){speak(sayText(NICOS_A1[+b.getAttribute('data-i')].de),b);};
   });
