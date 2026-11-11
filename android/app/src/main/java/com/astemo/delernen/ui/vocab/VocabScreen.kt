@@ -48,6 +48,7 @@ import com.astemo.delernen.ui.components.TtsIconButton
 import com.astemo.delernen.ui.theme.DelernenColors
 import com.astemo.delernen.util.DeText
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 
 /** 页签 2：词表。三册切换 A1/A2/B1；topic 分组 + 顶部搜索（de/zh/en 子串）。 */
@@ -55,20 +56,26 @@ import kotlinx.coroutines.withContext
 @Composable
 fun VocabScreen() {
     var level by rememberSaveable { mutableStateOf("a1") }
-    var query by remember { mutableStateOf("") }
+    var query by rememberSaveable { mutableStateOf("") }
     var selected by remember { mutableStateOf<NicosWord?>(null) }
 
-    val words by produceState<List<NicosWord>>(emptyList(), key1 = level) {
-        value = withContext(Dispatchers.Default) { DataRepo.nicos(level) }
+    // 每册只算一次检索串（de/zh/en 小写 + ä/ö/ü/ß 折叠），不再每次按键对每条做 3 次 lowercase()
+    val indexed by produceState<List<Pair<NicosWord, String>>>(emptyList(), key1 = level) {
+        value = withContext(Dispatchers.Default) {
+            DataRepo.nicos(level).map { it to foldSearch("${it.de}\u0000${it.zh}\u0000${it.en}") }
+        }
     }
+    val words: List<NicosWord> = remember(indexed) { indexed.map { it.first } }
 
-    val filtered: List<NicosWord> = remember(words, query) {
-        val q = query.trim().lowercase()
+    // 过滤放到 Default 上，并做 150ms 去抖：连续输入时只算最后一次
+    val filtered by produceState<List<NicosWord>>(words, indexed, query) {
+        val q = foldSearch(query.trim())
         if (q.isEmpty()) {
-            words
+            value = words
         } else {
-            words.filter {
-                it.de.lowercase().contains(q) || it.zh.lowercase().contains(q) || it.en.lowercase().contains(q)
+            delay(150)
+            value = withContext(Dispatchers.Default) {
+                indexed.filter { it.second.contains(q) }.map { it.first }
             }
         }
     }
@@ -127,8 +134,8 @@ fun VocabScreen() {
                     modifier = Modifier.fillMaxSize()
                 ) {
                     grouped.forEach { (topic, ws) ->
-                        item { SectionHeader("$topic（${ws.size}）") }
-                        items(ws, key = { w -> "${w.de}|${w.topic}" }) { w ->
+                        item(contentType = "header") { SectionHeader("$topic（${ws.size}）") }
+                        items(ws, key = { w -> "${w.de}|${w.topic}" }, contentType = { "word" }) { w ->
                             WordRow(w, onClick = { selected = w })
                         }
                     }
@@ -221,3 +228,11 @@ private fun posLabel(pos: String): String = when (pos) {
     "" -> ""
     else -> pos
 }
+
+/** 检索串折叠：小写，ä→ae ö→oe ü→ue ß→ss（输入 strasse 也能搜到 Straße）。 */
+private fun foldSearch(s: String): String =
+    s.lowercase()
+        .replace("ä", "ae")
+        .replace("ö", "oe")
+        .replace("ü", "ue")
+        .replace("ß", "ss")

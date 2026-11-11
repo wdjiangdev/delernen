@@ -5,6 +5,23 @@ plugins {
     id("com.google.devtools.ksp")
 }
 
+// ---- 版本号：CI 用 GitHub run number，本地默认 1 ----
+// versionCode = run number；versionName = 1.<VERSION_MINOR>.<run>；发布 tag = android-v1.<run>
+val versionMinor = 1
+val runNumber: Int = System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull() ?: 1
+
+// ---- 签名：keystore 路径与口令全部来自环境变量 / GitHub Secrets，仓库里不放任何明文 ----
+// ANDROID_KEYSTORE_PATH（默认 android/signing.keystore）、ANDROID_KEYSTORE_PASSWORD、
+// ANDROID_KEY_ALIAS、ANDROID_KEY_PASSWORD。缺任何一项（或 keystore 为空文件）时不配签名：
+// debug 回退默认 debug key，release 产出未签名包（CI 会在构建前显式检查并失败）。
+val signingStoreFile: File = System.getenv("ANDROID_KEYSTORE_PATH")?.let { file(it) }
+    ?: rootProject.file("signing.keystore")
+val signingStorePassword: String? = System.getenv("ANDROID_KEYSTORE_PASSWORD")?.takeIf { it.isNotEmpty() }
+val signingKeyAlias: String? = System.getenv("ANDROID_KEY_ALIAS")?.takeIf { it.isNotEmpty() }
+val signingKeyPassword: String? = System.getenv("ANDROID_KEY_PASSWORD")?.takeIf { it.isNotEmpty() }
+val hasSigning: Boolean = signingStoreFile.exists() && signingStoreFile.length() > 0 &&
+        signingStorePassword != null && signingKeyAlias != null && signingKeyPassword != null
+
 android {
     namespace = "com.astemo.delernen"
     compileSdk = 35
@@ -13,30 +30,38 @@ android {
         applicationId = "com.astemo.delernen"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = runNumber
+        versionName = "1.$versionMinor.$runNumber"
     }
 
     signingConfigs {
-        // 固定签名的 debug 包：仅当 android/debug.keystore 存在时启用，
-        // 不存在时回退默认 debug 签名（本地无密钥也能编译）。
-        create("debugFixed") {
-            storeFile = rootProject.file("debug.keystore")
-            storePassword = "android"
-            keyAlias = "androiddebugkey"
-            keyPassword = "android"
+        if (hasSigning) {
+            create("shared") {
+                storeFile = signingStoreFile
+                storePassword = signingStorePassword
+                keyAlias = signingKeyAlias
+                keyPassword = signingKeyPassword
+            }
         }
     }
 
     buildTypes {
         debug {
-            val keystore = rootProject.file("debug.keystore")
-            if (keystore.exists()) {
-                signingConfig = signingConfigs.getByName("debugFixed")
+            if (hasSigning) {
+                signingConfig = signingConfigs.getByName("shared")
             }
         }
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            isDebuggable = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            if (hasSigning) {
+                signingConfig = signingConfigs.getByName("shared")
+            }
         }
     }
 
@@ -52,6 +77,11 @@ android {
     buildFeatures {
         compose = true
     }
+}
+
+// Room schema 导出到 app/schemas（随代码提交，供迁移校验 / AutoMigration 使用）
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
 }
 
 dependencies {

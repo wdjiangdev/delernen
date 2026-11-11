@@ -1,6 +1,9 @@
 package com.astemo.delernen.nav
 
 import android.net.Uri
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Description
@@ -54,6 +57,7 @@ private val tabs = listOf(
     TabItem(SCREEN_NOTES, "笔记", Icons.Default.Description)
 )
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun AppRoot() {
     val navController = rememberNavController()
@@ -61,7 +65,11 @@ fun AppRoot() {
     val currentRoute = backStackEntry?.destination?.route
     val isTopLevel = currentRoute in TOP_LEVEL
 
+    // 外层 Scaffold 不处理系统栏 insets（contentWindowInsets = 0）：状态栏由各页面自己的
+    // TopAppBar 处理，导航栏由 NavigationBar 自己处理；innerPadding 只剩底栏高度，
+    // 并通过 consumeWindowInsets 告诉内层 Scaffold 这部分已经消费，避免 insets 算两次。
     Scaffold(
+        contentWindowInsets = WindowInsets(0, 0, 0, 0),
         bottomBar = {
             if (isTopLevel) {
                 NavigationBar(containerColor = DelernenColors.BgCard) {
@@ -94,7 +102,9 @@ fun AppRoot() {
         NavHost(
             navController = navController,
             startDestination = SCREEN_STAR,
-            modifier = Modifier.padding(innerPadding)
+            modifier = Modifier
+                .padding(innerPadding)
+                .consumeWindowInsets(innerPadding)
         ) {
             composable(SCREEN_STAR) { StarMapScreen(navController) }
 
