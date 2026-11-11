@@ -35,7 +35,7 @@ FAMILIES = {
     ('der Stand', 'n', '摊位；状态', '', '', 'die Stände'),
     ('der Zustand', 'n', '状态；状况', '', '', 'die Zustände'),
     ('der Verstand', 'n', '理智；头脑', '', '', '—'),
-    ('das Verständnis', 'n', '理解；谅解', '', '', 'die Verständnisse'),
+    ('das Verständnis', 'n', '理解；谅解', '', '', 'die Verständnisse (selten)'),  # Duden: Plural selten
 ],
 'zieh': [
     ('ziehen', 'v', '拉；搬', 'zog', 'gezogen'),

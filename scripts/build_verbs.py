@@ -1,4 +1,6 @@
-import glob, re, json
+import glob, re, json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from verb_glosses import EN as EN_FIX, STEMDEF as STEMDEF_FIX
 from collections import Counter, defaultdict
 
 verb_defs = {}
@@ -38,9 +40,14 @@ for fp in glob.glob('/opt/htd-edu-data/outputs/背书工具/*/source.txt'):
 
 real_verbs = {w: c for w, c in verbs.items() if w in verb_set}
 
-PREFIXES = sorted(['zurück', 'zusammen', 'wieder', 'weiter', 'ab', 'an', 'auf', 'aus', 'bei', 'ein', 'mit', 'nach', 'vor', 'zu', 'los', 'weg', 'fest', 'fern', 'her', 'hin', 'dar', 'durch', 'über', 'um', 'unter', 'wider', 'be', 'ent', 'er', 'ver', 'zer', 'ge', 'miss', 'emp'], key=len, reverse=True)
+PREFIXES = sorted(['zurück', 'zusammen', 'wieder', 'weiter', 'voraus', 'hervor', 'wahr', 'ab', 'an', 'auf', 'aus', 'bei', 'ein', 'mit', 'nach', 'vor', 'zu', 'los', 'weg', 'fest', 'fern', 'her', 'hin', 'dar', 'durch', 'über', 'um', 'unter', 'wider', 'be', 'ent', 'er', 'ver', 'zer', 'ge', 'miss', 'emp'], key=len, reverse=True)
+
+# 以 ge- 开头但 ge 不是前缀的简单动词（gelten: gilt, galt, gegolten）
+NOT_PREFIXED = {'gelten'}
 
 def get_stem(verb):
+    if verb in NOT_PREFIXED:
+        return verb, None
     for p in PREFIXES:
         if verb.startswith(p) and len(verb) > len(p) + 2:
             stem = verb[len(p):]
@@ -51,7 +58,7 @@ def get_stem(verb):
 groups = defaultdict(list)
 for v in real_verbs:
     stem, prefix = get_stem(v)
-    groups[stem].append({'verb': v, 'prefix': prefix, 'count': real_verbs[v], 'def': verb_defs.get(v, '')})
+    groups[stem].append({'verb': v, 'prefix': prefix, 'count': real_verbs[v], 'def': EN_FIX.get(v) or verb_defs.get(v, '')})
 
 result = []
 for stem in sorted(groups.keys(), key=lambda s: -len(groups[s])):
@@ -60,7 +67,7 @@ for stem in sorted(groups.keys(), key=lambda s: -len(groups[s])):
         members.sort(key=lambda m: (m['prefix'] is not None, m['verb']))
         result.append({
             'stem': stem,
-            'stemDef': verb_defs.get(stem, ''),
+            'stemDef': STEMDEF_FIX.get(stem) or verb_defs.get(stem, ''),
             'members': members
         })
 
