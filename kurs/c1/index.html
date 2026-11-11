@@ -71,7 +71,7 @@ function render(){
     const c=document.createElement('div');
     c.className='card';c.id='c1-'+p.id;
     let h='<h2><span class="num">'+p.num+'</span>'+p.title+'<span class="de">'+p.titleDe+'</span></h2>';
-    h+='<div class="explain">'+p.explain.replace(/\n\n/g,'</div><div class="explain en-cmp">').replace(/\n/g,'<br>')+'</div>';
+    h+='<div class="explain">'+p.explain.replace(/([^\n])[ \t]*([\u2460-\u2473])/g,'$1\n$2').replace(/\n\n/g,'</div><div class="explain en-cmp">').replace(/\n/g,'<br>')+'</div>';
     if(p.table&&p.table.length){
       h+='<div class="sec-title">规则</div><table>';
       p.table.forEach((row,i)=>{

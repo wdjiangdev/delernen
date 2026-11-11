@@ -90,7 +90,8 @@ fun CourseDetailScreen(num: String, onBack: () -> Unit) {
                 CourseHeader(c)
                 SectionHeader("讲解")
                 Text(
-                    c.explain,
+                    // ①②③… 各起一行，和网页一致
+                    c.explain.replace(Regex("([^\\n])[ \\t]*([\\u2460-\\u2473])"), "$1\n$2"),
                     style = MaterialTheme.typography.bodyMedium,
                     color = DelernenColors.Text,
                     modifier = Modifier.padding(horizontal = 20.dp)
