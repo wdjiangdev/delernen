@@ -89,8 +89,8 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
              '引导时间状语从句=过去一件具体的事/不再重复的事（过去单次）；wenn=可重复的、习惯性的、尚未发生的事；过去经常发生的事也用 wenn。记忆技巧："一个人只有一次 '
              '10 岁的机会，一旦 11 岁就回不去了"——Als ich zehn Jahre alt war 用 als（过去单次），习惯性动作才用 wenn。wenn '
              '表过去习惯性行为时常加 immer/jedes Mal 强调频率。wenn '
-             '还可引导条件状语从句=如果；从句可置主句前（占主句第一位）或后。叙述故事用过去时、生活琐事/口语用完成时，北德偏爱完成时、南德偏爱过去时。bleiben 是系动词（与 '
-             'sein、werden 同类），bleib mir fern 中 mir 是三格表"离我远点"。\n'
+             '还可引导条件状语从句=如果；从句可置主句前（占主句第一位）或后。叙述故事用过去时、生活琐事/口语用完成时，地区差异：南德、奥地利、瑞士的口语几乎只用完成时（"过去时消失"现象），北德口语里过去时用得相对多。bleiben '
+             '是系动词（与 sein、werden 同类），bleib mir fern 中 mir 是三格表"离我远点"。\n'
              '\n'
              '🇬🇧 英语对照：英语 when 通吃；德语 als（过去单次）/wenn（重复/未来）/wann（疑问何时）三分天下。',
   'table': [['连词', '用法', '例子'],
@@ -123,7 +123,8 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
             ['für', 'dafür', 'wofür'],
             ['auf', 'darauf', 'worauf'],
             ['über', 'darüber', 'worüber']],
-  'examples': [['Ja, ich komme damit.', '好的，我带这个来。（无生命用 damit）'],
+  'examples': [['Ja, ich komme damit.',
+                '是的，我坐它（开它）来。（回答 Kommst du mit dem Auto?；无生命用 damit。"我把它带来"是 Ich bringe es mit.）'],
                ['Ja, ich denke oft an ihn.', '是的，我常想起他。（有生命用 an ihn）'],
                ['Womit fahren Sie nach Beijing?', '您坐什么去北京？（疑问代副词）'],
                ['Ich spreche langsam, damit du mich besser verstehst.', '我说慢点以便你听懂。（damit=以便）']]},
@@ -158,15 +159,20 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
   'title': '带 zu 的不定式',
   'titleDe': 'Infinitiv mit zu',
   'explain': 'zu + 动词原形构成带 zu 不定式；所支配的宾语/状语放 zu 前构成尾语序，整个结构一般放句尾；可分动词的 zu '
-             '加在前缀和词干之间（anzurufen），kennenlernen '
-             '例外（两种写法都对）。逗号规则："简单不定式"前不加逗号，"扩展不定式"前通常加逗号；但规则不严格，重点是句式美观且不影响理解。与英语不同，德语 zu '
-             '后面可以直接加情态动词原形（Er hofft, schon bald abreisen zu können）。三大句法功能：作主语（Es ist '
+             '加在前缀和词干之间（anzurufen），kennenlernen 例外（两种写法都对）。逗号规则（2006 年起的正字法）：不定式由 '
+             'um、ohne、statt/anstatt、außer、als 引导，或依附于前面的名词（die Lust, …），或被 es、darauf '
+             '等词预先指代时，必须加逗号；其他情况可加可不加，扩展不定式通常加逗号方便阅读。与英语不同，德语 zu 后面可以直接加情态动词原形（Er hofft, schon '
+             'bald abreisen zu können）。三大句法功能：作主语（Es ist '
              'schwierig…）、作宾语（anfangen、versuchen、vergessen 等；不及物动词的介词变代副词）、作名词补语（die Zeit、die '
              'Lust、der Spaß 等抽象名词）或形容词补语。um + zu Inf 表目的（=为了）、ohne + zu Inf '
-             '表"没有……就……"，放句尾并用逗号隔开；只有 um...zu 要求主语一致，普通带 zu 不定式不要求。带 zu 不定式要放在框架结构外面。易错：英语 tell sb '
-             'to do、know what to do 不能逐字译成德语，必须用从句；wissen 后永远不能加带 zu 不定式，必须死记。\n'
+             '表"没有……就……"，放句尾并用逗号隔开；um…zu、ohne…zu、(an)statt…zu 都要求不定式的逻辑主语与主句主语一致（不一致时改用 damit / '
+             'ohne dass / anstatt dass 从句）；普通带 zu 不定式的逻辑主语也可以是主句的宾语（Sie bat ihn, das Fenster zu '
+             'schließen）。带 zu 不定式要放在框架结构外面。易错：英语 tell sb to do、know what to do 不能逐字译成德语，要用从句（Ich '
+             'weiß nicht, was ich tun soll）；但 wissen + zu 不定式表"懂得、善于做某事"是成立的（Er weiß sich zu '
+             'helfen 他自有办法；Sie weiß das zu schätzen 她懂得珍惜）。\n'
              '\n'
-             '🇬🇧 英语对照：英语 to do 前后主语可不同；德语 um...zu 要求主语一致，wissen 后永不跟 zu。',
+             '🇬🇧 英语对照：英语 to do 前后主语可不同；德语 um...zu 要求主语一致；wissen + zu 只表"懂得做"，不能用来译 know what to '
+             'do。',
   'table': [['用法', '例子'],
             ['作主语', 'Es ist schön, dich zu sehen.'],
             ['作宾语', 'Ich versuche, früh zu kommen.'],
@@ -190,8 +196,9 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
              'Strand、an das Fenster）；zu vs in 的细微差别：zu=朝那走但不一定进去，in=朝那走并走进去（zur/in die '
              'Schule）。Uni/Bank/Post/Bahnhof/Toilette 可用 zu，但"暗示主语是这所大学学生"等地道用法用 '
              'auf。最常用的表"给某人"结构是三格宾语，无需介词。写信：人前用 an（ein Brief an deine Freundin），地名前用 nach（Ich '
-             'schreibe einen Brief nach Amerika）；an 后用第四格。易错：城市名都是中性且永远省略定冠词；单座 Berg 不能用 '
-             'in；Ausland 虽中性但必须用 in（ins Ausland，因为它不是地名）。\n'
+             'schreibe einen Brief nach Amerika）；an 后用第四格。易错：城市名都是中性，一般不加冠词，但带定语时要加（das alte '
+             'Berlin、im schönen Wien），个别城市名本身带冠词（Den Haag）；单座 Berg 不能用 in；Ausland 虽中性但必须用 in（ins '
+             'Ausland，因为它不是地名）。\n'
              '\n'
              '🇬🇧 英语对照：英语 go to 通吃；德语 nach/in/zu/auf/an 按"能不能进去"细分。',
   'table': [['介词', '用于', '例子'],
@@ -210,7 +217,8 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
   'cat': 'congju',
   'title': '原因 / 结果 / 目的 / 让步',
   'titleDe': 'Kausal-, Konsekutiv-, Final-, Konzessivsätze',
-  'explain': '原因的多层表达：denn（并列连词=因为，不占位、不能放句首）、nämlich（放变位动词后）、weil（从属连词+尾语序）、wegen（支配二格，口语可三格，与宾语整体占一位）、deshalb/deswegen/folglich/darum（占位副词，语气依次减弱）、da（放主句前表众所周知的原因）、nun '
+  'explain': '原因的多层表达：denn（并列连词=因为，不占位；不能放在它所连接的前一个分句之前，但书面语里新句子可以用 Denn '
+             '开头）、nämlich（放变位动词后）、weil（从属连词+尾语序）、wegen（支配二格，口语可三格，与宾语整体占一位）、deshalb/deswegen/folglich/darum（占位副词，语气依次减弱）、da（放主句前表众所周知的原因）、nun '
              'da（=既然）。易错：weil 和 deshalb 不能在同一句连用（类似英语 because 和 so 不能连用），例外是"Deshalb, weil + '
              '从句"（只是因为…）。weshalb（强调主句是从句的原因）vs sodass（强调主句是从句的起因/导火索）；口语把 sodass 当 damit '
              '用是错误的。连接副词在句中占一位，且原因句必须在前、结果句在后；dadurch 是副词不能引从句。目的：damit（从属连词=以便，主语可不同）vs '
@@ -245,8 +253,8 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
              'getanzt；被动还可表命令、建议、规定（Hier darf nicht geraucht '
              'werden）。例外动词（bedeuten、bekommen、besitzen、haben、kennen、wissen 等）不能用 werden 被动态，改用 man '
              '主句或转述。von vs durch：对动作有绝对控制的发出者（人）用 von；无绝对控制或仅引方式/媒介（物）用 durch；mit 引具体工具。geboren '
-             '用法：不表年月日用 sein（Ich bin in Hamburg geboren），表年月日用 werden（Ich wurde 1998 in Hamburg '
-             'geboren）。\n'
+             '用法：规范建议是不表年月日用 sein（Ich bin in Hamburg geboren），表年月日用 werden（Ich wurde 1998 in '
+             'Hamburg geboren）；不过实际中 Ich bin 1998 in Hamburg geboren 也很常见。\n'
              '\n'
              '🇬🇧 英语对照：英语只有一种被动；德语 werden（过程）vs sein（状态）两种，含义不同。',
   'table': [['类型', '结构', '例子'],
@@ -255,7 +263,7 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
             ['施动者', 'von（人）/ durch（媒介）', 'von ihm / durch den Sturm']],
   'examples': [['Das Buch wird (von mir) gelesen.', '这本书（被我）读着。（过程被动）'],
                ['Als ich um fünf kam, war die Tür geschlossen.', '我五点到时门关着。（状态被动）'],
-               ['Ihnen wird geholfen.', '有人帮你们。（三格变被动无主语）'],
+               ['Ihnen wird geholfen.', '有人帮您。（Ihnen 大写 = 您；三格变被动无主语）'],
                ['Hier darf nicht geraucht werden.', '这里禁止吸烟。（被动表规定）']]},
  {'num': 'M10-06',
   'id': 'relativsatz',
@@ -294,7 +302,7 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
              '+ 二虚="要是……就好了"；Ich wünschte, du würdest kommen 省略了 '
              'dass。主句用二虚则从句也要用二虚，反之亦然；尽量避免主从句同时用"würden+动词"——最地道的说法是 Wenn du nicht arbeitetest, '
              'würden wir ins Kino gehen。"本可以/本应该/本想"表与过去相反的假设，必须用"haben 的二虚 + 情态动词"。易错：Wenn du '
-             'würdest kommen 是错的，应为 Wenn du kommen könntest；虚拟句也要遵守尾语序。\n'
+             'würdest kommen 是错的（从句要尾语序），应为 Wenn du kommen würdest；虚拟句也要遵守尾语序。\n'
              '\n'
              '🇬🇧 英语对照：英语 If I were you；德语 Wenn ich du wäre，二虚表假设，路数一样。',
   'table': [['动词', '第二虚拟式'],
@@ -329,7 +337,7 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
             ['中场后', '介词宾语', 'Ich denke an dich.']],
   'examples': [['Ich gehe morgen ins Kino.', '我明天去看电影。'],
                ['Sie hat ihm das Buch gegeben.', '她把书给了他。（代词宾语前）'],
-               ['Sie hat es Thomas gegeben.', '她把它给了 Thomas。（双代词四格在前）'],
+               ['Sie hat es Thomas gegeben.', '她把它给了 Thomas。（代词 es 在名词 Thomas 前）'],
                ['Karl wollte seine Freundin schon früh anrufen.', 'Karl 想尽早给女朋友打电话。（强调尽早）']]},
  {'num': 'M11-02',
   'id': 'dativ_verben',
@@ -337,13 +345,15 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
   'title': '只支配第三格的动词',
   'titleDe': 'Verben mit Dativ',
   'explain': '四类只能支配三格的动词：①表"发生"的动词（geschehen、passieren、vorkommen、bevorstehen…），主语通常是物/事件；②带 '
-             'zu-、nach-、wider-、bei-、ent-、entgegen- '
-             '前缀的动词（zuhören、zustimmen、beitreten、entsprechen、widersprechen…）；③主语是物、宾语是人，表想到/记起/遗忘/感觉/喜欢的动词（schmecken、gefallen、fehlen、einfallen、einleuchten…）；④表"有利/不利"的动词（helfen、danken、gratulieren、schaden、drohen、nutzen…）。理解框架：第一类可理解为"对他来说发生了…"（对谁而言），主语是物；其他类是固定搭配，英语思维易误用四格，需死记。例外：个别前缀动词有时可支配四格；verzeihen '
-             '宽恕"人"用四格。glauben 三用法：物作四格（Das glaubst du doch selbst nicht）、人作三格（Niemand wollte ihm '
-             'glauben）、an + 四格表更深的信念（Ich glaube an ihn，类似 believe in 与 believe '
-             '的区别）；vertrauen、trauen 支配的人也是三格。易错点："我想你"=Du fehlst mir；bevorstehen 的助动词是 '
-             'haben；widersprechen 永远三格。etwas/alles/nichts 后形容词名词化：etwas/nichts 按中性单数零冠词（etwas '
-             'Wunderbares），alles 按中性单数定冠词（alles Wunderbare）。\n'
+             'zu-、nach-、wider-、bei-、entgegen- '
+             '前缀的许多动词（zuhören、zustimmen、nachgeben、beitreten、widersprechen…），以及少数 ent- '
+             '动词（entsprechen、entkommen、entgehen；多数 ent- 动词如 entdecken、entführen、entlassen '
+             '支配四格）；③主语是物、宾语是人，表想到/记起/遗忘/感觉/喜欢的动词（schmecken、gefallen、fehlen、einfallen、einleuchten…）；④表"有利/不利"的动词（helfen、danken、gratulieren、schaden、drohen、nutzen…）。理解框架：第一类可理解为"对他来说发生了…"（对谁而言），主语是物；其他类是固定搭配，英语思维易误用四格，需死记。例外：个别前缀动词有时可支配四格；verzeihen '
+             '是"人用三格、事用四格"（Verzeih mir! / Ich verzeihe dir das.）。glauben 三用法：物作四格（Das glaubst du '
+             'doch selbst nicht）、人作三格（Niemand wollte ihm glauben）、an + 四格表更深的信念（Ich glaube an '
+             'ihn，类似 believe in 与 believe 的区别）；vertrauen、trauen 支配的人也是三格。易错点："我想你"=Du fehlst '
+             'mir；bevorstehen 的助动词是 haben；widersprechen 永远三格。etwas/alles/nichts '
+             '后形容词名词化：etwas/nichts 按中性单数零冠词（etwas Wunderbares），alles 按中性单数定冠词（alles Wunderbare）。\n'
              '\n'
              '🇬🇧 英语对照：英语 help sb 无介词；德语 helfen + 三格，三格动词连格一起背。',
   'table': [['类别', '动词', '例子'],
@@ -432,9 +442,10 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
   'titleDe': 'bekommen-Passiv',
   'explain': '特殊被动：口语/非正式书面语中 bekommen/kriegen/erhalten 可引导被动，把原本的三格间接宾语变为主格（Mein Bruder bekommt '
              'das Buch geschenkt）；不同于 werden '
-             '被动只有四格才能变主语。适用动词特点：都让三格宾语因动作"得到/获得"了什么（schenken、überreichen、auszahlen、zeigen、gratulieren、helfen、widersprechen）；schenken '
-             '可以但 geben 不行。ähneln、begegnen、gefallen、gehören、schaden 只有三格宾语但无直观动作，不能用 '
-             'kriegen/bekommen 引导被动。kriegen 和 bekommen 在此用法完全可以互换；erhalten 非常少见。对应英语 "have/get sth '
+             '被动只有四格才能变主语。适用动词特点：都让三格宾语因动作"得到/获得"了什么（schenken、überreichen、auszahlen、zeigen、gratulieren、helfen、widersprechen；其中 '
+             'gratulieren、helfen 这类本身没有四格宾语的动词，用这种被动非常口语、较边缘）；schenken 可以但 geben '
+             '不行。ähneln、begegnen、gefallen、gehören、schaden 只有三格宾语但无直观动作，不能用 kriegen/bekommen '
+             '引导被动。kriegen 和 bekommen 在此用法完全可以互换；erhalten 非常少见。对应英语 "have/get sth '
              'done"：强调主语没亲自做（Sie kriegte ihren Wagen repariert=她找人修好了车）。主语对应四格的两种情况：①双宾语动词（如 '
              'lehren）；②对英语 have sth done 的直译，极口语化，书面语应当避免。南方口语中 gehören 可引导被动=应该被做（Der Typ gehört '
              'eingesperrt=那个家伙应该被关起来）。用被动即因发出者不重要而省略发出者。\n'
@@ -446,7 +457,7 @@ GRAMMAR_POINTS = [{'num': 'M09-02',
             ['kriegen + 过去分词', 'Er kriegt das Geld überwiesen.', '他收到汇款'],
             ['gehören + 过去分词', 'Der Wagen gehört repariert.', '这车该修了']],
   'examples': [['Mein Bruder kriegt das Buch von mir geschenkt.', '我弟弟从我这儿获赠这本书。（三格变主语）'],
-               ['Sie bekam gratuliert.', '她收到了祝贺。'],
+               ['Sie bekam ein Buch geschenkt.', '她收到了一本赠书。（bekommen + 过去分词，三格变主语）'],
                ['Sie kriegte ihren Wagen repariert.', '她找人修好了车。（=have sth done）'],
                ['Der Typ gehört eingesperrt.', '那家伙应该被关起来。（南方口语）']]}]
 

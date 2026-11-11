@@ -8,12 +8,13 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'cat': 'yuyin',
   'title': '德语字母表',
   'titleDe': 'Alphabet',
-  'explain': '德语字母表共 30 个：26 个基本拉丁字母 + 4 个特殊字母（Ä ä、Ö ö、Ü ü、ß）。Ä、Ö、Ü 是变元音；ß 叫 Eszett，读 '
-             '[ɛs-tsɛt]，只有小写没有大写。最容易和英语搞混的几个优先记：V 读 [fao]、W 读 [ve:]、J 读 [jɔt]、C 读 [tse:]、Z 读 '
+  'explain': '德语字母表共 30 个：26 个基本拉丁字母 + 4 个特殊字母（Ä ä、Ö ö、Ü ü、ß/ẞ）。Ä、Ö、Ü 是变元音；ß 叫 Eszett，读 '
+             '[ɛs-tsɛt]；它也有大写形式 ẞ（2017 年起正字法正式收录：全大写书写时可写 SS，也可写 ẞ，如 STRASSE / STRAẞE）。ß '
+             '不会出现在词首，所以日常几乎只见小写。最容易和英语搞混的几个优先记：V 读 [fao]、W 读 [ve:]、J 读 [jɔt]、C 读 [tse:]、Z 读 '
              '[tsɛt]、Y 读 [ypsilɔn]。R 读 '
              '[ɛr]（小舌音）是初学者公认难点，老师原话：没有特别神奇的方法，"一般只能含着水漱口然后等待缘分的到来"。德语没有声调，页面录音的字母都读"一声"，其他视频里读轻声也对，德国人听不出区别，不要纠结。大小写都要会认：德语所有名词首字母大写，拼写大小写不能错。页面上每个字母可点击播放标准读音，建议用电脑打开（手机浏览器缓存不足会导致部分音频点不开）。\n'
              '\n'
-             '🇬🇧 英语对照：英语 26 个字母，Z 读 [zi:]；德语 Z 读 [tsɛt]，还多了 4 个特殊字母，ß 只在小写出现。',
+             '🇬🇧 英语对照：英语 26 个字母，Z 读 [zi:]；德语 Z 读 [tsɛt]，还多了 4 个特殊字母，ß 平时只见小写（大写 ẞ 只在全大写书写时用）。',
   'table': [['字母', '读音', '备注'],
             ['V v', '[fao]', '不读英语的 [vi:]'],
             ['W w', '[ve:]', '不读 [ˈdʌbəlju:]'],
@@ -22,11 +23,11 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
             ['Z z', '[tsɛt]', '不读 [zi:]'],
             ['Y y', '[ypsilɔn]', '不读 [wai]'],
             ['R r', '[ɛr]', '小舌音，公认难点'],
-            ['ß', '[ɛs-tsɛt]', '叫 Eszett，只有小写']],
+            ['ß', '[ɛs-tsɛt]', '叫 Eszett；大写形式 ẞ（全大写也可写 SS）']],
   'examples': [['V v —— [fao]', '不读英语的 [vi:]'],
                ['W w —— [ve:]', '不读 [ˈdʌbəlju:]'],
                ['R r —— [ɛr]', '小舌音，含着水漱口练'],
-               ['ß —— [ɛs-tsɛt]', '叫 Eszett，只有小写']]},
+               ['ß —— [ɛs-tsɛt]', '叫 Eszett；大写形式 ẞ（全大写也可写 SS）']]},
  {'num': 'M01-02~04',
   'id': 'fayin',
   'cat': 'yuyin',
@@ -36,7 +37,8 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
              '[dan]），必须发准。拼写判断规律：元音后只跟一个辅音读长音（da、den、du、ihm、Ofen），跟两个及以上辅音读短音（dann、denn、dumm、im、offen）。p/t/k '
              '是送气清音，b/d/g 是不送气浊音；对中文母语者区别主要在"送气与否"（类似"坡/播"）。词尾清化：b/d/g 在词尾发成 [p]/[t]/[k]（Tag 读 '
              '[ta:k]），在词中则正常发音（Tage 的 g 发 [g]）。s 看位置发音：元音前发 [z]（Hansa），词尾/辅音前发 [s]（Hans）；z 永远发 '
-             '[ts]。f 发 [f]，v 和 w 都发 [v]，常同音，靠拼写区分（如 Fest/West）。ch 的规则：a o u 后读 [x]（Bach），其余读 '
+             '[ts]。f 发 [f]；v 在德语本族词里通常也发 [f]，与 f 同音（Vater、viel、vier；viel 和 fiel 读音相同），只在外来词里发 '
+             '[v]（Vase、Klavier、Video）；w 发 [v]（Wasser、West）。ch 的规则：a o u 后读 [x]（Bach），其余读 '
              '[ç]（ich），外来词读 [k]，词尾 -ig 读 [iç]。r：词首发 [r]，元音后或词尾发 [ɐ]。组合：sch=[ʃ]，词首 '
              'sp=[ʃp]、st=[ʃt]（只在词首！），z=[ts]，ng 的 g '
              '不发音。双元音：ei=[ai]、au=[ao]、eu/äu=[ɔy]。老师强调：长短不分"也能听懂"，但想说得地道就必须区分——先保区分度，再求标准度。\n'
@@ -63,8 +65,8 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'explain': '德语名词分三种性：阳性（der）、阴性（die）、中性（das）；背单词必须连同冠词一起背，der/die/das 就是词性标记。不定冠词：阳性/中性 ein，阴性 '
              'eine；定冠词 der/die/das；所有复数定冠词统一是 die。老师给了三个"概率记忆法"：①67% 的单音节名词是阳性，剩下多是中性；②90% 以字母 e '
              '结尾的名词是阴性；③90% 以 Ge 开头的名词是中性。硬性规则：以 -chen 结尾的都是中性词，表示"小"，如 das '
-             'Mädchen（小女孩）。复数变化逐个记：der Zug → die Züge（加变音+en），die Frage → die Fragen（+n），die Stadt '
-             '→ die Städte，das Haus → die Häuser，das Bild → die Bilder，das Auto → die '
+             'Mädchen（小女孩）。复数变化逐个记：der Zug → die Züge（加变音 + e），die Frage → die Fragen（+n），die '
+             'Stadt → die Städte，das Haus → die Häuser，das Bild → die Bilder，das Auto → die '
              'Autos（+s）。易错点：不要按自然性别猜词性（如 Mädchen 是中性不是阴性），拿不准就查词典。ein/eine 既是"一"也是不定冠词（对应英语 '
              'a/an）；复数没有不定冠词。\n'
              '\n'
@@ -197,8 +199,9 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'titleDe': 'Negation',
   'explain': '分工：kein 只否定"不确指名词的存在"（ein Ausgang→kein Ausgang），其他所有情况一律用 nicht。kein '
              '的变格跟着冠词走：kein/keine/keinen/keinem…（Ich trinke keine Milch；Es gibt keinen Kaffee im '
-             'Zimmer）。nicht 否定动词时"能多靠后就多靠后"：无情态动词放句末（Ich arbeite bei BASF '
-             'nicht）；有情态动词放动词原形前（…nicht ins Restaurant gehen）。nicht 的位置决定否定对象：Nico geht nicht '
+             'Zimmer）。nicht 否定整句时"能多靠后就多靠后"：一般放句末（Ich arbeite heute '
+             'nicht），但要放在以下成分之前——地点/方向等介词补足语（Ich arbeite nicht bei BASF）、表语（Das ist nicht '
+             'gut）、句末的不定式/分词（…nicht ins Restaurant gehen）和可分前缀。nicht 的位置决定否定对象：Nico geht nicht '
              'morgen…（否定"明天"）vs …mit Lisa nicht zusammen…（否定"一起"）——想否定谁就把 nicht '
              '放谁前面。易错点：专有名词是确指的，只能用 nicht（Das ist nicht Deutschland，不用 kein）；否定可分动词时 nicht '
              '放句尾前缀前（Nico geht morgen nicht aus）。主系表结构主语表语都用第一格，所以 Das ist ein Ausgang 的否定是 kein '
@@ -208,10 +211,10 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'table': [['', 'kein（不确指名词）', 'nicht（其他）'],
             ['例子', 'kein Geld（没有钱）', 'nicht gut（不好）'],
             ['变格', '随 ein 变', '不变'],
-            ['位置', '名词前', '常居句末/动词原形前']],
+            ['位置', '名词前', '常居句末；但在介词补足语、表语、不定式、可分前缀之前']],
   'examples': [['Das ist kein Ausgang.', '这不是出口。（否定不确指名词）'],
                ['Ich trinke keine Milch.', '我不喝牛奶。'],
-               ['Ich arbeite bei BASF nicht.', '我不在 BASF 工作。（nicht 句末）'],
+               ['Ich arbeite nicht bei BASF.', '我不在 BASF 工作。（nicht 放在地点补足语 bei BASF 前）'],
                ['Nico möchte morgen nicht ins Restaurant gehen.', 'Nico 明天不想去餐厅。（nicht 在动词原形前）']]},
  {'num': 'M02-04',
   'id': 'imperativ',
@@ -287,8 +290,9 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'titleDe': 'Präpositionen mit Dativ',
   'explain': '十个只支配三格的介词：ab、aus、außer、bei、mit、nach、seit、von、zu、gegenüber。记忆口诀（学员笔记，老师认可）：aus außer '
              '买（bei）米（mit）拿（nach）菜（seit）放（von）醋（zu），再加 ab 和 gegenüber。seit vs ab：seit '
-             '是"自从"，只能跟过去的时间点（seit drei Monaten）；ab 无此限制（ab 13 Uhr）。nach 表方位时强调"顺序"（Nach dem Regal '
-             'gibt es einen Tisch），纯方位用 hinter；Meiner Meinung nach（依我看）是固定搭配。gegenüber '
+             '表示从过去某个时间点或某段时间起一直持续到现在（时间点 seit 2020，时间段 seit drei Monaten），不用于将来；ab '
+             '表"从……起"，也可用于将来（ab 13 Uhr、ab nächster Woche）。nach 表方位时强调"顺序"（Nach dem Regal gibt es '
+             'einen Tisch），纯方位用 hinter；Meiner Meinung nach（依我看）是固定搭配。gegenüber '
              '最特殊：支配名词时可前可后（gegenüber meiner Wohnung / meinem Büro gegenüber），支配代词时必须放后（mir '
              'gegenüber）。易错点：判断格位先看"谁支配谁"——Es gibt meinem Büro gegenüber ein Restaurant 里 meinem '
              'Büro 是 gegenüber 的宾语（三格），ein Restaurant 才是 gibt 的宾语（四格），不能按距离下结论。von 永远支配三格（Was sind '
@@ -297,12 +301,12 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
              '🇬🇧 英语对照：英语介词后一律宾格；德语介词各自"认格"，十个只认三格。',
   'table': [['介词', '含义', '例子'],
             ['aus / von', '从…里 / 来自', 'aus China / von mir'],
-            ['bei / mit', '在…处 / 和…', 'bei Eltern / mit Bus'],
+            ['bei / mit', '在…处 / 和…', 'bei den Eltern / mit dem Bus'],
             ['nach / seit', '往…/自从', 'nach Hause / seit 2020'],
             ['zu', '向…', 'zum Arzt（zu+dem）'],
             ['gegenüber', '在…对面', 'mir gegenüber']],
   'examples': [['Ich komme aus China.', '我来自中国。'],
-               ['Ich lerne seit drei Monaten Deutsch.', '我学了三个月德语。（seit+过去时间点）'],
+               ['Ich lerne seit drei Monaten Deutsch.', '我学了三个月德语。（seit + 时间段，持续到现在）'],
                ['Ich gehe mit meinem Freund.', '我和朋友一起去。'],
                ['Mir gegenüber möchte er das nicht sagen.', '他不想当着我的面说。（代词后置）']]},
  {'num': 'M03-04',
@@ -346,9 +350,9 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
              '🇬🇧 英语对照：英语 half past three；德语 halb vier 是"向四点去一半"=三点半，方向反过来。',
   'table': [['时间', '说法'],
             ['8:00', 'acht Uhr'],
-            ['8:15', 'viertel nach acht'],
+            ['8:15', 'Viertel nach acht'],
             ['8:30', 'halb neun'],
-            ['8:45', 'viertel vor neun']],
+            ['8:45', 'Viertel vor neun']],
   'examples': [['Wie viel Uhr ist es?', '几点了？'],
                ['Es ist fünf nach halb vier.', '三点三十五。（过半点五分）'],
                ['Es ist Viertel vor vier.', '差一刻四点。'],
@@ -362,9 +366,10 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
              '时：阴性量词变复数（Tasse→Tassen），阳性/中性量词不变（Stück、Glas、Kasten、Paar）；量词后的可数名词也要变复数。量词当普通名词用时三个性都有复数（zwei '
              'Gläser、zwei Kästen、zwei Tassen）。口语偷懒：Kaffee/Cola/Tee 前单数量词可省略（Ich möchte einen '
              'Kaffee）；数词+mal 代替量词（einmal Kaffee=一杯咖啡，zweimal '
-             'Tee=两杯茶）。变格时只有量词变，被修饰的名词不变；作主语时动词跟着量词走（Zwei Tassen Kaffee reichen aus，用复数）。易错点：严格说法是 '
-             'zwei Glas Wasser（生活中很多人说 zwei Gläser Wasser，但严格算错）；Reis/Cola 等液体一般不可数。Glas vs '
-             'Flasche：Flasche 是细颈瓶（材质不重要），Glas 是玻璃瓶（形状不重要）；Tasse 是茶杯，Glas 是玻璃杯。\n'
+             'Tee=两杯茶）。变格时只有量词变，被修饰的名词不变；作主语时动词跟着量词走（Zwei Tassen Kaffee reichen aus，用复数）。易错点：zwei '
+             'Glas Wasser 和 zwei Gläser Wasser 都对——作计量单位时常用单数（zwei Glas Wasser 更常见），强调一个个杯子时用复数 '
+             'Gläser；Reis、Milch、Cola 等物质名词一般不可数。Glas vs Flasche：Flasche 是细颈瓶（材质不重要），Glas '
+             '是玻璃瓶（形状不重要）；Tasse 是茶杯，Glas 是玻璃杯。\n'
              '\n'
              '🇬🇧 英语对照：英语 a piece of / a cup of；德语量词本身也是名词，有性数格变化。',
   'table': [['量词', '例子'],
@@ -440,7 +445,8 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
             ['结构', 'ich habe gemacht', 'ich bin gegangen'],
             ['用于', '大多数动词', '位移 + 状态变化 + sein/bleiben/werden']],
   'examples': [['Ich habe meine Hausaufgaben gemacht.', '我做完作业了。'],
-               ['Ich bin nach China gegangen.', '我去过中国。（位移用 sein）'],
+               ['Ich bin nach China geflogen.',
+                '我（坐飞机）去了中国。（位移用 sein；"我去过中国"说 Ich war schon (einmal) in China.）'],
                ['Er ist gestern gekommen.', '他昨天来了。'],
                ['Ich bin in Berlin gewesen.', '我在柏林待过。（sein 用 sein）']]},
  {'num': 'M04-07',
@@ -471,8 +477,9 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'title': '形容词的名词化',
   'titleDe': 'Nominalisierte Adjektive',
   'explain': '构成：形容词首字母大写、去掉后面名词即完成名词化（如 der Angestellte 雇员、der Fremde '
-             '陌生人）。名词化形容词按形容词词尾变化走弱变化；零冠词时阳性单数主格为 -er（如 ein Angestellter、zwei '
-             'Angestellte）。中性名词化表抽象事物：das Deutsche（德语）、das Interessante（令人感兴趣的事）、das '
+             '陌生人）。名词化形容词的词尾和普通形容词完全一样，跟着前面的冠词走：定冠词后弱变化（der Angestellte、die '
+             'Angestellten），不定冠词后混合变化（ein Angestellter），无冠词时强变化（zwei Angestellte；Ich bin '
+             'Deutscher）。中性名词化表抽象事物：das Deutsche（德语）、das Interessante（令人感兴趣的事）、das '
              'Schlimme（糟糕的事）。类比记忆：英语 the young/the rich 也是形容词名词化，德语同理，只是变化更复杂。中国学生常见错误：用"形容词 + '
              'Ding/Leute/Mann"绕开名词化（如"糟糕的事"），要学会直接用 das Schlimme 这类形式。helfen 只支配三格：Wir sollen den '
              'Alten helfen. 中 den Alten 是三格复数（"帮助那些老人"），不能理解为四格单数。Schlimmes 在 Es ist schon '
@@ -494,11 +501,12 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'title': '形容词词尾的特殊变化',
   'titleDe': 'Besondere Adjektive',
   'explain': '以 -el 结尾的形容词加词尾前先去 '
-             'e（dunkel→dunklen、sensibel→sensibles、übel→üble、parallel→parallelen），前提是不影响发音。以 '
-             '-auer/-euer 结尾的形容词先去 e 再加词尾（teuer→teuren、ungeheuer→ungeheures、sauer→saures）。hoch '
-             '加词尾时先变为 '
+             'e（dunkel→dunklen、sensibel→sensibles、übel→üble），前提是不影响发音；例外：parallel 重音在最后一个音节，不去 '
+             'e（parallele Linien）。以 -auer/-euer 结尾的形容词先去 e '
+             '再加词尾（teuer→teuren、ungeheuer→ungeheures、sauer→saures）。hoch 加词尾时先变为 '
              'hoh（hoch→hohen）。永远不加词尾的形容词要单独背：rosa、lila、prima、extra、mega、beige、orange、türkis、super、klasse。"穿过"的强调靠介词 '
-             'durch（表"经过、穿过"）；口语常省略介词，但要强调"穿越"最好保留 durch。变元音配合去 e：übel→üble 加词尾时同时变元音（u→ü）。易错点：去 e '
+             'durch（表"经过、穿过"）；口语常省略介词，但要强调"穿越"最好保留 durch。注意 übel 原形就带 ü，加词尾时只去 e（übel→üble、ein '
+             'übler Geruch），不发生元音变化。易错点：去 e '
              '规则只改变词干，词尾变化表照常套用；特例形容词必须单独记忆。表语形容词永远不加词尾，只有作定语时才触发上述特殊变化。\n'
              '\n'
              '🇬🇧 英语对照：英语形容词无变化；德语少数形容词连词干都要先"整形"再加词尾。',
@@ -507,7 +515,7 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
             ['teuer', '→ teur-', 'eine teure Uhr'],
             ['hoch', '→ hoh-', 'ein hoher Berg'],
             ['rosa / lila', '不变', 'eine rosa Blume']],
-  'examples': [['Wir müssen durch den dunklen Wald durchgehen.', '我们必须穿过这片阴暗的树林。（dunkel 去 e）'],
+  'examples': [['Wir müssen durch den dunklen Wald gehen.', '我们必须穿过这片阴暗的树林。（dunkel 去 e）'],
                ['Wir diskutieren ein ganz sensibles Thema.', '我们在讨论一个非常敏感的话题。'],
                ['Er fährt einen teuren Wagen.', '他开一辆昂贵的车。（teuer 去 e）'],
                ['Ich sehe einen hohen Berg.', '我看见一座高山。（hoch→hoh）']]},
@@ -519,10 +527,10 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'explain': '词义对应：viel（很多，修饰不可数名词）/ wenig（很少，修饰不可数）/ viele（很多，修饰可数复数）/ '
              'wenige（少数几个，修饰可数复数）。疑问句：Wie viel + 不可数名词（Wie viel Geld hast du?）；Wie viele + '
              '复数可数名词（Wie viele Zimmer hat die Wohnung?）。变格规则：viele/wenige 修饰可数名词时始终按普通形容词变格（Viele '
-             'junge Leute）；viel/wenig 修饰不可数名词时，只有前面有定冠词才变格（das viele Geld），无冠词时不变（mit viel '
-             'Milch）。viel/wenig 前面不可能出现不定冠词 ein 和否定冠词 kein；不可数名词如 Geld 前永远不会有 ein。书面表达：ein wenig '
-             '可替代 ein bisschen 表"一点点"。易错点：im Zentrum von München, wenige Minuten vom Hauptbahnhof '
-             'entfernt 中，介词 von 的宾语是 Hauptbahnhof，wenige Minuten '
+             'junge Leute）；viel/wenig 修饰不可数名词时，只有前面有定冠词才变格（das viele Geld），无冠词时一般不变（mit viel '
+             'Milch），固定说法 vielen Dank 例外。viel/wenig 前一般不加 ein/kein，例外是固定说法 ein wenig（一点儿）；不可数名词如 '
+             'Geld 前永远不会有 ein。书面表达：ein wenig 可替代 ein bisschen 表"一点点"。易错点：im Zentrum von München, '
+             'wenige Minuten vom Hauptbahnhof entfernt 中，介词 von 的宾语是 Hauptbahnhof，wenige Minuten '
              '是主语（一格），不要误判格位。判断词尾三步法：先看名词可数还是不可数；可数→viel/wenig 当形容词正常加词尾；不可数→看前面有没有定冠词。\n'
              '\n'
              '🇬🇧 英语对照：英语 much/many 按可数分；德语 viel/wenig 也一样，只是多了变格这一步。',
@@ -611,9 +619,11 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'cat': 'xingrong',
   'title': '比较级和最高级：半规则变化',
   'titleDe': 'Halbregelmäßige Steigerung',
-  'explain': '半规则定义：部分形容词加比较级/最高级词尾前，词干需发生特殊变化（去 e、加变音、加 e 再加 st 等），规律性弱于规则变化但有迹可循。以 -el/-er '
-             '结尾的形容词（如 trocken、bitter）加比较级时，作表语/副词保留词干 e（trockener、bitterer），作定语则去 e 再加词尾（den '
-             'trockneren Wein）。以 -t、-haft、-s、-sk、-ß、-x、-z 结尾的形容词，加最高级时先加 -e 再加 -st（am '
+  'explain': '半规则定义：部分形容词加比较级/最高级词尾前，词干需发生特殊变化（去 e、加变音、加 e 再加 st 等），规律性弱于规则变化但有迹可循。以 -el '
+             '结尾的形容词比较级一律去 e（dunkel→dunkler）；以 -er 结尾且前面是复合元音的也去 e（teuer→teurer、sauer→saurer），其他 '
+             '-er 形容词多保留 e（bitter→bitterer，也可 bittrer）；以 -en 结尾的 trocken 比较级是 trockener，作定语加词尾时 e '
+             '可留可省（den trockeneren / trockneren Wein）。以 -t、-haft、-s、-sk、-ß、-x、-z 结尾的形容词，加最高级时先加 -e '
+             '再加 -st（am '
              'interessantesten），避免辅音丛难读。单音节及部分双音节形容词加变音：alt→älter、jung→jünger、kurz→kürzer、kalt→kälter、warm→wärmer '
              '等；老师用"红与黑"故事帮助记忆全部变音形容词。部分形容词变音可加可不加：口语（尤南德）多用变音形式（gesünder），书面语多用无变音形式（gesunder）。易错点：作定语的比较级/最高级仍要按性数格加词尾（den '
              'trockneren Wein）——半规则只管词干，词尾规则照常。发音细节：der、schneller、Kellner 三个 -er 结尾的元音都是 [ɐ]，但 der '
@@ -625,8 +635,8 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
             ['最高级加e', 'interessant', 'am interessantesten'],
             ['变元音', 'alt / jung / kurz', 'älter / jünger / kürzer'],
             ['借词双写', 'fit', 'fitter']],
-  'examples': [['Dieser Wein ist trockener.', '这种葡萄酒更干。（表语保留 e）'],
-               ['Ich mag den trockneren Wein.', '我喜欢更干的那种葡萄酒。（定语去 e）'],
+  'examples': [['Dieser Wein ist trockener.', '这种葡萄酒更干。（比较级 trockener）'],
+               ['Ich mag den trockneren Wein.', '我喜欢更干的那种葡萄酒。（定语加词尾，也可写 trockeneren）'],
                ['Dieses Gericht schmeckt bitterer.', '这道菜尝起来更苦。'],
                ['Das Buch ist am interessantesten.', '这本书最有意思。（先加 e 再加 st）']]},
  {'num': 'M06-03',
@@ -638,11 +648,11 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
              'größten；gut→besser→am besten；hoch→höher→am höchsten；nah→näher→am '
              'nächsten；viel→mehr→am meisten；wenig→weniger/minder→am wenigsten/mindesten。nächste '
              '已独立为"下一个"：作四格时间状语时前不加定冠词（Nächstes Jahr reise ich...），要加则用 im（Im nächsten '
-             'Jahr...）。mehr/weniger 永远只能作副词，不能作定语形容词、不加词尾（Ich habe weniger Geld als du. 中修饰 '
-             'Geld）。meisten/wenigsten 跟在定冠词后可当形容词用，需加词尾（das berühmteste Wirtshaus）。minder '
-             '只用于书面/正式场合：mehr oder minder（大体上）作方式状语；nicht minder（不亚于、同样地）修饰其后形容词/动词。"Ich bin der '
-             'Meinung, dass..." 是二格固定搭配（类似英语 of the opinion that），需整体背诵。发音：am wenigsten 中 g 发 '
-             '[ç]。\n'
+             'Jahr...）。mehr/weniger 永远不加词尾：可作副词（Ich arbeite mehr），也可直接放在名词前作定语（mehr Geld、weniger '
+             'Zeit；Ich habe weniger Geld als du. 中修饰 Geld）。meisten/wenigsten 跟在定冠词后可当形容词用，需加词尾（das '
+             'berühmteste Wirtshaus）。minder 只用于书面/正式场合：mehr oder minder（大体上）作方式状语；nicht '
+             'minder（不亚于、同样地）修饰其后形容词/动词。"Ich bin der Meinung, dass..." 是二格固定搭配（类似英语 of the opinion '
+             'that），需整体背诵。发音：am wenigsten 中 g 发 [ç]。\n'
              '\n'
              '🇬🇧 英语对照：英语 good→better→best；德语 gut→besser→am besten，路数一样，逐个背。',
   'table': [['原级', '比较级', '最高级'],
@@ -651,7 +661,7 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
             ['gern', 'lieber', 'am liebsten'],
             ['hoch', 'höher', 'am höchsten']],
   'examples': [['Ich zahle lieber mit Kreditkarte.', '我宁愿用信用卡付。'],
-               ['Ich habe weniger Geld als du.', '我没有你那么多钱。（weniger 作副词）'],
+               ['Ich habe weniger Geld als du.', '我没有你那么多钱。（weniger 修饰 Geld，不加词尾）'],
                ['München bietet noch viel mehr, zum Beispiel das berühmteste Wirtshaus der Welt.',
                 '慕尼黑还有更多，比如世界上最著名的啤酒馆。'],
                ['Wir waren mehr oder minder einer Meinung.', '我们大体上意见一致。（书面 minder）']]},
@@ -717,8 +727,8 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
              '动词不定式（句末），服从框型结构。情感色彩：将来时带有强烈的"承诺、希望、预言"色彩，常被政客、推销员、算命师使用。德国人日常谈论未来多用现在时，即使事情离现在很远（Ich '
              'studiere nächstes Jahr in den USA.；Meine Mutter besucht morgen einen Freund von '
              'ihr.；Ich komme bald.）。从句中的将来时：变位动词居从句末（die letzte Pizza, die ich hier essen '
-             'werde）。易错：将来时不是德语表达未来的默认方式，不要像英语一样逢未来就用 werden 对应 will。bald '
-             '表"马上（短时间内）"，gleich/sofort 表"立即"；Ich komme bald. 是约定好的近未来。\n'
+             'werde）。易错：将来时不是德语表达未来的默认方式，不要像英语一样逢未来就用 werden 对应 will。bald 表"不久、很快"，gleich/sofort '
+             '表"立即"；Ich komme bald. 是约定好的近未来。\n'
              '\n'
              '🇬🇧 英语对照：英语 will 表未来是默认选项；德语默认用现在时，将来时自带"承诺/预言"语气。',
   'table': [['', '结构', '例子'],
@@ -727,7 +737,7 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
             ['口语常用', '现在时 + 时间', 'Morgen helfe ich dir.']],
   'examples': [['Wir werden deine Tasche sicher finden.', '我们一定会找到你的包的。（承诺）'],
                ['Ich studiere nächstes Jahr in den USA.', '我明年将在美国学习。（现在时表未来）'],
-               ['Ich komme bald.', '我马上过来。'],
+               ['Ich komme bald.', '我很快就来。（bald≈不久；"马上"用 gleich）'],
                ['Er wird sicher gleich kommen.', '他肯定很快就会来的。']]},
  {'num': 'M08-01',
   'id': 'praeteritum',
@@ -738,7 +748,7 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
              '即使在口语中也常用一般过去时）。构成规则：规则动词：词干 + te + 人称词尾（wohnte）；不规则动词：换词干 + '
              '人称词尾（war、hatte、ging、kam）。一、三人称单数在规则动词过去时中形式相同（ich/er/sie/es wohnte）；不规则动词也相同（ich '
              'war/er war；ich hatte/er '
-             'hatte）。不规则动词过去时词干记忆规律（老师口诀）：e→a→e（geben–gab、lesen–las、sehen–sah、essen–aß、vergessen–vergaß）；i→a→u（finden–fand、trinken–trank、singen–sang、beginnen–begann）；ei→ie→ie（bleiben–blieb、schreiben–schrieb、steigen–stieg、leihen–lieh）。其他词干变化组：a→ie（schlafen–schlief、laufen–lief、lassen–ließ、halten–hielt）；ie→o（schließen–schloss、fliegen–flog、ziehen–zog）；o→a（kommen–kam）；u→a（tun–tat）。例句语序：并列句中第二个分句语序正常（und '
+             'hatte）。不规则动词过去时词干记忆规律（老师口诀）：e→a→e（geben–gab、lesen–las、sehen–sah、essen–aß、vergessen–vergaß）；i→a→u（finden–fand、trinken–trank、singen–sang、beginnen–begann）；ei→ie→ie（bleiben–blieb、schreiben–schrieb、steigen–stieg、leihen–lieh）。其他词干变化组：a/au→ie（schlafen–schlief、laufen–lief、lassen–ließ、halten–hielt）；ie→o（schließen–schloss、fliegen–flog、ziehen–zog）；o→a（kommen–kam）；u→a（tun–tat）。例句语序：并列句中第二个分句语序正常（und '
              'ich war...；aber letztes Jahr hatte ich...）。易错：弱变化动词过去时一、三人称单数是 '
              '-te（wohnte），不要与完成时混淆。\n'
              '\n'
@@ -752,8 +762,8 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
                 '我现在是职员，2000 年时是学生。'],
                ['Ich habe im Moment nur eine Tasche, aber letztes Jahr hatte ich drei Taschen.',
                 '现在我只有一个包，但去年我有三个包。'],
-               ['Er wohnt in China seit zehn Jahren, und wohnte vor zehn Jahren in den USA.',
-                '他在中国住了十年，十年前住在美国。'],
+               ['Er wohnt seit zehn Jahren in China und wohnte davor in den USA.',
+                '他在中国已经住了十年，在那之前住在美国。'],
                ['geben → gab（不规则过去时）', '给：课程变位表中的原始词形（ich/er gab）。']]},
  {'num': 'M01-09',
   'id': 'jishu',
@@ -784,9 +794,11 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'titleDe': 'Länder, Sprachen & Nationalitäten',
   'explain': '国名性别要单记：der Iran（阳性）；die USA、die Niederlande（复数）；die Türkei、die '
              'Schweiz（阴性）；其余大多中性。阳性（der）和阴性/复数（die）国名前冠词绝对不能省略；中性国名一般不加冠词，但形容词修饰等特定情况可加 '
-             'das。国民词规律：中英法俄土耳其瑞典六国，男性国民词尾 -e（复数 +n），女性在男性基础上去 e 加 in（复数加 nen）；其他国家男性国民词尾 '
-             '-er（复数不变），女性直接加 in（复数加 nen）。所有女性国民词复数一律加 -nen。语言名称词尾都是 -isch（印度 Hindi 例外）；国名形容词词尾也都是 '
-             '-isch（包括 indisch）。国家、语言、形容词三者高度关联，连带记忆效率最高。发音细节：Syrien 的 s 在元音前发 [z]；Frankreich '
+             'das。国民词规律：中国、法国、俄罗斯、土耳其、瑞典等国的男性国民词尾是 -e（der Chinese、Franzose、Russe、Türke、Schwede，另有 '
+             'Pole、Däne 等；复数 +n），女性在男性基础上去 e 加 in（复数加 nen）；英国人是 der Engländer / die '
+             'Engländerin，属于下面的 -er 型；其他国家男性国民词尾 -er（复数不变），女性直接加 in（复数加 nen）。所有女性国民词复数一律加 '
+             '-nen。语言名称词尾大多是 -isch（例外：Deutsch 本身，以及印度的 Hindi）；国名形容词也大多是 -isch（例外 deutsch；包括 '
+             'indisch）。国家、语言、形容词三者高度关联，连带记忆效率最高。发音细节：Syrien 的 s 在元音前发 [z]；Frankreich '
              '是复合词（Frank-reich），中间辅音不分开；Chinesin 中 i 是短音。\n'
              '\n'
              '🇬🇧 英语对照：英语 German 既是德国人又是德语还是形容词；德语 der Deutsche / Deutsch / deutsch 三个形式分工明确。',
@@ -800,9 +812,9 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
             ['die Schweiz', '—', 'der Schweizer / die Schweizerin', 'schweizerisch'],
             ['die Türkei', 'Türkisch', 'der Türke / die Türkin', 'türkisch']],
   'examples': [['Deutschland — 德国', '国名（中性，无冠词）。'],
-               ['die Universität — 大学', '阴性名词。'],
-               ['der Koffer — 行李箱', '阳性名词。'],
-               ['in der Stadt — 在城市', '在城市里。']]},
+               ['Ich bin Chinesin.', '我是中国人（女）。（国籍名词前不加冠词）'],
+               ['Er spricht Französisch.', '他说法语。（语言名大写）'],
+               ['Wir fahren in die Schweiz.', '我们去瑞士。（阴性国名要带冠词）']]},
  {'num': 'M01-11',
   'id': 'xueye',
   'cat': 'vokabel',
@@ -811,8 +823,9 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'explain': 'lernen vs studieren：lernen 泛指"学习"（语言、技能）；studieren 专指大学及以上阶段的学习和研究。学习阶段名词配套：die '
              'Schule/der Schüler 指中小学；die Universität/der Student 指大学——两者不可混用。学科名词性别规律：-tik/-ik '
              '后缀几乎都是阴性（Mathematik、Physik、Musik），多源自希腊语；-tät/-ität 也是阴性（如 die Universität）；例外如 der '
-             'Maschinenbau（阳性）要单独记。女性职业统一以 -in 结尾、复数加 -nen；男性职业复数：-er 结尾单复同形（Lehrer、Ingenieur），-t '
-             '结尾加 en（Student、Assistent），-r 结尾加 e（Kommissar），另有变元音加 e '
+             'Maschinenbau（阳性）要单独记。女性职业统一以 -in 结尾、复数加 -nen；男性职业复数：-er 结尾单复同形（Lehrer、Arbeiter），-t '
+             '结尾加 en（Student、Assistent），其他以 -r 结尾的多加 '
+             'e（Kommissar→Kommissare、Ingenieur→Ingenieure），另有变元音加 e '
              '的特殊形式（Koch→Köche、Arzt→Ärzte）。询问职业的常用表达：Was sind Sie von '
              'Beruf?（您是做什么工作的？）复合词拆分记忆：Betriebswirtschaft = Betrieb（企业）+ Wirtschaft（经济）。外来词发音：英语借词 '
              'Manager 中的 a 在德语里发 [ε] 而非 [æ]。\n'
@@ -888,7 +901,7 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'explain': 'Rucksack vs Mappe：背在背上的书包是 der Rucksack；Mappe 一般是夹在腋下的小包，更多时候指文件夹。西装细分：der Anzug '
              '指男士西装；der Hosenanzug 指配有长裤的成套女西装；das Kostüm 指配有半身裙的成套女西装。泳衣细分：der Badeanzug '
              '指连体泳衣、女士泳衣（泛指）；der Bikini 指比基尼（两截式）；die Badehose 指泳裤。复数要点：der Rucksack→Rucksäcke、der '
-             'Anzug→Anzüge、der Mantel→Mäntel（变元音 + e）；das Hemd→Hemden（-en）；das '
+             'Anzug→Anzüge（变元音 + e）、der Mantel→Mäntel（只变元音）；das Hemd→Hemden（-en）；das '
              'Kleid→Kleider（-er）；英语借词复数加 -s（das T-Shirt→T-Shirts）。词性记忆：箱包类多为 der/die（der '
              'Koffer、die Handtasche），随身物品多为 der（der Pass、der Laptop、der Regenschirm），但 das '
              'Handy、die Kreditkarte、das Geld 例外。同义区分：der Schlafanzug（睡衣，阳性，分体式）与 das '
@@ -943,18 +956,20 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'title': '住房申请',
   'titleDe': 'Wohnungsbewerbung',
   'explain': 'Fragen zur Person 中 zu 表"针对、向"，表示方向：Fragen zur Person = 针对租客的问题；类似 Fragen zur '
-             'Arbeit、ein Buch zum Thema。性别栏第三选项 divers（多样），适用于非男非女的申请人。"问题"的介词：一般只能用 zu（eine Frage '
-             'zu + 三格），只有讨论深奥哲学问题时可用 nach（eine Frage nach dem Sinn des Lebens）。收入写法：2900,– Euro — '
-             '德语小数点用逗号，,– 表示"整"（无小数）；不是英文式写法。Anzahl der Zimmer 可写成复合词 Zimmeranzahl（数量词 + '
-             '名词复合），两者等价。Makler vs Agentur：Makler 可指个人也可指机构，Agentur 只能指机构不能指人——不可完全互换。表格实务：Etage '
-             '填"nicht Erdgeschoss"表不租一楼；Lage 填"Stadtmitte/Osten"；Ausstattung 列所需设施（Bad, '
-             'Balkon）；Miete 后"inkl. NK"表含附加费用。复合词拆分：Immobilienmaklerbüro = Immobilien（不动产）+ '
-             'Makler（中介）+ Büro（办公室），德语复合名词拆分理解更高效。\n'
+             'Arbeit、ein Buch zum Thema。性别栏第三选项 divers（多样），适用于非男非女的申请人。"问题"的介词：eine Frage zu + 三格 '
+             '= 关于某个主题的问题（Fragen zur Person）；eine Frage nach + 三格 = 询问、追问某事，同样很常用（die Frage nach '
+             'dem Weg / nach dem Preis / nach dem Sinn des Lebens）；向某人提问是 eine Frage an + '
+             '四格。收入写法：2900,– Euro — 德语小数点用逗号，,– 表示"整"（无小数）；不是英文式写法。Anzahl der Zimmer 可写成复合词 '
+             'Zimmeranzahl（数量词 + 名词复合），两者等价。Makler vs Agentur：Makler 可指个人也可指机构，Agentur '
+             '只能指机构不能指人——不可完全互换。表格实务：Etage 填"nicht Erdgeschoss"表不租一楼；Lage '
+             '填"Stadtmitte/Osten"；Ausstattung 列所需设施（Bad, Balkon）；Miete 后"inkl. '
+             'NK"表含附加费用。复合词拆分：Immobilienmaklerbüro = Immobilien（不动产）+ Makler（中介）+ '
+             'Büro（办公室），德语复合名词拆分理解更高效。\n'
              '\n'
              '🇬🇧 英语对照：英语 2,900 euros（逗号分位）；德语 2900,– Euro（逗号小数点），写法反过来。',
   'table': [['词', '中文'],
             ['der Immobilienmakler', '房屋中介'],
-            ['der Vorname / der Name', '名 / 姓'],
+            ['der Vorname / der Nachname (Familienname)', '名 / 姓'],
             ['das Geburtsdatum', '出生日期'],
             ['das Geschlecht', '性别（männlich/weiblich/divers）'],
             ['die Nationalität', '国籍'],
@@ -972,12 +987,12 @@ GRAMMAR_POINTS = [{'num': 'M01-01',
   'title': '身体部位',
   'titleDe': 'Körperteile',
   'explain': '身体部位词性各不相同，记忆时必须连冠词一起背。复数规律：die Hand→Hände、der Zahn→Zähne、der Fuß→Füße、der '
-             'Kopf→Köpfe、der Hals→Hälse、der Mund→Münder（变元音 + e）；das Ohr→Ohren（+en）；das '
-             'Auge→Augen（-en）；der Rücken、der Ellenbogen、der Finger（仅 +e 或不变）。复合词拆分：das '
+             'Kopf→Köpfe、der Hals→Hälse（变元音 + e）；der Mund→Münder（变元音 + er）；das Ohr→Ohren（+en）；das '
+             'Auge→Augen（+n）；der Rücken、der Ellenbogen、der Finger（仅 +e 或不变）。复合词拆分：das '
              'Handgelenk（手腕）、das Fußgelenk（脚踝）——Gelenk（关节）通用。das Haar 单数指"一根头发"，常用复数 die Haare '
              '表"头发"。从头到脚顺序记忆：Kopf→Auge→Nase→Mund→Hals→Brust→Bauch→Rücken→Arm→Hand→Bein→Knie→Fuß。音近区分：das '
-             'Haar（头发）与 der Hals（脖子）音近，注意区分；der Bauch（肚子）复数变元音 Bäuche。der Po（屁股）是口语常用词，正式场合可用 der '
-             'Hintern 替代。\n'
+             'Haar（头发）与 der Hals（脖子）音近，注意区分；der Bauch（肚子）复数变元音 Bäuche。der Po（屁股）和 der Hintern '
+             '都是口语词；正式/医学说法是 das Gesäß。\n'
              '\n'
              '🇬🇧 英语对照：英语 hand→hands 规则复数；德语身体部位复数多变元音（Hand→Hände），逐个记。',
   'table': [['词', '中文'],
