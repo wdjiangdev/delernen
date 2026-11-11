@@ -38,6 +38,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -52,6 +53,7 @@ import com.astemo.delernen.ui.components.StatCard
 import com.astemo.delernen.ui.components.TtsIconButton
 import com.astemo.delernen.ui.theme.DelernenColors
 import com.astemo.delernen.util.DeText
+import com.astemo.delernen.util.TtsHelper
 
 /** 页签 3：背单词。SRS 规则与网站 memorize 完全一致（见 SrsRules / MemorizeViewModel）。 */
 @Composable
@@ -74,6 +76,9 @@ private fun SetupView(vm: MemorizeViewModel) {
     val newPerDay by vm.newPerDay.collectAsStateWithLifecycle()
     val order by vm.order.collectAsStateWithLifecycle()
     val notice by vm.notice.collectAsStateWithLifecycle()
+    val sourceDefs by vm.sourceDefs.collectAsStateWithLifecycle()
+    val context = LocalContext.current
+    val tts = remember { TtsHelper.get(context) }
 
     Column(
         Modifier
@@ -89,7 +94,14 @@ private fun SetupView(vm: MemorizeViewModel) {
         )
 
         Spacer(Modifier.height(12.dp))
-        vm.sourceDefs.forEach { def ->
+        if (sourceDefs.isEmpty()) {
+            LinearProgressIndicator(
+                modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
+                color = DelernenColors.Accent2,
+                trackColor = DelernenColors.Chip
+            )
+        }
+        sourceDefs.forEach { def ->
             SourceRow(
                 name = def.name,
                 count = def.count,
@@ -138,6 +150,13 @@ private fun SetupView(vm: MemorizeViewModel) {
             colors = ButtonDefaults.buttonColors(containerColor = DelernenColors.Accent)
         ) {
             Text(if (stats.due > 0) "开始复习（${stats.due} 个到期）" else "开始背单词")
+        }
+
+        if (tts.ready && tts.needsVoiceData) {
+            Spacer(Modifier.height(8.dp))
+            TextButton(onClick = { tts.installVoiceData(context) }) {
+                Text("🔈 未安装德语语音数据，朗读不可用 —— 点此安装", color = DelernenColors.Orange)
+            }
         }
 
         if (!notice.isNullOrEmpty()) {
@@ -275,6 +294,7 @@ private fun StudyView(vm: MemorizeViewModel) {
     val index by vm.index.collectAsStateWithLifecycle()
     val flipped by vm.flipped.collectAsStateWithLifecycle()
     val canUndo by vm.canUndo.collectAsStateWithLifecycle()
+    val busy by vm.busy.collectAsStateWithLifecycle()
     val card = vm.current
 
     Column(Modifier.fillMaxSize().padding(16.dp)) {
@@ -300,9 +320,9 @@ private fun StudyView(vm: MemorizeViewModel) {
 
         if (flipped) {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                GradeButton("忘了", DelernenColors.Red, onClick = { vm.grade(SrsRules.GRADE_FORGOT) })
-                GradeButton("模糊", DelernenColors.Orange, onClick = { vm.grade(SrsRules.GRADE_FUZZY) })
-                GradeButton("记得", DelernenColors.Green, onClick = { vm.grade(SrsRules.GRADE_GOT) })
+                GradeButton("忘了", DelernenColors.Red, enabled = !busy, onClick = { vm.grade(SrsRules.GRADE_FORGOT) })
+                GradeButton("模糊", DelernenColors.Orange, enabled = !busy, onClick = { vm.grade(SrsRules.GRADE_FUZZY) })
+                GradeButton("记得", DelernenColors.Green, enabled = !busy, onClick = { vm.grade(SrsRules.GRADE_GOT) })
             }
         }
 
@@ -310,7 +330,7 @@ private fun StudyView(vm: MemorizeViewModel) {
             Modifier.fillMaxWidth().padding(top = 12.dp),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            TextButton(onClick = { vm.undo() }, enabled = canUndo) {
+            TextButton(onClick = { vm.undo() }, enabled = canUndo && !busy) {
                 Text("↩ 撤销上次打分", color = DelernenColors.Text3)
             }
             TextButton(onClick = { vm.quitSession() }) {
@@ -421,9 +441,10 @@ private fun ColumnScope.StudyCard(card: SrsCard, flipped: Boolean, onFlip: () ->
 }
 
 @Composable
-private fun RowScope.GradeButton(label: String, tint: Color, onClick: () -> Unit) {
+private fun RowScope.GradeButton(label: String, tint: Color, enabled: Boolean, onClick: () -> Unit) {
     Surface(
         onClick = onClick,
+        enabled = enabled,
         shape = MaterialTheme.shapes.medium,
         border = BorderStroke(1.dp, tint),
         color = tint.copy(alpha = 0.15f),
