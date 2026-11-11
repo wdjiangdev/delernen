@@ -68,9 +68,11 @@ jobs:
             ls -R android/app/build/outputs/apk || true
             exit 1
           fi
-          APKSIGNER=$(ls "$ANDROID_HOME"/build-tools/*/apksigner | sort -V | tail -n1)
-          CERTS=$("$APKSIGNER" verify --print-certs "$APK")
-          echo "$CERTS" | grep -E "Signer #1 certificate (DN|SHA-256)"
+          APKSIGNER=$(ls "$ANDROID_HOME"/build-tools/*/apksigner 2>/dev/null | sort -V | tail -n1 || true)
+          echo "apksigner: ${APKSIGNER:-<none>}"
+          if [ -z "$APKSIGNER" ]; then echo "::error::未找到 apksigner"; exit 1; fi
+          CERTS=$("$APKSIGNER" verify --print-certs "$APK" 2>&1) || { echo "$CERTS"; echo "::error::apksigner verify 失败"; exit 1; }
+          echo "$CERTS" | grep -iE "Signer #1 certificate (DN|SHA-256)" || echo "$CERTS"
           # 必须是与旧版相同的共用证书，否则已安装用户无法覆盖升级
           EXPECTED_SHA256=2308e396e33e6efce1d980ae4a0ee945588ef161117a6626579316d940438164
           if ! echo "$CERTS" | grep -qi "SHA-256 digest: $EXPECTED_SHA256"; then
