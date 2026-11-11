@@ -178,7 +178,8 @@ object DataRepo {
                 prefix = optStr(o, "prefix"),
                 stem = optStr(o, "stem"),
                 past = optStr(o, "past"),
-                pp = optStr(o, "pp")
+                pp = optStr(o, "pp"),
+                k = optStr(o, "k")
             )
         }
     }
@@ -247,6 +248,13 @@ object DataRepo {
 
     // ---------------- 背单词数据源归一化 ----------------
 
+    /** 网站 memorize 的 SRS_SOURCES 等价物（不触发 JSON 解析，词数在首次 srsWords() 之后才准确）。 */
+    val srsSourceIds: List<String> = listOf("sep_a1a2", "sep_a1b2", "nicos_a1", "nicos_a2", "nicos_b1")
+
+    /**
+     * 五个数据源及词数。会解析全部 JSON（约 0.8 MB），**只能在后台线程调用**
+     * （MemorizeViewModel 在 Dispatchers.Default 上读取）。
+     */
     val srsSources: List<SrsSourceDef> by lazy {
         listOf(
             SrsSourceDef("sep_a1a2", "A1-A2 可分动词", sepA1A2.size),
@@ -257,22 +265,30 @@ object DataRepo {
         )
     }
 
-    fun srsWords(sourceId: String): List<SrsCard> = when (sourceId) {
-        "sep_a1a2" -> sepA1A2.map {
-            SrsCard("sep_a1a2", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp)
+    /** 进度键：与网站 memorize 的 key(id, w.k||w.de) 一致。 */
+    private fun srsKey(k: String, de: String): String = k.ifBlank { de }
+
+    private val srsCache = java.util.concurrent.ConcurrentHashMap<String, List<SrsCard>>()
+
+    /** 某数据源的背单词卡片（已缓存；首次调用会解析 JSON，请在后台线程调用）。 */
+    fun srsWords(sourceId: String): List<SrsCard> = srsCache.getOrPut(sourceId) {
+        when (sourceId) {
+            "sep_a1a2" -> sepA1A2.map {
+                SrsCard("sep_a1a2", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp, srsKey(it.k, it.de))
+            }
+            "sep_a1b2" -> sepA1B2.map {
+                SrsCard("sep_a1b2", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp, srsKey(it.k, it.de))
+            }
+            "nicos_a1" -> nicosA1.map {
+                SrsCard("nicos_a1", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp, srsKey(it.k, it.de))
+            }
+            "nicos_a2" -> nicosA2.map {
+                SrsCard("nicos_a2", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp, srsKey(it.k, it.de))
+            }
+            "nicos_b1" -> nicosB1.map {
+                SrsCard("nicos_b1", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp, srsKey(it.k, it.de))
+            }
+            else -> emptyList()
         }
-        "sep_a1b2" -> sepA1B2.map {
-            SrsCard("sep_a1b2", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp)
-        }
-        "nicos_a1" -> nicosA1.map {
-            SrsCard("nicos_a1", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp)
-        }
-        "nicos_a2" -> nicosA2.map {
-            SrsCard("nicos_a2", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp)
-        }
-        "nicos_b1" -> nicosB1.map {
-            SrsCard("nicos_b1", it.de, it.en, it.zh, it.pos, it.tip, it.past, it.pp)
-        }
-        else -> emptyList()
     }
 }

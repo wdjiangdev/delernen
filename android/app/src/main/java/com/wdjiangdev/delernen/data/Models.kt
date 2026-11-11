@@ -80,7 +80,8 @@ data class SepWord(
     val prefix: String,
     val stem: String,
     val past: String,
-    val pp: String
+    val pp: String,
+    val k: String = ""
 )
 
 // ---- kurs/*/grammar*.json 合并 -> kurs.json ----
@@ -118,7 +119,9 @@ data class SrsCard(
     val pos: String,
     val tip: String,
     val past: String,
-    val pp: String
+    val pp: String,
+    /** 进度主键：与网站 memorize 一致，取 w.k || w.de（k 为空时用 de）。 */
+    val key: String = de
 )
 
 data class SrsSourceDef(

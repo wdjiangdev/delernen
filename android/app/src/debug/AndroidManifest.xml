@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 仅 debug 构建：ui-tooling 带进来的 PreviewActivity 默认 exported=true，这里强制不导出。
+     release 构建不包含 ui-tooling（debugImplementation），也就没有这个组件。 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="false"
+            tools:replace="android:exported" />
+    </application>
+
+</manifest>
