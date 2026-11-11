@@ -16,6 +16,8 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Checkbox
@@ -56,14 +58,20 @@ import com.astemo.delernen.util.DeText
 import com.astemo.delernen.util.TtsHelper
 
 /** 页签 3：背单词。SRS 规则与网站 memorize 完全一致（见 SrsRules / MemorizeViewModel）。 */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MemorizeScreen() {
     val vm: MemorizeViewModel = viewModel()
     val mode by vm.mode.collectAsStateWithLifecycle()
-    when (mode) {
-        "study" -> StudyView(vm)
-        "done" -> DoneView(vm)
-        else -> SetupView(vm)
+    // 和其他页签一致：用 TopAppBar 处理状态栏 insets，避免内容画到状态栏下面
+    Scaffold(topBar = { TopAppBar(title = { Text("背单词") }) }) { padding ->
+        Box(Modifier.fillMaxSize().padding(padding)) {
+            when (mode) {
+                "study" -> StudyView(vm)
+                "done" -> DoneView(vm)
+                else -> SetupView(vm)
+            }
+        }
     }
 }
 
