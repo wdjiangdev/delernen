@@ -14,7 +14,8 @@ GRAMMAR_POINTS = [{'num': 'M17-01',
              'gehen + zu + 不定式：相当于 können，常用于否定句（Das Bild geht nicht zu befestigen）。⑤ stehen + zu '
              '+ 不定式：相当于 müssen，主语一般是 es，且通常只与 befürchten（担心）和 erwarten（预计）搭配（Es steht zu '
              'befürchten, dass…）。⑥ es gibt + zu + 不定式：相当于 müssen（Es gibt noch vieles zu tun）。⑦ '
-             '易错点：改写成 sein zu 结构时，若原句的不定式带有直接宾语（有动作执行者），要先删掉该宾语，否则结构错误。\n'
+             '易错点：由主动句改写成 sein + zu 结构时，原句的四格宾语变成新句的主语，施事者（man 等）删去：Man muss die Anträge abholen → '
+             'Die Anträge sind abzuholen。\n'
              '\n'
              '🇬🇧 英语对照：英语 These applications are to be collected；德语 sind abzuholen，sein+zu '
              '表被动含义，路数一样。',
@@ -39,7 +40,8 @@ GRAMMAR_POINTS = [{'num': 'M17-01',
              '当一虚变位与直陈式现在时相同时，必须改用二虚代替（如 sie würden fehlen），否则听者无法判断是虚拟式还是直陈式——这是最易错的点。④ '
              '一虚的第二人称几乎不用、第一人称很少用，因为转述的本质是"别人说的"，绝大多数句子的主语都是第三人称。⑤ 过去时构成：一虚和二虚都是"haben/sein 的虚拟式 + '
              '过去分词"（er sei in Frankreich gewesen）。⑥ 口语中要避免使用一虚，引用别人的话时用直陈式或二虚（Paul hat gesagt, er '
-             'kommt nicht）。⑦ 易错辨析：als sei 不表示主观感受（那该用二虚 wäre），它强调的是从对方刚才说的话中可以听出来的客观事实，而非作者的主观理解。\n'
+             'kommt nicht）。⑦ 辨析：在非现实比较句（als / als ob）里，第一虚拟式和第二虚拟式都可以用，als sei 与 als wäre '
+             '意思相同，区别主要在文体（als sei 更书面）；按 Duden，二虚 wäre 更常见。\n'
              '\n'
              '🇬🇧 英语对照：英语间接引语用时态回退；德语第一虚拟式专管"引述"，sei/habe/fehle 一眼可辨。',
   'table': [['用法', '例子'],
@@ -59,12 +61,12 @@ GRAMMAR_POINTS = [{'num': 'M17-01',
              'fragen/bitten；(4) angehen。② kosten 和 lehren 支配两个四格宾语（表示人 + 表示事）：Der Flug hat meinen '
              'Vater 5000 Euro gekostet.。③ 口语中 kosten/lehren 后表示人的四格有时被说成三格（如 Das kann ihn/ihm den '
              'Hals kosten），但这种说法在书面语中要尽量避免——口语/书面语分界的易错点。④ abfragen/abhören '
-             '表示人的宾语可用三格或四格；但如果表示人的宾语是句中唯一的宾语，必须用四格（Der Lehrer hat ihn abgefragt）。⑤ fragen 和 '
-             'bitten 后的表示人的间接宾语要用四格（Hast du ihn etwas gefragt? / Das möchte ich dich bitten）。⑥ '
-             'bitten 很少接双宾语，更常见用法是"表示人的四格宾语 + um + 介词宾语"（Ich möchte dich darum bitten）或"表示人的四格宾语 + '
-             '带 zu 不定式"。⑦ angehen 固定结构：表示人的四格 + nichts/etwas 等表示不确定数量或程度的四格名词/不定代词（Das geht dich '
-             'nichts an 这不关你的事；Das geht mich einen Dreck an 这跟我有个毛的关系）。⑧ 德国北部一些地区会把 angehen '
-             '结构中表示人的第四格换成第三格，但这种说法未被标准德语接受。\n'
+             '表示人的宾语可用三格或四格；但如果表示人的宾语是句中唯一的宾语，必须用四格（Der Lehrer hat ihn abgefragt）。⑤ fragen '
+             '后表示人的宾语要用四格（Hast du ihn etwas gefragt?）；bitten 的"人"同样用四格。⑥ 现代德语里 bitten '
+             '基本不再接"事"的四格（jmdn. etw. bitten 已过时），标准用法是"人四格 + um + 四格"（Ich möchte dich um etwas '
+             'bitten / Darum möchte ich dich bitten）或"人四格 + 带 zu 不定式"。⑦ angehen 固定结构：表示人的四格 + '
+             'nichts/etwas 等表示不确定数量或程度的四格名词/不定代词（Das geht dich nichts an 这不关你的事；Das geht mich '
+             'einen Dreck an 这跟我有个毛的关系）。⑧ 德国北部一些地区会把 angehen 结构中表示人的第四格换成第三格，但这种说法未被标准德语接受。\n'
              '\n'
              '🇬🇧 英语对照：英语 teach sb sth 无介词；德语 lehren/fragen/bitten 四类动词直接带两个四格，整批背。',
   'table': [['动词', '结构', '例子'],
@@ -74,7 +76,8 @@ GRAMMAR_POINTS = [{'num': 'M17-01',
             ['angehen', '人四格 + nichts/etwas', 'Das geht dich nichts an.']],
   'examples': [['Der Flug hat meinen Vater 5000 Euro gekostet.', '这趟航班花了我父亲 5000 欧元。（kosten+双四格）'],
                ['Sie hat mich Deutsch gelehrt.', '她教我德语。'],
-               ['Der Lehrer hat ihn die englischen Vokabeln abgefragt.', '老师抽查了他英语单词。（唯一宾语必须四格）'],
+               ['Der Lehrer hat ihn die englischen Vokabeln abgefragt.',
+                '老师抽查了他英语单词。（人四格 + 物四格；人也可用三格 ihm）'],
                ['Das geht dich nichts an.', '这不关你的事。（angehen 固定结构）']]},
  {'num': 'M17-08',
   'id': 'personen',
@@ -116,9 +119,9 @@ GRAMMAR_POINTS = [{'num': 'M17-01',
              'einbehalten（房东扣押了押金），固定说法要背下来。④ beklagen '
              '可作及物动词，表示"为……而惋惜/痛惜"（如发帖呼吁改变现状），不等同于普通"抱怨"。⑤ 旅行谚语：die Katze im Sack '
              'kaufen（瞎买/买不了解的东西）、tief in die Tasche greifen（大把花钱/掏腰包）；sich an Stränden sonnen '
-             '是日光浴（泛指多个沙滩，am Strand 则特指某一个沙滩）。⑥ Wert auf Akk legen 译作"重视/善用、利用好"（auf ein '
-             'kostenloses Frühstück Wert legen）。⑦ 城市描写搭配：besuchen（去某地）、besichtigen（参观景点）、den '
-             'Grundstein für etw. legen（为……奠基）。\n'
+             '是日光浴（泛指多个沙滩，am Strand 则特指某一个沙滩）。⑥ Wert auf Akk legen 意为"重视、看重"（auf ein kostenloses '
+             'Frühstück Wert legen）。⑦ 城市描写搭配：besuchen（去某地）、besichtigen（参观景点）、den Grundstein für '
+             'etw. legen（为……奠基）。\n'
              '\n'
              '🇬🇧 英语对照：英语 rent/deposit；德语 Kaution/Kaltmiete/Nebenkosten，租房词汇是德国生活必备。',
   'table': [['词', '中文'],
@@ -128,7 +131,8 @@ GRAMMAR_POINTS = [{'num': 'M17-01',
             ['der Wellnessbereich', '康乐区'],
             ['Wert auf Akk. legen', '重视…']],
   'examples': [['bei Mietbeginn eine Kaution bezahlen', '租赁开始时支付押金。'],
-               ['die Kaltmiete / die Nebenkosten beträgt…', '冷租/附加费用是……'],
+               ['die Kaltmiete beträgt … / die Nebenkosten betragen …',
+                '冷租是…… / 附加费用是……（Nebenkosten 是复数，动词用复数）'],
                ['die Katze im Sack kaufen', '瞎买（买不了解的东西）。'],
                ['für den Urlaub tief in die Tasche greifen', '为度假掏腰包。']]},
  {'num': 'M18-08',
@@ -230,8 +234,8 @@ GRAMMAR_POINTS = [{'num': 'M17-01',
              '本课分四部分：世界新闻、电视犯罪剧、政治、犯罪——"紧张"主题贯穿新闻价值与犯罪话题；注意：标题中的"Entspannung"（放松）并未单独成节，本课内容实际偏向"紧张/刺激"一侧。② '
              '新闻价值八要素（本课核心清单）：Aktualität（时事性）、Überraschung（惊喜性）、Bekanntheit（熟悉性）、Personalisierung（个性化）、Spannung（紧张性）、Kuriosität（好奇性）、Nähe（亲近性）、Identifikation（认同感）——成串记忆。③ '
              '犯罪剧词汇群：den Tatort untersuchen（调查现场）、Beweise sammeln（收集证据）、den Täter '
-             'überführen（给凶手定罪）、das Geständnis ablegen（坦白）；固定搭配 dem Täter auf der Spur '
-             'sein（追踪凶手）。④ 犯罪统计表达：die Kriminalitätsrangliste anführen（犯罪率排名第一）、die '
+             'überführen（证明凶手有罪、揭穿凶手；"定罪"是 verurteilen）、das Geständnis ablegen（坦白）；固定搭配 dem Täter '
+             'auf der Spur sein（追踪凶手）。④ 犯罪统计表达：die Kriminalitätsrangliste anführen（犯罪率排名第一）、die '
              'Aufklärungsquote（破案率）、aus der Polizeilichen Kriminalstatistik (PKS) '
              'hervorgehen（出自警方犯罪统计）。⑤ 反腐词汇群：den Kampf gegen die Korruption antreten（打响反腐斗争）、Macht '
              'missbrauchen（滥用权力）、Bestechungsgelder zahlen/annehmen（行贿/受贿）、das Vertrauen in die '
@@ -279,7 +283,7 @@ GRAMMAR_POINTS = [{'num': 'M17-01',
             ['die Datensicherung', '数据备份'],
             ['das Patent', '专利'],
             ['die Firewall', '防火墙']],
-  'examples': [['Der Knopf befindet sich an der linken Seite.', '旋钮位于左侧。'],
+  'examples': [['Der Knopf befindet sich an der linken Seite.', '按钮位于左侧。'],
                ['den Verkauf ankurbeln', '增加销量。'],
                ['sich auf dem Markt durchsetzen', '在市场上获得成功。'],
                ['Daten verschlüsseln', '加密数据。']]},

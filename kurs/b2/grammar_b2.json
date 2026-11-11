@@ -5,7 +5,7 @@
   "cat": "yufa",
   "title": "带 zu 不定式的被动含义",
   "titleDe": "Infinitiv mit zu (passivisch)",
-  "explain": "带 zu 不定式的被动含义。① \"带 zu 不定式\"作表语/主语成分时可带被动含义，引导它的动词语义相当于情态动词 können / müssen / sollen，具体是哪个要看上下文。② sein + zu + 不定式：相当于 können、müssen 或 sollen（Die Anträge sind im Rathaus abzuholen）。③ bleiben + zu + 不定式：相当于 müssen（Vieles bleibt zu erledigen）。④ gehen + zu + 不定式：相当于 können，常用于否定句（Das Bild geht nicht zu befestigen）。⑤ stehen + zu + 不定式：相当于 müssen，主语一般是 es，且通常只与 befürchten（担心）和 erwarten（预计）搭配（Es steht zu befürchten, dass…）。⑥ es gibt + zu + 不定式：相当于 müssen（Es gibt noch vieles zu tun）。⑦ 易错点：改写成 sein zu 结构时，若原句的不定式带有直接宾语（有动作执行者），要先删掉该宾语，否则结构错误。\n\n🇬🇧 英语对照：英语 These applications are to be collected；德语 sind abzuholen，sein+zu 表被动含义，路数一样。",
+  "explain": "带 zu 不定式的被动含义。① \"带 zu 不定式\"作表语/主语成分时可带被动含义，引导它的动词语义相当于情态动词 können / müssen / sollen，具体是哪个要看上下文。② sein + zu + 不定式：相当于 können、müssen 或 sollen（Die Anträge sind im Rathaus abzuholen）。③ bleiben + zu + 不定式：相当于 müssen（Vieles bleibt zu erledigen）。④ gehen + zu + 不定式：相当于 können，常用于否定句（Das Bild geht nicht zu befestigen）。⑤ stehen + zu + 不定式：相当于 müssen，主语一般是 es，且通常只与 befürchten（担心）和 erwarten（预计）搭配（Es steht zu befürchten, dass…）。⑥ es gibt + zu + 不定式：相当于 müssen（Es gibt noch vieles zu tun）。⑦ 易错点：由主动句改写成 sein + zu 结构时，原句的四格宾语变成新句的主语，施事者（man 等）删去：Man muss die Anträge abholen → Die Anträge sind abzuholen。\n\n🇬🇧 英语对照：英语 These applications are to be collected；德语 sind abzuholen，sein+zu 表被动含义，路数一样。",
   "table": [
    [
     "结构",
@@ -63,7 +63,7 @@
   "cat": "yufa",
   "title": "第一虚拟式",
   "titleDe": "Konjunktiv I",
-  "explain": "第一虚拟式（Konjunktiv I）。① 主要用来引述第三方的话，强调所说的话不是说话人自己说的、体现中立态度，因此多出现在新闻、广播、电视、报纸等媒体语体中。② 构成：在原型词干上加 e 词尾（如 sei、habe、fehle、zerstöre）；记忆技巧：一虚在\"原型词干\"上变化，二虚在\"过去式\"上变化，词尾一样。③ 当一虚变位与直陈式现在时相同时，必须改用二虚代替（如 sie würden fehlen），否则听者无法判断是虚拟式还是直陈式——这是最易错的点。④ 一虚的第二人称几乎不用、第一人称很少用，因为转述的本质是\"别人说的\"，绝大多数句子的主语都是第三人称。⑤ 过去时构成：一虚和二虚都是\"haben/sein 的虚拟式 + 过去分词\"（er sei in Frankreich gewesen）。⑥ 口语中要避免使用一虚，引用别人的话时用直陈式或二虚（Paul hat gesagt, er kommt nicht）。⑦ 易错辨析：als sei 不表示主观感受（那该用二虚 wäre），它强调的是从对方刚才说的话中可以听出来的客观事实，而非作者的主观理解。\n\n🇬🇧 英语对照：英语间接引语用时态回退；德语第一虚拟式专管\"引述\"，sei/habe/fehle 一眼可辨。",
+  "explain": "第一虚拟式（Konjunktiv I）。① 主要用来引述第三方的话，强调所说的话不是说话人自己说的、体现中立态度，因此多出现在新闻、广播、电视、报纸等媒体语体中。② 构成：在原型词干上加 e 词尾（如 sei、habe、fehle、zerstöre）；记忆技巧：一虚在\"原型词干\"上变化，二虚在\"过去式\"上变化，词尾一样。③ 当一虚变位与直陈式现在时相同时，必须改用二虚代替（如 sie würden fehlen），否则听者无法判断是虚拟式还是直陈式——这是最易错的点。④ 一虚的第二人称几乎不用、第一人称很少用，因为转述的本质是\"别人说的\"，绝大多数句子的主语都是第三人称。⑤ 过去时构成：一虚和二虚都是\"haben/sein 的虚拟式 + 过去分词\"（er sei in Frankreich gewesen）。⑥ 口语中要避免使用一虚，引用别人的话时用直陈式或二虚（Paul hat gesagt, er kommt nicht）。⑦ 辨析：在非现实比较句（als / als ob）里，第一虚拟式和第二虚拟式都可以用，als sei 与 als wäre 意思相同，区别主要在文体（als sei 更书面）；按 Duden，二虚 wäre 更常见。\n\n🇬🇧 英语对照：英语间接引语用时态回退；德语第一虚拟式专管\"引述\"，sei/habe/fehle 一眼可辨。",
   "table": [
    [
     "用法",
@@ -107,7 +107,7 @@
   "cat": "yufa",
   "title": "支配两个四格宾语的动词",
   "titleDe": "Verben mit zwei Akkusativobjekten",
-  "explain": "支配两个四格宾语的动词。① 德语中支配两个四格宾语的动词分四类：(1) kosten/lehren；(2) abfragen/abhören；(3) fragen/bitten；(4) angehen。② kosten 和 lehren 支配两个四格宾语（表示人 + 表示事）：Der Flug hat meinen Vater 5000 Euro gekostet.。③ 口语中 kosten/lehren 后表示人的四格有时被说成三格（如 Das kann ihn/ihm den Hals kosten），但这种说法在书面语中要尽量避免——口语/书面语分界的易错点。④ abfragen/abhören 表示人的宾语可用三格或四格；但如果表示人的宾语是句中唯一的宾语，必须用四格（Der Lehrer hat ihn abgefragt）。⑤ fragen 和 bitten 后的表示人的间接宾语要用四格（Hast du ihn etwas gefragt? / Das möchte ich dich bitten）。⑥ bitten 很少接双宾语，更常见用法是\"表示人的四格宾语 + um + 介词宾语\"（Ich möchte dich darum bitten）或\"表示人的四格宾语 + 带 zu 不定式\"。⑦ angehen 固定结构：表示人的四格 + nichts/etwas 等表示不确定数量或程度的四格名词/不定代词（Das geht dich nichts an 这不关你的事；Das geht mich einen Dreck an 这跟我有个毛的关系）。⑧ 德国北部一些地区会把 angehen 结构中表示人的第四格换成第三格，但这种说法未被标准德语接受。\n\n🇬🇧 英语对照：英语 teach sb sth 无介词；德语 lehren/fragen/bitten 四类动词直接带两个四格，整批背。",
+  "explain": "支配两个四格宾语的动词。① 德语中支配两个四格宾语的动词分四类：(1) kosten/lehren；(2) abfragen/abhören；(3) fragen/bitten；(4) angehen。② kosten 和 lehren 支配两个四格宾语（表示人 + 表示事）：Der Flug hat meinen Vater 5000 Euro gekostet.。③ 口语中 kosten/lehren 后表示人的四格有时被说成三格（如 Das kann ihn/ihm den Hals kosten），但这种说法在书面语中要尽量避免——口语/书面语分界的易错点。④ abfragen/abhören 表示人的宾语可用三格或四格；但如果表示人的宾语是句中唯一的宾语，必须用四格（Der Lehrer hat ihn abgefragt）。⑤ fragen 后表示人的宾语要用四格（Hast du ihn etwas gefragt?）；bitten 的\"人\"同样用四格。⑥ 现代德语里 bitten 基本不再接\"事\"的四格（jmdn. etw. bitten 已过时），标准用法是\"人四格 + um + 四格\"（Ich möchte dich um etwas bitten / Darum möchte ich dich bitten）或\"人四格 + 带 zu 不定式\"。⑦ angehen 固定结构：表示人的四格 + nichts/etwas 等表示不确定数量或程度的四格名词/不定代词（Das geht dich nichts an 这不关你的事；Das geht mich einen Dreck an 这跟我有个毛的关系）。⑧ 德国北部一些地区会把 angehen 结构中表示人的第四格换成第三格，但这种说法未被标准德语接受。\n\n🇬🇧 英语对照：英语 teach sb sth 无介词；德语 lehren/fragen/bitten 四类动词直接带两个四格，整批背。",
   "table": [
    [
     "动词",
@@ -146,7 +146,7 @@
    ],
    [
     "Der Lehrer hat ihn die englischen Vokabeln abgefragt.",
-    "老师抽查了他英语单词。（唯一宾语必须四格）"
+    "老师抽查了他英语单词。（人四格 + 物四格；人也可用三格 ihm）"
    ],
    [
     "Das geht dich nichts an.",
@@ -216,7 +216,7 @@
   "cat": "vokabel",
   "title": "Daheim und unterwegs（家与旅途）",
   "titleDe": "Daheim und unterwegs",
-  "explain": "主题词汇：家与旅途（Daheim und unterwegs）。① 本课四大场景：居住（租房）、德国城市、旅行、酒店，词汇围绕生活服务展开。② 德国租房特色词：die Kaution（押金）、die Kaltmiete（冷租）、die Nebenkosten（附加费用）；老师答疑：Miete 单数指每次支付的租金，Mieten 指多次支付的总和。③ einbehalten 的固定主语是房东：Der Vermieter hat die Kaution einbehalten（房东扣押了押金），固定说法要背下来。④ beklagen 可作及物动词，表示\"为……而惋惜/痛惜\"（如发帖呼吁改变现状），不等同于普通\"抱怨\"。⑤ 旅行谚语：die Katze im Sack kaufen（瞎买/买不了解的东西）、tief in die Tasche greifen（大把花钱/掏腰包）；sich an Stränden sonnen 是日光浴（泛指多个沙滩，am Strand 则特指某一个沙滩）。⑥ Wert auf Akk legen 译作\"重视/善用、利用好\"（auf ein kostenloses Frühstück Wert legen）。⑦ 城市描写搭配：besuchen（去某地）、besichtigen（参观景点）、den Grundstein für etw. legen（为……奠基）。\n\n🇬🇧 英语对照：英语 rent/deposit；德语 Kaution/Kaltmiete/Nebenkosten，租房词汇是德国生活必备。",
+  "explain": "主题词汇：家与旅途（Daheim und unterwegs）。① 本课四大场景：居住（租房）、德国城市、旅行、酒店，词汇围绕生活服务展开。② 德国租房特色词：die Kaution（押金）、die Kaltmiete（冷租）、die Nebenkosten（附加费用）；老师答疑：Miete 单数指每次支付的租金，Mieten 指多次支付的总和。③ einbehalten 的固定主语是房东：Der Vermieter hat die Kaution einbehalten（房东扣押了押金），固定说法要背下来。④ beklagen 可作及物动词，表示\"为……而惋惜/痛惜\"（如发帖呼吁改变现状），不等同于普通\"抱怨\"。⑤ 旅行谚语：die Katze im Sack kaufen（瞎买/买不了解的东西）、tief in die Tasche greifen（大把花钱/掏腰包）；sich an Stränden sonnen 是日光浴（泛指多个沙滩，am Strand 则特指某一个沙滩）。⑥ Wert auf Akk legen 意为\"重视、看重\"（auf ein kostenloses Frühstück Wert legen）。⑦ 城市描写搭配：besuchen（去某地）、besichtigen（参观景点）、den Grundstein für etw. legen（为……奠基）。\n\n🇬🇧 英语对照：英语 rent/deposit；德语 Kaution/Kaltmiete/Nebenkosten，租房词汇是德国生活必备。",
   "table": [
    [
     "词",
@@ -249,8 +249,8 @@
     "租赁开始时支付押金。"
    ],
    [
-    "die Kaltmiete / die Nebenkosten beträgt…",
-    "冷租/附加费用是……"
+    "die Kaltmiete beträgt … / die Nebenkosten betragen …",
+    "冷租是…… / 附加费用是……（Nebenkosten 是复数，动词用复数）"
    ],
    [
     "die Katze im Sack kaufen",
@@ -424,7 +424,7 @@
   "cat": "vokabel",
   "title": "Spannung und Entspannung（紧张与放松）",
   "titleDe": "Spannung und Entspannung",
-  "explain": "主题词汇：紧张与放松（Spannung und Entspannung）。① 本课分四部分：世界新闻、电视犯罪剧、政治、犯罪——\"紧张\"主题贯穿新闻价值与犯罪话题；注意：标题中的\"Entspannung\"（放松）并未单独成节，本课内容实际偏向\"紧张/刺激\"一侧。② 新闻价值八要素（本课核心清单）：Aktualität（时事性）、Überraschung（惊喜性）、Bekanntheit（熟悉性）、Personalisierung（个性化）、Spannung（紧张性）、Kuriosität（好奇性）、Nähe（亲近性）、Identifikation（认同感）——成串记忆。③ 犯罪剧词汇群：den Tatort untersuchen（调查现场）、Beweise sammeln（收集证据）、den Täter überführen（给凶手定罪）、das Geständnis ablegen（坦白）；固定搭配 dem Täter auf der Spur sein（追踪凶手）。④ 犯罪统计表达：die Kriminalitätsrangliste anführen（犯罪率排名第一）、die Aufklärungsquote（破案率）、aus der Polizeilichen Kriminalstatistik (PKS) hervorgehen（出自警方犯罪统计）。⑤ 反腐词汇群：den Kampf gegen die Korruption antreten（打响反腐斗争）、Macht missbrauchen（滥用权力）、Bestechungsgelder zahlen/annehmen（行贿/受贿）、das Vertrauen in die staatliche Verwaltung verlieren（失去对政府的信任）。⑥ 政治冷漠表达：die Politikverdrossenheit（厌恶政治）、Das politische Interesse sinkt/steigt/bleibt gleich；生动比喻 auf eine Mauer des Schweigens stoßen（碰到沉默之墙）、sich um mehr Transparenz bemühen（努力提高透明度）。\n\n🇬🇧 英语对照：英语 crime drama；德语 der Tatort/die Aufklärungsquote，新闻价值八要素成串背。",
+  "explain": "主题词汇：紧张与放松（Spannung und Entspannung）。① 本课分四部分：世界新闻、电视犯罪剧、政治、犯罪——\"紧张\"主题贯穿新闻价值与犯罪话题；注意：标题中的\"Entspannung\"（放松）并未单独成节，本课内容实际偏向\"紧张/刺激\"一侧。② 新闻价值八要素（本课核心清单）：Aktualität（时事性）、Überraschung（惊喜性）、Bekanntheit（熟悉性）、Personalisierung（个性化）、Spannung（紧张性）、Kuriosität（好奇性）、Nähe（亲近性）、Identifikation（认同感）——成串记忆。③ 犯罪剧词汇群：den Tatort untersuchen（调查现场）、Beweise sammeln（收集证据）、den Täter überführen（证明凶手有罪、揭穿凶手；\"定罪\"是 verurteilen）、das Geständnis ablegen（坦白）；固定搭配 dem Täter auf der Spur sein（追踪凶手）。④ 犯罪统计表达：die Kriminalitätsrangliste anführen（犯罪率排名第一）、die Aufklärungsquote（破案率）、aus der Polizeilichen Kriminalstatistik (PKS) hervorgehen（出自警方犯罪统计）。⑤ 反腐词汇群：den Kampf gegen die Korruption antreten（打响反腐斗争）、Macht missbrauchen（滥用权力）、Bestechungsgelder zahlen/annehmen（行贿/受贿）、das Vertrauen in die staatliche Verwaltung verlieren（失去对政府的信任）。⑥ 政治冷漠表达：die Politikverdrossenheit（厌恶政治）、Das politische Interesse sinkt/steigt/bleibt gleich；生动比喻 auf eine Mauer des Schweigens stoßen（碰到沉默之墙）、sich um mehr Transparenz bemühen（努力提高透明度）。\n\n🇬🇧 英语对照：英语 crime drama；德语 der Tatort/die Aufklärungsquote，新闻价值八要素成串背。",
   "table": [
    [
     "词",
@@ -506,7 +506,7 @@
   "examples": [
    [
     "Der Knopf befindet sich an der linken Seite.",
-    "旋钮位于左侧。"
+    "按钮位于左侧。"
    ],
    [
     "den Verkauf ankurbeln",

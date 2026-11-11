@@ -97,7 +97,9 @@ def main(src, dst):
     for it in SITE_ITEMS:
         s = os.path.join(src, it)
         if os.path.isdir(s):
-            shutil.copytree(s, os.path.join(dst, it))
+            # alice/src/*.md 是 Alice 笔记的构建源（scripts/build_alice.py），不发布到站点
+            ign = shutil.ignore_patterns('src') if it == 'alice' else None
+            shutil.copytree(s, os.path.join(dst, it), ignore=ign)
         elif os.path.exists(s):
             shutil.copy2(s, os.path.join(dst, it))
     n_idx = build_search_index(dst)

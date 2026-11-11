@@ -1,27 +1,36 @@
 #!/usr/bin/env python3
-"""Build delernen /alice/ section from ~/workspace/alice-notes/md/*.md.
+"""Build the delernen /alice/ section from alice/src/*.md (sources live in the repo).
 
-Each markdown file -> alice/<slug>.html + alice/index.html card list.
-Visual language follows grammatik/kurs sections (theme vars, cards).
-Original explanations rewritten by assistant; short quotes only; source links included.
+用法（在仓库根目录或任意目录）：
+    python3 scripts/build_alice.py
+
+输入：alice/src/NN-slug.md（17 篇）。每篇文件格式：
+    <!-- title: [B1] 页面标题 -->          页面 <h1> 与目录卡片标题（保持不变，Android 构建会核对）
+    <!-- level: A2|B1|C1 -->
+    <!-- desc: 目录卡片一句话导读 -->       （可选）
+    来源：<原文标题> — Alice (Medium) <原文 URL>
+    （日期/说明）
+    # Alice 原文标题
+    原文逐字照录；下面的 "> 中：" 行是中文译注，"> EN:" 是补充英文；⚠ 标出原文错误
+    # 中文要点                                学习层小结（列表）
+输出：alice/NN-slug.html（文件名 = 源文件名，URL 不变）+ alice/index.html。
+页面模板与站内其它分区一致（/theme.css、manifest、pwa.js）。正文全部用 h2/h3/h4/p/li/table 输出，
+scripts/build_android_data.py 的 AliceParser 可以直接解析成 alice.json 块。
+
+原文版权归作者 Alice（alicelearngerman.medium.com）所有，此处仅作个人学习整理；每页顶部附原文链接。
 """
 import html as htmlmod
 import os
 import re
 import sys
 
-SRC = os.path.expanduser("~/workspace/alice-notes/md")
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "alice")
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+SRC = os.path.join(ROOT, "alice", "src")
+OUT = os.path.join(ROOT, "alice")
 
-CSS = """:root{--bg:#0a0e1a;--bg-card:#111830;--bg-elev:#141b30;--bg-deep:#0d1326;
---text:#e0e6f0;--text2:#b0b8d0;--text3:#8a93a8;--text4:#6a7490;
---border:#2a3350;--border2:#232c48;--accent:#4a7aca;--accent2:#6ab0ff;--accentbg:#2a4a8a;
---green:#7dd87d;--orange:#ffb84d;--red:#ff7d7d}
-[data-theme="light"]{--bg:#f4f6fa;--bg-card:#ffffff;--bg-elev:#e9edf4;--bg-deep:#e2e8f1;
---text:#1c2536;--text2:#3c4c66;--text3:#5c6e88;--text4:#8a9bb5;
---border:#cfd8e6;--border2:#dfe6f0;--accent:#3868c8;--accent2:#2c5ab5;--accentbg:#d4e2fa;
---green:#2a8a3a;--orange:#c87a1a;--red:#c83a3a}
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+COPYRIGHT = "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+
+CSS = """*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
 header{position:sticky;top:0;z-index:10;background:var(--bg);padding:14px 16px 10px;border-bottom:1px solid var(--border2);text-align:center}
 header h1{font-size:19px;font-weight:700}
@@ -53,7 +62,18 @@ th{background:var(--bg-elev);color:var(--accent2)}
 .sec-h{font-size:14px;color:var(--text3);margin:22px 0 4px;letter-spacing:1px}
 #themeBtn{position:fixed;top:14px;right:14px;background:var(--bg-card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:20}
 .src{font-size:12px;color:var(--text4);margin-top:16px;line-height:1.7}
-.src a{color:var(--accent2)}"""
+.src a{color:var(--accent2)}
+.src-top{font-size:13px;color:var(--text2);margin:6px 0 2px;line-height:1.7}
+.src-top a{color:var(--accent2);word-break:break-word}
+h4{font-size:14px;margin:12px 0 4px;color:var(--text2)}
+hr{border:none;border-top:1px dashed var(--border);margin:14px 0}
+p.orig{color:var(--text);font-size:15px;line-height:1.75;margin:12px 0 4px}
+p.zh,p.en,li.zh,li.en{font-size:13px;line-height:1.7;margin:2px 0 6px;padding-left:10px;border-left:3px solid var(--accent)}
+p.en,li.en{color:var(--text3);border-left-color:var(--border)}
+li.zh,li.en{list-style:none;margin-left:20px}
+ul.orig>li:not(.zh):not(.en){color:var(--text);margin-top:8px}
+h2.sum{margin-top:24px;padding-top:12px;border-top:1px solid var(--border2)}
+.card table td{white-space:normal;min-width:7em;vertical-align:top}"""
 
 THEME_JS = """<script>
 (function(){function apply(t){var r=document.documentElement;
@@ -66,52 +86,58 @@ window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'aut
 
 
 def esc(s):
-    return htmlmod.escape(s)
+    return htmlmod.escape(s, quote=False).replace('"', "&quot;")
 
 
 def inline(s):
     s = esc(s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
-    s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2" target="_blank" rel="noopener">\1</a>', s)
+    s = re.sub(r"(?<!\*)\*(?!\s)([^*\n]+?)(?<!\s)\*(?!\*)", r"<em>\1</em>", s)
+    s = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", r'<a href="\2" target="_blank" rel="noopener">\1</a>', s)
     return s
 
 
-def md_to_html(md):
-    """Minimal markdown: headings, tables, lists, bold, links, paragraphs.
-    Special blocks: lines starting with '例句|' -> example card (de|zh);
-    lines starting with '提示|' -> tip box."""
+QUOTE_RE = re.compile(r"^\s*>\s?(.*)$")
+
+
+def quote_class(text):
+    return "en" if text.startswith("EN") else "zh"
+
+
+def md_to_html(lines):
+    """Render the body (after the 来源/说明 header lines).
+
+    Supported: # / ## / ### headings, '> ' translation lines, '- ' lists with indented
+    '  > ' translations, numbered lines '1. ' with indented '→' / '>' continuation,
+    pipe tables, '---' rules, **bold**, *italic*. Every text unit becomes h2/h3/h4/p/li,
+    so the Android AliceParser keeps all of it."""
     out = []
-    lines = md.split("\n")
-    i = 0
-    while i < len(lines):
-        line = lines[i].rstrip()
-        if not line.strip():
+    i, n = 0, len(lines)
+    while i < n:
+        raw = lines[i].rstrip()
+        line = raw.strip()
+        if not line or line.startswith("<!--"):
             i += 1
             continue
-        if line.startswith("### "):
-            out.append(f"<h3>{inline(line[4:])}</h3>")
-        elif line.startswith("## "):
-            out.append(f"<h2>{inline(line[3:])}</h2>")
-        elif line.startswith("# "):
-            pass  # title handled separately
-        elif line.startswith("例句|"):
-            parts = line[3:].split("|")
-            de = parts[0].strip() if len(parts) > 0 else ""
-            zh = parts[1].strip() if len(parts) > 1 else ""
-            out.append(f'<div class="ex"><div class="de">{esc(de)}</div>'
-                       + (f'<div class="zh">{esc(zh)}</div>' if zh else "") + "</div>")
-        elif line.startswith("提示|"):
-            out.append(f'<div class="tip">💡 {inline(line[3:])}</div>')
-        elif line.startswith("来源|"):
-            out.append(f'<div class="src">来源：{inline(line[3:])}</div>')
-        elif line.startswith("|"):
+        if raw.startswith("# "):
+            title = raw[2:].strip()
+            cls = ' class="sum"' if title.startswith("中文要点") else ""
+            out.append(f"<h2{cls}>{inline(title)}</h2>")
+        elif raw.startswith("## "):
+            out.append(f"<h3>{inline(raw[3:].strip())}</h3>")
+        elif raw.startswith("### "):
+            out.append(f"<h4>{inline(raw[4:].strip())}</h4>")
+        elif line == "---":
+            out.append("<hr>")
+        elif QUOTE_RE.match(raw) and not raw.startswith(" "):
+            t = QUOTE_RE.match(raw).group(1).strip()
+            out.append(f'<p class="{quote_class(t)}">{inline(t)}</p>')
+        elif raw.startswith("|"):
             tbl = []
-            while i < len(lines) and lines[i].strip().startswith("|"):
-                cells = [c.strip() for c in lines[i].strip().strip("|").split("|")]
-                tbl.append(cells)
+            while i < n and lines[i].strip().startswith("|"):
+                tbl.append([c.strip() for c in lines[i].strip().strip("|").split("|")])
                 i += 1
             i -= 1
-            # drop separator row
             rows = [r for r in tbl if not all(re.match(r"^:?-+:?$", c) for c in r)]
             h = ["<table>"]
             for ri, r in enumerate(rows):
@@ -119,76 +145,103 @@ def md_to_html(md):
                 h.append("<tr>" + "".join(f"<{tag}>{inline(c)}</{tag}>" for c in r) + "</tr>")
             h.append("</table>")
             out.append("".join(h))
-        elif line.startswith("- "):
+        elif raw.startswith("- "):
             items = []
-            while i < len(lines) and lines[i].strip().startswith("- "):
-                items.append(f"<li>{inline(lines[i].strip()[2:])}</li>")
+            while i < n and (lines[i].startswith("- ") or (lines[i].startswith(" ") and lines[i].strip())):
+                cur = lines[i]
+                if cur.startswith("- "):
+                    items.append(f"<li>{inline(cur[2:].strip())}</li>")
+                else:
+                    t = cur.strip()
+                    m = QUOTE_RE.match(t)
+                    if m:
+                        q = m.group(1).strip()
+                        c = quote_class(q)
+                        items.append(f'<li class="{c}">{inline(q)}</li>')
+                    else:
+                        items.append(f'<li class="zh">{inline(t)}</li>')
                 i += 1
             i -= 1
-            out.append("<ul>" + "".join(items) + "</ul>")
+            out.append('<ul class="orig">' + "".join(items) + "</ul>")
+        elif raw.startswith(" "):
+            # indented continuation under a numbered line ('   → …' / '   > 中：…')
+            m = QUOTE_RE.match(raw)
+            if m:
+                t = m.group(1).strip()
+                out.append(f'<p class="{quote_class(t)}">{inline(t)}</p>')
+            else:
+                out.append(f'<p class="orig">{inline(line)}</p>')
         else:
-            out.append(f"<p>{inline(line)}</p>")
+            out.append(f'<p class="orig">{inline(line)}</p>')
         i += 1
     return "\n".join(out)
 
 
-def parse_meta(md):
-    """First '# ' line = title. Optional '<!-- level:A2 -->' '<!-- desc:... -->' markers."""
-    title = "笔记"
-    level, desc = "B1", ""
-    for line in md.split("\n"):
-        if line.startswith("# "):
-            title = line[2:].strip()
-            m = re.match(r"\[(A2|B1|C1)\]", title)
-            if m:
-                level = m.group(1)
-        m = re.match(r"<!--\s*level:(\w+)\s*-->", line)
-        if m:
-            level = m.group(1)
-        m = re.search(r"难度：\*\*(A2|B1|C1)\*\*", line)
-        if m:
-            level = m.group(1)
-        m = re.match(r"<!--\s*desc:(.+?)\s*-->", line)
-        if m:
-            desc = m.group(1).strip()
-        if not desc:
-            m = re.search(r"导读：(.+)$", line)
-            if m:
-                desc = m.group(1).strip()[:60]
-    return title, level, desc
+def parse_source(md):
+    meta = {}
+    for k in ("title", "level", "desc"):
+        m = re.search(r"<!--\s*%s:\s*(.+?)\s*-->" % k, md)
+        meta[k] = m.group(1).strip() if m else ""
+    lines = [l for l in md.split("\n") if not l.strip().startswith("<!--")]
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    m = re.match(r"^来源：(.+?)\s+(https?://\S+)\s*$", lines[0].strip()) if lines else None
+    if not m:
+        raise ValueError("first content line must be '来源：<title> — Alice (Medium) <url>'")
+    meta["src_title"], meta["src_url"] = m.group(1).strip(), m.group(2).strip()
+    rest = lines[1:]
+    note = ""
+    if rest and rest[0].strip().startswith("（"):
+        note = rest[0].strip()
+        rest = rest[1:]
+    meta["note"] = note
+    return meta, rest
 
 
-def page(title, body, back="../"):
+def page(title, body, back="index.html"):
     return f"""<!DOCTYPE html>
 <html lang="zh"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(title)} · Alice Learn German 笔记</title>
-<style>{CSS}</style></head>
+<link rel="stylesheet" href="/theme.css">
+<style>{CSS}</style><link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
 <body><button id="themeBtn" onclick="toggleTheme()" title="切换主题">🔄</button>
 <header><h1>{esc(title)}</h1><a class="back" href="{back}">← 返回目录</a></header>
 <main><div class="card">{body}</div></main>
-{THEME_JS}</body></html>"""
+{THEME_JS}<script src="/pwa.js"></script>
+</body></html>"""
 
 
 def main():
-    files = sorted(f for f in os.listdir(SRC) if f.endswith(".md"))
+    if not os.path.isdir(SRC):
+        print("source dir not found:", SRC)
+        sys.exit(1)
+    files = sorted(f for f in os.listdir(SRC) if re.match(r"^\d\d-.+\.md$", f))
     if not files:
         print("no markdown found in", SRC)
         sys.exit(1)
-    os.makedirs(OUT, exist_ok=True)
     cards = {"A2": [], "B1": [], "C1": []}
     for fn in files:
         slug = fn[:-3]
         md = open(os.path.join(SRC, fn), encoding="utf-8").read()
-        title, level, desc = parse_meta(md)
-        body = md_to_html(md)
-        lvl = level if level in cards else "B1"
+        meta, rest = parse_source(md)
+        title = meta["title"] or slug
+        lvl = meta["level"] if meta["level"] in cards else "B1"
         banner = (f'<p><span class="lv lv-{lvl}">{lvl}</span>'
-                  + ("📌 C1·以后看，先认得不深究" if lvl == "C1" else "") + "</p>\n") if lvl == "C1" \
-            else f'<p><span class="lv lv-{lvl}">{lvl}</span></p>\n'
-        open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(
-            page(title, banner + body, back="index.html"))
-        cards[lvl].append((slug, title, desc))
+                  + ("📌 C1·以后看，先认得不深究" if lvl == "C1" else "") + "</p>\n")
+        head = (f'<p class="src-top">来源：<a href="{esc(meta["src_url"])}" target="_blank" rel="noopener">'
+                f'{esc(meta["src_title"])}</a></p>\n'
+                f'<p class="meta">{COPYRIGHT}</p>\n'
+                + (f'<p class="meta">{inline(meta["note"])}</p>\n' if meta["note"] else "")
+                + "<hr>\n")
+        body = banner + head + md_to_html(rest)
+        with open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8") as f:
+            f.write(page(title, body, back="index.html"))
+        cards[lvl].append((slug, title, meta["desc"]))
         print("built", slug)
     sec_names = {"A2": "A2 · 跟冲刺", "B1": "B1 · 冲刺后半段", "C1": "C1 · 以后看"}
     parts = []
@@ -201,12 +254,13 @@ def main():
                 f'<a class="idx-card" href="{slug}.html"><h2>'
                 f'<span class="lv lv-{lvl}">{lvl}</span>{esc(title)}</h2>'
                 + (f"<p>{esc(desc)}</p>" if desc else "") + "</a>")
-    idx_body = ("<p class=\"meta\">整理自 Alice 的 Medium 刊物 "
+    idx_body = ('<p class="meta">整理自 Alice 的 Medium 刊物 '
                 '<a href="https://alicelearngerman.medium.com/" target="_blank" rel="noopener">'
                 "alicelearngerman.medium.com</a>（原站 alicelearngerman.com 已下线）。"
-                "讲解为原创重写，仅引用短例句；每篇附原文链接。</p>\n" + "\n".join(parts))
-    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(
-        page("Alice Learn German 学习笔记", idx_body, back="../"))
+                "每篇照录原文，逐句附中文译注（⚠ 标出原文错误）和中文要点，页首附原文链接。"
+                f"{COPYRIGHT}。</p>\n" + "\n".join(parts))
+    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
+        f.write(page("Alice Learn German 学习笔记", idx_body, back="../"))
     print("index built:", len(files), "pages")
 
 
