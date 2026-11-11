@@ -179,7 +179,7 @@ var store=loadStore();saveStore();
 var dataCache={};   // srcId -> array
 var selSources=(store.sel&&store.sel.length?store.sel:['nicos_a1']).filter(function(id){return SOURCES.some(function(s){return s.id===id;});});
 if(!selSources.length)selSources=['nicos_a1'];
-var queue=[],qIdx=0,sessStats={due:0,fresh:0,forgot:0},undoStack=[];
+var queue=[],qIdx=0,sessStats={due:0,fresh:0,forgot:0,done:0,rev:0,nw:0},undoStack=[];
 
 /* 词条合并后，把被删词条的进度并到保留的词条上（保留进度更靠前的那份） */
 function migrate(s){
@@ -194,6 +194,10 @@ function migrate(s){
 function loadStore(){
   try{var s=JSON.parse(localStorage.getItem(LSKEY)||'{}');}catch(e){s={};}
   s.words=s.words||{};
+  // 修复旧版导入可能写进的坏记录（box 不是 0-7 整数会导致 next=NaN→null，永远到期）
+  Object.keys(s.words).forEach(function(k){var w=s.words[k];
+    if(!w||typeof w.box!=='number'||!(w.box>=0&&w.box<=MASTER_BOX&&w.box%1===0)){delete s.words[k];return;}
+    if(typeof w.next!=='number'||!isFinite(w.next))w.next=0;});
   migrate(s);
   s.newPerDay=s.newPerDay||20;
   s.newDate=s.newDate||'';s.newCount=s.newCount||0;s.order=s.order||'mix';
@@ -215,7 +219,7 @@ function loadSource(id){
     var sc=document.createElement('script');
     sc.src=src.file;
     sc.onload=function(){try{var d=window[src.v];if(!d)throw new Error('no data');dataCache[id]=d;res(d);}catch(e){rej(e);}};
-    sc.onerror=rej;
+    sc.onerror=function(){rej(new Error('加载失败 '+src.file.split('?')[0]));};
     document.head.appendChild(sc);
   });
 }
@@ -231,8 +235,15 @@ SOURCES.forEach(function(s){
 srcList.addEventListener('change',function(){
   selSources=Array.prototype.map.call(srcList.querySelectorAll('input:checked'),function(i){return i.value;});
   store.sel=selSources;saveStore();
-  refreshStats();
+  refreshStats();preloadStats();
 });
+function preloadStats(){
+  Promise.all(selSources.map(function(id){return loadSource(id).catch(function(){});})).then(function(){
+    refreshStats();
+    // 词表加载后用真实条数更新“N 词”
+    srcList.querySelectorAll('.srcitem').forEach(function(l){var id=l.querySelector('input').value,c=l.querySelector('.cnt');if(dataCache[id]&&c)c.textContent=dataCache[id].length+' 词';});
+  });
+}
 document.getElementById('newPerDay').value=String(store.newPerDay);
 document.getElementById('newPerDay').addEventListener('change',function(){
   store.newPerDay=parseInt(this.value,10);saveStore();
@@ -240,13 +251,21 @@ document.getElementById('newPerDay').addEventListener('change',function(){
 document.getElementById('order').value=store.order;
 document.getElementById('order').addEventListener('change',function(){store.order=this.value;saveStore();});
 
+/* 当前词表里的 key 集合（词库加载后才有）；统计只算集合里的，孤立 key（已删词条）不计入 */
+var keySets={};
+function keySet(id){
+  if(!keySets[id]&&dataCache[id]){var m={};dataCache[id].forEach(function(w){m[key(id,w.k||w.de)]=1;});keySets[id]=m;}
+  return keySets[id]||null;
+}
 function refreshStats(){
   var now=Date.now(),due=0,learn=0,done=0,total=0;
   selSources.forEach(function(id){
     var src=SOURCES.filter(function(s){return s.id===id;})[0];
-    total+=src.count;
+    var ks=keySet(id);
+    total+=dataCache[id]?dataCache[id].length:src.count;
     Object.keys(store.words).forEach(function(k){
       if(k.indexOf(id+'|')!==0)return;
+      if(ks&&!ks[k])return;
       var st=store.words[k];
       if(st.box>=MASTER_BOX)done++;
       else learn++;
@@ -273,8 +292,8 @@ function startSession(){
     selSources.forEach(function(id,si){
       dataCache[id].forEach(function(w){
         var k=key(id,w.k||w.de),st=store.words[k];
-        if(!st)fresh.push({src:id,w:w,k:k});
-        else if(st.next<=now)due.push({src:id,w:w,k:k,st:st});
+        if(!st)fresh.push({src:id,w:w,k:k,isNew:true});
+        else if(st.next<=now)due.push({src:id,w:w,k:k,st:st,isNew:false});
       });
     });
     var allowed=Math.max(0,store.newPerDay-store.newCount);
@@ -290,7 +309,7 @@ function startSession(){
       alert('🎉 太棒了！所选范围内今日没有到期的单词。');
       return;
     }
-    qIdx=0;sessStats={due:due.length,fresh:Math.min(allowed,fresh.length),forgot:0,done:0};undoStack=[];
+    qIdx=0;sessStats={due:due.length,fresh:Math.min(allowed,fresh.length),forgot:0,done:0,rev:0,nw:0};undoStack=[];
     showView('vStudy');
     renderCard();
   }).catch(function(e){
@@ -354,7 +373,7 @@ if('speechSynthesis' in window){speechSynthesis.getVoices();}
 window.grade=function(g){
   var now=Date.now(),k=cur.k;
   var prev=store.words[k]?{box:store.words[k].box,next:store.words[k].next}:null;
-  undoStack.push({qIdx:qIdx,k:k,prev:prev,newCount:store.newCount,done:sessStats.done,forgot:sessStats.forgot});
+  undoStack.push({qIdx:qIdx,k:k,prev:prev,newCount:store.newCount,done:sessStats.done,forgot:sessStats.forgot,rev:sessStats.rev,nw:sessStats.nw});
   var st=store.words[k]||{box:0,next:0};
   var isNew=!store.words[k];
   if(g===0){st.box=0;st.next=now+10*60*1000;sessStats.forgot++;}
@@ -363,6 +382,7 @@ window.grade=function(g){
   store.words[k]=st;
   if(isNew){store.newCount++;}
   sessStats.done++;
+  if(cur.isNew)sessStats.nw++;else sessStats.rev++;
   saveStore();
   qIdx++;
   updateUndoBtn();
@@ -374,7 +394,7 @@ window.undoGrade=function(){
   if(!u)return;
   if(u.prev)store.words[u.k]=u.prev; else delete store.words[u.k];
   store.newCount=u.newCount;
-  sessStats.done=u.done;sessStats.forgot=u.forgot;
+  sessStats.done=u.done;sessStats.forgot=u.forgot;sessStats.rev=u.rev||0;sessStats.nw=u.nw||0;
   saveStore();
   qIdx=u.qIdx;
   showView('vStudy');
@@ -393,15 +413,18 @@ function finishSession(quit){
   document.getElementById('doneSub').textContent=quit?'进度已保存，下次继续。':'今日任务完成，记得明天回来复习！';
   var now=Date.now(),dueTomorrow=0;
   Object.keys(store.words).forEach(function(k){
+    var id=k.slice(0,k.indexOf('|'));
+    if(selSources.indexOf(id)<0)return;
+    var ks=keySet(id);if(ks&&!ks[k])return;
     var st=store.words[k];
     if(st.next>now&&st.next<=now+24*3600*1000)dueTomorrow++;
   });
   document.getElementById('doneStats').innerHTML=
     '<div class="kv"><span>本轮完成</span><b>'+s.done+' 个</b></div>'+
-    '<div class="kv"><span>其中复习</span><b>'+Math.min(s.done,s.due)+' 个</b></div>'+
-    '<div class="kv"><span>其中新学</span><b>'+Math.max(0,s.done-Math.min(s.done,s.due))+' 个</b></div>'+
+    '<div class="kv"><span>其中复习</span><b>'+(s.rev||0)+' 个</b></div>'+
+    '<div class="kv"><span>其中新学</span><b>'+(s.nw||0)+' 个</b></div>'+
     '<div class="kv"><span>没记住</span><b style="color:var(--red)">'+s.forgot+' 个</b></div>'+
-    '<div class="kv"><span>未来24小时到期</span><b>'+dueTomorrow+' 个</b></div>';
+    '<div class="kv"><span>所选范围未来24小时到期</span><b>'+dueTomorrow+' 个</b></div>';
   showView('vDone');
 }
 
@@ -414,7 +437,7 @@ var thm=localStorage.getItem('delernen-theme')||'auto';apply(thm);
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(thm==='auto')apply('auto');});
 window.toggleTheme=function(){thm=thm==='auto'?'light':thm==='light'?'dark':'auto';localStorage.setItem('delernen-theme',thm);apply(thm);};
 
-refreshStats();
+refreshStats();preloadStats();
 window.startSession=startSession;
 window.showSetup=showSetup;
 function ioMsg(t,ok){var el=document.getElementById('ioMsg');el.style.display='block';el.style.color=ok?'var(--green)':'var(--red)';el.textContent=t;}
@@ -439,9 +462,10 @@ document.getElementById('impFile').addEventListener('change',function(){
     var added=0,updated=0,kept=0;
     Object.keys(inc).forEach(function(k){
       var a=store.words[k],b=inc[k];
-      if(!b||typeof b.box!=='number')return;
-      if(!a){store.words[k]={box:b.box,next:b.next||0};added++;}
-      else if(b.box>a.box||(b.box===a.box&&(b.next||0)>a.next)){store.words[k]={box:b.box,next:b.next||0};updated++;}
+      if(!b||typeof b.box!=='number'||!(b.box>=0&&b.box<=MASTER_BOX&&b.box%1===0))return;
+      var nx=+b.next;if(!isFinite(nx)||nx<0)nx=0;
+      if(!a){store.words[k]={box:b.box,next:nx};added++;}
+      else if(b.box>a.box||(b.box===a.box&&nx>a.next)){store.words[k]={box:b.box,next:nx};updated++;}
       else kept++;
     });
     var s2=data.store;
