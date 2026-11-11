@@ -71,7 +71,7 @@
    ],
    [
     "Sie fährt nach Berlin.",
-    "她开车去柏林。"
+    "她（乘车）去柏林。"
    ]
   ]
  },
@@ -131,7 +131,7 @@
   "id": "pronomen",
   "title": "人称代词",
   "titleDe": "Personalpronomen",
-  "explain": "德语人称代词有三格变化：一格作主语，四格作直接宾语，三格作间接宾语。er/sie/es 的三格是 ihm/ihr/ihm，别和英语搞混。\n\n🇬🇧 英语对照：英语 I/me、he/him、they/them 只有两格（主格/宾格），德语多一个三格。英语 give him 的 him，在德语里是四格 ihn 还是三格 ihm，要看动词支配（helfen 支配三格：Ich helfe ihm）。",
+  "explain": "德语人称代词有四个格（二格 meiner/deiner… 现代很少用），这里先学最常用的三个：一格作主语，四格作直接宾语，三格作间接宾语。er/sie/es 的三格是 ihm/ihr/ihm，别和英语搞混。\n\n🇬🇧 英语对照：英语 I/me、he/him、they/them 只有两格（主格/宾格），德语多一个三格。英语 give him 的 him，在德语里是四格 ihn 还是三格 ihm，要看动词支配（helfen 支配三格：Ich helfe ihm）。",
   "table": [
    [
     "人称",
@@ -309,6 +309,16 @@
     "类型",
     "结构",
     "例子"
+   ],
+   [
+    "是非疑问句",
+    "动词 + 主语 …？",
+    "Kommst du mit?"
+   ],
+   [
+    "特殊疑问句",
+    "疑问词 + 动词 + 主语 …？",
+    "Wo wohnst du?"
    ]
   ],
   "examples": [
@@ -475,7 +485,7 @@
   "id": "praep_temporal",
   "title": "时间介词",
   "titleDe": "Temporale Präpositionen",
-  "explain": "说时间用 um/am/im：几点钟用 um，星期和日期用 am，月份季节年份用 im。vor/nach/ab 后面跟三格。\n\n🇬🇧 英语对照：英语 at 8 / on Monday / in May，德语 um 8 / am Montag / im Mai，一一对应，很好记。",
+  "explain": "说时间用 um/am/im：几点钟用 um，星期和日期用 am，月份和季节用 im；年份要么不加介词（2026 ziehe ich um），要么说 im Jahr 2026（不能说 im 2026 / in 2026）。vor/nach/ab 后面跟三格。\n\n🇬🇧 英语对照：英语 at 8 / on Monday / in May，德语 um 8 / am Montag / im Mai，一一对应，很好记。",
   "table": [
    [
     "介词",
@@ -494,8 +504,8 @@
    ],
    [
     "im",
-    "月·季·年",
-    "im Mai"
+    "月·季（年份不加介词或 im Jahr …）",
+    "im Mai / im Jahr 2026"
    ],
    [
     "vor +三格",
@@ -557,7 +567,7 @@
    ],
    [
     "Sie ist nach Berlin gefahren.",
-    "她开车去了柏林。"
+    "她（乘车）去了柏林。"
    ],
    [
     "Wir haben einen Film gesehen.",
@@ -1129,7 +1139,7 @@
   "id": "adj_deklination",
   "title": "形容词词尾",
   "titleDe": "Adjektivdeklination",
-  "explain": "形容词在名词前作定语要加词尾，规律就一条：der-词后面一律 -e（复数 -en），其他情况看表。先背 der-词和 ein-词两列。\n\n🇬🇧 英语对照：英语形容词永远不变（a good man / the good men），德语要变，这是英语母语者最不习惯、德语学习者必须死磕的一块。",
+  "explain": "形容词在名词前作定语要加词尾，der-词（der/die/das、dieser…）后面的规律：单数一格（三性都是）和阴性、中性四格加 -e，其余（阳性四格、所有二格和三格、复数）一律 -en；ein-词后和无冠词的情况看表。先背 der-词和 ein-词两列。\n\n🇬🇧 英语对照：英语形容词永远不变（a good man / the good men），德语要变，这是英语母语者最不习惯、德语学习者必须死磕的一块。",
   "table": [
    [
     "",
@@ -1256,7 +1266,7 @@
   "id": "n_deklination",
   "title": "N-词尾变化",
   "titleDe": "N-Deklination",
-  "explain": "一小批阳性名词（多指人/动物），单数二三四格都要加 -n/-en：der Student→den Studenten，der Herr→den Herrn（只加 -n）。背单词时这类名词最好连着属格一起背。\n\n🇬🇧 英语对照：英语完全没有这个概念！英语名词单复数同形（student/students 只看复数）。德语部分阳性名词单数二三四格要加 -n。",
+  "explain": "一小批阳性名词（多指人/动物），单数二三四格都要加 -n/-en：der Student→den Studenten，der Herr→den Herrn（只加 -n）。背单词时这类名词最好连着属格一起背。\n\n🇬🇧 英语对照：英语完全没有这个概念！英语名词只有单复数变化（student/students），没有格的变化。德语部分阳性名词单数二三四格要加 -n。",
   "table": [
    [
     "一格",

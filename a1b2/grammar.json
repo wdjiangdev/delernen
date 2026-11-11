@@ -417,7 +417,7 @@
     {
      "word": "damit",
      "zh": "以便",
-     "ex": "Ich lerne viel, damit ich bestehe.（我努力学习，以便通过。）"
+     "ex": "Ich spreche langsam, damit du mich verstehst.（我说慢点，好让你听懂。主语不同用 damit）"
     },
     {
      "word": "bevor",
@@ -977,7 +977,7 @@
     {
      "word": "被动态",
      "zh": "werden + 分词",
-     "ex": "Es wird gemacht.（这事被做了。）"
+     "ex": "Es wird gemacht.（这事正在被做／会被做。）"
     },
     {
      "word": "作定语",
@@ -1003,12 +1003,12 @@
     {
      "word": "被动态",
      "zh": "wird + 分词",
-     "ex": "Es wird gemacht.（被做。）"
+     "ex": "Es wird gemacht.（正在被做。）"
     },
     {
      "word": "第二虚拟式",
      "zh": "würde + 不定式",
-     "ex": "Ich würde kommen.（我本来会来。）"
+     "ex": "Ich würde kommen.（我会来——如果……的话。）"
     }
    ],
    "level": "B1",

@@ -14,7 +14,7 @@ GRAMMAR_POINTS = [
      ('Ich mache meine Hausaufgaben.', '我在做作业。'),
      ('Du sprichst gut Deutsch.', '你德语说得很好。'),
      ('Er sieht einen Film.', '他在看电影。'),
-     ('Sie fährt nach Berlin.', '她开车去柏林。'),
+     ('Sie fährt nach Berlin.', '她（乘车）去柏林。'),
  ]},
 {'level': 'A1', 'id': 'artikel', 'title': '冠词：der / die / das', 'titleDe': 'Artikel',
  'explain': '德语名词有三种性：阳性 der、阴性 die、中性 das。复数统一用 die。性没有绝对规则，要和单词一起背。',
@@ -51,7 +51,9 @@ GRAMMAR_POINTS = [
  ]},
 {'level': 'A1', 'id': 'fragen', 'title': '疑问句', 'titleDe': 'Fragen',
  'explain': '是非疑问句动词放句首；特殊疑问句疑问词放句首、动词第二位。',
- 'table': [['类型', '结构', '例子']],
+ 'table': [['类型', '结构', '例子'],
+           ['是非疑问句', '动词 + 主语 …？', 'Kommst du mit?'],
+           ['特殊疑问句', '疑问词 + 动词 + 主语 …？', 'Wo wohnst du?']],
  'examples': [
      ('Kommst du mit?', '你一起来吗？'),
      ('Wo wohnst du?', '你住在哪？'),
@@ -86,7 +88,7 @@ GRAMMAR_POINTS = [
            ['结构', 'ich habe gemacht', 'ich bin gegangen']],
  'examples': [
      ('Ich habe gestern viel gearbeitet.', '我昨天工作了很多。'),
-     ('Sie ist nach Berlin gefahren.', '她开车去了柏林。'),
+     ('Sie ist nach Berlin gefahren.', '她（乘车）去了柏林。'),
      ('Wir haben einen Film gesehen.', '我们看了一部电影。'),
      ('Bist du schon aufgestanden?', '你起床了吗？'),
  ]},
