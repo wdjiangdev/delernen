@@ -5,71 +5,271 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：dürfen · alicelearngerman.medium.com ｜ 难度：A2 ｜ 导读：dürfen = \"可以、被允许\"，先拿下现在时变位，再记过去式。"
+    "text": "来源：dürfen — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-06-17。原文照录，\"中：\"为学习层译注；原文只列到 ihr，未列 sie/Sie。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区：变位表"
+    "text": "dürfen"
    },
    {
     "type": "p",
-    "text": " | Präsens 现在时 | Präteritum 过去时 | Konjunktiv II 第二虚拟现在时"
-   },
-   {
-    "type": "p",
-    "text": "ich | darf | durfte | dürfte"
-   },
-   {
-    "type": "p",
-    "text": "du | darfst | durftest | dürftest"
-   },
-   {
-    "type": "p",
-    "text": "er/sie/es | darf | durfte | dürfte"
-   },
-   {
-    "type": "p",
-    "text": "wir | dürfen | durften | dürften"
-   },
-   {
-    "type": "p",
-    "text": "ihr | dürft | durftet | dürftet"
-   },
-   {
-    "type": "p",
-    "text": "sie/Sie | dürfen | durften | dürften"
-   },
-   {
-    "type": "p",
-    "text": "完成时公式：Perfekt = haben + gedurft；Plusquamperfekt = hatte… + gedurft；Futur I = werden + dürfen"
+    "text": "中：本篇是情态动词 dürfen（可以、被允许；≈ may / be allowed to）的全时态变位表。注意：sie/Sie 形式与 wir 相同（dürfen / durften / dürften …），原文未列。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "Präsens"
    },
    {
     "type": "p",
-    "text": "dürfen 对应英语 may / be allowed to，表示\"被允许、可以\"，和表示能力的 können（can）是两回事：小孩问\"能不能吃糖\"用的是 dürfen（May I…?），不是 können。"
+    "text": "ich darf, du darfst, er/sie/es darf, wir dürfen, ihr dürft."
    },
    {
     "type": "p",
-    "text": "句式和英语情态动词一样：dürfen + 动词原形放句尾，如 \"Du darfst hier parken.\" = You may park here."
+    "text": "中：现在时。我可以、你可以、他/她/它可以、我们可以、你们可以。（sie/Sie dürfen）"
    },
    {
     "type": "p",
-    "text": "过去的事情用 Präteritum：durfte-（如 \"Früher durfte man hier rauchen.\"）；委婉请求用 Konjunktiv II：dürfte-，相当于英语的 \"Could I…?\"。"
+    "text": "EN: present tense — I may, you may, he/she/it may, we may, you (pl.) may."
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "Präteritum"
    },
    {
     "type": "p",
-    "text": "1. 情态动词永远带一个原形动词放句尾；2. 完成时第二分词是 gedurft；3. 别和 können（能力）搞混。"
+    "text": "ich durfte, du durftest, er/sie/es durfte, wir durften, ihr durftet."
+   },
+   {
+    "type": "p",
+    "text": "中：过去时（书面叙述常用，口语也常用）：我（当时）被允许……。例：Früher durfte man hier rauchen. 以前这里允许吸烟。"
+   },
+   {
+    "type": "p",
+    "text": "EN: simple past — I was allowed to …"
+   },
+   {
+    "type": "h",
+    "text": "Perfekt"
+   },
+   {
+    "type": "p",
+    "text": "ich habe gedurft, du hast gedurft, er/sie/es hat gedurft, wir haben gedurft, ihr habt gedurft."
+   },
+   {
+    "type": "p",
+    "text": "中：现在完成时：haben + gedurft。注意：只有 dürfen 单独作谓语时才用 gedurft（Das hat er nicht gedurft. 他没被允许那样做）；带另一个动词时用\"双不定式\"：Ich habe nicht kommen dürfen.（我没被允许来。）——原文未提这一点。"
+   },
+   {
+    "type": "p",
+    "text": "EN: present perfect; with another infinitive use the double infinitive (habe … kommen dürfen)."
+   },
+   {
+    "type": "h",
+    "text": "Plusquamperfekt"
+   },
+   {
+    "type": "p",
+    "text": "ich hatte gedurft, du hattest gedurft, er/sie/es hatte gedurft, wir hatten gedurft, ihr hattet gedurft."
+   },
+   {
+    "type": "p",
+    "text": "中：过去完成时：hatte + gedurft（\"过去的过去\"被允许）。"
+   },
+   {
+    "type": "p",
+    "text": "EN: past perfect — I had been allowed to."
+   },
+   {
+    "type": "h",
+    "text": "Future I"
+   },
+   {
+    "type": "p",
+    "text": "ich werde dürfen, du wirst dürfen, er/sie/es wird dürfen, wir werden dürfen, ihr werdet dürfen."
+   },
+   {
+    "type": "p",
+    "text": "中：将来时：werden + dürfen（我将被允许……）。例：Nächstes Jahr wirst du allein reisen dürfen. 明年你就可以一个人旅行了。"
+   },
+   {
+    "type": "p",
+    "text": "EN: future I — I will be allowed to."
+   },
+   {
+    "type": "h",
+    "text": "Future II"
+   },
+   {
+    "type": "p",
+    "text": "ich werde gedurft haben, du wirst gedurft haben, er/sie/es wird gedurft haben, wir werden gedurft haben, ihr werdet gedurft haben."
+   },
+   {
+    "type": "p",
+    "text": "中：将来完成时（极少用）：werde + gedurft haben（到那时将已被允许过）。"
+   },
+   {
+    "type": "p",
+    "text": "EN: future II — I will have been allowed to (rare)."
+   },
+   {
+    "type": "h",
+    "text": "Konjunktiv II"
+   },
+   {
+    "type": "h",
+    "text": "Präsens"
+   },
+   {
+    "type": "p",
+    "text": "ich dürfte, du dürftest, er/sie/es dürfte, wir dürften, ihr dürftet."
+   },
+   {
+    "type": "p",
+    "text": "中：第二虚拟式现在时。两大用法：① 委婉请求：Dürfte ich kurz stören? 我可以打扰一下吗？② 推测（\"大概、应该\"）：Das dürfte stimmen. 这大概没错。"
+   },
+   {
+    "type": "p",
+    "text": "EN: Konjunktiv II present — polite requests (\"Might I …?\") and probability (\"that should be right\")."
+   },
+   {
+    "type": "h",
+    "text": "Plusquamperfekt"
+   },
+   {
+    "type": "p",
+    "text": "ich hätte gedurft, du hättest gedurft, er/sie/es hätte gedurft, wir hätten gedurft, ihr hättet gedurft."
+   },
+   {
+    "type": "p",
+    "text": "中：第二虚拟式过去时：hätte + gedurft（本来是可以/被允许的，但事实并非如此）。带另一动词时：Ich hätte kommen dürfen. 我本来可以来的。"
+   },
+   {
+    "type": "p",
+    "text": "EN: Konjunktiv II past — I would have been allowed to."
+   },
+   {
+    "type": "h",
+    "text": "Future I"
+   },
+   {
+    "type": "p",
+    "text": "ich würde dürfen, du würdest dürfen, er/sie/es würde dürfen, wir würden dürfen, ihr würdet dürfen."
+   },
+   {
+    "type": "p",
+    "text": "中：würde + dürfen 形式（实际很少用，一般直接用 dürfte）。"
+   },
+   {
+    "type": "p",
+    "text": "EN: würde-form, rarely used; prefer dürfte."
+   },
+   {
+    "type": "h",
+    "text": "Future II"
+   },
+   {
+    "type": "p",
+    "text": "ich würde gedurft haben, du würdest gedurft haben, er/sie/es würde gedurft haben, wir würden gedurft haben, ihr würdet gedurft haben."
+   },
+   {
+    "type": "p",
+    "text": "中：极罕见的形式，了解即可。"
+   },
+   {
+    "type": "p",
+    "text": "EN: extremely rare."
+   },
+   {
+    "type": "h",
+    "text": "Konjunktiv I"
+   },
+   {
+    "type": "h",
+    "text": "Präsens"
+   },
+   {
+    "type": "p",
+    "text": "ich dürfe, du dürfest, er/sie/es dürfe, wir dürfen, ihr dürfet."
+   },
+   {
+    "type": "p",
+    "text": "中：第一虚拟式（用于间接引语）：Er sagt, er dürfe heute früher gehen. 他说他今天可以早点走。"
+   },
+   {
+    "type": "p",
+    "text": "EN: Konjunktiv I — reported speech (\"he says he may leave earlier\")."
+   },
+   {
+    "type": "h",
+    "text": "Plusquamperfekt"
+   },
+   {
+    "type": "p",
+    "text": "ich habe gedurft, du habest gedurft, er/sie/es habe gedurft, wir haben gedurft, ihr habet gedurft."
+   },
+   {
+    "type": "p",
+    "text": "中：⚠ 原文标题写作 Plusquamperfekt，但这组形式其实是第一虚拟式的过去时（Perfekt）：habe + gedurft。间接引语：Sie sagt, sie habe das nicht gedurft. 她说她当时不被允许那样做。"
+   },
+   {
+    "type": "p",
+    "text": "EN: (labelled \"Plusquamperfekt\" in the original, actually Konjunktiv I past/perfect.)"
+   },
+   {
+    "type": "h",
+    "text": "Future I"
+   },
+   {
+    "type": "p",
+    "text": "ich werde dürfen, du werdest dürfen, er/sie/es werde dürfen, wir werden dürfen, ihr werdet dürfen."
+   },
+   {
+    "type": "p",
+    "text": "中：第一虚拟式将来时：Er sagt, er werde bald reisen dürfen. 他说他很快就能去旅行了。"
+   },
+   {
+    "type": "h",
+    "text": "Future II"
+   },
+   {
+    "type": "p",
+    "text": "ich werde gedurft haben, du werdest gedurft haben, er/sie/es werde gedurft haben, wir werden gedurft haben, ihr werdet gedurft haben."
+   },
+   {
+    "type": "p",
+    "text": "中：极罕见，了解即可。"
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
+   },
+   {
+    "type": "li",
+    "text": "dürfen = 被允许、可以（may / be allowed to）；表\"能力\"用 können，别混：小孩问能不能吃糖说 Darf ich …?"
+   },
+   {
+    "type": "li",
+    "text": "句式同其他情态动词：dürfen 变位放第二位，原形动词放句尾：Du darfst hier parken."
+   },
+   {
+    "type": "li",
+    "text": "过去时 durfte（Früher durfte man hier rauchen.）；完成时单用是 hat gedurft，带另一个动词时用双不定式：Ich habe nicht kommen dürfen."
+   },
+   {
+    "type": "li",
+    "text": "第二虚拟式 dürfte 两大用法：委婉请求（Dürfte ich kurz stören?）和推测（Das dürfte stimmen. 这大概没错）；过去式 hätte … dürfen（Ich hätte kommen dürfen.）。"
+   },
+   {
+    "type": "li",
+    "text": "第一虚拟式 dürfe 用于间接引语：Er sagt, er dürfe früher gehen."
    }
   ]
  },
@@ -79,156 +279,315 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：Trennbare und Untrennbare Verben · alicelearngerman.medium.com ｜ 难度：A2 ｜ 导读：可分动词拆开用、不可分永远连写，重音位置是判断钥匙。"
+    "text": "来源：Trennbare und Untrennbare Verben in Deutsch — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-06-06。原文照录，\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区"
+    "text": "Trennbare und Untrennbare Verben in Deutsch"
    },
    {
     "type": "p",
-    "text": "可分前缀（主句中前缀拆到句尾）："
-   },
-   {
-    "type": "li",
-    "text": "ab-：abschreiben, abheben"
-   },
-   {
-    "type": "li",
-    "text": "an-：annehmen"
-   },
-   {
-    "type": "li",
-    "text": "auf-：aufstehen, aufmachen"
-   },
-   {
-    "type": "li",
-    "text": "aus-：ausschalten"
-   },
-   {
-    "type": "li",
-    "text": "bei-：beitragen"
-   },
-   {
-    "type": "li",
-    "text": "ein-：einfallen, einkaufen"
-   },
-   {
-    "type": "li",
-    "text": "mit-：mitarbeiten, mitmachen"
-   },
-   {
-    "type": "li",
-    "text": "nach-：nachschauen, nachdenken"
-   },
-   {
-    "type": "li",
-    "text": "vor-：vorbereiten"
-   },
-   {
-    "type": "li",
-    "text": "weg-：wegwerfen"
-   },
-   {
-    "type": "li",
-    "text": "zu-：zuschauen, zunehmen"
+    "text": "alle Trennbare und Untrennbare Verben sind da."
    },
    {
     "type": "p",
-    "text": "不可分前缀（永远连写）："
-   },
-   {
-    "type": "li",
-    "text": "be-：bezahlen, beenden"
-   },
-   {
-    "type": "li",
-    "text": "emp-：empfehlen"
-   },
-   {
-    "type": "li",
-    "text": "ent-：entdecken, entfernen"
-   },
-   {
-    "type": "li",
-    "text": "er-：erzählen, erstellen"
-   },
-   {
-    "type": "li",
-    "text": "ge-：gehören"
-   },
-   {
-    "type": "li",
-    "text": "ver-：vergessen, verändern"
-   },
-   {
-    "type": "li",
-    "text": "zer-：zerstören, zerlegen"
-   },
-   {
-    "type": "li",
-    "text": "miss-：missfallen"
-   },
-   {
-    "type": "li",
-    "text": "hinter-：hinterlassen"
+    "text": "中：所有可分动词和不可分动词都在这里了。"
    },
    {
     "type": "p",
-    "text": "两可前缀（重音决定分合）"
-   },
-   {
-    "type": "vocab",
-    "text": "durch-",
-    "zh": "durchgehen, durchschauen"
-   },
-   {
-    "type": "vocab",
-    "text": "über-",
-    "zh": "übersetzen, überreden, überkochen, überfahren"
-   },
-   {
-    "type": "vocab",
-    "text": "wieder-",
-    "zh": "wiederholen, widerspiegeln, widerstehen"
-   },
-   {
-    "type": "vocab",
-    "text": "unter-",
-    "zh": "untergehen, unterstützen"
-   },
-   {
-    "type": "vocab",
-    "text": "um-",
-    "zh": "umarmen, umziehen"
+    "text": "EN: All separable and inseparable verbs are here."
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "Trennbare Verben Liste"
    },
    {
     "type": "p",
-    "text": "判断口诀：重音在前缀上就可分（*auf*stehen），重音在词干上就不可分（ent*de*cken）。"
+    "text": "Eine trennbare Verben Liste mit typischen Präfixen:"
    },
    {
     "type": "p",
-    "text": "可分动词很像英语的短语动词（phrasal verbs，如 stand *up*）：主句中前缀被\"踢\"到句尾，如 \"Ich stehe früh auf.\" = I get up early."
+    "text": "中：可分动词表（按典型前缀）。可分动词在主句中前缀拆到句尾：Ich stehe früh auf.（我起得早。）完成时 ge- 插在中间：aufgestanden。"
    },
    {
-    "type": "p",
-    "text": "两可前缀看重音：重音在前就拆开（如 *um*ziehen 搬家），重音在后就连写（如 um*ar*men 拥抱）——意思也跟着变。"
+    "type": "li",
+    "text": "ab — abschreiben, abheben"
+   },
+   {
+    "type": "li",
+    "text": "中：ab-：abschreiben 抄写；abheben 取（钱）、拿起"
+   },
+   {
+    "type": "li",
+    "text": "an — annehmen"
+   },
+   {
+    "type": "li",
+    "text": "中：an-：annehmen 接受；假定"
+   },
+   {
+    "type": "li",
+    "text": "auf — aufstehen, aufmachen"
+   },
+   {
+    "type": "li",
+    "text": "中：auf-：aufstehen 起床；aufmachen 打开"
+   },
+   {
+    "type": "li",
+    "text": "aus — ausschalten"
+   },
+   {
+    "type": "li",
+    "text": "中：aus-：ausschalten 关掉（电器）"
+   },
+   {
+    "type": "li",
+    "text": "bei — beitragen"
+   },
+   {
+    "type": "li",
+    "text": "中：bei-：beitragen 贡献、促成"
+   },
+   {
+    "type": "li",
+    "text": "ein — einfallen, einkaufen"
+   },
+   {
+    "type": "li",
+    "text": "中：ein-：einfallen 想起、突然想到（Mir fällt etwas ein. 我想到个主意）；einkaufen 购物"
+   },
+   {
+    "type": "li",
+    "text": "hin — hinschauen"
+   },
+   {
+    "type": "li",
+    "text": "中：hin-：hinschauen 朝那边看、留意看"
+   },
+   {
+    "type": "li",
+    "text": "mit — mitarbeiten, mitmachen"
+   },
+   {
+    "type": "li",
+    "text": "中：mit-：mitarbeiten 合作、参与工作；mitmachen 参加、一起做"
+   },
+   {
+    "type": "li",
+    "text": "nach — nachschauen, nachdenken"
+   },
+   {
+    "type": "li",
+    "text": "中：nach-：nachschauen 查看；nachdenken 思考"
+   },
+   {
+    "type": "li",
+    "text": "vor — vorbereiten"
+   },
+   {
+    "type": "li",
+    "text": "中：vor-：vorbereiten 准备（注意：vor 可分 + be 不可分，完成时 vorbereitet，无 ge-）"
+   },
+   {
+    "type": "li",
+    "text": "weg — wegwerfen"
+   },
+   {
+    "type": "li",
+    "text": "中：weg-：wegwerfen 扔掉"
+   },
+   {
+    "type": "li",
+    "text": "zu — zuschauen, zunehmen"
+   },
+   {
+    "type": "li",
+    "text": "中：zu-：zuschauen 观看；zunehmen 增加、长胖"
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "Untrennbare Verben Liste"
    },
    {
     "type": "p",
-    "text": "1. 完成时：可分动词的 ge- 插在中间（aufgestanden），不可分动词没有 ge-（entdeckt）；2. 从句中可分动词合体放句尾。"
+    "text": "中：不可分动词表。前缀永远不拆，完成时不加 ge-：bezahlen → bezahlt。"
+   },
+   {
+    "type": "li",
+    "text": "be — bezahlen, beenden"
+   },
+   {
+    "type": "li",
+    "text": "中：be-：bezahlen 付款；beenden 结束"
+   },
+   {
+    "type": "li",
+    "text": "emp — empfehlen"
+   },
+   {
+    "type": "li",
+    "text": "中：emp-：empfehlen 推荐"
+   },
+   {
+    "type": "li",
+    "text": "ent — entdecken, entfernen"
+   },
+   {
+    "type": "li",
+    "text": "中：ent-：entdecken 发现；entfernen 移除"
+   },
+   {
+    "type": "li",
+    "text": "er — erzählen, erstellen"
+   },
+   {
+    "type": "li",
+    "text": "中：er-：erzählen 讲述；erstellen 制作、创建"
+   },
+   {
+    "type": "li",
+    "text": "ge — gehören"
+   },
+   {
+    "type": "li",
+    "text": "中：ge-：gehören 属于"
+   },
+   {
+    "type": "li",
+    "text": "ver — vergessen, verändern"
+   },
+   {
+    "type": "li",
+    "text": "中：ver-：vergessen 忘记；verändern 改变"
+   },
+   {
+    "type": "li",
+    "text": "zer — zerstören, zerlegen"
+   },
+   {
+    "type": "li",
+    "text": "中：zer-：zerstören 摧毁；zerlegen 拆解"
+   },
+   {
+    "type": "li",
+    "text": "miss — missfallen"
+   },
+   {
+    "type": "li",
+    "text": "中：miss-：missfallen 使不满意（Das missfällt mir. 我不喜欢这个）"
+   },
+   {
+    "type": "li",
+    "text": "hinter — hinterlassen"
+   },
+   {
+    "type": "li",
+    "text": "中：hinter-：hinterlassen 留下（遗产、消息）"
+   },
+   {
+    "type": "h",
+    "text": "Trennbare und untrennbare Verben Liste"
+   },
+   {
+    "type": "p",
+    "text": "Nicht jedes Verb kann sich bei der Satzbildung aufteilen. Sie nennst du dann untrennbare Verben. Auch untrennbare Verben bildest du mit einem Präfix und einem Grundverb."
+   },
+   {
+    "type": "p",
+    "text": "中：并不是每个动词在造句时都能拆开，不能拆的就叫不可分动词。不可分动词同样由\"前缀 + 基础动词\"构成。"
+   },
+   {
+    "type": "p",
+    "text": "EN: Not every verb can split when you build a sentence; those are called inseparable verbs. They too are formed from a prefix plus a base verb."
+   },
+   {
+    "type": "p",
+    "text": "Wichtig : Trennbare und nicht trennbare Verben kannst du anhand der Betonung unterscheiden. Bei trennbaren Verben betonst du nämlich das Präfix, wie bei aufstehen. Bei nicht trennbaren Verben betonst du hingegen das Grundverb, wie bei entdecken."
+   },
+   {
+    "type": "p",
+    "text": "中：重点：可以通过重音区分可分与不可分。可分动词重音在前缀上（AUFstehen）；不可分动词重音在基础动词上（entDECKen）。"
+   },
+   {
+    "type": "p",
+    "text": "EN: Important: stress tells them apart — separable verbs stress the prefix (AUFstehen), inseparable ones the stem (entDECKen)."
+   },
+   {
+    "type": "p",
+    "text": "中（小节说明）：下面是\"两可前缀\"——同一前缀有时可分、有时不可分，意思也随之改变。下列例词有的只能可分、有的只能不可分，有的两种都有："
+   },
+   {
+    "type": "li",
+    "text": "durch — durchgehen, durchschauen"
+   },
+   {
+    "type": "li",
+    "text": "中：durchgehen（可分）穿过、走过去；durchschauen（可分 DURCHschauen 透过……看 / 不可分 durchSCHAUen 看穿某人）"
+   },
+   {
+    "type": "li",
+    "text": "über — übersetzt, überreden, überkochen, überfahren"
+   },
+   {
+    "type": "li",
+    "text": "中：übersetzen（不可分：翻译；可分 ÜBERsetzen：摆渡过河）；überreden（不可分）说服；überkochen（可分）溢锅；überfahren（不可分：碾过、轧过；可分：渡过去）"
+   },
+   {
+    "type": "li",
+    "text": "wieder — wiederholen, widerspiegeln, widerstehen"
+   },
+   {
+    "type": "li",
+    "text": "中：wiederholen（不可分：重复、复习；可分：取回）。⚠ widerspiegeln（反映）和 widerstehen（抵抗）的前缀是 wider-（\"反、逆\"），不是 wieder-（\"再\"）；widerstehen 永远不可分，widerspiegeln 可分（spiegelt … wider）。"
+   },
+   {
+    "type": "li",
+    "text": "unter — untergehen, unterstützen"
+   },
+   {
+    "type": "li",
+    "text": "中：untergehen（可分）沉没、（太阳）落下；unterstützen（不可分）支持"
+   },
+   {
+    "type": "li",
+    "text": "um — umarmen, umziehen"
+   },
+   {
+    "type": "li",
+    "text": "中：umarmen（不可分 umARmen）拥抱；umziehen（可分 UMziehen）搬家"
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
+   },
+   {
+    "type": "li",
+    "text": "判断口诀：重音在前缀上就可分（ˈaufstehen），重音在词干上就不可分（entˈdecken）。"
+   },
+   {
+    "type": "li",
+    "text": "可分动词像英语短语动词：主句里前缀放句尾（Ich stehe früh auf.）；从句里合在一起放句尾（…, weil ich früh aufstehe.）。"
+   },
+   {
+    "type": "li",
+    "text": "完成时：可分动词 ge- 插在中间（aufgestanden），不可分动词不加 ge-（entdeckt）。"
+   },
+   {
+    "type": "li",
+    "text": "两可前缀 durch- / über- / um- / unter- / wieder- 看重音和意思：ˈumziehen 搬家（可分）vs umˈarmen 拥抱（不可分）。"
+   },
+   {
+    "type": "li",
+    "text": "⚠ wider-（反、逆）≠ wieder-（再）：widerspiegeln 可分（spiegelt … wider），widerstehen 不可分（widersteht, hat widerstanden）。"
    }
   ]
  },
@@ -238,76 +597,119 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：German Grammar — Konnektors · alicelearngerman.medium.com ｜ 难度：B1 ｜ 导读：表示\"结果\"的连词三兄弟 + 消极结果的两个，写作加分项。"
+    "text": "来源：German Grammar — Konnektors — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-06-03。原文照录，\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区"
+    "text": "German Grammar — Konnektors"
    },
    {
     "type": "p",
-    "text": "结果（积极/中性）"
-   },
-   {
-    "type": "vocab",
-    "text": "folglich",
-    "zh": "因此"
-   },
-   {
-    "type": "vocab",
-    "text": "somit",
-    "zh": "这样一来"
-   },
-   {
-    "type": "vocab",
-    "text": "demnach",
-    "zh": "据此"
+    "text": "dann, demnach, folglich, somit, andernfalls, sonst"
    },
    {
     "type": "p",
-    "text": "消极结果"
-   },
-   {
-    "type": "vocab",
-    "text": "sonst",
-    "zh": "否则"
-   },
-   {
-    "type": "vocab",
-    "text": "andernfalls",
-    "zh": "不然的话"
-   },
-   {
-    "type": "p",
-    "text": "例句：„Der Mensch braucht Abwechslung, sonst wird ihm langweilig.\""
-   },
-   {
-    "type": "p",
-    "text": "例句：„Routinen lassen die Zeit schneller vergehen, demnach sollten wir sie vermeiden.\""
+    "text": "中：本篇讲表示\"结果\"的连接副词。它们放在第二个句子开头（占第一位），后面动词紧跟（第二位）。dann（那么、于是）/ demnach（据此、因此）/ folglich（因此）/ somit（这样一来）/ andernfalls（否则）/ sonst（否则）。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "Folge"
    },
    {
     "type": "p",
-    "text": "这几个词对应英语的 therefore / thus / otherwise，专门用来引出\"结果\"。它们放在句首时，动词紧跟其后保持第二位：\", demnach sollten wir…\" = \"therefore we should…\""
+    "text": "_folglich, somit, demnach_"
    },
    {
     "type": "p",
-    "text": "sonst / andernfalls 表\"否则\"，引出不好的后果，相当于英语 otherwise：不加油，否则车就抛锚了——\"Tank, sonst bleibst du liegen.\""
+    "text": "中：结果（中性/积极）：folglich、somit、demnach ≈ therefore / thus。"
+   },
+   {
+    "type": "li",
+    "text": "Im Alltag denken viele heute schon an morgen, folglich spüren sie die Gegenwart kaum. (In everyday life, many people already think about tomorrow, therefore they hardly feel the present.)"
+   },
+   {
+    "type": "li",
+    "text": "中：在日常生活中，很多人今天就已经在想明天了，因此他们几乎感受不到当下。"
+   },
+   {
+    "type": "li",
+    "text": "Ein Kind erlebt täglich etwas Neues, somit empfindet es die Zeit sehr intensiv."
+   },
+   {
+    "type": "li",
+    "text": "中：孩子每天都经历新事物，这样一来，他对时间的感受就非常强烈。"
+   },
+   {
+    "type": "li",
+    "text": "EN: A child experiences something new every day, thus it perceives time very intensely."
+   },
+   {
+    "type": "li",
+    "text": "Routinen lassen die Zeit schneller vergehen, demnach sollten wir sie vermeiden. (Routines make time pass faster; therefore, we should avoid them)"
+   },
+   {
+    "type": "li",
+    "text": "中：常规的生活会让时间过得更快，因此我们应该避免它。"
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "Negative Folge"
    },
    {
     "type": "p",
-    "text": "1. 它们都是副词性连词，不引导从句，动词位置不变（第二位）；2. 写作里用 folglich/demnach 比口语的 also 正式得多。"
+    "text": "_sonst, andernfalls_"
+   },
+   {
+    "type": "p",
+    "text": "中：消极结果（\"否则就会……\"）：sonst、andernfalls ≈ otherwise。andernfalls 更书面。"
+   },
+   {
+    "type": "li",
+    "text": "Der Mensch braucht Abwechslung im Leben, sonst wird him langweilig."
+   },
+   {
+    "type": "li",
+    "text": "中：人在生活中需要变化，否则就会觉得无聊。⚠ 原文 \"him\" 是笔误，应为 ihm（三格：Mir/Ihm wird langweilig）。"
+   },
+   {
+    "type": "li",
+    "text": "EN: People need variety in life, otherwise they get bored."
+   },
+   {
+    "type": "li",
+    "text": "Auch mal nichts zu tun ist wichtig, andernfalls kommt man seltener auf neue Ideen. (Doing nothing from time to time is important; otherwise, you come up with new ideas less often.)"
+   },
+   {
+    "type": "li",
+    "text": "中：偶尔什么也不做也很重要，否则人就更少想出新点子。"
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
+   },
+   {
+    "type": "li",
+    "text": "folglich / somit / demnach 引出\"结果\"（≈ therefore / thus / accordingly）；sonst / andernfalls 引出不好的后果（≈ otherwise）。"
+   },
+   {
+    "type": "li",
+    "text": "它们是连接副词，不引导从句：放句首时自己占第一位，动词紧跟在第二位（…, demnach sollten wir sie vermeiden.）。"
+   },
+   {
+    "type": "li",
+    "text": "写作里 folglich、somit 比口语的 also 正式；andernfalls 比 sonst 书面。"
+   },
+   {
+    "type": "li",
+    "text": "注意三格：Mir / Ihm wird langweilig（原文 \"him\" 是笔误）。"
    }
   ]
  },
@@ -317,51 +719,143 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：Konditionale Konnektoren · alicelearngerman.medium.com ｜ 难度：B1 ｜ 导读：两个\"除非\"：正式版和口语版，功能都是引入例外条件。"
+    "text": "来源：German Grammar — Konditionale Konnektoren — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-06-03。原文照录，\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区"
+    "text": "German Grammar — Konditionale Konnektoren"
+   },
+   {
+    "type": "p",
+    "text": "es sei denn… / außer wenn…"
+   },
+   {
+    "type": "p",
+    "text": "Die Konnektoren außer wenn und es sei denn… leiten eine Bedingung ein und schränken die vorangehende Aussage ein."
+   },
+   {
+    "type": "p",
+    "text": "中：连接词 außer wenn 和 es sei denn 引出一个条件，并对前面的说法加以限制（\"除非……\"）。注意：es sei denn 里的 sei 是 sein 的第一虚拟式，是固定说法。"
+   },
+   {
+    "type": "p",
+    "text": "EN: The connectors \"außer wenn\" and \"es sei denn\" introduce a condition and restrict the preceding statement."
+   },
+   {
+    "type": "h",
+    "text": "es sei denn… = unless 除非"
+   },
+   {
+    "type": "p",
+    "text": "verbindet zwei Hauptsätze"
+   },
+   {
+    "type": "p",
+    "text": "中：连接两个主句——es sei denn 后面接一个完整主句（动词在第二位）。"
+   },
+   {
+    "type": "p",
+    "text": "This phrase is used to introduce an exception to a preceding statement and is more formal."
+   },
+   {
+    "type": "p",
+    "text": "中：用来引出前一句话的例外情况，语气更正式。"
+   },
+   {
+    "type": "p",
+    "text": "Example: \"Ich gehe spazieren, es sei denn, es regnet.\""
+   },
+   {
+    "type": "p",
+    "text": "Translation: \"I will go for a walk, unless it rains.\""
+   },
+   {
+    "type": "p",
+    "text": "中：我去散步，除非下雨。"
+   },
+   {
+    "type": "p",
+    "text": "Ich habe wenig Freizeit, es sei denn, ich gewinne im Lotto und muss nie wieder arbeiten."
+   },
+   {
+    "type": "p",
+    "text": "中：我的空闲时间很少，除非我中了彩票、再也不用工作。"
+   },
+   {
+    "type": "p",
+    "text": "EN: I have little free time, unless I win the lottery and never have to work again."
+   },
+   {
+    "type": "h",
+    "text": "außer wenn… = except 除非"
+   },
+   {
+    "type": "p",
+    "text": "leitet einen Nebensatz ein."
+   },
+   {
+    "type": "p",
+    "text": "中：引导从句——außer wenn 后面动词放句尾。"
+   },
+   {
+    "type": "p",
+    "text": "This is also used to introduce exceptions but is more commonly used in everyday speech."
+   },
+   {
+    "type": "p",
+    "text": "中：同样用来引出例外，但在日常口语中更常用。"
+   },
+   {
+    "type": "p",
+    "text": "Example: \"Ich gehe spazieren, außer wenn es regnet.\""
+   },
+   {
+    "type": "p",
+    "text": "Translation: \"I will go for a walk, except when it rains.\""
+   },
+   {
+    "type": "p",
+    "text": "中：我去散步，除非（除了）下雨的时候。"
+   },
+   {
+    "type": "p",
+    "text": "Als Kind habe ich die Zeit als lang empfunden, außer denn die Schule früh fertig war."
+   },
+   {
+    "type": "p",
+    "text": "中：小时候我总觉得时间很漫长，除非学校放学早。⚠ 原文 \"außer denn\" 是笔误，应为 außer wenn：…, außer wenn die Schule früh fertig war."
+   },
+   {
+    "type": "p",
+    "text": "EN: As a child I felt time was long, except when school finished early."
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
    },
    {
     "type": "li",
-    "text": "es sei denn, …（除非……）—— 后面直接跟两个主句，语气正式 = 英语 unless"
+    "text": "es sei denn 和 außer wenn 都 =\"除非\"（unless），给前一句加上一个例外条件。"
    },
    {
     "type": "li",
-    "text": "außer wenn …（除了……的时候）—— 后面引导从句（动词放尾），口语常用 = 英语 except when"
+    "text": "es sei denn 后接一个完整主句（动词第二位），书面、正式；sei 是 sein 的第一虚拟式，整体是固定说法。"
    },
    {
-    "type": "p",
-    "text": "例句：„Ich gehe spazieren, es sei denn, es regnet.\""
+    "type": "li",
+    "text": "außer wenn 引导从句（动词放句尾），日常口语更常用。"
    },
    {
-    "type": "p",
-    "text": "例句：„Ich gehe spazieren, außer wenn es regnet.\""
-   },
-   {
-    "type": "h",
-    "text": "💡 讲解"
-   },
-   {
-    "type": "p",
-    "text": "两个意思几乎一样：\"我去散步，除非下雨。\" 区别只在句式：es sei denn 后面是完整主句（动词第二位），außer wenn 后面是 dass 式从句（动词句尾）。"
-   },
-   {
-    "type": "p",
-    "text": "es sei denn 本身是 sein 的第二虚拟式（\"除非它是……\"），所以自带一点书面/正式感，写作用它更出彩；口语里说 außer wenn 更顺。"
-   },
-   {
-    "type": "h",
-    "text": "📌 规则小提示"
-   },
-   {
-    "type": "p",
-    "text": "1. es sei denn + 主句；2. außer wenn + 从句（动词尾）；3. 意思都 = unless，别混成\"如果\"。"
+    "type": "li",
+    "text": "原文 \"außer denn\" 是笔误，应为 außer wenn。"
    }
   ]
  },
@@ -371,67 +865,139 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：Infinitivsätze · alicelearngerman.medium.com ｜ 难度：B1 ｜ 导读：um…zu / ohne…zu / anstatt…zu 三兄弟，对应英语 in order to / without doing / instead of doing。"
+    "text": "来源：Infinitivsätze — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-06-19。原文为英文讲解，照录；\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区"
-   },
-   {
-    "type": "li",
-    "text": "um … zu（为了）—— 表目的"
-   },
-   {
-    "type": "li",
-    "text": "ohne … zu（没有……就）—— 表\"未做某事\""
-   },
-   {
-    "type": "li",
-    "text": "anstatt … zu（而不是）—— 表替代"
+    "text": "Infinitivsätze"
    },
    {
     "type": "p",
-    "text": "公式：不定式从句没有自己的主语，动词用不定式（zu + 原形放尾）。"
+    "text": "Infinitive clauses are a form of subordinate clause that typically do not have a subject and use the infinitive form of a verb. They are often introduced by conjunctions such as \"zu\" (to), which is similar to the English \"to\" in infinitive constructions."
    },
    {
     "type": "p",
-    "text": "裸不定式（不加 zu）：情态动词（können, müssen, dürfen）+ 感知动词（sehen, hören, fühlen）后面。"
-   },
-   {
-    "type": "p",
-    "text": "例句：„Um Zeit zu sparen, nehme ich die U-Bahn.\""
-   },
-   {
-    "type": "p",
-    "text": "例句：„Ohne viel zu denken, antwortete er.\""
-   },
-   {
-    "type": "p",
-    "text": "例句：„Anstatt zu helfen, ging er weg.\""
+    "text": "中：不定式从句是一种通常没有自己主语、动词用不定式的从句。常由 zu 引出，相当于英语不定式里的 to。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "Formation and Use of \"zu\":"
    },
    {
     "type": "p",
-    "text": "这就是英语的 to do / in order to do / without doing / instead of doing 结构：主句和从句主语是同一个人时，从句主语直接省略——\"为了省时间，我坐地铁\"，省时间的人和坐地铁的人是同一个。"
+    "text": "中：zu 的构成与用法。"
    },
    {
-    "type": "p",
-    "text": "位置：通常放主句后面，也可以前置表强调（第一句就是前置的例子）。"
+    "type": "li",
+    "text": "Infinitive clauses often include the particle \"zu\" before the infinitive verb. For example: \"Ich hoffe, bald wieder gesund zu sein\" (I hope to be healthy again soon)."
+   },
+   {
+    "type": "li",
+    "text": "中：不定式从句里 zu 放在不定式动词前。例：我希望很快重新恢复健康。（可分动词 zu 插在中间：anzurufen。）"
+   },
+   {
+    "type": "li",
+    "text": "Not all verbs require \"zu\" in their infinitive constructions. Some verbs that allow a bare infinitive (without \"zu\") include modal verbs (können, müssen, dürfen) and perception verbs (sehen, hören, fühlen)."
+   },
+   {
+    "type": "li",
+    "text": "中：并非所有动词都要 zu。情态动词（können 能、müssen 必须、dürfen 可以）和感官动词（sehen 看、hören 听、fühlen 感觉）后面直接接不带 zu 的原形。例：Ich höre ihn singen. 我听见他唱歌。"
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "Infinitive with \"um… zu\", \"ohne… zu\", \"anstatt… zu\":"
    },
    {
     "type": "p",
-    "text": "1. um…zu 表目的最常用；2. 主从句主语必须一致才能省略；3. 情态/感知动词后不定式不加 zu。"
+    "text": "These structures are used to express purpose, omission, or alternative actions. For example:"
+   },
+   {
+    "type": "p",
+    "text": "中：这三个结构分别表示目的（为了）、省略（没有做……就）、替代（不……而是）。"
+   },
+   {
+    "type": "li",
+    "text": "\"Um Zeit zu sparen, nehme ich die U-Bahn\" (To save time, I take the subway)."
+   },
+   {
+    "type": "li",
+    "text": "中：为了节省时间，我坐地铁。"
+   },
+   {
+    "type": "li",
+    "text": "\"Ohne viel zu denken, antwortete er\" (Without thinking much, he answered)."
+   },
+   {
+    "type": "li",
+    "text": "中：他没多想就回答了。"
+   },
+   {
+    "type": "li",
+    "text": "\"Anstatt zu helfen, ging er weg\" (Instead of helping, he left)."
+   },
+   {
+    "type": "li",
+    "text": "中：他没有帮忙，反而走开了。"
+   },
+   {
+    "type": "h",
+    "text": "Position in the Sentence:"
+   },
+   {
+    "type": "p",
+    "text": "Infinitive clauses usually follow the main clause but can be found at the beginning for emphasis or stylistic reasons."
+   },
+   {
+    "type": "p",
+    "text": "中：不定式从句通常放在主句后面，为了强调或修辞也可以放在句首（如上面三例）。"
+   },
+   {
+    "type": "h",
+    "text": "Subject and Object Relationships:"
+   },
+   {
+    "type": "p",
+    "text": "If the subject of the main clause and the infinitive clause is the same, it is usually omitted in the infinitive clause. However, if they differ, the subject of the infinitive clause must be mentioned. For example: \"Sie bat ihn, das Fenster zu schließen\" (She asked him to close the window)."
+   },
+   {
+    "type": "p",
+    "text": "中：如果主句和不定式从句的主语相同，不定式从句里就省略主语。若\"执行者\"不同，这个人要在主句里出现——如例句：她请他把窗户关上（关窗的是\"他\"，ihn 作为主句的宾语出现，不定式里仍然没有主语）。补充：um…zu / ohne…zu / anstatt…zu 要求与主句主语一致；主语不同时改用 damit / ohne dass / anstatt dass 从句。"
+   },
+   {
+    "type": "p",
+    "text": "EN note: strictly, the infinitive clause never has its own subject; the doer is supplied by the main-clause object (ihn), as in the example."
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
+   },
+   {
+    "type": "li",
+    "text": "不定式从句没有自己的主语，动词用 zu + 原形放句尾（可分动词把 zu 插在中间：anzurufen）。"
+   },
+   {
+    "type": "li",
+    "text": "情态动词和感官动词（sehen、hören、fühlen）后接不带 zu 的原形：Ich höre ihn singen."
+   },
+   {
+    "type": "li",
+    "text": "um…zu（为了）/ ohne…zu（没……就）/ anstatt…zu（不……反而）要求与主句主语一致；主语不同时改用 damit / ohne dass / anstatt dass。"
+   },
+   {
+    "type": "li",
+    "text": "普通带 zu 不定式的\"执行者\"也可以是主句的宾语：Sie bat ihn, das Fenster zu schließen.（关窗的是 ihn）"
+   },
+   {
+    "type": "li",
+    "text": "位置：通常放在主句后面，也可以前置表示强调。"
    }
   ]
  },
@@ -441,55 +1007,107 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：Jemanden Überreden · alicelearngerman.medium.com ｜ 难度：B1 ｜ 导读：五个\"劝人\"的地道表达，核心是委婉语气——德语劝人不用命令式，用虚拟式。"
+    "text": "来源：Jemanden Überreden — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-06-06，收在她的 \"Redemittle German\" 清单。原文照录，\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区（劝人五句）"
+    "text": "Jemanden Überreden"
    },
    {
     "type": "p",
-    "text": "1. „Ich würde vorschlagen, dass du …\"（我建议你……）"
+    "text": "中：劝说某人（Redemittel 常用表达）。五句全是委婉语气，其中 1、2、3、5 用第二虚拟式（würde / wäre / könntest / hättest），越委婉越礼貌；第 4 句是习语，最直接，用于熟人之间。"
    },
    {
     "type": "p",
-    "text": "2. „Wie wäre es, wenn du mal …?\"（你……怎么样？）"
+    "text": "EN: Persuading someone — five useful phrases."
    },
    {
     "type": "p",
-    "text": "3. „Du könntest doch einfach mal zu … mitkommen.\"（你干脆一起来……吧。）"
+    "text": "Ich würde vorschlagen, dass du…"
    },
    {
     "type": "p",
-    "text": "4. „Spring doch einfach über deinen Schatten und komm mit zu …!\"（别扭捏了，一起来……吧！）"
+    "text": "中：我建议你……（最正式、最客气）"
    },
    {
     "type": "p",
-    "text": "5. „Hättest du nicht mal Lust, …?\"（你难道不想……吗？）"
+    "text": "EN: I would suggest that you …"
+   },
+   {
+    "type": "p",
+    "text": "Wie wäre es, wenn du mal…?"
+   },
+   {
+    "type": "p",
+    "text": "中：你……一下怎么样？"
+   },
+   {
+    "type": "p",
+    "text": "EN: How about you … ?"
+   },
+   {
+    "type": "p",
+    "text": "Du könntest doch einfach mal zu … mitkommen."
+   },
+   {
+    "type": "p",
+    "text": "中：你干脆跟着一起去……吧。（doch 是语气词，增加劝说、亲切的口吻）"
+   },
+   {
+    "type": "p",
+    "text": "EN: You could just come along to … ."
+   },
+   {
+    "type": "p",
+    "text": "Spring doch einfach über deinen Schatten und komm mit zu…!"
+   },
+   {
+    "type": "p",
+    "text": "中：别再扭捏了，一起去……吧！（über seinen Schatten springen 字面\"跳过自己的影子\"＝克服心理障碍、破一次例）"
+   },
+   {
+    "type": "p",
+    "text": "EN: Just get over yourself and come along to …!"
+   },
+   {
+    "type": "p",
+    "text": "Hättest du nicht mal Lust, …?"
+   },
+   {
+    "type": "p",
+    "text": "中：你难道不想……吗？/ 你就没兴趣……一下？"
+   },
+   {
+    "type": "p",
+    "text": "EN: Wouldn't you like to … ?"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "中文要点"
    },
    {
-    "type": "p",
-    "text": "注意前三句和第五句全是第二虚拟式（würde / wäre / könntest / hättest）：德语里劝人、提建议，越委婉越礼貌，正好对应英语的 \"Would you…?\" / \"How about…?\" / \"Wouldn't you like to…?\"。"
+    "type": "li",
+    "text": "劝人五句里第 1、2、3、5 句都用第二虚拟式（würde / wäre / könntest / hättest），越委婉越礼貌，对应英语 Would you … / How about … / Wouldn't you like to …。"
    },
    {
-    "type": "p",
-    "text": "第 4 句是俗语 über seinen Schatten springen（跳过自己的影子 = 克服心理障碍），语气最直接，朋友之间用。"
+    "type": "li",
+    "text": "doch 是语气词，给劝说加上亲切、催促的口吻。"
    },
    {
-    "type": "h",
-    "text": "📌 规则小提示"
+    "type": "li",
+    "text": "第 4 句 über seinen Schatten springen（克服心理障碍、破一次例）最直接，只用于熟人之间。"
    },
    {
-    "type": "p",
-    "text": "1. 劝人多用 Konjunktiv II 表委婉；2. doch 是语气词，加亲切感；3. 正式场合用第 1 句，朋友用 2/3/5。"
+    "type": "li",
+    "text": "正式场合用第 1 句，朋友之间多用第 2、3、5 句。"
    }
   ]
  },
@@ -499,107 +1117,235 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：German Verbs and Preposition 'an' · alicelearngerman.medium.com ｜ 难度：B1 ｜ 导读：an 的核心意象是\"连接、依附\"——想到\"贴上、靠上\"，这串动词就好记了。"
+    "text": "来源：German Verbs and Preposition 'an' — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-08-12。原文照录，\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区（动词 + an）"
+    "text": "German Verbs and Preposition 'an'"
+   },
+   {
+    "type": "p",
+    "text": "Verbs with \"an + D\" (Dative)"
+   },
+   {
+    "type": "p",
+    "text": "中：带 an 的动词（原文标题写\"+ 三格\"）。⚠ 并非全部是三格：denken an、glauben an、sich erinnern an、sich gewöhnen an、(sich) anpassen an 是 an + 四格；arbeiten an、sich orientieren an、sich beteiligen an、interessiert an、leiden an、liegen an、sterben an、zweifeln an、teilnehmen an、erkennen an、fehlen an、hängen an、ändern an 是 an + 三格。"
+   },
+   {
+    "type": "p",
+    "text": "Think of Connections or Attachments: Antennas connect (an) things together, so verbs with \"an\" often relate to connections or attachments."
+   },
+   {
+    "type": "p",
+    "text": "中：联想\"连接、依附\"：天线（Antenne）把东西连在一起，所以带 an 的动词常和\"连接、附着\"有关。"
    },
    {
     "type": "li",
-    "text": "arbeiten an（从事、研究……）"
+    "text": "arbeiten an — (to work on)"
    },
    {
     "type": "li",
-    "text": "denken an（想起……）⚠️ 四格"
+    "text": "中：从事、致力于（+三格）：Ich arbeite an einem Projekt. 我在做一个项目。"
    },
    {
     "type": "li",
-    "text": "glauben an（相信……）⚠️ 四格"
+    "text": "ändern an"
    },
    {
     "type": "li",
-    "text": "sich erinnern an（记得……）⚠️ 四格"
+    "text": "中：在……上做改动（+三格）：Wir müssen etwas an dem Plan ändern. 我们得改一改计划。"
    },
    {
     "type": "li",
-    "text": "teilnehmen an（参加……）"
+    "text": "anpassen an"
    },
    {
     "type": "li",
-    "text": "leiden an（患……病）"
+    "text": "中：使适应、调整到（+四格）：Ich passe mich an die neue Situation an. 我适应新情况。（Duden：sich anpassen 也可以不带 an、直接接三格：sich der neuen Situation anpassen）"
    },
    {
     "type": "li",
-    "text": "sterben an（死于……）"
+    "text": "sich beteiligen an — (to participate in)"
    },
    {
     "type": "li",
-    "text": "liegen an（在于、取决于……）"
+    "text": "中：参与（+三格）：Sie beteiligt sich an der Diskussion. 她参与讨论。"
    },
    {
     "type": "li",
-    "text": "zweifeln an（怀疑……）"
+    "text": "interessiert an"
    },
    {
     "type": "li",
-    "text": "hängen an（依恋……）"
+    "text": "中：对……感兴趣（+三格）：Er ist an Musik interessiert. 他对音乐感兴趣。"
    },
    {
     "type": "li",
-    "text": "fehlen an（缺少……）"
+    "text": "leiden an — (to suffer from)"
    },
    {
     "type": "li",
-    "text": "sich gewöhnen an（习惯于……）"
+    "text": "中：患（病）（+三格）：Sie leidet an Asthma. 她患有哮喘。"
    },
    {
     "type": "li",
-    "text": "sich orientieren an（以……为导向）"
+    "text": "liegen an"
    },
    {
     "type": "li",
-    "text": "sich beteiligen an（参与……）"
+    "text": "中：在于、归因于（+三格）：Das liegt am Wetter. 这是天气的缘故。"
    },
    {
     "type": "li",
-    "text": "interessiert sein an（对……感兴趣）"
+    "text": "sterben an — (to die of)"
    },
    {
     "type": "li",
-    "text": "erkennen an（从……认出）"
+    "text": "中：死于（+三格）：Er starb an Krebs. 他死于癌症。"
    },
    {
     "type": "li",
-    "text": "ändern an（改变……方面）"
+    "text": "zweifeln an — (to doubt)"
    },
    {
     "type": "li",
-    "text": "anpassen an（使适应……）"
+    "text": "中：怀疑（+三格）：Ich zweifle an seiner Ehrlichkeit. 我怀疑他是否诚实。"
+   },
+   {
+    "type": "li",
+    "text": "sich erinnern an — (to remember)"
+   },
+   {
+    "type": "li",
+    "text": "中：记得、回想起（+四格）：Ich erinnere mich an den Urlaub. 我记得那次假期。"
+   },
+   {
+    "type": "li",
+    "text": "sich orientieren an"
+   },
+   {
+    "type": "li",
+    "text": "中：以……为导向/参照（+三格，常见 an + Dat.）：Wir orientieren uns an den Kunden. 我们以客户为导向。"
+   },
+   {
+    "type": "li",
+    "text": "sich gewöhnen an — (to get used to)"
+   },
+   {
+    "type": "li",
+    "text": "中：习惯于（+四格）：Ich gewöhne mich an das Essen. 我在习惯这里的饭菜。"
+   },
+   {
+    "type": "li",
+    "text": "denken an — (to think of)"
+   },
+   {
+    "type": "li",
+    "text": "中：想到、想念（+四格）：Ich denke oft an dich. 我常想你。"
+   },
+   {
+    "type": "li",
+    "text": "glauben an — (to believe in)"
+   },
+   {
+    "type": "li",
+    "text": "中：相信（+四格）：Sie glaubt an Gott. 她信上帝。"
+   },
+   {
+    "type": "li",
+    "text": "teilnehmen an — (to participate in)"
+   },
+   {
+    "type": "li",
+    "text": "中：参加（+三格）：Ich nehme an dem Kurs teil. 我参加这门课。"
+   },
+   {
+    "type": "li",
+    "text": "erkennen an — (to recognize by)"
+   },
+   {
+    "type": "li",
+    "text": "中：凭……认出（+三格）：Ich erkenne ihn an der Stimme. 我凭声音认出他。"
+   },
+   {
+    "type": "li",
+    "text": "fehlen an — (to lack)"
+   },
+   {
+    "type": "li",
+    "text": "中：缺少（无人称 es fehlt an + 三格）：Es fehlt an Geld. 缺钱。"
+   },
+   {
+    "type": "li",
+    "text": "hängen an — (to depend on)"
+   },
+   {
+    "type": "li",
+    "text": "中：依恋、舍不得（+三格）：Er hängt an seiner Heimat. 他眷恋家乡。（\"取决于\"一般用 abhängen von）"
+   },
+   {
+    "type": "li",
+    "text": "die Reichtum an"
+   },
+   {
+    "type": "li",
+    "text": "中：……的丰富（+三格）。⚠ 原文冠词有误：应为 der Reichtum an（阳性）：der Reichtum an Bodenschätzen 矿产资源丰富。"
+   },
+   {
+    "type": "li",
+    "text": "die Schuld an"
+   },
+   {
+    "type": "li",
+    "text": "中：对……负有责任（+三格）：die Schuld an dem Unfall 事故的责任。"
+   },
+   {
+    "type": "li",
+    "text": "sterben an"
+   },
+   {
+    "type": "li",
+    "text": "中：（重复）死于。"
+   },
+   {
+    "type": "li",
+    "text": "zweifeln an"
+   },
+   {
+    "type": "li",
+    "text": "中：（重复）怀疑。"
+   },
+   {
+    "type": "p",
+    "text": "中（小结）：an 的动词按格分两组记：四格组（denken / glauben / sich erinnern / sich gewöhnen / anpassen）与三格组（其余）。不要按原文标题一律记成三格。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "中文要点"
    },
    {
-    "type": "p",
-    "text": "an 的本义是\"贴着、靠着\"，引申为\"连接、依附\"：参加（teilnehmen an）是\"连上\"一个活动，习惯（sich gewöhnen an）是\"贴上\"一种状态，感兴趣（interessiert an）是\"心连上\"某事。"
+    "type": "li",
+    "text": "an 的意象是\"连接、依附\"：参加、习惯、感兴趣都是把自己\"连\"到某件事上。"
    },
    {
-    "type": "p",
-    "text": "注意三个例外：denken an、glauben an、sich erinnern an 支配四格（Akkusativ），其余多为三格。英语里 think of / believe in 的 of/in 在这里统一被 an 吃掉——介词不能逐词对译，只能整串背。"
+    "type": "li",
+    "text": "格要分开记：denken an、glauben an、sich erinnern an、sich gewöhnen an、sich anpassen an 是 an + 四格（anpassen 也可直接接三格：sich der Umgebung anpassen）；arbeiten an、teilnehmen an、leiden an、sterben an、zweifeln an 等其余搭配是 an + 三格。"
    },
    {
-    "type": "h",
-    "text": "📌 规则小提示"
+    "type": "li",
+    "text": "介词不能按英语逐词对译（think of / believe in / get used to 在德语里都用 an），\"动词 + 介词 + 格\"整串背。"
    },
    {
-    "type": "p",
-    "text": "1. 动词+介词+格是固定搭配，整串背；2. ⚠️ 标记的三格外例外记牢；3. 反身代词（sich）位置：sich erinnern an。"
+    "type": "li",
+    "text": "名词搭配：der Reichtum an（原文 die 是笔误）、die Schuld an + 三格。"
    }
   ]
  },
@@ -609,55 +1355,103 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：German Verbs and Preposition 'vor' · alicelearngerman.medium.com ｜ 难度：B1 ｜ 导读：vor 这组意思很集中——\"保护、恐惧、谨慎\"，五个全是三格。"
+    "text": "来源：German Verbs and Preposition 'vor' — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-08-14。原文照录，\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区（动词 + vor，三格）"
+    "text": "German Verbs and Preposition 'vor'"
+   },
+   {
+    "type": "p",
+    "text": "Verbs with \"vor + D\" (Dative)"
+   },
+   {
+    "type": "p",
+    "text": "中：带 vor 的动词，vor 在这些搭配里都支配三格。"
+   },
+   {
+    "type": "p",
+    "text": "Verbs often indicate protection, fear, or caution."
+   },
+   {
+    "type": "p",
+    "text": "中：这组动词多表示\"保护、害怕、警惕\"。"
    },
    {
     "type": "li",
-    "text": "sich fürchten vor（害怕……）"
+    "text": "sich fürchten vor (to be afraid of),"
    },
    {
     "type": "li",
-    "text": "warnen vor（警告提防……）"
+    "text": "中：害怕……：Das Kind fürchtet sich vor dem Hund. 孩子怕那条狗。"
    },
    {
     "type": "li",
-    "text": "schützen vor（保护免受……）"
+    "text": "sich ängern vor"
    },
    {
     "type": "li",
-    "text": "retten vor（从……中救出）"
+    "text": "中：⚠ 原文拼写有误，德语没有 \"sich ängern\"。应为 sich ängstigen vor（害怕、担忧……）：Sie ängstigt sich vor der Prüfung. 她害怕考试。"
    },
    {
     "type": "li",
-    "text": "sicher sein vor（免于……、对……放心）"
+    "text": "warnen vor (to warn of),"
+   },
+   {
+    "type": "li",
+    "text": "中：提醒提防、警告（人用四格）：Ich warne dich vor dem Hund. 我提醒你小心那条狗。"
+   },
+   {
+    "type": "li",
+    "text": "schützen vor (to protect from),"
+   },
+   {
+    "type": "li",
+    "text": "中：保护……免受：Die Creme schützt vor der Sonne. 这款霜防晒。"
+   },
+   {
+    "type": "li",
+    "text": "retten vor (to save/rescue from),"
+   },
+   {
+    "type": "li",
+    "text": "中：从……中救出：Er rettete das Kind vor dem Ertrinken. 他救了那个差点淹死的孩子。"
+   },
+   {
+    "type": "li",
+    "text": "sicher sein vor"
+   },
+   {
+    "type": "li",
+    "text": "中：免于……、不会受……威胁：Hier bist du sicher vor dem Regen. 在这儿你淋不着雨。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "中文要点"
    },
    {
-    "type": "p",
-    "text": "vor 的本义是\"在……前面\"，引申出\"挡在前面\"的意思：害怕（fürchten）是\"有个东西挡在你面前\"，保护（schützen）是\"我挡在你前面\"。五个词全是\"面对某种威胁\"的场景，所以意思高度统一。"
+    "type": "li",
+    "text": "vor 这组表示\"保护、害怕、警惕\"，这些搭配里 vor 都支配三格。"
    },
    {
-    "type": "p",
-    "text": "英语对照：be afraid of / warn against / protect from —— 英语介词各不相同，德语里统一用 vor，这正是德语\"动词定介词\"的特点：跟着动词走，不跟着中文/英文意思走。"
+    "type": "li",
+    "text": "sich fürchten vor / sich ängstigen vor（原文 \"sich ängern\" 是笔误）/ warnen vor / schützen vor / retten vor / sicher sein vor。"
    },
    {
-    "type": "h",
-    "text": "📌 规则小提示"
+    "type": "li",
+    "text": "warnen 的\"人\"用四格：Ich warne dich vor dem Hund."
    },
    {
-    "type": "p",
-    "text": "1. 五个全支配三格；2. 场景记忆法：\"面前有威胁\"；3. warnen vor 也可以说 warnen + A（warnen ihn），意思略有差别，考试用 vor 版最保险。"
+    "type": "li",
+    "text": "英语介词各不相同（afraid of / warn against / protect from），德语统一用 vor——介词跟着动词走。"
    }
   ]
  },
@@ -667,63 +1461,127 @@
   "blocks": [
    {
     "type": "p",
-    "text": "📄 原文：German Verbs and Preposition 'nach' · alicelearngerman.medium.com ｜ 难度：B1 ｜ 导读：nach 这组 = \"寻找、渴望、询问\"，七个全是三格。"
+    "text": "来源：German Verbs and Preposition 'nach' — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
+   },
+   {
+    "type": "p",
+    "text": "（alicelearngerman，2024-08-14。原文照录，\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区（动词 + nach，三格）"
+    "text": "German Verbs and Preposition 'nach'"
+   },
+   {
+    "type": "p",
+    "text": "Verbs with \"nach + D\" (Dative)"
+   },
+   {
+    "type": "p",
+    "text": "中：带 nach 的动词，nach 永远支配三格。"
+   },
+   {
+    "type": "p",
+    "text": "Verbs that involve searching, longing, or inquiring."
+   },
+   {
+    "type": "p",
+    "text": "中：这组动词多表示\"寻找、渴望、打听\"——都是\"朝某个目标\"的动作。"
    },
    {
     "type": "li",
-    "text": "fragen nach（询问、打听……）"
+    "text": "fragen nach (to ask about),"
    },
    {
     "type": "li",
-    "text": "suchen nach（寻找……）"
+    "text": "中：询问、打听（某事）：Er fragt nach dem Weg. 他问路。（问人用 fragen + 四格：Ich frage dich.）"
    },
    {
     "type": "li",
-    "text": "sich sehnen nach（渴望……）"
+    "text": "suchen nach (to search for),"
    },
    {
     "type": "li",
-    "text": "greifen nach（伸手去拿……）"
+    "text": "中：寻找：Ich suche nach meinem Schlüssel. 我在找钥匙。"
    },
    {
     "type": "li",
-    "text": "sich erkundigen nach（打听、咨询……）"
+    "text": "sich sehnen nach (to long for),"
    },
    {
     "type": "li",
-    "text": "sich richten nach（依照、遵循……）"
+    "text": "中：渴望、思念：Sie sehnt sich nach Ruhe. 她渴望安静。"
    },
    {
     "type": "li",
-    "text": "schmecken nach（尝起来像……）"
+    "text": "greifen nach (to reach for),"
+   },
+   {
+    "type": "li",
+    "text": "中：伸手去拿：Das Baby greift nach dem Spielzeug. 宝宝伸手去抓玩具。"
+   },
+   {
+    "type": "li",
+    "text": "sich erkundigen nach"
+   },
+   {
+    "type": "li",
+    "text": "中：打听、咨询：Ich erkundige mich nach den Öffnungszeiten. 我打听营业时间。"
+   },
+   {
+    "type": "li",
+    "text": "EN: to inquire about"
+   },
+   {
+    "type": "li",
+    "text": "sich richten nach"
+   },
+   {
+    "type": "li",
+    "text": "中：依照、遵循：Wir richten uns nach dem Wetter. 我们视天气而定。"
+   },
+   {
+    "type": "li",
+    "text": "EN: to go by / to comply with"
+   },
+   {
+    "type": "li",
+    "text": "schmecken nach = smells like"
+   },
+   {
+    "type": "li",
+    "text": "中：尝起来像……：Das schmeckt nach Zitrone. 这尝起来有柠檬味。⚠ 原文英文释义有误：schmecken nach = tastes like；\"闻起来像\"是 riechen nach。"
+   },
+   {
+    "type": "li",
+    "text": "verrückt nach"
+   },
+   {
+    "type": "li",
+    "text": "中：对……着迷、为……疯狂（形容词搭配）：Er ist verrückt nach Fußball. 他对足球着迷。"
+   },
+   {
+    "type": "li",
+    "text": "EN: crazy about"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "中文要点"
    },
    {
-    "type": "p",
-    "text": "nach 的本义是\"朝向\"，这组动词全是\"朝某个目标伸手\"的动作：寻找（suchen nach）、渴望（sich sehnen nach）、打听（fragen nach）——手、心、嘴都朝目标去了。"
+    "type": "li",
+    "text": "nach 这组表示\"寻找、渴望、打听\"（朝向一个目标），nach 支配三格；原文共 8 条，最后一条是形容词搭配 verrückt nach。"
    },
    {
-    "type": "p",
-    "text": "英语对照：look for / long for / ask about / taste like —— 英语介词五花八门，德语统一 nach。schmecken nach 最有意思：\"尝起来像……\"，味道\"朝向\"了那个东西。"
+    "type": "li",
+    "text": "fragen nach + 事（打听某事）vs fragen + 四格（问某人）：Ich frage dich nach dem Weg."
    },
    {
-    "type": "h",
-    "text": "📌 规则小提示"
-   },
-   {
-    "type": "p",
-    "text": "1. 七个全支配三格；2. 场景记忆法：\"朝目标伸手\"；3. fragen nach（打听事）vs fragen + A（问人），别混。"
+    "type": "li",
+    "text": "schmecken nach = 尝起来像（tastes like；原文写成 smells like 有误），闻起来像是 riechen nach。"
    }
   ]
  },
@@ -737,79 +1595,451 @@
    },
    {
     "type": "p",
-    "text": "> 📌 C1·以后看 —— 这篇是 A1–C1 语法总索引，当\"地图\"用，不用背，先认得有哪些坑。"
+    "text": "来源：All German Grammar List up to C1-updated 2024 Juni — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "📄 原文：All German Grammar List up to C1 · alicelearngerman.medium.com ｜ 难度：C1"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "（alicelearngerman，2024-04-10，置顶文章。原文是带链接的目录，照录正文；链接指向她的分篇文章。\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区：核心公式一览"
+    "text": "All German Grammar List up to C1-updated 2024 Juni"
    },
    {
     "type": "p",
-    "text": "时态：Perfekt = sein/haben + Partizip II；Plusquamperfekt = waren/hatten + Partizip II；Futur I = werden + Infinitiv；Futur II = werden + Partizip II + sein/haben"
+    "text": "For a list of Verben mit Präpositionen, please search at Instagram/Tiktok @alicelearngerman. Here is a list of Grammar."
    },
    {
     "type": "p",
-    "text": "被动：Zustandspassiv（状态被动）= sein + Partizip II；Vorgangspassiv（过程被动）= werden + Partizip II"
-   },
-   {
-    "type": "p",
-    "text": "语序：TKML —— 时间（Temporal）→ 原因（Kausal）→ 方式（Modal）→ 地点（Lokal）"
-   },
-   {
-    "type": "p",
-    "text": "连词串：andernfalls, demnach, folglich, sonst, somit ｜ wenn, falls, außer wenn, es sei denn ｜ je…desto / umso"
-   },
-   {
-    "type": "p",
-    "text": "介词+格："
-   },
-   {
-    "type": "li",
-    "text": "\\+ 四格：bis, durch, entlang, für, gegen, ohne, um, wider"
-   },
-   {
-    "type": "li",
-    "text": "\\+ 三格：ab, aus, außer, bei, entgegen, gegenüber, mit, nach, seit, von, zu"
-   },
-   {
-    "type": "li",
-    "text": "\\+ 三/四格（Wechsel，看动静）：an, auf, hinter, in, neben, über, unter, vor, zwischen"
-   },
-   {
-    "type": "li",
-    "text": "\\+ 二格：außerhalb, innerhalb, laut, mithilfe, statt, trotz, während, wegen"
-   },
-   {
-    "type": "p",
-    "text": "主题清单：Modalverb（情态）｜ Imperativ（命令式）｜ Konjunktiv I/II ｜ Trennbare/Untrennbare Verben ｜ Subjekt/Objektsätze ｜ Nominalisierung/Verbalisierung ｜ Infinitivkonstruktionen ｜ Relativsätze ｜ Modalpartikeln ｜ Negation ｜ Adjektiv ｜ Nomen-Verb-Verbindungen"
+    "text": "中：A1–C1 德语语法总目录（2024 年 6 月更新）。\"动词+介词\"清单请到她的 Instagram/TikTok 搜索。本篇当\"地图\"用，不用背。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "Artikel"
    },
    {
     "type": "p",
-    "text": "这张表就是德语语法的\"全家福\"。你现在 A2 阶段，其实已经踩过其中不少：情态动词、可分动词、完成时、介词+格。往后每学一个新点，就回来在这张表上打个勾——学到 C1 那天，这张表应该全是勾。"
+    "text": "Nomengruppe (tips to remember all changes)"
    },
    {
     "type": "p",
-    "text": "现阶段只建议记熟两行：TKML 语序和介词+格，这两样是每天都要用的。"
+    "text": "中：冠词——名词词组（记住所有词尾变化的技巧）。"
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "Pronomen"
+   },
+   {
+    "type": "li",
+    "text": "Personalpronomen"
+   },
+   {
+    "type": "li",
+    "text": "Indefinitpronomen: Picture view link"
    },
    {
     "type": "p",
-    "text": "当索引用，不背诵；二格介词（trotz/während/wegen）口语常被三格替代，考试写二格。"
+    "text": "中：代词——人称代词；不定代词（jemand、man、etwas 等）。"
+   },
+   {
+    "type": "h",
+    "text": "Verben"
+   },
+   {
+    "type": "h",
+    "text": "Modalverb"
+   },
+   {
+    "type": "p",
+    "text": "中：情态动词（können、müssen、dürfen…）。"
+   },
+   {
+    "type": "h",
+    "text": "Konjugation"
+   },
+   {
+    "type": "li",
+    "text": "Präsens: lern e / lern st / lern t / lern en / lern t / lern en"
+   },
+   {
+    "type": "li",
+    "text": "中：现在时词尾：ich lerne / du lernst / er lernt / wir lernen / ihr lernt / sie lernen。"
+   },
+   {
+    "type": "li",
+    "text": "Präteritum: Imperfekt, Vergangenheitsform"
+   },
+   {
+    "type": "li",
+    "text": "中：过去时（又叫 Imperfekt）。"
+   },
+   {
+    "type": "li",
+    "text": "Perfekt: sein/haben + Partizip II"
+   },
+   {
+    "type": "li",
+    "text": "中：现在完成时 = sein/haben + 第二分词（Ich habe gelernt. / Ich bin gefahren.）"
+   },
+   {
+    "type": "li",
+    "text": "Plusquamperfekt: waren/hatten + Partizip II"
+   },
+   {
+    "type": "li",
+    "text": "中：过去完成时 = war/hatte（的变位形式）+ 第二分词（Ich hatte gelernt. / Ich war gefahren.）"
+   },
+   {
+    "type": "li",
+    "text": "Futur I: werden + Infinitiv"
+   },
+   {
+    "type": "li",
+    "text": "中：将来时 = werden + 不定式（Ich werde lernen.）"
+   },
+   {
+    "type": "li",
+    "text": "Futur II: werden + Partizip II + sein/haben"
+   },
+   {
+    "type": "li",
+    "text": "中：将来完成时 = werden + 第二分词 + sein/haben（Ich werde gelernt haben.）"
+   },
+   {
+    "type": "h",
+    "text": "Verben mit Präfix"
+   },
+   {
+    "type": "p",
+    "text": "中：带前缀的动词（见可分/不可分动词篇）。"
+   },
+   {
+    "type": "h",
+    "text": "Imperativ"
+   },
+   {
+    "type": "p",
+    "text": "中：命令式。"
+   },
+   {
+    "type": "h",
+    "text": "Konjunktiv I und II:"
+   },
+   {
+    "type": "li",
+    "text": "Konjunktiv II: Gegenwart, Vergangenheit"
+   },
+   {
+    "type": "li",
+    "text": "Konjunktiv I: Gegenwart, Vergangenheit"
+   },
+   {
+    "type": "p",
+    "text": "中：第一、第二虚拟式，各有现在时和过去时。"
+   },
+   {
+    "type": "h",
+    "text": "Irregular verbs"
+   },
+   {
+    "type": "p",
+    "text": "中：不规则动词。"
+   },
+   {
+    "type": "h",
+    "text": "Passive"
+   },
+   {
+    "type": "li",
+    "text": "zustand passiv: sein + Partizip II"
+   },
+   {
+    "type": "li",
+    "text": "中：状态被动 = sein + 第二分词（Die Tür ist geöffnet. 门开着。）"
+   },
+   {
+    "type": "li",
+    "text": "Vorgangspassiv: werden + Partizip II"
+   },
+   {
+    "type": "li",
+    "text": "中：过程被动 = werden + 第二分词（Die Tür wird geöffnet. 门正被打开。）"
+   },
+   {
+    "type": "p",
+    "text": "Trennbare/Untrennbare Verben"
+   },
+   {
+    "type": "p",
+    "text": "中：可分/不可分动词。"
+   },
+   {
+    "type": "h",
+    "text": "Subjunctive II"
+   },
+   {
+    "type": "li",
+    "text": "Indirect speech using subjunctive I"
+   },
+   {
+    "type": "p",
+    "text": "中：间接引语用第一虚拟式（Er sagt, er sei krank. 他说他病了）。"
+   },
+   {
+    "type": "h",
+    "text": "Sätze"
+   },
+   {
+    "type": "p",
+    "text": "中：句子层面。"
+   },
+   {
+    "type": "li",
+    "text": "Stellung der Satzglieder: Word order in a sentence: TKML"
+   },
+   {
+    "type": "li",
+    "text": "中：句子成分的位置：状语顺序 TKML（Temporal 时间 → Kausal 原因 → Modal 方式 → Lokal 地点，即常说的 TeKaMoLo）。例：Ich fahre morgen wegen der Arbeit mit dem Zug nach Berlin. 我明天因为工作坐火车去柏林。"
+   },
+   {
+    "type": "li",
+    "text": "Satzverbindungen (Konnektoren): Zweiteilige Konnektoren"
+   },
+   {
+    "type": "li",
+    "text": "中：句子连接：双部连词（sowohl … als auch、weder … noch、entweder … oder 等）。"
+   },
+   {
+    "type": "li",
+    "text": "Connectors around to, without to, (instead of) to, infinitive and alternatives"
+   },
+   {
+    "type": "li",
+    "text": "中：um…zu / ohne…zu / (an)statt…zu 不定式结构及其从句替换（damit / ohne dass / anstatt dass）。"
+   },
+   {
+    "type": "li",
+    "text": "Konnektoren: andernfalls, demnach, folglich, sonst, somit"
+   },
+   {
+    "type": "li",
+    "text": "中：结果连接副词（否则、据此、因此、否则、这样一来）。"
+   },
+   {
+    "type": "li",
+    "text": "Konditionale Konnektoren: wenn, falls, außer wenn + Nebensatz, es sei denn + Hauptsatz"
+   },
+   {
+    "type": "li",
+    "text": "中：条件连词：wenn / falls（如果）；außer wenn + 从句、es sei denn + 主句（除非）。"
+   },
+   {
+    "type": "li",
+    "text": "Konnektoren: Konsekutive, adversative und temporale Konnektoren"
+   },
+   {
+    "type": "li",
+    "text": "中：结果、转折、时间类连接词。"
+   },
+   {
+    "type": "li",
+    "text": "Conjunction: \"während\" (\"while\")"
+   },
+   {
+    "type": "li",
+    "text": "中：während 作连词（\"在……的时候 / 而\"）。"
+   },
+   {
+    "type": "li",
+    "text": "Modal sentences with thereby, that and by"
+   },
+   {
+    "type": "li",
+    "text": "中：方式从句：dadurch, dass / indem（通过……方式）。"
+   },
+   {
+    "type": "li",
+    "text": "wenn order als?"
+   },
+   {
+    "type": "li",
+    "text": "中：用 wenn 还是 als？（原文 \"order\" 应为 \"oder\"。als＝过去一次性；wenn＝反复/现在/将来。）"
+   },
+   {
+    "type": "li",
+    "text": "Subjekt und Objektsätze"
+   },
+   {
+    "type": "li",
+    "text": "中：主语从句和宾语从句。"
+   },
+   {
+    "type": "li",
+    "text": "Nominalisierung und Verbalisierung (Nominalisierung und Verbalisierung von Präpositionalergänzungen)"
+   },
+   {
+    "type": "li",
+    "text": "中：名词化与动词化（含介词补足语的名词化/动词化）。"
+   },
+   {
+    "type": "h",
+    "text": "Infinitivkonstruktionen"
+   },
+   {
+    "type": "p",
+    "text": "中：不定式结构。"
+   },
+   {
+    "type": "h",
+    "text": "Relativsätze"
+   },
+   {
+    "type": "li",
+    "text": "Relative clauses with \"who"
+   },
+   {
+    "type": "p",
+    "text": "中：关系从句（原文此处未写完）。"
+   },
+   {
+    "type": "h",
+    "text": "Modalpartikeln"
+   },
+   {
+    "type": "li",
+    "text": "Negation: prefixes/suffixes"
+   },
+   {
+    "type": "li",
+    "text": "Comparative clauses: als, wie, je…desto/umso, as, as if, and as if"
+   },
+   {
+    "type": "li",
+    "text": "the word \"it"
+   },
+   {
+    "type": "li",
+    "text": "Noun-verb combinations I &II"
+   },
+   {
+    "type": "li",
+    "text": "Nouns, verbs, and adjectives using preposition I, II"
+   },
+   {
+    "type": "p",
+    "text": "中：情态小品词（doch、mal、ja…）；否定前后缀（un-、-los…）；比较从句（als、wie、je…desto/umso 越……越……、als ob 好像）；\"es\" 的用法；名词-动词固定搭配 I、II；名词/动词/形容词 + 介词 I、II。"
+   },
+   {
+    "type": "h",
+    "text": "Präpositionen"
+   },
+   {
+    "type": "li",
+    "text": "Präpositionen + Akkusativ: bis, durch, entlang, für, gegen, ohne, um wider."
+   },
+   {
+    "type": "li",
+    "text": "中：支配四格：bis 直到、durch 穿过、entlang 沿着（后置时四格）、für 为了、gegen 反对、ohne 没有、um 围绕、wider 违背。"
+   },
+   {
+    "type": "li",
+    "text": "Präpositionen + Dativ: ab, aus, außer, bei, entgegen, gegenüber, mit, nach, seit, von, zu."
+   },
+   {
+    "type": "li",
+    "text": "中：支配三格：ab 从…起、aus 从…出来、außer 除了、bei 在…处、entgegen 违背/迎着、gegenüber 对面、mit 和/用、nach 之后/去、seit 自从、von 从/关于、zu 到。"
+   },
+   {
+    "type": "li",
+    "text": "Wechselpräpositionen: an, auf, hinter, in, neben, über, unter, vor, zwischen."
+   },
+   {
+    "type": "li",
+    "text": "中：双向介词（静三动四）：静止位置用三格，方向移动用四格。"
+   },
+   {
+    "type": "li",
+    "text": "Präpositionen + Genitiv: außerhalb, innerhalb, laut, mithilfe, statt, strotz, während, wegen"
+   },
+   {
+    "type": "li",
+    "text": "中：支配二格：außerhalb 在…之外、innerhalb 在…之内、laut 根据、mithilfe 借助、statt 代替、trotz 尽管（⚠ 原文 \"strotz\" 为笔误）、während 在…期间、wegen 因为。"
+   },
+   {
+    "type": "li",
+    "text": "Präpositionen mit temporaler Bedeutung: Zeit"
+   },
+   {
+    "type": "li",
+    "text": "Präposition → Adverb → Konnektor: temporal"
+   },
+   {
+    "type": "li",
+    "text": "Präposition → Adverb → Konnektor: kausal, konsekutiv, konzessiv, adversativ"
+   },
+   {
+    "type": "li",
+    "text": "Präposition → Adverb → Konnektor: modal, konditional, final"
+   },
+   {
+    "type": "p",
+    "text": "中：时间介词；以及同一语义的\"介词 → 副词 → 连词\"三种表达（如 wegen → deshalb → weil；trotz → trotzdem → obwohl）。"
+   },
+   {
+    "type": "h",
+    "text": "Adjektive"
+   },
+   {
+    "type": "li",
+    "text": "Komparation der Adjektive"
+   },
+   {
+    "type": "li",
+    "text": "Partizipien als Adjektive"
+   },
+   {
+    "type": "li",
+    "text": "Rektion der Adjektive"
+   },
+   {
+    "type": "li",
+    "text": "Nominalization, Nominalized adjectives"
+   },
+   {
+    "type": "p",
+    "text": "中：形容词：比较级/最高级；分词作形容词；形容词的支配（stolz auf…）；形容词名词化（der Deutsche、das Gute）。"
+   },
+   {
+    "type": "h",
+    "text": "Unregelmäßige Verben"
+   },
+   {
+    "type": "p",
+    "text": "中：不规则动词表。"
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
+   },
+   {
+    "type": "li",
+    "text": "这是 A1–C1 的语法总索引，当\"地图\"用，不必背；每学完一个点回来打个勾。"
+   },
+   {
+    "type": "li",
+    "text": "先记熟两样每天都用的：状语顺序 TKML（TeKaMoLo：时间—原因—方式—地点）和介词支配的格（四格、三格、三/四格、二格四组）。"
+   },
+   {
+    "type": "li",
+    "text": "过去完成时 = war / hatte 的变位形式 + 第二分词（Ich hatte gelernt. / Ich war gefahren.）。"
+   },
+   {
+    "type": "li",
+    "text": "二格介词（trotz、während、wegen）口语常被三格替代，考试和书面语写二格；原文 \"strotz\" 是 trotz 的笔误。"
    }
   ]
  },
@@ -823,59 +2053,255 @@
    },
    {
     "type": "p",
-    "text": "> 📌 C1·以后看 —— B1 连词表的升级版，先认得、写作时查着用。"
+    "text": "来源：German Grammar C1 Konnektoren — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "📄 原文：German Grammar C1 Konnektoren · alicelearngerman.medium.com ｜ 难度：C1"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "（alicelearngerman，2024-08-14。原文正文为 3 张表格图片，以下是图片文字的逐字转录；\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区：分组记"
+    "text": "German Grammar C1 Konnektoren"
    },
    {
     "type": "p",
-    "text": "条件：wenn, falls（从句）｜ außer wenn（从句，= wenn…nicht）｜ es sei denn（主句，= wenn…nicht）"
+    "text": "Konsekutive, adversative und temporale Konnektoren"
    },
    {
     "type": "p",
-    "text": "结果：demnach, folglich, infolgedessen, somit ｜ dann（多为积极结果）"
-   },
-   {
-    "type": "p",
-    "text": "消极结果：andernfalls, sonst"
-   },
-   {
-    "type": "p",
-    "text": "限制/转折：allerdings（不过）｜ dagegen, demgegenüber, stattdessen, vielmehr（对比转折）"
-   },
-   {
-    "type": "p",
-    "text": "时间：bis dahin, daraufhin, gleichzeitig, inzwischen, mittlerweile, währenddessen"
+    "text": "中：C1 连接词：结果、转折（对比）与时间类，外加条件类。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "Konditionale Konnektoren"
    },
    {
     "type": "p",
-    "text": "逻辑很简单：B1 的 sonst/demnach/folglich 你已经会了，C1 只是多了几个\"高级同义词\"。比如 infolgedessen = folglich 的正式版（in Folge dessen = 作为其结果），vielmehr = \"更确切地说\"（rather）。"
+    "text": "中：条件连接词：wenn / falls 引导从句（动词尾）表\"如果\"；außer wenn（从句）和 es sei denn（主句）表\"除非\"（= wenn … nicht）。"
    },
    {
     "type": "p",
-    "text": "记忆法：按\"功能\"分组背，一组就是一家人，写作时同组词可以互换升级——把 also 换成 somit，sonst 换成 andernfalls，档次立刻不一样。"
+    "text": "Konnektor | leitet ein | Bedeutung | Beispiel"
+   },
+   {
+    "type": "p",
+    "text": "wenn | Nebensatz | Bedingung | Ich achte nicht auf die Zeit, wenn ich einen spannenden Krimi lese."
+   },
+   {
+    "type": "p",
+    "text": "falls | Nebensatz | Bedingung | Ändere deine Routinen, falls die Zeit zu schnell vergeht."
+   },
+   {
+    "type": "p",
+    "text": "außer wenn | Nebensatz | Bedingung, die die vorangehende Aussage einschränkt (= wenn … nicht) | Die Zeit vergeht schnell, außer wenn man jung ist."
+   },
+   {
+    "type": "p",
+    "text": "es sei denn | Hauptsatz | Bedingung, die die vorangehende Aussage einschränkt (= wenn … nicht) | Die Zeit vergeht schnell, es sei denn, man ist jung."
+   },
+   {
+    "type": "p",
+    "text": "中：wenn 例：我读紧张的侦探小说时，就不会注意时间。"
+   },
+   {
+    "type": "p",
+    "text": "中：falls 例：如果时间过得太快，就改变你的日常习惯。"
+   },
+   {
+    "type": "p",
+    "text": "中：außer wenn 例：时间过得很快，除非人还年轻。（从句，动词 ist 在句尾）"
+   },
+   {
+    "type": "p",
+    "text": "中：es sei denn 例：时间过得很快，除非人还年轻。（主句，动词 ist 在第二位）"
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "Konsekutive, adversativ, und temporale Konnektoren"
    },
    {
     "type": "p",
-    "text": "1. 这些全是副词性连词，动词保持第二位；2. 先掌握 B1 那几个，C1 版当\"替换词库\"查着用。"
+    "text": "中：以下这些都是连接副词：放在第二句句首占第一位，动词紧跟在后（第二位）。"
+   },
+   {
+    "type": "h",
+    "text": "Folge（结果）"
+   },
+   {
+    "type": "p",
+    "text": "Konnektor | Bedeutung | Beispiel"
+   },
+   {
+    "type": "p",
+    "text": "dann | meist positive Folge | Man muss auch mal nichts tun, dann kommen viele neue Gedanken."
+   },
+   {
+    "type": "p",
+    "text": "demnach | Folge | Routinen lassen die Zeit schnell vergehen, demnach sollten wir sie vermeiden."
+   },
+   {
+    "type": "p",
+    "text": "folglich | Folge | Viele denken heute schon an morgen, folglich spüren sie die Gegenwart kaum."
+   },
+   {
+    "type": "p",
+    "text": "infolgedessen | Folge | Viele denken heute schon an morgen, infolgedessen spüren sie die Gegenwart kaum."
+   },
+   {
+    "type": "p",
+    "text": "somit | Folge | Ein Kind erlebt täglich Neues, somit empfindet es die Zeit sehr intensiv."
+   },
+   {
+    "type": "p",
+    "text": "andernfalls | negative Folge | Auch mal nichts zu tun ist wichtig, andernfalls kommt man seltener auf neue Ideen."
+   },
+   {
+    "type": "p",
+    "text": "sonst | negative Folge | Der Mensch braucht Abwechslung im Leben, sonst wird ihm langweilig."
+   },
+   {
+    "type": "p",
+    "text": "allerdings | Einschränkung | Ein Künstlerleben bedeutet finanzielle Unsicherheit. Allerdings will ich ohne dieses Kribbeln, wenn ich meine Ideen entwickle, nicht leben."
+   },
+   {
+    "type": "p",
+    "text": "中：dann（多为积极结果）：人也得偶尔什么都不做，那样就会冒出很多新想法。"
+   },
+   {
+    "type": "p",
+    "text": "中：demnach：常规生活让时间过得很快，因此我们应该避免它。"
+   },
+   {
+    "type": "p",
+    "text": "中：folglich / infolgedessen（后者更书面）：很多人今天就在想明天，因此几乎感受不到当下。"
+   },
+   {
+    "type": "p",
+    "text": "中：somit：孩子每天都经历新事物，这样一来他对时间的感受非常强烈。"
+   },
+   {
+    "type": "p",
+    "text": "中：andernfalls（否则，书面）：偶尔什么都不做也很重要，否则人就更少有新点子。"
+   },
+   {
+    "type": "p",
+    "text": "中：sonst（否则）：人在生活中需要变化，否则会觉得无聊。"
+   },
+   {
+    "type": "p",
+    "text": "中：allerdings（限制/不过）：艺术家的生活意味着经济上不稳定。不过，我不想过没有那种构思时的兴奋感的生活。"
+   },
+   {
+    "type": "h",
+    "text": "Gegensatz（对比转折）与 Zeit（时间）"
+   },
+   {
+    "type": "p",
+    "text": "Konnektor | Kategorie | Beispiel"
+   },
+   {
+    "type": "p",
+    "text": "dagegen | Gegensatz | Meine Freunde haben alle Karriere gemacht. Dagegen dreht sich bei mir immer noch alles darum zu überleben."
+   },
+   {
+    "type": "p",
+    "text": "demgegenüber | Gegensatz | Die Karriere winkt am Horizont. Demgegenüber steht die harte Realität."
+   },
+   {
+    "type": "p",
+    "text": "stattdessen | Gegensatz | Ich hätte einfach Medizin studieren können. Stattdessen habe ich mich für die oft brotlose Kunst entschieden."
+   },
+   {
+    "type": "p",
+    "text": "vielmehr | Gegensatz | Mit Romantik hat ein Künstlerleben wenig zu tun. Vielmehr ist es vor allem harte Arbeit."
+   },
+   {
+    "type": "p",
+    "text": "bis dahin | Zeit | Noch kann ich von meiner Kunst nicht leben. Bis dahin brauche ich noch die finanzielle Unterstützung meiner Eltern."
+   },
+   {
+    "type": "p",
+    "text": "daraufhin | Zeit | Neulich habe ich ein Bild verkauft. Daraufhin habe ich mir gleich viele neue Materialien angeschafft."
+   },
+   {
+    "type": "p",
+    "text": "gleichzeitig | Zeit | Manchmal bin ich ein bisschen verzweifelt. Gleichzeitig bekomme ich viele positive Reaktionen auf meine Werke."
+   },
+   {
+    "type": "p",
+    "text": "inzwischen | Zeit | Künstler haben einen unsicheren Weg gewählt. Inzwischen setzen viele Schulen deshalb auf eine möglichst breite Ausbildung."
+   },
+   {
+    "type": "p",
+    "text": "mittlerweile | Zeit | Manchmal frage ich mich, ob das der richtige Weg ist. Mittlerweile haben meine alten Freunde alle Karriere gemacht."
+   },
+   {
+    "type": "p",
+    "text": "währenddessen | Zeit | Eine Ausbildung im Kunstbereich verlangt einem einiges ab. Währenddessen sollte man sich bereits ein breites Netzwerk aufbauen."
+   },
+   {
+    "type": "p",
+    "text": "中：dagegen（相反）：我的朋友们都事业有成。相反，我这儿一切还在围着\"活下去\"转。"
+   },
+   {
+    "type": "p",
+    "text": "中：demgegenüber（与此相对）：事业在地平线上招手。与之相对的是残酷的现实。"
+   },
+   {
+    "type": "p",
+    "text": "中：stattdessen（取而代之）：我本可以干脆去学医。可我却选择了常常挣不到钱的艺术。"
+   },
+   {
+    "type": "p",
+    "text": "中：vielmehr（更确切地说/反而）：艺术家的生活跟浪漫关系不大。更确切地说，它主要是艰苦的工作。"
+   },
+   {
+    "type": "p",
+    "text": "中：bis dahin（在那之前）：我现在还不能靠艺术为生。在那之前我还需要父母的经济支持。"
+   },
+   {
+    "type": "p",
+    "text": "中：daraufhin（随即、于是）：最近我卖出了一幅画。随后我马上买了很多新材料。"
+   },
+   {
+    "type": "p",
+    "text": "中：gleichzeitig（同时）：有时我有点绝望。同时，我的作品也收到很多正面反馈。"
+   },
+   {
+    "type": "p",
+    "text": "中：inzwischen（如今、在此期间）：艺术家选择的是一条不稳定的路。所以如今很多学校都尽量提供宽口径的培养。"
+   },
+   {
+    "type": "p",
+    "text": "中：mittlerweile（如今已经）：有时我会问自己这条路对不对。如今我的老朋友们都已事业有成。"
+   },
+   {
+    "type": "p",
+    "text": "中：währenddessen（在此期间）：艺术领域的学业对人要求很高。在此期间就应该开始建立广泛的人脉。"
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
+   },
+   {
+    "type": "li",
+    "text": "按功能分组背：条件（wenn、falls；außer wenn、es sei denn）、结果（demnach、folglich、infolgedessen、somit、dann）、消极结果（andernfalls、sonst）、对比转折（dagegen、demgegenüber、stattdessen、vielmehr）、限制（allerdings）、时间（bis dahin、daraufhin、gleichzeitig、inzwischen、mittlerweile、währenddessen）。"
+   },
+   {
+    "type": "li",
+    "text": "wenn、falls、außer wenn 引导从句（动词句尾）；其余是连接副词，放句首时自己占第一位，动词在第二位；es sei denn 后接主句。"
+   },
+   {
+    "type": "li",
+    "text": "infolgedessen 是 folglich 的正式版；vielmehr =\"更确切地说\"（rather）；dann 多引出积极结果。"
+   },
+   {
+    "type": "li",
+    "text": "写作时同组词可互换升级：also → somit，sonst → andernfalls。"
    }
   ]
  },
@@ -889,79 +2315,155 @@
    },
    {
     "type": "p",
-    "text": "> 📌 C1·以后看 —— 名词化/动词化是德语\"高级感\"的来源：把从句压缩成名词短语。先看懂对应关系，不用自己造。"
+    "text": "来源：German Grammar -Nominalisierung und Verbalisierung — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "📄 原文：Nominalisierung und Verbalisierung · alicelearngerman.medium.com ｜ 难度：C1"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "（alicelearngerman，2024-08-14。原文正文为 2 张表格图片（注明 \"Notieren from Neuaspekt Lehrbuch\"），以下是逐字转录；\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区：对应公式"
+    "text": "German Grammar -Nominalisierung und Verbalisierung"
    },
    {
     "type": "p",
-    "text": "从句版（动词化） | 名词版（名词化）"
-   },
-   {
-    "type": "p",
-    "text": "wenn / falls …（如果） | bei + 三格"
-   },
-   {
-    "type": "p",
-    "text": "wenn … nicht（如果不） | ohne + 四格"
-   },
-   {
-    "type": "p",
-    "text": "um … zu / damit（为了） | zu + 三格 / für + 四格"
-   },
-   {
-    "type": "p",
-    "text": "seitdem（自从） | seit + 三格"
-   },
-   {
-    "type": "p",
-    "text": "nachdem（在……之后） | nach + 三格"
-   },
-   {
-    "type": "p",
-    "text": "als（当……时） | bei + 三格"
-   },
-   {
-    "type": "p",
-    "text": "bis（直到） | bis zu + 三格"
-   },
-   {
-    "type": "p",
-    "text": "例句：„sich über ihre Kreativität freuen\" ↔ „sich (darüber) freuen, dass sie kreativ sind\"（为她的创造力高兴）"
-   },
-   {
-    "type": "p",
-    "text": "例句：„für die Entwicklung neuer Ideen einsetzen\" ↔ „dafür einsetzen, neue Ideen zu entwickeln\"（致力于开发新想法）"
+    "text": "中：名词化（从句 → 介词 + 名词）与动词化（反过来）。书面语、C1 写作常把从句压缩成名词短语；阅读时要能\"解压\"回从句。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "Zusammenfassung"
    },
    {
     "type": "p",
-    "text": "核心思想一句话：从句太长，压缩成名词短语。英语里也有类似操作：\"Because he was ill\" → \"Because of his illness\"。德语走得更远，整套对应公式都是固定的。"
+    "text": " | Verbalform: Konnektor | Nominalform: Präposition"
    },
    {
     "type": "p",
-    "text": "现阶段目标：阅读时能\"解压\"——看到 bei + 名词，能反应过来它背后藏着一个 wenn 从句。自己写作用从句版，完全够用。"
+    "text": "konditional (Bedingung) | wenn, falls, sofern — Wenn man gutes Futter verwendet, … | bei + Dat. — Bei Verwendung von gutem Futter …"
+   },
+   {
+    "type": "p",
+    "text": " | wenn … nicht — Wenn die Kontrollen nicht erhöht werden, … | ohne + Akk. — Ohne Erhöhung der Kontrollen …"
+   },
+   {
+    "type": "p",
+    "text": "final (Absicht, Zweck oder Ziel) | um … zu, damit — Um das Vorhaben besser bewältigen zu können, … / Damit man das Vorhaben besser bewältigen kann, … | zu + Dat. / für + Akk. — Zur besseren Bewältigung des Vorhabens … / Für die bessere Bewältigung des Vorhabens …"
+   },
+   {
+    "type": "p",
+    "text": "temporal (Zeit) | seitdem — Seitdem die Steinkohle entdeckt wurde, … | seit + Dat. — Seit der Entdeckung der Steinkohle …"
+   },
+   {
+    "type": "p",
+    "text": " | nachdem — Nachdem der Krieg beendet worden war, … | nach + Dat. — Nach dem Ende des Krieges …"
+   },
+   {
+    "type": "p",
+    "text": " | als — …, als die Wirtschaft der Bundesrepublik wieder aufgebaut wurde. | bei + Dat. — … beim wirtschaftlichen Wiederaufbau der Bundesrepublik."
+   },
+   {
+    "type": "p",
+    "text": " | bis — Bis der wirtschaftliche Abschwung begann, … | bis zu + Dat. — Bis zum Beginn des wirtschaftlichen Abschwungs …"
+   },
+   {
+    "type": "p",
+    "text": " | bevor — Bevor die Kohlekrise begann, … | vor + Dat. — Vor dem Beginn der Kohlekrise …"
+   },
+   {
+    "type": "p",
+    "text": " | während — Während man Kohle förderte, … | während + Gen. — Während der Kohleförderung …"
+   },
+   {
+    "type": "p",
+    "text": "kausal (Grund) | weil, da — Weil/Da die Konkurrenz stark ist, …; deshalb, deswegen, darum — Die Konkurrenz ist stark, deshalb … | wegen + Gen. / aufgrund + Gen. — Wegen der starken Konkurrenz … / Aufgrund der starken Konkurrenz …"
+   },
+   {
+    "type": "p",
+    "text": "modal (Art und Weise) | indem — …, indem sie Produktionsstätten ins Ausland verlegen.; dadurch, dass — Dadurch, dass sie Produktionsstätten ins Ausland verlegen, … | durch + Akk. — Durch die Verlegung von Produktionsstätten ins Ausland …"
+   },
+   {
+    "type": "p",
+    "text": "konzessiv (Gegengrund oder Einschränkung) | obwohl — Obwohl sie sehr motiviert sind, …; trotzdem / dennoch — Viele sind sehr motiviert, trotzdem/dennoch …; zwar …, aber — Sie sind zwar sehr motiviert, aber … | trotz + Gen. — Trotz großer Motivation …"
+   },
+   {
+    "type": "p",
+    "text": "中（条件）：wenn/falls/sofern（如果）→ bei + 三格：如果使用好饲料…… → 在使用好饲料的情况下……；wenn … nicht（如果不）→ ohne + 四格：如果不加强检查…… → 不加强检查的话……"
+   },
+   {
+    "type": "p",
+    "text": "中（目的）：um…zu / damit（为了）→ zu + 三格 / für + 四格：为了能更好地完成这项计划…… → 为更好地完成这项计划……"
+   },
+   {
+    "type": "p",
+    "text": "中（时间）：seitdem（自从）→ seit：自从发现了硬煤…… → 自发现硬煤以来……；nachdem（在…之后）→ nach：战争结束后……；als（当…时）→ bei：……当联邦德国经济重建时 → 在联邦德国经济重建时期；bis（直到）→ bis zu：直到经济衰退开始……；bevor（在…之前）→ vor：煤炭危机开始之前……；während（在…期间）→ während + 二格：在开采煤炭期间……"
+   },
+   {
+    "type": "p",
+    "text": "中（原因）：weil/da、deshalb/deswegen/darum（因为/所以）→ wegen / aufgrund + 二格：因为竞争激烈……"
+   },
+   {
+    "type": "p",
+    "text": "中（方式）：indem / dadurch, dass（通过……）→ durch + 四格：通过把生产基地迁往国外……"
+   },
+   {
+    "type": "p",
+    "text": "中（让步）：obwohl / trotzdem / dennoch / zwar…aber（尽管/虽然…但是）→ trotz + 二格：尽管干劲很足……"
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "Nominalisierung und Verbalisierung von Präpositionalergänzungen"
    },
    {
     "type": "p",
-    "text": "1. 名词化后介词的格要记对（bei/zu/seit/nach + 三格，ohne/für + 四格）；2. 先会\"解压\"（读懂），再练\"压缩\"（写作）。"
+    "text": "中：带介词补足语的动词：名词形式里介词直接接名词；动词形式里介词变成代副词（dafür / darüber），后面接 zu 不定式或 dass 从句。"
+   },
+   {
+    "type": "p",
+    "text": "Nominalform | Verbalform"
+   },
+   {
+    "type": "p",
+    "text": "Brainstorming setzt man für die Entwicklung neuer Ideen ein. | Brainstorming setzt man dafür ein, neue Ideen zu entwickeln."
+   },
+   {
+    "type": "p",
+    "text": "Ihr Umfeld wird sich über Ihre Kreativität freuen. | Ihr Umfeld wird sich (darüber) freuen, dass Sie kreativ sind."
+   },
+   {
+    "type": "p",
+    "text": "中：人们用头脑风暴来开发新点子。（etw. für etw. einsetzen 把……用于……；动词化：dafür einsetzen, … zu entwickeln）"
+   },
+   {
+    "type": "p",
+    "text": "中：您周围的人会为您的创造力感到高兴。（sich über etw. freuen；动词化：sich (darüber) freuen, dass Sie kreativ sind——\"Ihr/Sie\"大写是\"您\"）"
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
+   },
+   {
+    "type": "li",
+    "text": "名词化 = 把从句压缩成名词短语（Because he was ill → because of his illness），是德语书面语\"高级感\"的来源。"
+   },
+   {
+    "type": "li",
+    "text": "对应关系：wenn/falls → bei；wenn … nicht → ohne；um … zu/damit → zu/für；seitdem → seit；nachdem → nach；als → bei；bis → bis zu；bevor → vor；während → während + 二格；weil/da/deshalb → wegen/aufgrund + 二格；indem/dadurch, dass → durch；obwohl/trotzdem/zwar … aber → trotz + 二格。"
+   },
+   {
+    "type": "li",
+    "text": "介词的格要记对：bei、zu、seit、nach、vor、bis zu + 三格；ohne、für、durch + 四格；während、wegen、aufgrund、trotz + 二格。"
+   },
+   {
+    "type": "li",
+    "text": "介词宾语同理：für etw. einsetzen ↔ dafür einsetzen, … zu …；sich über etw. freuen ↔ sich (darüber) freuen, dass …。"
+   },
+   {
+    "type": "li",
+    "text": "现阶段先会\"解压\"（读懂 bei + 名词背后的 wenn 从句），再练\"压缩\"。"
    }
   ]
  },
@@ -975,390 +2477,351 @@
    },
    {
     "type": "p",
-    "text": "> 📌 C1·以后看 —— C1 教材第 7 课词汇，主题：犯罪/司法 + 政治制度。按主题跟读，不用一次背完。"
+    "text": "来源：C1 — Kapital 7 — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "📄 原文：C1 — Kapital 7 · alicelearngerman.medium.com ｜ 难度：C1"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "（alicelearngerman，2024-07-28。原文是一份词汇清单，照录（含复数标记）；\"中：\"为学习层译注，⚠ 标出原文拼写问题；小标题为学习层所加，词条顺序与原文一致。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区"
+    "text": "C1 — Kapital 7"
    },
    {
     "type": "p",
-    "text": "犯罪现场"
-   },
-   {
-    "type": "vocab",
-    "text": "die Beute",
-    "zh": "赃物"
-   },
-   {
-    "type": "vocab",
-    "text": "der Einbrecher",
-    "zh": "入室盗贼"
-   },
-   {
-    "type": "vocab",
-    "text": "erbeuten",
-    "zh": "缴获"
-   },
-   {
-    "type": "vocab",
-    "text": "die Fahndung",
-    "zh": "通缉/搜捕"
-   },
-   {
-    "type": "vocab",
-    "text": "fassen",
-    "zh": "抓住"
-   },
-   {
-    "type": "vocab",
-    "text": "festnehmen",
-    "zh": "逮捕：nimmt fest, nahm fest, hat festgenommen"
-   },
-   {
-    "type": "vocab",
-    "text": "die Verhaftung",
-    "zh": "逮捕"
-   },
-   {
-    "type": "vocab",
-    "text": "der Arrest",
-    "zh": "拘留"
-   },
-   {
-    "type": "vocab",
-    "text": "knacken",
-    "zh": "撬开"
-   },
-   {
-    "type": "vocab",
-    "text": "missglücken",
-    "zh": "失败"
-   },
-   {
-    "type": "vocab",
-    "text": "die Tarnung",
-    "zh": "伪装"
-   },
-   {
-    "type": "vocab",
-    "text": "die Überwachung",
-    "zh": "监控"
-   },
-   {
-    "type": "vocab",
-    "text": "das Urteil",
-    "zh": "判决"
-   },
-   {
-    "type": "vocab",
-    "text": "die Strafe",
-    "zh": "惩罚"
-   },
-   {
-    "type": "vocab",
-    "text": "straffällig",
-    "zh": "违法的"
-   },
-   {
-    "type": "vocab",
-    "text": "der Betrug",
-    "zh": "诈骗"
-   },
-   {
-    "type": "vocab",
-    "text": "das Delikt",
-    "zh": "违法行为"
-   },
-   {
-    "type": "vocab",
-    "text": "die Straftat",
-    "zh": "刑事犯罪"
-   },
-   {
-    "type": "vocab",
-    "text": "der Raub",
-    "zh": "抢劫"
-   },
-   {
-    "type": "vocab",
-    "text": "die Körperverletzung",
-    "zh": "人身伤害"
-   },
-   {
-    "type": "vocab",
-    "text": "präventiv",
-    "zh": "预防性的"
-   },
-   {
-    "type": "vocab",
-    "text": "entgegenwirken",
-    "zh": "对抗"
-   },
-   {
-    "type": "vocab",
-    "text": "verzögern",
-    "zh": "延迟"
+    "text": "Wortschatz -check out the fast memorize game at alicelearngerman at Tiktok"
    },
    {
     "type": "p",
-    "text": "政治制度"
-   },
-   {
-    "type": "vocab",
-    "text": "der Bundesrat",
-    "zh": "联邦参议院"
-   },
-   {
-    "type": "vocab",
-    "text": "der Gesetzgeber",
-    "zh": "立法者"
-   },
-   {
-    "type": "vocab",
-    "text": "die Rechtsprechung",
-    "zh": "司法"
-   },
-   {
-    "type": "vocab",
-    "text": "die Regelung",
-    "zh": "规定"
-   },
-   {
-    "type": "vocab",
-    "text": "die Vorschrift",
-    "zh": "条例"
-   },
-   {
-    "type": "vocab",
-    "text": "einführen",
-    "zh": "引入"
-   },
-   {
-    "type": "vocab",
-    "text": "erlassen/verabschieden",
-    "zh": "颁布法律"
-   },
-   {
-    "type": "vocab",
-    "text": "ablehnen",
-    "zh": "拒绝"
-   },
-   {
-    "type": "vocab",
-    "text": "beschließen",
-    "zh": "决定：beschließt, beschloss, hat beschlossen"
-   },
-   {
-    "type": "vocab",
-    "text": "über etw. abstimmen",
-    "zh": "就……表决"
-   },
-   {
-    "type": "vocab",
-    "text": "vorlegen",
-    "zh": "提交"
-   },
-   {
-    "type": "vocab",
-    "text": "die Bürokratie",
-    "zh": "官僚"
-   },
-   {
-    "type": "vocab",
-    "text": "der Ausschuss",
-    "zh": "委员会"
-   },
-   {
-    "type": "vocab",
-    "text": "gültig",
-    "zh": "有效的"
-   },
-   {
-    "type": "vocab",
-    "text": "erwarten",
-    "zh": "期待"
-   },
-   {
-    "type": "vocab",
-    "text": "gefährden",
-    "zh": "危及"
-   },
-   {
-    "type": "p",
-    "text": "其他"
-   },
-   {
-    "type": "vocab",
-    "text": "geistesgegenwärtig",
-    "zh": "机智的"
-   },
-   {
-    "type": "vocab",
-    "text": "schusselig",
-    "zh": "健忘的"
-   },
-   {
-    "type": "vocab",
-    "text": "ungeschickt",
-    "zh": "笨拙的"
-   },
-   {
-    "type": "vocab",
-    "text": "wachsam",
-    "zh": "警觉的"
-   },
-   {
-    "type": "vocab",
-    "text": "erstaunlich",
-    "zh": "惊人的"
-   },
-   {
-    "type": "vocab",
-    "text": "kitschig",
-    "zh": "媚俗的"
-   },
-   {
-    "type": "vocab",
-    "text": "nebensächlich",
-    "zh": "次要的"
-   },
-   {
-    "type": "vocab",
-    "text": "der Nervenkitzel",
-    "zh": "刺激"
-   },
-   {
-    "type": "vocab",
-    "text": "der Schauplatz",
-    "zh": "事发地"
-   },
-   {
-    "type": "vocab",
-    "text": "überschaubar",
-    "zh": "可掌控的"
-   },
-   {
-    "type": "vocab",
-    "text": "überwiegen",
-    "zh": "占上风：überwiegt, überwog, hat überwogen"
-   },
-   {
-    "type": "vocab",
-    "text": "die Vielfalt",
-    "zh": "多样性"
-   },
-   {
-    "type": "vocab",
-    "text": "die Auflösung",
-    "zh": "解散/解析"
-   },
-   {
-    "type": "vocab",
-    "text": "erscheinen",
-    "zh": "出现：erscheint, erschien, ist erschienen"
-   },
-   {
-    "type": "vocab",
-    "text": "belästigen",
-    "zh": "骚扰"
-   },
-   {
-    "type": "vocab",
-    "text": "annehmen",
-    "zh": "接受：nimmt an, nahm an, hat angenommen"
-   },
-   {
-    "type": "p",
-    "text": "固定搭配"
-   },
-   {
-    "type": "vocab",
-    "text": "großen Anklang finden",
-    "zh": "大受欢迎"
-   },
-   {
-    "type": "vocab",
-    "text": "sich seinen Ängsten stellen",
-    "zh": "直面恐惧"
-   },
-   {
-    "type": "vocab",
-    "text": "Gefahr laufen",
-    "zh": "冒……的风险"
-   },
-   {
-    "type": "vocab",
-    "text": "gefragt sein",
-    "zh": "抢手"
-   },
-   {
-    "type": "vocab",
-    "text": "ein Gesetz erlassen/verabschieden",
-    "zh": "颁布法律"
-   },
-   {
-    "type": "vocab",
-    "text": "jmdn. in ein Gespräch verwickeln",
-    "zh": "把某人拉进谈话"
-   },
-   {
-    "type": "vocab",
-    "text": "sich zu helfen wissen",
-    "zh": "有办法"
-   },
-   {
-    "type": "vocab",
-    "text": "die Kassen klingeln lassen",
-    "zh": "大卖"
-   },
-   {
-    "type": "vocab",
-    "text": "auf der richtigen/falschen Spur sein",
-    "zh": "找对/找错方向"
-   },
-   {
-    "type": "vocab",
-    "text": "eine Strafe über jmdn. verhängen",
-    "zh": "对某人处以惩罚"
-   },
-   {
-    "type": "vocab",
-    "text": "eine Straftat begehen/verfolgen",
-    "zh": "实施/追查犯罪"
-   },
-   {
-    "type": "vocab",
-    "text": "über die Stränge schlagen",
-    "zh": "出格"
+    "text": "中：C1 教材第 7 课词汇（主题：犯罪与侦破、法律与政治、悬疑娱乐）。她在 TikTok 上有配套的快速记忆小游戏。名词连冠词和复数一起背；动词记三形式。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "犯罪与侦破"
    },
    {
-    "type": "p",
-    "text": "这课的词有两个特点：一是\"名词带冠词背\"（die Beute / der Einbrecher / das Urteil），二是\"动词三形式一起背\"（festnehmen, nahm fest, hat festgenommen）。德语名词的性没有规律，只能跟冠词一起记——这条现在就开始练。"
+    "type": "li",
+    "text": "die Beute — 中：赃物、战利品"
    },
    {
-    "type": "p",
-    "text": "固定搭配（Nomen-Verb-Verbindungen）是 C1 写作的弹药：单个词都会，组合起来才是地道。先挑 5 个最顺眼的背：großen Anklang finden、Gefahr laufen、auf der richtigen Spur sein。"
+    "type": "li",
+    "text": "der Einbrecher, - — 中：入室盗窃者（复数 die Einbrecher）"
+   },
+   {
+    "type": "li",
+    "text": "erbeuten — 中：抢得、劫得（作为赃物）"
+   },
+   {
+    "type": "li",
+    "text": "die Fahndung, -en — 中：通缉、搜捕"
+   },
+   {
+    "type": "li",
+    "text": "fassen — 中：抓获（罪犯）：Die Polizei hat den Täter gefasst. 警方抓到了作案人。"
+   },
+   {
+    "type": "li",
+    "text": "festnehmen (nimmt fest, nahm fest, hat festgenommen) — 中：逮捕、拘捕"
+   },
+   {
+    "type": "li",
+    "text": "geistesgegenwärtig — 中：临危不乱的、反应机敏的"
+   },
+   {
+    "type": "li",
+    "text": "knacken — 中：撬开（锁、保险箱）；破解（密码）"
+   },
+   {
+    "type": "li",
+    "text": "missglücken — 中：失败、未成功（Der Einbruch ist missglückt. 盗窃没得手。）"
+   },
+   {
+    "type": "li",
+    "text": "schusselig — 中：（口语）丢三落四的、毛手毛脚的"
+   },
+   {
+    "type": "li",
+    "text": "die Tarnung, -en — 中：伪装、掩护"
+   },
+   {
+    "type": "li",
+    "text": "die Überwachung — 中：监视、监控"
+   },
+   {
+    "type": "li",
+    "text": "ungeschickt — 中：笨拙的"
+   },
+   {
+    "type": "li",
+    "text": "das Urteil, -e — 中：判决"
+   },
+   {
+    "type": "li",
+    "text": "die Verhaftung, -en — 中：逮捕"
+   },
+   {
+    "type": "li",
+    "text": "verzögern — 中：拖延、延迟"
+   },
+   {
+    "type": "li",
+    "text": "wachsam — 中：警觉的、警惕的"
+   },
+   {
+    "type": "li",
+    "text": "der Arrest,-e — 中：拘禁、禁闭"
+   },
+   {
+    "type": "li",
+    "text": "der Betrug — 中：诈骗、欺诈"
+   },
+   {
+    "type": "li",
+    "text": "das Delikt,-e — 中：违法行为、罪行"
+   },
+   {
+    "type": "li",
+    "text": "die Straftat,-en — 中：刑事犯罪行为"
+   },
+   {
+    "type": "li",
+    "text": "erstaunlich — 中：惊人的、令人吃惊的"
+   },
+   {
+    "type": "li",
+    "text": "die Körperverletzung,-en — 中：人身伤害（罪）"
+   },
+   {
+    "type": "li",
+    "text": "präventiv — 中：预防性的"
+   },
+   {
+    "type": "li",
+    "text": "der Raub — 中：抢劫"
+   },
+   {
+    "type": "li",
+    "text": "das Recht, -e — 中：法律；权利"
+   },
+   {
+    "type": "li",
+    "text": "der Rückgang, -''e — 中：下降、减少（复数 die Rückgänge；原文用 -''e 表示\"变音 + e\"）"
+   },
+   {
+    "type": "li",
+    "text": "die Strafe, -n — 中：惩罚、刑罚；罚款"
+   },
+   {
+    "type": "li",
+    "text": "straffällig — 中：犯罪的、有违法行为的（straffällig werden 犯罪）"
+   },
+   {
+    "type": "li",
+    "text": "entgegenwirken — 中：（+三格）抵制、对抗：der Kriminalität entgegenwirken 遏制犯罪"
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "法律与政治"
    },
    {
-    "type": "p",
-    "text": "1. 名词永远连冠词背；2. 动词记三形式；3. 搭配整串背，别拆。"
+    "type": "li",
+    "text": "der Ausschuss, -''e — 中：委员会（复数 die Ausschüsse）"
+   },
+   {
+    "type": "li",
+    "text": "ablehnen — 中：拒绝、否决"
+   },
+   {
+    "type": "li",
+    "text": "belästigen→ belästigt — 中：骚扰（过去分词 belästigt）"
+   },
+   {
+    "type": "li",
+    "text": "vorlegen — 中：提交、出示（einen Gesetzentwurf vorlegen 提交法案）"
+   },
+   {
+    "type": "li",
+    "text": "über etw.(A) abstimmen — 中：就某事（+四格）投票表决"
+   },
+   {
+    "type": "li",
+    "text": "annehmen (nimmt an, nahm an, hat angenommen) — 中：接受；（法案）通过；假定"
+   },
+   {
+    "type": "li",
+    "text": "beschließen (beschließt, beschloss, hat beschlossen) — 中：决定、议决"
+   },
+   {
+    "type": "li",
+    "text": "der Bundesrat — 中：（德国）联邦参议院"
+   },
+   {
+    "type": "li",
+    "text": "die Bürokratie, -n — 中：官僚主义、官僚机构"
+   },
+   {
+    "type": "li",
+    "text": "einführen — 中：引入、实施（新规定）"
+   },
+   {
+    "type": "li",
+    "text": "erwarten — 中：期待、预计"
+   },
+   {
+    "type": "li",
+    "text": "gefährden — 中：危及"
+   },
+   {
+    "type": "li",
+    "text": "der Gesetzgeben, - — 中：⚠ 原文笔误，应为 der Gesetzgeber, -（立法者、立法机关）"
+   },
+   {
+    "type": "li",
+    "text": "gültig — 中：有效的"
+   },
+   {
+    "type": "li",
+    "text": "die Rechtsprechung, -en — 中：司法、判例"
+   },
+   {
+    "type": "li",
+    "text": "die Regelung, -en — 中：规定、规章"
+   },
+   {
+    "type": "li",
+    "text": "die Vorschrift, -en — 中：条例、规定"
+   },
+   {
+    "type": "h",
+    "text": "悬疑与娱乐"
+   },
+   {
+    "type": "li",
+    "text": "die Auflösung, -en — 中：（谜题/案件的）解答、谜底；解散"
+   },
+   {
+    "type": "li",
+    "text": "erscheinen (erscheint, erschien, ist erschienen) — 中：出现；（书）出版"
+   },
+   {
+    "type": "li",
+    "text": "kitschi — 中：⚠ 原文笔误，应为 kitschig（俗气的、媚俗的）"
+   },
+   {
+    "type": "li",
+    "text": "nebensächlich — 中：次要的"
+   },
+   {
+    "type": "li",
+    "text": "der Nervenkitzel — 中：刺激感、惊险感"
+   },
+   {
+    "type": "li",
+    "text": "der Schauplatz, -''e — 中：（事件发生的）现场、场景（复数 die Schauplätze）"
+   },
+   {
+    "type": "li",
+    "text": "überschaubar — 中：一目了然的、规模可控的"
+   },
+   {
+    "type": "li",
+    "text": "überwiegen (überwiegt, überwog, hat überwogen) — 中：占优势、占多数（不可分动词）"
+   },
+   {
+    "type": "li",
+    "text": "die Vielfalt — 中：多样性"
+   },
+   {
+    "type": "h",
+    "text": "Redewendungen（固定表达）"
+   },
+   {
+    "type": "li",
+    "text": "großen Anklang finden — 中：大受欢迎、获得热烈反响"
+   },
+   {
+    "type": "li",
+    "text": "sich seinen Ängsten stellen — 中：直面自己的恐惧"
+   },
+   {
+    "type": "li",
+    "text": "die Sturmfreie Bude — 中：（口语）家里大人不在、可以随意的房子（⚠ 形容词应小写：die sturmfreie Bude；常用 sturmfreie Bude haben）"
+   },
+   {
+    "type": "li",
+    "text": "Gefahr laufen — 中：冒……的风险（Gefahr laufen, etw. zu verlieren 有失去……的危险）"
+   },
+   {
+    "type": "li",
+    "text": "gefragt sein — 中：受欢迎、抢手"
+   },
+   {
+    "type": "li",
+    "text": "ein Gesetz erlassen — 中：颁布一项法律"
+   },
+   {
+    "type": "li",
+    "text": "ein Gesetz verabschieden — 中：（议会）通过一项法律"
+   },
+   {
+    "type": "li",
+    "text": "jmd. in ein Gespräch verwickeln — 中：把某人拉进谈话（⚠ 规范写法 jmdn.，四格）"
+   },
+   {
+    "type": "li",
+    "text": "sich zu helfen wissen — 中：懂得自救、有办法应付"
+   },
+   {
+    "type": "li",
+    "text": "die Kassen klingeln lassen — 中：（让）大赚一笔、财源滚滚"
+   },
+   {
+    "type": "li",
+    "text": "einen Kick geben — 中：（口语）带来刺激/动力"
+   },
+   {
+    "type": "li",
+    "text": "ein andere Sicht der Dinge — 中：对事情的另一种看法（⚠ 原文语法有误，应为 eine andere Sicht der Dinge）"
+   },
+   {
+    "type": "li",
+    "text": "etw./jmd. auf der richtigen(falschen) Spur sein — 中：（侦查）在正确/错误的线索上；方向对/不对"
+   },
+   {
+    "type": "li",
+    "text": "eine Strafe über jmdn. verhängen — 中：对某人处以刑罚"
+   },
+   {
+    "type": "li",
+    "text": "eine Straftat begehen/verfolgen — 中：犯下/追查一项罪行"
+   },
+   {
+    "type": "li",
+    "text": "über die Stränge schlagen — 中：（口语）放纵、出格、玩过头"
+   },
+   {
+    "type": "h",
+    "text": "中文要点"
+   },
+   {
+    "type": "li",
+    "text": "词表按主题记：犯罪与侦破、法律与政治、悬疑与娱乐、固定表达。"
+   },
+   {
+    "type": "li",
+    "text": "名词连冠词和复数一起背（der Einbrecher, -；die Fahndung, -en），不规则动词记三种形式（festnehmen – nahm fest – hat festgenommen）。"
+   },
+   {
+    "type": "li",
+    "text": "固定搭配整串背，先挑几个：großen Anklang finden、Gefahr laufen、auf der richtigen Spur sein、sich zu helfen wissen（自有办法）。"
+   },
+   {
+    "type": "li",
+    "text": "原文几处笔误已用 ⚠ 标出：Gesetzgeber、kitschig、die sturmfreie Bude、jmdn. in ein Gespräch verwickeln、eine andere Sicht der Dinge。"
    }
   ]
  },
@@ -1372,69 +2835,147 @@
    },
    {
     "type": "p",
-    "text": "> 📌 C1·以后看 —— \"太……以至于不能……\"的否定结果从句，写作加分句式。"
+    "text": "来源：C1 — Kapital 5 Ziele — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "📄 原文：C1 — Kapital 5 Ziele · alicelearngerman.medium.com ｜ 难度：C1"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "（alicelearngerman，2024-07-04。正文含 2 张图片（注明 \"Notizen von <Aspekt Neu C1>\"），以下为原文文字 + 图片文字逐字转录；\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区：三种\"否定结果\"句式"
+    "text": "C1 — Kapital 5 Ziele"
+   },
+   {
+    "type": "p",
+    "text": "Modul 1 Vernetzt"
+   },
+   {
+    "type": "p",
+    "text": "中：第 5 课\"目标\"，模块 1 \"联网\"。"
+   },
+   {
+    "type": "h",
+    "text": "Grammatik"
+   },
+   {
+    "type": "p",
+    "text": "Konsekutivsätze mit zu …, um zu und zu …, als dass drücken eine negative Folge aus."
+   },
+   {
+    "type": "p",
+    "text": "中：用 zu …, um zu 和 zu …, als dass 构成的结果从句表达\"否定的结果\"（太……以至于不能……；≈ too … to …）。"
+   },
+   {
+    "type": "h",
+    "text": "Negative Konsekutivsätze（图片 1）"
+   },
+   {
+    "type": "p",
+    "text": "Konsekutivsätze mit zu …, um zu und zu …, als dass drücken eine negative Folge aus. Sie bestehen aus zwei Teilen: zu steht im Hauptsatz vor einem Adjektiv oder Partizip, um zu und als dass leiten den Nebensatz ein. Nach um zu steht der Infinitiv, nach als dass steht das Verb im Konjunktiv II."
+   },
+   {
+    "type": "p",
+    "text": "中：这种结果句由两部分组成：zu 放在主句里形容词或分词前面；um zu 和 als dass 引出从句。um zu 后面用不定式（主从句主语相同时），als dass 后面的动词用第二虚拟式（主语不同时）。"
+   },
+   {
+    "type": "p",
+    "text": "EN: zu + adjective in the main clause; \"um … zu\" + infinitive (same subject) or \"als dass\" + Konjunktiv II (different subject)."
+   },
+   {
+    "type": "h",
+    "text": "Übung（图片 2：把 so …, dass … nicht 改写成 zu …）"
+   },
+   {
+    "type": "p",
+    "text": "1. Hinsichtlich der Datensicherheit wurde schon so oft gelogen, dass man den Betreibern von Netzwerken nicht glauben kann."
+   },
+   {
+    "type": "p",
+    "text": "→ Hinsichtlich der Datensicherheit wurde schon zu oft gelogen, als dass man den Betreibern von Netzwerken glauben könnte."
+   },
+   {
+    "type": "p",
+    "text": "中：在数据安全方面，谎话已经说得太多了，以至于人们没法再相信网络运营商。（主语不同 → als dass + könnte）"
+   },
+   {
+    "type": "p",
+    "text": "2. Persönliche Daten sind so wichtig, dass man sie nicht bedenkenlos ins Netz stellt."
+   },
+   {
+    "type": "p",
+    "text": "→ Persönliche Daten sind zu wichtig, um sie bedenkenlos ins Netz zu stellen."
+   },
+   {
+    "type": "p",
+    "text": "中：个人数据太重要了，不能毫无顾虑地放到网上。（这里 um…zu 的逻辑主语是泛指的\"人\"）"
+   },
+   {
+    "type": "p",
+    "text": "3. Täglich gehen so viele E-Mails ein, dass die Mitarbeiter sie nicht alle lesen können."
+   },
+   {
+    "type": "p",
+    "text": "→ Täglich gehen zu viele E-Mails ein, als dass die Mitarbeiter sie alle lesen könnten."
+   },
+   {
+    "type": "p",
+    "text": "中：每天收到的邮件太多，员工们不可能全部读完。（主语不同 → als dass + könnten）"
+   },
+   {
+    "type": "p",
+    "text": "4. Allerdings sind heute die Anschaffungskosten für Netzwerke noch so hoch, dass sie sich nicht erfolgreich auf dem Markt durchsetzen."
+   },
+   {
+    "type": "p",
+    "text": "→ Allerdings sind heute die Anschaffungskosten für Netzwerke noch zu hoch, um sieerfolgreich auf dem Markt durchzusetzen."
+   },
+   {
+    "type": "p",
+    "text": "中：不过如今网络的购置成本还太高，无法在市场上成功普及。⚠ 原文改写句笔误：应为 …, um sich erfolgreich auf dem Markt durchzusetzen.（sich durchsetzen 是反身动词，\"sie\" 应为 \"sich\"，且漏了空格）"
+   },
+   {
+    "type": "h",
+    "text": "Wortschatz"
    },
    {
     "type": "li",
-    "text": "zu + 形容词/分词 … als dass + 从句（动词用 Konjunktiv II）—— 太……以至于不能……"
+    "text": "seine Ziele planen/ entwickeln/formulieren"
    },
    {
     "type": "li",
-    "text": "um … zu 的否定用法 —— 太重要了，不能随便……"
+    "text": "中：规划 / 制定 / 表述自己的目标"
    },
    {
-    "type": "p",
-    "text": "例句：„…zu oft gelogen, als dass man … glauben könnte.\"（撒谎太多次了，没法再信了。）"
+    "type": "li",
+    "text": "sich auf ein Teilgebiet spezialisieren"
    },
    {
-    "type": "p",
-    "text": "例句：„Persönliche Daten sind zu wichtig, um sie bedenkenlos ins Netz zu stellen.\"（个人数据太重要，不能随便发到网上。）"
-   },
-   {
-    "type": "p",
-    "text": "目标主题词汇"
-   },
-   {
-    "type": "vocab",
-    "text": "seine Ziele planen / entwickeln / formulieren",
-    "zh": "规划/制定/明确目标"
-   },
-   {
-    "type": "vocab",
-    "text": "sich auf ein Teilgebiet spezialisieren",
-    "zh": "专攻某个细分领域"
+    "type": "li",
+    "text": "中：专攻某个分支领域"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "中文要点"
    },
    {
-    "type": "p",
-    "text": "这就是英语的 too … to … 结构：\"too important to post online\"。德语版拆成两截：zu 放在主句的形容词前，als dass 引出从句，从句动词用第二虚拟式表\"不可能实现\"。"
+    "type": "li",
+    "text": "否定结果句 =\"太……以至于不能……\"（too … to …）：zu 放在主句的形容词/分词前，后面接 um … zu 或 als dass。"
    },
    {
-    "type": "p",
-    "text": "现阶段记住第一句的骨架就行：zu + 形容词 …, als dass … könnte —— 写作里套一次，老师就知道你 C1 了。"
+    "type": "li",
+    "text": "主语相同（或泛指的\"人\"）用 um … zu + 不定式；主语不同用 als dass + 第二虚拟式（könnte / könnten）。"
    },
    {
-    "type": "h",
-    "text": "📌 规则小提示"
+    "type": "li",
+    "text": "改写套路：so …, dass … nicht → zu …, um … zu / zu …, als dass …（nicht 去掉）。"
    },
    {
-    "type": "p",
-    "text": "1. als dass 从句动词用 Konjunktiv II；2. um…zu 版主从句主语要一致；3. 口语里直接说 zu … zum … 也行，但考试写全式。"
+    "type": "li",
+    "text": "原文第 4 句 \"um sie erfolgreich … durchzusetzen\" 应为 um sich …（sich durchsetzen 是反身动词）。"
    }
   ]
  },
@@ -1448,63 +2989,123 @@
    },
    {
     "type": "p",
-    "text": "> 📌 C1·以后看 —— 主语/宾语从句和不定式的互换，核心只有一条：主语一致就能压成不定式。"
+    "text": "来源：C1 — Subjekt und Objektsätze — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "📄 原文：C1 — Subjekt und Objektsätze · alicelearngerman.medium.com ｜ 难度：C1"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "（alicelearngerman，2024-06-19。原文照录，\"中：\"为学习层译注。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区：规则三条"
+    "text": "C1 — Subjekt und Objektsätze"
    },
    {
     "type": "p",
-    "text": "1. 主语或宾语可以扩展成 dass 从句。"
+    "text": "Subjekte und Akkusativobjekte können zu dass-Sätzen erweitert werden. Anstelle eines dass-satzes kann auch ein Infinitiv benutzt werden, wenn das Subjekt des Nebensatzes mit einer Ergänzung im Hauptsatz identisch ist oder das Subjekt des Nebensatzes dass ist. Manchmal muss man den dass-Satz ins Passiv setzen, um einen Infinitivsatz zu bilden."
    },
    {
     "type": "p",
-    "text": "2. 从句主语和主句主语一致（或从句主语是 es）时，dass 从句可压成不定式。"
+    "text": "中：主语和四格宾语都可以扩展成 dass 从句。在以下两种情况下，可以用不定式代替 dass 从句：① 从句主语与主句中的某个成分（主语或宾语等补足语）相同；② 从句主语是泛指的 man（⚠ 原文 \"das Subjekt des Nebensatzes dass ist\" 是笔误，教材原句应为 \"… man ist\"）。有时得先把 dass 从句改成被动，才能变成不定式。"
    },
    {
     "type": "p",
-    "text": "3. 有时需要先把 dass 从句改成被动，才能压成不定式。"
+    "text": "EN: Subjects and accusative objects can be expanded into dass-clauses. An infinitive can replace the dass-clause if its subject is identical with a complement in the main clause, or if its subject is \"man\". Sometimes you must make the dass-clause passive first."
    },
    {
     "type": "p",
-    "text": "例句：„Viele Bewerber fürchten, kritisiert zu werden.\"（很多求职者害怕被批评。）"
+    "text": "In German, the accusative object is the recipient of the direct action of the verb. Not all sentences have an accusative object, especially if the verb is intransitive (does not take a direct object) or if the object of the verb is in another case (like dative)."
    },
    {
     "type": "p",
-    "text": "例句：„Viele Bewerber sind nervös, weil sie Kritik fürchten.\""
+    "text": "中：德语四格宾语是动词动作的直接承受者。并非每个句子都有四格宾语，比如不及物动词，或动词支配的是其他格（如三格）。"
    },
    {
     "type": "p",
-    "text": "例句：„Es ist wichtig, dass ein passender Beruf gewählt wird.\""
+    "text": "Die Wahl eines passenden Berufs ist sehr wichtig. (no direct object)"
+   },
+   {
+    "type": "p",
+    "text": "中：选择一份合适的职业非常重要。（名词短语 Die Wahl … 作主语；句中没有直接宾语）"
+   },
+   {
+    "type": "p",
+    "text": "Es ist wichtig, dass man den passenden Beruf wählt."
+   },
+   {
+    "type": "p",
+    "text": "中：选择合适的职业很重要。（主语扩展成 dass 从句；从句主语是 man → 也可直接说：Es ist wichtig, den passenden Beruf zu wählen.）"
+   },
+   {
+    "type": "p",
+    "text": "Es ist wichtig, dass ein passender Beruf gewählt wird."
+   },
+   {
+    "type": "p",
+    "text": "中：合适的职业被选中，这一点很重要。（被动形式的 dass 从句）"
+   },
+   {
+    "type": "p",
+    "text": "Original with \"dass\": „Viele Bewerber fürchten, dass sie kritisiert werden.\""
+   },
+   {
+    "type": "p",
+    "text": "中：许多求职者担心自己会被批评。（宾语从句）"
+   },
+   {
+    "type": "p",
+    "text": "With Infinitive Clause: „Viele Bewerber fürchten, kritisiert zu werden.\""
+   },
+   {
+    "type": "p",
+    "text": "中：许多求职者害怕被批评。（主从句主语相同 → 被动不定式 kritisiert zu werden）"
+   },
+   {
+    "type": "p",
+    "text": "With Relative Clause: „Viele Bewerber, die Kritik fürchten, sind nervös.\""
+   },
+   {
+    "type": "p",
+    "text": "中：许多害怕批评的求职者很紧张。（关系从句改写）"
+   },
+   {
+    "type": "p",
+    "text": "With Participial Construction: „Viele Bewerber, vor Kritik fürchtend, sind nervös.\""
+   },
+   {
+    "type": "p",
+    "text": "中：许多求职者因害怕批评而紧张。⚠ 这句不规范：\"vor … fürchten\" 需要反身：…, sich vor Kritik fürchtend, …；更自然的是 \"Viele Kritik fürchtende Bewerber sind nervös.\""
+   },
+   {
+    "type": "p",
+    "text": "With Different Connector: „Viele Bewerber sind nervös, weil sie Kritik fürchten.\""
+   },
+   {
+    "type": "p",
+    "text": "中：许多求职者很紧张，因为他们害怕批评。（换成 weil 原因从句）"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "中文要点"
    },
    {
-    "type": "p",
-    "text": "英语里一模一样的操作：\"I hope that I can pass\" → \"I hope to pass\"——主语都是 I，从句就压成了不定式。德语同理：第一句里\"害怕的人\"和\"被批评的人\"是同一批求职者，所以 dass 从句压成了 kritisiert zu werden。"
+    "type": "li",
+    "text": "主语和四格宾语都可以扩展成 dass 从句。"
    },
    {
-    "type": "p",
-    "text": "第三句是反例：主句主语是 es（形式主语），真正的逻辑主语在从句里，主语不一致，就只能老老实实写 dass 从句。"
+    "type": "li",
+    "text": "两种情况可以把 dass 从句换成不定式：① 从句主语与主句的某个补足成分（主语或宾语）相同；② 从句主语是泛指的 man（Es ist wichtig, dass man den passenden Beruf wählt → Es ist wichtig, den passenden Beruf zu wählen.）。"
    },
    {
-    "type": "h",
-    "text": "📌 规则小提示"
+    "type": "li",
+    "text": "有时要先把 dass 从句变成被动，再换成被动不定式（第二分词 + zu werden）：Viele Bewerber fürchten, kritisiert zu werden."
    },
    {
-    "type": "p",
-    "text": "1. 先判断主语是否一致；2. 被动不定式 = Partizip II + zu werden；3. 不确定就写 dass 从句，永远不错。"
+    "type": "li",
+    "text": "同一个意思还可以用关系从句、分词结构、weil 从句或名词短语（Die Wahl eines passenden Berufs …）表达。"
    }
   ]
  },
@@ -1518,76 +3119,407 @@
    },
    {
     "type": "p",
-    "text": "> 📌 C1·以后看 —— 一篇 C1 阅读文本的语法标注，重点是\"名词+动词\"固定搭配，当搭配词库收着。"
+    "text": "来源：C1 — Die neue Dialektik text analyze — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "📄 原文：C1 — Die neue Dialektik text analyze · alicelearngerman.medium.com ｜ 难度：C1"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "（alicelearngerman，2024-06-17。她对一篇 C1 阅读文本（关于德国方言复兴）逐句做语法标注。原文照录；\"中：\"为学习层译注。注意：标题里的 \"Dialektik\" 是文字游戏——文章讲的是 Dialekt（方言）。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区"
+    "text": "C1 — Die neue Dialektik text analyze"
    },
    {
     "type": "p",
-    "text": "文本里的语法点"
-   },
-   {
-    "type": "vocab",
-    "text": "Konjunktiv II",
-    "zh": "dürften"
-   },
-   {
-    "type": "vocab",
-    "text": "Inversion",
-    "zh": "倒装"
-   },
-   {
-    "type": "vocab",
-    "text": "Passiv",
-    "zh": "dürfen aufgestellt werden"
-   },
-   {
-    "type": "vocab",
-    "text": "过去时",
-    "zh": "legte ab, lernte, vermied"
-   },
-   {
-    "type": "vocab",
-    "text": "反身动词",
-    "zh": "sich verlieben, sich auflösen, sich vermehren"
+    "text": "analyze the text sentence by sentence, highlighting important grammar points (B1, B2, C1), important noun-verb combinations (Nominal-Verb-Verbindungen), important reflexive verbs, and verbs with fixed prepositions."
    },
    {
     "type": "p",
-    "text": "名词+动词搭配：eine Geschichte erleben ｜ Dialekt ablegen ｜ Dialekt anklingen lassen ｜ als Vorlage dienen ｜ Nachrichten verbreiten ｜ einen Versuch machen ｜ Dialekte vorspielen ｜ besser abschneiden ｜ Interesse für etwas haben ｜ in Dialekten erscheinen ｜ Gefühle erreichen ｜ zum ersten Mal auffallen ｜ im gleichen Maße steigen ｜ eine Sprache verlieren ｜ angesehen sein ｜ einen Dialekt beherrschen ｜ komisch wirken"
+    "text": "中：逐句分析课文，标出重要语法点（B1/B2/C1）、名词-动词固定搭配、重要反身动词和固定介词搭配的动词。"
    },
    {
     "type": "p",
-    "text": "动词+介词：gelten als ｜ dienen als ｜ gleichsetzen mit ｜ beherrscht von ｜ ausbilden in ｜ erscheinen in ｜ bestehen aus ｜ vertrieben aus ｜ Liebe zu"
+    "text": "Die allermeisten Menschen, die heute erwachsen sind und statt Hochdeutsch zuerst einmal einen Dialekt gelernt haben, dürften eine solche oder ähnliche Geschichte erlebt haben:"
+   },
+   {
+    "type": "p",
+    "text": "中：如今已成年、最先学会的不是标准德语而是方言的绝大多数人，大概都经历过这样或类似的故事："
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "Konjunktiv II (B2): dürften"
+   },
+   {
+    "type": "p",
+    "text": "Noun-Verb Combinations: eine Geschichte erleben"
+   },
+   {
+    "type": "p",
+    "text": "中：语法点：dürften 是第二虚拟式，在这里表示推测（\"大概、想必\"），不是\"被允许\"。搭配：eine Geschichte erleben 经历一件事。"
+   },
+   {
+    "type": "p",
+    "text": "Sie hatten sich verliebt, fragil noch war die Partnerschaft, und dann klingelte irgendwann das Telefon, und die Mutter war dran. Oder der Vater. Oder ein alter Freund von früher."
+   },
+   {
+    "type": "p",
+    "text": "中：他们恋爱了，关系还很脆弱，然后某天电话响了，是母亲打来的。或者是父亲。或者是以前的一个老朋友。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "Inversion (C1): fragil noch war die Partnerschaft"
+   },
+   {
+    "type": "p",
+    "text": "Reflexive Verbs: sich verlieben"
+   },
+   {
+    "type": "p",
+    "text": "中：语法点：倒装——把表语 fragil 提到句首以示强调（正常语序：die Partnerschaft war noch fragil）。反身动词：sich verlieben 爱上（Plusquamperfekt：hatten sich verliebt）。"
+   },
+   {
+    "type": "p",
+    "text": "Und zum allerersten Mal hörte einen der neue Partner Dialekt sprechen."
+   },
+   {
+    "type": "p",
+    "text": "Die Angerufenen fürchteten nach solchen Telefonaten, sofort wieder verlassen zu werden."
+   },
+   {
+    "type": "p",
+    "text": "中：于是新伴侣生平第一次听到自己说方言。（einen = man 的四格，\"自己/某人\"；hören + 四格 + 不定式）接电话的人在这类通话后都害怕马上又会被甩。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "Passiv (B1): Die Angerufenen"
+   },
+   {
+    "type": "p",
+    "text": "Noun-Verb Combinations: verlassen werden: to be left"
+   },
+   {
+    "type": "p",
+    "text": "中：⚠ 原文标注不准：die Angerufenen 是第二分词名词化（\"被叫通电话的人\"），本身不是被动句；这句真正的被动是不定式 verlassen zu werden（被抛弃）。"
+   },
+   {
+    "type": "p",
+    "text": "Bis vor wenigen Jahren galt, wer Dialekt spricht, als ungebildet, als ein bisschen minderbemittelt."
+   },
+   {
+    "type": "p",
+    "text": "中：直到几年前，说方言的人还被视为没文化、有点\"脑子不太灵光\"。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "Verbs with Prepositions: gelten als: etw./j-d gilt als/für etw. Er gilt als großer Künstler. 他被视为一位伟大的艺术家。"
+   },
+   {
+    "type": "p",
+    "text": "中：gelten als + 一格：被看作……（这里主语是 wer 引导的从句\"说方言的人\"）。"
+   },
+   {
+    "type": "p",
+    "text": "Wer etwas auf sich hielt, legte seinen Dialekt ab, lernte Hochdeutsch und vermied, den Dialekt auch nur anklingen zu lassen."
+   },
+   {
+    "type": "p",
+    "text": "中：凡是有点自尊、在乎形象的人，都会丢掉方言、学习标准德语，甚至避免流露出一丁点方言口音。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "Vergangenheit (B1): legte ab, lernte, vermied"
+   },
+   {
+    "type": "p",
+    "text": "Noun-Verb Combinations: Dialekt ablegen: to abandon dialect, Dialekt anklingen lassen: to let dialect resonate"
+   },
+   {
+    "type": "p",
+    "text": "中：过去时：ablegen（丢掉、摒弃）、lernen、vermeiden（避免，不规则：vermied）。搭配：etwas auf sich halten 注重自己的形象；den Dialekt anklingen lassen 让方言口音隐约流露。"
+   },
+   {
+    "type": "p",
+    "text": "Seit einigen Jahren löst sich dieses Stigma langsam auf."
+   },
+   {
+    "type": "p",
+    "text": "中：几年来，这种污名正慢慢消散。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "Reflexive Verbs: sich auflösen"
+   },
+   {
+    "type": "p",
+    "text": "中：反身动词 sich auflösen 消散、解散。"
+   },
+   {
+    "type": "p",
+    "text": "In Niedersachsen bringen einige Schulen Kindern Platt bei. In Hamburg dürfen offizielle Stadttafeln in dieser Sprache aufgestellt werden. In Bayern bilden Theaterleute junge Schauspieler im Bairischen aus. In ganz Deutschland sind Radio-Tatorte zu hören, in denen die Kommissare einen noch stärkeren Dialekt sprechen als die Kommissare im Fernsehen, und Asterix-Bände sind mittlerweile in 22 deutschen Dialekten erschienen, Däm Asterix singe Jung heißt Der Sohn des Asterix auf Kölsch."
+   },
+   {
+    "type": "p",
+    "text": "中：在下萨克森，一些学校教孩子低地德语（Platt）。在汉堡，官方的城市标牌可以用这种语言竖立。在巴伐利亚，戏剧人用巴伐利亚方言培训年轻演员。在全德国都能听到广播版《犯罪现场》，里面的探长说的方言比电视里的探长还重；《阿斯特里克斯》漫画如今已出了 22 种德语方言版，\"Däm Asterix singe Jung\" 就是科隆话版的《阿斯特里克斯之子》。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "beibringen: to teach"
+   },
+   {
+    "type": "p",
+    "text": "Passiv (B1): dürfen aufgestellt werden"
+   },
+   {
+    "type": "p",
+    "text": "Noun-Verb Combinations: Stadttafeln aufstellen: to erect city signs"
+   },
+   {
+    "type": "p",
+    "text": "ausbilden in: to train in"
+   },
+   {
+    "type": "p",
+    "text": "Noun-Verb Combinations: in Dialekten erscheinen: to appear in dialects"
+   },
+   {
+    "type": "p",
+    "text": "Verbs with Prepositions: sprechen als: to speak as, erscheinen in: to appear in"
+   },
+   {
+    "type": "p",
+    "text": "中：jmdm. (三格) etw. (四格) beibringen 教某人某事；情态被动 dürfen aufgestellt werden 可以被竖立；jmdn. in etw. ausbilden 在……方面培训某人；sind zu hören = können gehört werden（sein + zu 表被动可能）；erscheinen in 以……出版。⚠ \"sprechen als\" 在这里不是固定搭配：als 是比较连词（einen noch stärkeren Dialekt … als die Kommissare im Fernsehen 比……更重）。"
+   },
+   {
+    "type": "p",
+    "text": "Dabei passt es besonders gut, dass die Geschichten des Galliers Asterix als Vorlage dienen. Mit ein bisschen Fantasie ist die Übermacht der Römer mit der Hochsprache gleichzusetzen. Wer die Hefte liest, denkt sich: „Ganz Deutschland ist vom Hochdeutsch beherrscht … Ganz Deutschland? Nein!\""
+   },
+   {
+    "type": "p",
+    "text": "中：而且用高卢人阿斯特里克斯的故事作蓝本特别合适。稍加想象，就可以把罗马人的强势等同于标准语。读这些漫画的人会想：\"整个德国都被标准德语统治了……整个德国？不！\"（套用漫画开头\"整个高卢都被罗马人占领了……整个高卢？不！\"）"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "Reflexive Verbs: sich denken"
+   },
+   {
+    "type": "p",
+    "text": "Verbs with Prepositions: beherrscht von: dominated by"
+   },
+   {
+    "type": "p",
+    "text": "Verbs with Prepositions: gleichsetzen mit: to equate with"
+   },
+   {
+    "type": "p",
+    "text": "Noun-Verb Combinations: als Vorlage dienen: to serve as a template"
+   },
+   {
+    "type": "p",
+    "text": "Verbs with Prepositions: dienen als: to serve as"
+   },
+   {
+    "type": "p",
+    "text": "中：sich (三格) etw. denken 心想；von … beherrscht sein 被……统治（状态被动）；etw. mit etw. gleichsetzen 把……等同于……（ist … gleichzusetzen = kann gleichgesetzt werden，sein + zu）；als Vorlage dienen 用作蓝本。"
+   },
+   {
+    "type": "p",
+    "text": "Jahrelang überlebte der Dialekt in Deutschland fast ausschließlich in zwei Formen: im Komödienstadel und in der Politik. Kabarettisten benutzen den Dialekt, um komisch zu wirken. Ein Satz auf Sächsisch, und das Publikum lachte. Und Politiker sprachen Dialekt, weil sie glaubten, damit den Menschen in ihrem Wahlkreis imponieren zu können. Jetzt vermehrt sich der Dialekt auch anderswo: im ernsthaften Theater, im Film, in der Musik, in der Werbung. Es gibt eine Renaissance der Dialekte."
+   },
+   {
+    "type": "p",
+    "text": "中：多年来，方言在德国几乎只以两种形式存活：在乡土喜剧（Komödienstadel）里和在政治中。小品演员用方言来制造滑稽效果。一句萨克森话，观众就笑了。政客说方言，是因为他们相信这样能打动自己选区的人。如今方言也在别处增多：在严肃戏剧、电影、音乐和广告里。方言正在复兴。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "überleben der Dialekt"
+   },
+   {
+    "type": "p",
+    "text": "komisch wirken: to appear funny"
+   },
+   {
+    "type": "p",
+    "text": "imponieren können: to be able to impress"
+   },
+   {
+    "type": "p",
+    "text": "Reflexive Verbs: sich vermehren"
+   },
+   {
+    "type": "p",
+    "text": "中：überleben 存活（这里主语 der Dialekt 在动词后：倒装）；komisch wirken 显得滑稽（um … zu 目的）；jmdm. (三格) imponieren 给某人留下深刻印象；sich vermehren 增多。"
+   },
+   {
+    "type": "p",
+    "text": "Es gibt keine wissenschaftlichen Zahlen darüber, wie angesehen Dialekte zu welchen Zeiten waren und es heute sind. Alfred Lameli vom Forschungsinstitut für deutsche Sprache in Marburg sagt, dass zwar von Jahr zu Jahr weniger Menschen einen echten Dialekt sprechen, weil die Alten, die ihn noch beherrschen, sterben und weil es für die Jungen immer weniger Gelegenheiten gibt, ihn zu sprechen: Aus den Schulen, den Büros, den Ämtern wurde der Dialekt vertrieben. Allerdings scheint es so, als steige im gleichen Maße, wie die ursprünglichen Dialektsprecher verschwinden, die Liebe der Nachkommen zu diesen Dialekten. Vor ein paar Jahren ist es Lameli zum ersten Mal aufgefallen: Die Nachrichtensprecher im Privatradio sprechen kein Hochdeutsch, sondern eine Mischform aus Dialekt und Hochdeutsch, Regiolekt nennt er das. Die Menschen sollen von Vertrautem zu hören bekommen, das Radio will ihre Gefühle erreichen, nicht nur ihren Verstand. Dann fiel Lameli auf, dass auch die Moderatoren der Fernsehnachrichten kein perfektes Hochdeutsch mehr sprechen, nicht die der privaten Sender und auch nicht die des ZDF. Im Grunde genommen, sagt Lameli, gebe es das Hochdeutsch in seiner Reinform nur noch in der Tagesschau und in den Tagesthemen."
+   },
+   {
+    "type": "p",
+    "text": "中：关于方言在各个时期以及今天受尊重的程度，并没有科学数据。马尔堡德语研究所的 Alfred Lameli 说，虽然说地道方言的人一年比一年少——因为还掌握方言的老人在去世，年轻人说方言的机会也越来越少：方言已被赶出了学校、办公室和政府机关。不过，看起来随着原本说方言的人消失，后代对这些方言的喜爱也在同等程度地上升。几年前 Lameli 第一次注意到：私营电台的新闻播音员说的不是标准德语，而是方言和标准语的混合体，他称之为\"地区方言\"（Regiolekt）。人们应该听到熟悉的东西，电台想打动的是听众的感情，而不只是理智。后来 Lameli 又发现，电视新闻主持人也不再说完美的标准德语了，私营台不说，连 ZDF 的也不说。Lameli 说，归根结底，纯正的标准德语只剩下《每日新闻》（Tagesschau）和《今日话题》（Tagesthemen）里还有。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "angesehen sein: to be respected"
+   },
+   {
+    "type": "p",
+    "text": "einen Dialekt beherrschen: to master a dialect"
+   },
+   {
+    "type": "p",
+    "text": "vertrieben aus: to be expelled from"
+   },
+   {
+    "type": "p",
+    "text": "im gleichen Maße steigen: to increase in the same measure"
+   },
+   {
+    "type": "p",
+    "text": "Liebe zu etwas: love for something"
+   },
+   {
+    "type": "p",
+    "text": "Allerdings scheint es so 然而，似乎是这样"
+   },
+   {
+    "type": "p",
+    "text": "zum ersten Mal auffallen"
+   },
+   {
+    "type": "p",
+    "text": "eine Mischform aus Dialekt und Hochdeutsch: a mixture of dialect and Standard German"
+   },
+   {
+    "type": "p",
+    "text": "Gefühle erreichen: to reach feelings"
+   },
+   {
+    "type": "p",
+    "text": "中：angesehen sein 受人尊敬；einen Dialekt beherrschen 精通方言；aus … vertrieben werden 被赶出（过去时被动 wurde vertrieben）；im gleichen Maße steigen 同等程度地上升；die Liebe zu + 三格 对……的爱；es scheint so, als steige … 看起来似乎……（als + 第一虚拟式 steige，动词紧跟 als）；jmdm. auffallen 引起某人注意（ist … aufgefallen）；eine Mischform aus … 由……混合而成的形式；von Vertrautem zu hören bekommen 听到熟悉的东西；gebe es（第一虚拟式，间接引语）。"
+   },
+   {
+    "type": "p",
+    "text": "Mitte der zwanziger Jahre haben viele Deutsche zum allerersten Mal Hochdeutsch gehört — weil es das Radio gab. Das Radio hat nicht nur Nachrichten verbreitet, sondern auch das Hochdeutsch im Land. Heute hören die meisten Menschen im Radio und im Fernsehen keine reine Hochsprache mehr. Es ist anzunehmen, dass sie diese Sprache so langsam wieder verlieren. Lameli hat zwei seiner Studenten einen Versuch machen lassen. Sie spielten zwei Gruppen von Testpersonen verschiedene um die Stadt Kassel herum gesprochene Dialekte vor. In der ersten Gruppe waren die Menschen zwischen 60 und 70 Jahren. Die zweite Gruppe bestand aus Schülern der neunten Klasse. Sie alle sollten die Himmelsrichtung angeben, von der sie glaubten, dass der jeweilige Dialekt, von Kassel aus betrachtet, gesprochen werde. Was Lameli und seine Studenten verblüfft hat: Die Jüngeren schnitten dabei besser ab als die Alten, obwohl sie früher mehr Dialekt gesprochen wurde. Die Jüngeren haben offenbar ein besseres Gehör, ein größeres Interesse für die Unterschiede."
+   },
+   {
+    "type": "p",
+    "text": "中：二十年代中期，很多德国人第一次听到标准德语——因为有了广播。广播不仅传播了新闻，也把标准德语传遍了全国。如今大多数人在广播和电视里再也听不到纯正的标准语了。可以推测，他们会慢慢地再次失去这种语言。Lameli 让他的两个学生做了一个实验。他们给两组受试者播放卡塞尔周边地区的各种方言。第一组是 60 到 70 岁的人，第二组由九年级学生组成。所有人都要说出：从卡塞尔看，他们认为各个方言是在哪个方向上说的。让 Lameli 和学生们惊讶的是：年轻人的表现比老人更好，尽管以前方言说得更多。年轻人显然耳朵更灵，对差异也更感兴趣。⚠ 原文 \"obwohl sie früher mehr Dialekt gesprochen wurde\" 有误，应为 \"obwohl früher mehr Dialekt gesprochen wurde\"（无人称被动，没有 sie）。"
+   },
+   {
+    "type": "p",
+    "text": "Grammar Points:"
+   },
+   {
+    "type": "p",
+    "text": "Nachrichten verbreiten: to spread news"
+   },
+   {
+    "type": "p",
+    "text": "eine Sprache verlieren: to lose a language"
+   },
+   {
+    "type": "p",
+    "text": "Angenommen, sie kommt nicht, was machen wir dann?"
+   },
+   {
+    "type": "p",
+    "text": "假设她不来，我们怎么办呢？"
+   },
+   {
+    "type": "p",
+    "text": "einen Versuch machen: to conduct an experiment"
+   },
+   {
+    "type": "p",
+    "text": "Dialekte vorspielen: to play dialects"
+   },
+   {
+    "type": "p",
+    "text": "bestehen aus: to consist of"
+   },
+   {
+    "type": "p",
+    "text": "sprechen aus: to speak from"
+   },
+   {
+    "type": "p",
+    "text": "verblüffen: to astonish"
+   },
+   {
+    "type": "p",
+    "text": "besser abschneiden: to perform better"
+   },
+   {
+    "type": "p",
+    "text": "Interesse für etwas haben: to have interest in something"
+   },
+   {
+    "type": "p",
+    "text": "中：Nachrichten verbreiten 传播新闻；es ist anzunehmen, dass … 可以推测……（sein + zu；她另举 \"Angenommen, …\" 假设……的例句）；jmdn. etw. machen lassen 让某人做某事（hat … machen lassen 双不定式）；jmdm. etw. vorspielen 给某人播放/演奏；bestehen aus + 三格 由……组成；verblüffen 使惊讶；gut/besser abschneiden 表现好/更好；Interesse für (an) etw. haben 对……感兴趣。⚠ \"sprechen aus\" 不是这里的搭配（原句是 um die Stadt Kassel herum gesprochene Dialekte，\"卡塞尔周围说的方言\"，分词作定语）。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "中文要点"
    },
    {
-    "type": "p",
-    "text": "这篇的价值不在文本本身，而在它示范了\"C1 阅读怎么拆\"：先标出所有非常规语法（虚拟式、倒装、被动），再把名词+动词搭配一条条摘出来。以后你自己做 C1 阅读，也可以照这个流程拆。"
+    "type": "li",
+    "text": "这篇示范了 C1 阅读怎么拆：先标出虚拟式、倒装、被动等语法，再把名词 + 动词搭配一条条摘出来。"
    },
    {
-    "type": "p",
-    "text": "搭配里挑几个现在就能用的：Interesse für etwas haben（对……感兴趣）、einen Versuch machen（尝试一下）、zum ersten Mal auffallen（首次引起注意）。"
+    "type": "li",
+    "text": "dürften 在文中是第二虚拟式表推测（\"大概、想必\"），不是\"被允许\"。"
    },
    {
-    "type": "h",
-    "text": "📌 规则小提示"
+    "type": "li",
+    "text": "先挑几个能用的搭配：Interesse für etwas haben、einen Versuch machen、zum ersten Mal auffallen、als Vorlage dienen；gelten als / dienen als 后接一格。"
    },
    {
-    "type": "p",
-    "text": "1. 搭配整串背；2. dienen als / gelten als 的 als 后面跟名词一格；3. bestehen aus（由……组成）+ 三格。"
+    "type": "li",
+    "text": "bestehen aus + 三格（由……组成）。"
    }
   ]
  },
@@ -1601,95 +3533,347 @@
    },
    {
     "type": "p",
-    "text": "> 📌 C1·以后看 —— \"德国人下班后干什么\"阅读主题，重点是图表描述和八种从句的识别。"
+    "text": "来源：C1 Was Deutschland Nach der Arbeit Macht — Alice (Medium)"
    },
    {
     "type": "p",
-    "text": "📄 原文：C1 Was Deutschland Nach der Arbeit Macht · alicelearngerman.medium.com ｜ 难度：C1"
+    "text": "原文版权归作者 Alice 所有，此处仅作个人学习整理"
    },
    {
     "type": "p",
-    "text": "---"
+    "text": "（alicelearngerman，2024-06-05。她对一篇关于\"德国人下班后做什么\"（Freizeit-Monitor 调查）的 C1 阅读文本逐句标注。原文照录；\"中：\"为学习层译注，⚠ 标出她标注中不准确之处。）"
    },
    {
     "type": "h",
-    "text": "🔁 跟读区"
+    "text": "C1 Was Deutschland Nach der Arbeit Macht"
    },
    {
     "type": "p",
-    "text": "文本覆盖的从句类型"
-   },
-   {
-    "type": "vocab",
-    "text": "Relativsatz",
-    "zh": "关系从句"
-   },
-   {
-    "type": "vocab",
-    "text": "Indirekte Rede",
-    "zh": "间接引语"
-   },
-   {
-    "type": "vocab",
-    "text": "Adverbiale Bestimmung",
-    "zh": "状语"
-   },
-   {
-    "type": "vocab",
-    "text": "Konjunktionalsatz",
-    "zh": "连词从句"
-   },
-   {
-    "type": "vocab",
-    "text": "Infinitivsatz",
-    "zh": "不定式从句"
-   },
-   {
-    "type": "vocab",
-    "text": "Präpositionalobjekt",
-    "zh": "介词宾语"
-   },
-   {
-    "type": "vocab",
-    "text": "Indirekter Fragesatz",
-    "zh": "间接疑问句"
-   },
-   {
-    "type": "vocab",
-    "text": "Kausalsatz",
-    "zh": "原因从句"
+    "text": "Verein Leute Arbeit Buch"
    },
    {
     "type": "p",
-    "text": "动词+介词：ein Bild zeichnen von ｜ nachgehen + 三格 ｜ sich widmen + 三格 ｜ an Bedeutung verlieren + 三格"
+    "text": "中：（标题下的关键词：协会、人们、工作、书）"
    },
    {
     "type": "p",
-    "text": "无介词动词：einschalten（反身）｜ fernsehen ｜ betonen ｜ prägen"
+    "text": "1. Satz: „Die Daten der Hamburger Forscher zeichnen ein klares Bild vom deutschen Freizeitverhalten: Egal, ob Mann oder Frau, Stadt- oder Landbewohner, arm oder reich — für die überwiegende Mehrheit der Deutschen (2) das Fernsehen die mit Abstand wichtigste Freizeitaktivität.\""
    },
    {
     "type": "p",
-    "text": "名词+动词搭配：ein Bild zeichnen ｜ das TV-Gerät einschalten ｜ täglich fernsehen ｜ den ersten Platz belegen ｜ Gedanken nachgehen ｜ Zeit mit dem Partner verbringen ｜ über wichtige Dinge reden ｜ sich dem Ausschlafen widmen ｜ auf dem Programm stehen ｜ den Freizeitalltag prägen ｜ soziale Aktivitäten unternehmen"
+    "text": "中：汉堡研究者的数据清晰描绘了德国人的休闲行为：无论男女、城里人还是乡下人、穷人还是富人——对绝大多数德国人来说，看电视是遥遥领先的最重要休闲活动。（原文引句中 \"(2)\" 处漏了动词 ist。）"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Relativsatz (B2)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „zeichnen ein Bild von (etwas)\" (C1)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „ein Bild zeichnen\" (B2)"
+   },
+   {
+    "type": "p",
+    "text": "中：⚠ 这句里没有关系从句；值得注意的是 \"Egal, ob …\"（无论是否……）结构。搭配：ein Bild von etw. zeichnen 描绘出……的图景。"
+   },
+   {
+    "type": "p",
+    "text": "2. Satz: „97 Prozent der Deutschen schalten mindestens einmal pro Woche das TV-Gerät ein, heißt es in der aktuellen Auswertung zum „Freizeit-Monitor\".\""
+   },
+   {
+    "type": "p",
+    "text": "中：最新一期《休闲监测》的分析称，97% 的德国人每周至少开一次电视。"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Indirekte Rede (B2)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „einschalten\" (ohne Präposition, aber reflexiv) (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „das TV-Gerät einschalten\" (B2)"
+   },
+   {
+    "type": "p",
+    "text": "中：转述结构 \"…, heißt es in …\"（……中称）。⚠ einschalten（打开电器）在这里不是反身动词，是普通可分动词：schalten … ein。（sich einschalten 是另一个意思：\"介入\"。）"
+   },
+   {
+    "type": "p",
+    "text": "3. Satz: „Über zwei Drittel der Deutschen schauen demnach sogar täglich fern.\""
+   },
+   {
+    "type": "p",
+    "text": "中：据此，超过三分之二的德国人甚至每天都看电视。"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Adverbiale Bestimmung (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „fernsehen\" (ohne Präposition) (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „täglich fernsehen\" (B1)"
+   },
+   {
+    "type": "p",
+    "text": "中：状语 demnach（据此）、sogar täglich（甚至每天）；fernsehen / fernschauen 看电视（可分）。"
+   },
+   {
+    "type": "p",
+    "text": "4. Satz: „Im Freizeit-Monitor belegt die Aktivität „Fernsehen\" damit zum 25. Mal in Folge den ersten Platz, wie der Wissenschaftliche Leiter der Stiftung für Zukunftsfragen, Ulrich Reinhardt, betont.\""
+   },
+   {
+    "type": "p",
+    "text": "中：正如未来问题基金会的科学负责人 Ulrich Reinhardt 所强调的，\"看电视\"因此在《休闲监测》中连续第 25 次位居榜首。"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Relativsatz (B2)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „betonen\" (ohne Präposition) (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „den ersten Platz belegen\" (B2)"
+   },
+   {
+    "type": "p",
+    "text": "中：⚠ \"wie … betont\" 不是关系从句，而是 wie 引导的比较/引述从句（\"正如……所强调\"）。搭配：den ersten Platz belegen 名列第一；zum 25. Mal in Folge 连续第 25 次。"
+   },
+   {
+    "type": "p",
+    "text": "5. Satz: „Der TV-Konsum liegt damit weit vor Freizeitbeschäftigungen wie „Gedanken nachgehen\", „Zeit mit dem Partner verbringen\" oder „Über wichtige Dinge reden\".\""
+   },
+   {
+    "type": "p",
+    "text": "中：电视消费因此远远领先于\"沉思\"、\"陪伴伴侣\"或\"聊重要的事\"等休闲活动。"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Konjunktionalsatz (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „nachgehen\" (Dativ) (B2)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „Gedanken nachgehen\" (B2), „Zeit mit dem Partner verbringen\" (B2), „über wichtige Dinge reden\" (B2)"
+   },
+   {
+    "type": "p",
+    "text": "中：（这句其实是单句，wie 引出举例。）seinen Gedanken nachgehen（+三格）沉浸在思绪中；Zeit mit jmdm. verbringen 和某人共度时光；über etw. reden 谈论……；weit vor … liegen 远远领先于……。"
+   },
+   {
+    "type": "p",
+    "text": "6. Satz: „Nur 65 Prozent der Befragten geben an, sich mindestens einmal pro Woche dem „Ausschlafen\" zu widmen.\""
+   },
+   {
+    "type": "p",
+    "text": "中：只有 65% 的受访者表示每周至少睡一次懒觉。"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Infinitivsatz (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „sich widmen\" (Dativ) (B2)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „sich dem Ausschlafen widmen\" (B2)"
+   },
+   {
+    "type": "p",
+    "text": "中：不定式从句：geben an, … zu widmen（表示……）。sich etw. (三格) widmen 致力于、把时间用于……；angeben 声称、表示。"
+   },
+   {
+    "type": "p",
+    "text": "7. Satz: „Klassiker wie „Kaffee trinken\" und „Kuchen essen\" stehen der Studie zufolge nur noch bei 53 Prozent der Deutschen regelmäßig auf dem Programm.\""
+   },
+   {
+    "type": "p",
+    "text": "中：据这项研究，\"喝咖啡\"\"吃蛋糕\"这类经典活动只在 53% 的德国人的日程里还经常出现。"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Präpositionalobjekt (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „stehen\" (Dativ) (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „auf dem Programm stehen\" (B2)"
+   },
+   {
+    "type": "p",
+    "text": "中：der Studie zufolge（据研究，zufolge 后置 + 三格）；auf dem Programm stehen 列在日程上。"
+   },
+   {
+    "type": "p",
+    "text": "8. Satz: „Im Zehnjahresvergleich zeigt sich, wie stark die Medien mittlerweile unseren Freizeitalltag prägen: Innerhalb eines Jahrzehnts stieg die PC-, Internet- und vor allem die Handynutzung stark an.\""
+   },
+   {
+    "type": "p",
+    "text": "中：十年对比显示，媒体如今多么强烈地塑造着我们的日常休闲：十年内，电脑、互联网，尤其是手机的使用量大幅上升。"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Indirekter Fragesatz (B2)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „prägen\" (ohne Präposition) (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „den Freizeitalltag prägen\" (B2)"
+   },
+   {
+    "type": "p",
+    "text": "中：间接疑问句 wie stark …（多么强烈地……），动词 prägen 放句尾；es zeigt sich 显示出；ansteigen 上升（stieg … an）；innerhalb + 二格。"
+   },
+   {
+    "type": "p",
+    "text": "9. Satz: „Auf der anderen Seite haben, so heißt es in der Studie, soziale Aktivitäten deutlich an Bedeutung verloren: Die Bürger unternehmen mittlerweile seltener etwas mit Freunden, sprechen weniger Einladungen aus und auch das nicht mehr ganz so beliebte „Einfach Dinge\" wie früher, fassten die Forscher die Entwicklung im aktuellen Freizeit-Monitor zusammen.\""
+   },
+   {
+    "type": "p",
+    "text": "中：另一方面，研究称社交活动明显失去了重要性：民众如今更少和朋友一起做事，发出的邀请也更少……研究者在最新一期《休闲监测》中这样总结了这一趋势。（引句后半段在原文中残缺，无法完整翻译。）"
+   },
+   {
+    "type": "p",
+    "text": "Grammatikalische Struktur: Kausalsatz (B1)"
+   },
+   {
+    "type": "p",
+    "text": "Verben mit Präpositionen: „an Bedeutung verlieren\" (Dativ) (B2)"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen: „soziale Aktivitäten unternehmen\" (B2)"
+   },
+   {
+    "type": "p",
+    "text": "中：⚠ 这句没有原因从句；值得注意的是插入语 \"so heißt es in der Studie\"（研究中如是说）。搭配：an Bedeutung verlieren 失去重要性（an + 三格）；etwas unternehmen 做些活动；Einladungen aussprechen 发出邀请；etw. zusammenfassen 总结。"
    },
    {
     "type": "h",
-    "text": "💡 讲解"
+    "text": "Zusammenfassung:"
    },
    {
     "type": "p",
-    "text": "这篇是典型的 C1 \"图表+文本\"综合题：先看图表（德国人下班时间分配），再读文本，最后用自己的话描述。八种从句不用全会写，但要认得出来——考试里认出从句类型，就能拆解长难句。"
+    "text": "中：总结"
    },
    {
     "type": "p",
-    "text": "搭配里最实用的一句：sich dem Ausschlafen widmen（致力于睡懒觉）——sich widmen + 三格，\"把时间献给……\"，写作用得上。"
+    "text": "Verben mit Präpositionen:"
+   },
+   {
+    "type": "p",
+    "text": "„nachgehen\" (Dativ)"
+   },
+   {
+    "type": "p",
+    "text": "„sich widmen\" (Dativ)"
+   },
+   {
+    "type": "p",
+    "text": "„an Bedeutung verlieren\" (Dativ)"
+   },
+   {
+    "type": "p",
+    "text": "中：支配三格/介词的动词：nachgehen（+三格）追随、沉浸；sich widmen（+三格）致力于；an Bedeutung verlieren 失去重要性。"
+   },
+   {
+    "type": "p",
+    "text": "Häufige Nomen-Verb-Verbindungen:"
+   },
+   {
+    "type": "p",
+    "text": "„ein Bild zeichnen\""
+   },
+   {
+    "type": "p",
+    "text": "„das TV-Gerät einschalten\""
+   },
+   {
+    "type": "p",
+    "text": "„täglich fernsehen\""
+   },
+   {
+    "type": "p",
+    "text": "„den ersten Platz belegen\""
+   },
+   {
+    "type": "p",
+    "text": "„Gedanken nachgehen\""
+   },
+   {
+    "type": "p",
+    "text": "„Zeit mit dem Partner verbringen\""
+   },
+   {
+    "type": "p",
+    "text": "„über wichtige Dinge reden\""
+   },
+   {
+    "type": "p",
+    "text": "„sich dem Ausschlafen widmen\""
+   },
+   {
+    "type": "p",
+    "text": "„auf dem Programm stehen\""
+   },
+   {
+    "type": "p",
+    "text": "„den Freizeitalltag prägen\""
+   },
+   {
+    "type": "p",
+    "text": "„soziale Aktivitäten unternehmen\""
+   },
+   {
+    "type": "p",
+    "text": "„an Bedeutung verlieren\""
+   },
+   {
+    "type": "p",
+    "text": "中：常用名词-动词搭配：描绘图景 / 打开电视机 / 每天看电视 / 名列第一 / 沉浸于思绪 / 和伴侣共度时光 / 谈论重要的事 / 睡懒觉 / 列在日程上 / 塑造日常休闲 / 开展社交活动 / 失去重要性。"
    },
    {
     "type": "h",
-    "text": "📌 规则小提示"
+    "text": "中文要点"
    },
    {
-    "type": "p",
-    "text": "1. nachgehen / sich widmen / an Bedeutung verlieren 全跟三格；2. 图表描述三件套：den ersten Platz belegen（居首）、im gleichen Maße steigen（同步增长）、auf dem Programm stehen（在计划中）。"
+    "type": "li",
+    "text": "典型的 C1\"图表 + 文本\"题：先看数据，再读文本，最后用自己的话描述。"
+   },
+   {
+    "type": "li",
+    "text": "原文对从句类型的标注有几处不准（第 1、4 句没有关系从句，第 9 句没有原因从句），以 ⚠ 译注为准。"
+   },
+   {
+    "type": "li",
+    "text": "einschalten 是普通可分动词（schalten … ein），不是反身动词；sich einschalten 是\"介入\"。"
+   },
+   {
+    "type": "li",
+    "text": "实用搭配：den ersten Platz belegen、Gedanken nachgehen、sich dem Ausschlafen widmen（sich widmen + 三格）、an Bedeutung verlieren。"
    }
   ]
  }

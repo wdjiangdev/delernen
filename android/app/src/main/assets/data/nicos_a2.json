@@ -969,8 +969,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "旅行休闲·天气自然",
-  "past": "sah an",
-  "pp": "angesehen"
+  "past": "sah sich an",
+  "pp": "sich angesehen"
  },
  {
   "de": "auf etwas/jemanden auf|passen",
@@ -1318,8 +1318,8 @@
  },
  {
   "de": "das Ziel, die Ziele",
-  "en": "destination",
-  "zh": "目的地",
+  "en": "goal; aim; destination",
+  "zh": "目标；目的地",
   "pos": "noun",
   "tip": "",
   "topic": "旅行休闲·天气自然",
@@ -1552,8 +1552,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "工作学习·日常作息",
-  "past": "meldete an",
-  "pp": "angemeldet"
+  "past": "meldete sich an",
+  "pp": "sich angemeldet"
  },
  {
   "de": "etwas aus|geben",
@@ -1697,7 +1697,7 @@
  {
   "de": "das Girokonto, die Girokonten",
   "en": "current account",
-  "zh": "转帐帐户",
+  "zh": "活期账户；往来账户",
   "pos": "noun",
   "tip": "",
   "topic": "饮食购物",
@@ -2296,7 +2296,7 @@
   "de": "einen Kredit auf|nehmen",
   "en": "to take out a loan",
   "zh": "贷款",
-  "pos": "other",
+  "pos": "verb",
   "tip": "",
   "topic": "饮食购物"
  },
@@ -2686,7 +2686,7 @@
   "pos": "verb",
   "tip": "",
   "topic": "工作学习·日常作息",
-  "past": "hieb ab",
+  "past": "haute ab",
   "pp": "abgehauen"
  },
  {
@@ -3380,7 +3380,7 @@
  {
   "de": "die Nachbarschaft, die Nachbarschaften",
   "en": "neighborhood",
-  "zh": "邻居",
+  "zh": "邻里；街坊；附近一带",
   "pos": "noun",
   "tip": "",
   "topic": "住房方位·交通",
@@ -3940,7 +3940,7 @@
   "de": "rechts/links ab|biegen",
   "en": "to turn right/left",
   "zh": "右转/左转",
-  "pos": "other",
+  "pos": "verb",
   "tip": "",
   "topic": "住房方位·交通"
  },
@@ -4442,12 +4442,13 @@
   "pp": "durchgefahren"
  },
  {
-  "de": "einfache",
-  "en": "single",
+  "de": "einfach (einfache Fahrt)",
+  "en": "single (one-way)",
   "zh": "单程",
   "pos": "adj",
   "tip": "",
-  "topic": "住房方位·交通"
+  "topic": "住房方位·交通",
+  "k": "einfache"
  },
  {
   "de": "das Einzelticket, die Einzeltickets",
@@ -4612,8 +4613,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康",
-  "past": "trocknete ab",
-  "pp": "abgetrocknet"
+  "past": "trocknete sich ab",
+  "pp": "sich abgetrocknet"
  },
  {
   "de": "sich an|ziehen",
@@ -4622,8 +4623,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康",
-  "past": "zog an",
-  "pp": "angezogen"
+  "past": "zog sich an",
+  "pp": "sich angezogen"
  },
  {
   "de": "sich (über etwas/jemanden) auf|regen",
@@ -4665,8 +4666,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康",
-  "past": "cremte ein",
-  "pp": "eingecremt"
+  "past": "cremte sich ein",
+  "pp": "sich eingecremt"
  },
  {
   "de": "sich engagieren",
@@ -5987,8 +5988,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "工作学习·日常作息",
-  "past": "stellte vor",
-  "pp": "vorgestellt"
+  "past": "stellte sich vor",
+  "pp": "sich vorgestellt"
  },
  {
   "de": "weiter|gehen",
@@ -8079,7 +8080,7 @@
  },
  {
   "de": "jemanden/etwas dar|stellen",
-  "en": "to portray; to depict (darstellen)",
+  "en": "to portray; to depict",
   "zh": "展现；表演",
   "pos": "verb",
   "tip": "",
@@ -8888,11 +8889,11 @@
   "k": "Appartement"
  },
  {
-  "de": "der Balkon, die Balkone",
+  "de": "der Balkon, die Balkons",
   "en": "balcony",
   "zh": "阳台",
   "pos": "noun",
-  "tip": "",
+  "tip": "Duden 标准复数 Balkons；南德/奥地利/瑞士也说 Balkone",
   "topic": "住房方位·交通",
   "k": "Balkon"
  },
@@ -9420,8 +9421,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康",
-  "past": "lebte ein",
-  "pp": "eingelebt"
+  "past": "lebte sich ein",
+  "pp": "sich eingelebt"
  },
  {
   "de": "fallen",
@@ -9866,8 +9867,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "旅行休闲·天气自然",
-  "past": "schaute um",
-  "pp": "umgeschaut"
+  "past": "schaute sich um",
+  "pp": "sich umgeschaut"
  },
  {
   "de": "unglaublich",
@@ -10983,8 +10984,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "问候介绍·数字时间",
-  "past": "stellte vor",
-  "pp": "vorgestellt"
+  "past": "stellte sich vor",
+  "pp": "sich vorgestellt"
  },
  {
   "de": "jemanden zurück|rufen",
@@ -12051,7 +12052,7 @@
  {
   "de": "der Geist, die Geister",
   "en": "ghost; spirit",
-  "zh": "鬼",
+  "zh": "鬼；幽灵；精神",
   "pos": "noun",
   "tip": "",
   "topic": "旅行休闲·天气自然",
@@ -12278,14 +12279,15 @@
   "k": "Volksfest"
  },
  {
-  "de": "jemanden etwas an|gehen",
+  "de": "etwas geht jemanden an",
   "en": "to concern someone",
   "zh": "与某人有关；涉及（某人）",
   "pos": "verb",
-  "tip": "",
+  "tip": "Das geht dich nichts an. = 这与你无关。",
   "topic": "工作学习·日常作息",
   "past": "ging an",
-  "pp": "angegangen"
+  "pp": "angegangen",
+  "k": "jemanden etwas an|gehen"
  },
  {
   "de": "auf|passen",
@@ -12535,7 +12537,7 @@
   "tip": "",
   "topic": "工作学习·日常作息",
   "past": "packte mit an",
-  "pp": "mitangepackt"
+  "pp": "mit angepackt"
  },
  {
   "de": "gebraucht",
@@ -13744,8 +13746,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "工作学习·日常作息",
-  "past": "las durch",
-  "pp": "durchgelesen"
+  "past": "las sich durch",
+  "pp": "sich durchgelesen"
  },
  {
   "de": "der Gewinner, die Gewinner",
@@ -14124,7 +14126,7 @@
   "k": "Überraschung"
  },
  {
-  "de": "das Verhalten, die Verhalten",
+  "de": "das Verhalten (nur Sg.)",
   "en": "behavior",
   "zh": "行为",
   "pos": "noun",

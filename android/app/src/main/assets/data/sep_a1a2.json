@@ -1,7 +1,7 @@
 [
  {
   "de": "ausziehen",
-  "en": "to strip off sth.",
+  "en": "to move out; to take off (clothes)",
   "zh": "搬出；脱（衣）",
   "pos": "verb",
   "tip": "可分动词：aus- + ziehen",
@@ -37,7 +37,7 @@
  },
  {
   "de": "darstellen",
-  "en": "to display sth.",
+  "en": "to depict; to represent",
   "zh": "描绘；表现；构成",
   "pos": "verb",
   "tip": "可分动词：dar- + stellen",
@@ -73,7 +73,7 @@
  },
  {
   "de": "umsetzen",
-  "en": "to shift sth.",
+  "en": "to implement; to put into practice",
   "zh": "实施；执行；换座位",
   "pos": "verb",
   "tip": "可分动词：um- + setzen",
@@ -85,7 +85,7 @@
  },
  {
   "de": "aufnehmen",
-  "en": "to absorb",
+  "en": "to take in; to record; to admit",
   "zh": "接受；录制；开始",
   "pos": "verb",
   "tip": "可分动词：auf- + nehmen",
@@ -97,7 +97,7 @@
  },
  {
   "de": "mitnehmen",
-  "en": "to take sth. on board",
+  "en": "to take along",
   "zh": "带走；顺便带",
   "pos": "verb",
   "tip": "可分动词：mit- + nehmen",
@@ -145,7 +145,7 @@
  },
  {
   "de": "wegfahren",
-  "en": "to move off",
+  "en": "to drive away; to leave",
   "zh": "开车离开",
   "pos": "verb",
   "tip": "可分动词：weg- + fahren",
@@ -157,7 +157,7 @@
  },
  {
   "de": "mitarbeiten",
-  "en": "to be involved",
+  "en": "to collaborate; to work on",
   "zh": "协作；合作",
   "pos": "verb",
   "tip": "可分动词：mit- + arbeiten",
@@ -193,7 +193,7 @@
  },
  {
   "de": "abhalten",
-  "en": "to keep sb.",
+  "en": "to hold (a meeting); to keep sb. from",
   "zh": "举行；阻止",
   "pos": "verb",
   "tip": "可分动词：ab- + halten",
@@ -205,7 +205,7 @@
  },
  {
   "de": "hinhalten",
-  "en": "to hold out ⇆ sth.",
+  "en": "to hold out; to stall (sb.)",
   "zh": "拖延；敷衍",
   "pos": "verb",
   "tip": "可分动词：hin- + halten",
@@ -217,7 +217,7 @@
  },
  {
   "de": "zurückholen",
-  "en": "to retract sth.",
+  "en": "to fetch back; to bring back",
   "zh": "取回；接回",
   "pos": "verb",
   "tip": "可分动词：zurück- + holen",
@@ -229,7 +229,7 @@
  },
  {
   "de": "anschauen",
-  "en": "to check out ⇆ sth.",
+  "en": "to look at; to watch",
   "zh": "观看",
   "pos": "verb",
   "tip": "可分动词：an- + schauen",
@@ -253,7 +253,7 @@
  },
  {
   "de": "anschließen",
-  "en": "to plug",
+  "en": "to connect; to join",
   "zh": "连接；接通",
   "pos": "verb",
   "tip": "可分动词：an- + schließen",
@@ -265,7 +265,7 @@
  },
  {
   "de": "abwaschen",
-  "en": "to give a wash",
+  "en": "to wash up (dishes)",
   "zh": "洗（餐具）",
   "pos": "verb",
   "tip": "可分动词：ab- + waschen",
