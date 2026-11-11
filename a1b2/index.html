@@ -56,6 +56,8 @@ header p{font-size:12px;color:var(--text3);margin-top:4px}
 .link{stroke:var(--link);stroke-width:1.5}
 #detail{position:relative;z-index:1;margin:0 16px 20px;padding:14px 16px;background:var(--bg-elev);border:1px solid #2a3350;border-radius:12px;min-height:80px}
 #detail h3{font-size:16px;margin-bottom:6px}
+#detail h3 .refl{color:var(--text3);font-weight:400}
+.verb-refl{font-size:11px;fill:var(--text3)}
 #detail h3 .pfx{color:var(--accent2);font-weight:700}
 #detail p{font-size:13px;color:var(--text2);line-height:1.6}
 #detail p.zh{font-size:15px;color:var(--text);font-weight:600;margin-bottom:2px}
@@ -159,7 +161,7 @@ const PREFIX_MEAN={ab:'离开、去掉',an:'接触、朝向',auf:'向上、打�
 function renderGroup(g){
   svg.innerHTML='';
   const lb=document.getElementById('learnBar');
-  if(lb){if(activeTab==='grammar'&&g.learn){lb.style.display='block';lb.innerHTML='📖 <a href="../grammatik/index.html#g-'+g.learn+'">系统讲解：'+g.learnTitle+'</a>';}
+  if(lb){if(activeTab==='grammar'&&g.learn){lb.style.display='block';lb.innerHTML='📖 <a href="../grammatik/#g-'+g.learn+'">系统讲解：'+g.learnTitle+'</a>';}
   else lb.style.display='none';}
   const cx=200,cy=185,R=125;
   if(activeTab==='verb')renderVerbGroup(g,cx,cy,R);
@@ -222,12 +224,13 @@ function renderVerbGroup(g,cx,cy,R){
     const px=cx+Math.cos(a)*R, py=cy+Math.sin(a)*R;
     const node=el('g',{class:'node',transform:'translate('+px+','+py+')'},svg);
     el('circle',{r:30,class:'node-fill',stroke:'#3a4a70','stroke-width':1.5},node);
-    const stemPart=m.verb.slice(m.prefix.length);
+    const sv=splitVerb(m),stemPart=sv.stem;
     const label=el('text',{y:-2},node);
-    const t1=document.createElementNS(NS,'tspan');t1.setAttribute('class','verb-prefix');t1.textContent=m.prefix;
+    if(sv.refl){const t0=document.createElementNS(NS,'tspan');t0.setAttribute('class','verb-refl');t0.textContent='sich ';label.appendChild(t0);}
+    const t1=document.createElementNS(NS,'tspan');t1.setAttribute('class','verb-prefix');t1.textContent=sv.prefix;
     const t2=document.createElementNS(NS,'tspan');t2.setAttribute('class','verb-label');t2.textContent=stemPart;
     label.appendChild(t1);label.appendChild(t2);
-    const w=m.prefix.length*9+stemPart.length*8;
+    const w=(sv.refl?5*7:0)+sv.prefix.length*9+stemPart.length*8;
     label.setAttribute('x',-w/2+4);
     const df=el('text',{y:14,class:'verb-def'},node);
     df.textContent=(m.zh||m.def||'').split('；')[0].slice(0,8);
@@ -269,12 +272,14 @@ function renderFamilyGroup(g,cx,cy,R){
   if(members.length)showFamilyDetail(members[0],g);
 }
 
+// 拆分前缀与词干：反身动词的 verb 以 "sich " 开头，前缀要从去掉 sich 之后的部分切
+function splitVerb(m){const base=String(m.verb).replace(/^sich /,'');const refl=base!==m.verb;const p=m.prefix&&base.indexOf(m.prefix)===0?m.prefix:'';return {refl:refl,prefix:p,stem:base.slice(p.length)};}
 function showVerbDetail(m,g){
   const d=document.getElementById('detail');
   let title;
   if(m.prefix){
-    const stemPart=m.verb.slice(m.prefix.length);
-    title='<span class="pfx">'+m.prefix+'</span>'+stemPart;
+    const sv=splitVerb(m);
+    title=(sv.refl?'<span class="refl">sich</span> ':'')+'<span class="pfx">'+sv.prefix+'</span>'+sv.stem;
   }else{
     title=m.verb+' <span style="font-size:11px;color:var(--text4)">（词干）</span>';
   }
@@ -285,8 +290,8 @@ function showVerbDetail(m,g){
   }
   let pfxNote='';
   if(m.prefix&&PREFIX_MEAN[m.prefix]){
-    const stemZh=(((g.members||[]).find(x=>!x.prefix))||{}).zh||'';
-    pfxNote='<p class="pfxnote">🧩 <b>'+m.prefix+'-</b>（'+PREFIX_MEAN[m.prefix]+'） + '+g.stem+'（'+stemZh+'） → <b>'+(m.zh||'')+'</b></p>';
+    const stemZh=(((g.members||[]).find(x=>!x.prefix))||{}).zh||g.stemZh||'';
+    pfxNote='<p class="pfxnote">🧩 <b>'+m.prefix+'-</b>（'+PREFIX_MEAN[m.prefix]+'） + '+g.stem+(stemZh?'（'+stemZh+'）':'')+' → <b>'+(m.zh||'')+'</b></p>';
   }
   d.innerHTML='<h3>'+title+'</h3><p class="zh">'+(m.zh||g.stemZh||'')+'</p><p class="en">'+(m.def||'')+'</p>'+pfxNote+forms+
     '<div class="meta">词族 '+g.stem+' · 共 '+g.members.length+' 个'+(m.count?' · 在 Nicos Weg 出现 '+m.count+' 次':'')+'</div>';
@@ -340,12 +345,13 @@ document.querySelectorAll('.tab').forEach(t=>{
   t.addEventListener('click',()=>switchTab(t.dataset.tab));
 });
 
-Promise.all([fetch('verb_groups.json').then(r=>r.json()),fetch('word_families.json').then(r=>r.json()),fetch('grammar.json').then(r=>r.json())]).then(d=>{
+const getJSON=u=>fetch(u).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status+' '+u);return r.json();});
+Promise.all([getJSON('verb_groups.json'),getJSON('word_families.json'),getJSON('grammar.json')]).then(d=>{
   verbData=d[0];familyData=d[1];grammarData=d[2];
   renderNav(verbData.groups);
   if(verbData.groups.length)renderGroup(verbData.groups[0]);
 }).catch(e=>{
-  document.getElementById('detail').innerHTML='<p style="color:#e08080">加载失败：'+e+'</p>';
+  document.getElementById('detail').innerHTML='<p style="color:#e08080">加载失败：'+(e&&e.message||e)+'</p>';
 });
 // 搜索: 动词/词族/语法
 (function(){
