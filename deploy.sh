@@ -2,16 +2,16 @@
 # DeLernen 一键部署脚本（以 root 执行）
 #
 #   部署/更新到最新版：
-#     curl -fsSL https://raw.githubusercontent.com/astemo6/delernen/master/deploy.sh | bash
+#     curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash
 #   同时开启自动部署（每 5 分钟检查 GitHub，有新提交就自动更新）：
-#     curl -fsSL https://raw.githubusercontent.com/astemo6/delernen/master/deploy.sh | bash -s -- --install-auto
+#     curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash -s -- --install-auto
 #   关闭自动部署：
-#     curl -fsSL https://raw.githubusercontent.com/astemo6/delernen/master/deploy.sh | bash -s -- --remove-auto
+#     curl -fsSL https://raw.githubusercontent.com/wdjiangdev/delernen/master/deploy.sh | bash -s -- --remove-auto
 #
 # 部署完成后，在 Cloudflare Tunnel 里加一条 Public Hostname 指向 http://127.0.0.1:18095
 set -euo pipefail
 
-REPO="astemo6/delernen"
+REPO="wdjiangdev/delernen"
 DEPLOY_DIR="${DEPLOY_DIR:-/opt/docker/delernen}"
 PORT="${PORT:-18095}"
 REF="${REF:-master}"
