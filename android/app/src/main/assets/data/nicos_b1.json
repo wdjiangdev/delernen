@@ -10,7 +10,7 @@
  {
   "de": "hart",
   "en": "hard",
-  "zh": "刻苦的；辛勤的；艰难的",
+  "zh": "硬的；艰难的；刻苦的",
   "pos": "adj",
   "tip": "",
   "topic": "问候介绍·数字时间"
@@ -642,8 +642,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "工作学习·日常作息",
-  "past": "nahm vor",
-  "pp": "vorgenommen"
+  "past": "nahm sich vor",
+  "pp": "sich vorgenommen"
  },
  {
   "de": "wozu",
@@ -1826,7 +1826,7 @@
   "en": "parking attendant; traffic warden",
   "zh": "停车管理员",
   "pos": "noun",
-  "tip": "",
+  "tip": "Politeur 为 Politesse 的男性形式，地区性用法，很少见（Duden）",
   "topic": "住房方位·交通",
   "k": "Politeur, -e/Politesse, -n (männliche Form sehr selten)"
  },
@@ -2821,8 +2821,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康",
-  "past": "fühlte wohl",
-  "pp": "wohlgefühlt"
+  "past": "fühlte sich wohl",
+  "pp": "sich wohlgefühlt"
  },
  {
   "de": "jemandem zu|stimmen",
@@ -2844,7 +2844,7 @@
   "k": "Altersarmut (f., nur Singular)"
  },
  {
-  "de": "das Elternteil, die Elternteile",
+  "de": "der Elternteil, die Elternteile",
   "en": "parent",
   "zh": "父亲或母亲",
   "pos": "noun",
@@ -4273,7 +4273,7 @@
   "k": "Belastbarkeit (f., nur Singular)"
  },
  {
-  "de": "der Bürokaufmann, die Bürokaufmänner / die Bürokauffrau, die Bürokauffrauen",
+  "de": "der Bürokaufmann, die Bürokaufleute / die Bürokauffrau, die Bürokauffrauen",
   "en": "office clerk",
   "zh": "办公室职员",
   "pos": "noun",
@@ -4307,7 +4307,7 @@
   "topic": "工作学习·日常作息"
  },
  {
-  "de": "die Flexibilität, die Flexibilitäten",
+  "de": "die Flexibilität (nur Sg.)",
   "en": "flexibility",
   "zh": "灵活性",
   "pos": "noun",
@@ -4538,8 +4538,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "工作学习·日常作息",
-  "past": "bildete weiter",
-  "pp": "weitergebildet"
+  "past": "bildete sich weiter",
+  "pp": "sich weitergebildet"
  },
  {
   "de": "die Weiterbildungsmaßnahme, die Weiterbildungsmaßnahmen",
@@ -5307,7 +5307,7 @@
   "topic": "饮食购物"
  },
  {
-  "de": "das Konsumverhalten, die Konsumverhalten",
+  "de": "das Konsumverhalten (nur Sg.)",
   "en": "consumer behavior",
   "zh": "消费行为",
   "pos": "noun",
@@ -6072,7 +6072,7 @@
   "de": "eine Anzeige auf|geben",
   "en": "to place an ad",
   "zh": "登广告",
-  "pos": "other",
+  "pos": "verb",
   "tip": "",
   "topic": "工作学习·日常作息"
  },
@@ -7124,7 +7124,7 @@
   "k": "Erweiterung, -en (f.)"
  },
  {
-  "de": "das Europa (nur Sg.)",
+  "de": "(das) Europa",
   "en": "Europe",
   "zh": "欧洲",
   "pos": "noun",

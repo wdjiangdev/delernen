@@ -1,11 +1,12 @@
 [
  {
-  "de": "Frau",
-  "en": "woman / wife",
-  "zh": "女士",
+  "de": "die Frau (Anrede)",
+  "en": "Mrs.; Ms.",
+  "zh": "女士（称呼）",
   "pos": "noun",
-  "tip": "",
-  "topic": "问候介绍·数字时间"
+  "tip": "称呼用：Frau Müller = 穆勒女士；普通名词见 die Frau, die Frauen",
+  "topic": "问候介绍·数字时间",
+  "k": "Frau"
  },
  {
   "de": "die Frau, die Frauen",
@@ -72,12 +73,13 @@
   "topic": "家庭人物·身体健康"
  },
  {
-  "de": "Uhr",
-  "en": "clock / o'clock",
+  "de": "die Uhr (Uhrzeit)",
+  "en": "o'clock",
   "zh": "点钟（时间）",
   "pos": "noun",
   "tip": "Wie viel Uhr ist es? = 几点了？",
-  "topic": "问候介绍·数字时间"
+  "topic": "问候介绍·数字时间",
+  "k": "Uhr"
  },
  {
   "de": "die Bank, die Banken",
@@ -401,7 +403,7 @@
  {
   "de": "sie",
   "en": "she; they",
-  "zh": "她；它",
+  "zh": "她；它；他们／她们",
   "pos": "other",
   "tip": "首字母大写表尊称；动词用第三人称复数形式",
   "topic": "问候介绍·数字时间"
@@ -1027,10 +1029,10 @@
   "en": "would like",
   "zh": "想要",
   "pos": "verb",
-  "tip": "mögen（喜欢）的委婉说法，比 wollen 更客气",
+  "tip": "mögen（喜欢）的委婉说法，比 wollen 更客气；möchten 没有自己的过去式，过去时用 wollte / hat gewollt 替代（mochte/gemocht 是 mögen 的形式）",
   "topic": "工作学习·日常作息",
-  "past": "mochte",
-  "pp": "gemocht"
+  "past": "(wollte)",
+  "pp": "(gewollt)"
  },
  {
   "de": "der Saft, die Säfte (nach Zahl meist: Saft)",
@@ -1241,7 +1243,7 @@
  },
  {
   "de": "nach",
-  "en": "after / past",
+  "en": "after; past; to (a place)",
   "zh": "在…之后；（时间）过；去往",
   "pos": "other",
   "tip": "viertel nach = 过一刻",
@@ -1331,7 +1333,7 @@
  },
  {
   "de": "der Lehrer, die Lehrer",
-  "en": "teacher (m./f.)",
+  "en": "teacher (male)",
   "zh": "教师；老师",
   "pos": "noun",
   "tip": "lehren（教）+ -er（做……的人）",
@@ -1559,7 +1561,7 @@
   "en": "balcony",
   "zh": "阳台",
   "pos": "noun",
-  "tip": "同英语 balcony",
+  "tip": "同英语 balcony；复数也作 Balkone（南德/奥地利/瑞士）",
   "topic": "住房方位·交通"
  },
  {
@@ -4327,7 +4329,7 @@
  {
   "de": "sich fühlen",
   "en": "to feel",
-  "zh": "感受",
+  "zh": "感觉（身体/情绪）",
   "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康"
@@ -7404,7 +7406,7 @@
  {
   "de": "Freut mich.",
   "en": "Nice to meet you.",
-  "zh": "我很高兴。",
+  "zh": "很高兴认识你（您）。",
   "pos": "other",
   "tip": "",
   "topic": "住房方位·交通"
@@ -7680,10 +7682,10 @@
  },
  {
   "de": "ihr(e)",
-  "en": "her",
-  "zh": "她的",
+  "en": "her; their",
+  "zh": "她的；他们的",
   "pos": "other",
-  "tip": "",
+  "tip": "大写 Ihr(e) = 您的（尊称）",
   "topic": "住房方位·交通"
  },
  {
@@ -8050,12 +8052,13 @@
   "topic": "饮食购物"
  },
  {
-  "de": "(der) Fußball",
-  "en": "football; soccer",
+  "de": "der Fußball (nur Sg.)",
+  "en": "football (the sport); soccer",
   "zh": "足球",
   "pos": "noun",
-  "tip": "",
-  "topic": "饮食购物"
+  "tip": "指足球运动时只用单数；指球本身见 der Fußball, die Fußbälle",
+  "topic": "饮食购物",
+  "k": "(der) Fußball"
  },
  {
   "de": "glauben",
@@ -8352,12 +8355,13 @@
   "topic": "问候介绍·数字时间"
  },
  {
-  "de": "halbe Stunde",
+  "de": "eine halbe Stunde",
   "en": "half an hour",
   "zh": "半小时",
-  "pos": "noun",
+  "pos": "other",
   "tip": "",
-  "topic": "问候介绍·数字时间"
+  "topic": "问候介绍·数字时间",
+  "k": "halbe Stunde"
  },
  {
   "de": "kurz nach",
@@ -8822,7 +8826,7 @@
  {
   "de": "die Verspätung, die Verspätungen",
   "en": "delay",
-  "zh": "迟到",
+  "zh": "延误；晚点；迟到",
   "pos": "noun",
   "tip": "",
   "topic": "工作学习·日常作息"
@@ -9372,7 +9376,7 @@
   "en": "to hang",
   "zh": "挂；悬挂",
   "pos": "verb",
-  "tip": "",
+  "tip": "不及物“挂着”：hing / gehangen；及物“把…挂起”：hängte / gehängt（如 aufhängen）",
   "topic": "住房方位·交通",
   "past": "hing",
   "pp": "gehangen"
@@ -9454,7 +9458,7 @@
  {
   "de": "Wir wohnen in der ersten Etage.",
   "en": "We live on the first floor.",
-  "zh": "我们住在一楼。(中文中是指二楼）",
+  "zh": "我们住在二楼。（德国的 erste Etage = 中国的二楼）",
   "pos": "other",
   "tip": "",
   "topic": "住房方位·交通"
@@ -10538,7 +10542,7 @@
   "tip": "",
   "topic": "住房方位·交通",
   "past": "staubsaugte",
-  "pp": "staubgesaugt"
+  "pp": "gestaubsaugt"
  },
  {
   "de": "unordentlich",
@@ -11556,7 +11560,7 @@
   "en": "home; homeland",
   "zh": "家乡",
   "pos": "noun",
-  "tip": "",
+  "tip": "多用单数；复数 Heimaten 少见（DWDS：meist Singular）",
   "topic": "旅行休闲·天气自然"
  },
  {
@@ -12273,7 +12277,7 @@
   "de": "Streit haben",
   "en": "to have an argument",
   "zh": "发生争执",
-  "pos": "other",
+  "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康"
  },
@@ -12367,7 +12371,7 @@
   "de": "Blumen gießen",
   "en": "to water flowers",
   "zh": "浇花",
-  "pos": "other",
+  "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康"
  },
@@ -12883,8 +12887,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康",
-  "past": "ruhte aus",
-  "pp": "ausgeruht"
+  "past": "ruhte sich aus",
+  "pp": "sich ausgeruht"
  },
  {
   "de": "besonders",
@@ -13334,8 +13338,8 @@
   "pos": "verb",
   "tip": "",
   "topic": "家庭人物·身体健康",
-  "past": "schaute an",
-  "pp": "angeschaut"
+  "past": "schaute sich an",
+  "pp": "sich angeschaut"
  },
  {
   "de": "die Behandlung, die Behandlungen",
@@ -14086,7 +14090,7 @@
  {
   "de": "hart",
   "en": "hard",
-  "zh": "刻苦的；辛勤的；艰难的",
+  "zh": "硬的；艰难的；刻苦的",
   "pos": "adj",
   "tip": "",
   "topic": "问候介绍·数字时间"

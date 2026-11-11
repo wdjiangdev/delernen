@@ -13,7 +13,7 @@
  },
  {
   "de": "wegfahren",
-  "en": "to move off",
+  "en": "to drive away; to leave",
   "zh": "开车离开",
   "pos": "verb",
   "tip": "可分动词：weg- + fahren",
@@ -73,8 +73,8 @@
  },
  {
   "de": "annehmen",
-  "en": "to adopt sth.",
-  "zh": "",
+  "en": "to accept; to assume",
+  "zh": "接受；假设",
   "pos": "verb",
   "tip": "可分动词：an- + nehmen",
   "topic": "可分动词",
@@ -85,7 +85,7 @@
  },
  {
   "de": "aufnehmen",
-  "en": "to absorb",
+  "en": "to take in; to record; to admit",
   "zh": "接受；录制；开始",
   "pos": "verb",
   "tip": "可分动词：auf- + nehmen",
@@ -97,7 +97,7 @@
  },
  {
   "de": "mitnehmen",
-  "en": "to take sth. on board",
+  "en": "to take along",
   "zh": "带走；顺便带",
   "pos": "verb",
   "tip": "可分动词：mit- + nehmen",
@@ -109,7 +109,7 @@
  },
  {
   "de": "zunehmen",
-  "en": "",
+  "en": "to increase; to gain weight",
   "zh": "增加；长胖",
   "pos": "verb",
   "tip": "可分动词：zu- + nehmen",
@@ -133,8 +133,8 @@
  },
  {
   "de": "auftreten",
-  "en": "to tread",
-  "zh": "",
+  "en": "to appear; to perform; to occur",
+  "zh": "出现；登台；发生",
   "pos": "verb",
   "tip": "可分动词：auf- + treten",
   "topic": "可分动词",
@@ -145,8 +145,8 @@
  },
  {
   "de": "eintreten",
-  "en": "to come on",
-  "zh": "",
+  "en": "to enter; to occur",
+  "zh": "进入；发生",
   "pos": "verb",
   "tip": "可分动词：ein- + treten",
   "topic": "可分动词",
@@ -157,7 +157,7 @@
  },
  {
   "de": "abwaschen",
-  "en": "to give a wash",
+  "en": "to wash up (dishes)",
   "zh": "洗（餐具）",
   "pos": "verb",
   "tip": "可分动词：ab- + waschen",
@@ -169,7 +169,7 @@
  },
  {
   "de": "ausziehen",
-  "en": "to strip off sth.",
+  "en": "to move out; to take off (clothes)",
   "zh": "搬出；脱（衣）",
   "pos": "verb",
   "tip": "可分动词：aus- + ziehen",
@@ -205,7 +205,7 @@
  },
  {
   "de": "mitarbeiten",
-  "en": "to be involved",
+  "en": "to collaborate; to work on",
   "zh": "协作；合作",
   "pos": "verb",
   "tip": "可分动词：mit- + arbeiten",
@@ -242,7 +242,7 @@
  {
   "de": "durchfallen",
   "en": "to flunk",
-  "zh": "",
+  "zh": "不及格；落空",
   "pos": "verb",
   "tip": "可分动词：durch- + fallen",
   "topic": "可分动词",
@@ -253,8 +253,8 @@
  },
  {
   "de": "durchgehen",
-  "en": "to pass",
-  "zh": "",
+  "en": "to go through; to check",
+  "zh": "仔细检查；穿过",
   "pos": "verb",
   "tip": "可分动词：durch- + gehen",
   "topic": "可分动词",
@@ -265,8 +265,8 @@
  },
  {
   "de": "weggehen",
-  "en": "to go out",
-  "zh": "",
+  "en": "to go away; to leave",
+  "zh": "离开；走开",
   "pos": "verb",
   "tip": "可分动词：weg- + gehen",
   "topic": "可分动词",
@@ -277,7 +277,7 @@
  },
  {
   "de": "abhalten",
-  "en": "to keep sb.",
+  "en": "to hold (a meeting); to keep sb. from",
   "zh": "举行；阻止",
   "pos": "verb",
   "tip": "可分动词：ab- + halten",
@@ -289,8 +289,8 @@
  },
  {
   "de": "aushalten",
-  "en": "to keep up",
-  "zh": "",
+  "en": "to endure; to bear",
+  "zh": "忍受；坚持",
   "pos": "verb",
   "tip": "可分动词：aus- + halten",
   "topic": "可分动词",
@@ -301,7 +301,7 @@
  },
  {
   "de": "hinhalten",
-  "en": "to hold out ⇆ sth.",
+  "en": "to hold out; to stall (sb.)",
   "zh": "拖延；敷衍",
   "pos": "verb",
   "tip": "可分动词：hin- + halten",
@@ -313,7 +313,7 @@
  },
  {
   "de": "zurückholen",
-  "en": "to retract sth.",
+  "en": "to fetch back; to bring back",
   "zh": "取回；接回",
   "pos": "verb",
   "tip": "可分动词：zurück- + holen",
@@ -325,8 +325,8 @@
  },
  {
   "de": "ablegen",
-  "en": "to put away ⇆ sth.",
-  "zh": "",
+  "en": "to take off; to file; to take (an exam)",
+  "zh": "脱下；归档；参加（考试）",
   "pos": "verb",
   "tip": "可分动词：ab- + legen",
   "topic": "可分动词",
@@ -337,7 +337,7 @@
  },
  {
   "de": "anschließen",
-  "en": "to plug",
+  "en": "to connect; to join",
   "zh": "连接；接通",
   "pos": "verb",
   "tip": "可分动词：an- + schließen",
@@ -350,7 +350,7 @@
  {
   "de": "einsteigen",
   "en": "to board / get into (vehicle)",
-  "zh": "",
+  "zh": "上车；登机",
   "pos": "verb",
   "tip": "可分动词：ein- + steigen",
   "topic": "可分动词",
@@ -361,7 +361,7 @@
  },
  {
   "de": "darstellen",
-  "en": "to display sth.",
+  "en": "to depict; to represent",
   "zh": "描绘；表现；构成",
   "pos": "verb",
   "tip": "可分动词：dar- + stellen",
@@ -397,7 +397,7 @@
  },
  {
   "de": "feststellen",
-  "en": "",
+  "en": "to establish; to notice; to find",
   "zh": "确定；发现",
   "pos": "verb",
   "tip": "可分动词：fest- + stellen",
@@ -433,7 +433,7 @@
  },
  {
   "de": "anschauen",
-  "en": "to check out ⇆ sth.",
+  "en": "to look at; to watch",
   "zh": "观看",
   "pos": "verb",
   "tip": "可分动词：an- + schauen",
@@ -446,7 +446,7 @@
  {
   "de": "zurückschauen",
   "en": "to look back",
-  "zh": "",
+  "zh": "回顾；回头看",
   "pos": "verb",
   "tip": "可分动词：zurück- + schauen",
   "topic": "可分动词",
@@ -458,7 +458,7 @@
  {
   "de": "absetzen",
   "en": "to put down",
-  "zh": "",
+  "zh": "放下；摘下；扣除",
   "pos": "verb",
   "tip": "可分动词：ab- + setzen",
   "topic": "可分动词",
@@ -469,7 +469,7 @@
  },
  {
   "de": "umsetzen",
-  "en": "to shift sth.",
+  "en": "to implement; to put into practice",
   "zh": "实施；执行；换座位",
   "pos": "verb",
   "tip": "可分动词：um- + setzen",
@@ -481,8 +481,8 @@
  },
  {
   "de": "zusammensuchen",
-  "en": "to cull sth. from sth.",
-  "zh": "",
+  "en": "to gather (together)",
+  "zh": "收集；凑齐",
   "pos": "verb",
   "tip": "可分动词：zusammen- + suchen",
   "topic": "可分动词",
@@ -493,8 +493,8 @@
  },
  {
   "de": "anzeigen",
-  "en": "to alert",
-  "zh": "",
+  "en": "to report (to the police); to display",
+  "zh": "报案；显示",
   "pos": "verb",
   "tip": "可分动词：an- + zeigen",
   "topic": "可分动词",
@@ -505,31 +505,31 @@
  },
  {
   "de": "sich anstrengen",
-  "en": "",
+  "en": "to make an effort",
   "zh": "努力",
   "pos": "verb",
   "tip": "可分动词：an- + strengen（反身）",
   "topic": "可分动词",
   "prefix": "an",
-  "stem": "anstrengen",
+  "stem": "strengen",
   "past": "strengte sich an",
   "pp": "sich angestrengt"
  },
  {
   "de": "hervorheben",
-  "en": "",
+  "en": "to emphasize; to highlight",
   "zh": "强调；突出",
   "pos": "verb",
   "tip": "可分动词：hervor- + heben",
   "topic": "可分动词",
-  "prefix": "her",
-  "stem": "hervorheben",
+  "prefix": "hervor",
+  "stem": "heben",
   "past": "hob hervor",
   "pp": "hervorgehoben"
  },
  {
   "de": "ausreichen",
-  "en": "",
+  "en": "to suffice; to be enough",
   "zh": "足够",
   "pos": "verb",
   "tip": "可分动词：aus- + reichen",
@@ -541,19 +541,19 @@
  },
  {
   "de": "voraussehen",
-  "en": "",
+  "en": "to foresee",
   "zh": "预见",
   "pos": "verb",
   "tip": "可分动词：voraus- + sehen",
   "topic": "可分动词",
-  "prefix": "vor",
+  "prefix": "voraus",
   "stem": "sehen",
   "past": "sah voraus",
   "pp": "vorausgesehen"
  },
  {
   "de": "beitragen",
-  "en": "",
+  "en": "to contribute",
   "zh": "贡献；有助于",
   "pos": "verb",
   "tip": "可分动词：bei- + tragen",
@@ -565,7 +565,7 @@
  },
  {
   "de": "einwenden",
-  "en": "",
+  "en": "to object",
   "zh": "提出异议",
   "pos": "verb",
   "tip": "可分动词：ein- + wenden",
@@ -577,7 +577,7 @@
  },
  {
   "de": "vorwerfen",
-  "en": "",
+  "en": "to reproach; to accuse",
   "zh": "责备；指责",
   "pos": "verb",
   "tip": "可分动词：vor- + werfen",
