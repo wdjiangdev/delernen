@@ -27,6 +27,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.produceState
 import androidx.compose.runtime.remember
@@ -55,6 +56,8 @@ import kotlinx.coroutines.withContext
 fun CourseDetailScreen(num: String, onBack: () -> Unit) {
     val context = LocalContext.current
     val tts = remember { TtsHelper.get(context) }
+    // 离开课程详情时停止连读，避免在后台一直念
+    DisposableEffect(Unit) { onDispose { tts.stop() } }
 
     val card by produceState<KursCard?>(null, key1 = num) {
         value = withContext(Dispatchers.Default) { DataRepo.kursByNum(num) }

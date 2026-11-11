@@ -5,14 +5,24 @@ on:
     branches: [master]
     paths:
       - 'android/**'
+      - '.github/workflows/android.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
 
+# 同一时间只跑一个发版：新的 push 取消还在排队/运行的旧构建（每次 tag 都唯一，不会互相覆盖）
+concurrency:
+  group: android-release
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # versionCode = run number；versionName = 1.1.<run>（见 app/build.gradle.kts）
+      VERSION_NAME: 1.1.${{ github.run_number }}
+      RELEASE_TAG: android-v1.${{ github.run_number }}
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -28,18 +38,60 @@ jobs:
         with:
           gradle-version: '8.7'
 
-      - name: 写入固定签名 keystore
-        run: echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > android/debug.keystore
+      - name: 写入签名 keystore（与 TriCloud 共用的固定证书，来自 Secret）
+        env:
+          KS_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASS: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          # Secret 缺失（fork / 被删）时直接失败，避免产出签名不同的包导致用户无法覆盖安装
+          for v in KS_B64 KS_PASS KEY_ALIAS KEY_PASS; do
+            if [ -z "${!v}" ]; then echo "::error::缺少签名 Secret（$v 为空）"; exit 1; fi
+          done
+          echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/signing.keystore"
+          if [ ! -s "$RUNNER_TEMP/signing.keystore" ]; then echo "::error::keystore 解码为空"; exit 1; fi
+          echo "ANDROID_KEYSTORE_PATH=$RUNNER_TEMP/signing.keystore" >> "$GITHUB_ENV"
 
-      - name: 构建 debug APK
-        run: gradle -p android assembleDebug --stacktrace
+      - name: 构建 release APK（R8 + 资源压缩）
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: gradle -p android assembleRelease --stacktrace
 
-      - name: 改名 APK
-        run: cp android/app/build/outputs/apk/debug/app-debug.apk delernen-1.0.0.apk
+      - name: 校验签名并改名 APK
+        run: |
+          APK=android/app/build/outputs/apk/release/app-release.apk
+          if [ ! -f "$APK" ]; then
+            echo "::error::未找到已签名的 app-release.apk（签名配置未生效？）"
+            ls -R android/app/build/outputs/apk || true
+            exit 1
+          fi
+          APKSIGNER=$(ls "$ANDROID_HOME"/build-tools/*/apksigner | sort -V | tail -n1)
+          CERTS=$("$APKSIGNER" verify --print-certs "$APK")
+          echo "$CERTS" | grep -E "Signer #1 certificate (DN|SHA-256)"
+          # 必须是与旧版相同的共用证书，否则已安装用户无法覆盖升级
+          EXPECTED_SHA256=2308e396e33e6efce1d980ae4a0ee945588ef161117a6626579316d940438164
+          if ! echo "$CERTS" | grep -qi "SHA-256 digest: $EXPECTED_SHA256"; then
+            echo "::error::签名证书指纹与既有版本不一致"; exit 1
+          fi
+          cp "$APK" "delernen-$VERSION_NAME.apk"
 
-      - name: 发布 Release
+      - name: 上传 Room schema（首次生成后请提交到 android/app/schemas）
+        uses: actions/upload-artifact@v4
+        with:
+          name: room-schemas-${{ github.run_number }}
+          path: android/app/schemas
+          if-no-files-found: warn
+
+      - name: 发布 Release（每次构建一个新 tag，不覆盖旧版本）
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: android-v1.0.0
-          name: delernen Android v1.0.0
-          files: delernen-1.0.0.apk
+          tag_name: ${{ env.RELEASE_TAG }}
+          target_commitish: ${{ github.sha }}
+          name: delernen Android ${{ env.VERSION_NAME }}
+          body: |
+            versionName ${{ env.VERSION_NAME }} · versionCode ${{ github.run_number }} · commit ${{ github.sha }}
+            签名证书与之前的版本相同，可直接覆盖安装。
+          files: delernen-${{ env.VERSION_NAME }}.apk
