@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第1课 Kennenlernen 认识人 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第1课：合并 DW Folge 1-8，问候、告别、自我介绍、介绍他人、问出身。语法 sein/heißen/kommen 变位、W 问句、du 与 Sie。">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 1 课</div>
+<h1>第 1 课 · Kennenlernen 认识人</h1>
+<div class="de-title">DW A1 · Thema 1 · Folge 1-8 合并课</div>
+<div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 8 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 40 个</span><span>✍️ 自测 5 题</span></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>在不同时段正确问候、告别，并问对方「你好吗」</li>
+<li>自我介绍：说出自己的名字、来自哪里</li>
+<li>介绍第三个人：<b class="hl">Das ist …</b></li>
+<li>问对方叫什么、从哪来，并按场合选 <b class="hl">du</b> 还是 <b class="hl">Sie</b></li>
+<li>遇到麻烦时开口求助：说明「我有个问题、我的包不见了」——这正是 Nico 刚到德国时的处境</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，8 集连看）</h2>
+<div class="card">
+<div class="folge"><span class="no">Folge 1</span><span class="t">Hallo!<small>Nico 刚下飞机，在机场遇到 Emma，先学打招呼</small></span></div>
+<div class="folge"><span class="no">Folge 2</span><span class="t">Kein Problem!<small>学着说「没问题」，第一次开口求人帮忙</small></span></div>
+<div class="folge"><span class="no">Folge 3</span><span class="t">Tschüss!<small>Nico 的包被出租车拉走了，学告别用语</small></span></div>
+<div class="folge"><span class="no">Folge 4</span><span class="t">Von A bis Z<small>德语字母表：听懂并拼出自己的名字</small></span></div>
+<div class="folge"><span class="no">Folge 5</span><span class="t">Ich heiße Emma<small>Emma 和 Lisa 教 Nico 怎么介绍自己</small></span></div>
+<div class="folge"><span class="no">Folge 6</span><span class="t">Das ist Nico<small>把 Nico 介绍给别人：介绍第三个人</small></span></div>
+<div class="folge"><span class="no">Folge 7</span><span class="t">Woher kommst du?<small>问对方从哪来，说自己的国家</small></span></div>
+<div class="folge"><span class="no">Folge 8</span><span class="t">Nico hat ein Problem<small>Nico 说明自己的麻烦：包丢了，需要帮助</small></span></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 8 集（约 16 分钟），先抓剧情；第二遍只回看 Folge 1、5、7，跟着出声读核心句型。</p>
+<div class="btnrow">
+<a class="btn" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">▶ YouTube 官方播放列表（从 Folge 1 起）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/hallo/l-37250531" target="_blank" rel="noopener">DW 官网 Folge 1（含官网练习）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Hallo! Wie geht's?</span><span class="zh">嗨！你好吗？（熟人）</span></div>
+<div class="phrase"><span class="de">Guten Tag! Wie geht es Ihnen?</span><span class="zh">您好！您好吗？（正式）</span></div>
+<div class="phrase"><span class="de">Danke, gut. Und dir?</span><span class="zh">谢谢，挺好。你呢？</span></div>
+<div class="phrase"><span class="de">Wie heißt du? — Ich heiße Nico.</span><span class="zh">你叫什么？——我叫 Nico。</span></div>
+<div class="phrase"><span class="de">Wie heißen Sie? — Mein Name ist Lisa Brunner.</span><span class="zh">您叫什么？——我叫 Lisa Brunner。（正式）</span></div>
+<div class="phrase"><span class="de">Wer bist du? — Ich bin Emma.</span><span class="zh">你是谁？——我是 Emma。</span></div>
+<div class="phrase"><span class="de">Das ist Nico.</span><span class="zh">这是 Nico。（介绍第三人）</span></div>
+<div class="phrase"><span class="de">Woher kommst du? — Ich komme aus Spanien.</span><span class="zh">你从哪来？——我来自西班牙。</span></div>
+<div class="phrase"><span class="de">Entschuldigung, ich habe ein Problem.</span><span class="zh">不好意思，我有个麻烦。</span></div>
+<div class="phrase"><span class="de">Meine Tasche ist weg!</span><span class="zh">我的包不见了！</span></div>
+<div class="phrase"><span class="de">Kein Problem!</span><span class="zh">没问题！</span></div>
+<div class="phrase"><span class="de">Tschüss! Bis morgen!</span><span class="zh">再见！明天见！</span></div>
+<div class="tipbox">📌 把句型里的 Nico / Spanien 换成你自己的名字和国家，这 12 句就是你的第一段德语自我介绍。</div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Hallo! Wer bist du?</p>
+<p><span class="who">Nico:</span> Hallo, ich bin Nico.</p>
+<p><span class="who">Emma:</span> Hallo, Nico. Ich bin Emma. Und das ist Lisa.</p>
+<p><span class="who">Lisa:</span> Guten Tag, Nico. Woher kommst du?</p>
+<p><span class="who">Nico:</span> Ich komme aus Spanien. Entschuldigung, ich habe ein Problem. Meine Tasche ist weg!</p>
+<p><span class="who">Lisa:</span> Kein Problem, Nico. Wir helfen dir.</p>
+<p><span class="who">Nico:</span> Danke schön!</p>
+<p><span class="who">Emma:</span> Tschüss, Nico! Bis morgen!</p>
+<p><span class="who">Nico:</span> Tschüss, Emma!</p>
+<div class="tipbox">练法：先遮住中文自己读一遍，再点核心词旁的 🔊 逐词校音，最后把 Nico 换成自己、Spanien 换成自己的国家再读一遍。<br>注：<i>Wir helfen dir.</i>（我们帮你）是预告句，helfen 的变位第 9 课系统学，这里先整句记下。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）本课只有 3 个动词，先把变位背下来</b>——德语动词跟着主语变尾巴，这是后面所有课的地基。</p>
+<table>
+<tr><th>人称</th><th>sein 是</th><th>heißen 叫</th><th>kommen 来 / 来自</th></tr>
+<tr><td>ich 我</td><td><b>bin</b></td><td>heiße</td><td>komme</td></tr>
+<tr><td>du 你（熟）</td><td><b>bist</b></td><td>heißt</td><td>kommst</td></tr>
+<tr><td>er / sie / es 他 / 她 / 它</td><td><b>ist</b></td><td>heißt</td><td>kommt</td></tr>
+<tr><td>wir 我们</td><td><b>sind</b></td><td>heißen</td><td>kommen</td></tr>
+<tr><td>ihr 你们</td><td><b>seid</b></td><td>heißt</td><td>kommt</td></tr>
+<tr><td>sie / Sie 他们 / 您</td><td><b>sind</b></td><td>heißen</td><td>kommen</td></tr>
+</table>
+<p>规律：除 sein 全靠背之外，heißen / kommen 都是 <b class="hl">ich -e、du -st、er/sie/es -t、其余用原形</b>。heißen 的 du / er 形式都是 heißt（ß 后面不再加 s）。</p>
+</div>
+<div class="card">
+<p><b>2）W 问句：疑问词 + 动词第二位</b></p>
+<table>
+<tr><th>疑问词</th><th>意思</th><th>例句</th></tr>
+<tr><td>Wie?</td><td>怎样 / 什么（固定问法）</td><td>Wie heißt du? <span class="zh">你叫什么？</span></td></tr>
+<tr><td>Wer?</td><td>谁</td><td>Wer bist du? <span class="zh">你是谁？</span></td></tr>
+<tr><td>Woher?</td><td>从哪里</td><td>Woher kommst du? <span class="zh">你从哪来？</span></td></tr>
+<tr><td>Was?</td><td>什么</td><td>Was ist das? <span class="zh">这是什么？（第 5 课展开）</span></td></tr>
+</table>
+<p>陈述句同样是动词第二位：<b class="hl">Ich</b>（1）<b class="hl">komme</b>（2）aus Spanien. 记住「动词永远站第二位」，德语语序一半的问题就解决了。</p>
+</div>
+<div class="card">
+<p><b>3）du 还是 Sie？选错比语法错更尴尬</b></p>
+<table>
+<tr><th></th><th>du（熟人式）</th><th>Sie（尊称式，永远大写）</th></tr>
+<tr><td>用在</td><td>朋友、家人、同龄人、孩子</td><td>陌生人、长辈、官员、店员、正式场合</td></tr>
+<tr><td>问名字</td><td>Wie heißt <b>du</b>?</td><td>Wie heißen <b>Sie</b>?</td></tr>
+<tr><td>问好吗</td><td>Wie geht es <b>dir</b>?</td><td>Wie geht es <b>Ihnen</b>?</td></tr>
+<tr><td>问出身</td><td>Woher kommst <b>du</b>?</td><td>Woher kommen <b>Sie</b>?</td></tr>
+</table>
+<p>Nico 对 Emma、Lisa 用 du（同龄新朋友），在办事处、警察局要用 Sie——第 2 课就会碰到。</p>
+</div>
+<div class="card">
+<p><b>4）aus + 国家：说出身</b></p>
+<p>Ich komme aus <b class="hl">Spanien / China / Japan / den USA</b>. 多数国家名前面什么都不加；少数带冠词的要背：die Türkei → aus <b>der</b> Türkei，die USA → aus <b>den</b> USA，die Schweiz → aus <b>der</b> Schweiz。拼名字：<b class="hl">Wie buchstabiert man das?</b>（这个怎么拼？）—— Folge 4 的字母表在这里派上用场，自己的名字先练到能一口气拼出来。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（40 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>不看稿，用德语录一段 20 秒语音或对着镜子说完下面 5 句（替换成你自己的信息）：</p>
+<ul>
+<li>Guten Tag! Ich heiße ______.</li>
+<li>Ich komme aus ______.</li>
+<li>Das ist mein Freund / meine Freundin ______.</li>
+<li>Wie heißt du? Woher kommst du?</li>
+<li>Tschüss! Bis morgen!</li>
+</ul>
+<p style="margin-top:10px">5 句能连着说完不卡壳，这课就算过了，直接进第 2 课；卡在变位就回第四步再看一遍表格。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="./">← 返回课程目录</a>
+</div>
+<script>
+var WORDS=[
+["Hallo!","嗨！","hello"],["Guten Morgen.","早上好。","good morning"],["Guten Tag.","您好。","good day"],["Guten Abend.","晚上好。","good evening"],["Gute Nacht.","晚安。","good night"],
+["Tschüss.","再见。（熟人）","bye"],["Auf Wiedersehen.","再见。（正式）","goodbye"],["Bis bald.","回头见。","see you soon"],["Bis morgen.","明天见。","see you tomorrow"],["Mach's gut!","保重！","take care"],
+["Wie geht es dir?","你好吗？（熟）","how are you?"],["Wie geht es Ihnen?","您好吗？（正式）","how are you? (formal)"],["gut","好","good"],["sehr gut","很好","very good"],["nicht so gut","不太好","not so good"],
+["danke","谢谢","thanks"],["danke schön","非常感谢","thank you very much"],["bitte","请；不客气","please; you're welcome"],["Entschuldigung!","不好意思！","excuse me!"],["Kein Problem.","没问题。","no problem"],
+["der Name, die Namen","名字","name"],["der Vorname, die Vornamen","名","first name"],["der Nachname, die Nachnamen","姓","surname"],["heißen","（名字）叫","to be called"],["sein","是","to be"],
+["wer","谁","who"],["was","什么","what"],["woher","从哪里","from where"],["aus","来自（+ 三格）","from"],["kommen","来；来自","to come"],
+["die Sprache, die Sprachen","语言","language"],["sprechen","说（语言）","to speak"],["lernen","学习","to learn"],["die Tasche, die Taschen","包","bag"],["das Problem, die Probleme","问题；麻烦","problem"],
+["der Buchstabe, die Buchstaben","字母","letter"],["buchstabieren","拼写","to spell"],["die Frau, die Frauen","女士；女人","woman; Mrs."],["der Herr, die Herren","先生","Mr.; gentleman"],["das Kind, die Kinder","孩子","child"]
+];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[
+ {q:"1. 对陌生人问「您叫什么」，正确的是？",opts:["Wie heißt du?","Wie heißen Sie?","Wer bist du?","Was ist Ihr Name du?"],a:1},
+ {q:"2. „Ich ___ aus China.“ 空格里填 kommen 的正确形式：",opts:["kommst","kommt","komme","kommen"],a:2},
+ {q:"3. „Das ___ Emma.“ 介绍第三个人时填：",opts:["bin","bist","ist","sind"],a:2},
+ {q:"4. 对方说 „Danke schön!“ 你回答「没问题」应该说：",opts:["Bis morgen!","Kein Problem!","Entschuldigung!","Gute Nacht!"],a:1},
+ {q:"5. „Woher kommst du?“ 是在问什么？",opts:["你去哪里","你叫什么","你从哪里来","你好吗"],a:2}
+];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-01-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>
