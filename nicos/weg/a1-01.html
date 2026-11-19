@@ -31,6 +31,12 @@ td .zh{color:var(--text3);font-size:13px}
 .folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
 .folge .t{font-size:14px}
 .folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
 .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
 a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
@@ -87,19 +93,21 @@ a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline
 </ul>
 </div>
 
-<h2 class="sec">🎬 第一步 · 看视频（DW 原版，8 集连看）</h2>
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
 <div class="card">
-<div class="folge"><span class="no">Folge 1</span><span class="t">Hallo!<small>Nico 刚下飞机，在机场遇到 Emma，先学打招呼</small></span></div>
-<div class="folge"><span class="no">Folge 2</span><span class="t">Kein Problem!<small>学着说「没问题」，第一次开口求人帮忙</small></span></div>
-<div class="folge"><span class="no">Folge 3</span><span class="t">Tschüss!<small>Nico 的包被出租车拉走了，学告别用语</small></span></div>
-<div class="folge"><span class="no">Folge 4</span><span class="t">Von A bis Z<small>德语字母表：听懂并拼出自己的名字</small></span></div>
-<div class="folge"><span class="no">Folge 5</span><span class="t">Ich heiße Emma<small>Emma 和 Lisa 教 Nico 怎么介绍自己</small></span></div>
-<div class="folge"><span class="no">Folge 6</span><span class="t">Das ist Nico<small>把 Nico 介绍给别人：介绍第三个人</small></span></div>
-<div class="folge"><span class="no">Folge 7</span><span class="t">Woher kommst du?<small>问对方从哪来，说自己的国家</small></span></div>
-<div class="folge"><span class="no">Folge 8</span><span class="t">Nico hat ein Problem<small>Nico 说明自己的麻烦：包丢了，需要帮助</small></span></div>
-<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 8 集（约 16 分钟），先抓剧情；第二遍只回看 Folge 1、5、7，跟着出声读核心句型。</p>
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 1，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 1</span><span class="t">Hallo!<small>Nico 刚下飞机，在机场遇到 Emma，先学打招呼</small></span><button class="playbtn" data-folge="1" onclick="playFolge(1,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 2</span><span class="t">Kein Problem!<small>学着说「没问题」，第一次开口求人帮忙</small></span><button class="playbtn" data-folge="2" onclick="playFolge(2,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 3</span><span class="t">Tschüss!<small>Nico 的包被出租车拉走了，学告别用语</small></span><button class="playbtn" data-folge="3" onclick="playFolge(3,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 4</span><span class="t">Von A bis Z<small>德语字母表：听懂并拼出自己的名字</small></span><button class="playbtn" data-folge="4" onclick="playFolge(4,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 5</span><span class="t">Ich heiße Emma<small>Emma 和 Lisa 教 Nico 怎么介绍自己</small></span><button class="playbtn" data-folge="5" onclick="playFolge(5,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 6</span><span class="t">Das ist Nico<small>把 Nico 介绍给别人：介绍第三个人</small></span><button class="playbtn" data-folge="6" onclick="playFolge(6,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 7</span><span class="t">Woher kommst du?<small>问对方从哪来，说自己的国家</small></span><button class="playbtn" data-folge="7" onclick="playFolge(7,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 8</span><span class="t">Nico hat ein Problem<small>Nico 说明自己的麻烦：包丢了，需要帮助</small></span><button class="playbtn" data-folge="8" onclick="playFolge(8,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 8 集（约 16 分钟），先抓剧情；第二遍只回看 Folge 1、5、7，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
 <div class="btnrow">
-<a class="btn" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">▶ YouTube 官方播放列表（从 Folge 1 起）</a>
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
 <a class="btn ghost" href="https://learngerman.dw.com/en/hallo/l-37250531" target="_blank" rel="noopener">DW 官网 Folge 1（含官网练习）</a>
 <a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
 </div>
@@ -204,6 +212,31 @@ a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline
 <a class="back" href="./">← 返回课程目录</a>
 </div>
 <script>
+var ytPlayer=null,ytReady=false,pendingFolge=1;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:1,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
 var WORDS=[
 ["Hallo!","嗨！","hello"],["Guten Morgen.","早上好。","good morning"],["Guten Tag.","您好。","good day"],["Guten Abend.","晚上好。","good evening"],["Gute Nacht.","晚安。","good night"],
 ["Tschüss.","再见。（熟人）","bye"],["Auf Wiedersehen.","再见。（正式）","goodbye"],["Bis bald.","回头见。","see you soon"],["Bis morgen.","明天见。","see you tomorrow"],["Mach's gut!","保重！","take care"],
