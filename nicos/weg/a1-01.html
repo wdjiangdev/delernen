@@ -66,6 +66,14 @@ a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline
 #doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
 #doneBtn.done{border-color:var(--green);color:var(--green)}
 .back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
 #themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
 @media(max-width:480px){.phrase .zh{max-width:40%}}
 </style>
@@ -81,6 +89,7 @@ a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline
 <h1>第 1 课 · Kennenlernen 认识人</h1>
 <div class="de-title">DW A1 · Thema 1 · Folge 1-8 合并课</div>
 <div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 8 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 40 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>📖 逐步学习模式：点每步标题可收起 / 展开，一次只看一步</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部展开</button></div>
 
 <h2 class="sec">🎯 学完这课，你能做到</h2>
 <div class="card">
@@ -319,6 +328,61 @@ paintDone();
   apply(cur);
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
   window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-01-step';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var allOpen=false,openIdx=0;
+  try{var sv=parseInt(localStorage.getItem(STEP_KEY),10);if(!isNaN(sv)&&sv>=0&&sv<secs.length)openIdx=sv;}catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(scroll){
+    bodies.forEach(function(b,i){
+      var show=allOpen||i===openIdx;
+      b.style.display=show?'':'none';
+      secs[i].classList.toggle('closed',!show);
+      secs[i].setAttribute('aria-expanded',show?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn){btn.textContent=allOpen?'回到逐步模式':'全部展开';btn.classList.toggle('on',allOpen);}
+    if(videoIdx>=0&&!allOpen&&openIdx!==videoIdx)pauseVideo();
+    if(scroll&&!allOpen&&openIdx>=0)setTimeout(function(){secs[openIdx].scrollIntoView({behavior:'smooth',block:'start'});},60);
+  }
+  function openStep(i,scroll){
+    if(allOpen){allOpen=false;openIdx=i;apply(scroll);save();return;}
+    openIdx=(openIdx===i)?-1:i;
+    apply(scroll);save();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,String(openIdx));}catch(e){}}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){openStep(i,true);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openStep(i,true);}});
+  });
+  window.toggleExpandAll=function(){
+    allOpen=!allOpen;
+    if(!allOpen&&openIdx<0)openIdx=0;
+    apply(false);
+  };
+  apply(false);
+  if(openIdx>0)setTimeout(function(){secs[openIdx].scrollIntoView({block:'start'});},350);
 })();
 </script>
 <script src="/pwa.js"></script>
