@@ -89,7 +89,7 @@ h2.sec.closed .chev{transform:rotate(-90deg)}
 <h1>第 1 课 · Kennenlernen 认识人</h1>
 <div class="de-title">DW A1 · Thema 1 · Folge 1-8 合并课</div>
 <div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 8 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 40 个</span><span>✍️ 自测 5 题</span></div>
-<div class="viewbar"><span>📖 逐步学习模式：点每步标题可收起 / 展开，一次只看一步</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部展开</button></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
 
 <h2 class="sec">🎯 学完这课，你能做到</h2>
 <div class="card">
@@ -333,7 +333,7 @@ paintDone();
 
 <script>
 (function(){
-  var STEP_KEY='nicosweg-a1-01-step';
+  var STEP_KEY='nicosweg-a1-01-steps';
   var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
   if(!secs.length)return;
   var bodies=[],videoIdx=-1;
@@ -349,40 +349,36 @@ paintDone();
     }
     bodies.push(body);
   });
-  var allOpen=false,openIdx=0;
-  try{var sv=parseInt(localStorage.getItem(STEP_KEY),10);if(!isNaN(sv)&&sv>=0&&sv<secs.length)openIdx=sv;}catch(e){}
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
   function pauseVideo(){
     try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
   }
-  function apply(scroll){
+  function apply(){
     bodies.forEach(function(b,i){
-      var show=allOpen||i===openIdx;
-      b.style.display=show?'':'none';
-      secs[i].classList.toggle('closed',!show);
-      secs[i].setAttribute('aria-expanded',show?'true':'false');
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
     });
     var btn=document.getElementById('expandAllBtn');
-    if(btn){btn.textContent=allOpen?'回到逐步模式':'全部展开';btn.classList.toggle('on',allOpen);}
-    if(videoIdx>=0&&!allOpen&&openIdx!==videoIdx)pauseVideo();
-    if(scroll&&!allOpen&&openIdx>=0)setTimeout(function(){secs[openIdx].scrollIntoView({behavior:'smooth',block:'start'});},60);
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
   }
-  function openStep(i,scroll){
-    if(allOpen){allOpen=false;openIdx=i;apply(scroll);save();return;}
-    openIdx=(openIdx===i)?-1:i;
-    apply(scroll);save();
-  }
-  function save(){try{localStorage.setItem(STEP_KEY,String(openIdx));}catch(e){}}
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
   secs.forEach(function(h,i){
-    h.addEventListener('click',function(){openStep(i,true);});
-    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openStep(i,true);}});
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
   });
   window.toggleExpandAll=function(){
-    allOpen=!allOpen;
-    if(!allOpen&&openIdx<0)openIdx=0;
-    apply(false);
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
   };
-  apply(false);
-  if(openIdx>0)setTimeout(function(){secs[openIdx].scrollIntoView({block:'start'});},350);
+  apply();
 })();
 </script>
 <script src="/pwa.js"></script>
