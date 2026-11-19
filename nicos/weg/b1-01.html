@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第1课 Arbeit und Zukunft 工作与未来 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第1课 Arbeit und Zukunft：合并 DW Folge 1-4。1）Futur I：werden + 不定式，谈将来">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 1 课</div>
+<h1>第 1 课 · Arbeit und Zukunft 工作与未来</h1>
+<div class="de-title">DW B1 · Thema 1 · Folge 1-4 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html" class="cur">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>做一次完整的职业自我盘点：说清自己的兴趣、长处和已有经验</li>
+<li>用 Futur I 谈将来：<b class="hl">Ich werde …</b>，既能说计划，也能表推测</li>
+<li>用 Konjunktiv II 说愿望：<b class="hl">Ich würde gern …</b>，比 ich will 礼貌得多</li>
+<li>看懂咨询与招聘场景的高频词：Berufsberatung、Ausbildungsplatz、Arbeitsmarkt</li>
+<li>讲一段「我的五年计划」：升学、职业、城市三条线都说到</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 1，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 1</span><span class="t">Berufsberatung<small>Nico 去做职业咨询：测兴趣、盘长处，顾问帮他把「想做的」和「能做的」对上号</small></span><button class="playbtn" data-folge="1" onclick="playFolge(1,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 2</span><span class="t">Meine Muttersprache<small>母语也是资本：Nico 的西班牙语在德国职场反而成优势，聊语言能力怎么变职业筹码</small></span><button class="playbtn" data-folge="2" onclick="playFolge(2,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 3</span><span class="t">Bei der Arbeit<small>跟着镜头看德国职场日常：会议、邮件、同事相处，一个工作日到底怎么过</small></span><button class="playbtn" data-folge="3" onclick="playFolge(3,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 4</span><span class="t">Zukunftspläne<small>众人摊开未来计划：谁想升学、谁想换行，谈将来的句型密集出现</small></span><button class="playbtn" data-folge="4" onclick="playFolge(4,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich weiß noch nicht genau, was ich beruflich machen will.</span><span class="zh">我还不确切知道自己职业上想做什么。</span></div>
+<div class="phrase"><span class="de">Die Beraterin hat mir einen Test empfohlen.</span><span class="zh">顾问推荐我做了一个（职业倾向）测试。</span></div>
+<div class="phrase"><span class="de">Meine Stärken sind Sprachen und Teamarbeit.</span><span class="zh">我的长处是语言和团队合作。</span></div>
+<div class="phrase"><span class="de">Ich werde mich um einen Ausbildungsplatz bewerben.</span><span class="zh">我将申请一个培训岗位。</span></div>
+<div class="phrase"><span class="de">Nächstes Jahr werde ich eine Ausbildung anfangen.</span><span class="zh">明年我将开始职业培训。</span></div>
+<div class="phrase"><span class="de">Ich würde gern mit Menschen arbeiten.</span><span class="zh">我很想从事与人打交道的工作。（愿望）</span></div>
+<div class="phrase"><span class="de">Am liebsten würde ich in einer internationalen Firma arbeiten.</span><span class="zh">我最想在一家国际公司工作。</span></div>
+<div class="phrase"><span class="de">Der Arbeitsmarkt für Pflegekräfte ist sehr gut.</span><span class="zh">护理人员的就业市场非常好。</span></div>
+<div class="phrase"><span class="de">Ich habe schon ein Praktikum in einem Büro gemacht.</span><span class="zh">我已经在一家办公室实习过了。</span></div>
+<div class="phrase"><span class="de">Er wird bestimmt eine gute Stelle finden.</span><span class="zh">他肯定会找到一份好职位。（推测）</span></div>
+<div class="phrase"><span class="de">Das wird schon klappen!</span><span class="zh">肯定能成的！（鼓励、打包票）</span></div>
+<div class="phrase"><span class="de">Mein Ziel ist es, in fünf Jahren fest angestellt zu sein.</span><span class="zh">我的目标是五年后有一份正式聘用。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Beraterin:</span> Guten Tag, Nico. Setzen Sie sich. Was kann ich für Sie tun?</p>
+<p><span class="who">Nico:</span> Guten Tag. Ich mache bald meinen Schulabschluss und weiß nicht, wie es weitergeht.</p>
+<p><span class="who">Beraterin:</span> Keine Sorge, dafür sind wir da. Was machen Sie gern, und was können Sie gut?</p>
+<p><span class="who">Nico:</span> Ich spreche drei Sprachen und arbeite gern mit Menschen. Aber ich bin schlecht in Mathe.</p>
+<p><span class="who">Beraterin:</span> Das ist doch eine klare Stärke! Haben Sie schon an Berufe mit Sprachen gedacht, zum Beispiel im Tourismus?</p>
+<p><span class="who">Nico:</span> Ja, das klingt gut. Aber ich würde auch gern studieren.</p>
+<p><span class="who">Beraterin:</span> Dann schauen wir uns beides an: eine Ausbildung oder ein Studium an einer Fachhochschule.</p>
+<p><span class="who">Nico:</span> Und was werde ich in fünf Jahren machen?</p>
+<p><span class="who">Beraterin:</span> Das entscheiden Sie. Ich gebe Ihnen Informationen mit – und Sie treffen die Entscheidung in Ruhe.</p>
+<div class="tipbox">练法：先圈出顾问的提问套路（Was machen Sie gern? Was können Sie gut?）——这是德国职业咨询的标准开场；再把 Nico 的回答换成你自己的：你会哪几门语言、你的短板是什么、你想走 Ausbildung 还是 Studium，最后完整演一遍这场咨询。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）Futur I：werden + 不定式，谈将来</b></p>
+<p>德语表将来最常用的不是 Futur I，而是现在时加时间状语（Morgen fahre ich ab.）。但<b class="hl">只要是正式预告、计划和承诺，就用 Futur I：werden 变位占第二位，不定式去句尾</b>。</p><table><tr><th>人称</th><th>werden</th><th>例句</th></tr><tr><td>ich</td><td>werde</td><td>Ich <b>werde</b> eine Ausbildung <b>anfangen</b>.</td></tr><tr><td>du</td><td>wirst</td><td>Du <b>wirst</b> das schon <b>schaffen</b>.</td></tr><tr><td>er / sie / es</td><td>wird</td><td>Er <b>wird</b> sich um die Stelle <b>bewerben</b>.</td></tr><tr><td>wir</td><td>werden</td><td>Wir <b>werden</b> uns morgen <b>entscheiden</b>.</td></tr><tr><td>ihr</td><td>werdet</td><td>Ihr <b>werdet</b> viel <b>lernen</b>.</td></tr><tr><td>sie / Sie</td><td>werden</td><td>Sie <b>werden</b> in Berlin <b>studieren</b>.</td></tr></table><p>最容易错的是词序：不定式永远在句尾，中间隔多远都不许提前。可分动词整段去句尾：Ich werde nächstes Jahr eine Ausbildung <b>anfangen</b>。（不是 fange … an。）</p>
+</div>
+<div class="card">
+<p><b>2）Futur I 的第二副面孔：表推测</b></p>
+<p>werden + 不定式还可以说<b class="hl">「我估计、八成是」——对现在或将来的推测</b>，常和 bestimmt、wahrscheinlich、vermutlich、schon 搭配：</p><table><tr><th>例句</th><th>意思</th></tr><tr><td>Er <b>wird</b> schon zu Hause <b>sein</b>.</td><td>他八成已经到家了。（推测现在）</td></tr><tr><td>Sie <b>wird</b> bestimmt eine gute Stelle <b>finden</b>.</td><td>她肯定会找到好工作的。（推测将来）</td></tr><tr><td>Das <b>wird</b> schon <b>klappen</b>!</td><td>肯定能成！（安慰、打包票）</td></tr></table><p>怎么区分计划和推测？看语境：有具体时间安排多半是计划；有 bestimmt / wahrscheinlich / schon 这类词，多半是推测。中文翻译时推测句要带上「八成、肯定、应该」。</p>
+</div>
+<div class="card">
+<p><b>3）Konjunktiv II 表愿望：würde + 不定式</b></p>
+<p>说愿望、假设和礼貌请求，德国人很少用 ich will（太直接），而用<b class="hl">würde + 不定式</b>：</p><table><tr><th>人称</th><th>würde</th></tr><tr><td>ich</td><td>würde</td></tr><tr><td>du</td><td>würdest</td></tr><tr><td>er / sie / es</td><td>würde</td></tr><tr><td>wir</td><td>würden</td></tr><tr><td>ihr</td><td>würdet</td></tr><tr><td>sie / Sie</td><td>würden</td></tr></table><p>愿望三档：Ich <b>würde gern</b> im Ausland arbeiten.（我想去国外工作）→ Ich <b>würde lieber</b> studieren.（我更想上大学）→ <b>Am liebsten würde</b> ich Sprachen unterrichten.（我最想教语言）注意 lieber / am liebsten 出现时，würde 提前到第二位，后面的主语跟在它后面。</p>
+</div>
+<div class="card">
+<p><b>4）谈职业的四个动词搭配（咨询场景必备）</b></p>
+<table><tr><th>搭配</th><th>例句</th><th>中文</th></tr><tr><td>sich interessieren <b class="hl">für</b> + 宾格</td><td>Ich interessiere mich <b>für</b> Technik.</td><td>我对技术感兴趣</td></tr><tr><td>gut / schlecht sein <b class="hl">in</b> + 三格</td><td>Ich bin gut <b>in</b> Sprachen, aber schlecht <b>in</b> Mathe.</td><td>我语言好、数学差</td></tr><tr><td>sich bewerben <b class="hl">um</b> + 宾格</td><td>Er bewirbt sich <b>um</b> einen Ausbildungsplatz.</td><td>他申请一个培训岗位</td></tr><tr><td>Erfahrung haben / sammeln <b class="hl">in</b> + 三格</td><td>Sie hat Erfahrung <b>in</b> der Pflege.</td><td>她有护理方面的经验</td></tr></table><p>这四个介词不能换、不能省：für 管兴趣、um 管申请目标、in 管领域。咨询时把这四句套上，自我盘点就完整了。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>录一段 40-60 秒的「我的未来计划」：先盘点、再计划、再说愿望，按下面 5 句往下说（换成你自己的信息）：</p>
+<ul>
+<li>Im Moment mache ich ______ und bin gut in ______.</li>
+<li>Meine Stärken sind ______ und ______.</li>
+<li>Nächstes Jahr werde ich ______.</li>
+<li>Ich würde am liebsten als ______ arbeiten.</li>
+<li>In fünf Jahren werde ich hoffentlich ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：5 句脱稿说完；Futur I 至少 2 句且不定式都落在句尾；würde gern / am liebsten 至少 1 句；必须出现一个具体时间点（nächstes Jahr 或 in fünf Jahren）——缺哪一项就回第四步对应语法卡补练，再重新录一遍。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a2-19.html">← A2 第 19 课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-02.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=153;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:153,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Agentur für Arbeit (nur Sg.)", "联邦就业局", "Federal Employment Agency"], ["der Berater, die Berater / die Beraterin, die Beraterinnen", "顾问", "advisor; consultant"], ["die Beratung, die Beratungen", "咨询", "consultation"], ["die Berufswahl (nur Sg.)", "职业选择", "career choice"], ["die Berufsorientierung, die Berufsorientierungen", "职业指导", "career guidance"], ["das Berufsfeld, die Berufsfelder", "职业领域", "occupational field"], ["die Berufschance, die Berufschancen", "就业机会", "career opportunity"], ["der Ausbildungsberuf, die Ausbildungsberufe", "需职业培训的工种", "occupation requiring vocational training"], ["der Ausbildungsplatz, die Ausbildungsplätze", "培训岗位；学徒名额", "apprenticeship position"], ["die Berufsschule, die Berufsschulen", "职业学校", "vocational school"], ["die Fachhochschule, die Fachhochschulen", "应用科学大学", "university of applied sciences"], ["die Hochschule, die Hochschulen", "高校", "university, college"], ["der Arbeitsmarkt, die Arbeitsmärkte", "就业市场", "job market"], ["das Jobangebot, die Jobangebote", "工作机会；职位空缺", "job offer"], ["der Nebenjob, die Nebenjobs", "兼职", "side job; part-time job"], ["jobben (aus dem Englischen)", "打工", "to work (a job), to do odd jobs"], ["der Arbeitgeber, die Arbeitgeber / die Arbeitgeberin, die Arbeitgeberinnen", "雇主", "employer"], ["der Arbeitnehmer, die Arbeitnehmer / die Arbeitnehmerin, die Arbeitnehmerinnen", "雇员", "employee"], ["der Arbeitsvertrag, die Arbeitsverträge", "劳动合同", "employment contract"], ["die Arbeitszeit, die Arbeitszeiten", "工作时间", "working hours"], ["die Vollzeit (nur Sg.)", "全职", "full-time work"], ["die Teilzeit (nur Sg.)", "兼职；非全日制工作", "part-time work"], ["der Lebenslauf, die Lebensläufe", "简历", "CV; résumé"], ["die Bewerbung, die Bewerbungen", "求职申请", "job application"], ["der Praktikumsplatz, die Praktikumsplätze", "实习岗位", "internship position"], ["die Erfahrung, die Erfahrungen", "经验", "experience"], ["die Teamfähigkeit (nur Sg.)", "团队合作能力", "ability to work in a team"], ["kritikfähig", "能接受批评的", "able to take criticism"], ["zielorientiert", "目标导向的", "goal-oriented"], ["erfolgreich", "成功的", "successful"], ["berufstätig", "有工作的", "employed; working"], ["eine Entscheidung treffen", "做决定", "to make a decision"], ["die Qual der Wahl haben", "难以抉择", "to be spoiled for choice"], ["der Jobwechsel, die Jobwechsel", "换工作", "job change"], ["die Arbeitslosigkeit (nur Sg.)", "失业", "unemployment"], ["das Arbeitslosengeld (nur Sg.)", "失业金", "unemployment benefit"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Nächstes Jahr ___ ich eine Ausbildung anfangen.“ 空格填：", "opts": ["werde", "wirst", "werden", "wird"], "a": 0}, {"q": "2. 哪一句是「推测」而不是计划？", "opts": ["Wir werden nächstes Jahr nach Hamburg ziehen.", "Ich werde morgen um acht Uhr aufstehen.", "Sie wird nach der Schule eine Ausbildung machen.", "Er wird bestimmt schon zu Hause sein."], "a": 3}, {"q": "3. „Ich ___ gern in einem internationalen Team arbeiten.“（说愿望，最礼貌）空格填：", "opts": ["will", "wollte", "werde", "würde"], "a": 3}, {"q": "4. 词序完全正确的一句是：", "opts": ["Ich werde bewerben mich um einen Ausbildungsplatz.", "Ich mich werde um einen Ausbildungsplatz bewerben.", "Ich werde mich um einen Ausbildungsplatz bewerben.", "Ich werde mich bewerben um einen Ausbildungsplatz."], "a": 2}, {"q": "5. „Ich interessiere mich ___ Sprachen und Technik.“ 空格填：", "opts": ["auf", "über", "an", "für"], "a": 3}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-01-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-01-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

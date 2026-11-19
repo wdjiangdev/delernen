@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第3课 Geschichte und Heimat 历史与故乡 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第3课 Geschichte und Heimat：合并 DW Folge 9-12。1）Präteritum 规则动词：词尾 -te，叙事的主力">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 3 课</div>
+<h1>第 3 课 · Geschichte und Heimat 历史与故乡</h1>
+<div class="de-title">DW B1 · Thema 3 · Folge 9-12 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html" class="cur">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>用 Präteritum 讲一段过去的事：出生、上学、童年生活，不再只靠 Perfekt 硬撑</li>
+<li>说清德国现代史的四个坐标：<b class="hl">Zweiter Weltkrieg、DDR、Mauer、Wiedervereinigung</b></li>
+<li>用 als 从句讲单次过去事件：<b class="hl">Als ich ein Kind war, …</b></li>
+<li>谈 Heimat：说清你心中的故乡在哪里、为什么，并听懂别人的版本</li>
+<li>分清 als / wenn / während 在过去叙事里的分工，不混用</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 9，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 9</span><span class="t">Heimat<small>Heimat 到底是什么：出生地、语言，还是心里的一种感觉？众人各执一词</small></span><button class="playbtn" data-folge="9" onclick="playFolge(9,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 10</span><span class="t">Krieg und Frieden<small>从二战讲起：战争的记忆怎么塑造了今天的德国人</small></span><button class="playbtn" data-folge="10" onclick="playFolge(10,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 11</span><span class="t">Die Mauer<small>柏林墙专题：1961 年竖起、1989 年倒下，中间隔着两个德国</small></span><button class="playbtn" data-folge="11" onclick="playFolge(11,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 12</span><span class="t">Reunification<small>英文标题集：统一之后呢？东边和西边的生活，真正合到一起了吗</small></span><button class="playbtn" data-folge="12" onclick="playFolge(12,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Als ich ein Kind war, lebte ich in einem kleinen Dorf.</span><span class="zh">我小时候住在一个小村子里。</span></div>
+<div class="phrase"><span class="de">Früher gab es zwei deutsche Staaten.</span><span class="zh">以前有两个德国（国家）。</span></div>
+<div class="phrase"><span class="de">Die Mauer teilte Berlin fast 30 Jahre lang.</span><span class="zh">柏林墙把柏林分隔了将近 30 年。</span></div>
+<div class="phrase"><span class="de">1989 fiel die Mauer.</span><span class="zh">1989 年，柏林墙倒塌了。</span></div>
+<div class="phrase"><span class="de">Ein Jahr später war Deutschland wiedervereinigt.</span><span class="zh">一年后，德国重新统一了。</span></div>
+<div class="phrase"><span class="de">Meine Großeltern erzählten oft vom Krieg.</span><span class="zh">我的祖父母常讲起战争年代。</span></div>
+<div class="phrase"><span class="de">Heimat ist für mich der Ort, wo meine Familie lebt.</span><span class="zh">对我来说，故乡就是家人生活的地方。</span></div>
+<div class="phrase"><span class="de">Ich bin in China aufgewachsen, aber jetzt ist Deutschland meine zweite Heimat.</span><span class="zh">我在中国长大，但现在德国是我的第二故乡。</span></div>
+<div class="phrase"><span class="de">Damals durfte man nicht frei reisen.</span><span class="zh">当时人们不能自由旅行。</span></div>
+<div class="phrase"><span class="de">Viele Menschen flohen in den Westen.</span><span class="zh">许多人逃往西方。</span></div>
+<div class="phrase"><span class="de">Nach dem Krieg lag die Stadt in Trümmern.</span><span class="zh">战后，这座城市一片废墟。</span></div>
+<div class="phrase"><span class="de">Die Wende veränderte das Leben von Millionen Menschen.</span><span class="zh">那个转折期改变了数百万人的生活。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Nico:</span> Herr Wagner, Sie sind in der DDR aufgewachsen. Wie war das Leben damals?</p>
+<p><span class="who">Herr Wagner:</span> Es war normal für uns, wir kannten es nicht anders. Aber wir durften nicht in den Westen reisen.</p>
+<p><span class="who">Nico:</span> Und die Mauer? Stand sie weit weg von hier?</p>
+<p><span class="who">Herr Wagner:</span> Nein, sie war ganz nah. Als die Mauer fiel, war ich 35 Jahre alt.</p>
+<p><span class="who">Nico:</span> Was haben Sie an diesem Tag gemacht?</p>
+<p><span class="who">Herr Wagner:</span> Ich hörte die Nachricht im Radio und fuhr sofort nach Berlin. Überall waren Menschen, alle lachten und weinten.</p>
+<p><span class="who">Nico:</span> Und nach der Wiedervereinigung?</p>
+<p><span class="who">Herr Wagner:</span> Alles veränderte sich: das Geld, die Arbeit, das ganze Leben. Nicht alles wurde besser, aber wir waren endlich ein Land.</p>
+<p><span class="who">Nico:</span> Was ist Heimat für Sie?</p>
+<p><span class="who">Herr Wagner:</span> Heimat ist dieser Ort hier. Ich bin hier geboren, und hier bleibe ich.</p>
+<div class="tipbox">练法：先把对话里的 Präteritum 动词全部找出来，分成两堆——规则的 -te 型（hörte、lachte）和不规则变元音型（war、fiel、fuhr、stand）；再换角色：你当记者，用 Wie war … damals? 和 Was passierte dann? 追问三句，把答案换成你祖辈那一代的故事讲一遍。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）Präteritum 规则动词：词尾 -te，叙事的主力</b></p>
+<p>Perfekt 是口语里说「发生过的事」，<b class="hl">Präteritum 是讲故事、写叙事的时态</b>：新闻、历史、小说、正式讲述都用它。规则动词造法：词干 + -te + 人称词尾：</p><table><tr><th>人称</th><th>sagen（说）</th><th>leben（生活）</th><th>arbeiten（工作）</th></tr><tr><td>ich</td><td>sagte</td><td>lebte</td><td>arbeitete</td></tr><tr><td>du</td><td>sagtest</td><td>lebtest</td><td>arbeitetest</td></tr><tr><td>er / sie / es</td><td>sagte</td><td>lebte</td><td>arbeitete</td></tr><tr><td>wir</td><td>sagten</td><td>lebten</td><td>arbeiteten</td></tr><tr><td>ihr</td><td>sagtet</td><td>lebtet</td><td>arbeitetet</td></tr><tr><td>sie / Sie</td><td>sagten</td><td>lebten</td><td>arbeiteten</td></tr></table><p>注意两点：ich 和 er 形式相同（都是 -te 结尾，不再加 -t）；词干以 -t / -d 结尾的动词（arbeiten、warten）要多垫一个 e：arbeitete。另有一小批「混合动词」元音也变：denken → dachte、bringen → brachte、wissen → wusste，先整词记。</p>
+</div>
+<div class="card">
+<p><b>2）高频不规则 Präteritum：这张表背下来，叙事就通了</b></p>
+<p>讲故事绕不开这批词，元音变化没有捷径，按组背：</p><table><tr><th>原形</th><th>Präteritum</th><th>原形</th><th>Präteritum</th></tr><tr><td>sein</td><td><b class="hl">war</b></td><td>haben</td><td><b class="hl">hatte</b></td></tr><tr><td>gehen</td><td>ging</td><td>kommen</td><td>kam</td></tr><tr><td>sehen</td><td>sah</td><td>geben</td><td>gab</td></tr><tr><td>nehmen</td><td>nahm</td><td>finden</td><td>fand</td></tr><tr><td>stehen</td><td>stand</td><td>fahren</td><td>fuhr</td></tr><tr><td>essen</td><td>aß</td><td>trinken</td><td>trank</td></tr><tr><td>lesen</td><td>las</td><td>schreiben</td><td>schrieb</td></tr><tr><td>sprechen</td><td>sprach</td><td>bleiben</td><td>blieb</td></tr><tr><td>fallen</td><td>fiel</td><td>fliegen</td><td>flog</td></tr><tr><td>dürfen</td><td>durfte</td><td>können</td><td>konnte</td></tr><tr><td>müssen</td><td>musste</td><td>wollen</td><td>wollte</td></tr></table><p>情态动词和 war / hatte 是口语里也天天用的过去时——德国人日常说话不用 Perfekt 说「我当时是 / 我当时有」，直接 war / hatte。先把这张表读到脱口而出。</p>
+</div>
+<div class="card">
+<p><b>3）als 从句：过去发生的单次事件专用</b></p>
+<p>讲过去时，「当……的时候」要用 <b class="hl">als</b>，不用 wenn：als 管<b class="hl">过去发生的、一次性的</b>事件或一段时间；wenn 管现在、将来的「每当 / 如果」和过去反复发生的事。</p><table><tr><th>连词</th><th>场合</th><th>例句</th></tr><tr><td>als</td><td>过去 · 单次</td><td><b>Als</b> die Mauer fiel, war ich 35. <span class="zh">柏林墙倒塌时，我 35 岁。</span></td></tr><tr><td>als</td><td>过去 · 一段时间</td><td><b>Als</b> ich ein Kind war, lebte ich auf dem Land. <span class="zh">我小时候住在乡下。</span></td></tr><tr><td>wenn</td><td>过去 · 反复</td><td><b>Wenn</b> wir Geld hatten, fuhren wir ans Meer. <span class="zh">（小时候）每当有钱，我们就去海边。</span></td></tr><tr><td>wenn</td><td>现在 / 将来</td><td><b>Wenn</b> ich Zeit habe, rufe ich an. <span class="zh">我有空就打电话。</span></td></tr></table><p>als 从句同样动词去句尾；从句在前时主句倒装：Als ich ankam, <b>war</b> es schon dunkel. 判断口诀：能换成「在那个时候」就用 als，能换成「每次 / 要是」就用 wenn。</p>
+</div>
+<div class="card">
+<p><b>4）Heimat 表达框架 + 历史叙事的 es gab</b></p>
+<p>Heimat（故乡 / 家园感）是德国文化里的高频概念词，讨论它有现成的句架：</p><table><tr><th>句架</th><th>例句</th></tr><tr><td>Heimat ist für mich …</td><td>Heimat ist für mich der Ort, <b class="hl">wo</b> meine Familie lebt.</td></tr><tr><td>Ich bin in … geboren / aufgewachsen.</td><td>Ich bin in Xi'an geboren und in einem Dorf <b class="hl">aufgewachsen</b>.</td></tr><tr><td>… ist meine zweite Heimat.</td><td>Deutschland ist inzwischen meine <b class="hl">zweite Heimat</b>.</td></tr><tr><td>Ich fühle mich in … heimisch.</td><td>Nach zwei Jahren fühle ich mich hier <b class="hl">heimisch</b>.</td></tr></table><p>再加一个历史叙事利器：<b class="hl">es gab</b>（当时有……）：Früher <b>gab</b> es zwei deutsche Staaten. / Nach dem Krieg <b>gab</b> es fast nichts zu essen. 讲任何年代的「有什么、没什么」，都用它开头。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>讲一段「家族与故乡的过去」，录约 1 分钟，全程用叙事语气，按下面 5 句往下说：</p>
+<ul>
+<li>Als ich ein Kind war, lebte ich in ______.</li>
+<li>Früher gab es in meiner Heimatstadt ______, heute gibt es ______.</li>
+<li>Meine Großeltern erzählten oft von ______.</li>
+<li>Damals durfte man nicht ______ / musste man ______.</li>
+<li>Für mich ist Heimat ______, weil ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：全程叙事用 Präteritum，至少出现 5 个不同的过去时动词，其中至少 2 个是不规则的（war、ging、kam、fiel 这类）；als 从句出现 1 次且动词在句尾；最后一句说清 Heimat 的理由——还在通篇用 Perfekt 讲故事、或 als 用成了 wenn，都算不过，回语法卡 1、2、3 再练一遍。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-02.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-04.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=161;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:161,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Vergangenheit (nur Sg.)", "过去", "past"], ["der Zweite Weltkrieg (nur Sg.)", "第二次世界大战", "Second World War"], ["der Kalte Krieg (nur Sg.)", "冷战", "Cold War"], ["der Frieden (nur Sg.)", "和平", "peace"], ["die DDR (nur Sg.)", "东德", "GDR (German Democratic Republic)"], ["die Mauer (nur Sg.)", "柏林墙", "wall (here: the Berlin Wall)"], ["die Mauer fällt", "柏林墙倒塌", "the Wall falls"], ["die Wende (nur Sg.)", "两德统一转折期", "the reunification period (1989/1990)"], ["die Wiedervereinigung (nur Sg.)", "重新统一", "reunification"], ["die Grenze, die Grenzen", "边境", "border"], ["etwas teilen", "分割（国家）", "to divide (here: a country)"], ["die Geschichte (nur Sg.)", "历史", "history"], ["die Heimatstadt, die Heimatstädte", "故乡", "hometown"], ["heimatlos", "失去故乡的；无祖国的", "homeless (without a homeland)"], ["das Nachkriegskind, die Nachkriegskinder", "战后出生的孩子", "post-war child"], ["der Flüchtling, die Flüchtlinge", "难民", "refugee"], ["das Auffanglager, die Auffanglager", "难民收容营", "reception camp (for refugees)"], ["die Verfolgung, die Verfolgungen", "迫害", "persecution"], ["jemanden verfolgen", "迫害某人", "to persecute someone"], ["der Staat, die Staaten", "国家", "state; country"], ["der Bürger, die Bürger / die Bürgerin, die Bürgerinnen", "公民", "citizen"], ["die Regierung, die Regierungen", "政府", "government"], ["die Demokratie, die Demokratien", "民主", "democracy"], ["die Partei, die Parteien", "政党", "political party"], ["die Wahl, die Wahlen", "选举；选择", "election; choice"], ["das Wahlrecht (nur Sg.)", "选举权", "right to vote"], ["zur Wahl gehen", "去投票", "to go vote"], ["die Gesellschaft, die Gesellschaften", "社会", "society"], ["das Ereignis, die Ereignisse", "事件", "event"], ["die Veränderung, die Veränderungen", "变化", "change"], ["die Kindheit (nur Sg.)", "童年", "childhood"], ["auf|wachsen", "长大", "to grow up"], ["das Einwanderungsland, die Einwanderungsländer", "移民国家", "immigration country"], ["die Migration, die Migrationen (meist Sg.)", "移民；迁移", "migration"], ["der Gastarbeiter, die Gastarbeiter / die Gastarbeiterin, die Gastarbeiterinnen", "客籍工人", "guest worker"], ["die 60er-Jahre (nur Pl.)", "六十年代", "the sixties"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Als Kind ___ ich jeden Tag zu Fuß zur Schule.“ 空格填：", "opts": ["ging", "gegangen", "gehe", "gehst"], "a": 0}, {"q": "2. „___ ich gestern nach Hause kam, war es schon dunkel.“（过去发生的单次事件）空格填：", "opts": ["Während", "Wenn", "Nachdem", "Als"], "a": 3}, {"q": "3. „Die Menschen ___ damals nicht frei reisen.“（dürfen 的过去时）空格填：", "opts": ["durften", "dürften", "gedurft", "dürfen"], "a": 0}, {"q": "4. „Die Mauer ___ die Stadt fast 30 Jahre lang.“（teilen 的 Präteritum）空格填：", "opts": ["geteilt", "teilt", "teilten", "teilte"], "a": 3}, {"q": "5. „Früher ___ es zwei deutsche Staaten.“ 空格填：", "opts": ["gab", "gibst", "gibt", "gegeben"], "a": 0}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-03-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-03-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

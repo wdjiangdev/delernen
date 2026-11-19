@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第4课 Probleme und Rat 问题与建议 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第4课 Probleme und Rat：合并 DW Folge 13-16。1）给建议的主力：sollte（sollen 的 Konjunktiv II）">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 4 课</div>
+<h1>第 4 课 · Probleme und Rat 问题与建议</h1>
+<div class="de-title">DW B1 · Thema 4 · Folge 13-16 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html" class="cur">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>完整描述一个问题：出了什么事、影响是什么、自己已经试过什么</li>
+<li>用三种分寸给建议：直接型 <b class="hl">Du solltest …</b>、换位型 <b class="hl">An deiner Stelle würde ich …</b>、商量型 Wie wäre es, wenn …?</li>
+<li>谈钱不卡壳：说清收入、开支、税费和「钱不够用」</li>
+<li>得体地回应建议：接受、犹豫、婉拒各有一套说法</li>
+<li>开口求助：Ich weiß nicht mehr weiter 这类求助句张口就来</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 13，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 13</span><span class="t">Everyday Problems<small>英文标题集：日常麻烦大集合——东西坏了、钱不够、跟人闹别扭</small></span><button class="playbtn" data-folge="13" onclick="playFolge(13,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 14</span><span class="t">Money Problems<small>钱的问题最扎心：开支、税费、工资差距，钱包告急时怎么办</small></span><button class="playbtn" data-folge="14" onclick="playFolge(14,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 15</span><span class="t">Tipps und Ratschläge<small>怎么给建议才不讨人嫌：给意见的分寸感专题</small></span><button class="playbtn" data-folge="15" onclick="playFolge(15,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 16</span><span class="t">Alle haben Probleme<small>人人都有麻烦：听完大家的故事，自己的好像也没那么大了</small></span><button class="playbtn" data-folge="16" onclick="playFolge(16,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich habe ein großes Problem: Mein Geld reicht nicht bis zum Monatsende.</span><span class="zh">我有个大问题：我的钱撑不到月底。</span></div>
+<div class="phrase"><span class="de">Die Miete und die Steuern fressen fast mein ganzes Gehalt.</span><span class="zh">房租和税吃掉了我几乎全部的工资。</span></div>
+<div class="phrase"><span class="de">Du solltest weniger Geld für Unnötiges ausgeben.</span><span class="zh">你应该少在没用的东西上花钱。</span></div>
+<div class="phrase"><span class="de">An deiner Stelle würde ich ein Haushaltsbuch führen.</span><span class="zh">我要是你，我会记一本收支账本。</span></div>
+<div class="phrase"><span class="de">Wie wäre es, wenn du dir einen Nebenjob suchst?</span><span class="zh">你找一份兼职，怎么样？</span></div>
+<div class="phrase"><span class="de">Hast du einen Tipp für mich?</span><span class="zh">你有什么建议给我吗？</span></div>
+<div class="phrase"><span class="de">Ich weiß nicht mehr weiter.</span><span class="zh">我真不知道该怎么办了。</span></div>
+<div class="phrase"><span class="de">Keine Sorge, das kriegen wir hin.</span><span class="zh">别担心，我们能搞定。</span></div>
+<div class="phrase"><span class="de">Das ist leichter gesagt als getan.</span><span class="zh">说起来容易，做起来难。</span></div>
+<div class="phrase"><span class="de">Vielen Dank für deinen Rat!</span><span class="zh">非常感谢你的建议！</span></div>
+<div class="phrase"><span class="de">Ich werde deinen Rat befolgen.</span><span class="zh">我会照你的建议做的。</span></div>
+<div class="phrase"><span class="de">Jeder hat mal Probleme – das ist ganz normal.</span><span class="zh">每个人都会遇到麻烦——这很正常。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Nico, ich muss mit dir reden. Mein Geld reicht nie bis zum Monatsende.</p>
+<p><span class="who">Nico:</span> Das kenne ich. Wofür gibst du am meisten aus?</p>
+<p><span class="who">Emma:</span> Für die Miete, das Essen und mein Auto. Am Ende bleibt nichts übrig.</p>
+<p><span class="who">Nico:</span> Du solltest ein Haushaltsbuch führen. Dann siehst du, wo das Geld bleibt.</p>
+<p><span class="who">Emma:</span> Das habe ich schon versucht, aber ich halte nie durch.</p>
+<p><span class="who">Nico:</span> An deiner Stelle würde ich zuerst die festen Kosten senken. Dein Auto ist zum Beispiel sehr teuer.</p>
+<p><span class="who">Emma:</span> Hm, das Auto brauche ich aber für die Arbeit.</p>
+<p><span class="who">Nico:</span> Wie wäre es, wenn du eine Fahrgemeinschaft suchst? Dann teilt ihr die Fahrtkosten.</p>
+<p><span class="who">Emma:</span> Das ist eine gute Idee! Das probiere ich aus. Danke für deine Hilfe!</p>
+<div class="tipbox">练法：把 Nico 的三条建议按「分寸」排队——solltest 是直说型、An deiner Stelle würde ich 是换位型、Wie wäre es, wenn … 是商量型；再角色对调：你说一个自己的真问题（钱、邻里、工作都行），对方必须用三种句型各给一条建议，少一种就重来一轮。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）给建议的主力：sollte（sollen 的 Konjunktiv II）</b></p>
+<p>sollen 本义是「（别人要求我）应该」，它的 Konjunktiv II 形式 <b class="hl">sollte</b> 专门用来给建议——语气从命令变成了「我劝你」：</p><table><tr><th>人称</th><th>sollte</th><th>例句</th></tr><tr><td>ich</td><td>sollte</td><td>Ich <b>sollte</b> mehr sparen.</td></tr><tr><td>du</td><td>solltest</td><td>Du <b>solltest</b> mit dem Chef <b>sprechen</b>.</td></tr><tr><td>er / sie / es</td><td>sollte</td><td>Er <b>sollte</b> weniger <b>ausgeben</b>.</td></tr><tr><td>wir</td><td>sollten</td><td>Wir <b>sollten</b> uns Hilfe <b>holen</b>.</td></tr><tr><td>ihr</td><td>solltet</td><td>Ihr <b>solltet</b> das nicht allein <b>machen</b>.</td></tr><tr><td>sie / Sie</td><td>sollten</td><td>Sie <b>sollten</b> sich beraten <b>lassen</b>.</td></tr></table><p>结构和情态动词一样：sollte 占第二位，不定式去句尾。对比一下分寸：Du <b>musst</b> sparen.（命令）→ Du <b>sollst</b> sparen.（转述别人的要求）→ Du <b>solltest</b> sparen.（我的建议）——给人提意见只用第三档。</p>
+</div>
+<div class="card">
+<p><b>2）换位建议：An deiner Stelle würde ich …</b></p>
+<p>德国人给建议最爱用的句式，字面是「站在你的位置上，我会……」，把命令感降到最低：</p><table><tr><th>说法</th><th>例句</th></tr><tr><td>An <b class="hl">deiner</b> Stelle würde ich …</td><td>An deiner Stelle <b>würde</b> ich den Job <b>wechseln</b>. <span class="zh">我要是你，就换工作。</span></td></tr><tr><td>An <b class="hl">Ihrer</b> Stelle würde ich …（正式）</td><td>An Ihrer Stelle <b>würde</b> ich zuerst mit der Bank <b>sprechen</b>.</td></tr><tr><td>Wenn ich du <b class="hl">wäre</b>, würde ich …</td><td>Wenn ich du <b>wäre</b>, <b>würde</b> ich mir Hilfe <b>holen</b>.</td></tr></table><p>两个细节：Stelle 前面的物主词要随人变（deiner / seiner / Ihrer）；würde 的不定式照样去句尾。第三行的 wäre 是 sein 的 Konjunktiv II，先整句记下来。</p>
+</div>
+<div class="card">
+<p><b>3）商量型提议：Wie wäre es, wenn …? 与其他提议句</b></p>
+<table><tr><th>提议句型</th><th>例句</th><th>语气</th></tr><tr><td>Wie <b class="hl">wäre</b> es, wenn …?</td><td>Wie wäre es, wenn du eine Fahrgemeinschaft <b>suchst</b>?</td><td>商量，先抛想法</td></tr><tr><td>Du <b class="hl">könntest</b> …</td><td>Du <b>könntest</b> die Kosten <b>teilen</b>.</td><td>轻建议（könnte 是 können 的 Konj. II）</td></tr><tr><td>Warum … nicht?</td><td>Warum <b>sparst</b> du nicht jeden Monat 50 Euro?</td><td>反问式推动</td></tr><tr><td>Ich schlage vor, <b class="hl">dass</b> …</td><td>Ich schlage vor, <b>dass</b> wir die Rechnung <b>teilen</b>.</td><td>正式提议，dass 从句动词句尾</td></tr></table><p>wäre 是 sein 的 Konjunktiv II（es wäre schön … 同款）。四个句型从轻到正式排好了：熟人之间用前两个，正式场合用第四个。</p>
+</div>
+<div class="card">
+<p><b>4）描述问题与回应建议：把对话走完</b></p>
+<p>求助对话有固定四步，本课句型按步备齐：</p><table><tr><th>步骤</th><th>句型</th></tr><tr><td>1 说出问题</td><td>Ich habe ein Problem: … / Das Problem ist, <b class="hl">dass</b> mein Geld nie <b>reicht</b>.</td></tr><tr><td>2 说已试过什么</td><td>Ich habe schon versucht, …, aber … / Ich weiß nicht mehr weiter.</td></tr><tr><td>3 开口求建议</td><td>Hast du einen Tipp für mich? / Was <b class="hl">soll</b> ich machen? / Was würdest du an meiner Stelle tun?</td></tr><tr><td>4 回应建议</td><td>接受：Gute Idee, das probiere ich aus. / 犹豫：Hm, ich weiß nicht, ob das geht. / 婉拒：Das geht bei mir leider nicht, weil …</td></tr></table><p>第 2 步最容易被跳过，但德国人给建议前一定会问 Hast du schon … versucht?——先说自己试过什么，对话才接得下去。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>演一段「求助 + 给建议」，可以找人对演，也可以自问自答录下来，按下面 5 句走完整个流程：</p>
+<ul>
+<li>Ich habe ein Problem: ______.</li>
+<li>Ich habe schon versucht, ______ zu ______, aber ______.</li>
+<li>Hast du einen Tipp für mich? Was soll ich machen?</li>
+<li>An deiner Stelle würde ich ______.</li>
+<li>Du solltest ______ und auf keinen Fall ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：问题描述里必须有一句「已经试过什么」；solltest 和 An deiner Stelle würde ich 各出现 1 次，würde 句的不定式落在句尾；最后要有一句对建议的回应（接受或婉拒）——只提问题不回应、或只给建议不换位，都算不过，回语法卡 1、2 再练。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-03.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-05.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=165;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:165,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["der Ratschlag, die Ratschläge", "建议", "advice"], ["der Ratgeber, die Ratgeber", "指南", "guide; advice book"], ["der Gegenvorschlag, die Gegenvorschläge", "反建议", "counterproposal"], ["der Steuerberater, die Steuerberater / die Steuerberaterin, die Steuerberaterinnen", "税务顾问", "tax advisor"], ["jemandem Probleme bereiten", "给某人带来麻烦", "to cause someone problems"], ["das Kreislaufproblem, die Kreislaufprobleme", "循环系统问题", "circulatory problem"], ["die Schwierigkeit, die Schwierigkeiten", "困难", "difficulty"], ["problematisch", "成问题的", "problematic"], ["die Aushilfe, die Aushilfen", "临时帮工", "temporary worker; temp help"], ["die Nachhilfe (nur Sg.)", "课外辅导", "tutoring"], ["kostenlos", "免费的", "free (of charge)"], ["sparsam", "节俭的", "thrifty"], ["reich", "富有的", "rich"], ["wohlhabend", "富有的", "wealthy"], ["die Armut (nur Sg.)", "贫穷", "poverty"], ["die Altersarmut (nur Sg.)", "老年贫困", "poverty in old age"], ["der Gehaltsunterschied, die Gehaltsunterschiede", "薪资差距", "pay gap"], ["die Fahrtkosten (nur Pl.)", "交通费", "travel expenses; fare"], ["die Einkommensteuer, die Einkommensteuern", "所得税", "income tax"], ["die Mehrwertsteuer, die Mehrwertsteuern", "增值税", "value-added tax (VAT)"], ["die Steuererklärung, die Steuererklärungen", "报税表", "tax return"], ["Steuern erheben", "征税", "to levy taxes"], ["etwas von der Steuer ab|setzen", "从税款中抵扣", "to deduct something from taxes"], ["etwas an jemanden vermieten", "把某物租给某人", "to rent something to someone"], ["auf etwas verzichten", "放弃某物", "to do without something"], ["auf eine Idee kommen", "想出主意", "to come up with an idea"], ["etwas bedauern", "后悔", "to regret something"], ["Rücksicht (auf etwas/jemanden) nehmen", "体谅（某事/某人）", "to be considerate (of something/someone)"], ["hilfsbereit", "乐意助人的", "helpful"], ["die Bürokratie, die Bürokratien", "官僚作风", "bureaucracy"], ["der Integrationskurs, die Integrationskurse", "融入课程", "integration course"], ["auf der Suche nach etwas sein", "正在寻找某物", "to be looking for something"], ["das Risiko, die Risiken", "风险", "risk"], ["die Gefahr, die Gefahren", "危险", "danger"], ["verzweifelt", "绝望的", "desperate"], ["die Notunterkunft, die Notunterkünfte", "应急避难所", "emergency shelter"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Du ___ mehr Sport machen, das wäre viel gesünder.“（给建议）空格填：", "opts": ["solltest", "sollst", "sollte", "sollten"], "a": 0}, {"q": "2. „An deiner Stelle ___ ich sofort mit der Bank sprechen.“ 空格填：", "opts": ["werde", "würde", "will", "wäre"], "a": 1}, {"q": "3. „Wenn ich du ___, würde ich den Job wechseln.“ 空格填：", "opts": ["war", "wäre", "ist", "bin"], "a": 1}, {"q": "4. „Wie wäre es, wenn du dir einen Nebenjob ___?“ 空格填：", "opts": ["gesucht", "suchest", "suchst", "suchen"], "a": 2}, {"q": "5. „Das ist leichter gesagt als getan.“ 的意思是：", "opts": ["说起来容易，做起来难", "做起来比说起来容易", "这是在夸一个人很会说话", "劝你不要再说了"], "a": 0}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-04-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-04-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

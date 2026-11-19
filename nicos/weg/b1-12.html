@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第12课 Umwelt 环境 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第12课 Umwelt：合并 DW Folge 45-48。1）垃圾分类系统：什么进哪个桶">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 12 课</div>
+<h1>第 12 课 · Umwelt 环境</h1>
+<div class="de-title">DW B1 · Thema 12 · Folge 45-48 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html" class="cur">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>讲清德国垃圾分类：<b class="hl">Restmüll / Papier / Glas / Gelber Sack</b> 各扔什么</li>
+<li>用 <b class="hl">带情态动词的被动</b> 说规则：Das muss getrennt werden.</li>
+<li>谈环保责任落点：<b class="hl">Es liegt an uns, …</b></li>
+<li>对比能源：化石能源 vs <b class="hl">erneuerbare Energien</b>，能各说一条利弊</li>
+<li>给改变提建议：Man sollte … / Wir könnten …，而不是只抱怨</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 45，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 45</span><span class="t">Mensch und Umwelt<small>人和环境谁影响谁：从日常生活看我们给环境添的负担</small></span><button class="playbtn" data-folge="45" onclick="playFolge(45,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 46</span><span class="t">Umweltbelastungen<small>环境负担清单：垃圾、废气和资源消耗到底从哪来</small></span><button class="playbtn" data-folge="46" onclick="playFolge(46,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 47</span><span class="t">Environmental Protection<small>环保不是口号：德国人具体在做的那些事</small></span><button class="playbtn" data-folge="47" onclick="playFolge(47,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 48</span><span class="t">Wertstoffe<small>可回收物大有学问：德国垃圾分类的桶和袋一次讲透</small></span><button class="playbtn" data-folge="48" onclick="playFolge(48,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">In Deutschland wird der Müll streng getrennt.</span><span class="zh">在德国，垃圾分类非常严格。</span></div>
+<div class="phrase"><span class="de">Plastik und Verpackungen kommen in den Gelben Sack.</span><span class="zh">塑料和包装扔进黄袋（Gelber Sack）。</span></div>
+<div class="phrase"><span class="de">Altes Glas muss nach Farben sortiert werden.</span><span class="zh">旧玻璃必须按颜色分类。</span></div>
+<div class="phrase"><span class="de">Der Restmüll kommt in die graue Tonne.</span><span class="zh">剩余垃圾扔进灰桶。</span></div>
+<div class="phrase"><span class="de">Batterien dürfen nicht in den Hausmüll geworfen werden.</span><span class="zh">电池不许扔进生活垃圾。</span></div>
+<div class="phrase"><span class="de">Wir sollten weniger Plastik verbrauchen.</span><span class="zh">我们应该少用塑料。</span></div>
+<div class="phrase"><span class="de">Es liegt an uns, die Umwelt zu schützen.</span><span class="zh">保护环境，责任在我们。</span></div>
+<div class="phrase"><span class="de">Erneuerbare Energien belasten die Umwelt weniger.</span><span class="zh">可再生能源对环境的负担更小。</span></div>
+<div class="phrase"><span class="de">Kohle und Erdöl verursachen viel CO2.</span><span class="zh">煤和石油产生大量二氧化碳。</span></div>
+<div class="phrase"><span class="de">Für kurze Strecken sollte man aufs Auto verzichten.</span><span class="zh">短途应该放弃开车。</span></div>
+<div class="phrase"><span class="de">Jeder kann etwas für den Umweltschutz tun.</span><span class="zh">每个人都能为环保做点什么。</span></div>
+<div class="phrase"><span class="de">Wenn wir so weitermachen, zerstören wir unsere Zukunft.</span><span class="zh">如果我们继续这样下去，就会毁掉自己的未来。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Nico:</span> Wohin kommt diese Plastikflasche? In den Restmüll?</p>
+<p><span class="who">Lisa:</span> Nein! Plastik muss getrennt werden. Das kommt in den Gelben Sack.</p>
+<p><span class="who">Nico:</span> Und das alte Glas hier?</p>
+<p><span class="who">Emma:</span> Glas wird nach Farben sortiert: weiß, grün, braun. An der Ecke stehen Container dafür.</p>
+<p><span class="who">Nico:</span> Ist das nicht furchtbar kompliziert?</p>
+<p><span class="who">Lisa:</span> Am Anfang schon. Aber es liegt an uns allen, weniger Müll zu produzieren.</p>
+<p><span class="who">Emma:</span> Genau. Und Batterien dürfen auf keinen Fall in den Hausmüll!</p>
+<p><span class="who">Nico:</span> Verstanden. Ab heute trenne ich auch richtig.</p>
+<p><span class="who">Lisa:</span> Gut so. Die Umwelt kann nämlich nicht mehr lange warten.</p>
+<div class="tipbox">练法：读完后指着自家厨房的垃圾口头分类一遍：Das kommt in … / Das muss … werden。注：muss getrennt werden 是本课核心的「情态被动」，先整句用顺，第四步拆开看结构；es liegt an uns 是谈责任的招牌句，后面接 zu 不定式。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）垃圾分类系统：什么进哪个桶</b></p>
+<p>德国分类的核心逻辑是 <b class="hl">Wertstoffe</b>（可回收物）先分出来，剩下的才是 Restmüll（剩余垃圾）。一张表记全：</p><table><tr><th>去向</th><th>扔什么</th><th>例句</th></tr><tr><td>Gelber Sack / Gelbe Tonne</td><td>包装、塑料、金属罐</td><td>Verpackungen kommen in den Gelben Sack.</td></tr><tr><td>Papiertonne（蓝）</td><td>纸、纸板</td><td>Alte Zeitungen gehören in die Papiertonne.</td></tr><tr><td>Biotonne（棕）</td><td>厨余、果皮、园艺垃圾</td><td>Essensreste kommen in die Biotonne.</td></tr><tr><td>Restmülltonne（灰）</td><td>分不出来的一切</td><td>Der Restmüll wird verbrannt. <span class="zh">剩余垃圾会被焚烧</span></td></tr><tr><td>Glascontainer</td><td>玻璃瓶，按白/绿/棕分开</td><td>Glas wird nach Farben sortiert.</td></tr><tr><td>Sondermüll</td><td>电池、油漆、药品</td><td>Batterien sind Sondermüll. <span class="zh">电池是有害垃圾</span></td></tr></table><p>动词三个：<b class="hl">trennen</b>（分类）、<b class="hl">sortieren</b>（分拣）、<b class="hl">gehören in + 宾格</b>（该进……里）。瓶子还有 Pfand（押金）制度：多数饮料瓶退回超市能拿回 25 Cent，这也是德国回收率高的秘密。</p>
+</div>
+<div class="card">
+<p><b>2）带情态动词的被动：muss … werden（预告式，先会用）</b></p>
+<p>说规则时德国人爱用被动，因为重点是<b class="hl">事情要被怎么做</b>，不是谁来做。加上情态动词后结构是：<b class="hl">主语 + 情态动词（第二位）+ 过去分词 + werden（句尾）</b>：</p><table><tr><th>主动（man 句）</th><th>情态被动</th></tr><tr><td>Man muss den Müll trennen.</td><td>Der Müll <b>muss getrennt werden</b>. <span class="zh">垃圾必须分类</span></td></tr><tr><td>Man darf Batterien nicht in den Hausmüll werfen.</td><td>Batterien <b>dürfen nicht</b> in den Hausmüll <b>geworfen werden</b>. <span class="zh">电池不许扔进生活垃圾</span></td></tr><tr><td>Man kann Plastik recyceln.</td><td>Plastik <b>kann recycelt werden</b>. <span class="zh">塑料可以回收</span></td></tr><tr><td>Man soll Glas nach Farben sortieren.</td><td>Glas <b>soll nach Farben sortiert werden</b>. <span class="zh">玻璃应该按颜色分</span></td></tr></table><p>拆法口诀：情态动词管变位站第二位，分词和 werden 一起站句尾。被动本身（wird getrennt）A2 见过，这里只是把 muss / darf / kann 插进第二位，其余不动。</p>
+</div>
+<div class="card">
+<p><b>3）谈责任：Es liegt an uns, …</b></p>
+<p>环保话题吵到最后都会落到一句话：责任在谁？德语的招牌句式是 <b class="hl">Es liegt an + 三格</b>（在于……、取决于……）：</p><table><tr><th>句型</th><th>意思</th></tr><tr><td>Es liegt an <b>uns</b>, weniger Müll zu produzieren.</td><td>少产生垃圾，责任在我们 <span class="zh">an + 三格，后接 zu 不定式</span></td></tr><tr><td>Es liegt an <b>jedem Einzelnen</b>.</td><td>在于每一个人</td></tr><tr><td>Es liegt nicht nur an der Politik.</td><td>不只是政治的责任</td></tr><tr><td>Es liegt an <b>dir</b>, ob sich etwas ändert.</td><td>有没有改变，取决于你</td></tr></table><p>配套建议句型：<b class="hl">Man sollte …</b>（人们应该……）、<b class="hl">Wir könnten …</b>（我们可以……，könnte 是礼貌的建议语气）、<b class="hl">auf + 宾格 verzichten</b>（放弃某物：aufs Auto verzichten）。先表态、再给一条具体建议，就是 B1 讨论题的标准答法。</p>
+</div>
+<div class="card">
+<p><b>4）能源对比：fossil vs. erneuerbar</b></p>
+<p>能源话题一张对比表就够聊十分钟：</p><table><tr><th></th><th>fossile Energien 化石能源</th><th>erneuerbare Energien 可再生能源</th></tr><tr><td>包括</td><td>Kohle, Erdöl, Gas</td><td>Sonne, Wind, Wasser, Biogas</td></tr><tr><td>优点</td><td>billig, immer verfügbar <span class="zh">便宜、随时有</span></td><td>umweltfreundlich, unendlich <span class="zh">环保、用不完</span></td></tr><tr><td>缺点</td><td>verursachen viel CO2, belasten die Umwelt <span class="zh">排碳多、污染大</span></td><td>vom Wetter abhängig, am Anfang teuer <span class="zh">靠天气、前期贵</span></td></tr></table><p>观点句型：<b class="hl">Der Vorteil ist, dass …</b>（优点是……）/ <b class="hl">Der Nachteil ist, dass …</b>（缺点是……），dass 从句动词在尾（A2 学过）。收尾句：<b class="hl">Auf lange Sicht sind erneuerbare Energien die bessere Lösung.</b>（长远看，可再生能源是更好的解法。）</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>录 40 秒：前半讲你家的垃圾怎么处理，后半表态环保责任在谁、你打算改什么：</p>
+<ul>
+<li>Bei mir zu Hause wird der Müll ______ getrennt.</li>
+<li>Plastik kommt in ______, Glas in ______.</li>
+<li>Batterien dürfen nicht in ______ geworfen werden.</li>
+<li>Meiner Meinung nach liegt es an ______, etwas zu ändern.</li>
+<li>Ich selbst versuche, auf ______ zu verzichten und ______ zu sparen.</li>
+</ul>
+<p style="margin-top:10px">过关标准：情态被动至少用对一次（muss / darf + 过去分词 + werden 的顺序不能错）；分类至少说清三类去向；es liegt an 后面要接对人（三格：an uns / an jedem / an der Politik 任选一个）。缺哪一项，就回第四步对应的语法卡补完再录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-11.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-13.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=197;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:197,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["der Abfall, die Abfälle", "废物", "waste"], ["der Restmüll (nur Sg.)", "残余垃圾", "residual waste"], ["der Wertstoff, die Wertstoffe", "可回收物", "recyclable material"], ["die Müllkippe, die Müllkippen", "垃圾场", "landfill"], ["der Müllcontainer, die Müllcontainer", "大型垃圾桶", "dumpster; large waste container"], ["der Container, die Container", "集装箱", "container"], ["die Tonne, die Tonnen", "吨", "ton"], ["Müll trennen", "垃圾分类", "to separate waste"], ["etwas von etwas trennen", "把……分开", "to separate something from something"], ["die Trennung, die Trennungen", "分居；分手", "separation"], ["das Recycling (nur Sg.)", "回收", "recycling"], ["die Verpackung, die Verpackungen", "包装", "packaging"], ["das Plastik (nur Sg.)", "塑料", "plastic"], ["der Umweltschutz (nur Sg.)", "环境保护", "environmental protection"], ["umweltfreundlich", "环保的", "environmentally friendly"], ["umweltschädlich", "危害环境的", "harmful to the environment"], ["umweltbewusst", "有环保意识的", "environmentally conscious"], ["das Umweltbewusstsein (nur Sg.)", "环保意识", "environmental awareness"], ["ökologisch", "生态的；环保的", "ecological; eco-friendly"], ["etwas/jemanden belasten", "使负担过重；给…造成压力", "to burden, to strain"], ["etwas zerstören", "摧毁", "to destroy"], ["die Zerstörung, die Zerstörungen", "毁灭", "destruction"], ["auf etwas verzichten", "放弃某物", "to do without something"], ["der Verbrauch (nur Sg.)", "消耗", "consumption"], ["sparsam", "节俭的", "thrifty"], ["die Energie, die Energien", "能源", "energy"], ["die erneuerbare Energie, die erneuerbaren Energien (meist Pl.)", "可再生能源", "renewable energy"], ["die alternative Energie, die alternativen Energien (meist Pl.)", "替代能源", "alternative energy"], ["die Sonnenenergie, die Sonnenenergien (meist Sg.)", "太阳能", "solar energy"], ["die Windenergie, die Windenergien (meist Sg.)", "风能", "wind energy"], ["die Solarzelle, die Solarzellen", "太阳能电池", "solar cell"], ["das Biogas, die Biogase", "沼气", "biogas"], ["die Kohle, die Kohlen", "煤", "coal"], ["das Erdöl, die Erdöle (meist Sg.)", "石油", "petroleum; crude oil"], ["das CO2 (nur Sg.)", "二氧化碳", "carbon dioxide"], ["etwas liegt an etwas (an etwas liegen)", "原因在于", "something is due to something"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 塑料包装应该扔进哪里？", "opts": ["Biotonne（棕桶）", "Gelber Sack（黄袋）", "Restmülltonne（灰桶）", "Glascontainer（玻璃箱）"], "a": 1}, {"q": "2. 选出结构正确的情态被动句：", "opts": ["Das Glas muss sortiert werden.", "Das Glas muss wird sortiert.", "Das Glas wird muss sortiert.", "Das Glas muss sortieren werden."], "a": 0}, {"q": "3. „Batterien ______ nicht in den Hausmüll geworfen werden.“ 空格填：", "opts": ["dürft", "darfst", "dürfen", "dürfe"], "a": 2}, {"q": "4. „Es ______ an uns, die Umwelt zu schützen.“ 空格填：", "opts": ["sitzt", "liegt", "steht", "legt"], "a": 1}, {"q": "5. 下列哪个属于 erneuerbare Energie（可再生能源）？", "opts": ["Kohle", "CO2", "Erdöl", "Sonnenenergie"], "a": 3}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-12-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-12-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第14课 Benehmen 礼仪 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第14课 Benehmen：合并 DW Folge 53-56。1）礼貌升级：从命令到 Würden Sie bitte …">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 14 课</div>
+<h1>第 14 课 · Benehmen 礼仪</h1>
+<div class="de-title">DW B1 · Thema 14 · Folge 53-56 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html" class="cur">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>把请求说到最礼貌一级：<b class="hl">Würden Sie bitte …?</b> 和 <b class="hl">Es wäre nett, wenn …</b></li>
+<li>知道饭桌上、别人家、办公室里什么能做、什么不能做</li>
+<li>闯了祸会救场：先道歉、再补救——<b class="hl">Es tut mir leid, ich bringe das sofort in Ordnung.</b></li>
+<li>看懂德国人的「规则感」：Benimmregeln 的核心其实是 <b class="hl">Rücksicht</b>（体谅别人）</li>
+<li>见面握手、微笑，du 和 Sie 不用错场合</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 53，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 53</span><span class="t">Peinlich?!<small>糗事一箩筐：叫错名字、认错人，尴尬了怎么办</small></span><button class="playbtn" data-folge="53" onclick="playFolge(53,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 54</span><span class="t">Richtiges Benehmen<small>什么叫有礼貌：德国人眼里的得体行为</small></span><button class="playbtn" data-folge="54" onclick="playFolge(54,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 55</span><span class="t">Benimmregeln<small>礼仪规则清单：餐桌、做客、职场各有讲究</small></span><button class="playbtn" data-folge="55" onclick="playFolge(55,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 56</span><span class="t">Was tun, wenn …?<small>救场指南：迟到、忘带礼物、打翻杯子时怎么补救</small></span><button class="playbtn" data-folge="56" onclick="playFolge(56,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Würden Sie bitte das Fenster öffnen?</span><span class="zh">请您打开窗户好吗？（最礼貌的请求）</span></div>
+<div class="phrase"><span class="de">Es wäre nett, wenn Sie mir helfen könnten.</span><span class="zh">如果您能帮我，那就太好了。</span></div>
+<div class="phrase"><span class="de">Könnten Sie bitte etwas leiser sein?</span><span class="zh">请您小声一点好吗？</span></div>
+<div class="phrase"><span class="de">Das ist mir sehr peinlich.</span><span class="zh">这让我太尴尬了。</span></div>
+<div class="phrase"><span class="de">Es tut mir wirklich leid.</span><span class="zh">我真的很抱歉。</span></div>
+<div class="phrase"><span class="de">Entschuldigung, das war keine Absicht.</span><span class="zh">对不起，我不是故意的。</span></div>
+<div class="phrase"><span class="de">Zur Begrüßung gibt man sich die Hand.</span><span class="zh">见面时要握手。</span></div>
+<div class="phrase"><span class="de">Als Gast sollte man pünktlich kommen.</span><span class="zh">做客应该准时到。</span></div>
+<div class="phrase"><span class="de">Man sollte nicht mit vollem Mund sprechen.</span><span class="zh">嘴里有食物时不应该说话。</span></div>
+<div class="phrase"><span class="de">Darf ich Ihnen etwas zu trinken anbieten?</span><span class="zh">我可以请您喝点什么吗？</span></div>
+<div class="phrase"><span class="de">Vielen Dank für die Einladung!</span><span class="zh">非常感谢您的邀请！</span></div>
+<div class="phrase"><span class="de">Was tut man, wenn man einen Namen vergessen hat?</span><span class="zh">忘了别人的名字时该怎么办？</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Frau Berg:</span> Guten Abend, Nico! Schön, dass du da bist. Komm herein!</p>
+<p><span class="who">Nico:</span> Guten Abend, Frau Berg. Vielen Dank für die Einladung! Die Blumen sind für Sie.</p>
+<p><span class="who">Herr Berg:</span> Setz dich doch, Nico. Möchtest du ein Glas Wein?</p>
+<p><span class="who">Nico:</span> Gern, danke. Oh nein — Entschuldigung, mein Handy! Das ist mir sehr peinlich, ich stelle es sofort leise.</p>
+<p><span class="who">Lisa:</span> Kein Problem, das passiert jedem mal.</p>
+<p><span class="who">Frau Berg:</span> Nico, erzähl doch mal: Was machst du beruflich?</p>
+<p><span class="who">Nico:</span> Ich arbeite in einer Fahrradwerkstatt und lerne Deutsch. Mein Deutsch ist noch nicht perfekt.</p>
+<p><span class="who">Herr Berg:</span> Es ist schon sehr gut! Würdest du bitte die Kartoffeln weitergeben?</p>
+<p><span class="who">Nico:</span> Natürlich, gern. Das Essen ist wirklich lecker, Frau Berg.</p>
+<p><span class="who">Frau Berg:</span> Danke, das freut mich! Nimm dir gern noch etwas.</p>
+<div class="tipbox">练法：重点练 Nico 的三处「满分动作」——带花给女主人、手机响了立刻道歉并调静音、夸饭菜好吃。注：Herr Berg 用的是 Würdest du bitte …? ——家里用 du，但加上 würde 一样立刻变客气；对陌生人换成 Würden Sie bitte …? 即可。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）礼貌升级：从命令到 Würden Sie bitte …</b></p>
+<p>同一个请求，礼貌分五级。越往下越客气，对上级、长辈、陌生人请用最后两级：</p><table><tr><th>级别</th><th>说法</th><th>场合</th></tr><tr><td>命令</td><td>Mach das Fenster auf!</td><td>只对很熟的人/孩子</td></tr><tr><td>Sie 命令</td><td>Öffnen Sie das Fenster!</td><td>正式但生硬</td></tr><tr><td>können 提问</td><td>Können Sie das Fenster öffnen?</td><td>日常够用</td></tr><tr><td><b class="hl">könnten</b></td><td><b class="hl">Könnten Sie</b> das Fenster öffnen?</td><td>客气</td></tr><tr><td><b class="hl">würden + bitte</b></td><td><b class="hl">Würden Sie bitte</b> das Fenster öffnen?</td><td>最礼貌，永远不出错</td></tr></table><p>变位就三个词：ich/er <b class="hl">könnte</b>，Sie <b class="hl">könnten</b>；würde + 动词原形放句尾。点单专用：Ich <b class="hl">hätte gern</b> ein Wasser.（我想要一杯水）</p>
+</div>
+<div class="card">
+<p><b>2）Es wäre nett, wenn …：最万能的软请求</b></p>
+<p>请人帮忙、请人改一件事，最万能的软句式：<b class="hl">Es wäre nett / höflich / schön, wenn …</b> wenn 从句里变位动词（常用 könnten）退到句尾：</p><table><tr><th>想请对方</th><th>这么说</th></tr><tr><td>小声一点</td><td>Es wäre nett, wenn Sie etwas leiser sprechen <b class="hl">könnten</b>.</td></tr><tr><td>帮个忙</td><td>Es wäre sehr nett, wenn Sie mir helfen <b class="hl">könnten</b>.</td></tr><tr><td>早点告诉我</td><td>Es wäre schön, wenn Sie mir früher Bescheid sagen <b class="hl">würden</b>.</td></tr></table><p>注意：主句 Es wäre … 里 wäre 站第二位，wenn 从句的动词在最后——和 dass 从句同一个规矩。</p>
+</div>
+<div class="card">
+<p><b>3）规则句型：man + sollte / darf nicht</b></p>
+<p>德国的规则（包括 Benimmregeln）官方说法离不开 <b class="hl">man</b>：</p><table><tr><th>句型</th><th>意思</th><th>例子</th></tr><tr><td>Man <b class="hl">sollte</b> …</td><td>应该（建议）</td><td>Man sollte als Gast pünktlich kommen.</td></tr><tr><td>Man <b class="hl">darf</b> nicht …</td><td>不许</td><td>Man darf nicht mit vollem Mund sprechen.</td></tr><tr><td>Es ist <b class="hl">verboten</b>, … zu …</td><td>禁止</td><td>Es ist verboten, hier zu rauchen.</td></tr><tr><td>Das <b class="hl">gehört sich</b> nicht.</td><td>这不成体统</td><td>Das gehört sich nicht: Man liest nicht die Post von anderen.</td></tr></table><p>sollte 是 sollen 的虚拟式，比 muss 软一档：muss 是法律和硬规定，sollte 是「懂礼貌的人都这么做」。</p>
+</div>
+<div class="card">
+<p><b>4）救场三段式：道歉、解释、补救</b></p>
+<p>出了糗别愣着，三段式救场：<b class="hl">道歉 → 说明不是故意 → 立刻补救</b>。</p><table><tr><th>场面</th><th>救场句</th></tr><tr><td>忘了对方名字</td><td>Es tut mir leid, ich habe Ihren Namen vergessen. <span class="zh">抱歉，我忘了您的名字。</span></td></tr><tr><td>迟到</td><td>Entschuldigung für die Verspätung! Der Bus hatte Verspätung. Ich rufe nächstes Mal früher an.</td></tr><tr><td>打翻杯子</td><td>Das ist mir so peinlich! Das war keine Absicht. Ich wische das sofort auf.</td></tr><tr><td>说错话</td><td>Das habe ich falsch gesagt, Entschuldigung. Ich habe es anders gemeint.</td></tr></table><p>句式骨架就是 Folge 56 的标题：<b class="hl">Was tut man, wenn …?</b>——wenn 从句说清场面（…, wenn man den Namen vergessen hat），主句给补救动作。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>演一遍在德国同事家做客的完整流程，照下面 5 句说（横线处换成当场的实物）：</p>
+<ul>
+<li>Vielen Dank für die Einladung! Die ______ sind für Sie.</li>
+<li>Würdest du bitte das ______ weitergeben?</li>
+<li>Oh, Entschuldigung! Das ist mir sehr ______.</li>
+<li>Es tut mir leid, ich bringe das sofort ______.</li>
+<li>Es wäre nett, wenn wir uns bald wieder ______ könnten.</li>
+</ul>
+<p style="margin-top:10px">过关标准：5 句不看稿连着说完，würde/könnte 至少用对 2 次、道歉句（第 3、4 句）一气呵成，中途没有把对长辈的 Sie 说成 du；录音回听一遍，有一处错就重录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-13.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-15.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=205;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:205,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["peinlich", "尴尬的", "embarrassing"], ["die Benimmregel, die Benimmregeln", "礼仪规则", "rule of etiquette"], ["rücksichtsvoll", "体贴的", "considerate"], ["rücksichtslos", "不顾他人的", "inconsiderate"], ["Rücksicht (auf etwas/jemanden) nehmen", "体谅（某事/某人）", "to be considerate (of something/someone)"], ["etwas akzeptieren", "接受", "to accept something"], ["kritikfähig", "能接受批评的", "able to take criticism"], ["unangenehm", "不愉快的", "unpleasant"], ["gastfreundlich", "好客的", "hospitable"], ["hilfsbereit", "乐意助人的", "helpful"], ["geduldig", "有耐心的", "patient"], ["die Geduld (nur Sg.)", "耐心", "patience"], ["die Frechheit, die Frechheiten", "无礼；厚颜无耻", "impudence; cheek"], ["vorsichtig", "小心的；谨慎的", "careful; cautious"], ["jemandem die Hand geben", "握手", "to shake someone's hand"], ["jemandem Bescheid sagen", "通知某人", "to inform someone"], ["jemanden beleidigen", "侮辱某人", "to insult someone"], ["jemanden stören", "打扰某人", "to disturb someone"], ["die Ausrede, die Ausreden", "借口", "excuse"], ["das Lächeln (nur Sg.)", "微笑", "smile"], ["gefühlvoll", "富有感情的", "emotional; sensitive"], ["gefühllos", "冷漠无情的", "unfeeling"], ["jemanden an|lügen", "对某人撒谎", "to lie to someone"], ["die Wahrheit (nur Sg.)", "真相", "truth"], ["ein Versprechen halten", "信守承诺", "to keep a promise"], ["das Verbot, die Verbote", "禁令", "ban; prohibition"], ["appetitlich", "令人有食欲的；诱人的", "appetizing"], ["etwas leise stellen", "调低音量", "to turn down (the volume)"], ["für alles offen sein", "对一切持开放态度", "to be open to everything"], ["die Beziehung, die Beziehungen", "关系；恋爱关系", "relationship"], ["der/die Fremde, die Fremden", "陌生人", "stranger"], ["umgangssprachlich", "口语的", "colloquial"], ["jemanden herein|lassen", "让某人进来", "to let someone in"], ["ernst", "严肃的；重要的", "serious; important"], ["sparsam", "节俭的", "thrifty"], ["etwas genießen", "享受某事", "to enjoy something"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 对不熟悉的长辈，哪一句请求最礼貌？", "opts": ["Öffnen Sie das Fenster, aber schnell!", "Du musst das Fenster öffnen.", "Würden Sie bitte das Fenster öffnen?", "Mach sofort das Fenster auf!"], "a": 2}, {"q": "2. „Es wäre nett, wenn Sie mir helfen ___.“ 空格里填：", "opts": ["könntet", "konnten", "können", "könnten"], "a": 3}, {"q": "3. „Was tut man, wenn man einen Namen ___?“ 空格里填（语序要对）：", "opts": ["vergessen ist", "vergessen hat", "hat vergessen", "hatte vergessen"], "a": 1}, {"q": "4. 礼仪规则：„Man ___ nicht mit vollem Mund sprechen.“（表示「不应该」）", "opts": ["würde", "müsste", "sollte", "dürfte"], "a": 2}, {"q": "5. 在餐馆里最礼貌的点单：„Ich ___ gern ein Glas Wasser.“", "opts": ["muss", "hätte", "nehme sofort", "bringe"], "a": 1}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-14-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-14-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

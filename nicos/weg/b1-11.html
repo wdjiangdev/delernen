@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第11课 Wetter und Klima 天气与气候 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第11课 Wetter und Klima：合并 DW Folge 41-44。1）Wetter ≠ Klima：先把概念分清">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 11 课</div>
+<h1>第 11 课 · Wetter und Klima 天气与气候</h1>
+<div class="de-title">DW B1 · Thema 11 · Folge 41-44 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html" class="cur">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>听懂并转述一份天气预报：气温、降雨、趋势词都抓得住</li>
+<li>分清 <b class="hl">Wetter</b>（这几天的）和 <b class="hl">Klima</b>（几十年的平均）</li>
+<li>用 <b class="hl">wegen + Genitiv</b> 说原因：wegen des Wetters / wegen der Hitze</li>
+<li>谈气候变化：气温上升、极端天气变多，能用数字说话</li>
+<li>说天气对身体的影响：从「热得受不了」到 Wetterfühligkeit（天气敏感）</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 41，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 41</span><span class="t">Wetter und Klima<small>天气和气候不是一回事：先把 Wetter 和 Klima 的区别分清</small></span><button class="playbtn" data-folge="41" onclick="playFolge(41,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 42</span><span class="t">Such Weather Again<small>又是这种天气！德国人抱怨天气的说法和天气对身体的影响</small></span><button class="playbtn" data-folge="42" onclick="playFolge(42,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 43</span><span class="t">Wegen des Wetters<small>因为天气取消了：wegen + 第二格正式登场</small></span><button class="playbtn" data-folge="43" onclick="playFolge(43,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 44</span><span class="t">Es wird wärmer<small>越来越暖：气候变化的数据、后果和争论</small></span><button class="playbtn" data-folge="44" onclick="playFolge(44,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Morgen wird es im Norden regnerisch und windig.</span><span class="zh">明天北部有雨有风。</span></div>
+<div class="phrase"><span class="de">Die Temperaturen steigen auf bis zu 30 Grad.</span><span class="zh">气温升到最高 30 度。</span></div>
+<div class="phrase"><span class="de">Am Wochenende sinken die Temperaturen wieder auf 15 Grad.</span><span class="zh">周末气温又降到 15 度。</span></div>
+<div class="phrase"><span class="de">Wegen des Unwetters fällt der Zug aus.</span><span class="zh">因为暴风雨，火车取消了。</span></div>
+<div class="phrase"><span class="de">Der Ausflug muss wegen des Regens verschoben werden.</span><span class="zh">因为下雨，出游必须改期。</span></div>
+<div class="phrase"><span class="de">Das Klima in Deutschland ist gemäßigt.</span><span class="zh">德国的气候温和。</span></div>
+<div class="phrase"><span class="de">Die Sommer werden von Jahr zu Jahr heißer.</span><span class="zh">夏天一年比一年热。</span></div>
+<div class="phrase"><span class="de">Durch die Erderwärmung schmilzt das Eis an den Polen.</span><span class="zh">由于全球变暖，两极的冰在融化。</span></div>
+<div class="phrase"><span class="de">Extreme Wetterlagen wie Hitzewellen werden immer häufiger.</span><span class="zh">热浪等极端天气越来越频繁。</span></div>
+<div class="phrase"><span class="de">Ich bin wetterfühlig — bei einem Wetterumschwung bekomme ich Kopfschmerzen.</span><span class="zh">我对天气敏感，天气突变就头疼。</span></div>
+<div class="phrase"><span class="de">Hoffentlich bleibt es morgen trocken.</span><span class="zh">但愿明天别下雨。</span></div>
+<div class="phrase"><span class="de">Früher gab es hier im Winter viel mehr Schnee.</span><span class="zh">以前这里冬天的雪比现在多得多。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Lisa:</span> Hast du den Wetterbericht gesehen? Am Samstag soll es ein Unwetter geben.</p>
+<p><span class="who">Nico:</span> Ja, leider. Wegen des Sturms müssen wir den Ausflug wohl verschieben.</p>
+<p><span class="who">Emma:</span> Schon wieder! Letzte Woche ist das Picknick auch wegen des Regens ausgefallen.</p>
+<p><span class="who">Lisa:</span> Dieser Sommer ist wirklich extrem. Erst die Hitzewelle, jetzt der Sturm.</p>
+<p><span class="who">Nico:</span> Und die Temperaturen schwanken total: gestern 32 Grad, morgen nur noch 18.</p>
+<p><span class="who">Emma:</span> Das liegt am Klimawandel, sagen die Forscher. Es wird einfach immer wärmer.</p>
+<p><span class="who">Lisa:</span> Dann machen wir das Picknick eben am Sonntag. Da soll es trocken bleiben.</p>
+<p><span class="who">Nico:</span> Gute Idee. Aber falls es wieder regnet, bleiben wir zu Hause und kochen.</p>
+<div class="tipbox">练法：先读一遍，再把对话里周六的天气换成你所在城市明天的真实预报复述一遍。注：wegen des Sturms / wegen des Regens 是本课核心，第二格冠词 des / der 要跟名词性别走；„Es wird immer wärmer“ 是谈气候的招牌句，整句记牢。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）Wetter ≠ Klima：先把概念分清</b></p>
+<p>德国人聊天气时这两个词分得很清：<b class="hl">das Wetter</b> 是几小时到几天的状态，<b class="hl">das Klima</b> 是一个地方几十年的平均状态。所以 „Das Klima ist heute schlecht“ 是错话，今天只能是 Wetter。</p><table><tr><th>预报句型</th><th>意思</th></tr><tr><td>Es wird sonnig / regnerisch / windig.</td><td>天气将转晴 / 有雨 / 有风 <span class="zh">预报爱用 werden + 形容词</span></td></tr><tr><td>Die Temperaturen steigen auf 30 Grad.</td><td>气温升到 30 度 <span class="zh">steigen auf + 数字</span></td></tr><tr><td>Die Temperaturen sinken auf 15 Grad.</td><td>气温降到 15 度</td></tr><tr><td>Es bleibt trocken.</td><td>不会下雨 <span class="zh">bleiben = 保持</span></td></tr><tr><td>Im Norden gibt es Regen, im Süden scheint die Sonne.</td><td>北部有雨，南部晴 <span class="zh">方位词 im Norden / Süden / Osten / Westen</span></td></tr></table><p>数字说不准时用软化词：<b class="hl">bis zu</b> 30 Grad（最高 30 度）、<b class="hl">um die</b> 20 Grad（20 度左右）、<b class="hl">etwa</b> 15 Grad（约 15 度）。</p>
+</div>
+<div class="card">
+<p><b>2）wegen + Genitiv：因为……（本课主语法）</b></p>
+<p><b class="hl">wegen</b> 是 B1 最重要的原因介词，后面跟<b class="hl">第二格（Genitiv）</b>：阳性/中性用 <b class="hl">des + 名词-s</b>，阴性用 <b class="hl">der</b>，复数用 <b class="hl">der</b>：</p><table><tr><th>名词</th><th>wegen + 第二格</th><th>例句</th></tr><tr><td>das Wetter（中）</td><td>wegen <b>des Wetters</b></td><td>Wegen des Wetters bleiben wir zu Hause. <span class="zh">因为天气，我们待在家</span></td></tr><tr><td>der Sturm（阳）</td><td>wegen <b>des Sturms</b></td><td>Der Zug fällt wegen des Sturms aus. <span class="zh">因为暴风雨火车取消</span></td></tr><tr><td>die Hitze（阴）</td><td>wegen <b>der Hitze</b></td><td>Wegen der Hitze kann ich nicht schlafen. <span class="zh">因为热，我睡不着</span></td></tr><tr><td>die Kinder（复）</td><td>wegen <b>der Kinder</b></td><td>Wegen der Kinder fahren wir nicht weg. <span class="zh">因为孩子，我们不出门</span></td></tr></table><p>位置灵活：wegen 短语可以放句首（后面主句动词第二位）也可以放句中。提醒：口语里常听到 wegen dem Wetter（三格），日常聊天没人纠正你，但<b class="hl">考试和书面语必须用第二格</b>，本课按第二格练。</p>
+</div>
+<div class="card">
+<p><b>3）谈气候变化：趋势词 + 比较级</b></p>
+<p>谈 Klimawandel（气候变化）要会三组表达：趋势、对比、后果。</p><table><tr><th>功能</th><th>句型</th></tr><tr><td>趋势上升</td><td>Die Temperaturen <b>steigen</b>. / Es wird immer <b>wärmer</b>. <span class="zh">气温在升 / 越来越暖</span></td></tr><tr><td>趋势下降</td><td>Die Temperaturen <b>sinken</b>. / Es gibt immer weniger Schnee. <span class="zh">气温在降 / 雪越来越少</span></td></tr><tr><td>年年对比</td><td>Die Sommer werden <b>von Jahr zu Jahr heißer</b>. <span class="zh">von Jahr zu Jahr + 比较级</span></td></tr><tr><td>数据</td><td>Die Erde ist seit 1900 um etwa 1,2 Grad wärmer geworden. <span class="zh">um + 数字 = 升/降的幅度</span></td></tr><tr><td>后果</td><td>Das Eis schmilzt, und extreme Wetterlagen werden häufiger. <span class="zh">冰在化，极端天气变多</span></td></tr></table><p>态度句收尾很好用：<b class="hl">Die Forscher warnen:</b>（研究者警告说）再接一句事实，把观点推给数据，不显得武断。</p>
+</div>
+<div class="card">
+<p><b>4）天气与身体：Wetterfühligkeit</b></p>
+<p>德国有个专门的词：<b class="hl">die Wetterfühligkeit</b>——天气一变就头疼、犯困、没力气。抱怨天气时别只会说 „schlechtes Wetter“，用身体感受说得更具体：</p><table><tr><th>感受</th><th>说法</th></tr><tr><td>天气突变就头疼</td><td>Bei einem Wetterumschwung bekomme ich Kopfschmerzen.</td></tr><tr><td>太热没力气</td><td>Bei dieser Hitze fühle ich mich total schlapp.</td></tr><tr><td>冷得发抖</td><td>Ich friere schon bei zehn Grad.</td></tr><tr><td>循环系统受不了</td><td>Die Temperaturschwankungen machen meinem Kreislauf Probleme.</td></tr></table><p>万能抱怨句还有一句：<b class="hl">Was für ein Wetter!</b>（这什么天气啊！）——配上摇头，好坏天气都能用，是 Folge 42 的招牌感叹。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>录一段 40 秒：先播报一则天气预报，再补一句你对气候变化的看法：</p>
+<ul>
+<li>Morgen wird es in ______ ______.</li>
+<li>Die Temperaturen steigen auf ______ Grad / sinken auf ______ Grad.</li>
+<li>Wegen ______ fällt ______ aus.</li>
+<li>Das Klima in meiner Heimat ist ______.</li>
+<li>Ich denke, dass das Wetter in Zukunft ______ wird.</li>
+</ul>
+<p style="margin-top:10px">过关标准：预报部分至少用一个趋势词（steigen / sinken）和一个带 Grad 的数字；wegen 后面必须是第二格（des / der 跟名词性别走）；最后一句观点要用 dass 从句且动词在句尾。三个点缺任何一个，就回第四步对应的语法卡补完再录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-10.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-12.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=193;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:193,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["das Klima, die Klimata", "气候", "climate"], ["die Temperatur, die Temperaturen", "温度", "temperature"], ["die Temperaturschwankung, die Temperaturschwankungen", "气温波动", "temperature fluctuation"], ["die Hitzewelle, die Hitzewellen", "热浪", "heatwave"], ["der Sturm, die Stürme", "暴风；风暴", "storm"], ["das Unwetter, die Unwetter", "恶劣天气", "severe weather"], ["der Regenfall, die Regenfälle (meist Pl.)", "降雨", "rainfall"], ["die Wetterlage, die Wetterlagen", "天气形势", "weather situation"], ["der Wetterumschwung, die Wetterumschwünge", "天气骤变", "sudden change in weather"], ["die Wetterfühligkeit, die Wetterfühligkeiten", "天气敏感症", "weather sensitivity"], ["die Wärme (nur Sg.)", "温暖", "warmth"], ["frieren", "感到寒冷；挨冻", "to freeze; to feel cold"], ["der Himmel, die Himmel", "天空；天堂", "sky; heaven"], ["die Erde, die Erden (meist Sg.)", "地球；土地；土壤", "earth; soil"], ["der Planet, die Planeten", "行星", "planet"], ["die Erderwärmung (nur Sg.)", "全球变暖", "global warming"], ["die Veränderung, die Veränderungen", "变化", "change"], ["die Folge, die Folgen", "后果", "consequence"], ["durchschnittlich", "平均的", "average; on average"], ["sinken", "下沉；下降", "to sink; to decrease"], ["die Landwirtschaft, die Landwirtschaften", "农业", "agriculture"], ["der Weinanbau (nur Sg.)", "葡萄种植", "viticulture; wine growing"], ["einen Schaden verursachen", "造成损失", "to cause damage"], ["der Kreislauf, die Kreisläufe", "血液循环", "circulation"], ["das Kreislaufproblem, die Kreislaufprobleme", "循环系统问题", "circulatory problem"], ["verschwinden", "消失", "to disappear"], ["jemanden warnen", "警告某人", "to warn someone"], ["der Zustand, die Zustände", "状态；状况", "state; condition"], ["das Risiko, die Risiken", "风险", "risk"], ["die Gefahr, die Gefahren", "危险", "danger"], ["extrem", "极端的", "extreme"], ["die Statistik, die Statistiken", "统计", "statistics"], ["der Bericht, die Berichte", "报道", "report"], ["(über etwas) berichten", "报道", "to report on something"], ["etwas beeinflussen", "影响某事", "to influence something"], ["die Forschung, die Forschungen", "研究", "research"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 下列哪句说的是 Klima（气候）而不是 Wetter（天气）？", "opts": ["Am Samstag gibt es ein Unwetter.", "Heute regnet es den ganzen Tag.", "Morgen wird es im Norden windig.", "In Deutschland sind die Winter meist kalt und dunkel."], "a": 3}, {"q": "2. 选出第二格用对的 wegen 句：", "opts": ["Wegen den Sturms fällt der Zug aus.", "Wegen des Sturm fällt der Zug aus.", "Wegen des Sturms fällt der Zug aus.", "Wegen der Sturm fällt der Zug aus."], "a": 2}, {"q": "3. „Die Temperaturen ______ morgen auf 30 Grad.“ 空格填：", "opts": ["sinken", "steigen", "frieren", "verschwinden"], "a": 1}, {"q": "4. 天气预报说 „Es bleibt trocken.“ 意思是：", "opts": ["会下雪", "会有大风", "不会下雨", "会一直下雨"], "a": 2}, {"q": "5. „Die Sommer werden von Jahr zu Jahr ______.“ 空格填：", "opts": ["heiß", "am heißesten", "Hitze", "heißer"], "a": 3}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-11-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-11-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

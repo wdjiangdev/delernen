@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第16课 Politik 政治 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第16课 Politik：合并 DW Folge 61-64。1）三级架构：Bund、Länder、Gemeinden">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 16 课</div>
+<h1>第 16 课 · Politik 政治</h1>
+<div class="de-title">DW B1 · Thema 16 · Folge 61-64 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html" class="cur">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>说清德国的权力分层：<b class="hl">Bund、Länder、Gemeinden</b> 各管什么事</li>
+<li>讲一遍选举流程：谁有 Wahlrecht、票投给谁、谁来组 Regierung</li>
+<li>就社会话题表态并给理由：<b class="hl">Ich bin dafür / dagegen, dass …</b></li>
+<li>聊欧盟：开放边界、共同规则，对普通人的生活意味着什么</li>
+<li>和德国人聊政治不冷场：同意、反对、补充观点都有现成句子接</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 61，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 61</span><span class="t">Bund und Länder<small>联邦与州：德国的权力是怎么分层的</small></span><button class="playbtn" data-folge="61" onclick="playFolge(61,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 62</span><span class="t">The EU<small>欧盟：一个没有内部边境的欧洲怎么运转</small></span><button class="playbtn" data-folge="62" onclick="playFolge(62,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 63</span><span class="t">Gerechtigkeit?<small>公平吗：税收、机会和社会公平大讨论</small></span><button class="playbtn" data-folge="63" onclick="playFolge(63,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 64</span><span class="t">Wir haben die Wahl<small>我们有选择：选举怎么投、为什么要去投票</small></span><button class="playbtn" data-folge="64" onclick="playFolge(64,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich bin dafür, dass die Steuern für kleine Firmen sinken.</span><span class="zh">我赞成降低小公司的税收。</span></div>
+<div class="phrase"><span class="de">Ich bin dagegen, dass alles vom Staat geregelt wird.</span><span class="zh">我反对一切都由国家来管。</span></div>
+<div class="phrase"><span class="de">Meiner Meinung nach ist das ungerecht.</span><span class="zh">在我看来，这不公平。</span></div>
+<div class="phrase"><span class="de">Der Bundestag wird alle vier Jahre gewählt.</span><span class="zh">联邦议院每四年选举一次。（被动式）</span></div>
+<div class="phrase"><span class="de">Frau Müller wurde zur Bürgermeisterin gewählt.</span><span class="zh">Müller 女士当选为市长。</span></div>
+<div class="phrase"><span class="de">Jeder Bürger ab 18 Jahren darf wählen.</span><span class="zh">每个 18 岁以上的公民都可以投票。</span></div>
+<div class="phrase"><span class="de">Die Partei hat die Wahl gewonnen.</span><span class="zh">这个党赢得了选举。</span></div>
+<div class="phrase"><span class="de">Zwischen den EU-Ländern gibt es keine Grenzkontrollen.</span><span class="zh">欧盟国家之间没有边境检查。</span></div>
+<div class="phrase"><span class="de">Deutschland ist Mitglied der Europäischen Union.</span><span class="zh">德国是欧盟成员国。</span></div>
+<div class="phrase"><span class="de">Da stimme ich dir zu.</span><span class="zh">这一点我同意你。</span></div>
+<div class="phrase"><span class="de">Darüber wird morgen im Parlament abgestimmt.</span><span class="zh">明天议会将就此事表决。</span></div>
+<div class="phrase"><span class="de">Es ist wichtig, dass alle Menschen gleich behandelt werden.</span><span class="zh">重要的是，所有人都被平等对待。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Am Sonntag ist Wahl. Gehst du wählen, Nico?</p>
+<p><span class="who">Nico:</span> Ich darf leider nicht wählen, ich bin kein deutscher Bürger.</p>
+<p><span class="who">Emma:</span> Stimmt. Aber deine Meinung interessiert mich: Wen würdest du wählen?</p>
+<p><span class="who">Nico:</span> Eine Partei, die dafür ist, dass die Mieten nicht so schnell steigen.</p>
+<p><span class="who">Emma:</span> Ich bin dagegen, dass der Staat alles regelt. Die Menschen sollen selbst entscheiden.</p>
+<p><span class="who">Nico:</span> Aber der Staat muss helfen, wenn es ungerecht zugeht.</p>
+<p><span class="who">Emma:</span> Da stimme ich dir zu. Gerechtigkeit ist wichtig.</p>
+<p><span class="who">Nico:</span> Und die EU? Bist du für die Europäische Union?</p>
+<p><span class="who">Emma:</span> Ja! Ich bin dafür, dass die Grenzen offen bleiben. Vielleicht arbeite ich später in Spanien.</p>
+<p><span class="who">Nico:</span> Dann wähl am Sonntag eine Partei, die das auch will!</p>
+<div class="tipbox">练法：两人分角色读，Emma 和 Nico 的立场正好相反——一个强调自由、一个强调公平，注意他们怎么用 dafür / dagegen + dass 表态又不吵架。读完试着把 Nico 的立场换成你自己的观点再说一遍。注：Nico 作为外国人没有 Wahlrecht，所以他只能说 „Wen würdest du wählen?“（你会选谁）——würde 又是虚拟式表假设。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）三级架构：Bund、Länder、Gemeinden</b></p>
+<p>德国是联邦制：权力分三级，搞清谁管什么，看新闻立刻少一半问号：</p><table><tr><th>层级</th><th>机构/人物</th><th>管什么</th></tr><tr><td><b class="hl">Bund</b>（联邦）</td><td>Bundestag、Bundesregierung、Bundeskanzler(in)</td><td>外交、国防、全德统一的法律、税收框架</td></tr><tr><td><b class="hl">Länder</b>（州，16 个）</td><td>各州议会与州政府</td><td>学校教育、警察、文化</td></tr><tr><td><b class="hl">Gemeinden</b>（市镇）</td><td>Bürgermeister(in)、市政厅</td><td>街道、垃圾、幼儿园、本地交通</td></tr></table><p>两个常考的点：① 总理不是全民直选的——<b class="hl">Der Bundeskanzler wird vom Bundestag gewählt.</b>（被动式！）② 学校归州管，所以各州教材、假期都不一样。</p>
+</div>
+<div class="card">
+<p><b>2）选举句型系统：从投票到组政府</b></p>
+<p>选举话题的一套动词，全部围绕 wählen 转：</p><table><tr><th>说法</th><th>意思</th><th>例句</th></tr><tr><td>das <b class="hl">Wahlrecht</b> haben</td><td>有选举权</td><td>Ab 18 Jahren hat jeder Bürger das Wahlrecht.</td></tr><tr><td>zur <b class="hl">Wahl gehen</b></td><td>去投票</td><td>Am Sonntag gehen wir zur Wahl.</td></tr><tr><td>jemanden / eine Partei <b class="hl">wählen</b></td><td>选某人/某党</td><td>Ich wähle die Partei, die …</td></tr><tr><td>die Wahl <b class="hl">gewinnen</b></td><td>赢得选举</td><td>Die Partei hat die Wahl gewonnen.</td></tr><tr><td>über etwas <b class="hl">ab|stimmen</b></td><td>就某事表决</td><td>Darüber wird morgen abgestimmt.</td></tr></table><p>Bundestag 每四年选一次：Der Bundestag <b class="hl">wird</b> alle vier Jahre <b class="hl">gewählt</b>。得票最多的党通常组 Regierung，并推出 Bundeskanzler。</p>
+</div>
+<div class="card">
+<p><b>3）表态工具箱：dafür / dagegen, dass …</b></p>
+<p>聊社会话题，先亮立场再给内容。dass 从句动词照例退句尾：</p><table><tr><th>功能</th><th>句型</th></tr><tr><td>赞成</td><td>Ich bin <b class="hl">dafür</b>, dass die Grenzen offen <b class="hl">bleiben</b>.</td></tr><tr><td>反对</td><td>Ich bin <b class="hl">dagegen</b>, dass der Staat alles <b class="hl">regelt</b>.</td></tr><tr><td>亮明观点</td><td><b class="hl">Meiner Meinung nach</b> ist das ungerecht. / Ich bin <b class="hl">der Meinung</b>, dass …</td></tr><tr><td>同意对方</td><td>Da <b class="hl">stimme ich dir zu</b>. / Das sehe ich auch so.</td></tr><tr><td>礼貌反对</td><td>Ich sehe das anders: … / Da bin ich anderer Meinung.</td></tr></table><p>dafür / dagegen 是固定搭子：先 Ich bin dafür/dagegen 把旗插好，再用 dass 把主张说完，德国人讨论问题全是这个套路。</p>
+</div>
+<div class="card">
+<p><b>4）给理由：weil、denn、deshalb 别混</b></p>
+<p>表态之后要给理由。三个连接词，语序各不同，千万别混：</p><table><tr><th>连接词</th><th>语序</th><th>例句</th></tr><tr><td><b class="hl">weil</b></td><td>从句，动词句尾</td><td>Ich gehe wählen, weil es wichtig <b class="hl">ist</b>.</td></tr><tr><td><b class="hl">denn</b></td><td>主句语序不变</td><td>Ich gehe wählen, denn es <b class="hl">ist</b> wichtig.</td></tr><tr><td><b class="hl">deshalb</b></td><td>占第一位，后面倒装</td><td>Es ist wichtig, <b class="hl">deshalb gehe ich</b> wählen.</td></tr></table><p>口语里 weil 最常用；写议论文时 drei 者换着用，文章立刻有模有样。注意 denn 后面绝不倒装，这是最常见的错误点。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>模拟一次政治圆桌讨论：对下面 5 句的立场逐个表态，横线处填你自己的主张：</p>
+<ul>
+<li>Ich bin dafür, dass ______.</li>
+<li>Ich bin dagegen, dass ______.</li>
+<li>Meiner Meinung nach ist ______ ungerecht.</li>
+<li>Ich stimme dir zu, aber ______.</li>
+<li>Man sollte alle vier Jahre wählen gehen, weil ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：3 个 dass 从句语序全对、weil 理由句动词在句尾、5 句不停顿说完；有一处语序错，就回第 3、4 张语法卡对照表念一遍，再整段重录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-15.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-17.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=213;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:213,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["der Bundeskanzler, die Bundeskanzler / die Bundeskanzlerin, die Bundeskanzlerinnen", "联邦总理", "Federal Chancellor"], ["die Regierung, die Regierungen", "政府", "government"], ["das Parlament, die Parlamente", "议会", "parliament"], ["der/die Abgeordnete, die Abgeordneten", "议员", "member of parliament"], ["die Partei, die Parteien", "政党", "political party"], ["der Kandidat, die Kandidaten / die Kandidatin, die Kandidatinnen", "候选人", "candidate"], ["die Wahl, die Wahlen", "选举；选择", "election; choice"], ["das Wahlrecht (nur Sg.)", "选举权", "right to vote"], ["zur Wahl gehen", "去投票", "to go vote"], ["jemanden wählen", "选举某人", "to elect someone"], ["ab|stimmen", "投票表决", "to vote"], ["jemandem zu|stimmen", "赞同某人", "to agree with someone"], ["die Demokratie, die Demokratien", "民主", "democracy"], ["politisch", "政治的", "political"], ["der Bürger, die Bürger / die Bürgerin, die Bürgerinnen", "公民", "citizen"], ["der Staat, die Staaten", "国家", "state; country"], ["der Bürgermeister, die Bürgermeister / die Bürgermeisterin, die Bürgermeisterinnen", "市长", "mayor"], ["das Gesetz, die Gesetze", "法律", "law"], ["die Verfassung, die Verfassungen", "宪法", "constitution"], ["die Europäische Union (nur Sg.)", "欧盟", "European Union (EU)"], ["europäisch", "欧洲的", "European"], ["der Europäer, die Europäer / die Europäerin, die Europäerinnen", "欧洲人", "European (man/woman)"], ["die Mehrheit, die Mehrheiten", "多数", "majority"], ["die Minderheit, die Minderheiten", "少数群体", "minority"], ["für/gegen etwas demonstrieren", "游行示威", "to demonstrate for/against something"], ["der Protest, die Proteste", "抗议", "protest"], ["die Gewerkschaft, die Gewerkschaften", "工会", "trade union"], ["der Flüchtling, die Flüchtlinge", "难民", "refugee"], ["das Asyl, die Asyle (meist Sg.)", "庇护", "asylum"], ["gerecht", "公正的；公平的", "fair, just"], ["ungerecht", "不公正的", "unfair, unjust"], ["die Verwaltung, die Verwaltungen", "行政管理", "administration"], ["der Antrag, die Anträge", "申请", "application; request"], ["einen Antrag stellen", "提交申请", "to file an application"], ["die Grenze, die Grenzen", "边境", "border"], ["der Frieden (nur Sg.)", "和平", "peace"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Ich bin dafür, dass die Grenzen offen ___.“（dass 从句，动词在句尾）", "opts": ["bleibe ich", "bleibt", "bleiben", "blieb"], "a": 2}, {"q": "2. „Der Bundeskanzler wird ___ gewählt.“（由联邦议院选出，被动式 + von）", "opts": ["vom Bundestag", "im Bundestag", "für Bundestag", "von Bundestag"], "a": 0}, {"q": "3. „___ Meinung nach ist das ungerecht.“ 空格里填：", "opts": ["Meine", "Meines", "Meiner", "Mein"], "a": 2}, {"q": "4. „Ich gehe wählen, weil es wichtig ___.“ 空格里填：", "opts": ["es ist", "ist", "sein", "ist es"], "a": 1}, {"q": "5. denn 后面是主句语序：„Ich bleibe heute zu Hause, denn ich ___ müde.“", "opts": ["ist es", "es bin", "bin", "zu sein"], "a": 2}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-16-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-16-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

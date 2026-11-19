@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第5课 Bewerbung 求职 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第5课 Bewerbung：合并 DW Folge 17-20。1）求职信的结构：一封 Bewerbung 只由这几块组成">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 5 课</div>
+<h1>第 5 课 · Bewerbung 求职</h1>
+<div class="de-title">DW B1 · Thema 5 · Folge 17-20 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html" class="cur">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>看懂一份 <b class="hl">Stellenanzeige</b>：职位要求、工作时间、联系方式和申请截止日期各在哪一行</li>
+<li>按德国规范写一封求职信：<b class="hl">Betreff、Anrede、正文三段、Grußformel</b> 一样不缺</li>
+<li>列一张 <b class="hl">tabellarischer Lebenslauf</b>：教育、工作经历、语言和技能分栏写清、顺序不写反</li>
+<li>用间接问句礼貌发问：<b class="hl">Ich wollte fragen, ob … / Könnten Sie mir sagen, wann …</b></li>
+<li>面试时做 1 分钟自我介绍：经历、优势和能入职的时间都说得到</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 17，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 17</span><span class="t">Jobsuche<small>Nico 开始找工作：去哪找、怎么从一堆职位里筛出适合自己的</small></span><button class="playbtn" data-folge="17" onclick="playFolge(17,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 18</span><span class="t">Stellenanzeigen<small>逐条读懂招聘广告：岗位要求、工作时间、联系方式和截止日期</small></span><button class="playbtn" data-folge="18" onclick="playFolge(18,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 19</span><span class="t">Bewerbungen<small>动手写求职信和表格式简历，把申请材料寄出去</small></span><button class="playbtn" data-folge="19" onclick="playFolge(19,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 20</span><span class="t">Der erste Eindruck<small>面试登场：第一印象、着装打扮与礼貌问答</small></span><button class="playbtn" data-folge="20" onclick="playFolge(20,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich bin auf der Suche nach einer Stelle als Koch.</span><span class="zh">我正在找一份厨师的工作。</span></div>
+<div class="phrase"><span class="de">In der Anzeige steht, dass Erfahrung nötig ist.</span><span class="zh">广告上写着，需要有经验。</span></div>
+<div class="phrase"><span class="de">Ich bewerbe mich um die Stelle als Verkäufer.</span><span class="zh">我申请这个售货员的职位。</span></div>
+<div class="phrase"><span class="de">Meine Bewerbung finden Sie im Anhang.</span><span class="zh">我的申请材料在附件里。</span></div>
+<div class="phrase"><span class="de">Zu meinen Stärken gehören Teamfähigkeit und Belastbarkeit.</span><span class="zh">我的优点包括团队合作能力和抗压能力。</span></div>
+<div class="phrase"><span class="de">Ich wollte fragen, ob die Stelle noch frei ist.</span><span class="zh">我想问一下，这个职位还空缺吗？</span></div>
+<div class="phrase"><span class="de">Könnten Sie mir sagen, wann ich anfangen könnte?</span><span class="zh">您能告诉我，我什么时候可以入职吗？</span></div>
+<div class="phrase"><span class="de">Ich habe drei Jahre Erfahrung in diesem Bereich.</span><span class="zh">我在这个领域有三年经验。</span></div>
+<div class="phrase"><span class="de">Mein Lebenslauf ist tabellarisch aufgebaut.</span><span class="zh">我的简历是表格式的。</span></div>
+<div class="phrase"><span class="de">Der Bewerbungsschluss ist am 15. Mai.</span><span class="zh">申请截止日期是 5 月 15 日。</span></div>
+<div class="phrase"><span class="de">Vielen Dank für die Einladung zum Vorstellungsgespräch.</span><span class="zh">非常感谢您邀请我来面试。</span></div>
+<div class="phrase"><span class="de">Ich würde mich freuen, wenn ich mich persönlich vorstellen dürfte.</span><span class="zh">如果能有机会亲自来介绍自己，我会非常高兴。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Frau Berger:</span> Guten Tag, Herr García. Nehmen Sie bitte Platz. Erzählen Sie doch kurz etwas über sich.</p>
+<p><span class="who">Nico:</span> Guten Tag, Frau Berger. Ich komme aus Spanien und lebe seit zwei Jahren in Deutschland. Ich habe in einem Restaurant als Koch gearbeitet.</p>
+<p><span class="who">Frau Berger:</span> Warum möchten Sie bei uns arbeiten?</p>
+<p><span class="who">Nico:</span> Ihre Firma ist bekannt für gute Qualität, und ich möchte mich beruflich weiterentwickeln.</p>
+<p><span class="who">Frau Berger:</span> Was sind Ihre größten Stärken?</p>
+<p><span class="who">Nico:</span> Ich arbeite gern im Team, bin belastbar und zeitlich flexibel.</p>
+<p><span class="who">Frau Berger:</span> Haben Sie noch Fragen an uns?</p>
+<p><span class="who">Nico:</span> Ja, ich wollte fragen, ob es eine Einarbeitung gibt und wann ich anfangen könnte.</p>
+<p><span class="who">Frau Berger:</span> Es gibt eine Woche Einarbeitung. Wir melden uns bis Freitag bei Ihnen. Vielen Dank für das Gespräch!</p>
+<p><span class="who">Nico:</span> Ich danke Ihnen auch. Auf Wiedersehen!</p>
+<div class="tipbox">练法：先跟读 Frau Berger 的提问，把面试五大问（自我介绍、为什么选我们、你的优势、你的弱点、你有什么问题）各准备一句自己的答案；再换角色读 Nico 的回答，特别注意 ob 从句里 ist 去了句尾。注：sich weiterentwickeln（让自己继续发展）是面试高频说法，整句记下，比 „Ich brauche Geld“ 得体得多。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）求职信的结构：一封 Bewerbung 只由这几块组成</b></p>
+<p>德国求职信（Anschreiben）是高度格式化的文书，顺序和用语基本固定，照着填就行：</p><table><tr><th>部分</th><th>怎么写</th></tr><tr><td>Betreff <span class="zh">参考行</span></td><td>Bewerbung um die Stelle als Koch —— 直接写内容，前面不用加 „Betreff:“ 这个词</td></tr><tr><td>Anrede <span class="zh">称呼</span></td><td>Sehr geehrte Frau Berger, / Sehr geehrter Herr Yilmaz, —— 知道姓名一定写姓名，实在不知道才写 Sehr geehrte Damen und Herren,</td></tr><tr><td>正文三段</td><td>① 我在哪里看到广告、申请什么职位 ② 我的经历和优势（对着广告的要求逐条回应）③ 希望获得面试机会</td></tr><tr><td>Schluss <span class="zh">结尾</span></td><td>Mit freundlichen Grüßen + 签名；敬语后面不加标点，另起一行签名</td></tr></table><p>两个易错点：Anrede 后面是逗号，所以正文第一句<b class="hl">小写开头</b>；信末加一行 Anlagen，列出附件：Lebenslauf, Zeugnisse（简历、证书）。</p>
+</div>
+<div class="card">
+<p><b>2）tabellarischer Lebenslauf：德国简历只认这张表</b></p>
+<p>德国简历不用段落叙述，只用表格，一栏一项。标准栏目是这六块：</p><table><tr><th>栏目</th><th>内容</th></tr><tr><td>Persönliche Daten</td><td>姓名、地址、电话、邮箱（出生日期和照片现在多半可以省）</td></tr><tr><td>Berufserfahrung</td><td>工作经历：时间段 + 公司 + 职位 + 一句职责</td></tr><tr><td>Schulausbildung / Studium</td><td>教育经历：学校、专业、毕业时间</td></tr><tr><td>Sprachkenntnisse</td><td>语言水平：Deutsch (B1), Englisch (gut), Spanisch (Muttersprache)</td></tr><tr><td>Kenntnisse &amp; Interessen</td><td>技能与兴趣：电脑、驾照（Führerschein）、证书</td></tr><tr><td>Ort, Datum, Unterschrift</td><td>地点、日期、亲笔签名，写在最后</td></tr></table><p>最大的文化差异：经历按<b class="hl">倒序</b>排列，最近的写最上面——和中文简历从早写到晚的习惯正好相反，千万别写反。</p>
+</div>
+<div class="card">
+<p><b>3）间接问句：把问题「包」进句子里，动词去句尾</b></p>
+<p>直接发问在职场里显得冲，先加一个引子把问题包起来：Ich wollte fragen, … / Könnten Sie mir sagen, … / Ich würde gern wissen, … 包好之后，问题就变成从句，<b class="hl">变位动词搬到句尾</b>：</p><table><tr><th>类型</th><th>直接问句</th><th>间接问句</th></tr><tr><td>是非问题 → ob</td><td>Ist die Stelle noch frei?</td><td>Ich wollte fragen, <b class="hl">ob</b> die Stelle noch frei <b class="hl">ist</b>.</td></tr><tr><td>W 问题 → 疑问词带头</td><td>Wann kann ich anfangen?</td><td>Könnten Sie mir sagen, <b class="hl">wann</b> ich anfangen <b class="hl">kann</b>?</td></tr><tr><td>W 问题 → 疑问词带头</td><td>Wo muss ich mich melden?</td><td>Ich würde gern wissen, <b class="hl">wo</b> ich mich melden <b class="hl">muss</b>.</td></tr></table><p>礼貌加成：引子里的 wollte / könnte 是虚拟式（Konjunktiv II），比 „Ich will fragen“ 客气一个档次，面试和邮件里默认用这一套。</p>
+</div>
+<div class="card">
+<p><b>4）面试礼仪：第一印象在开口之前就定了</b></p>
+<p>Folge 20 的主题 „Der erste Eindruck“（第一印象）有一半是行为，不是语言：</p><p>① <b class="hl">时间</b>：提前 10 分钟到，迟到必须打电话说明；② <b class="hl">进门</b>：敲门、等回应再进，握手时看着对方眼睛并自报姓名；③ <b class="hl">称呼</b>：全程用 Sie，直到对方主动说 „Wir können uns gern duzen.“ 才换 du；④ <b class="hl">手机</b>：提前静音，面试中不看表不看手机；⑤ <b class="hl">着装</b>：原则是 lieber zu schick als zu lässig（宁可正式过头，不要随便）；⑥ <b class="hl">收尾</b>：主动道谢，并问一句 „Wie geht es jetzt weiter?“（接下来流程是什么）——显得你真的在意这份工作。</p><p>回答问题时也有公式：先给结论，再给一个具体例子。被问到弱点时，挑一个真实但不致命的，并立刻补上你正在怎么改。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>模拟面试开场：不看稿，用德语说完一段 1 分钟的自我介绍——你是谁、从哪来、做过什么、优势是什么、为什么申请这家公司。</p>
+<ul>
+<li>Guten Tag, mein Name ist ______, ich komme aus ______.</li>
+<li>Ich bewerbe mich um die Stelle als ______.</li>
+<li>Ich habe ______ Jahre Erfahrung als ______.</li>
+<li>Zu meinen Stärken gehören ______ und ______.</li>
+<li>Ich würde mich freuen, wenn ich bei Ihnen anfangen könnte.</li>
+</ul>
+<p style="margin-top:10px">过关标准：5 句连起来说完，中间停顿不超过 3 秒；第 2 句的 um die Stelle als 结构、第 5 句 wenn 从句里 könnte 的位置都说对了，才算过关。有一处说错就对照第四步重说一遍，别直接跳下一课。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-04.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-06.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=169;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:169,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Bewerbung, die Bewerbungen", "求职申请", "job application"], ["das Anschreiben, die Anschreiben", "求职信", "cover letter"], ["der Lebenslauf, die Lebensläufe", "简历", "CV; résumé"], ["der tabellarische Lebenslauf, die tabellarischen Lebensläufe", "表格式简历", "tabular CV"], ["die Stellenanzeige, die Stellenanzeigen", "招聘广告", "job advertisement"], ["der Stellenmarkt, die Stellenmärkte", "招聘版", "job listings section"], ["das Jobangebot, die Jobangebote", "工作机会；职位空缺", "job offer"], ["der Arbeitgeber, die Arbeitgeber / die Arbeitgeberin, die Arbeitgeberinnen", "雇主", "employer"], ["der Arbeitnehmer, die Arbeitnehmer / die Arbeitnehmerin, die Arbeitnehmerinnen", "雇员", "employee"], ["die Erfahrung, die Erfahrungen", "经验", "experience"], ["das Zeugnis, die Zeugnisse", "证明；成绩单", "certificate; reference"], ["das Schulzeugnis, die Schulzeugnisse", "成绩单", "school report card"], ["die Referenz, die Referenzen", "推荐信；工作证明", "reference (document)"], ["die Schulausbildung, die Schulausbildungen", "学校教育（学历）", "school education"], ["der Studienabschluss, die Studienabschlüsse", "大学毕业", "university degree, graduation"], ["die Fachhochschule, die Fachhochschulen", "应用科学大学", "university of applied sciences"], ["der Ausbildungsplatz, die Ausbildungsplätze", "培训岗位；学徒名额", "apprenticeship position"], ["der Ausbildungsberuf, die Ausbildungsberufe", "需职业培训的工种", "occupation requiring vocational training"], ["die Berufsschule, die Berufsschulen", "职业学校", "vocational school"], ["die Berufswahl (nur Sg.)", "职业选择", "career choice"], ["die Berufswelt, die Berufswelten", "职业世界", "world of work"], ["das Berufsfeld, die Berufsfelder", "职业领域", "occupational field"], ["die Berufschance, die Berufschancen", "就业机会", "career opportunity"], ["die Berufsorientierung, die Berufsorientierungen", "职业指导", "career guidance"], ["der Bewerbungsschluss (nur Sg.)", "申请截止日期", "application deadline"], ["der Eintrittstermin, die Eintrittstermine", "入职日期", "start date (of employment)"], ["der Arbeitsvertrag, die Arbeitsverträge", "劳动合同", "employment contract"], ["befristet", "有期限的", "fixed-term; temporary"], ["der befristete Arbeitsvertrag, die befristeten Arbeitsverträge", "定期劳动合同", "fixed-term employment contract"], ["die Bezahlung, die Bezahlungen", "薪酬", "pay; payment"], ["die Teamfähigkeit (nur Sg.)", "团队合作能力", "ability to work in a team"], ["die Belastbarkeit (nur Sg.)", "承压能力", "resilience, ability to cope with stress"], ["kreativ", "有创意的", "creative"], ["zeitlich flexibel", "时间上灵活的", "flexible in terms of time"], ["berufstätig", "有工作的", "employed; working"], ["der Praktikumsplatz, die Praktikumsplätze", "实习岗位", "internship position"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 求职信里，已知对方是 Frau Berger，规范的称呼是？", "opts": ["Guten Tag, Frau Berger!", "Liebe Frau Berger,", "Sehr geehrte Frau Berger,", "Hallo Frau Berger,"], "a": 2}, {"q": "2. 哪一句间接问句是正确的？", "opts": ["Ich wollte fragen, ob die Stelle ist noch frei.", "Ich wollte fragen, ob ist die Stelle noch frei.", "Ich wollte fragen, ob die Stelle noch frei ist.", "Ich wollte fragen, ob die Stelle noch frei sein."], "a": 2}, {"q": "3. tabellarischer Lebenslauf 里，工作经历的排列顺序是？", "opts": ["只写最近一份工作", "按公司名称的字母顺序", "最新的一份写最上面，往下越来越早", "完全不用写时间"], "a": 2}, {"q": "4. 求职信结尾的固定敬语是？", "opts": ["Mit freundlichen Grüßen", "Viele Grüße und bis bald!", "Hochachtungsvoll und tschüss", "Ich liebe euch alle"], "a": 0}, {"q": "5. 面试时哪种做法是对的？", "opts": ["一进门就和面试官用 du，显得亲切", "迟到五分钟没关系，不用解释", "提前十分钟到，全程用 Sie 称呼对方", "对方没问，也要主动把自己所有缺点讲一遍"], "a": 2}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-05-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-05-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

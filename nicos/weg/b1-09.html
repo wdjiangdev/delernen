@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第9课 Schule 学校 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第9课 Schule：合并 DW Folge 33-36。1）德国学制一张图：四年级后就分流">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 9 课</div>
+<h1>第 9 课 · Schule 学校</h1>
+<div class="de-title">DW B1 · Thema 9 · Folge 33-36 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html" class="cur">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>向德国人讲清德国学制：<b class="hl">Grundschule 之后分流</b>，Hauptschule / Realschule / Gymnasium 三条路</li>
+<li>看懂成绩单：<b class="hl">Noten 1 bis 6</b>，知道 1 分最好、6 分不及格</li>
+<li>介绍自己的上学经历：上过什么学校、最喜欢哪门课、成绩怎么样</li>
+<li>用 <b class="hl">je … desto …</b> 说比较关系：练得越多，记得越牢</li>
+<li>说出学校里各种职业的分工，不只会说 Lehrer</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 33，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 33</span><span class="t">School<small>Emma 上学了：跟着镜头走进德国小学，看德国孩子怎么上学</small></span><button class="playbtn" data-folge="33" onclick="playFolge(33,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 34</span><span class="t">Schulalltag<small>德国学生的一天：课程表、课间和放学后的安排</small></span><button class="playbtn" data-folge="34" onclick="playFolge(34,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 35</span><span class="t">Lernen<small>怎么学才有效：聊学习方法、成绩和考试压力</small></span><button class="playbtn" data-folge="35" onclick="playFolge(35,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 36</span><span class="t">Berufe an der Schule<small>学校里不只有老师：认识校工、幼教等校园职业</small></span><button class="playbtn" data-folge="36" onclick="playFolge(36,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">In Deutschland kommen die Kinder mit sechs Jahren in die Grundschule.</span><span class="zh">德国孩子六岁上小学。</span></div>
+<div class="phrase"><span class="de">Nach der Grundschule geht es auf eine weiterführende Schule.</span><span class="zh">小学之后升入中学（进阶学校）。</span></div>
+<div class="phrase"><span class="de">Das Gymnasium dauert am längsten und endet mit dem Abitur.</span><span class="zh">文理中学读得最久，以 Abitur（高中毕业考）结业。</span></div>
+<div class="phrase"><span class="de">Auf dem Zeugnis stehen die Noten für alle Fächer.</span><span class="zh">成绩单上列着所有科目的成绩。</span></div>
+<div class="phrase"><span class="de">In Mathe habe ich eine Zwei, in Deutsch eine Drei.</span><span class="zh">我数学 2 分，德语 3 分（德国 1 分最好）。</span></div>
+<div class="phrase"><span class="de">Mein Lieblingsfach war schon immer Geschichte.</span><span class="zh">我最喜欢的科目一直是历史。</span></div>
+<div class="phrase"><span class="de">Je mehr ich übe, desto besser verstehe ich den Stoff.</span><span class="zh">我练得越多，就越懂这些内容。</span></div>
+<div class="phrase"><span class="de">Je früher man anfängt, desto weniger Stress hat man vor der Prüfung.</span><span class="zh">开始得越早，考前压力就越小。</span></div>
+<div class="phrase"><span class="de">Ich muss mich mehr anstrengen, sonst schaffe ich die Prüfung nicht.</span><span class="zh">我得更努力，不然过不了考试。</span></div>
+<div class="phrase"><span class="de">Früher bin ich in China zur Schule gegangen.</span><span class="zh">我以前在中国上学。</span></div>
+<div class="phrase"><span class="de">Bei uns beginnt der Unterricht um acht Uhr.</span><span class="zh">我们这儿八点开始上课。</span></div>
+<div class="phrase"><span class="de">Als Kind wollte ich Lehrer werden.</span><span class="zh">我小时候想当老师。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Nico:</span> Emma, erzähl mal: Wie sieht ein normaler Schultag bei dir aus?</p>
+<p><span class="who">Emma:</span> Ich gehe in die dritte Klasse der Grundschule. Der Unterricht beginnt um acht Uhr.</p>
+<p><span class="who">Nico:</span> Und wie viele Fächer hast du?</p>
+<p><span class="who">Emma:</span> Deutsch, Mathe, Sachunterricht und Sport. Mein Lieblingsfach ist Sport!</p>
+<p><span class="who">Lisa:</span> Und was steht auf deinem Zeugnis?</p>
+<p><span class="who">Emma:</span> In Mathe habe ich eine Eins, aber in Deutsch nur eine Drei. Schreiben ist schwer.</p>
+<p><span class="who">Nico:</span> Keine Sorge. Je mehr du liest, desto besser wirst du in Deutsch.</p>
+<p><span class="who">Emma:</span> Ich weiß. Ich strenge mich ja schon an!</p>
+<p><span class="who">Lisa:</span> Und nach der Grundschule möchtest du aufs Gymnasium, oder?</p>
+<p><span class="who">Emma:</span> Ja! Dann mache ich irgendwann das Abitur.</p>
+<div class="tipbox">练法：先分角色读两遍，再把 Emma 的答案换成你自己上学时的真实情况复述一遍。注：je … desto … 是本课的预告句型，先整句会用，第四步拆结构；eine Eins / eine Zwei 是报成绩的固定读法（数字按阴性变格，因为 die Note 是阴性）。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）德国学制一张图：四年级后就分流</b></p>
+<p>德国孩子 6 岁进 <b class="hl">Grundschule</b>（小学，一般 4 年，柏林等地 6 年），之后按成绩和老师建议分流到三种中学，这是德国学制和中国最大的不同：</p><table><tr><th>学校</th><th>读到</th><th>毕业证书</th><th>之后</th></tr><tr><td>Hauptschule</td><td>9 / 10 年级</td><td>Hauptschulabschluss</td><td>多数学一门手艺、做 Ausbildung</td></tr><tr><td>Realschule</td><td>10 年级</td><td>Mittlere Reife</td><td>Ausbildung 或继续升学</td></tr><tr><td><b class="hl">Gymnasium</b></td><td>12 / 13 年级</td><td><b class="hl">Abitur</b></td><td>上大学的入场券</td></tr><tr><td>Gesamtschule</td><td>三种合一</td><td>三种证书都可拿</td><td>分流推迟，内部再分层</td></tr></table><p>固定搭配背下来：<b class="hl">in die Grundschule kommen</b>（上小学）、<b class="hl">auf ein Gymnasium gehen</b>（上文理中学，介词用 auf）、<b class="hl">das Abitur machen</b>（考高中毕业考）。各州规则略有差别，聊起来加一句 <span class="zh">Das ist von Bundesland zu Bundesland verschieden.</span>（各州不一样）就很内行。</p>
+</div>
+<div class="card">
+<p><b>2）Noten 1 bis 6：方向和中国正好反着</b></p>
+<p>德国成绩 1 分最好、6 分最差，4 分是及格线。看 Zeugnis（成绩单）先认这张表：</p><table><tr><th>Note</th><th>名称</th><th>大致对应</th></tr><tr><td><b class="hl">1</b></td><td>sehr gut</td><td>优秀</td></tr><tr><td><b class="hl">2</b></td><td>gut</td><td>良好</td></tr><tr><td>3</td><td>befriedigend</td><td>中等</td></tr><tr><td>4</td><td>ausreichend</td><td>刚及格</td></tr><tr><td>5</td><td>mangelhaft</td><td>不及格</td></tr><tr><td>6</td><td>ungenügend</td><td>严重不及格</td></tr></table><p>报成绩的说法：<b class="hl">Ich habe eine Zwei in Mathe.</b>（我数学 2 分）——数字后面跟阴性词尾 -e，因为省掉的词是 die Note。千万别把 eine Fünf 说成好成绩：5 分在德国是 <span class="zh">durchgefallen</span>（挂科）的水平。大学里 1,0 到 4,0 及格，5,0 不及格，逻辑一样。</p>
+</div>
+<div class="card">
+<p><b>3）je … desto …：越……越……（B1 预告，先会用）</b></p>
+<p>比较关系进阶版：<b class="hl">Je + 比较级 + 从句（动词在尾），desto + 比较级 + 主句（动词第二位）</b>。</p><table><tr><th>句子</th><th>拆解</th></tr><tr><td>Je mehr ich übe, desto besser verstehe ich den Stoff.</td><td>je 半句：übe 站句尾；desto 半句：verstehe ich，动词第二位 <span class="zh">练得越多，懂得越好</span></td></tr><tr><td>Je früher man anfängt, desto weniger Stress hat man.</td><td>weniger 是 viel 的比较级 <span class="zh">开始越早，压力越小</span></td></tr><tr><td>Je länger der Weg, desto müder bin ich.</td><td>je 半句可以省动词（口语常见） <span class="zh">路越长，我越累</span></td></tr></table><p>常用比较级先备好：mehr（更多）、weniger（更少）、besser（更好）、länger（更长）、früher（更早）、schneller（更快）。desto 也可以换成 <b class="hl">umso</b>，意思完全一样。本课先把这个句型用顺，B1 后段还会系统练。</p>
+</div>
+<div class="card">
+<p><b>4）谈学习经历：过去时态搭传记</b></p>
+<p>介绍上学经历是 B1 口试的高频题。骨架三件套：<b class="hl">sein / haben 用过去时 war / hatte</b>，动作类用 Perfekt，时间点用 <b class="hl">als</b>（一次性过去；wenn 是重复发生的事）：</p><table><tr><th>要说</th><th>句型</th></tr><tr><td>在哪上学</td><td>Ich bin in China zur Schule gegangen. / Ich war auf einem Gymnasium.</td></tr><tr><td>最喜欢的科目</td><td>Mein Lieblingsfach war Geschichte, weil ich gern gelesen habe.</td></tr><tr><td>成绩</td><td>Ich hatte gute Noten in Mathe, aber in Englisch nur eine Vier.</td></tr><tr><td>当时的状态</td><td>Als ich 15 war, musste ich jeden Tag viele Hausaufgaben machen.</td></tr></table><p>练习法：按「学校 → 科目 → 成绩 → 一句感受」的顺序讲 30 秒，就是一段完整的 Schulbiografie（求学经历），申请和面试时也用得上。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>对着手机录 40 秒，讲一段你自己的求学经历（Schulbiografie）：</p>
+<ul>
+<li>Ich bin in ______ zur Schule gegangen.</li>
+<li>Nach der Grundschule war ich auf ______.</li>
+<li>Mein Lieblingsfach war ______, weil ______.</li>
+<li>In ______ hatte ich meistens eine ______.</li>
+<li>Je mehr ich ______ geübt habe, desto ______ wurde ich.</li>
+</ul>
+<p style="margin-top:10px">过关标准：学制词至少用对 3 个（Grundschule / Gymnasium / Abitur / Zeugnis 任选），成绩必须用德国分数说（如 eine Zwei，不能说百分制），je … desto 句里 desto 后面动词要站第二位；讲不出自己经历时，先照 Emma 的对话把学校和分数换成你的再录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-08.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-10.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=185;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:185,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["das Schulsystem, die Schulsysteme", "学校教育体系", "school system"], ["die Grundschule, die Grundschulen", "小学", "primary school, elementary school"], ["die Hauptschule, die Hauptschulen", "普通中学（主体中学）", "lower secondary school (Hauptschule)"], ["die Realschule, die Realschulen", "实科中学", "intermediate secondary school (Realschule)"], ["das Gymnasium, die Gymnasien", "文理中学", "academic high school (Gymnasium)"], ["die Gesamtschule, die Gesamtschulen", "综合学校", "comprehensive school"], ["die weiterführende Schule, die weiterführenden Schulen", "中学（小学之后）", "secondary school"], ["jemanden ein|schulen", "让某人入学", "to enroll someone in school (for the first time)"], ["die Schulausbildung, die Schulausbildungen", "学校教育（学历）", "school education"], ["die Schulzeit, die Schulzeiten", "上学时期", "school years, time at school"], ["der Schulalltag (nur Sg.)", "学校日常生活", "everyday school life"], ["die Klasse, die Klassen", "班级", "class (at school)"], ["das Fach, die Fächer", "学科", "subject (school/university)"], ["das Lieblingsfach, die Lieblingsfächer", "最喜欢的科目", "favorite subject (at school)"], ["der Stundenplan, die Stundenpläne", "课程表", "timetable; class schedule"], ["die Note, die Noten", "分数；成绩", "grade, mark"], ["das Zeugnis, die Zeugnisse", "证明；成绩单", "certificate; reference"], ["das Schulzeugnis, die Schulzeugnisse", "成绩单", "school report card"], ["die Prüfung, die Prüfungen", "考试", "exam"], ["die Aufnahmeprüfung, die Aufnahmeprüfungen", "入学考试", "entrance examination"], ["das Fachabitur, die Fachabiture (meist Sg.)", "专科高中毕业文凭", "vocational baccalaureate"], ["mangelhaft", "差的（5分）", "poor, deficient (school grade 5)"], ["der Fleiß (nur Sg.)", "勤奋", "diligence"], ["sich an|strengen", "努力；使劲", "to exert oneself"], ["die Leistung, die Leistungen", "成绩；表现", "performance, achievement"], ["der Lernfortschritt, die Lernfortschritte", "学习进步", "learning progress"], ["das Lernprogramm, die Lernprogramme", "学习软件", "learning software"], ["der Einzelunterricht (nur Sg.)", "一对一授课", "one-on-one lessons, private tuition"], ["die Förderstunde, die Förderstunden", "辅导课", "remedial lesson, support class"], ["die Privatstunde, die Privatstunden", "私人授课", "private lesson"], ["das Referat, die Referate", "课堂报告", "oral report, class presentation"], ["die Präsentation, die Präsentationen", "演示；报告", "presentation"], ["der Rechtschreibfehler, die Rechtschreibfehler", "拼写错误", "spelling mistake"], ["der Erzieher, die Erzieher / die Erzieherin, die Erzieherinnen", "幼教", "educator; kindergarten teacher"], ["der Kindergärtner, die Kindergärtner / die Kindergärtnerin, die Kindergärtnerinnen", "幼儿园老师", "kindergarten teacher"], ["der Hausmeister, die Hausmeister / die Hausmeisterin, die Hausmeisterinnen", "看门人；物业管理员", "caretaker, janitor"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 德国孩子一般几岁进入 Grundschule（小学）？", "opts": ["四岁", "五岁", "六岁", "七岁"], "a": 2}, {"q": "2. 哪种学校以 Abitur 结业、能直接上大学？", "opts": ["Gymnasium", "Gesamtschule 的九年级", "Realschule", "Hauptschule"], "a": 0}, {"q": "3. 成绩单上 eine Eins 表示什么？", "opts": ["刚好及格", "最差的一档", "最好的一档", "缺考"], "a": 2}, {"q": "4. 选出语序正确的 je … desto 句：", "opts": ["Je mehr übe ich, desto besser werde ich.", "Je mehr ich übe, desto besser werde ich.", "Je mehr ich übe, desto besser ich werde.", "Je ich übe mehr, desto besser werde ich."], "a": 1}, {"q": "5. „Ich muss mich mehr ______, sonst schaffe ich die Prüfung nicht.“ 空格填：", "opts": ["an|strengen", "mangelhaft", "präsentieren", "ein|schulen"], "a": 0}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-09-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-09-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

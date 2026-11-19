@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第2课 Zeit 时间 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第2课 Zeit：合并 DW Folge 5-8。1）während / bevor：同时和先后，从句动词去句尾">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 2 课</div>
+<h1>第 2 课 · Zeit 时间</h1>
+<div class="de-title">DW B1 · Thema 2 · Folge 5-8 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html" class="cur">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>抱怨和解释时间压力：<b class="hl">Ich stehe unter Zeitdruck</b> 说得出口，也能说清压力从哪来</li>
+<li>用 während / bevor / nachdem 把两个动作的先后、同时关系说精确</li>
+<li>nachdem 从句时态搭配不翻车：主句过去时，从句要再往前推一档（Plusquamperfekt）</li>
+<li>聊守时文化：说清德国的 pünktlich 标准，并和自己的习惯做对比</li>
+<li>给一整天排序：用 bevor / nachdem 讲完「先做什么、再做什么、同时做什么」</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 5，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 5</span><span class="t">Zu wenig Zeit?<small>总喊没时间：Nico 的日程塞得满满当当，聊聊 Zeitdruck 到底从哪来</small></span><button class="playbtn" data-folge="5" onclick="playFolge(5,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 6</span><span class="t">No Time<small>英文标题集：连轴转的一天——什么都想干，结果什么都赶不及</small></span><button class="playbtn" data-folge="6" onclick="playFolge(6,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 7</span><span class="t">Punctuality<small>守时文化专题：德国人为什么把准时当礼貌，迟到几分钟算失礼</small></span><button class="playbtn" data-folge="7" onclick="playFolge(7,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 8</span><span class="t">Jetzt oder nie<small>现在不动手就没机会了：拖延症正面对决截止日期</small></span><button class="playbtn" data-folge="8" onclick="playFolge(8,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich habe im Moment überhaupt keine Zeit.</span><span class="zh">我现在根本没时间。</span></div>
+<div class="phrase"><span class="de">Die Zeit vergeht so schnell!</span><span class="zh">时间过得真快！</span></div>
+<div class="phrase"><span class="de">Ich stehe ständig unter Zeitdruck.</span><span class="zh">我一直处在时间压力之下。</span></div>
+<div class="phrase"><span class="de">Nimm dir Zeit dafür!</span><span class="zh">抽点时间做这件事吧！</span></div>
+<div class="phrase"><span class="de">Während ich koche, höre ich Musik.</span><span class="zh">我做饭的时候听音乐。</span></div>
+<div class="phrase"><span class="de">Bevor ich gehe, rufe ich dich an.</span><span class="zh">我走之前会给你打电话。</span></div>
+<div class="phrase"><span class="de">Nachdem ich gegessen hatte, bin ich spazieren gegangen.</span><span class="zh">我吃完饭之后去散步了。</span></div>
+<div class="phrase"><span class="de">Sei bitte pünktlich, der Zug wartet nicht.</span><span class="zh">请务必准时，火车可不等人。</span></div>
+<div class="phrase"><span class="de">Entschuldigung für die Verspätung!</span><span class="zh">抱歉，我迟到了！</span></div>
+<div class="phrase"><span class="de">Jetzt oder nie – ich muss mich heute entscheiden.</span><span class="zh">就是现在，不然没机会了——我必须今天做决定。</span></div>
+<div class="phrase"><span class="de">Unter der Woche habe ich kaum Freizeit.</span><span class="zh">工作日我几乎没有空闲时间。</span></div>
+<div class="phrase"><span class="de">Am Ende bleibt nie genug Zeit.</span><span class="zh">到最后，时间总是不够用。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Da bist du ja endlich! Der Film fängt in fünf Minuten an.</p>
+<p><span class="who">Nico:</span> Entschuldigung! Bevor ich losgefahren bin, musste ich noch eine E-Mail schreiben.</p>
+<p><span class="who">Emma:</span> Du hast immer zu wenig Zeit. Was machst du eigentlich den ganzen Tag?</p>
+<p><span class="who">Nico:</span> Während du noch schläfst, sitze ich schon im Büro. Und nach der Arbeit lerne ich Deutsch.</p>
+<p><span class="who">Emma:</span> Und wann erholst du dich? Du stehst ständig unter Druck.</p>
+<p><span class="who">Nico:</span> Nachdem ich die B1-Prüfung bestanden habe, nehme ich mir mehr Zeit für mich.</p>
+<p><span class="who">Emma:</span> Das sagst du jedes Mal! Jetzt oder nie, Nico: Am Wochenende machen wir gar nichts.</p>
+<p><span class="who">Nico:</span> Einverstanden. Aber pünktlich um zehn Uhr am Samstag – zum Frühstück bei dir?</p>
+<p><span class="who">Emma:</span> Abgemacht. Und diesmal kommst du pünktlich!</p>
+<div class="tipbox">练法：先找出对话里的三个时间从句（bevor / während / nachdem），注意从句动词都跑到了句尾、主句动词紧跟其后；再换成你自己的版本：讲一次你迟到的经历——出门前在做什么（bevor）、路上同时在做什么（während）、事后又补做了什么（nachdem），三句连成一段。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）während / bevor：同时和先后，从句动词去句尾</b></p>
+<p>während（当……的时候，两件事同时进行）、bevor（在……之前，先主句后从句）在 A2 学过 während 的意思，B1 要的是<b class="hl">词序全对</b>：连词从句里变位动词去句尾；从句放句首时，主句动词紧贴逗号、主语跟在后面（倒装）。</p><table><tr><th>连词</th><th>例句</th><th>时间关系</th></tr><tr><td>während</td><td><b>Während</b> ich koche, hört er Musik.</td><td>同时进行</td></tr><tr><td>während</td><td>Ich höre Musik, <b>während</b> ich koche.</td><td>同时进行（从句在后）</td></tr><tr><td>bevor</td><td><b>Bevor</b> ich gehe, rufe ich dich an.</td><td>主句动作在先</td></tr><tr><td>bevor</td><td>Ich rufe dich an, <b>bevor</b> ich gehe.</td><td>主句动作在先</td></tr></table><p>常见错：把 bevor 从句的动词放回第二位（✗ Bevor ich gehe weg …）。记住：只要有连词领着，动词就去句尾，没有例外。</p>
+</div>
+<div class="card">
+<p><b>2）nachdem：从句永远比主句「早一档」</b></p>
+<p>nachdem（在……之后）有个铁规矩：<b class="hl">从句的时态要比主句早一个层次</b>——主句讲现在或将来，从句用 Perfekt；主句讲过去（Perfekt 或 Präteritum），从句要用更早的 Plusquamperfekt（过去完成时）。</p><table><tr><th>主句时态</th><th>nachdem 从句</th><th>例句</th></tr><tr><td>现在时 / 将来</td><td>Perfekt</td><td>Nachdem ich gegessen <b>habe</b>, räume ich auf. <span class="zh">我吃完饭就收拾。</span></td></tr><tr><td>Perfekt（过去）</td><td>Plusquamperfekt</td><td>Nachdem ich gegessen <b>hatte</b>, <b>bin</b> ich spazieren <b>gegangen</b>. <span class="zh">我吃完饭后去散了步。</span></td></tr><tr><td>Präteritum（过去）</td><td>Plusquamperfekt</td><td>Nachdem wir angekommen <b>waren</b>, <b>ging</b> der Film los. <span class="zh">我们到了之后电影才开场。</span></td></tr></table><p>Plusquamperfekt 的造法就是把 Perfekt 的助动词换成过去式：haben → hatte、sein → war，再加过去分词：gegessen hatte、angekommen waren。先认得出、会套这两行，B1 够用。</p>
+</div>
+<div class="card">
+<p><b>3）三个连词辨析 + nachdem 与 nach 的分工</b></p>
+<table><tr><th></th><th>接从句（动词句尾）</th><th>接名词（三格）</th></tr><tr><td>在……之后</td><td><b>nachdem</b> ich gegessen hatte, …</td><td><b>nach</b> dem Essen …</td></tr><tr><td>在……之前</td><td><b>bevor</b> ich gehe, …</td><td><b>vor</b> dem Essen …</td></tr><tr><td>当……时（同时）</td><td><b>während</b> ich koche, …</td><td><b>während</b> des Essens …（属格，书面）</td></tr></table><p>判断法：后面跟的是完整句子（有主语和动词）就用连词版；只跟一个名词就用介词版，动词该在哪还在主句里。再提醒一次先后方向：bevor 从句的动作发生得<b class="hl">更晚</b>（Ich rufe an, bevor ich gehe. 先打电话，后走），这点和中文「在走之前打电话」顺序相反，最容易翻车。</p>
+</div>
+<div class="card">
+<p><b>4）Zeitdruck 句型库：把「忙」说出层次</b></p>
+<table><tr><th>句型</th><th>意思</th></tr><tr><td>Ich stehe unter <b class="hl">Zeitdruck</b>.</td><td>我时间压力很大</td></tr><tr><td>Ich habe keine Zeit <b class="hl">für</b> + 宾格.</td><td>我没时间做……</td></tr><tr><td>Ich nehme mir Zeit <b class="hl">für</b> + 宾格.</td><td>我（特意）抽时间做……</td></tr><tr><td>Die Zeit <b class="hl">vergeht</b> schnell / langsam.</td><td>时间过得快 / 慢</td></tr><tr><td>Verschwende deine Zeit nicht <b class="hl">mit</b> + 三格!</td><td>别把时间浪费在……上！</td></tr><tr><td>Es bleibt (mir) wenig / keine Zeit.</td><td>（我）没剩多少时间了</td></tr></table><p>守时文化补一句背景：在德国，约好十点就是十点，迟到五分钟要提前打电话说 Entschuldigung, ich verspäte mich.（抱歉，我要迟到一会儿）——这句话本身就是 Punctuality 那一集的过关句。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>讲你「最忙的一天」，用时间从句把一天串起来，录 40-60 秒，按下面 5 句往下说：</p>
+<ul>
+<li>Während ich ______, muss ich gleichzeitig ______.</li>
+<li>Bevor ich ______, ______ ich immer zuerst ______.</li>
+<li>Nachdem ich ______ habe / hatte, ______ ich ______.</li>
+<li>Unter der Woche habe ich kaum Zeit für ______.</li>
+<li>Am Wochenende nehme ich mir Zeit für ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：während、bevor、nachdem 各出现 1 次，从句动词都在句尾；nachdem 一句的时态比主句早一档（主句 Perfekt → 从句 Plusquamperfekt，或主句现在时 → 从句 Perfekt）；三项缺一项就回语法卡 2 重练后再录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-01.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-03.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=157;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:157,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["es bleibt wenig Zeit (wenig Zeit bleiben)", "时间所剩无几", "little time remains"], ["sich Zeit für etwas nehmen", "抽时间做某事", "to take time for something"], ["Zeit verschwenden", "浪费时间", "to waste time"], ["Zeit vergeht (Zeit vergehen)", "时间流逝", "time passes"], ["gleichzeitig", "同时", "at the same time; simultaneously"], ["während", "当……的时候", "while"], ["bevor", "在……之前", "before"], ["nachdem", "在……之后", "after"], ["der Zeitpunkt, die Zeitpunkte", "时刻", "point in time; moment"], ["dauernd", "持续不断地", "constantly; continuously"], ["dauerhaft", "长期的；持久的", "permanent; lasting"], ["mittlerweile", "与此同时；到如今", "meanwhile; by now"], ["an|dauern", "持续", "to last; to continue"], ["der Stressfaktor, die Stressfaktoren", "压力因素", "stress factor"], ["der Druck (nur Sg.)", "压力", "pressure"], ["auf zwei Hochzeiten tanzen", "同时做两件事", "to try to do two things at once"], ["sich auf etwas konzentrieren", "专注于某事", "to concentrate on something"], ["die Überstunde, die Überstunden", "加班（时间）", "overtime"], ["der Feierabend, die Feierabende", "下班", "end of workday"], ["die Erholung (nur Sg.)", "休养；放松", "recreation; rest"], ["zeitlich flexibel", "时间上灵活的", "flexible in terms of time"], ["der Stundenplan, die Stundenpläne", "课程表", "timetable; class schedule"], ["die vorlesungsfreie Zeit, die vorlesungsfreien Zeiten", "大学假期", "lecture-free period; university holidays"], ["das Zeitalter, die Zeitalter", "时代", "era; age"], ["jeweilig", "各自的", "respective"], ["die Schulzeit, die Schulzeiten", "上学时期", "school years, time at school"], ["der Schulalltag (nur Sg.)", "学校日常生活", "everyday school life"], ["unter der Woche", "在工作日", "during the week; on weekdays"], ["jährlich", "每年的", "yearly, annual"], ["die Phase, die Phasen", "阶段", "phase"], ["am Ende", "最后；最终", "at the end, in the end"], ["der Neuanfang, die Neuanfänge", "新的开始", "new beginning"], ["das Studienjahr, die Studienjahre", "学年", "academic year"], ["der Eintrittstermin, die Eintrittstermine", "入职日期", "start date (of employment)"], ["befristet", "有期限的", "fixed-term; temporary"], ["der Bewerbungsschluss (nur Sg.)", "申请截止日期", "application deadline"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Nachdem ich die E-Mail ___ , bin ich sofort losgefahren.“（主句是 Perfekt）空格填：", "opts": ["geschrieben habe", "geschrieben", "schreibe", "geschrieben hatte"], "a": 3}, {"q": "2. 词序完全正确的一句是：", "opts": ["Bevor gehe ich, rufe ich dich an.", "Bevor ich gehe, rufe ich dich an.", "Ich rufe dich an, bevor gehe ich.", "Bevor ich gehe, ich rufe dich an."], "a": 1}, {"q": "3. „Während ich koche, hört er Musik.“ 这句表达的时间关系是：", "opts": ["两个动作同时进行", "两个动作一先一后", "前因后果", "条件关系"], "a": 0}, {"q": "4. „Nachdem wir ___ , fing der Film an.“（主句是过去时）空格填：", "opts": ["gegessen", "gegessen sind", "gegessen hatten", "gegessen haben"], "a": 2}, {"q": "5. „___ dem Essen räume ich die Küche auf.“（后面是名词）空格填：", "opts": ["Während", "Nach", "Bevor", "Nachdem"], "a": 1}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-02-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-02-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

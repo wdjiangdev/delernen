@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第17课 Ruhrgebiet und Wandel 鲁尔区与变迁 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第17课 Ruhrgebiet und Wandel：合并 DW Folge 65-68。1）Relativsätze 复习：关系代词 = 先行词的性 + 从句里的格">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 17 课</div>
+<h1>第 17 课 · Ruhrgebiet und Wandel 鲁尔区与变迁</h1>
+<div class="de-title">DW B1 · Thema 17 · Folge 65-68 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html" class="cur">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>介绍一个地区：它在哪里、有多大、以前靠什么出名</li>
+<li>用 <b class="hl">früher … heute …</b> 对比一个地方的今昔</li>
+<li>用关系从句给城市和场所加信息：<b class="hl">die Stadt, in der …</b></li>
+<li>说清一个行业衰落的原因和后果（关停、失业、转型）</li>
+<li>评价「老工业变文化地标」这类变化，说出自己的看法</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 65，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 65</span><span class="t">Das Ruhrgebiet<small>认识鲁尔区：德国老工业的心脏，五百多万人生活的大都会群</small></span><button class="playbtn" data-folge="65" onclick="playFolge(65,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 66</span><span class="t">Industrie<small>煤炭与钢铁的黄金年代：工厂、矿工和一个地区的自信</small></span><button class="playbtn" data-folge="66" onclick="playFolge(66,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 67</span><span class="t">Strukturwandel<small>结构转型：煤矿钢厂关停之后，一个地区怎么重新活过来（本集与上一集之间隔着主题歌，播放时留意）</small></span><button class="playbtn" data-folge="67" onclick="playFolge(67,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 68</span><span class="t">Kultur<small>从厂房到文化地标：老工业区变身博物馆、剧场和节庆现场</small></span><button class="playbtn" data-folge="68" onclick="playFolge(68,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Das Ruhrgebiet liegt im Westen Deutschlands.</span><span class="zh">鲁尔区位于德国西部。</span></div>
+<div class="phrase"><span class="de">Früher war hier alles Kohle und Stahl.</span><span class="zh">以前这里一切都是煤炭和钢铁。</span></div>
+<div class="phrase"><span class="de">Mein Großvater hat im Bergbau gearbeitet.</span><span class="zh">我爷爷当年在煤矿干活。</span></div>
+<div class="phrase"><span class="de">Die Fabrik, in der er gearbeitet hat, ist heute ein Museum.</span><span class="zh">他干活的那家工厂，如今是一座博物馆。</span></div>
+<div class="phrase"><span class="de">Viele Zechen mussten schließen.</span><span class="zh">许多煤矿不得不关停。</span></div>
+<div class="phrase"><span class="de">Dadurch sind viele Arbeitsplätze verloren gegangen.</span><span class="zh">因此很多工作岗位消失了。</span></div>
+<div class="phrase"><span class="de">Heute gibt es hier kaum noch Industrie.</span><span class="zh">如今这里几乎没有工业了。</span></div>
+<div class="phrase"><span class="de">Die Stadt, in der ich lebe, hat sich stark verändert.</span><span class="zh">我生活的这座城市变化很大。</span></div>
+<div class="phrase"><span class="de">Aus der alten Fabrik ist ein Kulturzentrum geworden.</span><span class="zh">老工厂变成了一个文化中心。</span></div>
+<div class="phrase"><span class="de">Das Gebiet, das früher grau war, ist heute richtig grün.</span><span class="zh">这个曾经灰蒙蒙的地区，如今绿意盎然。</span></div>
+<div class="phrase"><span class="de">Trotzdem sind viele Menschen arbeitslos geworden.</span><span class="zh">尽管如此，很多人还是失业了。</span></div>
+<div class="phrase"><span class="de">Der Wandel hat der Region neue Chancen gegeben.</span><span class="zh">这场转型给了这个地区新的机会。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Lisa:</span> Willkommen im Ruhrgebiet, Nico! Hier leben über fünf Millionen Menschen.</p>
+<p><span class="who">Nico:</span> Fünf Millionen? Das ist ja eine riesige Region. Wovon hat sie früher gelebt?</p>
+<p><span class="who">Lisa:</span> Von Kohle und Stahl. Mein Opa hat im Bergbau gearbeitet, in einer Zeche in Essen.</p>
+<p><span class="who">Nico:</span> Und die Zeche, in der er gearbeitet hat – gibt es sie noch?</p>
+<p><span class="who">Lisa:</span> Arbeiten tut dort niemand mehr. Aber die Zeche ist heute ein Museum. Komm, ich zeige sie dir!</p>
+<p><span class="who">Nico:</span> Unglaublich – aus einer Fabrik ist ein Kulturzentrum geworden.</p>
+<p><span class="who">Lisa:</span> Das ist der Strukturwandel: Die Industrie ist weg, aber Kultur und Universitäten sind gekommen.</p>
+<p><span class="who">Nico:</span> Und die Menschen, die früher im Bergbau gearbeitet haben?</p>
+<p><span class="who">Lisa:</span> Viele mussten etwas Neues lernen. Leicht war das nicht, aber die Region hat es geschafft.</p>
+<div class="tipbox">跟读时盯住三个关系从句（die Fabrik, in der … / die Menschen, die früher …）：先整句读顺，再做替换练习——把 die Zeche 换成 eine Fabrik、ein Werk，把 Essen 换成你熟悉的城市，练到能自己造出一句「die Stadt, in der ich …」为止。另外圈出 dadurch 和 trotzdem：一个推结果，一个转折，B1 写句子全靠这类路标词撑逻辑。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）Relativsätze 复习：关系代词 = 先行词的性 + 从句里的格</b></p>
+<p>A2 学过关系从句的基本款，B1 把它用熟。关系代词长什么样，只看两件事：<b class="hl">先行词是阳/中/阴/复数</b>，以及它<b class="hl">在从句里当什么格</b>。从句里它是主语用主格、是直接宾语用宾格、跟在 mit/in 这类三格介词后面或当间接宾语用三格。</p><table><tr><th></th><th>阳性 der</th><th>中性 das</th><th>阴性 die</th><th>复数 die</th></tr><tr><td>主格</td><td>der</td><td>das</td><td>die</td><td>die</td></tr><tr><td>宾格</td><td>den</td><td>das</td><td>die</td><td>die</td></tr><tr><td>三格</td><td>dem</td><td>dem</td><td>der</td><td>denen</td></tr></table><p>例句：Der Mann, <b class="hl">der</b> hier arbeitet, … <span class="zh">主格</span>／Die Stadt, <b class="hl">die</b> ich meine, … <span class="zh">宾格</span>／Die Menschen, <b class="hl">denen</b> man geholfen hat, … <span class="zh">三格复数，B1 高频坑</span>。关系从句的动词照样站句尾。</p>
+</div>
+<div class="card">
+<p><b>2）介词 + 关系代词：die Stadt, in der …</b></p>
+<p>本课的主场句型。从句里需要介词短语时，<b class="hl">介词原样搬到关系代词前面</b>，关系代词按介词要求的格变：</p><table><tr><th>句型</th><th>例句</th></tr><tr><td>in + 三格（阴性）</td><td>die Stadt, <b class="hl">in der</b> ich lebe <span class="zh">我生活的城市</span></td></tr><tr><td>in + 三格（中性）</td><td>das Gebäude, <b class="hl">in dem</b> früher gearbeitet wurde <span class="zh">以前人们干活的那栋楼</span></td></tr><tr><td>mit + 三格</td><td>der Kollege, <b class="hl">mit dem</b> ich gesprochen habe <span class="zh">我跟他说过话的那位同事</span></td></tr><tr><td>für + 宾格</td><td>die Firma, <b class="hl">für die</b> er arbeitet <span class="zh">他工作的那家公司</span></td></tr></table><p>指物时口语里还常见 <b class="hl">wo(r) + 介词</b> 的说法，如 das Thema, <b class="hl">worüber</b> wir sprechen（我们谈论的话题），先能认出来即可，正式写作仍用介词 + 关系代词。</p>
+</div>
+<div class="card">
+<p><b>3）讲今昔：früher … heute … + aus … werden</b></p>
+<p>描述一个地方的变化，骨架就三件：</p><p>① 对比框架：<b class="hl">Früher</b> war / hatte / gab es …, <b class="hl">heute</b> ist / gibt es …。讲过去的常态，Präteritum 的 <b class="hl">war</b>（是）、<b class="hl">hatte</b>（有）、<b class="hl">gab es</b>（有……存在）是主力，比 Perfekt 更像「讲历史」的语气。</p><p>② 变成：<b class="hl">aus + 三格 + werden</b>，完成时用 sein：Aus der Zeche <b class="hl">ist</b> ein Museum <b class="hl">geworden</b>. <span class="zh">煤矿变成了博物馆。</span>注意 geworden 前面是 ist，不是 hat。</p><p>③ 变化本身：sich verändern（变化）、der Wandel（转型）、der Strukturwandel（结构转型）是本课的题眼词，配 stark / langsam / schnell 使用。</p>
+</div>
+<div class="card">
+<p><b>4）把逻辑说出来：dadurch / trotzdem / deshalb</b></p>
+<p>B1 和 A2 的分水岭，是能不能把句子之间的逻辑讲明。三个高频连接副词，全部占第一位、动词紧跟第二位：</p><table><tr><th>词</th><th>逻辑</th><th>例句</th></tr><tr><td>dadurch</td><td>因此（由此带来）</td><td>Die Zechen schlossen. <b class="hl">Dadurch</b> verloren viele ihre Arbeit.</td></tr><tr><td>deshalb</td><td>所以（因为前面）</td><td>Die Arbeit war weg. <b class="hl">Deshalb</b> mussten viele umlernen.</td></tr><tr><td>trotzdem</td><td>尽管如此（转折）</td><td>Es war schwer. <b class="hl">Trotzdem</b> ist die Region heute stark.</td></tr></table><p>和 weil 从句的区别：weil 把原因塞进从句、动词后置；这三个词是两个独立句子之间的路标。写一段地区介绍时，交替使用，文章立刻有了 B1 的样子。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>当一次导游：选一个你熟悉的地方（老家、住过的城市或某个老工业区），录 1 分钟介绍它的今昔变化，套用下面 5 句：</p>
+<ul>
+<li>Ich stelle euch heute ______ vor. Das liegt ______.</li>
+<li>Früher war hier ______, und viele Menschen haben ______ gearbeitet.</li>
+<li>Die/Der ______, in der/dem ______, gibt es heute nicht mehr.</li>
+<li>Heute ist aus ______ ein/eine ______ geworden.</li>
+<li>Trotzdem / Deshalb finde ich: ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：至少两个关系从句（其中一个必须带介词，如 in der / mit dem）、一组完整的 früher … heute … 对比、一句 aus … geworden；地名、行业和建筑全部换成你介绍的那个地方的真实信息，照抄鲁尔区的句子不算过关。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-16.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-18.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=217;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:217,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Kohle, die Kohlen", "煤", "coal"], ["der Bergbau (nur Sg.)", "采矿业", "mining"], ["der Stahl, die Stähle", "钢", "steel"], ["die Stahlindustrie (nur Sg.)", "钢铁工业", "steel industry"], ["die Industrie, die Industrien", "工业", "industry"], ["industriell", "工业的", "industrial"], ["die Wirtschaft (nur Sg.)", "经济版", "business section"], ["wirtschaftlich", "经济的", "economic"], ["die Veränderung, die Veränderungen", "变化", "change"], ["etwas um|wandeln", "改造；转换", "to convert something; to transform"], ["die Arbeitslosigkeit (nur Sg.)", "失业", "unemployment"], ["das Arbeitslosengeld (nur Sg.)", "失业金", "unemployment benefit"], ["der Arbeitsmarkt, die Arbeitsmärkte", "就业市场", "job market"], ["der Arbeiter, die Arbeiter / die Arbeiterin, die Arbeiterinnen", "工人", "worker"], ["der Gastarbeiter, die Gastarbeiter / die Gastarbeiterin, die Gastarbeiterinnen", "客籍工人", "guest worker"], ["der Bauarbeiter, die Bauarbeiter / die Bauarbeiterin, die Bauarbeiterinnen", "建筑工人", "construction worker"], ["der Handwerker, die Handwerker / die Handwerkerin, die Handwerkerinnen", "手艺人", "craftsman; tradesperson"], ["die Baustelle, die Baustellen", "建筑工地", "construction site"], ["der Bau (nur Sg.)", "建筑", "construction"], ["etwas ab|bauen", "开采", "to mine something"], ["die Landwirtschaft, die Landwirtschaften", "农业", "agriculture"], ["der Stadtteil, die Stadtteile", "城区", "district"], ["die Innenstadt, die Innenstädte", "市中心", "city center"], ["das Kulturzentrum, die Kulturzentren", "文化中心", "cultural center"], ["die Geschichte (nur Sg.)", "历史", "history"], ["ehemalig", "以前的", "former"], ["das Wohnungsbauprojekt, die Wohnungsbauprojekte", "住宅建设项目", "housing construction project"], ["die Arbeitsbedingung, die Arbeitsbedingungen (meist Pl.)", "工作条件", "working condition"], ["der Arbeitgeber, die Arbeitgeber / die Arbeitgeberin, die Arbeitgeberinnen", "雇主", "employer"], ["der Arbeitnehmer, die Arbeitnehmer / die Arbeitnehmerin, die Arbeitnehmerinnen", "雇员", "employee"], ["die Arbeitszeit, die Arbeitszeiten", "工作时间", "working hours"], ["der Arbeitsvertrag, die Arbeitsverträge", "劳动合同", "employment contract"], ["umweltfreundlich", "环保的", "environmentally friendly"], ["der Umweltschutz (nur Sg.)", "环境保护", "environmental protection"], ["umweltbewusst", "有环保意识的", "environmentally conscious"], ["die Festanstellung, die Festanstellungen", "正式聘用；长期雇佣", "permanent employment"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Die Stadt, ___ ich wohne, liegt im Ruhrgebiet.“ 空格填：", "opts": ["in der", "in dem", "in die", "in das"], "a": 0}, {"q": "2. „Der Bergmann, ___ ich gesprochen habe, ist 80 Jahre alt.“ 空格填：", "opts": ["mit der", "mit den", "mit das", "mit dem"], "a": 3}, {"q": "3. „Früher ___ es hier viele Zechen und Stahlwerke.“ 填讲历史的正确形式：", "opts": ["gibt", "gegeben", "gab", "geben"], "a": 2}, {"q": "4. „Aus der alten Fabrik ___ ein Museum geworden.“ 空格填：", "opts": ["ist", "hat", "wird", "war"], "a": 0}, {"q": "5. „Die Industrie ist verschwunden. ___ hat die Region neue Chancen bekommen.“（尽管如此）填：", "opts": ["Damit", "Weil", "Trotzdem", "Deshalb"], "a": 2}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-17-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-17-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

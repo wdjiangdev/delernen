@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B1 第15课 Lebenswege 人生道路 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 B1 第15课 Lebenswege：合并 DW Folge 57-60。1）叙事分工：Perfekt 讲给人听，Präteritum 写给人看">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · B1 · 第 15 课</div>
+<h1>第 15 课 · Lebenswege 人生道路</h1>
+<div class="de-title">DW B1 · Thema 15 · Folge 57-60 合并课</div>
+<div class="meta"><span>⏱ 约 40-50 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · B1 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="b1-01.html">1 · Arbeit und Zukunft 工作与未来</a>
+<a href="b1-02.html">2 · Zeit 时间</a>
+<a href="b1-03.html">3 · Geschichte und Heimat 历史与故乡</a>
+<a href="b1-04.html">4 · Probleme und Rat 问题与建议</a>
+<a href="b1-05.html">5 · Bewerbung 求职</a>
+<a href="b1-06.html">6 · Gesellschaft und Rollen 社会与角色</a>
+<a href="b1-07.html">7 · Partnerschaft 伴侣关系</a>
+<a href="b1-08.html">8 · Arbeit und Sicherheit 工作与保障</a>
+<a href="b1-09.html">9 · Schule 学校</a>
+<a href="b1-10.html">10 · Ausbildung und Studium 培训与大学</a>
+<a href="b1-11.html">11 · Wetter und Klima 天气与气候</a>
+<a href="b1-12.html">12 · Umwelt 环境</a>
+<a href="b1-13.html">13 · Medien 媒体</a>
+<a href="b1-14.html">14 · Benehmen 礼仪</a>
+<a href="b1-15.html" class="cur">15 · Lebenswege 人生道路</a>
+<a href="b1-16.html">16 · Politik 政治</a>
+<a href="b1-17.html">17 · Ruhrgebiet und Wandel 鲁尔区与变迁</a>
+<a href="b1-18.html">18 · Migration 迁移</a>
+<a href="b1-19.html">19 · Neue Heimat und Zukunft 新家园与未来</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>讲一段完整的人生经历：<b class="hl">zuerst – dann – danach – schließlich</b> 把出生、上学、工作、转折串成线</li>
+<li>分清叙事分工：口头聊天用 Perfekt，写下来叙事和 war / hatte / 情态动词用 <b class="hl">Präteritum</b></li>
+<li>说清父母的期望和自己的选择：<b class="hl">Meine Eltern erwarten, dass …</b></li>
+<li>讲一次「推倒重来」：为什么放弃旧路、新开始难在哪、结果如何</li>
+<li>采访一位长辈的人生故事：Kindheit、Ausbildung、Beruf 一路问到底</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 B1 Folge 57，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 57</span><span class="t">Endlich erwachsen<small>终于成年：搬出去住、自己的事自己做主</small></span><button class="playbtn" data-folge="57" onclick="playFolge(57,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 58</span><span class="t">Was Eltern erwarten<small>父母的期望：他们希望孩子走哪条路</small></span><button class="playbtn" data-folge="58" onclick="playFolge(58,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 59</span><span class="t">Lebenswege<small>人生道路：几位普通人讲述自己的半生经历</small></span><button class="playbtn" data-folge="59" onclick="playFolge(59,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 60</span><span class="t">Noch mal anfangen<small>推倒重来：四十岁换职业、一切重新开始</small></span><button class="playbtn" data-folge="60" onclick="playFolge(60,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich bin in einem kleinen Dorf aufgewachsen.</span><span class="zh">我在一个小村子里长大。</span></div>
+<div class="phrase"><span class="de">Meine Eltern erwarten, dass ich Medizin studiere.</span><span class="zh">我父母期望我学医。</span></div>
+<div class="phrase"><span class="de">Früher wollte ich Lehrer werden, aber dann habe ich mich anders entschieden.</span><span class="zh">以前我想当老师，但后来我改了主意。</span></div>
+<div class="phrase"><span class="de">Mit 18 bin ich von zu Hause ausgezogen.</span><span class="zh">我 18 岁就搬出家了。</span></div>
+<div class="phrase"><span class="de">Er hat mit 40 noch mal von vorne angefangen.</span><span class="zh">他 40 岁时又从头开始了一次。</span></div>
+<div class="phrase"><span class="de">Sie hat ihren Job gekündigt und sich selbstständig gemacht.</span><span class="zh">她辞了工作，自己创业了。</span></div>
+<div class="phrase"><span class="de">Damals war das Leben nicht einfach.</span><span class="zh">那时候生活不容易。</span></div>
+<div class="phrase"><span class="de">Ich hatte keine Wahl.</span><span class="zh">我别无选择。</span></div>
+<div class="phrase"><span class="de">Heute bin ich froh, dass ich es versucht habe.</span><span class="zh">今天我很庆幸自己当时试了。</span></div>
+<div class="phrase"><span class="de">Erzählen Sie mir von Ihrer Kindheit!</span><span class="zh">跟我讲讲您的童年吧！</span></div>
+<div class="phrase"><span class="de">Nach der Schule habe ich eine Ausbildung gemacht.</span><span class="zh">中学毕业后我做了职业培训。</span></div>
+<div class="phrase"><span class="de">Schließlich habe ich meinen Weg gefunden.</span><span class="zh">最终我找到了自己的路。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Herr Kaya, erzählen Sie mir von Ihrer Kindheit!</p>
+<p><span class="who">Herr Kaya:</span> Ich bin in der Türkei geboren und in einem kleinen Dorf aufgewachsen.</p>
+<p><span class="who">Emma:</span> Wann sind Sie nach Deutschland gekommen?</p>
+<p><span class="who">Herr Kaya:</span> Mit 20. Ich hatte kein Geld und konnte kein Deutsch, aber ich wollte arbeiten.</p>
+<p><span class="who">Emma:</span> Was haben Ihre Eltern damals erwartet?</p>
+<p><span class="who">Herr Kaya:</span> Sie erwarteten, dass ich bald Geld verdiene und eine Familie gründe.</p>
+<p><span class="who">Emma:</span> Und dann? Was haben Sie gearbeitet?</p>
+<p><span class="who">Herr Kaya:</span> Zuerst arbeitete ich in einer Fabrik. Später habe ich mich selbstständig gemacht.</p>
+<p><span class="who">Emma:</span> War es nicht schwer, noch mal von vorne anzufangen?</p>
+<p><span class="who">Herr Kaya:</span> Doch, sehr. Aber ich hatte keine Wahl – und heute bin ich froh darüber.</p>
+<div class="tipbox">练法：先把 Herr Kaya 的话单独读两遍，注意他混着用两种过去时——hatte / konnte / wollte / war 全是 Präteritum，而 bin gekommen / habe mich selbstständig gemacht 是 Perfekt，这正是德国人讲经历时的真实配比。读第三遍时换成你自己或家里一位长辈的经历。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）叙事分工：Perfekt 讲给人听，Präteritum 写给人看</b></p>
+<p>讲过去，德语有两套工具，分工看场合：</p><table><tr><th></th><th>Perfekt</th><th>Präteritum</th></tr><tr><td>主场</td><td>口语、聊天、采访</td><td>小说、自传、报道等书面叙事</td></tr><tr><td>例子</td><td>Ich <b class="hl">bin</b> 1990 nach Deutschland <b class="hl">gekommen</b>.</td><td>Er <b class="hl">kam</b> 1990 nach Deutschland.</td></tr><tr><td>永远优先用它的一批词</td><td>大多数动词</td><td><b class="hl">sein / haben / 情态动词</b>——不管口语书面都用 Präteritum</td></tr></table><p>同一段经历的两种讲法：口头版 „Ich hatte kein Geld und bin dann nach Deutschland gekommen.“；书面版 „Er hatte kein Geld und kam dann nach Deutschland.“——注意 hatte 两边都没变。</p>
+</div>
+<div class="card">
+<p><b>2）Präteritum 高频 12 词：叙事的发动机</b></p>
+<p>这 12 个词承包了人生叙事里大半的过去式，背熟它们，讲经历就不卡壳（ich 和 er/sie 同形）：</p><table><tr><th>原形</th><th>Präteritum</th><th>例句</th></tr><tr><td>sein</td><td><b class="hl">war</b></td><td>Damals war das Leben schwer.</td></tr><tr><td>haben</td><td><b class="hl">hatte</b></td><td>Ich hatte keine Wahl.</td></tr><tr><td>werden</td><td><b class="hl">wurde</b></td><td>Er wurde Lehrer.</td></tr><tr><td>gehen</td><td><b class="hl">ging</b></td><td>Sie ging mit 18 von zu Hause weg.</td></tr><tr><td>kommen</td><td><b class="hl">kam</b></td><td>Er kam mit 20 nach Deutschland.</td></tr><tr><td>sagen</td><td><b class="hl">sagte</b></td><td>Mein Vater sagte immer: „Lerne etwas!“</td></tr><tr><td>denken</td><td><b class="hl">dachte</b></td><td>Ich dachte, es wird leicht.</td></tr><tr><td>finden</td><td><b class="hl">fand</b></td><td>Schließlich fand sie ihren Weg.</td></tr><tr><td>müssen</td><td><b class="hl">musste</b></td><td>Er musste die Familie ernähren.</td></tr><tr><td>können</td><td><b class="hl">konnte</b></td><td>Sie konnte kein Deutsch.</td></tr><tr><td>wollen</td><td><b class="hl">wollte</b></td><td>Ich wollte Arzt werden.</td></tr><tr><td>wissen</td><td><b class="hl">wusste</b></td><td>Niemand wusste, was kommt.</td></tr></table>
+</div>
+<div class="card">
+<p><b>3）期望句型：erwarten, dass …</b></p>
+<p>「期望、希望、祝愿」后面接 dass 从句，动词退句尾：</p><table><tr><th>句型</th><th>例句</th></tr><tr><td>Eltern erwarten, dass …</td><td>Meine Eltern erwarten, dass ich Medizin <b class="hl">studiere</b>.</td></tr><tr><td>jemand erwartet von mir, dass …</td><td>Mein Chef erwartet von mir, dass ich pünktlich <b class="hl">bin</b>.</td></tr><tr><td>Ich hoffe, dass …</td><td>Ich hoffe, dass alles gut <b class="hl">geht</b>.</td></tr><tr><td>Ich wünsche mir, dass …</td><td>Ich wünsche mir, dass meine Kinder glücklich <b class="hl">sind</b>.</td></tr></table><p>期望和现实撞车时，用「决定」句型收尾：<b class="hl">Ich habe mich entschieden, … zu …</b>（我决定……）：Ich habe mich entschieden, meinen eigenen Weg zu gehen.——zu + 原形放句尾，前面用逗号隔开。</p>
+</div>
+<div class="card">
+<p><b>4）重新开始工具箱 + 时间连接词</b></p>
+<p>讲「重新开始」的一组固定说法，加上时间连接词，一段人生就能讲完整：</p><table><tr><th>工具</th><th>例句</th></tr><tr><td><b class="hl">von vorne an|fangen</b></td><td>Mit 40 fing er noch einmal von vorne an. <span class="zh">an 跑到句尾</span></td></tr><tr><td>einen <b class="hl">Neuanfang</b> machen</td><td>Sie kündigte und machte einen Neuanfang.</td></tr><tr><td>sich <b class="hl">selbstständig machen</b></td><td>Später machte er sich selbstständig.</td></tr><tr><td>连接词顺序</td><td><b class="hl">zuerst</b>（先）→ <b class="hl">dann / danach</b>（接着）→ <b class="hl">später</b>（后来）→ <b class="hl">schließlich</b>（最终）</td></tr></table><p>连接词放句首时，后面主谓倒装：Zuerst <b class="hl">arbeitete ich</b> in einer Fabrik, später <b class="hl">machte ich</b> mich selbstständig.</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../b1/">去 B1 全量词表（961 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>讲一段你自己（或一位长辈）的 Lebensweg，90 秒，照下面 5 句起头往下接：</p>
+<ul>
+<li>Ich bin in ______ geboren und in ______ aufgewachsen.</li>
+<li>Meine Eltern erwarteten, dass ich ______.</li>
+<li>Zuerst habe ich ______, dann ______.</li>
+<li>Früher wollte ich ______, aber dann habe ich mich entschieden, ______.</li>
+<li>Schließlich habe ich ______ und heute bin ich ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：录音里 Präteritum（war / hatte / wollte / musste 等）至少用对 3 个、dass 句 1 个、时间连接词 4 个（zuerst / dann / später / schließlich）；卡壳超过两次，就回第 2 张语法卡把 12 词变位表念熟再录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="b1-14.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="b1-16.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 153, "2": 154, "3": 155, "4": 156, "5": 157, "6": 158, "7": 159, "8": 160, "9": 161, "10": 162, "11": 163, "12": 164, "13": 165, "14": 166, "15": 167, "16": 168, "17": 169, "18": 170, "19": 171, "20": 172, "21": 173, "22": 174, "23": 175, "24": 176, "25": 177, "26": 178, "27": 179, "28": 180, "29": 181, "30": 182, "31": 183, "32": 184, "33": 185, "34": 186, "35": 187, "36": 188, "37": 189, "38": 190, "39": 191, "40": 192, "41": 193, "42": 194, "43": 195, "44": 196, "45": 197, "46": 198, "47": 199, "48": 200, "49": 201, "50": 202, "51": 203, "52": 204, "53": 205, "54": 206, "55": 207, "56": 208, "57": 209, "58": 210, "59": 211, "60": 212, "61": 213, "62": 214, "63": 215, "64": 216, "65": 217, "66": 218, "67": 220, "68": 221, "69": 222, "70": 223, "71": 224, "72": 225, "73": 226, "74": 227, "75": 228, "76": 229};
+var ytPlayer=null,ytReady=false,pendingFolge=209;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:209,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Kindheit (nur Sg.)", "童年", "childhood"], ["auf|wachsen", "长大", "to grow up"], ["die Erziehung (nur Sg.)", "教育；教养", "upbringing; education"], ["etwas erleben", "经历", "to experience something"], ["etwas (von jemandem) erwarten", "期待；要求", "to expect (something from someone)"], ["der Elternteil, die Elternteile", "父亲或母亲", "parent"], ["kinderlos", "无子女的", "childless"], ["das Nachkriegskind, die Nachkriegskinder", "战后出生的孩子", "post-war child"], ["der Urgroßvater, die Urgroßväter / die Urgroßmutter, die Urgroßmütter", "曾祖父；曾祖母", "great-grandfather / great-grandmother"], ["der Neuanfang, die Neuanfänge", "新的开始", "new beginning"], ["von vorne an|fangen", "从头开始", "to start over"], ["die Veränderung, die Veränderungen", "变化", "change"], ["die Vergangenheit (nur Sg.)", "过去", "past"], ["die Erfahrung, die Erfahrungen", "经验", "experience"], ["eine Entscheidung treffen", "做决定", "to make a decision"], ["die Fehlentscheidung, die Fehlentscheidungen", "错误的决定", "wrong decision"], ["die Berufswahl (nur Sg.)", "职业选择", "career choice"], ["das Risiko, die Risiken", "风险", "risk"], ["die Gelegenheit, die Gelegenheiten", "机会", "opportunity"], ["erfolgreich", "成功的", "successful"], ["erfolglos", "不成功的", "unsuccessful"], ["die Selbstständigkeit (nur Sg.)", "独立性；自主创业", "independence; self-employment"], ["sich selbstständig machen", "自主创业", "to become self-employed"], ["die Heimatstadt, die Heimatstädte", "故乡", "hometown"], ["heimatlos", "失去故乡的；无祖国的", "homeless (without a homeland)"], ["aus|wandern", "移民（迁出）", "to emigrate"], ["ein|wandern", "移入；移民", "to immigrate"], ["das Einwanderungsland, die Einwanderungsländer", "移民国家", "immigration country"], ["wachsen", "生长；增长", "to grow"], ["berufstätig", "有工作的", "employed; working"], ["die Arbeitslosigkeit (nur Sg.)", "失业", "unemployment"], ["das Arbeitslosengeld (nur Sg.)", "失业金", "unemployment benefit"], ["die Altersarmut (nur Sg.)", "老年贫困", "poverty in old age"], ["die Armut (nur Sg.)", "贫穷", "poverty"], ["das Zeitalter, die Zeitalter", "时代", "era; age"], ["der Lebenslauf, die Lebensläufe", "简历", "CV; résumé"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 书面叙事里选对的一句：„Damals ___ das Leben in dem Dorf sehr einfach.“", "opts": ["ist gewesen", "sind", "war", "hat war"], "a": 2}, {"q": "2. „Meine Eltern erwarten, dass ich bald eine Arbeit ___.“（dass 从句，动词在句尾）", "opts": ["finde ich", "ich finde", "finde", "finden ich"], "a": 2}, {"q": "3. „Mit 20 ___ er in einer Fabrik arbeiten, aber er wollte mehr.“（讲过去经历）", "opts": ["muss", "musste", "gemusst", "müsste gestern"], "a": 1}, {"q": "4. 可分动词：„Mit 40 fing er noch einmal von vorne ___.“", "opts": ["zu", "am", "anfangen", "an"], "a": 3}, {"q": "5. 哪一句是规范的书面叙事（自传体）？", "opts": ["Er ist in einem Dorf aufgewachsen und ist später in die Stadt gegangen.", "Er wuchs auf in einem Dorf und später ging in die Stadt er.", "Er wuchs in einem Dorf auf und ging später in die Stadt.", "Er aufgewachsen in einem Dorf ist und später ging in die Stadt."], "a": 2}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-b1-15-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-b1-15-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>
