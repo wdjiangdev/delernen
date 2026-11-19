@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A2 第17课 Film 电影 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A2 第17课 Film：合并 DW Folge 65-68。1）形容词词尾入门（一）：不定冠词后——ein toller Film">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A2 · 第 17 课</div>
+<h1>第 17 课 · Film 电影</h1>
+<div class="de-title">DW A2 · Thema 17 · Folge 65-68 合并课</div>
+<div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · A2 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="a2-01.html">1 · Ankommen und Pläne 抵达与计划</a>
+<a href="a2-02.html">2 · Geld und Bank 金钱与银行</a>
+<a href="a2-03.html">3 · Familie und Generationen 家庭与代际</a>
+<a href="a2-04.html">4 · Zusammenleben 合住与邻里</a>
+<a href="a2-05.html">5 · Reisen 旅行</a>
+<a href="a2-06.html">6 · Freizeit 休闲时光</a>
+<a href="a2-07.html">7 · Hobbys und Vereine 爱好与社团</a>
+<a href="a2-08.html">8 · Internet und Kommunikation 网络与沟通</a>
+<a href="a2-09.html">9 · Essen gehen 下馆子</a>
+<a href="a2-10.html">10 · Freundschaft 友谊</a>
+<a href="a2-11.html">11 · Wohnen und Umzug 住房与搬家</a>
+<a href="a2-12.html">12 · Früher und heute 今昔</a>
+<a href="a2-13.html">13 · Beruf und Bewerbung 职业与求职</a>
+<a href="a2-14.html">14 · Kultur in der Stadt 城市文化</a>
+<a href="a2-15.html">15 · Feste feiern 节日庆祝</a>
+<a href="a2-16.html">16 · Geschenke 礼物</a>
+<a href="a2-17.html" class="cur">17 · Film 电影</a>
+<a href="a2-18.html">18 · Meinungen 表达观点</a>
+<a href="a2-19.html">19 · Erfindungen 发明与实用</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>问剧情、讲剧情：<b class="hl">Worum geht es in dem Film?</b>，并能用两三句答出来</li>
+<li>像样地评价一部电影：<b class="hl">Der Film war toll / spannend / ein bisschen langweilig.</b></li>
+<li>说清演员和角色：<b class="hl">Die Hauptrolle spielt ein berühmter Schauspieler.</b></li>
+<li>形容词词尾入门关：ein toller Film、der neue Film 这类短语张口就来</li>
+<li>发出地道的感叹：<b class="hl">Wie toll! / Was für ein Film!</b></li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 A2 Folge 65，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 65</span><span class="t">Ein Praktikum beim Film<small>Nico 在电影剧组实习：跟组帮忙、看拍摄，第一次走进片场</small></span><button class="playbtn" data-folge="65" onclick="playFolge(65,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 66</span><span class="t">Der Film war toll!<small>电影看完之后大家热烈讨论：剧情、演员，到底值不值得推荐</small></span><button class="playbtn" data-folge="66" onclick="playFolge(66,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 67</span><span class="t">In the Film Studio<small>参观电影制片厂：摄影棚、布景和幕后工种全揭秘（本集为英文标题）</small></span><button class="playbtn" data-folge="67" onclick="playFolge(67,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 68</span><span class="t">Ich bin Schauspieler<small>演员这一行：试镜、背台词、拿主角的梦想与现实</small></span><button class="playbtn" data-folge="68" onclick="playFolge(68,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Worum geht es in dem Film?</span><span class="zh">这部电影讲的是什么？</span></div>
+<div class="phrase"><span class="de">Es geht um einen jungen Schauspieler.</span><span class="zh">讲的是一个年轻演员的故事。</span></div>
+<div class="phrase"><span class="de">Die Hauptrolle spielt ein berühmter Schauspieler.</span><span class="zh">主角由一位著名演员饰演。</span></div>
+<div class="phrase"><span class="de">Der Film war einfach toll!</span><span class="zh">这部电影太棒了！</span></div>
+<div class="phrase"><span class="de">Die Geschichte ist spannend, aber ein bisschen lang.</span><span class="zh">剧情很精彩，就是有点长。</span></div>
+<div class="phrase"><span class="de">Die Schauspielerin spielt ihre Rolle sehr gut.</span><span class="zh">这位女演员把角色演得非常好。</span></div>
+<div class="phrase"><span class="de">Im Filmstudio habe ich viel gelernt.</span><span class="zh">在制片厂我学到了很多。</span></div>
+<div class="phrase"><span class="de">Ich mache ein Praktikum beim Film.</span><span class="zh">我在电影剧组实习。</span></div>
+<div class="phrase"><span class="de">Der Regisseur erklärt jede Szene genau.</span><span class="zh">导演把每一场戏都讲得很细。</span></div>
+<div class="phrase"><span class="de">Hast du den neuen Actionfilm schon gesehen?</span><span class="zh">你看过那部新动作片了吗？</span></div>
+<div class="phrase"><span class="de">Wie fandest du den Film?</span><span class="zh">你觉得这部电影怎么样？</span></div>
+<div class="phrase"><span class="de">Das Ende war total überraschend.</span><span class="zh">结局完全出人意料。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Lisa:</span> Nico, wie war dein erster Tag im Filmstudio?</p>
+<p><span class="who">Nico:</span> Total spannend! Ich habe bei einer Szene geholfen.</p>
+<p><span class="who">Emma:</span> Und hast du einen Star gesehen?</p>
+<p><span class="who">Nico:</span> Ja, die Hauptdarstellerin war da. Sie ist wirklich berühmt.</p>
+<p><span class="who">Lisa:</span> Worum geht es in dem Film?</p>
+<p><span class="who">Nico:</span> Es geht um einen Schauspieler. Er träumt von der Hauptrolle.</p>
+<p><span class="who">Emma:</span> Und der Regisseur? Ist er streng?</p>
+<p><span class="who">Nico:</span> Ein bisschen, aber er erklärt alles sehr gut.</p>
+<p><span class="who">Lisa:</span> Ich will den Film unbedingt sehen!</p>
+<div class="tipbox">对话按片场一日游的顺序走：先问经历、再问剧情、最后表态想看。跟读时把重音压在评价词上（toll、spannend、wirklich）——评价电影时，语气比内容更传情。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）形容词词尾入门（一）：不定冠词后——ein toller Film</b></p>
+<p>形容词夹在冠词和名词中间时要加词尾。先攻主格最常见的四个：阳性 ein 后 <b class="hl">-er</b>，中性 ein 后 <b class="hl">-es</b>，阴性 eine 后 <b class="hl">-e</b>，复数 keine 后 <b class="hl">-en</b>：</p><table><tr><th>名词</th><th>短语</th><th>中文</th></tr><tr><td>der Film（阳）</td><td>ein toll<b>er</b> Film</td><td>一部很棒的电影</td></tr><tr><td>das Studio（中）</td><td>ein groß<b>es</b> Studio</td><td>一间大制片厂</td></tr><tr><td>die Komödie（阴）</td><td>eine lustig<b>e</b> Komödie</td><td>一部好笑的喜剧</td></tr><tr><td>die Filme（复）</td><td>keine langweilig<b>en</b> Filme</td><td>没有无聊的电影</td></tr></table><p>口诀：阳性的 -er 是把 der 的 r 搬到了词尾，中性的 -es 同理搬 das 的 s。注意：形容词站在句尾作表语时<b>不加</b>词尾——Der Film ist toll.（A1 的老规矩，别和这里混。）</p>
+</div>
+<div class="card">
+<p><b>2）形容词词尾入门（二）：定冠词后——der neue Film</b></p>
+<p>定冠词已经把名词的性数标得清清楚楚，形容词就偷懒：主格里阳、中、阴一律 <b class="hl">-e</b>，复数一律 <b class="hl">-en</b>：</p><table><tr><th>不定冠词版</th><th>定冠词版</th></tr><tr><td>ein toller Film</td><td>der toll<b>e</b> Film</td></tr><tr><td>ein neues Studio</td><td>das neu<b>e</b> Studio</td></tr><tr><td>eine spannende Serie</td><td>die spannend<b>e</b> Serie</td></tr><tr><td>keine alten Filme</td><td>die alt<b>en</b> Filme</td></tr></table><p>对照着记：ein 后词尾「扛活」（-er / -es），der 后词尾「躺平」（-e）。宾格、三格的词尾变化留到 B1 系统学，A2 阶段先把主格这张表焊死。</p>
+</div>
+<div class="card">
+<p><b>3）评价电影：Wie fandest du …? / Der Film hat mir gefallen</b></p>
+<p>问评价的万能句：<b class="hl">Wie fandest du den Film?</b>（fand 是 finden 的过去式，整句记，别现推）。回答用 gefallen，结构是「电影作主语、人用三格」：<b class="hl">Der Film hat mir sehr gut gefallen.</b> / Die Geschichte fand ich ein bisschen langweilig.</p><p>评价词分三档存好：正面 <span class="zh">toll、spannend、lustig、interessant、super</span>；中性 <span class="zh">okay、ganz gut、ein bisschen lang</span>；负面 <span class="zh">langweilig、schlecht、zu lang</span>。再补一句理由就完整了：…, weil die Schauspieler super waren.</p>
+</div>
+<div class="card">
+<p><b>4）感叹句：Wie toll! / Was für ein Film!</b></p>
+<p>德国人夸电影靠两种感叹：第一种 <b class="hl">Wie + 形容词</b>：Wie toll! / Wie spannend! / Wie lustig!——Wie 站最前，后面什么都不用加。第二种 <b class="hl">Was für ein + 形容词 + 名词</b>：Was für ein toller Film! / Was für eine Geschichte!</p><p>注意 für 在这里是固定搭配的一部分，后面接主格（不是介词「为了」的那套格）。再送两句口头禅级感叹：Einfach super! / Das war einfach super!——Folge 69 的标题就是它，下一课还要深挖。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a2/">去 A2 全量词表（1731 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>向朋友推荐一部你最近看过的电影，说满 5 句，缺一句不算过关：</p>
+<ul>
+<li>Der Film heißt ______.</li>
+<li>Es geht um ______.</li>
+<li>Die Hauptrolle spielt ______.</li>
+<li>Der Film war ______, weil ______.</li>
+<li>Du musst ihn dir unbedingt ansehen!</li>
+</ul>
+<p style="margin-top:10px">过关标准：5 句全部说出；形容词词尾至少用对一次 ein toller Film 这一类短语；最后必须给出明确的推荐或不推荐。卡壳可以换一部更熟的电影重录，但照稿念超过两遍不算数。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a2-16.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a2-18.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 77, "2": 78, "3": 79, "4": 80, "5": 81, "6": 82, "7": 83, "8": 84, "9": 85, "10": 86, "11": 87, "12": 88, "13": 89, "14": 90, "15": 91, "16": 92, "17": 93, "18": 94, "19": 95, "20": 96, "21": 97, "22": 98, "23": 99, "24": 100, "25": 101, "26": 102, "27": 103, "28": 104, "29": 105, "30": 106, "31": 107, "32": 108, "33": 109, "34": 110, "35": 111, "36": 112, "37": 113, "38": 114, "39": 115, "40": 116, "41": 117, "42": 118, "43": 119, "44": 120, "45": 121, "46": 122, "47": 123, "48": 124, "49": 125, "50": 126, "51": 127, "52": 128, "53": 129, "54": 130, "55": 131, "56": 132, "57": 133, "58": 134, "59": 135, "60": 136, "61": 137, "62": 138, "63": 139, "64": 140, "65": 141, "66": 142, "67": 143, "68": 144, "69": 145, "70": 146, "71": 147, "72": 148, "73": 149, "74": 150, "75": 151, "76": 152};
+var ytPlayer=null,ytReady=false,pendingFolge=141;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:141,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["der Schauspieler, die Schauspieler", "演员", "actor"], ["die Schauspielerin, die Schauspielerinnen", "女演员", "female actor"], ["die Hauptrolle, die Hauptrollen", "主角", "leading role"], ["die Nebenrolle, die Nebenrollen", "配角", "supporting role"], ["die Rolle, die Rollen", "角色", "role"], ["der Regisseur, die Regisseure", "导演", "director (male)"], ["die Regisseurin, die Regisseurinnen", "女导演", "director (female)"], ["die Kamera, die Kameras", "照相机", "camera"], ["der Kameramann, die Kameraleute", "摄影摄像师", "cameraman"], ["die Kamerafrau, die Kamerafrauen", "女摄影摄像师", "camera operator (female)"], ["das Filmstudio, die Filmstudios", "电影摄影棚", "film studio"], ["die Filmproduktion, die Filmproduktionen", "电影制作", "film production"], ["die Filmbranche, die Filmbranchen", "电影业", "film industry"], ["das Drehbuch, die Drehbücher", "剧本；脚本", "screenplay; script"], ["die Szene, die Szenen", "一场；场面；场景", "scene"], ["die Handlung, die Handlungen", "剧情", "plot"], ["die Geschichte, die Geschichten", "事；故事", "story; history"], ["der Krimi, die Krimis", "侦探小说", "crime novel"], ["die Komödie, die Komödien", "喜剧", "comedy"], ["der Actionfilm, die Actionfilme", "动作片", "action film"], ["der Science-Fiction-Film, die Science-Fiction-Filme", "科幻片", "science fiction film"], ["das Filmgenre, die Filmgenres", "电影类型", "film genre"], ["die Buchverfilmung, die Buchverfilmungen", "小说原著改编的电影", "film adaptation (of a book)"], ["das Publikum (nur Sg.)", "观众", "audience"], ["der Zuschauer, die Zuschauer", "观众", "viewer; spectator"], ["der Star, die Stars", "明星", "star"], ["der Kritiker, die Kritiker", "批评家", "critic (male)"], ["die Kritik, die Kritiken", "批评；评论", "criticism; review"], ["die Filmkulisse, die Filmkulissen", "电影布景", "film set"], ["die Filmklappe, die Filmklappen", "场记板", "clapperboard"], ["das Praktikum, die Praktika", "实习", "internship"], ["(etwas) drehen", "摄制", "to shoot (a film)"], ["(etwas) filmen", "拍摄", "to film"], ["sich etwas an|sehen", "看；细看；检查", "to look at sth; to watch sth"], ["berühmt", "知名的；有名气的", "famous"], ["Worum geht es in dem Film?", "这部电影是关于什么？", "What is the film about?"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Das ist ein ___ Film!“（toll，阳性主格）", "opts": ["toll", "tollen", "tolles", "toller"], "a": 3}, {"q": "2. „Hast du die ___ Komödie schon gesehen?“（neu，定冠词后）", "opts": ["neuer", "neue", "neuen", "neues"], "a": 1}, {"q": "3. 哪一句评价说法正确？", "opts": ["Der Film mir hat gut gefallen.", "Der Film hat mir gut gefallt.", "Der Film hat mir gut gefallen.", "Der Film hat mich gut gefallen."], "a": 2}, {"q": "4. „Worum geht es in dem Film?“ 是在问什么？", "opts": ["电影在哪里拍", "这部电影讲什么", "导演是谁", "电影票多少钱"], "a": 1}, {"q": "5. 哪一句是正确的感叹句？", "opts": ["Was für ein toller Film!", "Wie ein toller Film!", "Wie toller Film!", "Was für einen tollen Film!"], "a": 0}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a2-17-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a2-17-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

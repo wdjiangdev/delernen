@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A2 第8课 Internet und Kommunikation 网络与沟通 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A2 第8课 Internet und Kommunikation：合并 DW Folge 29-32。1）dass 从句：转述想法，动词同样沉底">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A2 · 第 8 课</div>
+<h1>第 8 课 · Internet und Kommunikation 网络与沟通</h1>
+<div class="de-title">DW A2 · Thema 8 · Folge 29-32 合并课</div>
+<div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · A2 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="a2-01.html">1 · Ankommen und Pläne 抵达与计划</a>
+<a href="a2-02.html">2 · Geld und Bank 金钱与银行</a>
+<a href="a2-03.html">3 · Familie und Generationen 家庭与代际</a>
+<a href="a2-04.html">4 · Zusammenleben 合住与邻里</a>
+<a href="a2-05.html">5 · Reisen 旅行</a>
+<a href="a2-06.html">6 · Freizeit 休闲时光</a>
+<a href="a2-07.html">7 · Hobbys und Vereine 爱好与社团</a>
+<a href="a2-08.html" class="cur">8 · Internet und Kommunikation 网络与沟通</a>
+<a href="a2-09.html">9 · Essen gehen 下馆子</a>
+<a href="a2-10.html">10 · Freundschaft 友谊</a>
+<a href="a2-11.html">11 · Wohnen und Umzug 住房与搬家</a>
+<a href="a2-12.html">12 · Früher und heute 今昔</a>
+<a href="a2-13.html">13 · Beruf und Bewerbung 职业与求职</a>
+<a href="a2-14.html">14 · Kultur in der Stadt 城市文化</a>
+<a href="a2-15.html">15 · Feste feiern 节日庆祝</a>
+<a href="a2-16.html">16 · Geschenke 礼物</a>
+<a href="a2-17.html">17 · Film 电影</a>
+<a href="a2-18.html">18 · Meinungen 表达观点</a>
+<a href="a2-19.html">19 · Erfindungen 发明与实用</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>描述自己的上网习惯：查什么、下载什么、在哪些平台活动</li>
+<li>用 <b class="hl">dass</b> 从句转述想法和信息：Ich glaube, dass …</li>
+<li>写一封完整的正式邮件：Betreff、<b class="hl">Sehr geehrte …</b>、Mit freundlichen Grüßen 一样不少</li>
+<li>打电话投诉：说清什么东西哪儿坏了，并提出修理或换货的要求</li>
+<li>分清正式与非正式落款：Mit freundlichen Grüßen ↔ Liebe Grüße</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 A2 Folge 29，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 29</span><span class="t">Immer und überall<small>随时随地上网：手机和消息怎么改变日常沟通</small></span><button class="playbtn" data-folge="29" onclick="playFolge(29,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 30</span><span class="t">Das Internet<small>互联网能做什么：查信息、看视频、下载文件</small></span><button class="playbtn" data-folge="30" onclick="playFolge(30,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 31</span><span class="t">Mit freundlichen Grüßen<small>写一封正式邮件：称呼、正文和落款的规矩</small></span><button class="playbtn" data-folge="31" onclick="playFolge(31,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 32</span><span class="t">Reklamation<small>东西坏了怎么办：投诉并要求修理或更换</small></span><button class="playbtn" data-folge="32" onclick="playFolge(32,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich bin jeden Tag online.</span><span class="zh">我每天都上网。</span></div>
+<div class="phrase"><span class="de">Ich lade die Datei herunter.</span><span class="zh">我下载这个文件。</span></div>
+<div class="phrase"><span class="de">Kannst du mir die Fotos schicken?</span><span class="zh">你能把照片发给我吗？</span></div>
+<div class="phrase"><span class="de">Die Internetverbindung ist sehr langsam.</span><span class="zh">网速很慢。</span></div>
+<div class="phrase"><span class="de">Ich glaube, dass das Internet das Leben einfacher macht.</span><span class="zh">我认为互联网让生活更方便。</span></div>
+<div class="phrase"><span class="de">Er sagt, dass er keine Zeit hat.</span><span class="zh">他说他没时间。</span></div>
+<div class="phrase"><span class="de">Betreff: Reklamation</span><span class="zh">主题：投诉</span></div>
+<div class="phrase"><span class="de">Sehr geehrte Damen und Herren,</span><span class="zh">尊敬的女士们、先生们：</span></div>
+<div class="phrase"><span class="de">Ich schreibe Ihnen, weil mein Handy kaputt ist.</span><span class="zh">我写信给您，因为我的手机坏了。</span></div>
+<div class="phrase"><span class="de">Ich möchte mich beschweren.</span><span class="zh">我想投诉。</span></div>
+<div class="phrase"><span class="de">Das Gerät ist kaputt.</span><span class="zh">这台设备坏了。</span></div>
+<div class="phrase"><span class="de">Mit freundlichen Grüßen</span><span class="zh">此致敬礼（正式邮件落款）</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Kundenservice:</span> Guten Tag, Kundenservice Müller. Wie kann ich Ihnen helfen?</p>
+<p><span class="who">Nico:</span> Guten Tag, hier ist Nico García. Ich möchte mich beschweren. Mein neues Handy ist kaputt.</p>
+<p><span class="who">Kundenservice:</span> Das tut mir leid. Was funktioniert denn nicht?</p>
+<p><span class="who">Nico:</span> Der Akku lädt nicht mehr, und der Bildschirm zeigt eine Fehlermeldung.</p>
+<p><span class="who">Kundenservice:</span> Haben Sie noch Garantie?</p>
+<p><span class="who">Nico:</span> Ja, ich habe das Handy erst vor zwei Wochen gekauft. Ich glaube, dass das ein Fehler vom Gerät ist.</p>
+<p><span class="who">Kundenservice:</span> Kein Problem. Schicken Sie uns das Handy bitte mit der Rechnung. Wir reparieren es kostenlos.</p>
+<p><span class="who">Nico:</span> Vielen Dank! Ich schicke es morgen ab.</p>
+<div class="tipbox">这段是电话投诉的完整流程：自报姓名 → 说清问题 → 确认解决办法。Nico 的三句关键句——Ich möchte mich beschweren. / Mein Handy ist kaputt. / Ich glaube, dass …——把 Handy 换成 Kopfhörer、Ladegerät、Kamera 各说一遍，投诉场景就通吃了。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）dass 从句：转述想法，动词同样沉底</b></p>
+<p>dass 从句装「想法和转述」：Ich glaube / denke / weiß, <b class="hl">dass …</b>，规则和 weil 一样——<b class="hl">变位动词沉底</b>、前面加逗号。</p><table><tr><th>主句</th><th>dass 从句</th></tr><tr><td>Ich glaube,</td><td>dass das Internet das Leben einfacher <b>macht</b>.</td></tr><tr><td>Er sagt,</td><td>dass er morgen <b>kommt</b>.</td></tr><tr><td>Ich weiß,</td><td>dass der Kurs am Montag <b>anfängt</b>. <span class="zh">可分动词在从句里合体，站句尾</span></td></tr></table><p>分工记：<b>weil</b> 给理由（为什么），<b>dass</b> 给内容（说了/想了什么）。注意 dass 是连词（两个 s），别和定冠词 das 混。</p>
+</div>
+<div class="card">
+<p><b>2）正式邮件：一页纸的格式全在这</b></p>
+<p>一封正式邮件从上到下长这样，每一行都有讲究：</p><table><tr><th>部分</th><th>写法</th></tr><tr><td>主题行</td><td><b>Betreff:</b> Reklamation – kaputtes Handy</td></tr><tr><td>称呼（知道姓名）</td><td>Sehr geehrte Frau Müller, / Sehr geehrter Herr Müller,</td></tr><tr><td>称呼（不知道姓名）</td><td>Sehr geehrte Damen und Herren,</td></tr><tr><td>正文第一句</td><td>称呼后有逗号，正文<b>第一个词小写</b>开头（名词除外）：<p>Sehr geehrte Frau Müller,</p><p>ich schreibe Ihnen, weil …</p></td></tr><tr><td>落款</td><td><b>Mit freundlichen Grüßen</b><p>（下一行写全名，不加标点）</p></td></tr></table><p>给朋友的邮件完全另一套：开头 Liebe Lisa, / Lieber Nico,，落款 <b class="hl">Liebe Grüße</b>。正式和非正式的两套模板别混用。</p>
+</div>
+<div class="card">
+<p><b>3）投诉四步：beschweren 的标准动作</b></p>
+<p>投诉时把这四步说全，客服就没法推脱：</p><table><tr><th>步</th><th>句子</th></tr><tr><td>1 亮明来意</td><td>Ich möchte mich <b>beschweren</b>. / Ich möchte etwas <b>reklamieren</b>.</td></tr><tr><td>2 说清问题</td><td>Das Gerät ist <b>kaputt / defekt</b>. Der Akku <b>lädt nicht mehr</b>. … <b>funktioniert nicht</b>.</td></tr><tr><td>3 亮证据</td><td>Ich habe es vor zwei Wochen gekauft. Ich habe noch <b>Garantie</b>.</td></tr><tr><td>4 提要求</td><td>Ich bitte um <b>Reparatur</b>. / Ich möchte ein <b>neues Gerät</b>.</td></tr></table><p>电话投诉先自报姓名：<b class="hl">Hier ist …</b>（我是……），比 Hallo 更正式。对方问 Was ist denn das Problem? 就接第 2 步。</p>
+</div>
+<div class="card">
+<p><b>4）网络动作动词：主句拆、从句合</b></p>
+<p>上网这件事，动作几乎全是<b class="hl">可分动词</b>，在主句里前缀去句尾，到了 dass / weil 从句里又合回一体：</p><table><tr><th>动词</th><th>主句</th><th>从句里</th></tr><tr><td>herunterladen 下载</td><td>Ich <b>lade</b> die Datei <b>herunter</b>.</td><td>…, dass ich die Datei <b>herunterlade</b>.</td></tr><tr><td>ausdrucken 打印</td><td>Er <b>druckt</b> den Brief <b>aus</b>.</td><td>…, weil er den Brief <b>ausdruckt</b>.</td></tr><tr><td>abschicken 寄出</td><td>Sie <b>schickt</b> die Mail heute <b>ab</b>.</td><td>…, dass sie die Mail heute <b>abschickt</b>.</td></tr></table><p>规律一句话：<b>主句拆开、从句合体</b>。写邮件投诉时两种句子都会用到，这里先练顺嘴。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a2/">去 A2 全量词表（1731 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>录一段约 40 秒语音：假装给客服打电话，投诉你刚买的一件东西坏了，从问候到提出要求一次说完整。</p>
+<ul>
+<li>Guten Tag, hier ist ______.</li>
+<li>Ich möchte mich beschweren.</li>
+<li>Mein/Meine ______ ist kaputt: ______ funktioniert nicht.</li>
+<li>Ich habe noch Garantie und bitte um ______.</li>
+<li>Vielen Dank für Ihre Hilfe!</li>
+</ul>
+<p style="margin-top:10px">过关标准：投诉三步一句不缺——自报姓名、说清哪儿坏了、提出明确要求，且 kaputt / defekt 用对、bitte um 后面的要求说完整。说完再把同一内容写成邮件：Betreff、Sehr geehrte …、Mit freundlichen Grüßen 三件套齐了，这课才算全过。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a2-07.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a2-09.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 77, "2": 78, "3": 79, "4": 80, "5": 81, "6": 82, "7": 83, "8": 84, "9": 85, "10": 86, "11": 87, "12": 88, "13": 89, "14": 90, "15": 91, "16": 92, "17": 93, "18": 94, "19": 95, "20": 96, "21": 97, "22": 98, "23": 99, "24": 100, "25": 101, "26": 102, "27": 103, "28": 104, "29": 105, "30": 106, "31": 107, "32": 108, "33": 109, "34": 110, "35": 111, "36": 112, "37": 113, "38": 114, "39": 115, "40": 116, "41": 117, "42": 118, "43": 119, "44": 120, "45": 121, "46": 122, "47": 123, "48": 124, "49": 125, "50": 126, "51": 127, "52": 128, "53": 129, "54": 130, "55": 131, "56": 132, "57": 133, "58": 134, "59": 135, "60": 136, "61": 137, "62": 138, "63": 139, "64": 140, "65": 141, "66": 142, "67": 143, "68": 144, "69": 145, "70": 146, "71": 147, "72": 148, "73": 149, "74": 150, "75": 151, "76": 152};
+var ytPlayer=null,ytReady=false,pendingFolge=105;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:105,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Internetseite, die Internetseiten", "网站", "website"], ["die Internetverbindung, die Internetverbindungen", "网络连接", "internet connection"], ["die Webseite, die Webseiten", "网站", "web page; website"], ["soziale Netzwerke (Pl.)", "社交网络", "social networks"], ["online", "在线", "online"], ["etwas herunter|laden", "下载", "to download sth"], ["(jemandem etwas) mailen", "（给某人）发邮件", "to email (sb sth)"], ["jemandem etwas schicken", "寄给（某人）", "to send sb sth"], ["die Nachricht, die Nachrichten", "消息", "message; news"], ["eine Nachricht hinterlassen", "留言；留下信息", "to leave a message"], ["der Anhang, die Anhänge", "附件", "attachment"], ["der Akku, die Akkus", "电池", "rechargeable battery"], ["kaputt|gehen", "坏掉", "to break down"], ["das Ladegerät, die Ladegeräte", "充电器", "charger"], ["etwas aus|drucken", "打印", "to print (something)"], ["klicken", "点击", "to click"], ["etwas reparieren", "修理（某物）", "to repair"], ["etwas speichern", "储存", "to save something"], ["die Fehlermeldung, die Fehlermeldungen", "错误提示", "error message"], ["der Fehler, die Fehler", "错误；失误", "mistake"], ["der Brief, die Briefe", "信；信件", "letter"], ["Sehr geehrte Damen und Herren", "尊敬的女士们先生们…", "Dear Sir or Madam"], ["Sehr geehrte Frau ...", "尊敬的女士…", "Dear Madam ..."], ["Sehr geehrter Herr ...", "尊敬的先生…", "Dear Sir ..."], ["Mit freundlichen Grüßen", "诚挚的问候", "Kind regards"], ["Liebe Grüße", "祝福；问候", "kind regards; best wishes"], ["das Anschreiben, die Anschreiben", "求职信；申请信", "cover letter"], ["das Formular, die Formulare", "表格", "form"], ["sich beschweren", "抱怨；投诉", "to complain"], ["sich bei jemandem über jemanden/etwas beschweren", "向某人抱怨某人", "to complain to someone about someone/something"], ["die Beschwerden (Pl.)", "疼痛；不适", "complaints; ailments"], ["die Reklamation, die Reklamationen", "抱怨；投诉；索赔", "complaint; claim"], ["etwas reklamieren", "申诉；索赔", "to complain about sth; to claim"], ["die Garantie, die Garantien", "保障；保修", "guarantee; warranty"], ["der Kundenservice (nur Sg.)", "客户服务", "customer service"], ["die Reparatur, die Reparaturen", "维修", "repair"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Er sagt, dass er morgen ___.“（dass 从句动词沉底）", "opts": ["spät kommt", "spät kommen", "kommen spät", "kommt spät"], "a": 0}, {"q": "2. 写正式邮件、不知道对方姓名时，称呼用：", "opts": ["Hallo zusammen", "Liebe Leute", "Sehr geehrter alle", "Sehr geehrte Damen und Herren"], "a": 3}, {"q": "3. „Ich möchte mich ___.“（我想投诉）", "opts": ["Beschwerde", "beschweren", "beschwert", "beschwere"], "a": 1}, {"q": "4. 给公司客服的正式邮件，落款应该用：", "opts": ["Tschüss und danke", "Liebe Grüße", "Mit freundlichen Grüßen", "Bis bald"], "a": 2}, {"q": "5. „Das Ladegerät ist ___. Es lädt das Handy nicht mehr.“ 空格填：", "opts": ["kaputt", "herunter", "freundlich", "online"], "a": 0}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a2-08-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a2-08-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

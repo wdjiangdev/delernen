@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A2 第5课 Reisen 旅行 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A2 第5课 Reisen：合并 DW Folge 17-20。1）火车站三件套：abfahren / ankommen / umsteigen">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A2 · 第 5 课</div>
+<h1>第 5 课 · Reisen 旅行</h1>
+<div class="de-title">DW A2 · Thema 5 · Folge 17-20 合并课</div>
+<div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · A2 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="a2-01.html">1 · Ankommen und Pläne 抵达与计划</a>
+<a href="a2-02.html">2 · Geld und Bank 金钱与银行</a>
+<a href="a2-03.html">3 · Familie und Generationen 家庭与代际</a>
+<a href="a2-04.html">4 · Zusammenleben 合住与邻里</a>
+<a href="a2-05.html" class="cur">5 · Reisen 旅行</a>
+<a href="a2-06.html">6 · Freizeit 休闲时光</a>
+<a href="a2-07.html">7 · Hobbys und Vereine 爱好与社团</a>
+<a href="a2-08.html">8 · Internet und Kommunikation 网络与沟通</a>
+<a href="a2-09.html">9 · Essen gehen 下馆子</a>
+<a href="a2-10.html">10 · Freundschaft 友谊</a>
+<a href="a2-11.html">11 · Wohnen und Umzug 住房与搬家</a>
+<a href="a2-12.html">12 · Früher und heute 今昔</a>
+<a href="a2-13.html">13 · Beruf und Bewerbung 职业与求职</a>
+<a href="a2-14.html">14 · Kultur in der Stadt 城市文化</a>
+<a href="a2-15.html">15 · Feste feiern 节日庆祝</a>
+<a href="a2-16.html">16 · Geschenke 礼物</a>
+<a href="a2-17.html">17 · Film 电影</a>
+<a href="a2-18.html">18 · Meinungen 表达观点</a>
+<a href="a2-19.html">19 · Erfindungen 发明与实用</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>在火车站看懂并说出 <b class="hl">Abfahrt</b> 和 <b class="hl">Ankunft</b> 时间，会问要不要换乘</li>
+<li>在酒店前台办理入住：确认房间类型、早餐和住几晚</li>
+<li>在售票机或柜台买对票：单程、往返、日票，说清目的地</li>
+<li>用比较级和最高级比较交通工具与路线：schneller, am schnellsten</li>
+<li>分清 <b class="hl">als</b> 和 <b class="hl">wenn</b>：过去的一次经历用 als，反复或将来用 wenn</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 A2 Folge 17，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 17</span><span class="t">On the Road<small>自驾上路：谈路线、距离和行程安排</small></span><button class="playbtn" data-folge="17" onclick="playFolge(17,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 18</span><span class="t">At the Hotel<small>在酒店前台办理入住：确认房间、早餐和住几晚</small></span><button class="playbtn" data-folge="18" onclick="playFolge(18,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 19</span><span class="t">Bahnreisen<small>坐火车旅行：看时刻表，谈出发、到达和换乘</small></span><button class="playbtn" data-folge="19" onclick="playFolge(19,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 20</span><span class="t">Der Ticketautomat<small>在自动售票机前买票：选票种、单程还是往返</small></span><button class="playbtn" data-folge="20" onclick="playFolge(20,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Wann fährt der Zug nach Berlin ab?</span><span class="zh">去柏林的火车几点开？</span></div>
+<div class="phrase"><span class="de">Der Zug kommt um 14.30 Uhr in München an.</span><span class="zh">火车 14:30 到达慕尼黑。</span></div>
+<div class="phrase"><span class="de">Muss ich umsteigen?</span><span class="zh">我需要换乘吗？</span></div>
+<div class="phrase"><span class="de">Sie müssen in Frankfurt umsteigen.</span><span class="zh">您要在法兰克福换乘。</span></div>
+<div class="phrase"><span class="de">Von welchem Gleis fährt der Zug ab?</span><span class="zh">火车从几站台开？</span></div>
+<div class="phrase"><span class="de">Hat der Zug Verspätung?</span><span class="zh">火车晚点了吗？</span></div>
+<div class="phrase"><span class="de">Ich hätte gern ein Zimmer für zwei Nächte.</span><span class="zh">我想订一间房，住两晚。</span></div>
+<div class="phrase"><span class="de">Ist das Frühstück inklusive?</span><span class="zh">含早餐吗？</span></div>
+<div class="phrase"><span class="de">Einmal nach Hamburg, bitte. Einfach.</span><span class="zh">一张去汉堡的票，单程。</span></div>
+<div class="phrase"><span class="de">Hin und zurück, bitte.</span><span class="zh">往返票，谢谢。</span></div>
+<div class="phrase"><span class="de">Das Flugzeug ist schneller als der Zug.</span><span class="zh">飞机比火车快。</span></div>
+<div class="phrase"><span class="de">Mit dem Auto ist es am bequemsten.</span><span class="zh">开车最舒服。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Guten Tag! Wir haben ein Doppelzimmer reserviert.</p>
+<p><span class="who">Rezeptionist:</span> Guten Tag! Auf welchen Namen, bitte?</p>
+<p><span class="who">Emma:</span> Auf den Namen Brunner, für drei Nächte.</p>
+<p><span class="who">Rezeptionist:</span> Ja, hier ist es: Zimmer 214, mit Frühstück. Das Frühstück gibt es von 7 bis 10 Uhr.</p>
+<p><span class="who">Nico:</span> Gibt es hier auch WLAN?</p>
+<p><span class="who">Rezeptionist:</span> Ja, natürlich. Das Passwort steht auf dem Tisch. Einen schönen Aufenthalt!</p>
+<p><span class="who">Nico:</span> Danke! Noch eine Frage: Wann fährt morgen der erste Zug nach Köln?</p>
+<p><span class="who">Rezeptionist:</span> Der erste Zug fährt um 6.12 Uhr ab, Gleis 3. Sie müssen nicht umsteigen.</p>
+<div class="tipbox">先朗读三遍：第一遍注意 abfahren / ankommen 里前缀和动词的呼应，第二遍把 Brunner 换成你的姓、Köln 换成你想去的城市，第三遍遮住中文自己演两个角色。前台的 Auf welchen Namen? 是办理入住的高频问句，整句背下来。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）火车站三件套：abfahren / ankommen / umsteigen</b></p>
+<p>坐火车先认这三个<b class="hl">可分动词</b>：问句和答句里，前缀永远跑到句尾。</p><table><tr><th>问</th><th>答</th></tr><tr><td>Wann <b>fährt</b> der Zug <b>ab</b>? <span class="zh">火车几点开？</span></td><td>Er <b>fährt</b> um 6.12 Uhr <b>ab</b>.</td></tr><tr><td>Wann <b>kommt</b> er in Köln <b>an</b>? <span class="zh">几点到科隆？</span></td><td>Er <b>kommt</b> um 9.40 Uhr <b>an</b>.</td></tr><tr><td>Muss ich <b>umsteigen</b>? <span class="zh">要换乘吗？</span></td><td>Ja, Sie <b>steigen</b> in Frankfurt <b>um</b>.</td></tr></table><p>时刻表上的两个名词也要认：<b class="hl">die Abfahrt</b>（出发）↔ <b class="hl">die Ankunft</b>（到达）；上车 <b>einsteigen</b>、下车 <b>aussteigen</b>，前缀同样去句尾。</p>
+</div>
+<div class="card">
+<p><b>2）比较级复习 + 最高级：am -sten</b></p>
+<p>A1 学过比较级（schneller <b>als</b> der Zug），A2 补上最高级：谈「最……」用 <b class="hl">am + 词干 + sten</b>，放在动词后面，不随名词变格。</p><table><tr><th>原级</th><th>比较级</th><th>最高级</th></tr><tr><td>schnell 快</td><td>schneller</td><td>am schnellsten</td></tr><tr><td>bequem 舒服</td><td>bequemer</td><td>am bequemsten</td></tr><tr><td>billig 便宜</td><td>billiger</td><td>am billigsten</td></tr><tr><td>gut 好</td><td>besser</td><td>am besten</td></tr><tr><td>gern 喜欢</td><td>lieber</td><td>am liebsten</td></tr><tr><td>viel 多</td><td>mehr</td><td>am meisten</td></tr></table><p>Der Zug ist <b>schneller als</b> der Bus, aber das Flugzeug ist <b>am schnellsten</b>. <span class="zh">比较两个人/物用比较级 + als；一群里挑第一名用 am -sten。</span></p>
+</div>
+<div class="card">
+<p><b>3）als 还是 wenn？都译成「当……时」</b></p>
+<p>中文都是「当……时」，德语看<b class="hl">次数和时间</b>：</p><table><tr><th></th><th>als</th><th>wenn</th></tr><tr><td>用在</td><td>过去<b>一次性</b>的事件</td><td>反复发生的、或将来的事</td></tr><tr><td>例句</td><td><b>Als</b> ich in Berlin <b>war</b>, hat es geregnet. <span class="zh">（那一次）在柏林时下雨了。</span></td><td><b>Wenn</b> ich Zeit <b>habe</b>, reise ich gern. <span class="zh">（每当）有时间我就爱旅行。</span></td></tr></table><p>共同点：als / wenn 引导的从句里，<b class="hl">变位动词去句尾</b>（war / habe 都在最后）——这和第 7 课 weil、第 8 课 dass 是同一条规则，先在这里混个脸熟。</p>
+</div>
+<div class="card">
+<p><b>4）在酒店：订房和入住的固定问法</b></p>
+<p>前台对话翻来覆去就这几句，整组记：</p><table><tr><th>你说</th><th>意思</th></tr><tr><td>Ich habe ein Zimmer <b>reserviert</b>.</td><td>我订了房。（Perfekt，A1 学过）</td></tr><tr><td>Ein Einzelzimmer / Doppelzimmer <b>für zwei Nächte</b></td><td>单人间 / 双人间，住两晚（für + 宾格表时长）</td></tr><tr><td>Haben Sie noch ein Zimmer <b>frei</b>?</td><td>还有空房吗？</td></tr><tr><td><b>Bis wann</b> gibt es Frühstück?</td><td>早餐供应到几点？</td></tr><tr><td><b>Wann</b> muss ich auschecken?</td><td>几点退房？</td></tr></table><p>对方问 <b class="hl">Auf welchen Namen?</b>（订在谁名下？）时，答姓氏即可：Auf den Namen Brunner.</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a2/">去 A2 全量词表（1731 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>录一段约 40 秒语音：假装你在德国火车站，正计划一次周末小旅行，按下面模板说清去哪、怎么去、几点走、要不要换乘、住哪。</p>
+<ul>
+<li>Ich möchte am Wochenende nach ______ fahren.</li>
+<li>Der Zug fährt um ______ Uhr ab und kommt um ______ Uhr an.</li>
+<li>Ich muss in ______ umsteigen. / Ich muss nicht umsteigen.</li>
+<li>Ich fahre am liebsten mit ______, weil es am ______ ist.</li>
+<li>Im Hotel brauche ich ein ______zimmer für ______ Nächte.</li>
+</ul>
+<p style="margin-top:10px">过关标准：5 句一次说完、中途不查词；abfahren、ankommen、umsteigen 三个可分动词的前缀都正确落在句尾，就算过关。哪句卡住，就回第二步把那句型读五遍再重录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a2-04.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a2-06.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 77, "2": 78, "3": 79, "4": 80, "5": 81, "6": 82, "7": 83, "8": 84, "9": 85, "10": 86, "11": 87, "12": 88, "13": 89, "14": 90, "15": 91, "16": 92, "17": 93, "18": 94, "19": 95, "20": 96, "21": 97, "22": 98, "23": 99, "24": 100, "25": 101, "26": 102, "27": 103, "28": 104, "29": 105, "30": 106, "31": 107, "32": 108, "33": 109, "34": 110, "35": 111, "36": 112, "37": 113, "38": 114, "39": 115, "40": 116, "41": 117, "42": 118, "43": 119, "44": 120, "45": 121, "46": 122, "47": 123, "48": 124, "49": 125, "50": 126, "51": 127, "52": 128, "53": 129, "54": 130, "55": 131, "56": 132, "57": 133, "58": 134, "59": 135, "60": 136, "61": 137, "62": 138, "63": 139, "64": 140, "65": 141, "66": 142, "67": 143, "68": 144, "69": 145, "70": 146, "71": 147, "72": 148, "73": 149, "74": 150, "75": 151, "76": 152};
+var ytPlayer=null,ytReady=false,pendingFolge=93;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:93,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Fernreise, die Fernreisen", "长途旅行", "long-distance journey"], ["die Geschäftsreise, die Geschäftsreisen", "出差；商务旅行", "business trip"], ["die Gruppenreise, die Gruppenreisen", "团体旅游", "group trip"], ["die Rundreise, die Rundreisen", "周游；环游", "tour"], ["der Flug, die Flüge", "航班；飞行", "flight"], ["der Hinflug, die Hinflüge", "去程航班", "outbound flight"], ["der Rückflug, die Rückflüge", "回程航班", "return flight"], ["das Reisebüro, die Reisebüros", "旅行社", "travel agency"], ["der Städteurlaub, die Städteurlaube", "城市观光度假", "city break"], ["der Strandurlaub, die Strandurlaube", "海滩度假", "beach vacation"], ["das Ticket, die Tickets", "车票；票", "ticket"], ["das Einzelticket, die Einzeltickets", "单程票", "single ticket"], ["die Tageskarte, die Tageskarten", "全日票", "day ticket"], ["die Dauerkarte, die Dauerkarten", "长期票", "season ticket"], ["der Fahrschein, die Fahrscheine", "车票；票", "ticket"], ["die Abfahrt, die Abfahrten", "发车", "departure"], ["die Ankunft, die Ankünfte", "抵达", "arrival"], ["ab|fahren", "出发；启程", "to depart"], ["hin|fahren", "驶往", "to go there"], ["zurück|fahren", "驶回；返程", "to drive back"], ["ein|steigen", "上车", "to get on; to board"], ["aus|steigen", "下车", "to get off; to get out"], ["das Gleis, die Gleise", "站台；轨道", "track; platform"], ["der Bahnsteig, die Bahnsteige", "站台", "platform"], ["der Hauptbahnhof, die Hauptbahnhöfe", "中央火车站", "central station"], ["die Regionalbahn, die Regionalbahnen", "区域火车", "regional train"], ["die S-Bahn, die S-Bahnen", "市郊快速列车", "suburban train"], ["das Schiff, die Schiffe", "船", "ship"], ["der Ausweis, die Ausweise", "证件", "ID card; identity card"], ["der Reisepass, die Reisepässe", "护照", "passport"], ["die Rezeption, die Rezeptionen", "前台", "reception (desk)"], ["das Doppelzimmer, die Doppelzimmer", "双人房", "double room"], ["das Einzelzimmer, die Einzelzimmer", "单人房", "single room"], ["die Übernachtung, die Übernachtungen", "住宿", "overnight stay"], ["die Unterkunft, die Unterkünfte", "住处；住宿", "accommodation"], ["die Pension, die Pensionen", "（私营）膳宿公寓", "guesthouse; bed and breakfast"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Der Zug ___ um 8.15 Uhr in Hamburg ___.“（到达）空格依次填：", "opts": ["kommt … ab", "ankommt …", "kommt … an", "fährt … an"], "a": 2}, {"q": "2. „Das Flugzeug ist ___ als die Bahn.“ 空格填比较级：", "opts": ["schneller", "am schnellsten", "schnell", "mehr schnell"], "a": 0}, {"q": "3. „Zu Fuß ist es am ___.“（健康 gesund 的最高级形式）", "opts": ["gesundesten", "gesündesten", "gesunder", "gesundem"], "a": 1}, {"q": "4. „___ ich letztes Jahr in Wien war, hat es viel geregnet.“（过去一次性）", "opts": ["Wenn", "Dass", "Als", "Weil"], "a": 2}, {"q": "5. 售票员说中途要在 Mannheim 下车换车，你要问清楚的是：", "opts": ["Haben Sie ein Zimmer frei?", "Wie hoch ist der Preis?", "Ist das Frühstück inklusive?", "Muss ich in Mannheim umsteigen?"], "a": 3}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a2-05-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a2-05-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

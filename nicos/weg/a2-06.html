@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A2 第6课 Freizeit 休闲时光 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A2 第6课 Freizeit：合并 DW Folge 21-24。1）提议三件套 + 回应句库">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A2 · 第 6 课</div>
+<h1>第 6 课 · Freizeit 休闲时光</h1>
+<div class="de-title">DW A2 · Thema 6 · Folge 21-24 合并课</div>
+<div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · A2 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="a2-01.html">1 · Ankommen und Pläne 抵达与计划</a>
+<a href="a2-02.html">2 · Geld und Bank 金钱与银行</a>
+<a href="a2-03.html">3 · Familie und Generationen 家庭与代际</a>
+<a href="a2-04.html">4 · Zusammenleben 合住与邻里</a>
+<a href="a2-05.html">5 · Reisen 旅行</a>
+<a href="a2-06.html" class="cur">6 · Freizeit 休闲时光</a>
+<a href="a2-07.html">7 · Hobbys und Vereine 爱好与社团</a>
+<a href="a2-08.html">8 · Internet und Kommunikation 网络与沟通</a>
+<a href="a2-09.html">9 · Essen gehen 下馆子</a>
+<a href="a2-10.html">10 · Freundschaft 友谊</a>
+<a href="a2-11.html">11 · Wohnen und Umzug 住房与搬家</a>
+<a href="a2-12.html">12 · Früher und heute 今昔</a>
+<a href="a2-13.html">13 · Beruf und Bewerbung 职业与求职</a>
+<a href="a2-14.html">14 · Kultur in der Stadt 城市文化</a>
+<a href="a2-15.html">15 · Feste feiern 节日庆祝</a>
+<a href="a2-16.html">16 · Geschenke 礼物</a>
+<a href="a2-17.html">17 · Film 电影</a>
+<a href="a2-18.html">18 · Meinungen 表达观点</a>
+<a href="a2-19.html">19 · Erfindungen 发明与实用</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>向朋友提议一起做某事：<b class="hl">Lass uns …</b> / <b class="hl">Wie wäre es mit …?</b></li>
+<li>热情接受提议：Gute Idee! / Das hört sich gut an!</li>
+<li>委婉拒绝并给台阶：Keine Lust. / Ich kann leider nicht.</li>
+<li>用 <b class="hl">gern / lieber / am liebsten</b> 把偏好排出顺序</li>
+<li>敲定时间地点并确认：Treffen wir uns um … vor …? – Abgemacht!</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 A2 Folge 21，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 21</span><span class="t">Alltag und Freizeit<small>日常生活与空闲时间：大家聊下班后和周末都做什么</small></span><button class="playbtn" data-folge="21" onclick="playFolge(21,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 22</span><span class="t">Freizeitstress<small>休闲也有压力：活动排太满、日程撞车时怎么协调</small></span><button class="playbtn" data-folge="22" onclick="playFolge(22,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 23</span><span class="t">Das hört sich gut an!<small>听到好提议时怎么回应：这听起来不错！</small></span><button class="playbtn" data-folge="23" onclick="playFolge(23,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 24</span><span class="t">Das meinen Sie nicht ernst!<small>对夸张提议表示不敢相信：您不是认真的吧！</small></span><button class="playbtn" data-folge="24" onclick="playFolge(24,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Hast du heute Abend Zeit?</span><span class="zh">你今晚有空吗？</span></div>
+<div class="phrase"><span class="de">Lass uns ins Kino gehen!</span><span class="zh">我们去看电影吧！</span></div>
+<div class="phrase"><span class="de">Wie wäre es mit einem Konzert?</span><span class="zh">去听音乐会怎么样？</span></div>
+<div class="phrase"><span class="de">Gute Idee!</span><span class="zh">好主意！</span></div>
+<div class="phrase"><span class="de">Das hört sich gut an!</span><span class="zh">听起来不错！</span></div>
+<div class="phrase"><span class="de">Ich habe keine Lust.</span><span class="zh">我没兴致。</span></div>
+<div class="phrase"><span class="de">Tut mir leid, ich kann leider nicht.</span><span class="zh">抱歉，我去不了。</span></div>
+<div class="phrase"><span class="de">Ich gehe lieber schwimmen.</span><span class="zh">我更想去游泳。</span></div>
+<div class="phrase"><span class="de">Am liebsten bleibe ich zu Hause.</span><span class="zh">我最想待在家里。</span></div>
+<div class="phrase"><span class="de">Wann treffen wir uns?</span><span class="zh">我们什么时候见面？</span></div>
+<div class="phrase"><span class="de">Treffen wir uns um 19 Uhr vor dem Kino?</span><span class="zh">7 点在电影院门口见？</span></div>
+<div class="phrase"><span class="de">Das meinen Sie nicht ernst!</span><span class="zh">您不是认真的吧！</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Lisa:</span> Hast du am Samstag Zeit? Lass uns in die neue Ausstellung gehen!</p>
+<p><span class="who">Nico:</span> Hmm, eine Ausstellung … Ich gehe lieber ins Kino. Der neue Actionfilm läuft.</p>
+<p><span class="who">Lisa:</span> Actionfilm? Keine Lust. Wie wäre es mit dem Konzert am Abend? Die Rockband spielt im Biergarten.</p>
+<p><span class="who">Nico:</span> Das hört sich gut an! Wann fängt das Konzert an?</p>
+<p><span class="who">Lisa:</span> Um 20 Uhr. Treffen wir uns um halb acht vor dem Biergarten?</p>
+<p><span class="who">Nico:</span> Gute Idee! Und danach können wir noch Karten spielen.</p>
+<p><span class="who">Lisa:</span> Super, abgemacht!</p>
+<div class="tipbox">注意对话里的三处转折：先拒绝（Keine Lust）、再换提议（Wie wäre es mit …?）、最后敲定（abgemacht）。朗读时把这三句加重语气；然后把 Ausstellung / Kino / Konzert 换成你自己的三个活动再演一遍——必须用上一次拒绝加一次新提议，才算练完。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）提议三件套 + 回应句库</b></p>
+<p>提议和回应是一套组合拳，先把这张表背熟：</p><table><tr><th>提议</th><th>接受</th><th>拒绝</th></tr><tr><td><b>Lass uns</b> ins Kino <b>gehen</b>! <span class="zh">我们去看电影吧！（原形动词去句尾）</span></td><td><b>Gute Idee!</b></td><td><b>Keine Lust.</b> <span class="zh">没兴致。</span></td></tr><tr><td><b>Wie wäre es mit</b> einem Konzert? <span class="zh">去音乐会怎么样？（mit 后面三格）</span></td><td><b>Das hört sich gut an!</b></td><td><b>Ich kann leider nicht.</b></td></tr><tr><td><b>Wollen wir</b> Karten spielen?</td><td><b>Abgemacht!</b> <span class="zh">就这么定了！</span></td><td><b>Das meinen Sie nicht ernst!</b> <span class="zh">您开玩笑吧！（对 Sie 的人说）</span></td></tr></table><p>Lass uns 句型里只有 lass 变位，后面的动词用原形站句尾，和情态动词句框一个道理。</p>
+</div>
+<div class="card">
+<p><b>2）gern 三级：gern – lieber – am liebsten</b></p>
+<p>gern 不是形容词，是放在动词后面的「程度小词」，三级形式要整组记：</p><table><tr><th>级</th><th>形式</th><th>例句</th></tr><tr><td>原级</td><td><b>gern</b></td><td>Ich schwimme <b>gern</b>. <span class="zh">我喜欢游泳。</span></td></tr><tr><td>比较级</td><td><b>lieber</b></td><td>Ich gehe <b>lieber</b> ins Kino. <span class="zh">（比起别的）我更想去看电影。</span></td></tr><tr><td>最高级</td><td><b>am liebsten</b></td><td><b>Am liebsten</b> bleibe ich zu Hause. <span class="zh">我最想待在家里。</span></td></tr></table><p>位置口诀：gern / lieber 紧跟动词；am liebsten 可以站句首（站句首时动词仍第二位：Am liebsten <b>bleibe</b> ich …）。和第 5 课的 am -sten 最高级是一家人。</p>
+</div>
+<div class="card">
+<p><b>3）敲定安排：um / am / vor + sich treffen</b></p>
+<p>约时间地点时，三个介词各管一摊：</p><table><tr><th>介词</th><th>管什么</th><th>例句</th></tr><tr><td><b>um</b> + 钟点</td><td>几点</td><td>Treffen wir uns <b>um 19 Uhr</b>?</td></tr><tr><td><b>am</b> + 星期 / 时段</td><td>哪天</td><td><b>Am Samstag</b> habe ich Zeit.</td></tr><tr><td><b>vor</b> + 三格</td><td>在某地前面集合</td><td>Wir treffen uns <b>vor dem Kino</b>. <span class="zh">dem = 三格</span></td></tr></table><p>动词用反身形式：<b class="hl">sich treffen</b>（见面）、<b class="hl">sich verabreden</b>（约好）——Wir <b>treffen uns</b> um acht. 反身代词 uns 别漏。</p>
+</div>
+<div class="card">
+<p><b>4）语气小词：doch / mal 让提议更地道</b></p>
+<p>同样的提议，加上小品词立刻像本地人：</p><table><tr><th>小词</th><th>效果</th><th>例句</th></tr><tr><td><b>doch</b></td><td>热情邀请、带点劝说</td><td>Komm <b>doch</b> mit! <span class="zh">一起来嘛！</span></td></tr><tr><td><b>mal</b></td><td>语气放软、随口一提</td><td>Lass uns <b>mal</b> wieder Karten spielen. <span class="zh">找时间再打牌吧。</span></td></tr><tr><td><b>ja</b></td><td>提醒对方已知的事</td><td>Du weißt <b>ja</b>, ich liebe Rockmusik. <span class="zh">你也知道我爱摇滚。</span></td></tr></table><p>这三个词不翻译、只调语气，位置在句中（动词后面附近）。先会用 doch 和 mal，ja 认得出即可。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a2/">去 A2 全量词表（1731 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>给朋友录一段约 40 秒语音：邀请对方周末和你一起活动，包含一次提议、一次备选方案和敲定的时间地点。</p>
+<ul>
+<li>Hast du am ______ Zeit?</li>
+<li>Lass uns ______!</li>
+<li>Oder wie wäre es mit ______?</li>
+<li>Ich mache am liebsten ______.</li>
+<li>Treffen wir uns um ______ Uhr vor ______?</li>
+</ul>
+<p style="margin-top:10px">过关标准：5 句连着说完；提议句用对 Lass uns …、备选句用对 Wie wäre es mit …，且 mit 后面的名词用三格（dem / der）说对，就算过关。地点前漏了 vor 或三格错了，回第三步语法卡重看再录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a2-05.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a2-07.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 77, "2": 78, "3": 79, "4": 80, "5": 81, "6": 82, "7": 83, "8": 84, "9": 85, "10": 86, "11": 87, "12": 88, "13": 89, "14": 90, "15": 91, "16": 92, "17": 93, "18": 94, "19": 95, "20": 96, "21": 97, "22": 98, "23": 99, "24": 100, "25": 101, "26": 102, "27": 103, "28": 104, "29": 105, "30": 106, "31": 107, "32": 108, "33": 109, "34": 110, "35": 111, "36": 112, "37": 113, "38": 114, "39": 115, "40": 116, "41": 117, "42": 118, "43": 119, "44": 120, "45": 121, "46": 122, "47": 123, "48": 124, "49": 125, "50": 126, "51": 127, "52": 128, "53": 129, "54": 130, "55": 131, "56": 132, "57": 133, "58": 134, "59": 135, "60": 136, "61": 137, "62": 138, "63": 139, "64": 140, "65": 141, "66": 142, "67": 143, "68": 144, "69": 145, "70": 146, "71": 147, "72": 148, "73": 149, "74": 150, "75": 151, "76": 152};
+var ytPlayer=null,ytReady=false,pendingFolge=97;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:97,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["(jemandem) Spaß machen", "好玩；有意思", "to be fun (for someone)"], ["die Idee, die Ideen", "想法；主意", "idea"], ["der Vorschlag, die Vorschläge", "建议", "suggestion"], ["sich treffen", "碰面；见面", "to meet"], ["sich mit jemandem treffen", "与（某人）见面", "to meet somebody"], ["sich (mit jemandem) verabreden", "约定见面；商定", "to arrange to meet"], ["die Verabredung, die Verabredungen", "约定", "arrangement; date"], ["verabredet sein", "约定", "to have an appointment; to have a date"], ["gemeinsam", "共同；一起", "together"], ["jemanden ein|laden", "邀请;请客", "to invite sb; to treat sb"], ["jemanden zu etwas ein|laden", "邀请（某人）参加", "to invite someone"], ["Karten spielen", "玩牌；打牌", "to play cards"], ["etwas spielen", "玩；演奏；表演", "to play"], ["mit jemandem spielen", "和（某人）玩", "to play with someone"], ["(bei etwas) mit|spielen", "参与；参加（表演、比赛等）", "to take part (in something)"], ["laufen", "跑；（节目、电影）播放；上映", "to run"], ["einen Marathon laufen", "跑马拉松", "to run a marathon"], ["eis|laufen", "滑冰", "to ice-skate"], ["der Tanz, die Tänze", "舞蹈", "dance"], ["der Volkstanz, die Volkstänze", "民族舞", "folk dance"], ["das Theaterstück, die Theaterstücke", "戏剧", "play (theatre)"], ["die Abendkasse, die Abendkassen", "夜场售票处", "box office (evening)"], ["der Eintritt, die Eintritte", "入场；入场费", "admission; entry"], ["Eintritt frei", "免费入场", "free admission"], ["die Ausstellung, die Ausstellungen", "展览", "exhibition"], ["die Rockmusik (nur Sg.)", "摇滚乐", "rock music"], ["die Volksmusik (nur Sg.)", "民族风音乐；民族乐", "folk music"], ["der Actionfilm, die Actionfilme", "动作片", "action film"], ["der Science-Fiction-Film, die Science-Fiction-Filme", "科幻片", "science fiction film"], ["das Filmgenre, die Filmgenres", "电影类型", "film genre"], ["Worum geht es in dem Film?", "这部电影是关于什么？", "What is the film about?"], ["(etwas) filmen", "拍摄", "to film"], ["(etwas/jemanden) fotografieren", "拍照；摄影", "to photograph something/someone"], ["sich mit etwas beschäftigen", "从事于（某事）", "to occupy oneself with"], ["das Freizeitangebot, die Freizeitangebote", "休闲娱乐活动", "leisure activity"], ["die Aktivität, die Aktivitäten", "活动", "activity"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „___ uns am Sonntag wandern gehen!“（对一个朋友提议）", "opts": ["Lässt", "Lasst", "Lass", "Lassen"], "a": 2}, {"q": "2. „Wie wäre es ___ einem Picknick?“ 空格填提议固定搭配的介词：", "opts": ["für", "zu", "von", "mit"], "a": 3}, {"q": "3. „Von allen Sportarten mache ich ___ Yoga.“（最喜欢，用最高级）", "opts": ["lieber", "mehr gern", "gern", "am liebsten"], "a": 3}, {"q": "4. 朋友提议去游泳，你一点兴致都没有，应该说：", "opts": ["Das hört sich gut an!", "Keine Lust.", "Gute Idee!", "Abgemacht!"], "a": 1}, {"q": "5. „Treffen wir uns um 19 Uhr ___ dem Bahnhof?“（在车站前面集合）", "opts": ["über", "ohne", "vor", "bis"], "a": 2}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a2-06-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a2-06-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

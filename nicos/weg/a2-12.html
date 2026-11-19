@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A2 第12课 Früher und heute 今昔 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A2 第12课 Früher und heute：合并 DW Folge 45-48。1）规则动词 Präteritum：词干 + -te">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A2 · 第 12 课</div>
+<h1>第 12 课 · Früher und heute 今昔</h1>
+<div class="de-title">DW A2 · Thema 12 · Folge 45-48 合并课</div>
+<div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · A2 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="a2-01.html">1 · Ankommen und Pläne 抵达与计划</a>
+<a href="a2-02.html">2 · Geld und Bank 金钱与银行</a>
+<a href="a2-03.html">3 · Familie und Generationen 家庭与代际</a>
+<a href="a2-04.html">4 · Zusammenleben 合住与邻里</a>
+<a href="a2-05.html">5 · Reisen 旅行</a>
+<a href="a2-06.html">6 · Freizeit 休闲时光</a>
+<a href="a2-07.html">7 · Hobbys und Vereine 爱好与社团</a>
+<a href="a2-08.html">8 · Internet und Kommunikation 网络与沟通</a>
+<a href="a2-09.html">9 · Essen gehen 下馆子</a>
+<a href="a2-10.html">10 · Freundschaft 友谊</a>
+<a href="a2-11.html">11 · Wohnen und Umzug 住房与搬家</a>
+<a href="a2-12.html" class="cur">12 · Früher und heute 今昔</a>
+<a href="a2-13.html">13 · Beruf und Bewerbung 职业与求职</a>
+<a href="a2-14.html">14 · Kultur in der Stadt 城市文化</a>
+<a href="a2-15.html">15 · Feste feiern 节日庆祝</a>
+<a href="a2-16.html">16 · Geschenke 礼物</a>
+<a href="a2-17.html">17 · Film 电影</a>
+<a href="a2-18.html">18 · Meinungen 表达观点</a>
+<a href="a2-19.html">19 · Erfindungen 发明与实用</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>用 Präteritum 讲过去常做的事：<b class="hl">Früher spielte ich …</b></li>
+<li>用 <b class="hl">als</b> 说「当……的时候」（只用于过去）</li>
+<li>一句说完今昔对比：<b class="hl">Früher …, heute …</b></li>
+<li>聊家里分工的变化：以前谁做饭、谁上班，现在呢</li>
+<li>听懂长辈讲的老故事，抓住 damals 的时间线</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 A2 Folge 45，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 45</span><span class="t">Das Leben heute und damals<small>今天的生活和从前对比：什么变了，什么没变</small></span><button class="playbtn" data-folge="45" onclick="playFolge(45,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 46</span><span class="t">Alles anders?<small>一切都不同了吗？聊聊今昔之间的差异</small></span><button class="playbtn" data-folge="46" onclick="playFolge(46,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 47</span><span class="t">Frauensache?<small>做家务、带孩子是女人的事？聊性别分工的今昔变化</small></span><button class="playbtn" data-folge="47" onclick="playFolge(47,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 48</span><span class="t">Damals<small>回到过去：长辈讲他们年轻时候的故事</small></span><button class="playbtn" data-folge="48" onclick="playFolge(48,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Früher lebten wir in einem kleinen Dorf.</span><span class="zh">从前我们住在一个小村子里。</span></div>
+<div class="phrase"><span class="de">Als Kind spielte ich den ganzen Tag draußen.</span><span class="zh">小时候我整天在外面玩。</span></div>
+<div class="phrase"><span class="de">Früher gab es kein Internet.</span><span class="zh">从前没有互联网。</span></div>
+<div class="phrase"><span class="de">Heute kann man alles online kaufen.</span><span class="zh">今天什么都能在网上买。</span></div>
+<div class="phrase"><span class="de">Als ich jung war, arbeitete mein Vater in einer Fabrik.</span><span class="zh">我年轻时，爸爸在工厂里工作。</span></div>
+<div class="phrase"><span class="de">Meine Mutter blieb zu Hause und kochte für alle.</span><span class="zh">妈妈留在家里，给大家做饭。</span></div>
+<div class="phrase"><span class="de">Damals schrieb man noch Briefe.</span><span class="zh">那时候人们还写信。</span></div>
+<div class="phrase"><span class="de">Heute schreibt man Nachrichten mit dem Handy.</span><span class="zh">今天人们用手机发消息。</span></div>
+<div class="phrase"><span class="de">Früher fuhren wir mit dem Fahrrad zur Schule.</span><span class="zh">从前我们骑车上学。</span></div>
+<div class="phrase"><span class="de">Das Leben war früher ruhiger.</span><span class="zh">从前的生活更安静。</span></div>
+<div class="phrase"><span class="de">Nicht alles war früher besser.</span><span class="zh">不是一切都是从前更好。</span></div>
+<div class="phrase"><span class="de">Erzähl mal, wie war es damals?</span><span class="zh">讲讲吧，那时候是什么样？</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Oma, erzähl mal: Wie war es früher bei euch?</p>
+<p><span class="who">Oma:</span> Als ich jung war, lebten wir in einem kleinen Dorf.</p>
+<p><span class="who">Emma:</span> Und was machtest du den ganzen Tag?</p>
+<p><span class="who">Oma:</span> Ich spielte draußen mit meinen Geschwistern. Wir hatten keinen Fernseher.</p>
+<p><span class="who">Emma:</span> Und Opa? Arbeitete er auch im Dorf?</p>
+<p><span class="who">Oma:</span> Nein, er arbeitete in der Stadt und fuhr mit dem Zug zur Arbeit.</p>
+<p><span class="who">Emma:</span> Und wer kochte bei euch zu Hause?</p>
+<p><span class="who">Oma:</span> Meine Mutter kochte für alle. Frauen blieben früher oft zu Hause.</p>
+<p><span class="who">Emma:</span> Das ist heute ganz anders!</p>
+<div class="tipbox">练法：先圈出所有 -te 结尾的动词（lebten、spielte、arbeitete、kochte）再读。注：hatten（haben 的过去时）和 fuhr（fahren）是不规则的，本课先整句记，语法卡 4 会专门讲；blieb（bleiben）同样先混脸熟。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）规则动词 Präteritum：词干 + -te</b></p>
+<p>讲过去常做的事、讲故事，德语用过去时（Präteritum）。规则动词最省心：<b class="hl">词干 + -te</b>，人称词尾和现在时一样：</p><table><tr><th>人称</th><th>spielen 玩</th><th>leben 住、生活</th><th>arbeiten 工作</th></tr><tr><td>ich</td><td>spielte</td><td>lebte</td><td>arbeitete</td></tr><tr><td>du</td><td>spieltest</td><td>lebtest</td><td>arbeitetest</td></tr><tr><td>er / sie / es</td><td>spielte</td><td>lebte</td><td>arbeitete</td></tr><tr><td>wir</td><td>spielten</td><td>lebten</td><td>arbeiteten</td></tr><tr><td>ihr</td><td>spieltet</td><td>lebtet</td><td>arbeitetet</td></tr><tr><td>sie / Sie</td><td>spielten</td><td>lebten</td><td>arbeiteten</td></tr></table><p>注意：arbeiten、warten 这类词干以 -t / -d 结尾的，要多加一个 e（arbeit<b class="hl">e</b>te），不然读不出来。其他常客：kochen → kochte，lernen → lernte，wohnen → wohnte，machen → machte，sagen → sagte。口语闲聊德国人更爱用 Perfekt（ich habe gespielt），但<b class="hl">讲故事、谈从前的习惯</b>时 Präteritum 是主力，而且 war / hatte / es gab 永远用它。</p>
+</div>
+<div class="card">
+<p><b>2）als：当……的时候（过去专用）</b></p>
+<p>说过去某个时期「当……的时候」，用 <b class="hl">als</b> 引导从句，从句的动词跑到句尾：</p><table><tr><th>句型</th><th>例句</th></tr><tr><td>Als + 主语 + … + 动词（句尾），主句动词第二位</td><td>Als ich jung <b class="hl">war</b>, lebte ich in einem Dorf. <span class="zh">我年轻时住在一个村子里</span></td></tr><tr><td>Als Kind …（名词版，更口语）</td><td>Als Kind spielte ich den ganzen Tag draußen. <span class="zh">小时候我整天在外面玩</span></td></tr><tr><td>Als wir ankamen, …</td><td>Als wir ankamen, kochte Mutter schon. <span class="zh">我们到家时，妈妈已经在做饭了</span></td></tr></table><p>als 和 wenn 别混：<b class="hl">als 只用于过去</b>（一次的事或一段时期）；现在、将来的「当……的时候」用 wenn：Wenn ich Zeit habe, … 本课先把 als 用熟。</p>
+</div>
+<div class="card">
+<p><b>3）对比句式：Früher …, heute …</b></p>
+<p>今昔对比有一套现成的句子骨架，套进去就能说：</p><table><tr><th>骨架</th><th>例句</th></tr><tr><td>Früher + 过去时, heute + 现在时</td><td>Früher schrieb man Briefe, heute schreibt man Nachrichten. <span class="zh">从前写信，今天发消息</span></td></tr><tr><td>Damals gab es kein …, heute gibt es …</td><td>Damals gab es kein Internet, heute hat jeder ein Handy. <span class="zh">那时没有互联网，今天人人有手机</span></td></tr><tr><td>Früher war …, heute ist …</td><td>Früher war das Leben ruhiger, heute ist alles schneller. <span class="zh">从前生活更安静，今天一切更快</span></td></tr></table><p>时间词帮忙定位：<b class="hl">damals</b>（那时）、<b class="hl">früher</b>（从前）、<b class="hl">heutzutage</b>（如今）。注意它们放句首时动词要站第二位、主语往后挪：Früher <b class="hl">lebten</b> wir …，不能说 Früher wir lebten。</p>
+</div>
+<div class="card">
+<p><b>4）三个不规则的先背下来：war / hatte / gab</b></p>
+<p>讲过去绕不开三个高频不规则词，先当固定形式背下来：</p><table><tr><th>原形</th><th>Präteritum</th><th>例句</th></tr><tr><td>sein</td><td><b class="hl">war</b>（du warst, wir waren）</td><td>Ich war damals zehn Jahre alt. <span class="zh">我那时十岁</span></td></tr><tr><td>haben</td><td><b class="hl">hatte</b>（du hattest, wir hatten）</td><td>Wir hatten keinen Fernseher. <span class="zh">我们那时没有电视</span></td></tr><tr><td>es gibt</td><td><b class="hl">es gab</b></td><td>Früher gab es hier nur ein Kino. <span class="zh">从前这里只有一家电影院</span></td></tr></table><p>这三个词在口语里也用 Präteritum，所以投入产出比最高。其余不规则动词（fuhr、schrieb、blieb 等）在句型和对话里见到时先整句记，下一课再系统整理。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a2/">去 A2 全量词表（1731 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>讲一段你自己的今昔对比，对着手机录下来，5 句都要说满：</p>
+<ul>
+<li>Früher lebte ich in ______.</li>
+<li>Als Kind spielte ich oft ______.</li>
+<li>Damals gab es noch kein ______.</li>
+<li>Heute ______ ich ______.</li>
+<li>Früher war das Leben ______, heute ist es ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：5 句里至少 4 句用对过去时（-te 词尾，或 war / hatte / gab），且第 5 句是完整的 Früher …, heute … 对比句；过去叙述里混进现在时超过一处，就重录一遍。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a2-11.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a2-13.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 77, "2": 78, "3": 79, "4": 80, "5": 81, "6": 82, "7": 83, "8": 84, "9": 85, "10": 86, "11": 87, "12": 88, "13": 89, "14": 90, "15": 91, "16": 92, "17": 93, "18": 94, "19": 95, "20": 96, "21": 97, "22": 98, "23": 99, "24": 100, "25": 101, "26": 102, "27": 103, "28": 104, "29": 105, "30": 106, "31": 107, "32": 108, "33": 109, "34": 110, "35": 111, "36": 112, "37": 113, "38": 114, "39": 115, "40": 116, "41": 117, "42": 118, "43": 119, "44": 120, "45": 121, "46": 122, "47": 123, "48": 124, "49": 125, "50": 126, "51": 127, "52": 128, "53": 129, "54": 130, "55": 131, "56": 132, "57": 133, "58": 134, "59": 135, "60": 136, "61": 137, "62": 138, "63": 139, "64": 140, "65": 141, "66": 142, "67": 143, "68": 144, "69": 145, "70": 146, "71": 147, "72": 148, "73": 149, "74": 150, "75": 151, "76": 152};
+var ytPlayer=null,ytReady=false,pendingFolge=121;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:121,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["früher", "从前；以前", "earlier; in the past"], ["damals", "当时；那时", "back then; at that time"], ["als", "比；当…的时候（时间从句连词）", "than"], ["wenn", "当；如果", "when; if"], ["heutzutage", "如今", "nowadays"], ["immer noch", "仍旧；依旧", "still"], ["die Geschichte, die Geschichten", "事；故事", "story; history"], ["die Erinnerung, die Erinnerungen", "提醒；提示", "reminder; memory"], ["sich an jemanden/etwas erinnern", "记得；回想起", "to remember"], ["jemanden an etwas erinnern", "使想起；提醒", "to remind sb of sth"], ["das Jahrhundert, die Jahrhunderte", "世纪；百年", "century"], ["die Zukunft (nur Sg.)", "未来；将来", "future"], ["sich ändern", "改变", "to change"], ["sich verändern", "改变", "to change"], ["etwas/jemanden verändern", "改变", "to change"], ["der Unterschied, die Unterschiede", "区别；差异", "difference"], ["im Vergleich zu", "与…相比", "compared to"], ["die Technik, die Techniken", "技术", "technology"], ["das Fernsehen (nur Sg.)", "电视", "television"], ["die Zeitung, die Zeitungen", "报纸", "newspaper"], ["der Brief, die Briefe", "信；信件", "letter"], ["die Postkarte, die Postkarten", "明信片", "postcard"], ["die Briefmarke, die Briefmarken", "邮票", "stamp"], ["der Briefumschlag, die Briefumschläge", "信封", "envelope"], ["die Grundschule, die Grundschulen", "小学", "primary school; elementary school"], ["sterben", "死亡；过世", "to die"], ["Er ist 1929 geboren.", "他出生于1929年。", "He was born in 1929."], ["trotzdem", "尽管如此", "nevertheless"], ["erwachsen", "成年的；成熟的", "adult; grown-up"], ["der/die Erwachsene, die Erwachsenen", "成年人；成人", "adult"], ["groß werden", "长大；成长", "to grow up"], ["die Ehe, die Ehen", "婚姻", "marriage"], ["die Ehefrau, die Ehefrauen", "妻子", "wife"], ["der Ehemann, die Ehemänner", "丈夫", "husband"], ["Zeit verbringen", "花时间", "to spend time"], ["jahrelang", "多年的", "for years"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Früher ___ wir in einem kleinen Dorf.“ leben 的正确过去时是：", "opts": ["gelebt", "lebte", "lebten", "leben"], "a": 2}, {"q": "2. arbeiten 的 Präteritum（er 形式）是：", "opts": ["gearbeitet", "arbeitete", "arbeitet", "arbeite"], "a": 1}, {"q": "3. „___ ich Kind war, spielte ich den ganzen Tag draußen.“ 空格填：", "opts": ["Wenn", "Als", "Weil", "Dass"], "a": 1}, {"q": "4. 哪句今昔对比说法正确？", "opts": ["Als früher schrieb man Briefe, heute schreibt man Nachrichten.", "Früher schrieb man Briefe, heute man schreibt Nachrichten.", "Früher schrieb man Briefe, heute schreibt man Nachrichten.", "Früher man schrieb Briefe, heute man schreibt Nachrichten."], "a": 2}, {"q": "5. „Früher gab es kein Internet.“ 里 gab 的意思是：", "opts": ["给了", "（过去）有、存在", "去了", "买了"], "a": 1}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a2-12-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a2-12-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A2 第2课 Geld und Bank 金钱与银行 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A2 第2课 Geld und Bank：合并 DW Folge 5-8。1）大数字与金额：千位是点，小数是逗号">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A2 · 第 2 课</div>
+<h1>第 2 课 · Geld und Bank 金钱与银行</h1>
+<div class="de-title">DW A2 · Thema 2 · Folge 5-8 合并课</div>
+<div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · A2 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="a2-01.html">1 · Ankommen und Pläne 抵达与计划</a>
+<a href="a2-02.html" class="cur">2 · Geld und Bank 金钱与银行</a>
+<a href="a2-03.html">3 · Familie und Generationen 家庭与代际</a>
+<a href="a2-04.html">4 · Zusammenleben 合住与邻里</a>
+<a href="a2-05.html">5 · Reisen 旅行</a>
+<a href="a2-06.html">6 · Freizeit 休闲时光</a>
+<a href="a2-07.html">7 · Hobbys und Vereine 爱好与社团</a>
+<a href="a2-08.html">8 · Internet und Kommunikation 网络与沟通</a>
+<a href="a2-09.html">9 · Essen gehen 下馆子</a>
+<a href="a2-10.html">10 · Freundschaft 友谊</a>
+<a href="a2-11.html">11 · Wohnen und Umzug 住房与搬家</a>
+<a href="a2-12.html">12 · Früher und heute 今昔</a>
+<a href="a2-13.html">13 · Beruf und Bewerbung 职业与求职</a>
+<a href="a2-14.html">14 · Kultur in der Stadt 城市文化</a>
+<a href="a2-15.html">15 · Feste feiern 节日庆祝</a>
+<a href="a2-16.html">16 · Geschenke 礼物</a>
+<a href="a2-17.html">17 · Film 电影</a>
+<a href="a2-18.html">18 · Meinungen 表达观点</a>
+<a href="a2-19.html">19 · Erfindungen 发明与实用</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>读懂并说出大数字与金额：工资、账单、价格到 <b class="hl">eine Million</b> 都不怵</li>
+<li>在银行独立办三件事：<b class="hl">ein Konto eröffnen</b>（开户）、Geld abheben（取钱）、Geld überweisen（转账）</li>
+<li>看懂账单和账户的关键信息：Betrag、Kontostand、Verwendungszweck</li>
+<li>用 <b class="hl">wenn</b> 说条件：「如果钱够，我就……」</li>
+<li>用最礼貌的说法开口求人：<b class="hl">Könnten Sie …?</b></li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 A2 Folge 5，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 5</span><span class="t">Geld ist für mich …<small>聊聊钱的态度：钱对你来说是安全感、自由，还是压力？</small></span><button class="playbtn" data-folge="5" onclick="playFolge(5,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 6</span><span class="t">Mein Bankkonto<small>去银行开户：活期账户、证件、表格、签字，一样都不能少</small></span><button class="playbtn" data-folge="6" onclick="playFolge(6,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 7</span><span class="t">Rechnungen<small>账单来了：看金额、看用途说明、按时转账付掉</small></span><button class="playbtn" data-folge="7" onclick="playFolge(7,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 8</span><span class="t">Am Bankautomaten<small>在取款机前：插卡、输 PIN、选金额、取钱拿卡走人</small></span><button class="playbtn" data-folge="8" onclick="playFolge(8,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich möchte ein Girokonto eröffnen.</span><span class="zh">我想开一个活期账户。</span></div>
+<div class="phrase"><span class="de">Was brauchen Sie von mir?</span><span class="zh">您需要我提供什么（材料）？</span></div>
+<div class="phrase"><span class="de">Hier ist mein Ausweis.</span><span class="zh">这是我的证件。</span></div>
+<div class="phrase"><span class="de">Wie hoch ist der Betrag?</span><span class="zh">金额是多少？</span></div>
+<div class="phrase"><span class="de">Der Rechnungsbetrag ist 1.250 Euro.</span><span class="zh">账单金额是 1250 欧元。</span></div>
+<div class="phrase"><span class="de">Ich möchte 200 Euro abheben.</span><span class="zh">我想取 200 欧元。</span></div>
+<div class="phrase"><span class="de">Könnten Sie mir bitte helfen?</span><span class="zh">您能帮我一下吗？（最礼貌的问法）</span></div>
+<div class="phrase"><span class="de">Könnten Sie das bitte wiederholen?</span><span class="zh">您能再说一遍吗？</span></div>
+<div class="phrase"><span class="de">Ich überweise die Miete jeden Monat.</span><span class="zh">我每个月转账付房租。</span></div>
+<div class="phrase"><span class="de">Wenn ich genug Geld habe, mache ich eine Reise.</span><span class="zh">如果我有足够的钱，我就去旅行。</span></div>
+<div class="phrase"><span class="de">Ich habe mein Konto überzogen.</span><span class="zh">我把账户透支了。</span></div>
+<div class="phrase"><span class="de">Zahlen Sie bar oder mit Karte?</span><span class="zh">您付现金还是刷卡？</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Bankangestellte:</span> Guten Tag! Was kann ich für Sie tun?</p>
+<p><span class="who">Nico:</span> Guten Tag. Ich möchte ein Girokonto eröffnen.</p>
+<p><span class="who">Bankangestellte:</span> Gerne. Haben Sie Ihren Ausweis dabei?</p>
+<p><span class="who">Nico:</span> Ja, hier ist er. Und hier ist das Formular.</p>
+<p><span class="who">Bankangestellte:</span> Danke. Das Konto ist kostenlos. Sie bekommen eine Karte und eine PIN.</p>
+<p><span class="who">Nico:</span> Kann ich auch Geld überweisen?</p>
+<p><span class="who">Bankangestellte:</span> Natürlich. Und am Geldautomaten können Sie Geld abheben.</p>
+<p><span class="who">Nico:</span> Könnten Sie mir den Automaten bitte zeigen?</p>
+<p><span class="who">Bankangestellte:</span> Sehr gerne. Kommen Sie bitte mit!</p>
+<div class="tipbox">练法：先演 Nico 把四件事说一遍（开户、出示证件、问转账、求人指路），再演银行职员回答。重点盯两个细节：abheben 说的时候前缀要在句尾（Ich hebe Geld ab），请求时用 Könnten Sie——这是德国办事场合的安全说法。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）大数字与金额：千位是点，小数是逗号</b></p>
+<p>德语数字的写法和英语正好反过来：<b class="hl">千位分隔符是点 .，小数点是逗号 ,</b>。1.250,50 € 千万别读成英文习惯。</p><table><tr><th>数字</th><th>Deutsch</th></tr><tr><td>100</td><td>(ein)hundert</td></tr><tr><td>1.000</td><td>(ein)tausend</td></tr><tr><td>10.000</td><td>zehntausend</td></tr><tr><td>100.000</td><td>(ein)hunderttausend</td></tr><tr><td>1.000.000</td><td>eine Million（名词，复数 Millionen）</td></tr></table><p>金额读法：<b class="hl">1.250,50 Euro</b> = eintausendzweihundertfünfzig Euro (und) fünfzig Cent。工资和账单常是四位数，先把 tausend 前后的两段拆开读就不乱。</p>
+</div>
+<div class="card">
+<p><b>2）银行三件事：eröffnen / abheben / überweisen</b></p>
+<table><tr><th>事情</th><th>动词</th><th>例句</th><th>注意</th></tr><tr><td>开户</td><td>ein Konto eröffnen</td><td>Ich möchte ein Girokonto <b>eröffnen</b>.</td><td>eröffnen 不可分</td></tr><tr><td>取钱</td><td>Geld abheben</td><td>Ich <b>hebe</b> 200 Euro <b>ab</b>.</td><td>可分动词，前缀 ab 跑句尾</td></tr><tr><td>存钱</td><td>Geld einzahlen</td><td>Ich <b>zahle</b> 100 Euro <b>ein</b>.</td><td>同样可分</td></tr><tr><td>转账</td><td>Geld überweisen</td><td>Ich <b>überweise</b> die Miete.</td><td>überweisen 不可分，别把 über 拆走</td></tr></table><p>账户分工：<b class="hl">Girokonto</b> 活期账户（工资、房租走它）、<b class="hl">Sparkonto</b> 储蓄账户（存钱）、<b class="hl">Basiskonto</b> 基础账户（人人有权开）。转账时账单上的 <b class="hl">Verwendungszweck</b>（用途说明，如 Rechnungsnummer）要原样填，财务才对得上账。</p>
+</div>
+<div class="card">
+<p><b>3）wenn 条件句：动词被挤到从句句尾</b></p>
+<p>wenn 引导的条件从句里，<b class="hl">变位动词去句尾</b>；主句照常动词第二位，所以主句的主语会被挤到动词后面：</p><table><tr><th>结构</th><th>例句</th></tr><tr><td>wenn 从句在前</td><td><b>Wenn</b> ich Geld <b>habe</b>, <b>kaufe</b> ich ein Auto. <span class="zh">（从句动词 habe 在尾，主句 kaufe 第二位，ich 跟在后面）</span></td></tr><tr><td>主句在前</td><td>Ich spare Geld, <b>wenn</b> ich kann. <span class="zh">（从句放后面，语序规则不变）</span></td></tr><tr><td>带情态动词</td><td>Wenn ich reich <b>wäre</b>… <span class="zh">先不学，A2 后半段再说；现在只用真实条件</span></td></tr></table><p>口诀：<b class="hl">wenn 一来，动词靠边站（站到从句最后）</b>。中文母语者最容易按陈述句语序说成 Wenn ich habe Geld，这是本课自测的重点。</p>
+</div>
+<div class="card">
+<p><b>4）礼貌请求三级台阶：Könnten Sie …?</b></p>
+<p>求人办事的礼貌程度分三级，办事场合默认用第三级：</p><table><tr><th>级别</th><th>说法</th><th>用在</th></tr><tr><td>直接</td><td>Hilf mir! / Helfen Sie mir!</td><td>熟人；对陌生人说像命令，慎用</td></tr><tr><td>普通</td><td>Kannst du mir helfen? / Können Sie mir helfen?</td><td>日常场合都可以</td></tr><tr><td>最礼貌</td><td><b class="hl">Könnten Sie</b> mir bitte helfen?</td><td>银行、办事处、第一次见面</td></tr></table><p>könnten 是 können 的虚拟式（Konjunktiv II），这里先当整块公式背：<b class="hl">Könnten Sie bitte + 动词原形（句尾）…?</b> 例：Könnten Sie mir bitte sagen, wo der Schalter ist? <span class="zh">（您能告诉我柜台在哪吗？）</span></p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a2/">去 A2 全量词表（1731 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>模拟一次完整的银行办事：开户 + 取钱 + 一句礼貌请求 + 一句条件句，照下面 5 句说（换成你自己的金额）：</p>
+<ul>
+<li>Guten Tag, ich möchte ein ______ eröffnen.</li>
+<li>Hier ist mein ______ und das Formular.</li>
+<li>Ich möchte ______ Euro abheben.</li>
+<li>Könnten Sie mir bitte ______ zeigen?</li>
+<li>Wenn ich genug Geld habe, ______ ich ______.</li>
+</ul>
+<p style="margin-top:10px">过关标准：金额 1.250,50 Euro 能一口气读对（千位点、小数逗号不读反）；eröffnen、abheben（前缀在句尾）、überweisen 三个动词不混；wenn 句里动词在从句句尾——四项全中才算过，错哪项回哪张语法卡。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a2-01.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a2-03.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 77, "2": 78, "3": 79, "4": 80, "5": 81, "6": 82, "7": 83, "8": 84, "9": 85, "10": 86, "11": 87, "12": 88, "13": 89, "14": 90, "15": 91, "16": 92, "17": 93, "18": 94, "19": 95, "20": 96, "21": 97, "22": 98, "23": 99, "24": 100, "25": 101, "26": 102, "27": 103, "28": 104, "29": 105, "30": 106, "31": 107, "32": 108, "33": 109, "34": 110, "35": 111, "36": 112, "37": 113, "38": 114, "39": 115, "40": 116, "41": 117, "42": 118, "43": 119, "44": 120, "45": 121, "46": 122, "47": 123, "48": 124, "49": 125, "50": 126, "51": 127, "52": 128, "53": 129, "54": 130, "55": 131, "56": 132, "57": 133, "58": 134, "59": 135, "60": 136, "61": 137, "62": 138, "63": 139, "64": 140, "65": 141, "66": 142, "67": 143, "68": 144, "69": 145, "70": 146, "71": 147, "72": 148, "73": 149, "74": 150, "75": 151, "76": 152};
+var ytPlayer=null,ytReady=false,pendingFolge=81;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:81,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["das Konto, die Konten", "帐户", "account"], ["das Girokonto, die Girokonten", "活期账户；往来账户", "current account"], ["das Sparkonto, die Sparkonten", "储蓄帐户", "savings account"], ["das Basiskonto, die Basiskonten", "基本账户", "basic account"], ["etwas eröffnen", "开设；开通", "to open sth (an account)"], ["der Kontoauszug, die Kontoauszüge", "账户明细", "bank statement"], ["der Kontostand, die Kontostände", "银行结余", "account balance"], ["der Kontoinhaber, die Kontoinhaber", "帐户持有人", "account holder"], ["etwas überweisen", "转帐", "to transfer sth"], ["die Überweisung, die Überweisungen", "转帐", "bank transfer"], ["etwas ein|zahlen", "存入", "to pay sth in; to deposit"], ["die Einzahlung, die Einzahlungen", "存钱", "deposit"], ["die Auszahlung, die Auszahlungen", "取款", "payout; withdrawal"], ["die Zahlung, die Zahlungen", "支付", "payment"], ["der Betrag, die Beträge", "金额", "amount"], ["das Bargeld (nur Sg.)", "现金", "cash"], ["bar", "现金的；用现金（支付）", "cash"], ["der Geldschein, die Geldscheine", "纸币", "banknote"], ["das Kleingeld (nur Sg.)", "散钱", "small change"], ["der Geldautomat, die Geldautomaten", "自动取款机", "ATM; cash machine"], ["der Bankautomat, die Bankautomaten", "银行自助服务机", "ATM"], ["die Geheimzahl, die Geheimzahlen", "密码", "PIN; secret number"], ["die PIN, die PINs", "PIN码（个人识别码）", "PIN; personal identification number"], ["die Kreditkarte, die Kreditkarten", "信用卡", "credit card"], ["der Kredit, die Kredite", "贷款", "loan; credit"], ["einen Kredit auf|nehmen", "贷款", "to take out a loan"], ["etwas überziehen", "透支", "to overdraw sth"], ["die Schulden (nur Pl.)", "债务", "debts"], ["(etwas) sparen", "节约；节省", "to save (sth)"], ["etwas verdienen", "赚得；挣得；应得", "to earn sth"], ["das Gehalt, die Gehälter", "收入；工资", "salary"], ["die Kosten (nur Pl.)", "费用", "costs"], ["kostenlos", "免费", "free of charge"], ["jemandem etwas leihen", "借给（某人）", "to lend sb sth"], ["wenn", "当；如果", "when; if"], ["der Schalter, die Schalter", "（服务）窗口；柜台", "counter; ticket office"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 金额 „1.250,50 Euro“ 正确的读法是？", "opts": ["eintausendzweiundfünfzig Euro", "eintausendzweihundertfünfzig Euro fünfzig", "zwölfhundert Euro fünf", "eins Komma zweihundertfünfzig Euro"], "a": 1}, {"q": "2. „Wenn ich Zeit ___, rufe ich dich an.“ 空格填：", "opts": ["habe ich", "hat", "haben", "habe"], "a": 3}, {"q": "3. 在取款机上「取 200 欧元」应该说：", "opts": ["Ich zahle 200 Euro ab.", "Ich hebe 200 Euro ab.", "Ich nehme 200 Euro aus.", "Ich öffne 200 Euro."], "a": 1}, {"q": "4. 在银行请工作人员帮忙，最礼貌的说法是？", "opts": ["Kannst du mir helfen?", "Sie müssen mir helfen!", "Hilf mir mal!", "Könnten Sie mir bitte helfen?"], "a": 3}, {"q": "5. „Ich möchte ein Girokonto ___.“ 空格填：", "opts": ["geöffnet", "eröffnet habe", "eröffnen", "öffnen zu"], "a": 2}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a2-02-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a2-02-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

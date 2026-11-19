@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A2 第7课 Hobbys und Vereine 爱好与社团 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A2 第7课 Hobbys und Vereine：合并 DW Folge 25-28。1）weil 从句：给理由，动词沉底">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+
+.toc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:14px 0 4px}
+.toc summary{cursor:pointer;font-weight:700;font-size:15px}
+.tocgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:6px;margin-top:10px}
+.tocgrid a{color:var(--ink);text-decoration:none;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 10px;font-size:13.5px}
+.tocgrid a.cur{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A2 · 第 7 课</div>
+<h1>第 7 课 · Hobbys und Vereine 爱好与社团</h1>
+<div class="de-title">DW A2 · Thema 7 · Folge 25-28 合并课</div>
+<div class="meta"><span>⏱ 约 35-45 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+<details class="toc"><summary>📚 课程目录 · A2 全部 19 课（点开可跳课）</summary><div class="tocgrid">
+<a href="a2-01.html">1 · Ankommen und Pläne 抵达与计划</a>
+<a href="a2-02.html">2 · Geld und Bank 金钱与银行</a>
+<a href="a2-03.html">3 · Familie und Generationen 家庭与代际</a>
+<a href="a2-04.html">4 · Zusammenleben 合住与邻里</a>
+<a href="a2-05.html">5 · Reisen 旅行</a>
+<a href="a2-06.html">6 · Freizeit 休闲时光</a>
+<a href="a2-07.html" class="cur">7 · Hobbys und Vereine 爱好与社团</a>
+<a href="a2-08.html">8 · Internet und Kommunikation 网络与沟通</a>
+<a href="a2-09.html">9 · Essen gehen 下馆子</a>
+<a href="a2-10.html">10 · Freundschaft 友谊</a>
+<a href="a2-11.html">11 · Wohnen und Umzug 住房与搬家</a>
+<a href="a2-12.html">12 · Früher und heute 今昔</a>
+<a href="a2-13.html">13 · Beruf und Bewerbung 职业与求职</a>
+<a href="a2-14.html">14 · Kultur in der Stadt 城市文化</a>
+<a href="a2-15.html">15 · Feste feiern 节日庆祝</a>
+<a href="a2-16.html">16 · Geschenke 礼物</a>
+<a href="a2-17.html">17 · Film 电影</a>
+<a href="a2-18.html">18 · Meinungen 表达观点</a>
+<a href="a2-19.html">19 · Erfindungen 发明与实用</a>
+</div></details>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>用 <b class="hl">sich interessieren für</b> 介绍自己的爱好和感兴趣的领域</li>
+<li>用 <b class="hl">weil</b> 从句给理由，变位动词稳稳放在句尾</li>
+<li>打听并报名参加一个 Verein：问活动、时间和会费</li>
+<li>表达担忧：Das macht mir Sorgen / Ich mache mir Sorgen um …</li>
+<li>表明立场：<b class="hl">Das ist mir wichtig</b> / Das ist mir egal</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 A2 Folge 25，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 25</span><span class="t">I enjoy it!<small>大家聊各自的爱好：什么让自己真正开心</small></span><button class="playbtn" data-folge="25" onclick="playFolge(25,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 26</span><span class="t">Im Verein<small>走进社团：足球、体操、动物保护——德国人的 Verein 文化</small></span><button class="playbtn" data-folge="26" onclick="playFolge(26,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 27</span><span class="t">Das macht mir Sorgen!<small>说出担忧：为朋友、家人和社团的事操心</small></span><button class="playbtn" data-folge="27" onclick="playFolge(27,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 28</span><span class="t">Das ist mir wichtig!<small>表明什么对自己最重要：爱好、朋友还是成绩</small></span><button class="playbtn" data-folge="28" onclick="playFolge(28,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Wofür interessierst du dich?</span><span class="zh">你对什么感兴趣？</span></div>
+<div class="phrase"><span class="de">Ich interessiere mich für Musik.</span><span class="zh">我对音乐感兴趣。</span></div>
+<div class="phrase"><span class="de">Ich freue mich auf das Spiel am Samstag.</span><span class="zh">我期待周六的比赛。</span></div>
+<div class="phrase"><span class="de">Ich freue mich über das Geschenk.</span><span class="zh">我为这份礼物感到高兴。</span></div>
+<div class="phrase"><span class="de">Ich bleibe im Verein, weil ich dort Freunde habe.</span><span class="zh">我留在社团，因为在那里我有朋友。</span></div>
+<div class="phrase"><span class="de">Er trainiert jeden Tag, weil er gewinnen möchte.</span><span class="zh">他每天训练，因为他想赢。</span></div>
+<div class="phrase"><span class="de">Das macht mir Sorgen.</span><span class="zh">这让我担心。</span></div>
+<div class="phrase"><span class="de">Ich mache mir Sorgen um meine Mutter.</span><span class="zh">我担心我妈妈。</span></div>
+<div class="phrase"><span class="de">Das ist mir sehr wichtig.</span><span class="zh">这对我很重要。</span></div>
+<div class="phrase"><span class="de">Das ist mir egal.</span><span class="zh">这对我无所谓。</span></div>
+<div class="phrase"><span class="de">Möchten Sie Mitglied werden?</span><span class="zh">您想成为会员吗？</span></div>
+<div class="phrase"><span class="de">Wie hoch ist der Beitrag?</span><span class="zh">会费是多少？</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Nico, wofür interessierst du dich eigentlich?</p>
+<p><span class="who">Nico:</span> Ich interessiere mich für Fußball. Ich spiele seit einem Jahr im Turnverein.</p>
+<p><span class="who">Emma:</span> Und warum bleibst du im Verein?</p>
+<p><span class="who">Nico:</span> Ich bleibe, weil ich dort meine Freunde treffe. Und ich freue mich auf jedes Spiel!</p>
+<p><span class="who">Emma:</span> Das freut mich! Ich mache mir nur Sorgen um Lisa. Sie trainiert jeden Tag.</p>
+<p><span class="who">Nico:</span> Ja, das macht mir auch Sorgen. Aber der Sport ist ihr sehr wichtig.</p>
+<p><span class="who">Emma:</span> Stimmt. Vielleicht sprechen wir morgen mit ihr.</p>
+<div class="tipbox">重点盯 weil 那句：Ich bleibe, weil ich dort meine Freunde treffe. —— treffe 被推到句尾。朗读时在 weil 前停顿半拍，再一口气把从句读完；然后把 Fußball 换成你自己的爱好、理由换成你自己的，各造两句 weil 句读出来。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）weil 从句：给理由，动词沉底</b></p>
+<p>weil 回答 Warum?（为什么），它把从句的<b class="hl">变位动词推到句尾</b>，主句语序不变，中间加逗号：</p><table><tr><th>主句</th><th>weil 从句</th></tr><tr><td>Ich bleibe im Verein,</td><td>weil ich dort meine Freunde <b>treffe</b>.</td></tr><tr><td>Er trainiert jeden Tag,</td><td>weil er gewinnen <b>möchte</b>. <span class="zh">情态动词时：原形 + 情态，情态在最后</span></td></tr><tr><td>Sie lernt Deutsch,</td><td>weil sie in München <b>studieren will</b>.</td></tr></table><p>自检口诀：读完 weil 从句，<b>最后一个词必须是变位动词</b>（或情态动词）。这和第 5 课的 als / wenn、第 8 课的 dass 是同一条「从句动词沉底」规则。</p>
+</div>
+<div class="card">
+<p><b>2）sich interessieren für + 宾格</b></p>
+<p>谈爱好先学这个反身动词：<b class="hl">sich interessieren für + 宾格</b>。</p><table><tr><th>人称</th><th>形式</th></tr><tr><td>ich</td><td>interessiere <b>mich</b> für Musik</td></tr><tr><td>du</td><td>interessierst <b>dich</b> für Sport</td></tr><tr><td>er / sie</td><td>interessiert <b>sich</b> für Tiere</td></tr><tr><td>wir / sie / Sie</td><td>interessieren <b>uns / sich</b> für …</td></tr></table><p>提问把 für 挂在疑问词上：<b class="hl">Wofür</b> interessierst du dich? 答：<b>Da</b>für interessiere ich mich auch. 介词 für 后面永远是宾格，别写成 dem。</p>
+</div>
+<div class="card">
+<p><b>3）sich freuen auf 还是 über？看时间</b></p>
+<p>freuen 有两个介词搭档，按<b class="hl">事情发生没有</b>来选：</p><table><tr><th>搭配</th><th>用在</th><th>例句</th></tr><tr><td>sich freuen <b>auf</b> + 宾格</td><td><b>将来</b>要发生的好事（期待）</td><td>Ich freue mich <b>auf</b> das Spiel am Samstag. <span class="zh">期待周六的比赛</span></td></tr><tr><td>sich freuen <b>über</b> + 宾格</td><td><b>已经</b>发生 / 正在拥有的事（高兴）</td><td>Sie freut sich <b>über</b> das Geschenk. <span class="zh">为（收到的）礼物高兴</span></td></tr></table><p>别人告诉你好消息时，先回一句：<b class="hl">Das freut mich!</b>（我真为你高兴！）——这是 über 的省略说法，日常超高频。</p>
+</div>
+<div class="card">
+<p><b>4）担忧与重视：mir 句型一组</b></p>
+<p>这组句子都用<b class="hl">三格 mir / dir</b>，把「感受」挂在人身上：</p><table><tr><th>句子</th><th>意思</th></tr><tr><td>Das <b>macht mir Sorgen</b>.</td><td>这让我担心。</td></tr><tr><td>Ich <b>mache mir Sorgen um</b> Lisa. <span class="zh">um + 宾格</span></td><td>我担心 Lisa。</td></tr><tr><td>Das ist <b>mir wichtig</b>.</td><td>这对我重要。</td></tr><tr><td>Das ist <b>mir egal</b>.</td><td>这对我无所谓。</td></tr><tr><td>Das interessiert <b>mich</b> nicht. <span class="zh">注意这里是宾格 mich</span></td><td>这我不感兴趣。</td></tr></table><p>对长辈或陌生人把 mir 换成 Ihnen：Ist das <b>Ihnen</b> wichtig? 礼貌版的担忧和重视都能直接套。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a2/">去 A2 全量词表（1731 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>做一次约 40 秒的自我介绍，主题是「我的爱好与社团」：说清你喜欢什么、在哪个社团、为什么留下来、什么对你最重要。</p>
+<ul>
+<li>Ich interessiere mich für ______.</li>
+<li>Ich bin Mitglied im ______ / Ich möchte Mitglied im ______ werden.</li>
+<li>Ich bleibe dabei, weil ______.</li>
+<li>Ich freue mich auf ______.</li>
+<li>______ ist mir sehr wichtig.</li>
+</ul>
+<p style="margin-top:10px">过关标准：weil 从句语序说对（变位动词在句尾）、sich interessieren 后面跟对 für + 宾格，这两处不错、5 句连说不卡，就算过关。weil 句里动词提前了，就回第一步语法卡再读三遍例句重录。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a2-06.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a2-08.html">下一课 →</a>
+</div>
+<script>
+var FIDX={"1": 77, "2": 78, "3": 79, "4": 80, "5": 81, "6": 82, "7": 83, "8": 84, "9": 85, "10": 86, "11": 87, "12": 88, "13": 89, "14": 90, "15": 91, "16": 92, "17": 93, "18": 94, "19": 95, "20": 96, "21": 97, "22": 98, "23": 99, "24": 100, "25": 101, "26": 102, "27": 103, "28": 104, "29": 105, "30": 106, "31": 107, "32": 108, "33": 109, "34": 110, "35": 111, "36": 112, "37": 113, "38": 114, "39": 115, "40": 116, "41": 117, "42": 118, "43": 119, "44": 120, "45": 121, "46": 122, "47": 123, "48": 124, "49": 125, "50": 126, "51": 127, "52": 128, "53": 129, "54": 130, "55": 131, "56": 132, "57": 133, "58": 134, "59": 135, "60": 136, "61": 137, "62": 138, "63": 139, "64": 140, "65": 141, "66": 142, "67": 143, "68": 144, "69": 145, "70": 146, "71": 147, "72": 148, "73": 149, "74": 150, "75": 151, "76": 152};
+var ytPlayer=null,ytReady=false,pendingFolge=101;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:101,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){ n=FIDX[n]||n;
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["der Verein, die Vereine", "俱乐部；协会", "club; association"], ["der Turnverein, die Turnvereine", "体操协会", "gymnastics club"], ["der Schachclub, die Schachclubs", "棋社", "chess club"], ["der Tierschutzverein, die Tierschutzvereine", "动物保护协会", "animal protection society"], ["der Club, die Clubs", "舞厅", "club"], ["das Mitglied, die Mitglieder", "成员", "member"], ["die Mitgliedschaft, die Mitgliedschaften", "会员；会员资格", "membership"], ["das Interesse, die Interessen", "兴趣", "interest"], ["Interesse (an etwas) haben", "（对某事物）感兴趣", "to be interested in (sth)"], ["sich für etwas/jemanden interessieren", "感兴趣", "to be interested in"], ["Wofür interessierst du dich?", "你对什么感兴趣？", "What are you interested in?"], ["Es interessiert mich, ...", "我感兴趣的是…", "I'm interested in ..."], ["sich auf etwas/jemanden freuen", "期待（某人/某事）", "to look forward to something/somebody"], ["sich über etwas freuen", "（为某事）感到高兴", "to be happy about something"], ["sich freuen", "感到开心", "to be glad; to look forward to"], ["Das freut mich sehr.", "我很高兴。", "I'm very pleased."], ["die Freude, die Freuden", "喜悦；欢乐", "joy"], ["die Sorge, die Sorgen", "担忧；忧虑", "worry; concern"], ["sich (um jemanden/etwas) Sorgen machen", "感到担忧", "to worry"], ["für etwas sorgen", "负责", "to take care of; to see to something"], ["die Angst, die Ängste", "恐惧；害怕", "fear"], ["Angst haben", "害怕；畏惧", "to be afraid"], ["freiwillig", "自愿的", "voluntary"], ["sich engagieren", "投身于…；致力于…", "to get involved"], ["die Gruppe, die Gruppen", "小组；班", "group"], ["die Freundschaft, die Freundschaften", "友谊；友情", "friendship"], ["Freundschaft schließen", "交朋友；建立友谊", "to make friends; to form a friendship"], ["etwas sammeln", "收集", "to collect something"], ["(etwas) malen", "画；画图；绘画", "to paint"], ["die Malerei, die Malereien", "绘画", "painting"], ["das Klavier, die Klaviere", "钢琴", "piano"], ["der Gewinner, die Gewinner", "得奖者", "winner"], ["der Gewinn, die Gewinne", "盈利；利润", "profit"], ["die Auszeichnung, die Auszeichnungen", "奖项；荣誉；奖赏", "award; distinction"], ["sich an|melden", "报名；登记", "to register; to sign up"], ["die Anmeldung, die Anmeldungen", "注册；登记", "registration"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Ich lerne Deutsch, weil ich in Berlin ___.“（在柏林工作+想，weil 从句动词沉底）", "opts": ["möchten arbeiten", "möchte arbeiten", "arbeite möchte", "arbeiten möchte"], "a": 3}, {"q": "2. „Ich interessiere mich ___ Fotografie.“ 空格填：", "opts": ["für", "auf", "über", "an"], "a": 0}, {"q": "3. „Sie freut sich ___ das Geschenk von gestern.“（礼物已经收到）", "opts": ["an", "auf", "für", "über"], "a": 3}, {"q": "4. „Das ___ mir Sorgen.“ 空格填：", "opts": ["machst", "machen", "gemacht", "macht"], "a": 3}, {"q": "5. „Ich mache mir Sorgen ___ meinen Bruder.“ 空格填：", "opts": ["um", "über", "für", "auf"], "a": 0}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a2-07-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a2-07-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>
