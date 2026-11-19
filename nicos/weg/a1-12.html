@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第12课 Lebensmittel 食品购物 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第12课 Lebensmittel：合并 DW Folge 49-52。1）计量单位后面：名词「裸奔」，不加复数、不加冠词">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 12 课</div>
+<h1>第 12 课 · Lebensmittel 食品购物</h1>
+<div class="de-title">DW A1 · Thema 12 · Folge 49-52 合并课</div>
+<div class="meta"><span>⏱ 约 35-40 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>在市场和超市按重量买东西：<b class="hl">ein Kilo / 500 Gramm / ein Liter</b></li>
+<li>听懂店员的开场白并接话：<b class="hl">Was darf es sein?</b></li>
+<li>用 <b class="hl">Ich hätte gern …</b> 礼貌地说要买什么、要多少</li>
+<li>分清 <b class="hl">wie viel</b>（不可数）和 <b class="hl">wie viele</b>（可数）</li>
+<li>问总价、确认结账：Wie viel macht das? / Das ist alles.</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 49，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 49</span><span class="t">Mengen und Preise<small>在市场买菜：说数量、问价格——ein Kilo、500 Gramm 登场</small></span><button class="playbtn" data-folge="49" onclick="playFolge(49,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 50</span><span class="t">Was darf es sein?<small>柜台点单：店员一句 Was darf es sein? 打开所有食品店对话</small></span><button class="playbtn" data-folge="50" onclick="playFolge(50,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 51</span><span class="t">Sonst noch was?<small>店员追问「还要别的吗」，你答 Das ist alles 收尾结账</small></span><button class="playbtn" data-folge="51" onclick="playFolge(51,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 52</span><span class="t">Wie viel Mehl?<small>按食谱买面粉等配料：wie viel + 不可数名词的问法</small></span><button class="playbtn" data-folge="52" onclick="playFolge(52,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Was darf es sein?</span><span class="zh">您要点什么？（店员开场白）</span></div>
+<div class="phrase"><span class="de">Ich hätte gern ein Kilo Tomaten.</span><span class="zh">我想要一公斤番茄。</span></div>
+<div class="phrase"><span class="de">500 Gramm Käse, bitte.</span><span class="zh">请给我 500 克奶酪。</span></div>
+<div class="phrase"><span class="de">Wie viel Mehl brauchen Sie?</span><span class="zh">您需要多少面粉？</span></div>
+<div class="phrase"><span class="de">Ich brauche zwei Liter Milch.</span><span class="zh">我需要两升牛奶。</span></div>
+<div class="phrase"><span class="de">Wie viele Eier sind in der Packung?</span><span class="zh">一盒里有几个鸡蛋？</span></div>
+<div class="phrase"><span class="de">Sonst noch was?</span><span class="zh">还要别的吗？</span></div>
+<div class="phrase"><span class="de">Noch eine Flasche Wasser, bitte.</span><span class="zh">再来一瓶水，谢谢。</span></div>
+<div class="phrase"><span class="de">Das ist alles, danke.</span><span class="zh">就这些了，谢谢。</span></div>
+<div class="phrase"><span class="de">Wie viel macht das?</span><span class="zh">一共多少钱？</span></div>
+<div class="phrase"><span class="de">Das macht 7 Euro 50.</span><span class="zh">一共 7 欧元 50 分。</span></div>
+<div class="phrase"><span class="de">Haben Sie eine Tüte?</span><span class="zh">您有袋子吗？</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Verkäuferin:</span> Guten Tag! Was darf es sein?</p>
+<p><span class="who">Kunde:</span> Ich hätte gern ein Kilo Kartoffeln und 500 Gramm Käse.</p>
+<p><span class="who">Verkäuferin:</span> Sonst noch was?</p>
+<p><span class="who">Kunde:</span> Ja, ich brauche noch Mehl. Wie viel kostet ein Kilo Mehl?</p>
+<p><span class="who">Verkäuferin:</span> Ein Euro zwanzig. Sonst noch etwas?</p>
+<p><span class="who">Kunde:</span> Nein, das ist alles. Wie viel macht das?</p>
+<p><span class="who">Verkäuferin:</span> Das macht zusammen 8 Euro 60.</p>
+<p><span class="who">Kunde:</span> Hier, bitte. Vielen Dank!</p>
+<div class="tipbox">练法：先演顾客把购物单读顺（数量+单位+食物的顺序不能乱），再演店员，只记三句万能台词：Was darf es sein? / Sonst noch was? / Das macht …。注：hätte gern 是 Konjunktiv II 的礼貌说法，B1 才系统学，现在把 Ich hätte gern … 当整块用，比 möchte 还要再礼貌一档。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）计量单位后面：名词「裸奔」，不加复数、不加冠词</b></p>
+<p>德语说数量有个省事规则：<b class="hl">数字 + 单位 + 名词</b>，单位后面的名词什么都不加：ein Kilo Tomaten（一公斤番茄，Tomaten 本身是复数所以没变化）、500 Gramm Käse（500 克奶酪）、zwei Liter Milch（两升牛奶）、eine Flasche Wasser（一瓶水）。单位词本身在数字后也常不变形：zwei Kilo、500 Gramm。</p><table><tr><th>单位</th><th>中文</th><th>例句</th></tr><tr><td>das Kilo</td><td>公斤</td><td>ein Kilo Kartoffeln</td></tr><tr><td>das Gramm</td><td>克</td><td>500 Gramm Fleisch</td></tr><tr><td>der Liter</td><td>升</td><td>zwei Liter Milch</td></tr><tr><td>die Flasche / die Packung / die Dose</td><td>瓶 / 包·盒 / 罐</td><td>eine Packung Eier</td></tr><tr><td>das Stück</td><td>块、个</td><td>ein Stück Käse</td></tr></table><p>口语里 Kilo 前面常把 ein 省掉：<b class="hl">Kilo Tomaten, bitte!</b> 店员听得懂。</p>
+</div>
+<div class="card">
+<p><b>2）wie viel 还是 wie viele：看名词能不能数</b></p>
+<p>问「多少」分两路：名词<b class="hl">不可数</b>（面粉、水、钱、时间）用 <b class="hl">wie viel</b>；名词<b class="hl">可数</b>（鸡蛋、苹果、瓶子）用 <b class="hl">wie viele</b>。</p><table><tr><th>问法</th><th>例句</th><th>中文</th></tr><tr><td>wie viel + 不可数</td><td>Wie viel Mehl brauchst du?</td><td>你需要多少面粉？</td></tr><tr><td>wie viel + Geld/Preis</td><td>Wie viel kostet das? / Wie viel macht das?</td><td>这个多少钱？/ 一共多少钱？</td></tr><tr><td>wie viele + 可数复数</td><td>Wie viele Eier brauchst du?</td><td>你需要几个鸡蛋？</td></tr></table><p>拿不准就想：能一个个数出来的（Eier、Äpfel、Flaschen）用 wie viele，其余全用 wie viel，错了对方也懂。</p>
+</div>
+<div class="card">
+<p><b>3）brauchen + 宾格：说「我需要……」</b></p>
+<p><b class="hl">brauchen</b>（需要）是规则动词：ich brauche、du brauchst、er/sie braucht、wir brauchen。后面接<b class="hl">宾格</b>：阳性名词的 ein 变 einen、der 变 den：Ich brauche <b class="hl">einen</b> Liter Milch.（严格说 Liter 是单位，den 的痕迹在单位上）阴性和中性不变：Ich brauche eine Flasche Wasser. / ein Kilo Mehl. 否定用 kein：Ich brauche kein Brot mehr.（我不需要面包了）购物清单句型就是它：<b class="hl">Ich brauche noch …</b>（我还要……）</p>
+</div>
+<div class="card">
+<p><b>4）食品店全流程礼貌句型：从进门到结账背一套</b></p>
+<p>德国食品店、市场摊位、肉铺面包房，对话流程几乎固定，整套背下来哪家店都能用：</p><table><tr><th>环节</th><th>店员</th><th>你</th></tr><tr><td>开场</td><td>Was darf es sein?</td><td>Ich hätte gern …</td></tr><tr><td>追问</td><td>Sonst noch was?</td><td>Noch … , bitte. / Das ist alles.</td></tr><tr><td>问价</td><td>—</td><td>Wie viel kostet …? / Wie viel macht das?</td></tr><tr><td>结账</td><td>Das macht 8 Euro 60.</td><td>Hier, bitte. Danke schön!</td></tr></table><p>价格读法：8,60 € 读 <b class="hl">acht Euro sechzig</b>，小数点在德语里是逗号，价签上写 0,99 € 就是 99 Cent。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>不看稿，在市场摊位前连着说完你的采购单（换成你自己要买的东西和数量）：</p>
+<ul>
+<li>Guten Tag! Ich hätte gern ______.</li>
+<li>Ich brauche ______ Kilo ______.</li>
+<li>Und ______ Gramm ______, bitte.</li>
+<li>Wie viel kostet ______?</li>
+<li>Das ist alles. Wie viel macht das?</li>
+</ul>
+<p style="margin-top:10px">5 句连着说完、单位后面没乱加复数，这课就算过了；wie viel/wie viele 老混就回第二张语法卡，用「能不能一个个数」自检一遍。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a1-11.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a1-13.html">下一课 →</a>
+</div>
+<script>
+var ytPlayer=null,ytReady=false,pendingFolge=49;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:49,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["der Supermarkt, die Supermärkte", "超市", "supermarket"], ["der Markt, die Märkte", "市场；集市", "market"], ["das Geschäft, die Geschäfte", "店；商店", "shop; store"], ["die Bäckerei, die Bäckereien", "面包店", "bakery"], ["die Metzgerei, die Metzgereien", "肉铺", "butcher's shop"], ["etwas kaufen", "购买；买", "to buy something"], ["etwas ein|kaufen", "采购；购买", "to shop; to buy"], ["etwas/jemanden brauchen", "需要(某人/某物)", "to need"], ["der Preis, die Preise", "价格", "price"], ["etwas kosten", "花费；值（多少钱）", "to cost (something)"], ["Wie viel kostet ...?", "…要多少钱？", "How much does... cost?"], ["der Euro, die Euros (nach Zahl: Euro)", "欧元", "euro"], ["der Cent, die Cents (nach Zahl: Cent)", "欧分", "cent"], ["das Kilo, die Kilos (nach Zahl: Kilo)", "公斤", "kilo"], ["das Gramm, die Gramme (nach Zahl: Gramm)", "克", "gram"], ["der Liter, die Liter", "升", "liter"], ["die Flasche, die Flaschen", "瓶；瓶子", "bottle"], ["die Packung, die Packungen", "包；盒", "pack"], ["die Dose, die Dosen", "罐；罐头；罐子", "can"], ["das Stück, die Stücke (nach Zahl oft: Stück)", "块；片", "piece"], ["die Tüte, die Tüten", "袋子", "bag"], ["Sonst noch etwas?", "还要什么？", "Anything else?"], ["Das ist alles.", "就这样。；这样就够了。", "That's all."], ["Was darf es sein?", "要些什么呢？", "What would you like?"], ["Ich hätte gerne …", "我想要…", "I'd like ..."], ["Wie viel Euro macht das?", "这要多少欧元？；总共多少欧元？", "How much is that in euros?"], ["das Brot, die Brote", "面包", "bread"], ["die Milch (nur Sg.)", "牛奶", "milk"], ["der Käse (nur Sg.)", "奶酪", "cheese"], ["die Butter (nur Sg.)", "黄油", "butter"], ["das Ei, die Eier", "蛋；鸡蛋", "egg"], ["das Mehl (nur Sg.)", "面粉", "flour"], ["die Kartoffel, die Kartoffeln", "土豆；马铃薯", "potato"], ["die Tomate, die Tomaten", "番茄", "tomato"], ["das Fleisch (nur Sg.)", "肉；肉类", "meat"], ["der Fisch, die Fische", "鱼", "fish"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 「500 克奶酪」正确的是？", "opts": ["500 Gramm Käse", "500 Gramm einen Käse", "500 Gramme Käse", "500 Gramm Käses"], "a": 0}, {"q": "2. 店员问 „Sonst noch was?“ 你不想再买了，答：", "opts": ["Das ist alles, danke.", "Ich hätte gern.", "Wie viel?", "Noch was."], "a": 0}, {"q": "3. „Wie ___ Eier brauchen Sie?“ 鸡蛋可数，填：", "opts": ["viel", "vieler", "viele", "viels"], "a": 2}, {"q": "4. „Ich brauche ___ Liter Milch.“ 阳性宾格填：", "opts": ["einem", "ein", "einen", "eine"], "a": 2}, {"q": "5. 价签写 3,99 €，店员会说：", "opts": ["neunundneunzig Euro drei", "drei Euro neunundneunzig", "dreiundneunzig Euro", "drei Cent neunundneunzig"], "a": 1}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-12-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-12-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

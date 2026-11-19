@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第2课 Kontaktinformationen 联系方式 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第2课 Kontaktinformationen：合并 DW Folge 9-12。1）数字 0-100：先背 0-12 和整十，中间的自己拼">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 2 课</div>
+<h1>第 2 课 · Kontaktinformationen 联系方式</h1>
+<div class="de-title">DW A1 · Thema 2 · Folge 9-12 合并课</div>
+<div class="meta"><span>⏱ 约 30-40 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>一口气数出 0-100，并听懂别人报的数字</li>
+<li>交换联系方式：问并说出自己的 <b class="hl">Telefonnummer</b> 和 <b class="hl">Adresse</b></li>
+<li>在正式场合用 Sie 式回答个人信息问题</li>
+<li>看懂德国地址与 <b class="hl">Postleitzahl（邮编）</b> 的顺序</li>
+<li>在办事处听懂登记问题，并能请对方慢一点、再说一遍</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 9，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 9</span><span class="t">Zahlen von 1 bis 100<small>从 0 数到 100：年龄、价格、门牌号都靠它</small></span><button class="playbtn" data-folge="9" onclick="playFolge(9,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 10</span><span class="t">Wichtige Nummern<small>电话号码怎么念：一位一位报，中间还要停顿</small></span><button class="playbtn" data-folge="10" onclick="playFolge(10,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 11</span><span class="t">Adressen<small>德国地址的写法：街道 + 门牌号 + 邮编 + 城市</small></span><button class="playbtn" data-folge="11" onclick="playFolge(11,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 12</span><span class="t">Auf dem Amt<small>在办事处填表登记：姓名、地址、电话一项项被问到</small></span><button class="playbtn" data-folge="12" onclick="playFolge(12,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Wie ist deine Telefonnummer?</span><span class="zh">你的电话号码是多少？（熟人）</span></div>
+<div class="phrase"><span class="de">Wie ist Ihre Telefonnummer?</span><span class="zh">您的电话号码是多少？（正式）</span></div>
+<div class="phrase"><span class="de">Meine Telefonnummer ist 0151 23456789.</span><span class="zh">我的电话号码是 0151 23456789。</span></div>
+<div class="phrase"><span class="de">Wie ist deine Adresse?</span><span class="zh">你的地址是什么？</span></div>
+<div class="phrase"><span class="de">Ich wohne in der Adalbert-Stifter-Straße 12.</span><span class="zh">我住在 Adalbert-Stifter 大街 12 号。</span></div>
+<div class="phrase"><span class="de">Die Postleitzahl ist 10115, Berlin.</span><span class="zh">邮编是 10115，柏林。</span></div>
+<div class="phrase"><span class="de">Wie alt sind Sie?</span><span class="zh">您多大了？</span></div>
+<div class="phrase"><span class="de">Ich bin 23 Jahre alt.</span><span class="zh">我 23 岁。</span></div>
+<div class="phrase"><span class="de">Wo wohnen Sie?</span><span class="zh">您住在哪儿？</span></div>
+<div class="phrase"><span class="de">Ich wohne in Berlin.</span><span class="zh">我住在柏林。</span></div>
+<div class="phrase"><span class="de">Einen Moment bitte.</span><span class="zh">请稍等一下。</span></div>
+<div class="phrase"><span class="de">Noch einmal bitte, langsam.</span><span class="zh">请再说一遍，慢一点。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Beamtin:</span> Guten Tag! Ihren Namen bitte.</p>
+<p><span class="who">Nico:</span> Guten Tag. Ich heiße Nico González.</p>
+<p><span class="who">Beamtin:</span> Wie ist Ihre Adresse?</p>
+<p><span class="who">Nico:</span> Adalbert-Stifter-Straße 12, 10115 Berlin.</p>
+<p><span class="who">Beamtin:</span> Und Ihre Telefonnummer?</p>
+<p><span class="who">Nico:</span> Meine Telefonnummer ist 0151 23456789.</p>
+<p><span class="who">Beamtin:</span> Wie alt sind Sie?</p>
+<p><span class="who">Nico:</span> Ich bin 23 Jahre alt.</p>
+<p><span class="who">Beamtin:</span> Bitte unterschreiben Sie hier.</p>
+<div class="tipbox">练法：先演 Beamtin（办事员）提问、再换成 Nico 回答；然后把地址、电话、年龄全换成你自己的信息再走一遍。注意对办事员全程用 Sie——这正是第 1 课 du / Sie 区别的实战。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）数字 0-100：先背 0-12 和整十，中间的自己拼</b></p>
+<p>德语数字分三段记：0-12 逐个背，13-19 是「个位 + zehn」，整十单独背；21-99 全部按 <b class="hl">个位 + und + 十位</b> 拼装，顺序和中文正好相反：21 是 einundzwanzig（先说一，再说二十）。</p><table><tr><th>数字</th><th>Deutsch</th><th>提示</th></tr><tr><td>0</td><td>null</td><td>电话号码开头常听到</td></tr><tr><td>1</td><td>eins</td><td>单独数是 eins，组词里变 ein</td></tr><tr><td>2</td><td>zwei</td><td>怕和 drei 混，口语也说 zwo</td></tr><tr><td>6</td><td>sechs</td><td>16 是 sechzehn，s 掉了</td></tr><tr><td>7</td><td>sieben</td><td>17 是 siebzehn，en 掉了</td></tr><tr><td>11 / 12</td><td>elf / zwölf</td><td>不规则，只能硬背</td></tr><tr><td>20 / 30</td><td>zwanzig / dreißig</td><td>30 结尾是 -ßig，不是 -zig</td></tr><tr><td>21</td><td>einundzwanzig</td><td>个位 + und + 十位</td></tr><tr><td>99</td><td>neunundneunzig</td><td>同理拼出来</td></tr></table>
+</div>
+<div class="card">
+<p><b>2）电话号码：一位一位念，分组停顿</b></p>
+<p>德国人报电话号码是 <b class="hl">逐位念数字</b>：0151 读 null eins fünf eins，中间按号码本身的分组停顿，听的人直接写数字，不要在心里翻译。手机号常以 0151、0176 这类号段开头。问法只有一个句型：<b class="hl">Wie ist deine / Ihre Telefonnummer?</b> 回答：Meine Telefonnummer ist … E-Mail 同理逐个字母拼读，@ 读 at，点读 Punkt。</p>
+</div>
+<div class="card">
+<p><b>3）地址顺序：街道 → 门牌号 → 邮编 → 城市</b></p>
+<p>德国地址的排列和中文的大顺序（从大到小）不同，也和英语不同，最容易错的是 <b class="hl">门牌号写在街名后面</b>、<b class="hl">邮编写在城市前面</b>：</p><table><tr><th>部分</th><th>例子</th><th>说明</th></tr><tr><td>街道</td><td>Adalbert-Stifter-Straße</td><td>Straße 可缩写为 Str.</td></tr><tr><td>门牌号</td><td>12</td><td>紧跟街名之后</td></tr><tr><td>邮编 + 城市</td><td>10115 Berlin</td><td>邮编 5 位，在城市前面</td></tr></table><p>说住址：Ich wohne in der Adalbert-Stifter-Straße 12. 说城市只用 in：Ich wohne <b class="hl">in</b> Berlin.</p>
+</div>
+<div class="card">
+<p><b>4）在 Amt 用 Sie：个人信息问答模板</b></p>
+<p>办事处、警察局这类场合一律 Sie 式，问题和回答都是固定搭配，整组背下来：</p><table><tr><th>问题（Sie）</th><th>回答</th></tr><tr><td>Wie heißen Sie?</td><td>Ich heiße …</td></tr><tr><td>Wo wohnen Sie?</td><td>Ich wohne in …</td></tr><tr><td>Wie ist Ihre Adresse?</td><td>Meine Adresse ist …</td></tr><tr><td>Wie ist Ihre Telefonnummer?</td><td>Meine Telefonnummer ist …</td></tr><tr><td>Wie alt sind Sie?</td><td>Ich bin … Jahre alt.</td></tr></table><p>Ihre 是 Sie 的「您的」：Ihre Adresse、Ihre Telefonnummer（阴性名词前用 Ihre）。听不懂时的三件套：<b class="hl">Noch einmal bitte. / Langsam bitte. / Wie bitte?</b></p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>把自己的「联系方式名片」用德语说完整，录一段 20 秒语音：</p>
+<ul>
+<li>Guten Tag, ich heiße ______.</li>
+<li>Ich wohne in der ______-Straße ______.</li>
+<li>Die Postleitzahl ist ______, ______（城市）.</li>
+<li>Meine Telefonnummer ist ______.</li>
+<li>Ich bin ______ Jahre alt.</li>
+</ul>
+<p style="margin-top:10px">电话号码能一位一位流利报出、地址顺序不说反，这课就过关；卡在数字就回第一步把 0-100 再念两遍。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a1-01.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a1-03.html">下一课 →</a>
+</div>
+<script>
+var ytPlayer=null,ytReady=false,pendingFolge=9;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:9,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["null", "零", "zero"], ["eins", "一", "one"], ["zwei", "二", "two"], ["drei", "三", "three"], ["vier", "四", "four"], ["fünf", "五", "five"], ["sechs", "六", "six"], ["sieben", "七", "seven"], ["acht", "八", "eight"], ["neun", "九", "nine"], ["zehn", "十", "ten"], ["elf", "十一", "eleven"], ["zwölf", "十二", "twelve"], ["zwanzig", "二十", "twenty"], ["dreißig", "三十", "thirty"], ["die Zahl, die Zahlen", "数字", "number"], ["die Telefonnummer, die Telefonnummern", "电话号码", "phone number"], ["Meine Telefonnummer ist ...", "我的电话号码是…", "My phone number is ..."], ["Wie ist Ihre Telefonnummer?", "您的电话号码几号？", "What is your phone number? (formal)"], ["die Adresse, die Adressen", "地址", "address"], ["Wie ist Ihre Adresse?", "您的地址是什么？", "What is your address? (formal)"], ["die Straße, die Straßen", "街；街道", "street"], ["die Hausnummer, die Hausnummern", "门牌号", "house number"], ["die Postleitzahl, die Postleitzahlen", "邮政编码", "postal code"], ["der Wohnort, die Wohnorte", "居住地", "place of residence"], ["die Stadt, die Städte", "城市", "city"], ["wohnen", "居住", "to live (reside)"], ["das Amt, die Ämter", "局；机关；办事处", "office; authority"], ["der Pass, die Pässe", "护照", "passport"], ["die Passnummer, die Passnummern", "护照号码", "passport number"], ["der Familienname, die Familiennamen", "姓氏", "family name; surname"], ["die E-Mail, die E-Mails", "电子邮件", "email"], ["das Handy, die Handys", "手机", "mobile phone"], ["etwas unterschreiben", "签名", "to sign"], ["Einen Moment bitte.", "请稍等一下。", "One moment, please."], ["Noch einmal bitte.", "请再说一次。", "Once again, please."]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „einundzwanzig“ 是哪个数字？", "opts": ["21", "22", "12", "201"], "a": 0}, {"q": "2. 德国地址 „10115 Berlin“ 里的 10115 是什么？", "opts": ["电话号码", "邮政编码", "房间号", "门牌号"], "a": 1}, {"q": "3. 在办事处问对方电话号码，正确的是？", "opts": ["Wo ist die Telefonnummer?", "Wie ist deine Telefonnummer?", "Was ist Telefon?", "Wie ist Ihre Telefonnummer?"], "a": 3}, {"q": "4. „Ich wohne ___ Berlin.“ 空格填：", "opts": ["in", "aus", "am", "zu"], "a": 0}, {"q": "5. 没听清时请对方再说一遍，应该说：", "opts": ["Kein Problem.", "Danke schön.", "Einen Moment bitte.", "Noch einmal bitte."], "a": 3}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-02-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-02-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

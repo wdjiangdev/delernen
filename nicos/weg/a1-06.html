@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第6课 Wohnen 住房 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第6课 Wohnen：合并 DW Folge 25-28。1）房间和家具：名词永远连冠词一起背">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 6 课</div>
+<h1>第 6 课 · Wohnen 住房</h1>
+<div class="de-title">DW A1 · Thema 6 · Folge 25-28 合并课</div>
+<div class="meta"><span>⏱ 约 30-40 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>介绍自己住在哪里、和谁一起住：<b class="hl">Ich wohne in einer WG.</b></li>
+<li>说出一套公寓里所有房间和主要家具的名称</li>
+<li>用 <b class="hl">Es gibt …</b> 介绍一个房间里有什么</li>
+<li>用 <b class="hl">in / an / auf + 三格</b> 说清东西放在哪里</li>
+<li>用物主冠词 <b class="hl">unser</b> 介绍「我们的房子、我们的厨房」</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 25，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 25</span><span class="t">So wohne ich<small>Nico 介绍自己住在哪里、和谁一起住、住的是公寓还是合租</small></span><button class="playbtn" data-folge="25" onclick="playFolge(25,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 26</span><span class="t">Meine Wohnung<small>一间间看 Nico 的公寓：客厅、卧室、厨房、浴室逐个学</small></span><button class="playbtn" data-folge="26" onclick="playFolge(26,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 27</span><span class="t">Sofa, Sessel und Tisch<small>家具大点名，还要说清每件家具摆在哪个位置</small></span><button class="playbtn" data-folge="27" onclick="playFolge(27,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 28</span><span class="t">Unser Haus<small>参观一栋带花园的房子，用 unser 把全课的房间和家具串起来</small></span><button class="playbtn" data-folge="28" onclick="playFolge(28,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Ich wohne in Berlin.</span><span class="zh">我住在柏林。</span></div>
+<div class="phrase"><span class="de">Ich wohne allein.</span><span class="zh">我一个人住。</span></div>
+<div class="phrase"><span class="de">Ich wohne in einer WG.</span><span class="zh">我住合租公寓。</span></div>
+<div class="phrase"><span class="de">Das ist unsere Wohnung.</span><span class="zh">这是我们的公寓。</span></div>
+<div class="phrase"><span class="de">Die Wohnung hat drei Zimmer.</span><span class="zh">这套公寓有三个房间。</span></div>
+<div class="phrase"><span class="de">Es gibt ein Wohnzimmer, eine Küche und ein Bad.</span><span class="zh">有一间客厅、一间厨房和一间浴室。</span></div>
+<div class="phrase"><span class="de">Mein Zimmer ist klein, aber gemütlich.</span><span class="zh">我的房间小，但是很温馨。</span></div>
+<div class="phrase"><span class="de">Das Sofa steht im Wohnzimmer.</span><span class="zh">沙发在客厅里。</span></div>
+<div class="phrase"><span class="de">Der Tisch steht am Fenster.</span><span class="zh">桌子在窗户旁边。</span></div>
+<div class="phrase"><span class="de">Das Bett steht an der Wand.</span><span class="zh">床靠墙放着。</span></div>
+<div class="phrase"><span class="de">Die Lampe steht auf dem Schreibtisch.</span><span class="zh">台灯在书桌上。</span></div>
+<div class="phrase"><span class="de">Wir wohnen in der ersten Etage.</span><span class="zh">我们住在二楼（德国口径的一层）。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Komm rein, Nico! Das ist unser Haus.</p>
+<p><span class="who">Nico:</span> Wow, groß! Wohnst du hier allein?</p>
+<p><span class="who">Emma:</span> Nein, ich wohne hier mit meinen Eltern. Das ist das Wohnzimmer.</p>
+<p><span class="who">Nico:</span> Schön! Das Sofa ist neu, oder?</p>
+<p><span class="who">Emma:</span> Ja. Und hier ist die Küche. Es gibt einen Kühlschrank und einen Herd.</p>
+<p><span class="who">Nico:</span> Und wo ist dein Zimmer?</p>
+<p><span class="who">Emma:</span> Mein Zimmer ist oben. Es gibt ein Bett, einen Schreibtisch und ein Regal.</p>
+<p><span class="who">Nico:</span> Und das Bad?</p>
+<p><span class="who">Emma:</span> Das Bad ist daneben. Komm, ich zeige dir alles!</p>
+<div class="tipbox">练法：先自己读一遍，再把 unser Haus 换成你自己的住处读第二遍。注：Komm rein!（进来吧！）和 ich zeige dir（我带你看看）先整句记下，dir 的用法后面课里会系统讲。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）房间和家具：名词永远连冠词一起背</b></p>
+<p>介绍住处先过名词关。房间：</p><table><tr><th>德语</th><th>中文</th><th>德语</th><th>中文</th></tr><tr><td>das Wohnzimmer</td><td>客厅</td><td>das Schlafzimmer</td><td>卧室</td></tr><tr><td>das Kinderzimmer</td><td>儿童房</td><td>die Küche</td><td>厨房</td></tr><tr><td>das Bad</td><td>浴室</td><td>der Flur</td><td>走廊</td></tr><tr><td>der Balkon</td><td>阳台</td><td>der Keller</td><td>地下室</td></tr></table><p>家具：<b class="hl">das Sofa</b> 沙发、<b class="hl">der Sessel</b> 扶手椅、<b class="hl">der Tisch</b> 桌子、<b class="hl">der Stuhl</b> 椅子、<b class="hl">das Bett</b> 床、<b class="hl">der Schrank</b> 柜子、<b class="hl">die Lampe</b> 灯、<b class="hl">der Fernseher</b> 电视。冠词背错，后面的三格、四格全跟着错，所以从第一天就连着背。</p>
+</div>
+<div class="card">
+<p><b>2）Es gibt + 宾格：介绍「有什么」</b></p>
+<p><b class="hl">Es gibt …</b> 是介绍房间、城市、菜单的万能句型，后面的名词用宾格（四格）：</p><table><tr><th>性</th><th>例子</th><th>中文</th></tr><tr><td>阳性 der</td><td>Es gibt <b>einen</b> Tisch.</td><td>有一张桌子。</td></tr><tr><td>阴性 die</td><td>Es gibt <b>eine</b> Küche.</td><td>有一间厨房。</td></tr><tr><td>中性 das</td><td>Es gibt <b>ein</b> Bad.</td><td>有一间浴室。</td></tr><tr><td>复数 die</td><td>Es gibt <b>viele</b> Zimmer.</td><td>有好多房间。</td></tr></table><p>只有阳性的 ein 要变成 <b class="hl">einen</b>，其余和主格长得一样——宾格先从阳性下手，这是德语变格的通用规律。</p>
+</div>
+<div class="card">
+<p><b>3）in / an / auf + 三格：东西在哪里（Wo?）</b></p>
+<p>回答「在哪里」用<b class="hl">三格（Dativ）</b>：in 在……里面、an 在……旁边/贴着、auf 在……上面。</p><table><tr><th>原冠词</th><th>三格</th><th>例子</th></tr><tr><td>der Tisch</td><td>dem Tisch</td><td>auf <b>dem</b> Tisch <span class="zh">在桌子上</span></td></tr><tr><td>die Wand</td><td>der Wand</td><td>an <b>der</b> Wand <span class="zh">在墙上</span></td></tr><tr><td>das Zimmer</td><td>dem Zimmer</td><td>in <b>dem</b> Zimmer → <b>im</b> Zimmer <span class="zh">在房间里</span></td></tr><tr><td>die Zimmer（复数）</td><td>den Zimmern</td><td>in <b>den</b> Zimmern <span class="zh">在房间里（复数）</span></td></tr></table><p>两个缩合要背熟：in + dem = <b class="hl">im</b>，an + dem = <b class="hl">am</b>。先记住一条：<b class="hl">静止的位置 → 三格</b>；「放/挂到哪里去」的四格版本 A2 再学。</p>
+</div>
+<div class="card">
+<p><b>4）stehen / liegen：家具的「放法」，和物主 unser</b></p>
+<p>说家具的位置，动词要选对：立着的、家具类的多用 <b class="hl">stehen</b>（Das Sofa steht im Wohnzimmer.），平躺的用 <b class="hl">liegen</b>（Das Buch liegt auf dem Tisch.），挂着的用 hängen（Das Bild hängt an der Wand.）。</p><p>物主冠词 <b class="hl">unser</b>（我们的）和 mein、dein 一个变法，看后面名词的性：</p><table><tr><th>名词</th><th>unser 形式</th></tr><tr><td>der Schrank</td><td><b>unser</b> Schrank</td></tr><tr><td>die Küche</td><td><b>unsere</b> Küche</td></tr><tr><td>das Haus</td><td><b>unser</b> Haus</td></tr><tr><td>die Zimmer（复数）</td><td><b>unsere</b> Zimmer</td></tr></table>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>不看稿，录一段语音或对着镜子介绍你的住处，说完下面 5 句（替换成你自己的信息）：</p>
+<ul>
+<li>Ich wohne in ______.</li>
+<li>Ich wohne allein. / Ich wohne mit ______.</li>
+<li>Meine Wohnung / Mein Haus hat ______ Zimmer.</li>
+<li>Es gibt ein ______, eine ______ und ein ______.</li>
+<li>Mein Lieblingszimmer ist das ______. Es gibt dort ______.</li>
+</ul>
+<p style="margin-top:10px">5 句能连着说完、房间和家具的冠词不说错，这课就算过了；卡在三格就回第四步再看一遍表格。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a1-05.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a1-07.html">下一课 →</a>
+</div>
+<script>
+var ytPlayer=null,ytReady=false,pendingFolge=25;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:25,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["wohnen", "居住", "to live (reside)"], ["die Wohnung, die Wohnungen", "公寓；住房；住宅", "apartment; flat"], ["das Haus, die Häuser", "房子", "house"], ["die Wohngemeinschaft, die Wohngemeinschaften", "合租公寓", "shared apartment"], ["der Mitbewohner, die Mitbewohner", "室友", "flatmate"], ["die Miete, die Mieten", "租金；房租", "rent"], ["das Zimmer, die Zimmer", "房间", "room"], ["das Wohnzimmer, die Wohnzimmer", "客厅", "living room"], ["das Schlafzimmer, die Schlafzimmer", "卧房；卧室", "bedroom"], ["das Kinderzimmer, die Kinderzimmer", "儿童房", "children's room"], ["die Küche, die Küchen", "厨房", "kitchen"], ["das Bad, die Bäder", "浴室；卫生间", "bathroom"], ["das Badezimmer, die Badezimmer", "浴室；卫生间", "bathroom"], ["der Flur, die Flure", "走廊", "hallway; corridor"], ["der Keller, die Keller", "地下室", "basement; cellar"], ["der Balkon, die Balkons", "阳台", "balcony"], ["der Garten, die Gärten", "庭院；花园；院子", "garden"], ["die Tür, die Türen", "门", "door"], ["das Fenster, die Fenster", "窗户", "window"], ["die Wand, die Wände", "墙", "wall (inside)"], ["die Treppe, die Treppen", "楼梯", "stairs; staircase"], ["die Etage, die Etagen", "楼层；楼；层", "floor"], ["das Sofa, die Sofas", "沙发", "sofa"], ["der Sessel, die Sessel", "沙发椅；扶手椅", "armchair"], ["der Tisch, die Tische", "桌子", "table"], ["der Stuhl, die Stühle", "椅子", "chair"], ["das Bett, die Betten", "床", "bed"], ["der Schrank, die Schränke", "柜子", "wardrobe; cupboard"], ["der Schreibtisch, die Schreibtische", "书桌", "desk"], ["das Regal, die Regale", "架子", "shelf; bookcase"], ["die Lampe, die Lampen", "灯", "lamp"], ["der Fernseher, die Fernseher", "电视", "TV set"], ["der Teppich, die Teppiche", "地毯", "carpet; rug"], ["Es gibt …", "那儿有…；有…", "There is/are …"], ["stehen", "立；竖放着", "to stand"], ["liegen", "位于", "to lie (be situated)"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Es gibt ___ Küche.“ 空格里填：", "opts": ["eine", "der", "einen", "ein"], "a": 0}, {"q": "2. „Das Sofa steht ___ Wohnzimmer.“ 填：", "opts": ["ins", "in den", "im", "in die"], "a": 2}, {"q": "3. „Das Buch ___ auf dem Tisch.“ 填哪个动词？", "opts": ["liegt", "steht", "hängt", "sitzt"], "a": 0}, {"q": "4. „___ Wohnung hat drei Zimmer.“（我们的，die Wohnung 是阴性）", "opts": ["Unser", "Unserem", "Unseren", "Unsere"], "a": 3}, {"q": "5. 哪个词是「阳台」？", "opts": ["das Bad", "der Keller", "der Flur", "der Balkon"], "a": 3}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-06-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-06-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

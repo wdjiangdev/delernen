@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第15课 Familie 家庭 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第15课 Familie：合并 DW Folge 61-64。1）物主冠词：词尾跟着名词的性走">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 15 课</div>
+<h1>第 15 课 · Familie 家庭</h1>
+<div class="de-title">DW A1 · Thema 15 · Folge 61-64 合并课</div>
+<div class="meta"><span>⏱ 约 30-40 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>指着照片逐个介绍家人：<b class="hl">Das ist mein Vater. Das ist meine Mutter.</b></li>
+<li>物主冠词词尾选对：阳性 mein、阴性和复数 meine，不再混</li>
+<li>问年龄并回答：<b class="hl">Wie alt ist dein Bruder? – Er ist 12 Jahre alt.</b></li>
+<li>说清自己有没有兄弟姐妹：Ich habe einen Bruder und eine Schwester.</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 61，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 61</span><span class="t">Meine Familie<small>Nico 介绍自己的大家庭：一张家庭树把谁是谁认全</small></span><button class="playbtn" data-folge="61" onclick="playFolge(61,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 62</span><span class="t">Meine Eltern<small>聊父母：他们做什么、住在哪里、是什么样的人</small></span><button class="playbtn" data-folge="62" onclick="playFolge(62,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 63</span><span class="t">Meine Tante<small>那位总有故事的姑姑：亲戚称谓和年龄一起学</small></span><button class="playbtn" data-folge="63" onclick="playFolge(63,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 64</span><span class="t">Mein Bruder<small>兄弟姐妹专场：有没有手足、谁大谁小、关系怎么样</small></span><button class="playbtn" data-folge="64" onclick="playFolge(64,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Das ist meine Familie.</span><span class="zh">这是我的家庭。</span></div>
+<div class="phrase"><span class="de">Mein Vater heißt Carlos.</span><span class="zh">我爸爸叫 Carlos。</span></div>
+<div class="phrase"><span class="de">Meine Mutter ist Lehrerin.</span><span class="zh">我妈妈是老师。</span></div>
+<div class="phrase"><span class="de">Ich habe einen Bruder und eine Schwester.</span><span class="zh">我有一个兄弟和一个姐妹。</span></div>
+<div class="phrase"><span class="de">Hast du Geschwister?</span><span class="zh">你有兄弟姐妹吗？</span></div>
+<div class="phrase"><span class="de">Ich bin Einzelkind.</span><span class="zh">我是独生子女。</span></div>
+<div class="phrase"><span class="de">Wie alt ist deine Tante?</span><span class="zh">你姑姑多大年纪？</span></div>
+<div class="phrase"><span class="de">Sie ist 45 Jahre alt.</span><span class="zh">她 45 岁。</span></div>
+<div class="phrase"><span class="de">Meine Großeltern wohnen in Spanien.</span><span class="zh">我祖父母住在西班牙。</span></div>
+<div class="phrase"><span class="de">Mein Onkel ist verheiratet.</span><span class="zh">我叔叔结婚了。</span></div>
+<div class="phrase"><span class="de">Das ist mein Cousin. Er ist 10 Jahre alt.</span><span class="zh">这是我表弟。他 10 岁。</span></div>
+<div class="phrase"><span class="de">Wir sind eine große Familie.</span><span class="zh">我们是个大家庭。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Nico, ist das deine Familie auf dem Foto?</p>
+<p><span class="who">Nico:</span> Ja. Das ist mein Vater und das ist meine Mutter.</p>
+<p><span class="who">Emma:</span> Und wer ist das? Ist das dein Bruder?</p>
+<p><span class="who">Nico:</span> Nein, das ist mein Cousin Pablo. Er ist 16 Jahre alt.</p>
+<p><span class="who">Emma:</span> Hast du auch eine Schwester?</p>
+<p><span class="who">Nico:</span> Ja, meine Schwester heißt Maria. Sie ist 20. Meine Großeltern wohnen auch in Spanien, in einem kleinen Dorf.</p>
+<p><span class="who">Emma:</span> Wie alt ist deine Oma?</p>
+<p><span class="who">Nico:</span> Sie ist 78 Jahre alt und sehr fit!</p>
+<div class="tipbox">练法：打开手机里一张全家福，指着每个人把对话里的名字、年龄换成你自己的家人说一遍；没有合照就先在纸上画一张家庭树再介绍。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）物主冠词：词尾跟着名词的性走</b></p>
+<p>mein / dein / sein 本身不分性，<b class="hl">词尾跟着后面名词的性、数、格走</b>，规则和 ein 一模一样（第 5 课）：阳性和中性主格不加词尾，阴性和复数加 -e。</p><table><tr><th>名词</th><th>「我的」</th></tr><tr><td>der Vater</td><td><b>mein</b> Vater</td></tr><tr><td>das Kind</td><td><b>mein</b> Kind</td></tr><tr><td>die Mutter</td><td><b>meine</b> Mutter</td></tr><tr><td>die Eltern（复数）</td><td><b>meine</b> Eltern</td></tr></table>
+</div>
+<div class="card">
+<p><b>2）物主冠词全表：先定「谁的」</b></p>
+<table><tr><th>人称</th><th>物主冠词</th><th>例（哥哥）</th></tr><tr><td>ich</td><td>mein</td><td>mein Bruder</td></tr><tr><td>du</td><td>dein</td><td>dein Bruder</td></tr><tr><td>er / es</td><td>sein</td><td>sein Bruder</td></tr><tr><td>sie（她）</td><td>ihr</td><td>ihr Bruder</td></tr><tr><td>wir</td><td>unser</td><td>unser Bruder</td></tr><tr><td>ihr（你们）</td><td>euer</td><td>euer Bruder</td></tr><tr><td>sie / Sie</td><td>ihr / Ihr</td><td>ihr Bruder / Ihr Bruder</td></tr></table><p>最容易混的是三个 ihr：ihr Bruder 可能是「她的」也可能是「他们的」，靠上下文区分；ihr 作为尊称 Ihr 要大写。euer 接词尾时常省一个 e：eure Mutter（不是 euere）。</p>
+</div>
+<div class="card">
+<p><b>3）宾格：只有阳性多加 -en</b></p>
+<p>家人做 haben 的宾语时，<b class="hl">只有阳性名词</b>的物主冠词要变 einen 型，阴性、中性、复数和主格一样：</p><table><tr><th>主格（做主语）</th><th>宾格（haben 后）</th></tr><tr><td>Mein Bruder ist 16.</td><td>Ich habe <b>einen</b> Bruder.</td></tr><tr><td>Meine Schwester ist 20.</td><td>Ich habe <b>eine</b> Schwester.</td></tr><tr><td>Mein Kind ist klein.</td><td>Ich habe <b>ein</b> Kind.</td></tr></table><p>口诀：看见 haben，先看宾语是不是阳性，是就 -en，其余照抄主格。</p>
+</div>
+<div class="card">
+<p><b>4）Wie alt ist…? 年龄用 sein 说</b></p>
+<p>中文「我 23 岁」德语说 <b class="hl">Ich bin 23 Jahre alt.</b>——年龄用 sein + 数字 + Jahre alt，没有 haben 的事。问法：Wie alt bist du? / Wie alt ist dein Vater? / Wie alt sind Sie?</p><p>小例外：1 岁说 <b>ein Jahr</b> alt（Jahr 用单数）：Das Baby ist ein Jahr alt. 两岁起恢复复数：zwei Jahre alt。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>拿一张全家福（或想象一张），介绍你的家庭：</p>
+<ul>
+<li>Das ist meine Familie.</li>
+<li>Das ist mein Vater. Er ist ______ Jahre alt.</li>
+<li>Das ist meine Mutter. Sie ist ______ Jahre alt.</li>
+<li>Ich habe ______ . / Ich bin Einzelkind.</li>
+<li>Meine Großeltern wohnen in ______.</li>
+</ul>
+<p style="margin-top:10px">5 句里物主冠词词尾全对（mein Vater / meine Mutter 不混）、年龄都用 … Jahre alt，这课过关。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a1-14.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a1-16.html">下一课 →</a>
+</div>
+<script>
+var ytPlayer=null,ytReady=false,pendingFolge=61;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:61,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Familie, die Familien", "家人；家庭", "family"], ["der Vater, die Väter", "父亲", "father"], ["die Mutter, die Mütter", "母亲", "mother"], ["die Eltern (nur Pl.)", "父母", "parents"], ["der Bruder, die Brüder", "兄弟", "brother"], ["die Schwester, die Schwestern", "姐妹；姐姐；妹妹", "sister"], ["das Geschwister, die Geschwister", "兄弟姐妹", "sibling"], ["der Sohn, die Söhne", "儿子", "son"], ["die Tochter, die Töchter", "女儿", "daughter"], ["das Kind, die Kinder", "孩子", "child"], ["das Baby, die Babys", "婴儿", "baby"], ["der Großvater, die Großväter", "（外）祖父", "grandfather"], ["die Großmutter, die Großmütter", "（外）祖母", "grandmother"], ["die Großeltern (nur Pl.)", "（外）祖父母", "grandparents"], ["der Opa, die Opas", "祖父；爷爷；外公", "grandpa"], ["die Oma, die Omas", "祖母；奶奶；姥姥；外婆", "grandma"], ["die Tante, die Tanten", "阿姨；姑姑；婶婶；舅母", "aunt"], ["der Onkel, die Onkel", "叔叔；伯伯；舅舅", "uncle"], ["der Cousin, die Cousins", "堂兄弟；表兄弟", "cousin (m.)"], ["die Cousine, die Cousinen", "堂姐妹；表姐妹", "cousin (f.)"], ["das Enkelkind, die Enkelkinder", "孙子；孙女", "grandchild"], ["der Enkelsohn, die Enkelsöhne", "孙子", "grandson"], ["die Enkeltochter, die Enkeltöchter", "孙女", "granddaughter"], ["das Einzelkind, die Einzelkinder", "独生子女", "only child"], ["der Zwillingsbruder, die Zwillingsbrüder", "双胞胎兄弟", "twin brother"], ["die Zwillingsschwester, die Zwillingsschwestern", "双胞胎姐妹", "twin sister"], ["der Mann, die Männer", "男人；男士", "man / husband"], ["die Frau, die Frauen", "女人；女士", "woman / wife"], ["der Familienname, die Familiennamen", "姓氏", "family name; surname"], ["verheiratet", "已婚", "married"], ["ledig", "单身的", "single"], ["alt", "老的；旧的", "old"], ["der Geburtstag, die Geburtstage", "生日", "birthday"], ["Wie alt bist du?", "你几岁？", "How old are you?"], ["Wie alt ist Emma?", "Emma几岁？", "How old is Emma?"], ["Ich bin 23 Jahre alt.", "我今年23岁。", "I am 23 years old."]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Das ist ___ Mutter, Anna.“（我的）", "opts": ["meiner", "meinen", "meine", "mein"], "a": 2}, {"q": "2. „Ich habe ___ Schwester.“", "opts": ["einen", "eine", "einem", "ein"], "a": 1}, {"q": "3. 「你哥哥多大了？」正确的是？", "opts": ["Was alt ist dein Bruder?", "Wie alt ist dein Bruder?", "Wie alt dein Bruder ist?", "Wie bist du alt, Bruder?"], "a": 1}, {"q": "4. „___ Bruder wohnt in Berlin.“（他们的）", "opts": ["dein", "euer", "ihr", "sein"], "a": 2}, {"q": "5. „Meine Eltern ___ in Spanien.“", "opts": ["wohnt", "wohnen", "wohne", "wohnst"], "a": 1}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-15-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-15-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

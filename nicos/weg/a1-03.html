@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第3课 In Gesellschaft 社交场合 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第3课 In Gesellschaft：合并 DW Folge 13-16。1）规则动词变位：词干 + 人称尾巴（完整版）">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 3 课</div>
+<h1>第 3 课 · In Gesellschaft 社交场合</h1>
+<div class="de-title">DW A1 · Thema 3 · Folge 13-16 合并课</div>
+<div class="meta"><span>⏱ 约 30-40 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>在咖啡馆 / 餐厅走完整个流程：打招呼 → 点单 → 问价 → 结账</li>
+<li>用 <b class="hl">möchten</b> 和 <b class="hl">hätte gern</b> 礼貌点单，不说生硬的 ich will</li>
+<li>说出常见食物饮料，并听懂服务员的提问</li>
+<li>问价格 <b class="hl">Wie viel kostet …?</b> 并听懂用 Euro / Cent 报的价</li>
+<li>把规则动词变位用到日常对话里（machen / trinken / arbeiten）</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 13，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 13</span><span class="t">Was machst du hier?<small>在咖啡馆偶遇熟人：你在这儿干什么、最近怎么样</small></span><button class="playbtn" data-folge="13" onclick="playFolge(13,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 14</span><span class="t">Was trinkst du?<small>点喝的：咖啡、茶还是果汁，先学会问和答</small></span><button class="playbtn" data-folge="14" onclick="playFolge(14,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 15</span><span class="t">Eine Pizza, bitte!<small>在餐厅点餐：一份披萨，礼貌全靠 bitte 和 möchten</small></span><button class="playbtn" data-folge="15" onclick="playFolge(15,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 16</span><span class="t">Zahlen, bitte!<small>结账：一共多少钱、要账单、一起付还是分开付</small></span><button class="playbtn" data-folge="16" onclick="playFolge(16,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Was machst du hier?</span><span class="zh">你在这儿干什么？</span></div>
+<div class="phrase"><span class="de">Ich arbeite hier.</span><span class="zh">我在这儿工作。</span></div>
+<div class="phrase"><span class="de">Möchtest du etwas trinken?</span><span class="zh">你想喝点什么吗？</span></div>
+<div class="phrase"><span class="de">Was trinkst du?</span><span class="zh">你喝什么？</span></div>
+<div class="phrase"><span class="de">Ich trinke einen Kaffee.</span><span class="zh">我喝一杯咖啡。</span></div>
+<div class="phrase"><span class="de">Ich hätte gern eine Pizza.</span><span class="zh">我想要一份披萨。（礼貌点单）</span></div>
+<div class="phrase"><span class="de">Einen Salat, bitte!</span><span class="zh">请来一份色拉！</span></div>
+<div class="phrase"><span class="de">Was kostet das?</span><span class="zh">这个多少钱？</span></div>
+<div class="phrase"><span class="de">Die Pizza kostet 8 Euro 50.</span><span class="zh">披萨 8 欧 50 分。</span></div>
+<div class="phrase"><span class="de">Zahlen, bitte!</span><span class="zh">买单，请！</span></div>
+<div class="phrase"><span class="de">Die Rechnung, bitte.</span><span class="zh">请给我账单。</span></div>
+<div class="phrase"><span class="de">Zusammen oder getrennt?</span><span class="zh">一起付还是分开付？</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Kellner:</span> Guten Tag! Was hätten Sie gern?</p>
+<p><span class="who">Nico:</span> Guten Tag. Ich hätte gern eine Pizza.</p>
+<p><span class="who">Emma:</span> Und ich nehme einen Salat.</p>
+<p><span class="who">Kellner:</span> Möchten Sie etwas trinken?</p>
+<p><span class="who">Nico:</span> Ja, ein Wasser, bitte. Und du, Emma?</p>
+<p><span class="who">Emma:</span> Einen Apfelsaft, bitte.</p>
+<p><span class="who">Kellner:</span> Gerne. Einen Moment, bitte.</p>
+<p><span class="who">Nico:</span> Zahlen, bitte! Wie viel kostet alles zusammen?</p>
+<p><span class="who">Kellner:</span> Das macht 15 Euro 80.</p>
+<div class="tipbox">练法：三个角色轮着演，重点练 hätte gern 的语气——它比 ich will 礼貌得多，德国点餐全靠它。Das macht …（一共……钱）是报总价的固定说法，先整句记下。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）规则动词变位：词干 + 人称尾巴（完整版）</b></p>
+<p>第 1 课的规律现在补全：规则动词去掉词尾 -en 得到词干，再加人称尾巴 <b class="hl">-e / -st / -t / -en / -t / -en</b>：</p><table><tr><th>人称</th><th>machen 做</th><th>trinken 喝</th><th>arbeiten 工作</th></tr><tr><td>ich</td><td>mache</td><td>trinke</td><td>arbeite</td></tr><tr><td>du</td><td>machst</td><td>trinkst</td><td>arbeitest</td></tr><tr><td>er / sie / es</td><td>macht</td><td>trinkt</td><td>arbeitet</td></tr><tr><td>wir</td><td>machen</td><td>trinken</td><td>arbeiten</td></tr><tr><td>ihr</td><td>macht</td><td>trinkt</td><td>arbeitet</td></tr><tr><td>sie / Sie</td><td>machen</td><td>trinken</td><td>arbeiten</td></tr></table><p>注意 arbeiten：词干以 -t 结尾，du / er / ihr 形式要垫一个 e（du arbeit<b>e</b>st），不然根本读不出来。warten、antworten 同理。</p>
+</div>
+<div class="card">
+<p><b>2）essen 是例外：e 变 i</b></p>
+<p>essen 的 du 和 er / sie / es 形式里，词干的 e 要变成 i：</p><table><tr><th>ich</th><th>du</th><th>er / sie / es</th><th>wir</th><th>ihr</th><th>sie / Sie</th></tr><tr><td>esse</td><td><b class="hl">isst</b></td><td><b class="hl">isst</b></td><td>essen</td><td>esst</td><td>essen</td></tr></table><p>Was isst du? — Ich esse eine Pizza. 这类「换元音」的不规则动词后面还会遇到：geben → gibt、sprechen → sprichst（第 4 课），规律都是只变 du 和 er / sie / es 两格。</p>
+</div>
+<div class="card">
+<p><b>3）点单神器：möchten 与 hätte gern</b></p>
+<p><b class="hl">möchten</b>（想要）是点单和提要求的礼貌说法：ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten。例：Ich möchte einen Kaffee. 餐厅里更地道的说法是 <b class="hl">Ich hätte gern …</b>（我想要……），后面直接跟宾格名词：Ich hätte gern eine Pizza / einen Salat。服务员反问你：Was hätten Sie gern? 暂时不想吃喝就说：Nein, danke. Ich habe keinen Hunger / keinen Durst.（Hunger 饿、Durst 渴，先认脸）</p>
+</div>
+<div class="card">
+<p><b>4）宾格入门：为什么点单时名词会变样</b></p>
+<p>动词后面的直接宾语用宾格（Akkusativ）。好消息是：<b class="hl">只有阳性名词变脸</b>，阴性、中性、复数全都不变：</p><table><tr><th>性</th><th>主格（菜单上）</th><th>宾格（点单时）</th></tr><tr><td>der 阳性</td><td>der / ein Kaffee</td><td>den / <b class="hl">einen</b> Kaffee</td></tr><tr><td>die 阴性</td><td>die / eine Pizza</td><td>die / eine Pizza</td></tr><tr><td>das 中性</td><td>das / ein Wasser</td><td>das / ein Wasser</td></tr></table><p>所以点单时只要盯住阳性词：einen Kaffee, einen Tee, einen Saft, einen Salat。价格问法：Wie viel kostet die Pizza? — Sie kostet 8 Euro 50. / Was kostet das?</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>在脑子里开一家小餐厅，自己演服务员和客人各一遍，说完这段点单全流程：</p>
+<ul>
+<li>Guten Tag! Was hätten Sie gern?</li>
+<li>Ich hätte gern ______（食物）.</li>
+<li>Und ______（饮料）, bitte.</li>
+<li>Wie viel kostet das?</li>
+<li>Das macht ______ Euro. Zahlen, bitte!</li>
+</ul>
+<p style="margin-top:10px">全程不用 ich will、点单都用 hätte gern + bitte，价格能听懂到 Cent，这课过关。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a1-02.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a1-04.html">下一课 →</a>
+</div>
+<script>
+var ytPlayer=null,ytReady=false,pendingFolge=13;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:13,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["das Restaurant, die Restaurants", "餐厅", "restaurant"], ["das Café, die Cafés", "咖啡厅", "café"], ["der Kellner, die Kellner", "服务员", "waiter"], ["die Speisekarte, die Speisekarten", "菜单", "menu"], ["die Pizza, die Pizzen", "比萨", "pizza"], ["die Suppe, die Suppen", "汤", "soup"], ["der Salat, die Salate", "色拉", "salad; lettuce"], ["das Brot, die Brote", "面包", "bread"], ["die Nudel, die Nudeln", "面；面条", "noodle"], ["der Fisch, die Fische", "鱼", "fish"], ["das Ei, die Eier", "蛋；鸡蛋", "egg"], ["der Kuchen, die Kuchen", "蛋糕", "cake"], ["der Apfel, die Äpfel", "苹果", "apple"], ["die Tomate, die Tomaten", "番茄", "tomato"], ["die Kartoffel, die Kartoffeln", "土豆；马铃薯", "potato"], ["der Kaffee, die Kaffees (nach Zahl: Kaffee)", "咖啡", "coffee"], ["der Tee, die Tees (nach Zahl: Tee)", "茶", "tea"], ["das Wasser (nur Sg.)", "水", "water"], ["die Milch (nur Sg.)", "牛奶", "milk"], ["der Apfelsaft, die Apfelsäfte (nach Zahl: Apfelsaft)", "苹果汁", "apple juice"], ["das Bier, die Biere (nach Zahl: Bier)", "啤酒", "beer"], ["der Wein, die Weine (nach Zahl: Wein)", "葡萄酒", "wine"], ["die Rechnung, die Rechnungen", "账单", "bill"], ["zahlen", "支付；付款", "to pay"], ["(etwas) bezahlen", "支付；付钱", "to pay"], ["(etwas) bestellen", "预订；点；订购", "to order (something)"], ["(etwas) essen", "吃", "to eat (something)"], ["(etwas) trinken", "喝", "to drink (something)"], ["möchten", "想要", "would like"], ["Ich hätte gerne …", "我想要…", "I'd like ..."], ["Was hätten Sie gern?", "您想要什么？", "What would you like?"], ["etwas kosten", "花费；值（多少钱）", "to cost (something)"], ["der Preis, die Preise", "价格", "price"], ["der Euro, die Euros (nach Zahl: Euro)", "欧元", "euro"], ["lecker", "好吃；美味", "delicious"], ["Möchtest du etwas trinken?", "你要喝点什么吗？", "Would you like something to drink?"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 点餐时最礼貌的说法是？", "opts": ["Ich will eine Pizza.", "Ich hätte gern eine Pizza.", "Gib mir eine Pizza!", "Eine Pizza ist mein."], "a": 1}, {"q": "2. „Du ___ einen Kaffee.“（trinken）", "opts": ["trinkt", "trinke", "trinken", "trinkst"], "a": 3}, {"q": "3. „Er ___ eine Suppe.“（essen）", "opts": ["esst", "esse", "essen", "isst"], "a": 3}, {"q": "4. „Ich möchte ___ Tee.“（阳性宾格）空格填：", "opts": ["eine", "einen", "ein", "einem"], "a": 1}, {"q": "5. 结账时招呼服务员买单，应该说：", "opts": ["Wasser, bitte!", "Hallo, bitte!", "Danke, bitte!", "Zahlen, bitte!"], "a": 3}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-03-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-03-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

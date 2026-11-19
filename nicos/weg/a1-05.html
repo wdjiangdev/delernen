@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第5课 Gegenstände 物品 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第5课 Gegenstände：合并 DW Folge 21-24。1）der / die / das：名词的三个性，连冠词一起背">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 5 课</div>
+<h1>第 5 课 · Gegenstände 物品</h1>
+<div class="de-title">DW A1 · Thema 5 · Folge 21-24 合并课</div>
+<div class="meta"><span>⏱ 约 30-40 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>指着身边的物品问 <b class="hl">Was ist das?</b> 并连冠词一起说出它的名字</li>
+<li>说清物品归属：Das ist mein Schlüssel.</li>
+<li>用 <b class="hl">kein</b> 否定名词：Ich habe kein Auto.</li>
+<li>用颜色和形容词描述物品：Der Stift ist blau.</li>
+<li>把 der / die / das 三个性分对——从此名词永远连冠词一起背</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 21，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 21</span><span class="t">Was ist das?<small>指着东西问名字：这是什么——冠词大战正式开始</small></span><button class="playbtn" data-folge="21" onclick="playFolge(21,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 22</span><span class="t">Wem gehört das?<small>这是谁的？物主登场：我的、你的、他的</small></span><button class="playbtn" data-folge="22" onclick="playFolge(22,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 23</span><span class="t">Ich habe kein …<small>我没有……：否定词 kein 的变化比英语多一层</small></span><button class="playbtn" data-folge="23" onclick="playFolge(23,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 24</span><span class="t">Das Auto ist rot<small>描述物品：颜色、大小、新旧都往 ist 后面放</small></span><button class="playbtn" data-folge="24" onclick="playFolge(24,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Was ist das?</span><span class="zh">这是什么？</span></div>
+<div class="phrase"><span class="de">Das ist ein Buch.</span><span class="zh">这是一本书。</span></div>
+<div class="phrase"><span class="de">Ist das ein Stift?</span><span class="zh">这是一支笔吗？</span></div>
+<div class="phrase"><span class="de">Ja, das ist mein Stift.</span><span class="zh">对，这是我的笔。</span></div>
+<div class="phrase"><span class="de">Wem gehört das?</span><span class="zh">这是谁的？</span></div>
+<div class="phrase"><span class="de">Das ist mein Schlüssel.</span><span class="zh">这是我的钥匙。</span></div>
+<div class="phrase"><span class="de">Ist das dein Auto?</span><span class="zh">这是你的车吗？</span></div>
+<div class="phrase"><span class="de">Nein, das ist sein Auto.</span><span class="zh">不，那是他的车。</span></div>
+<div class="phrase"><span class="de">Ich habe einen Computer.</span><span class="zh">我有一台电脑。</span></div>
+<div class="phrase"><span class="de">Ich habe kein Auto.</span><span class="zh">我没有车。</span></div>
+<div class="phrase"><span class="de">Das Auto ist rot.</span><span class="zh">这辆车是红色的。</span></div>
+<div class="phrase"><span class="de">Der Stift ist blau und neu.</span><span class="zh">这支笔是蓝色的，还是新的。</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Nico, was ist das?</p>
+<p><span class="who">Nico:</span> Das ist ein Schlüssel.</p>
+<p><span class="who">Emma:</span> Ist das dein Schlüssel?</p>
+<p><span class="who">Nico:</span> Nein, das ist nicht mein Schlüssel. Mein Schlüssel ist hier.</p>
+<p><span class="who">Emma:</span> Wem gehört der Schlüssel denn?</p>
+<p><span class="who">Nico:</span> Vielleicht Lisa. Das ist ihr Schlüssel.</p>
+<p><span class="who">Emma:</span> Und das Auto da? Ist das neu?</p>
+<p><span class="who">Nico:</span> Ja, das Auto ist neu und rot. Schön, oder?</p>
+<div class="tipbox">练法：把桌上任意三件东西拿起来，自问自答 Was ist das? + 冠词 + 颜色。ihr（她的）先混个脸熟，物主冠词的全套变化在第 15 课系统学。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）der / die / das：名词的三个性，连冠词一起背</b></p>
+<p>德语每个名词都有个性：阳性 der、阴性 die、中性 das，复数一律 die。性大多没道理可讲，<b class="hl">唯一的办法是背单词时连冠词一起背</b>：</p><table><tr><th>性</th><th>冠词</th><th>本课例子</th></tr><tr><td>阳性</td><td>der</td><td>der Stift, der Schlüssel, der Tisch</td></tr><tr><td>阴性</td><td>die</td><td>die Brille, die Uhr, die Farbe</td></tr><tr><td>中性</td><td>das</td><td>das Buch, das Auto, das Foto</td></tr><tr><td>复数</td><td>die</td><td>die Stifte, die Bücher, die Autos</td></tr></table><p>两个能帮上忙的小窍门：以 -e 结尾的名词多为阴性（die Brille, die Farbe），以 -er 结尾的多为阳性（der Computer）；其余的别猜，查词表。</p>
+</div>
+<div class="card">
+<p><b>2）haben 变位 + 宾格 einen：只有阳性变脸（复习升级）</b></p>
+<p>haben（有）的变位先背好：ich habe, du hast, er / sie / es hat, wir haben, ihr habt, sie haben。haben 后面跟宾格，和第 3 课点单是同一条规则——<b class="hl">只有阳性名词的 ein 变 einen</b>：</p><table><tr><th></th><th>主格</th><th>宾格（haben 后面）</th></tr><tr><td>der Stift</td><td>ein Stift</td><td><b class="hl">einen</b> Stift</td></tr><tr><td>die Brille</td><td>eine Brille</td><td>eine Brille</td></tr><tr><td>das Buch</td><td>ein Buch</td><td>ein Buch</td></tr></table><p>Ich habe einen Stift. Hast du ein Buch? mein / dein 同理：meinen Stift（阳性宾格）, meine Brille, mein Buch。</p>
+</div>
+<div class="card">
+<p><b>3）kein：否定「有 / 一个」，变化跟 ein 完全同步</b></p>
+<table><tr><th></th><th>主格</th><th>宾格</th></tr><tr><td>der</td><td>kein Stift</td><td><b class="hl">keinen</b> Stift</td></tr><tr><td>die</td><td>keine Brille</td><td>keine Brille</td></tr><tr><td>das</td><td>kein Buch</td><td>kein Buch</td></tr><tr><td>复数</td><td>keine Stifte</td><td>keine Stifte</td></tr></table><p>kein 和 nicht 的分工是 A1 必考点：<b class="hl">kein 否定名词</b>（没有某物）：Ich habe kein Auto. <b class="hl">nicht 否定动词或形容词</b>：Das Auto ist nicht rot. / Das ist nicht mein Schlüssel.</p>
+</div>
+<div class="card">
+<p><b>4）颜色作表语：放在 ist 后面，永远不变形</b></p>
+<p>Das Auto ist <b class="hl">rot</b>. Der Stift ist <b class="hl">blau</b>. Die Brille ist <b class="hl">schwarz</b>. 颜色（以及 neu, alt, schön, kaputt 这类形容词）站在 ist 后面作表语时 <b class="hl">不加任何词尾</b>——这是德语形容词最省事的位置。等它跑到名词前面（ein rotes Auto）才需要变格，那是 A2 的事，本课先享受免费版。问颜色：Welche Farbe hat das Auto? — Es ist rot.</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>把你桌上或包里的东西秀一遍，像 Nico 认物一样说完这 5 句：</p>
+<ul>
+<li>Das ist mein ______（带冠词说物品）.</li>
+<li>Der / Die / Das ______ ist ______（颜色）.</li>
+<li>Ich habe einen / eine / ein ______.</li>
+<li>Ich habe kein / keine ______.</li>
+<li>Das ist nicht mein ______, das ist sein ______.</li>
+</ul>
+<p style="margin-top:10px">五件物品冠词全对、kein 用对，这课过关；冠词错得多的，回词表连冠词再背一轮。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a1-04.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a1-06.html">下一课 →</a>
+</div>
+<script>
+var ytPlayer=null,ytReady=false,pendingFolge=21;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:21,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["das Auto, die Autos", "汽车", "car"], ["das Buch, die Bücher", "书；书本", "book"], ["der Stift, die Stifte", "笔", "pen"], ["der Schlüssel, die Schlüssel", "钥匙", "key"], ["die Brille, die Brillen", "眼镜", "glasses"], ["das Foto, die Fotos", "照片", "photo"], ["das Bild, die Bilder", "照片；图画", "picture"], ["der Computer, die Computer", "电脑", "computer"], ["die Uhr, die Uhren", "钟；表", "clock / o'clock"], ["das Geld, die Gelder", "钱", "money"], ["der Koffer, die Koffer", "行李箱", "suitcase"], ["die Fahrkarte, die Fahrkarten", "车票", "ticket"], ["das Geschenk, die Geschenke", "礼物", "gift, present"], ["die Sache, die Sachen", "物品；东西", "thing"], ["die Farbe, die Farben", "颜色", "color"], ["rot", "红色；红色的", "red"], ["blau", "蓝色；蓝色的", "blue"], ["grün", "绿色；绿色的", "green"], ["gelb", "黄色；黄色的", "yellow"], ["schwarz", "黑色；黑色的", "black"], ["weiß", "白色；白色的", "white"], ["grau", "灰色；灰色的", "gray"], ["braun", "棕色；棕色的", "brown"], ["orange", "橙色；橙色的", "orange"], ["rosa", "粉红色；粉红色的", "pink"], ["lila", "紫色；紫色的", "purple; lilac"], ["neu", "新的", "new"], ["alt", "老的；旧的", "old"], ["schön", "漂亮的；美的", "beautiful"], ["kaputt", "损坏的", "broken"], ["etwas haben", "有", "to have (something)"], ["mein(e)", "我的", "my"], ["dein(e)", "你的", "your"], ["sein(e)", "他的", "his"], ["der Tisch, die Tische", "桌子", "table"], ["der Stuhl, die Stühle", "椅子", "chair"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. „Das ist ___ Buch.“ 空格填：", "opts": ["ein", "eine", "einen", "einem"], "a": 0}, {"q": "2. „Ich habe ___ Stift.“（阳性宾格）", "opts": ["einem", "ein", "eine", "einen"], "a": 3}, {"q": "3. „Ich habe ___ Auto.“（我没有车）", "opts": ["nicht", "keine", "keinen", "kein"], "a": 3}, {"q": "4. „Das Auto ist ___.“ 颜色作表语：", "opts": ["roten", "rot", "roter", "rotem"], "a": 1}, {"q": "5. „___ gehört das?“（这是谁的）", "opts": ["Was", "Wo", "Wem", "Wer"], "a": 2}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-05-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-05-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

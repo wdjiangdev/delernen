@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第11课 Essen und Freizeit 吃与休闲 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第11课 Essen und Freizeit：合并 DW Folge 45-48。1）mögen 和 möchte：一个是真喜欢，一个是礼貌想要">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 11 课</div>
+<h1>第 11 课 · Essen und Freizeit 吃与休闲</h1>
+<div class="de-title">DW A1 · Thema 11 · Folge 45-48 合并课</div>
+<div class="meta"><span>⏱ 约 35-40 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>说清一日三餐吃什么、自己最喜欢的食物</li>
+<li>用 <b class="hl">mögen</b> 说喜欢和不喜欢，用 <b class="hl">möchte</b> 礼貌地说想要</li>
+<li>用 <b class="hl">动词 + gern / lieber</b> 细说喜好程度：喜欢、更喜欢</li>
+<li>说出常见家务并分工：打扫、洗碗、吸尘、洗衣服</li>
+<li>聊爱好并发出邀请：<b class="hl">Was macht dir Spaß?</b> / Ich habe Lust auf …</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 45，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 45</span><span class="t">Essen<small>一日三餐吃什么：早餐、午餐、晚餐和喜欢的食物</small></span><button class="playbtn" data-folge="45" onclick="playFolge(45,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 46</span><span class="t">Ich mag (nicht)!<small>说喜好：我喜欢/不喜欢——mögen 登场</small></span><button class="playbtn" data-folge="46" onclick="playFolge(46,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 47</span><span class="t">Haushaltsarbeit<small>分担家务：打扫、洗碗、吸尘、倒垃圾</small></span><button class="playbtn" data-folge="47" onclick="playFolge(47,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 48</span><span class="t">Was macht dir Spaß?<small>聊爱好：什么让你开心，Spaß machen 的说法</small></span><button class="playbtn" data-folge="48" onclick="playFolge(48,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Was isst du zum Frühstück?</span><span class="zh">你早餐吃什么？</span></div>
+<div class="phrase"><span class="de">Ich esse gern Brot mit Käse.</span><span class="zh">我喜欢吃面包配奶酪。</span></div>
+<div class="phrase"><span class="de">Mein Lieblingsessen ist Pizza.</span><span class="zh">我最喜欢的食物是披萨。</span></div>
+<div class="phrase"><span class="de">Ich mag Fisch, aber ich mag kein Fleisch.</span><span class="zh">我喜欢鱼，但不喜欢肉。</span></div>
+<div class="phrase"><span class="de">Magst du Salat?</span><span class="zh">你喜欢沙拉吗？</span></div>
+<div class="phrase"><span class="de">Ich möchte einen Kaffee, bitte.</span><span class="zh">我想要一杯咖啡，谢谢。</span></div>
+<div class="phrase"><span class="de">Ich schwimme gern.</span><span class="zh">我喜欢游泳。</span></div>
+<div class="phrase"><span class="de">Ich lese lieber, als fernzusehen.</span><span class="zh">比起看电视，我更喜欢看书。</span></div>
+<div class="phrase"><span class="de">Was macht dir Spaß?</span><span class="zh">你觉得做什么有意思？</span></div>
+<div class="phrase"><span class="de">Fußball spielen macht mir Spaß.</span><span class="zh">踢足球让我开心。</span></div>
+<div class="phrase"><span class="de">Ich habe Lust auf Kino.</span><span class="zh">我想去看电影。</span></div>
+<div class="phrase"><span class="de">Wer putzt heute das Bad?</span><span class="zh">今天谁打扫卫生间？</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Was isst du gern, Nico?</p>
+<p><span class="who">Nico:</span> Ich esse gern Nudeln. Mein Lieblingsessen ist Pizza.</p>
+<p><span class="who">Emma:</span> Magst du auch Salat?</p>
+<p><span class="who">Nico:</span> Ja, Salat mag ich. Aber ich mag keinen Fisch.</p>
+<p><span class="who">Emma:</span> Und was machst du gern am Wochenende?</p>
+<p><span class="who">Nico:</span> Ich schwimme gern und ich höre gern Musik. Schwimmen macht mir Spaß!</p>
+<p><span class="who">Emma:</span> Ich tanze lieber. Tanzen macht auch Spaß!</p>
+<p><span class="who">Nico:</span> Und die Hausarbeit? Wer kocht heute?</p>
+<p><span class="who">Emma:</span> Du kochst, ich spüle. Okay?</p>
+<div class="tipbox">练法：把对话里的食物和爱好全换成你自己的再读一遍——mag/mag nicht 各说两样，gern 后面换三个你自己的动词。注：Ich lese lieber, als fernzusehen. 里的 als + zu 是 B1 句型，这里先整句感受 lieber 的用法，不用拆开分析。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）mögen 和 möchte：一个是真喜欢，一个是礼貌想要</b></p>
+<p><b class="hl">mögen</b> 是「喜欢」，后面接名词：Ich mag Pizza. / Ich mag keinen Fisch.（否定用 kein）。<b class="hl">möchte</b> 是「想要（现在就要）」，点餐、购物时用它比 wollen 礼貌得多：Ich möchte einen Kaffee.</p><table><tr><th>人称</th><th>mögen 喜欢</th><th>möchte 想要</th></tr><tr><td>ich</td><td>mag</td><td>möchte</td></tr><tr><td>du</td><td>magst</td><td>möchtest</td></tr><tr><td>er / sie / es</td><td>mag</td><td>möchte</td></tr><tr><td>wir</td><td>mögen</td><td>möchten</td></tr><tr><td>ihr</td><td>mögt</td><td>möchtet</td></tr><tr><td>sie / Sie</td><td>mögen</td><td>möchten</td></tr></table><p>记死一条：<b class="hl">对人/食物的长期喜好用 mag，对眼前这一次的需求用 möchte</b>。Ich mag Kaffee.（我爱喝咖啡）≠ Ich möchte einen Kaffee.（给我来杯咖啡）</p>
+</div>
+<div class="card">
+<p><b>2）动词 + gern：喜欢做某事；lieber：更喜欢</b></p>
+<p>喜欢「做某事」不用 mögen，用 <b class="hl">动词 + gern</b>：Ich schwimme gern.（我喜欢游泳）Ich höre gern Musik. gern 放在动词或宾语后面。比较「更喜欢」把 gern 换成 <b class="hl">lieber</b>：Ich tanze lieber.（我更喜欢跳舞）</p><table><tr><th>程度</th><th>说法</th><th>例句</th></tr><tr><td>不喜欢做</td><td>nicht gern</td><td>Ich putze nicht gern.</td></tr><tr><td>喜欢做</td><td>gern</td><td>Ich koche gern.</td></tr><tr><td>很喜欢做</td><td>sehr gern</td><td>Ich reise sehr gern.</td></tr><tr><td>更喜欢做</td><td>lieber</td><td>Ich lese lieber.</td></tr></table><p>提问就把 gern 一起问：<b class="hl">Was machst du gern?</b> / Schwimmst du gern?</p>
+</div>
+<div class="card">
+<p><b>3）Spaß machen：什么「让你」开心——整句记</b></p>
+<p>「……很有意思/让我开心」用 <b class="hl">Spaß machen</b>：活动作主语，后面跟一个三格的人：Fußball macht <b class="hl">mir</b> Spaß.（踢足球让我开心）Was macht <b class="hl">dir</b> Spaß?（你觉得什么有意思？）这里的 mir/dir 是「我/你」的三格，第 15 课会系统讲，先整句背下这两个高频块：<b class="hl">macht mir Spaß / macht dir Spaß</b>。近义说法还有 Lust haben：Ich habe Lust auf Kino.（我想看电影）/ Ich habe keine Lust.（我没兴趣）——auf 后面接想做的事。</p>
+</div>
+<div class="card">
+<p><b>4）家务动词：都是日常高频可分/短语动词</b></p>
+<p>本课家务词先认全、会说「谁做什么」就够：</p><table><tr><th>德语</th><th>中文</th></tr><tr><td>kochen</td><td>做饭</td></tr><tr><td>spülen</td><td>洗碗</td></tr><tr><td>putzen</td><td>打扫、擦</td></tr><tr><td>staubsaugen</td><td>吸尘</td></tr><tr><td>waschen / abwaschen</td><td>洗（衣服）/ 洗净（碗碟）</td></tr><tr><td>die Hausarbeit machen</td><td>做家务</td></tr></table><p>分工句型：<b class="hl">Ich koche, du spülst.</b> 频率词放动词后：Ich putze jeden Tag. / Er kocht nie.（jeden Tag 每天、oft 经常、manchmal 有时、nie 从不）</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>不看稿，像跟新朋友聊天一样连着说完下面 5 句（换成你自己的食物和爱好）：</p>
+<ul>
+<li>Mein Lieblingsessen ist ______.</li>
+<li>Ich esse gern ______, aber ich mag kein ______.</li>
+<li>Am Wochenende ______ ich gern.</li>
+<li>______ macht mir Spaß.</li>
+<li>Ich habe Lust auf ______. Hast du auch Lust?</li>
+</ul>
+<p style="margin-top:10px">5 句连着说完、mag 和 möchte 不混用，这课就算过了；老把 möchte 用在喜好上，就回第一张语法卡再对一遍那张对照表。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a1-10.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a1-12.html">下一课 →</a>
+</div>
+<script>
+var ytPlayer=null,ytReady=false,pendingFolge=45;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:45,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["das Essen, die Essen", "食物", "food; meal"], ["das Frühstück, die Frühstücke", "早餐", "breakfast"], ["das Mittagessen, die Mittagessen", "午餐", "lunch"], ["das Abendessen, die Abendessen", "晚餐", "dinner"], ["(etwas) essen", "吃", "to eat (something)"], ["(etwas) trinken", "喝", "to drink (something)"], ["kochen", "烹饪；做饭", "to cook"], ["das Lieblingsessen, die Lieblingsessen", "喜爱的食物", "favorite food"], ["etwas mögen", "喜欢（某事物）", "to like"], ["möchten", "想要", "would like"], ["gern", "乐意", "gladly"], ["die Freizeit (nur Sg.)", "闲暇；空闲时间", "free time"], ["das Hobby, die Hobbys", "兴趣爱好", "hobby"], ["(etwas) spielen", "玩", "to play"], ["der Fußball (nur Sg.)", "足球", "football (the sport); soccer"], ["Sport treiben", "锻炼；运动", "to do sports"], ["schwimmen", "游泳", "to swim"], ["tanzen", "跳舞", "to dance"], ["(etwas) lesen", "阅读", "to read"], ["(etwas) hören", "听", "to hear (something)"], ["fern|sehen", "看电视", "to watch TV"], ["der Film, die Filme", "电影；影片", "film, movie"], ["die Musik (nur Sg.)", "音乐", "music"], ["die Hausarbeit, die Hausarbeiten", "家务", "housework"], ["(etwas) putzen", "打扫", "to clean"], ["(etwas) waschen", "清洁；洗涤（某物）", "to wash"], ["etwas ab|waschen", "洗净；清洗", "to wash something up"], ["spülen", "清洗；冲洗", "to rinse"], ["staubsaugen", "用吸尘器打扫；吸尘", "to vacuum"], ["der Staubsauger, die Staubsauger", "吸尘器", "vacuum cleaner"], ["der Müll (nur Sg.)", "垃圾", "rubbish; garbage"], ["die Wäsche (nur Sg.)", "洗涤的衣物", "laundry"], ["die Küche, die Küchen", "厨房", "kitchen"], ["(jemandem) Spaß machen", "好玩；有意思", "to be fun (for someone)"], ["Spaß haben", "有乐趣", "to have fun"], ["Lust (auf etwas) haben", "有兴趣", "to feel like"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 在咖啡馆想要一杯咖啡，最礼貌的是？", "opts": ["Kaffee mag ich.", "Ich mag einen Kaffee.", "Ich möchte einen Kaffee, bitte.", "Ich will Kaffee geben."], "a": 2}, {"q": "2. „Ich ___ gern Musik.“ 填 hören 的正确形式：", "opts": ["höre", "hören", "hört", "hörst"], "a": 0}, {"q": "3. „Magst du Fisch?“ — „Nein, ich mag ___ Fisch.“", "opts": ["keinen", "kein", "nicht", "keine"], "a": 0}, {"q": "4. 「踢足球让我开心」正确的是：", "opts": ["Fußball macht mir Spaß.", "Fußball Spaß macht ich.", "Fußball macht mich Spaß.", "Ich mache Spaß Fußball."], "a": 0}, {"q": "5. 「我更喜欢看书」正确的是：", "opts": ["Ich lese gern lieber.", "Ich lieber lese.", "Ich lese lieber.", "Lieber ich lese."], "a": 2}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-11-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-11-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>

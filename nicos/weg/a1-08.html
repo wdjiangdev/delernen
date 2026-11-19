@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 第8课 Termine 约定 · Nicos Weg 加速课</title>
+<meta name="description" content="Nicos Weg 加速课 A1 第8课 Termine：合并 DW Folge 33-36。1）钟点官方说法：照着数字念">
+<link rel="stylesheet" href="/theme.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 56px}
+.crumb{font-size:13px;color:var(--text3);margin-bottom:14px}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:25px;line-height:1.4;margin-bottom:6px}
+.de-title{color:var(--text3);font-size:14px;margin-bottom:18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meta span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--text2)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:17px;margin:30px 0 12px}
+h2.sec::after{content:"";flex:1;border-top:1px solid var(--border2)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px}
+.card p,.card li{font-size:14px;line-height:1.85;color:var(--text2)}
+.card ul{padding-left:20px}
+b.hl{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--border2);padding:8px 10px;text-align:left;line-height:1.6}
+th{background:var(--bg-elev);color:var(--text);font-weight:700}
+td .zh{color:var(--text3);font-size:13px}
+.folge{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--border2)}
+.folge:last-child{border-bottom:none}
+.folge .no{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent2);background:var(--chip);border-radius:8px;padding:2px 8px}
+.folge .t{font-size:14px}
+.folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
+.playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.playbtn:hover{background:var(--accentbg)}
+.playbtn.now{border-color:var(--green);color:var(--green)}
+.folge .t{flex:1}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+a.btn.ghost{background:var(--bg-elev);border-color:var(--border)}
+a.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.phrase{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--border2)}
+.phrase:last-child{border-bottom:none}
+.phrase .de{font-size:15px;font-weight:600;flex:1}
+.phrase .zh{font-size:13px;color:var(--text3);text-align:right;flex-shrink:0;max-width:45%}
+.dlg p{font-size:14px;line-height:2}
+.dlg .who{font-weight:700;color:var(--accent2)}
+.tipbox{background:var(--bg-elev);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--text2);margin-top:12px}
+.vgrid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:640px){.vgrid{grid-template-columns:1fr 1fr}}
+.vword{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.vword .de{font-size:15px;font-weight:600;flex:1;line-height:1.5}
+.vword .de small{display:block;font-weight:400;font-size:12px;color:var(--text3)}
+.vword .zh{font-size:13px;color:var(--text2);text-align:right}
+.speak{flex-shrink:0;background:var(--chip);border:1px solid var(--border);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px}
+.q{margin-bottom:18px}
+.q p{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:8px}
+.opts{display:grid;gap:8px}
+@media(min-width:640px){.opts{grid-template-columns:1fr 1fr}}
+.opt{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg-elev);color:var(--text);font-size:14px;text-align:left;cursor:pointer}
+.opt.ok{border-color:var(--green);color:var(--green)}
+.opt.bad{border-color:var(--red);color:var(--red)}
+.score{font-size:14px;font-weight:700;margin-top:6px}
+#doneBtn{padding:11px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:14px;font-weight:700;cursor:pointer}
+#doneBtn.done{border-color:var(--green);color:var(--green)}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--accent);text-decoration:none}
+.viewbar{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:13px;color:var(--text3)}
+.viewbar button{margin-left:auto;padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:var(--accentdeep);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.viewbar button.on{border-color:var(--green);color:var(--green);background:var(--bg-elev)}
+h2.sec{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h2.sec .chev{font-size:13px;color:var(--accent2);transition:transform .18s;flex-shrink:0}
+h2.sec.closed .chev{transform:rotate(-90deg)}
+.stepbody{animation:stepIn .18s ease}
+@keyframes stepIn{from{opacity:0}to{opacity:1}}
+#themeBtn{position:fixed;top:14px;right:14px;background:var(--card);border:1px solid var(--border);border-radius:50%;width:38px;height:38px;font-size:18px;cursor:pointer;z-index:10}
+@media(max-width:480px){.phrase .zh{max-width:40%}}
+</style>
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<button id="themeBtn" onclick="toggleTheme()" title="切换主题" aria-label="切换主题">🔄</button>
+<div class="wrap">
+<div class="crumb"><a href="./">Nicos Weg 加速课</a> · A1 · 第 8 课</div>
+<h1>第 8 课 · Termine 约定</h1>
+<div class="de-title">DW A1 · Thema 8 · Folge 33-36 合并课</div>
+<div class="meta"><span>⏱ 约 30-40 分钟</span><span>🎬 视频 4 集连看</span><span>💬 核心句型 12 句</span><span>🔤 核心词 36 个</span><span>✍️ 自测 5 题</span></div>
+<div class="viewbar"><span>点每步标题可收起 / 展开，各步互不影响</span><button id="expandAllBtn" onclick="toggleExpandAll()">全部收起</button></div>
+
+<h2 class="sec">🎯 学完这课，你能做到</h2>
+<div class="card">
+<ul>
+<li>问现在几点，并用<b class="hl">官方说法和口语说法</b>两种方式回答</li>
+<li>用 <b class="hl">um + 钟点、am + 天、von … bis …</b> 说清一个安排的时间</li>
+<li>约人：问对方有没有时间、提议一个时间、答应或婉拒</li>
+<li>用 <b class="hl">müssen / können</b> 说明「必须做」和「能不能来」</li>
+<li>迟到了能说清晚了多久并道歉</li>
+</ul>
+</div>
+
+<h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
+<div class="card">
+<div class="playerbox"><div id="ytPlayer"></div></div>
+<p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 33，按播放键开始。</p>
+<div class="folge"><span class="no">Folge 33</span><span class="t">Wie spät ist es?<small>整集都在问时间、报时间：官方和口语两种钟点说法一次学透</small></span><button class="playbtn" data-folge="33" onclick="playFolge(33,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 34</span><span class="t">Hast du morgen Zeit?<small>约人第一步：问对方明天有没有空，再对一下各自的安排</small></span><button class="playbtn" data-folge="34" onclick="playFolge(34,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 35</span><span class="t">Wann spielen wir?<small>约着一起踢球：定哪天、几点、在哪儿见面</small></span><button class="playbtn" data-folge="35" onclick="playFolge(35,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 36</span><span class="t">Zu spät?!<small>赴约迟到了！学迟到怎么说、晚了多久怎么讲、怎么道歉</small></span><button class="playbtn" data-folge="36" onclick="playFolge(36,this)">▶ 播放</button></div>
+<p style="margin-top:12px">看法：第一遍开德文字幕连着看完 4 集，先抓剧情；第二遍回看重点集，跟着出声读核心句型。播放器加载不出来时，用下面第一个链接去 YouTube 看，效果一样。</p>
+<div class="btnrow">
+<a class="btn ghost" href="https://www.youtube.com/playlist?list=PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg" target="_blank" rel="noopener">YouTube 官方播放列表（备用）</a>
+<a class="btn ghost" href="https://learngerman.dw.com/en/nicos-weg/c-36519789" target="_blank" rel="noopener">DW Nicos Weg 课程总入口</a>
+</div>
+</div>
+
+<h2 class="sec">💬 第二步 · 核心句型（12 句，剧情原句式）</h2>
+<div class="card">
+<div class="phrase"><span class="de">Wie spät ist es?</span><span class="zh">现在几点？</span></div>
+<div class="phrase"><span class="de">Es ist 14 Uhr 30.</span><span class="zh">现在 14 点 30 分。（官方说法）</span></div>
+<div class="phrase"><span class="de">Es ist halb drei.</span><span class="zh">现在两点半。（口语说法）</span></div>
+<div class="phrase"><span class="de">Es ist Viertel nach acht.</span><span class="zh">现在八点一刻。</span></div>
+<div class="phrase"><span class="de">Hast du morgen Zeit?</span><span class="zh">你明天有时间吗？</span></div>
+<div class="phrase"><span class="de">Wann treffen wir uns?</span><span class="zh">我们什么时候见？</span></div>
+<div class="phrase"><span class="de">Wir treffen uns um 18 Uhr vor dem Kino.</span><span class="zh">我们 18 点在电影院门口见。</span></div>
+<div class="phrase"><span class="de">Geht es am Samstag um 10 Uhr?</span><span class="zh">周六 10 点行吗？</span></div>
+<div class="phrase"><span class="de">Ja, das geht. Bis Samstag!</span><span class="zh">行，没问题。周六见！</span></div>
+<div class="phrase"><span class="de">Ich muss leider arbeiten.</span><span class="zh">我可惜得工作（去不了）。</span></div>
+<div class="phrase"><span class="de">Ich kann am Freitag nicht.</span><span class="zh">我周五不行。</span></div>
+<div class="phrase"><span class="de">Entschuldigung, ich bin zu spät!</span><span class="zh">对不起，我迟到了！</span></div>
+</div>
+
+<h2 class="sec">🗣 第三步 · 跟读对话（把剧情压缩成 1 分钟）</h2>
+<div class="card dlg">
+<p><span class="who">Emma:</span> Hallo Nico! Hast du am Samstag Zeit?</p>
+<p><span class="who">Nico:</span> Ja, ich habe Zeit. Was machen wir?</p>
+<p><span class="who">Emma:</span> Wir spielen Fußball. Wir treffen uns um 10 Uhr vor dem Kino.</p>
+<p><span class="who">Nico:</span> Gut, bis Samstag!</p>
+<p><span class="who">Emma:</span> Aber bitte pünktlich, Nico!</p>
+<p><span class="who">Nico:</span> Entschuldigung, ich bin zu spät!</p>
+<p><span class="who">Emma:</span> Es ist schon halb elf! 20 Minuten zu spät!</p>
+<p><span class="who">Nico:</span> Entschuldigung! Nächstes Mal bin ich pünktlich.</p>
+<div class="tipbox">练法：两人分角色读一遍，再交换角色读第二遍，重点练 halb elf 这类口语钟点。注：Nächstes Mal（下次）先整句记下，它的变格 A2 再学。</div>
+</div>
+
+<h2 class="sec">📐 第四步 · 语法一页讲透</h2>
+<div class="card">
+<p><b>1）钟点官方说法：照着数字念</b></p>
+<p>问时间：<b class="hl">Wie spät ist es?</b> 和 <b class="hl">Wie viel Uhr ist es?</b> 完全同义。官方说法（广播、时刻表、正式场合）照着数字念，用 24 小时制：</p><table><tr><th>时间</th><th>官方说法</th></tr><tr><td>9:00</td><td>Es ist <b>9 Uhr</b>.</td></tr><tr><td>9:05</td><td>Es ist <b>9 Uhr 5</b>.</td></tr><tr><td>14:30</td><td>Es ist <b>14 Uhr 30</b>.</td></tr><tr><td>20:15</td><td>Es ist <b>20 Uhr 15</b>.</td></tr></table><p>公式：Es ist + 小时 + Uhr + 分钟。先把这一档练到张口就来，口语说法是第二档。</p>
+</div>
+<div class="card">
+<p><b>2）钟点口语说法：halb drei 是 2:30，不是 3:30</b></p>
+<p>日常口语只用 12 小时，而且<b class="hl">永远往下一个整点看</b>：</p><table><tr><th>时间</th><th>口语说法</th><th>直译</th></tr><tr><td>8:15</td><td><b>Viertel nach</b> acht</td><td>八点过一刻</td></tr><tr><td>8:30</td><td><b>halb neun</b></td><td>到九点还差一半</td></tr><tr><td>8:45</td><td><b>Viertel vor</b> neun</td><td>差一刻到九点</td></tr><tr><td>8:55</td><td><b>kurz vor</b> neun</td><td>快九点了</td></tr></table><p>最大的坑：<b class="hl">halb drei = 2:30</b>，不是 3:30！德语的 halb 是「往三点走了一半」。记法：halb 后面的数字永远是「下一个小时」。</p>
+</div>
+<div class="card">
+<p><b>3）时间介词三件套：um / am / von … bis</b></p>
+<p>说安排的时间，三个介词各管一摊：</p><table><tr><th>介词</th><th>管什么</th><th>例子</th></tr><tr><td><b>um</b></td><td>钟点</td><td>um 10 Uhr <span class="zh">10 点</span>；um halb drei <span class="zh">两点半</span></td></tr><tr><td><b>am</b></td><td>星期、日期、时段</td><td>am Samstag <span class="zh">周六</span>；am Morgen <span class="zh">早上</span></td></tr><tr><td><b>von … bis …</b></td><td>时间段</td><td>von 9 bis 17 Uhr <span class="zh">从 9 点到 17 点</span></td></tr><tr><td><b>im</b></td><td>月份、季节</td><td>im Mai <span class="zh">五月</span>；im Sommer <span class="zh">夏天</span></td></tr></table><p>对比第 7 课：am Morgen 是「（某天的）早上」，morgens 是「每天早上」，别混。</p>
+</div>
+<div class="card">
+<p><b>4）情态动词 müssen / können：原形跑句尾</b></p>
+<p>情态动词来了。变位不规则，但句型只有一个框：<b class="hl">情态动词站第二位，实义动词原形站句尾</b>。</p><table><tr><th>人称</th><th>müssen 必须</th><th>können 能/可以</th></tr><tr><td>ich</td><td>muss</td><td>kann</td></tr><tr><td>du</td><td>musst</td><td>kannst</td></tr><tr><td>er / sie / es</td><td>muss</td><td>kann</td></tr><tr><td>wir</td><td>müssen</td><td>können</td></tr><tr><td>ihr</td><td>müsst</td><td>könnt</td></tr><tr><td>sie / Sie</td><td>müssen</td><td>können</td></tr></table><p>例句：Ich <b>muss</b> heute <b>arbeiten</b>. / <b>Kannst</b> du am Freitag <b>kommen</b>? 注意 ich 和 er 形式相同、没有 -t。这个「句尾原形」和第 7 课可分动词的前缀站句尾是同一个道理：德语句子爱把东西往尾巴上放。</p>
+</div>
+
+<h2 class="sec">🔤 第五步 · 核心词（36 个，全量词表在词汇页）</h2>
+<div class="vgrid" id="vgrid"></div>
+<div class="btnrow">
+<a class="btn ghost" href="../a1/">去 A1 全量词表（1725 词）复习本课词 →</a>
+<a class="btn ghost" href="../../memorize/">去背单词页用间隔重复记 →</a>
+</div>
+
+<h2 class="sec">✍️ 第六步 · 自测（5 题，全对再往下走）</h2>
+<div class="card" id="quiz"></div>
+
+<h2 class="sec">🎙 口语任务（本课的「过关标准」）</h2>
+<div class="card">
+<p>不看稿，录一段语音或对着镜子约一个朋友周末见面，说完下面 5 句（替换成你自己的信息）：</p>
+<ul>
+<li>Hallo! Hast du am ______ Zeit?</li>
+<li>Wir spielen ______. / Wir gehen ins Kino.</li>
+<li>Wir treffen uns um ______ Uhr vor dem Kino.</li>
+<li>Ich muss um ______ Uhr zu Hause sein.</li>
+<li>Bis ______! Sei bitte pünktlich!</li>
+</ul>
+<p style="margin-top:10px">能完整约成一次见面、um 和 am 不混、halb 不说反，这课就算过了；卡在口语钟点就回第四步第 2 张卡再看一眼。</p>
+<div class="btnrow"><button id="doneBtn" onclick="toggleDone()">标记本课已学完</button></div>
+</div>
+
+<a class="back" href="a1-07.html">← 上一课</a> · <a class="back" href="./">返回课程目录</a> · <a class="back" href="a1-09.html">下一课 →</a>
+</div>
+<script>
+var ytPlayer=null,ytReady=false,pendingFolge=33;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+function onYouTubeIframeAPIReady(){
+  ytPlayer=new YT.Player('ytPlayer',{
+    width:'100%',height:'100%',
+    playerVars:{listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:33,rel:0,playsinline:1},
+    events:{onReady:function(){ytReady=true;}}
+  });
+}
+/* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
+window.playFolge=function(n,btn){
+  document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+  if(btn)btn.classList.add('now');
+  var box=document.querySelector('.playerbox');
+  if(box)box.scrollIntoView({behavior:'smooth',block:'center'});
+  if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){
+    ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:n,startSeconds:0});
+  }else{
+    pendingFolge=n;
+    var iv=setInterval(function(){
+      if(ytReady&&ytPlayer&&ytPlayer.loadPlaylist){clearInterval(iv);ytPlayer.loadPlaylist({listType:'playlist',list:'PLs7zUO7VPyJ5DV1iBRgSw2uDl832n0bLg',index:pendingFolge,startSeconds:0});}
+    },400);
+    setTimeout(function(){clearInterval(iv);},8000);
+  }
+};
+var WORDS=[["die Uhr (Uhrzeit)", "点钟（时间）", "o'clock"], ["die Uhr, die Uhren", "钟；表", "clock / o'clock"], ["können", "可以；能", "can"], ["müssen", "必须", "must, have to"], ["Wie spät ist es?", "现在几点了？", "What time is it?"], ["Wie viel Uhr ist es?", "现在几点钟？", "What time is it?"], ["Es ist 09:00 Uhr.", "现在是上午9点钟。", "It is 9 o'clock."], ["die Stunde, die Stunden", "小时", "hour"], ["die Minute, die Minuten", "分钟", "minute"], ["eine halbe Stunde", "半小时", "half an hour"], ["die Viertelstunde, die Viertelstunden", "一刻钟；15分钟", "quarter of an hour"], ["Viertel nach", "后15分钟", "quarter past"], ["Viertel vor", "前15分钟", "quarter to"], ["halb", "…点半（时间）", "half"], ["spät", "晚的；迟的", "late"], ["später", "晚一点；迟一点", "later"], ["pünktlich", "准时的", "punctual"], ["unpünktlich", "不准时的", "unpunctual; late"], ["die Verspätung, die Verspätungen", "延误；晚点；迟到", "delay"], ["der Termin, die Termine", "（诊疗等）约定时间；预约", "appointment"], ["das Datum, die Daten", "日期", "date"], ["Der Wievielte ist heute?", "今天是几号？", "What's the date today?"], ["der Kalender, die Kalender", "年历；月历；日历", "calendar"], ["heute", "今天", "today"], ["morgen", "明天", "tomorrow"], ["übermorgen", "后天", "the day after tomorrow"], ["gestern", "昨天", "yesterday"], ["(jemanden) treffen", "见面；碰面", "to meet"], ["das Treffen, die Treffen", "会面", "meeting"], ["(auf jemanden/etwas) warten", "等待（某人/某事）", "to wait"], ["Zeit haben", "有时间", "to have time"], ["die Einladung, die Einladungen", "邀请；邀请函", "invitation"], ["Ich habe Lust.", "我有兴趣。", "I feel like it."], ["das Kino, die Kinos", "电影院", "cinema"], ["ins Kino gehen", "去看电影；去电影院", "to go to the cinema"], ["(etwas) spielen", "玩", "to play"]];
+var vg=document.getElementById('vgrid');
+vg.innerHTML=WORDS.map(function(w,i){
+  return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
+}).join('');
+function speak(text,btn){
+  try{
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
+    u.lang='de-DE';u.rate=0.85;
+    var vs=speechSynthesis.getVoices().filter(function(v){return v.lang&&v.lang.toLowerCase().indexOf('de')===0;});
+    if(vs.length)u.voice=vs[0];
+    btn.textContent='🔊';u.onend=function(){btn.textContent='🔈';};
+    speechSynthesis.speak(u);
+  }catch(e){btn.textContent='❌';}
+}
+vg.addEventListener('click',function(e){
+  var b=e.target.closest('.speak');if(!b)return;
+  speak(WORDS[+b.getAttribute('data-i')][0],b);
+});
+if('speechSynthesis' in window)speechSynthesis.getVoices();
+
+var QUIZ=[{"q": "1. 口语说法 „halb vier“ 是几点？", "opts": ["4:15", "4:30", "3:30", "3:45"], "a": 2}, {"q": "2. „Wir treffen uns ___ 18 Uhr.“ 填：", "opts": ["um", "im", "von", "am"], "a": 0}, {"q": "3. „Ich ___ heute leider nicht kommen.“（können）填：", "opts": ["könnt", "kannst", "können", "kann"], "a": 3}, {"q": "4. „Es ist Viertel vor neun.“ 是几点？", "opts": ["8:15", "8:45", "9:45", "9:15"], "a": 1}, {"q": "5. „Du ___ morgen arbeiten, oder?“（müssen）填：", "opts": ["müssen", "musst", "muss", "müsst"], "a": 1}];
+var answered=0,correct=0;
+var qz=document.getElementById('quiz');
+qz.innerHTML=QUIZ.map(function(item,qi){
+  return '<div class="q"><p>'+item.q+'</p><div class="opts">'+item.opts.map(function(o,oi){
+    return '<button class="opt" data-q="'+qi+'" data-o="'+oi+'">'+o+'</button>';
+  }).join('')+'</div></div>';
+}).join('')+'<div class="score" id="score"></div>';
+qz.addEventListener('click',function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled)return;
+  var qi=+b.getAttribute('data-q'),oi=+b.getAttribute('data-o');
+  var box=b.parentElement;
+  Array.prototype.forEach.call(box.children,function(x){x.disabled=true;});
+  if(oi===QUIZ[qi].a){b.classList.add('ok');correct++;}
+  else{b.classList.add('bad');box.children[QUIZ[qi].a].classList.add('ok');}
+  answered++;
+  var s=document.getElementById('score');
+  if(answered===QUIZ.length){
+    s.textContent=correct===QUIZ.length?'🎉 5/5 全对，这课过关，去做口语任务吧。':'得分 '+correct+' / '+QUIZ.length+' —— 错的题回第四步语法卡再看一眼，然后刷新页面重测。';
+  }else{
+    s.textContent='已答 '+answered+' / '+QUIZ.length;
+  }
+});
+
+var DONE_KEY='nicosweg-a1-08-done';
+function paintDone(){
+  var b=document.getElementById('doneBtn');
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1'}catch(e){}
+  b.className=on?'done':'';b.textContent=on?'✓ 本课已学完（点此取消）':'标记本课已学完';
+}
+window.toggleDone=function(){
+  var on=false;try{on=localStorage.getItem(DONE_KEY)==='1';localStorage.setItem(DONE_KEY,on?'0':'1')}catch(e){}
+  paintDone();
+};
+paintDone();
+
+(function(){
+  function apply(t){var r=document.documentElement;
+    if(t==='auto')r.setAttribute('data-theme',matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    else r.setAttribute('data-theme',t);
+    var b=document.getElementById('themeBtn');if(b)b.textContent=t==='light'?'☀️':t==='dark'?'🌙':'🔄';}
+  var cur='auto';try{cur=localStorage.getItem('delernen-theme')||'auto'}catch(e){}
+  apply(cur);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(cur==='auto')apply('auto');});
+  window.toggleTheme=function(){cur=cur==='auto'?'light':cur==='light'?'dark':'auto';try{localStorage.setItem('delernen-theme',cur)}catch(e){}apply(cur);};
+})();
+</script>
+
+<script>
+(function(){
+  var STEP_KEY='nicosweg-a1-08-steps';
+  var secs=Array.prototype.slice.call(document.querySelectorAll('h2.sec'));
+  if(!secs.length)return;
+  var bodies=[],videoIdx=-1;
+  secs.forEach(function(h,i){
+    if(h.textContent.indexOf('看视频')>=0)videoIdx=i;
+    var chev=document.createElement('span');chev.className='chev';chev.textContent='▼';h.appendChild(chev);
+    h.setAttribute('tabindex','0');h.setAttribute('role','button');
+    var body=document.createElement('div');body.className='stepbody';
+    h.parentNode.insertBefore(body,h.nextSibling);
+    var n=body.nextSibling;
+    while(n&&!(n.tagName==='H2'&&n.classList&&n.classList.contains('sec'))&&!(n.tagName==='A'&&n.classList&&n.classList.contains('back'))){
+      var nxt=n.nextSibling;body.appendChild(n);n=nxt;
+    }
+    bodies.push(body);
+  });
+  var openState=secs.map(function(){return true;});
+  try{
+    var sv=JSON.parse(localStorage.getItem(STEP_KEY)||'null');
+    if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
+  }catch(e){}
+  function pauseVideo(){
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+  }
+  function apply(){
+    bodies.forEach(function(b,i){
+      b.style.display=openState[i]?'':'none';
+      secs[i].classList.toggle('closed',!openState[i]);
+      secs[i].setAttribute('aria-expanded',openState[i]?'true':'false');
+    });
+    var btn=document.getElementById('expandAllBtn');
+    if(btn)btn.textContent=openState.every(function(x){return x;})?'全部收起':'全部展开';
+    if(videoIdx>=0&&!openState[videoIdx])pauseVideo();
+  }
+  function save(){try{localStorage.setItem(STEP_KEY,JSON.stringify(openState));}catch(e){}}
+  function toggle(i){openState[i]=!openState[i];apply();save();}
+  secs.forEach(function(h,i){
+    h.addEventListener('click',function(){toggle(i);});
+    h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle(i);}});
+  });
+  window.toggleExpandAll=function(){
+    var target=!openState.every(function(x){return x;});
+    openState=openState.map(function(){return target;});
+    apply();save();
+  };
+  apply();
+})();
+</script>
+<script src="/pwa.js"></script>
+</body>
+</html>
