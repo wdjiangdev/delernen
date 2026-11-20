@@ -1,5 +1,7 @@
 package com.wdjiangdev.delernen.ui.weg
 
+import android.view.View
+import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -51,6 +53,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import com.wdjiangdev.delernen.data.DataRepo
 import com.wdjiangdev.delernen.data.WegLesson
 import com.wdjiangdev.delernen.data.WegProgress
@@ -195,6 +199,10 @@ private fun VideoSection(les: WegLesson) {
     }
     // 播放器 WebView 随课创建、离页销毁；只放行 embed 自身的主框架导航，
     // 点播放器里的 YouTube 标志等跳往观看页的动作一律拦下，保证不跳出 App。
+    // 注意：不能直接 loadUrl(embed 地址)——那样没有合法来源，YouTube 报 Error 153；
+    // 必须像网站一样加载一个含 iframe 的页面，并以网站域名为 baseURL（该来源已验证可嵌）。
+    var fullscreenView by remember { mutableStateOf<View?>(null) }
+    var fullscreenCallback by remember { mutableStateOf<WebChromeClient.CustomViewCallback?>(null) }
     val webView = remember(les.level, les.num) {
         WebView(context).apply {
             settings.javaScriptEnabled = true
@@ -212,11 +220,47 @@ private fun VideoSection(les: WegLesson) {
                     return !allowed
                 }
             }
+            webChromeClient = object : WebChromeClient() {
+                override fun onShowCustomView(view: View?, callback: CustomViewCallback?) {
+                    fullscreenView = view
+                    fullscreenCallback = callback
+                }
+
+                override fun onHideCustomView() {
+                    fullscreenView = null
+                    fullscreenCallback = null
+                }
+            }
         }
     }
     LaunchedEffect(currentId) {
         if (currentId.isNotBlank()) {
-            webView.loadUrl("https://www.youtube.com/embed/$currentId?rel=0&playsinline=1")
+            val html = "<!DOCTYPE html><html><head>" +
+                "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" +
+                "<style>html,body{margin:0;padding:0;background:#000;height:100%}" +
+                "iframe{position:absolute;inset:0;width:100%;height:100%;border:0}</style>" +
+                "</head><body><iframe src=\"https://www.youtube.com/embed/$currentId" +
+                "?rel=0&playsinline=1\" allow=\"autoplay; encrypted-media; picture-in-picture\" " +
+                "allowfullscreen></iframe></body></html>"
+            webView.loadDataWithBaseURL(
+                "https://delernen.6668800.xyz/", html, "text/html", "utf-8", null
+            )
+        }
+    }
+    val fsView = fullscreenView
+    if (fsView != null) {
+        Dialog(
+            onDismissRequest = {
+                fullscreenCallback?.onCustomViewHidden()
+                fullscreenView = null
+                fullscreenCallback = null
+            },
+            properties = DialogProperties(usePlatformDefaultWidth = false)
+        ) {
+            AndroidView(
+                factory = { fsView },
+                modifier = Modifier.fillMaxSize().background(Color.Black)
+            )
         }
     }
     DisposableEffect(Unit) {
