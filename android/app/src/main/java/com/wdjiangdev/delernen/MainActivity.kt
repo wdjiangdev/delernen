@@ -10,6 +10,7 @@ import com.wdjiangdev.delernen.data.WegProgress
 import com.wdjiangdev.delernen.nav.AppRoot
 import com.wdjiangdev.delernen.ui.theme.DelernenTheme
 import com.wdjiangdev.delernen.ui.theme.ThemeState
+import com.wdjiangdev.delernen.util.DwAudio
 import com.wdjiangdev.delernen.util.TtsHelper
 
 class MainActivity : ComponentActivity() {
@@ -19,6 +20,7 @@ class MainActivity : ComponentActivity() {
         WegProgress.init(applicationContext)
         // 主题偏好在首帧前读入（默认蓝色），避免启动时闪一下另一套配色
         ThemeState.light = ThemeStore.isLight(applicationContext)
+        DwAudio.init(applicationContext)
         // TTS 绑定 applicationContext，进程级单例；提前初始化，旋转屏幕不重建
         TtsHelper.get(applicationContext)
         enableEdgeToEdge()

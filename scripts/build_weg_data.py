@@ -118,6 +118,13 @@ def main() -> int:
 
     OUT.write_text(json.dumps({"lessons": lessons}, ensure_ascii=False), encoding="utf-8")
     print(f"weg.json 已生成: 56 课 / {total_folgen} 集 / {OUT.stat().st_size/1024:.0f} KB -> {OUT}")
+
+    # DW 单词录音映射（归一化键 -> mp3 文件名）：App 点读时按需下载并缓存，逻辑与网站一致
+    audio_map = json.loads((src / "dw-audio-global.json").read_text(encoding="utf-8"))
+    assert len(audio_map) > 4000, len(audio_map)
+    audio_out = OUT.parent / "dw_audio.json"
+    audio_out.write_text(json.dumps(audio_map, ensure_ascii=False), encoding="utf-8")
+    print(f"dw_audio.json 已生成: {len(audio_map)} 条录音映射 / {audio_out.stat().st_size/1024:.0f} KB -> {audio_out}")
     return 0
 
 

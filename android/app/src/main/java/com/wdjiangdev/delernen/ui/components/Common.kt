@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.sp
 import com.wdjiangdev.delernen.data.ThemeStore
 import com.wdjiangdev.delernen.ui.theme.DelernenColors
 import com.wdjiangdev.delernen.ui.theme.ThemeState
+import com.wdjiangdev.delernen.util.DwAudio
 import com.wdjiangdev.delernen.util.TtsHelper
 
 /** 单选分段切换（Material 3 SegmentedButton）。 */
@@ -56,14 +57,18 @@ fun SegmentedRow(options: List<String>, selected: String, onSelect: (String) -> 
     }
 }
 
-/** 朗读按钮：TTS 德语不可用时静默禁用（不高亮、不崩溃）。 */
+/**
+ * 朗读按钮：优先 DW 原版录音（DwAudio：缓存→按需下载→回退 TTS）；
+ * 无录音且 TTS 德语不可用时静默禁用（不高亮、不崩溃）。
+ */
 @Composable
 fun TtsIconButton(text: String?, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val tts = remember { TtsHelper.get(context) }
-    val enabled = !text.isNullOrBlank() && tts.germanAvailable
+    val enabled = !text.isNullOrBlank() &&
+        (tts.germanAvailable || DwAudio.hasAudio(text.orEmpty()))
     IconButton(
-        onClick = { tts.speak(text.orEmpty()) },
+        onClick = { DwAudio.speak(text.orEmpty(), tts) },
         enabled = enabled,
         modifier = modifier
     ) {

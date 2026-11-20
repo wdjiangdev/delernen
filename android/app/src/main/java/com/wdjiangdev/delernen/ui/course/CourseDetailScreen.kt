@@ -41,6 +41,7 @@ import com.wdjiangdev.delernen.ui.components.PosChip
 import com.wdjiangdev.delernen.ui.components.SectionHeader
 import com.wdjiangdev.delernen.ui.components.TtsIconButton
 import com.wdjiangdev.delernen.ui.theme.DelernenColors
+import com.wdjiangdev.delernen.util.DwAudio
 import com.wdjiangdev.delernen.util.TtsHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -57,7 +58,12 @@ fun CourseDetailScreen(num: String, onBack: () -> Unit) {
     val context = LocalContext.current
     val tts = remember { TtsHelper.get(context) }
     // 离开课程详情时停止连读，避免在后台一直念
-    DisposableEffect(Unit) { onDispose { tts.stop() } }
+    DisposableEffect(Unit) {
+        onDispose {
+            tts.stop()
+            DwAudio.stop()
+        }
+    }
 
     val card by produceState<KursCard?>(null, key1 = num) {
         value = withContext(Dispatchers.Default) { DataRepo.kursByNum(num) }
@@ -158,14 +164,14 @@ private fun FollowReadSection(c: KursCard, tts: TtsHelper) {
             Spacer(Modifier.width(4.dp))
             Text("整页连读")
         }
-        TextButton(onClick = { tts.stop() }) {
+        TextButton(onClick = { tts.stop(); DwAudio.stop() }) {
             Icon(Icons.Default.Stop, contentDescription = null)
             Spacer(Modifier.width(4.dp))
             Text("停止")
         }
     }
     c.examples.forEach { (de, zh) ->
-        ExampleRow(de, zh, onSpeak = { tts.speak(sayLine(de)) })
+        ExampleRow(de, zh, onSpeak = { DwAudio.speak(sayLine(de), tts) })
     }
 }
 

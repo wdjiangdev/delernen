@@ -59,6 +59,7 @@ import com.wdjiangdev.delernen.ui.components.PosChip
 import com.wdjiangdev.delernen.ui.components.SectionHeader
 import com.wdjiangdev.delernen.ui.components.TtsIconButton
 import com.wdjiangdev.delernen.ui.theme.DelernenColors
+import com.wdjiangdev.delernen.util.DwAudio
 import com.wdjiangdev.delernen.util.TtsHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -74,7 +75,12 @@ import kotlinx.coroutines.withContext
 fun WegLessonScreen(level: String, num: Int, onBack: () -> Unit) {
     val context = LocalContext.current
     val tts = remember { TtsHelper.get(context) }
-    DisposableEffect(Unit) { onDispose { tts.stop() } }
+    DisposableEffect(Unit) {
+        onDispose {
+            tts.stop()
+            DwAudio.stop()
+        }
+    }
 
     val lesson by produceState<WegLesson?>(null, level, num) {
         value = withContext(Dispatchers.Default) { DataRepo.wegLesson(level, num) }
@@ -289,7 +295,7 @@ private fun SpeakListSection(title: String, lines: List<Pair<String, String>>, t
     SectionHeader(title)
     ReadAllRow(lines.map { it.first }, tts)
     lines.forEach { (de, zh) ->
-        SpeakRow(de, zh) { tts.speak(de) }
+        SpeakRow(de, zh) { DwAudio.speak(de, tts) }
     }
 }
 
@@ -301,7 +307,7 @@ private fun DialogueSection(les: WegLesson, tts: TtsHelper) {
         Row(
             Modifier
                 .fillMaxWidth()
-                .clickable { tts.speak(line) }
+                .clickable { DwAudio.speak(line, tts) }
                 .padding(horizontal = 16.dp, vertical = 6.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -337,7 +343,7 @@ private fun ReadAllRow(lines: List<String>, tts: TtsHelper) {
             Spacer(Modifier.width(4.dp))
             Text("整段连读")
         }
-        TextButton(onClick = { tts.stop() }) {
+        TextButton(onClick = { tts.stop(); DwAudio.stop() }) {
             Icon(Icons.Default.Stop, contentDescription = null)
             Spacer(Modifier.width(4.dp))
             Text("停止")
