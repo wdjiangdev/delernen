@@ -1,14 +1,14 @@
 # delernen Android
 
-离线德语学习 App（Jetpack Compose + Room SRS）。数据全量打包在 `app/src/main/assets/data/`（13 个 JSON，由 `scripts/build_android_data.py` 生成），Manifest 不申请 INTERNET 权限，完全离线。
+离线德语学习 App（Jetpack Compose + Room SRS）。数据全量打包在 `app/src/main/assets/data/`（14 个 JSON：13 个由 `scripts/build_android_data.py` 生成，加速课的 `weg.json` 由 `scripts/build_weg_data.py` 生成），Manifest 不申请 INTERNET 权限，完全离线（加速课的视频以跳转 YouTube 打开的方式呈现，点开时才用网络）。
 
 ## 构建
 
 **CI 为主（推荐）**：`.github/workflows/android.yml` 在 push 到 master 且改动路径含 `android/**` 或该 workflow 本身（或手动 workflow_dispatch）时执行 `assembleRelease`（R8 混淆 + 资源压缩，debuggable=false），用固定证书签名并发布到 Release。每次构建都是一个新版本，不覆盖旧的：
 
 - versionCode：`GITHUB_RUN_NUMBER`
-- versionName：`1.1.<run>`（`app/build.gradle.kts` 里的 `versionMinor` 控制中间那位）
-- tag：`android-v1.<run>`，附件：`delernen-1.1.<run>.apk`
+- versionName：`1.2.<run>`（`app/build.gradle.kts` 里的 `versionMinor` 控制中间那位）
+- tag：`android-v1.<run>`，附件：`delernen-1.2.<run>.apk`
 - 有 `concurrency: android-release`，连续 push 只保留最新一次构建。
 - CI 会校验 APK 证书 SHA-256 必须等于既有证书（`2308e396…438164`），不一致直接失败。
 
@@ -26,7 +26,8 @@
    ```
 
    它会重新生成 `android/app/src/main/assets/data/` 下 13 个 JSON（nicos×3、sep×2、动词组×2、词族×2、语法×2、kurs、alice）。脚本带条数断言（nicos 1725/1731/961、sep 27/49、动词组 66/154、kurs 94、alice 17），**新增课程卡/笔记后必须先同步更新脚本里的 `EXPECTED`**，否则脚本报错不产出；
-3. 把 `assets/data/` 的变动随源码一起提交。App 端零代码改动——`DataRepo` 按文件名懒加载assets。
+3. 加速课数据单独一条线：内容源在仓库外的 `~/workspace/nicosweg-content/`（56 课 JSON + b1-map + playlist-ids），改完先跑上面的数据同步、再跑 `python3 scripts/build_weg_data.py` 重新生成 `weg.json`（带 56 课 / 228 集 / 每课句型 12、自测 5、核心词 36 或 40 的断言）；
+4. 把 `assets/data/` 的变动随源码一起提交。App 端零代码改动——`DataRepo` 按文件名懒加载assets。
 
 ## 版本号
 
@@ -51,7 +52,7 @@
 ```
 android/app/src/main/java/com/wdjiangdev/delernen/
 ├── MainActivity.kt            # 入口：DataRepo.init + TTS 预热（只在真正退出时释放）
-├── nav/AppRoot.kt             # Navigation Compose：5 个页签 + star/verb、course/{num}、note/{index} 详情路由
+├── nav/AppRoot.kt             # Navigation Compose：6 个页签 + star/verb、course/{num}、weg/{level}/{num}、note/{index} 详情路由
 ├── data/
 │   ├── Models.kt              # 与 assets/data/*.json 一一对应的数据类
 │   ├── DataRepo.kt            # assets JSON 解析（懒加载、进程内缓存）
@@ -62,7 +63,8 @@ android/app/src/main/java/com/wdjiangdev/delernen/
 │   ├── vocab/                 # 页签 2 词表
 │   ├── memorize/              # 页签 3 背单词（SRS）
 │   ├── course/                # 页签 4 课程列表 + 详情/跟读（本目录）
-│   ├── notes/                 # 页签 5 笔记列表 + 详情（本目录）
+│   ├── weg/                   # 页签 5 加速课（WegScreen 课列表 / WegLessonScreen 课详情：句型/对话/语法/核心词/自测/口语，视频跳 YouTube）
+│   ├── notes/                 # 页签 6 笔记列表 + 详情（本目录）
 │   ├── components/Common.kt   # 通用组件（CardSurface / SectionHeader / TtsIconButton / SegmentedRow / PosChip）
 │   └── theme/Theme.kt         # DelernenColors 深色配色（对齐网站 theme.css）
 └── util/                      # TtsHelper（德语 TTS）、DeText（词条文本工具）

@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.wdjiangdev.delernen.data.DataRepo
+import com.wdjiangdev.delernen.data.WegProgress
 import com.wdjiangdev.delernen.nav.AppRoot
 import com.wdjiangdev.delernen.ui.theme.DelernenTheme
 import com.wdjiangdev.delernen.util.TtsHelper
@@ -13,6 +14,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         DataRepo.init(applicationContext)
+        WegProgress.init(applicationContext)
         // TTS 绑定 applicationContext，进程级单例；提前初始化，旋转屏幕不重建
         TtsHelper.get(applicationContext)
         enableEdgeToEdge()

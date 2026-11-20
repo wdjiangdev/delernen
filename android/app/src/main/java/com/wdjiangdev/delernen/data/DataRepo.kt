@@ -246,6 +246,83 @@ object DataRepo {
 
     fun aliceByLevel(level: String): List<AliceNote> = aliceNotes.filter { it.level == level }
 
+    // ---------------- Nicos Weg 加速课 ----------------
+
+    val wegLessons: List<WegLesson> by lazy {
+        val arr = JSONObject(loadJson("weg.json")).getJSONArray("lessons")
+        (0 until arr.length()).map { i ->
+            val l = arr.getJSONObject(i)
+
+            fun pairs(key: String): List<Pair<String, String>> {
+                val a = l.optJSONArray(key) ?: return emptyList()
+                return (0 until a.length()).map { j ->
+                    val r = a.getJSONArray(j)
+                    r.optString(0, "") to r.optString(1, "")
+                }
+            }
+            fun strList(key: String): List<String> {
+                val a = l.optJSONArray(key) ?: return emptyList()
+                return (0 until a.length()).map { j -> a.optString(j, "") }
+            }
+
+            val folArr = l.getJSONArray("folgen")
+            val folgen = (0 until folArr.length()).map { j ->
+                val f = folArr.getJSONObject(j)
+                WegFolge(f.getInt("n"), optStr(f, "t"), optStr(f, "d"), optStr(f, "yt"))
+            }
+            val grArr = l.optJSONArray("grammar")
+            val grammar = (0 until (grArr?.length() ?: 0)).map { j ->
+                val g = grArr!!.getJSONObject(j)
+                WegGrammar(optStr(g, "title"), optStr(g, "text"))
+            }
+            val wArr = l.optJSONArray("words")
+            val words = (0 until (wArr?.length() ?: 0)).map { j ->
+                val w = wArr!!.getJSONObject(j)
+                WegWord(optStr(w, "de"), optStr(w, "zh"), optStr(w, "en"))
+            }
+            val qArr = l.optJSONArray("quiz")
+            val quiz = (0 until (qArr?.length() ?: 0)).map { j ->
+                val q = qArr!!.getJSONObject(j)
+                val oArr = q.getJSONArray("opts")
+                WegQuiz(
+                    q = optStr(q, "q"),
+                    opts = (0 until oArr.length()).map { k -> oArr.optString(k, "") },
+                    a = q.optInt("a", -1)
+                )
+            }
+            val sp = l.optJSONObject("speaking")
+            val speaking = WegSpeaking(
+                intro = sp?.let { optStr(it, "intro") } ?: "",
+                lines = sp?.let { o ->
+                    val a = o.optJSONArray("lines")
+                    (0 until (a?.length() ?: 0)).map { j -> a!!.optString(j, "") }
+                } ?: emptyList(),
+                outro = sp?.let { optStr(it, "outro") } ?: ""
+            )
+            WegLesson(
+                level = l.getString("level"),
+                num = l.getInt("num"),
+                thema = optStr(l, "thema"),
+                zh = optStr(l, "zh"),
+                duration = optStr(l, "duration"),
+                folgen = folgen,
+                cando = strList("cando"),
+                phrases = pairs("phrases"),
+                dialogue = pairs("dialogue"),
+                dialogueNote = optStr(l, "dialogueNote"),
+                grammar = grammar,
+                words = words,
+                quiz = quiz,
+                speaking = speaking
+            )
+        }
+    }
+
+    fun wegByLevel(level: String): List<WegLesson> = wegLessons.filter { it.level == level }
+
+    fun wegLesson(level: String, num: Int): WegLesson? =
+        wegLessons.firstOrNull { it.level == level && it.num == num }
+
     // ---------------- 背单词数据源归一化 ----------------
 
     /** 网站 memorize 的 SRS_SOURCES 等价物（不触发 JSON 解析，词数在首次 srsWords() 之后才准确）。 */

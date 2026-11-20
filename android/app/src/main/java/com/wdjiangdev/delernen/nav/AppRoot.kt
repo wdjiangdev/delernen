@@ -10,6 +10,7 @@ import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.FormatListBulleted
 import androidx.compose.material.icons.filled.MenuBook
 import androidx.compose.material.icons.filled.Memory
+import androidx.compose.material.icons.filled.PlayCircleFilled
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -38,14 +39,18 @@ import com.wdjiangdev.delernen.ui.star.StarMapScreen
 import com.wdjiangdev.delernen.ui.star.StarVerbScreen
 import com.wdjiangdev.delernen.ui.theme.DelernenColors
 import com.wdjiangdev.delernen.ui.vocab.VocabScreen
+import com.wdjiangdev.delernen.ui.weg.WegLessonScreen
+import com.wdjiangdev.delernen.ui.weg.WegScreen
 
 private const val SCREEN_STAR = "star"
 private const val SCREEN_VOCAB = "vocab"
 private const val SCREEN_MEMORIZE = "memorize"
 private const val SCREEN_COURSE = "course"
+private const val SCREEN_WEG = "weg"
 private const val SCREEN_NOTES = "notes"
 
-private val TOP_LEVEL = setOf(SCREEN_STAR, SCREEN_VOCAB, SCREEN_MEMORIZE, SCREEN_COURSE, SCREEN_NOTES)
+private val TOP_LEVEL =
+    setOf(SCREEN_STAR, SCREEN_VOCAB, SCREEN_MEMORIZE, SCREEN_COURSE, SCREEN_WEG, SCREEN_NOTES)
 
 private data class TabItem(val route: String, val label: String, val icon: ImageVector)
 
@@ -54,6 +59,7 @@ private val tabs = listOf(
     TabItem(SCREEN_VOCAB, "词表", Icons.Default.FormatListBulleted),
     TabItem(SCREEN_MEMORIZE, "背单词", Icons.Default.Memory),
     TabItem(SCREEN_COURSE, "课程", Icons.Default.MenuBook),
+    TabItem(SCREEN_WEG, "加速课", Icons.Default.PlayCircleFilled),
     TabItem(SCREEN_NOTES, "笔记", Icons.Default.Description)
 )
 
@@ -132,6 +138,22 @@ fun AppRoot() {
             ) { entry ->
                 CourseDetailScreen(
                     num = entry.arguments?.getString("num") ?: "",
+                    onBack = { navController.popBackStack() }
+                )
+            }
+
+            composable(SCREEN_WEG) { WegScreen(navController) }
+
+            composable(
+                "weg/{level}/{num}",
+                arguments = listOf(
+                    navArgument("level") { type = NavType.StringType },
+                    navArgument("num") { type = NavType.IntType }
+                )
+            ) { entry ->
+                WegLessonScreen(
+                    level = entry.arguments?.getString("level") ?: "a1",
+                    num = entry.arguments?.getInt("num") ?: 1,
                     onBack = { navController.popBackStack() }
                 )
             }

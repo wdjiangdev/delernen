@@ -129,3 +129,54 @@ data class SrsSourceDef(
     val name: String,
     val count: Int
 )
+
+// ---- Nicos Weg 加速课 -> weg.json（scripts/build_weg_data.py 生成） ----
+data class WegFolge(
+    val n: Int,
+    val t: String,
+    val d: String,
+    /** DW 官方 YouTube 视频 ID，App 内跳转 YouTube 打开（App 本身不联网）。 */
+    val yt: String
+)
+
+data class WegWord(
+    val de: String,
+    val zh: String,
+    val en: String
+)
+
+data class WegGrammar(
+    val title: String,
+    /** 语法卡正文纯文本（生成时已把 HTML 表格转成「单元格 | 单元格」行）。 */
+    val text: String
+)
+
+data class WegQuiz(
+    val q: String,
+    val opts: List<String>,
+    /** 正确选项下标。 */
+    val a: Int
+)
+
+data class WegSpeaking(
+    val intro: String,
+    val lines: List<String>,
+    val outro: String
+)
+
+data class WegLesson(
+    val level: String,
+    val num: Int,
+    val thema: String,
+    val zh: String,
+    val duration: String,
+    val folgen: List<WegFolge>,
+    val cando: List<String>,
+    val phrases: List<Pair<String, String>>,
+    val dialogue: List<Pair<String, String>>,
+    val dialogueNote: String,
+    val grammar: List<WegGrammar>,
+    val words: List<WegWord>,
+    val quiz: List<WegQuiz>,
+    val speaking: WegSpeaking
+)
