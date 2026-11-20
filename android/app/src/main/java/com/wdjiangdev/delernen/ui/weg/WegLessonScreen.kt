@@ -235,19 +235,18 @@ private fun VideoSection(les: WegLesson) {
     }
     LaunchedEffect(currentId) {
         if (currentId.isNotBlank()) {
+            // 关键：HTML 里绝不能出现 % 和 # —— loadDataWithBaseURL 明文加载时会把它们
+            // 当转义符解析坏（黑屏）；而 base64 编码在带 https baseURL 时又会被原样显示。
+            // 所以样式不用百分比尺寸（inset:0 已足够撑满）、颜色用命名色。
             val html = "<!DOCTYPE html><html><head>" +
                 "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" +
-                "<style>html,body{margin:0;padding:0;background:#000;height:100%}" +
-                "iframe{position:absolute;inset:0;width:100%;height:100%;border:0}</style>" +
+                "<style>html,body{margin:0;padding:0;background:black}" +
+                "iframe{position:absolute;inset:0;border:0}</style>" +
                 "</head><body><iframe src=\"https://www.youtube.com/embed/$currentId" +
                 "?rel=0&playsinline=1\" allow=\"autoplay; encrypted-media; picture-in-picture\" " +
                 "allowfullscreen></iframe></body></html>"
-            // HTML 里有 % 等字符，必须 Base64 编码加载，否则 loadData 解析坏掉、整页黑屏
-            val encoded = android.util.Base64.encodeToString(
-                html.toByteArray(Charsets.UTF_8), android.util.Base64.NO_PADDING
-            )
             webView.loadDataWithBaseURL(
-                "https://delernen.6668800.xyz/", encoded, "text/html", "base64", null
+                "https://delernen.6668800.xyz/", html, "text/html", "utf-8", null
             )
         }
     }
