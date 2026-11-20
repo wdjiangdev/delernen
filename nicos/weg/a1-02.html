@@ -248,8 +248,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"null": "BAKU_null.mp3", "eins": "BAKU_A1_eins.mp3", "zwei": "BAKU_A1_zwei.mp3", "drei": "BAKU_A1_drei.mp3", "vier": "BAKU_A1_vier.mp3", "fünf": "BAKU_A1_fuenf.mp3", "sechs": "BAKU_A1_sechs.mp3", "sieben": "BAKU_A1_sieben.mp3", "acht": "BAKU_acht.mp3", "neun": "BAKU_A1_neun.mp3", "zehn": "BAKU_A1_zehn.mp3", "elf": "BAKU_A1_elf.mp3", "zwölf": "BAKU_A1_zwoelf.mp3", "zwanzig": "BAKU_A1_zwanzig.mp3", "dreißig": "BAKU_A1_dreissig.mp3", "zahl die zahlen": "BAKU_A1_Zahl.mp3", "telefonnummer die telefonnummern": "BAKU_A1_Telefonnummer.mp3", "meine telefonnummer ist": "BAKU_A1_meine_telefonnummer_ist.mp3", "wie ist ihre telefonnummer": "BAKU_A1_wie_ist_ihre_telefonnummer.mp3", "adresse die adressen": "BAKU_A1_Adresse.mp3", "wie ist ihre adresse": "BAKU_A1_wie_ist_ihre_adresse.mp3", "straße die straßen": "BAKU_A1_Strasse.mp3", "hausnummer die hausnummern": "BAKU_A1_Hausnummer.mp3", "postleitzahl die postleitzahlen": "BAKU_A1_Postleitzahl.mp3", "wohnort die wohnorte": "BAKU_A2_Wohnort.mp3", "stadt die städte": "BAKU_A1_Stadt.mp3", "wohnen": "BAKU_A1_wohnen.mp3", "amt die ämter": "BAKU_A2_Amt.mp3", "pass die pässe": "BAKU_A1_Pass.mp3", "passnummer die passnummern": "BAKU_A1_Passnummer.mp3", "familienname die familiennamen": "BAKU_A1_Familienname.mp3", "e-mail die e-mails": "BAKU_A1_E-Mail.mp3", "handy die handys": "BAKU_A1_Handy.mp3", "etwas unterschreiben": "BAKU_B1_unterschreiben.mp3", "einen moment bitte": "BAKU_Einen_Moment_bitte.mp3", "noch einmal bitte": "BAKU_A1_noch_einmal_bitte.mp3", "wie ist deine telefonnummer": "BAKU_A1_wie_ist_deine_telefonnummer.mp3", "wie ist deine adresse": "BAKU_A1_wie_ist_deine_adresse.mp3", "wie alt sind sie": "BAKU_A1_wie_alt_sind_sie.mp3", "ich bin 23 jahre alt": "A1_E3_L1_S4_A3_Audio1.mp3", "wo wohnen sie": "BAKU_A1_wo_wohnen_sie.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

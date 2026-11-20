@@ -247,8 +247,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"bahnhof die bahnhöfe": "BAKU_A1_Bahnhof.mp3", "bus die busse": "BAKU_A1_Bus.mp3", "bahn die bahnen": "BAKU_A1_Bahn.mp3", "straßenbahn die straßenbahnen": "BAKU_A1_Strassenbahn.mp3", "u-bahn die u-bahnen": "BAKU_A1_UBahn.mp3", "zug die züge": "BAKU_A1_Zug.mp3", "taxi die taxis": "BAKU_das_Taxi.mp3", "auto die autos": "BAKU_A1_Auto.mp3", "fahrrad die fahrräder": "BAKU_A1_Fahrrad.mp3", "flugzeug die flugzeuge": "BAKU_A2_Flugzeug.mp3", "fahrkarte die fahrkarten": "BAKU_A2_Fahrkarte.mp3", "haltestelle die haltestellen": "BAKU_A1_Haltestelle.mp3", "linie die linien": "BAKU_A1_Linie.mp3", "um|steigen": "BAKU_A2_umsteigen.mp3", "fahren": "BAKU_A1_fahren.mp3", "fliegen": "BAKU_A1_fliegen.mp3", "gehen": "BAKU_A1_gehen.mp3", "zu fuß gehen": "BAKU_A1_zu_fuss_gehen.mp3", "straße die straßen": "BAKU_A1_Strasse.mp3", "weg die wege": "BAKU_A2_Weg_der.mp3", "ampel die ampeln": "BAKU_A1_Ampel.mp3", "kreuzung die kreuzungen": "BAKU_A1_Kreuzung.mp3", "ecke die ecken": "BAKU_A1_Ecke.mp3", "brücke die brücken": "BAKU_A1_Bruecke.mp3", "platz die plätze": "BAKU_A1_Platz.mp3", "stadtplan die stadtpläne": "BAKU_A2_Stadtplan.mp3", "links": "BAKU_A1_links.mp3", "rechts": "BAKU_A1_rechts.mp3", "geradeaus": "BAKU_A1_geradeaus.mp3", "auf der linken seite": "BAKU_A1_auf_der_linken_seite.mp3", "auf der rechten seite": "BAKU_A1_auf_der_rechten_seite.mp3", "nah": "BAKU_B1_nah.mp3", "weit": "BAKU_A1_weit.mp3", "büro die büros": "BAKU_A1_Buero.mp3", "wo finde ich …": "BAKU_A1_wo_finde_ich.mp3", "entschuldigung": "BAKU_Entschuldigung.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

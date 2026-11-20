@@ -247,8 +247,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"supermarkt die supermärkte": "BAKU_A1_Supermarkt.mp3", "markt die märkte": "BAKU_A2_Markt.mp3", "geschäft die geschäfte": "BAKU_A1_Geschaeft.mp3", "bäckerei die bäckereien": "BAKU_A2_Baeckerei.mp3", "metzgerei die metzgereien": "BAKU_A1_die_metzgerei.mp3", "etwas kaufen": "BAKU_A1_kaufen.mp3", "etwas ein|kaufen": "BAKU_A1_einkaufen.mp3", "etwas/jemanden brauchen": "BAKU_A1_brauchen.mp3", "preis die preise": "BAKU_A1_Preis.mp3", "etwas kosten": "BAKU_A1_kosten.mp3", "wie viel kostet": "BAKU_A1_wieviel_kostet.mp3", "euro die euros (nach zahl euro)": "BAKU_A1_Euro.mp3", "cent die cents (nach zahl cent)": "BAKU_A1_Cent.mp3", "kilo die kilos (nach zahl kilo)": "BAKU_A1_kilo.mp3", "gramm die gramme (nach zahl gramm)": "BAKU_A1_Gramm.mp3", "liter die liter": "BAKU_A1_Liter.mp3", "flasche die flaschen": "BAKU_A1_Flasche.mp3", "packung die packungen": "BAKU_A1_die_packung.mp3", "dose die dosen": "BAKU_A1_Dose.mp3", "stück die stücke (nach zahl oft stück)": "BAKU_A1_Stueck.mp3", "tüte die tüten": "BAKU_A1_Tuete.mp3", "sonst noch etwas": "BAKU_A1_sonst_noch_etwas.mp3", "ist alles": "BAKU_A2_Das_ist_alles.mp3", "was darf es sein": "BAKU_A1_Was_darf_es_sein.mp3", "ich hätte gerne …": "BAKU_A1_ich_haette_gerne.mp3", "wie viel euro macht das": "BAKU_A1_wieviel_euro_macht_das.mp3", "brot die brote": "BAKU_A1_Brot.mp3", "milch (nur sg)": "BAKU_A1_Milch.mp3", "käse (nur sg)": "BAKU_A1_Kaese.mp3", "butter (nur sg)": "BAKU_A1_Butter.mp3", "ei die eier": "BAKU_A1_Ei.mp3", "mehl (nur sg)": "BAKU_das_Mehl.mp3", "kartoffel die kartoffeln": "BAKU_A1_Kartoffel.mp3", "tomate die tomaten": "BAKU_A1_Tomate.mp3", "fleisch (nur sg)": "BAKU_A1_Fleisch.mp3", "fisch die fische": "BAKU_A1_Fisch.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

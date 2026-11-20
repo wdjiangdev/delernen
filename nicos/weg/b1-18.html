@@ -251,8 +251,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"aus|wandern": "BAKU_A2_auswandern.mp3", "ein|wandern": "BAKU_B1_einwandern.mp3", "flüchtling die flüchtlinge": "BAKU_A2_Fluechtling.mp3", "fliehen": "BAKU_B1_fliehen.mp3", "jemanden verfolgen": "BAKU_B1_verfolgen.mp3", "heimatlos": "BAKU_B1_heimatlos.mp3", "aufenthaltserlaubnis die aufenthaltserlaubnisse": "BAKU_B1_aufenthaltserlaubnis.mp3", "zurück|kehren": "BAKU_B1_zurueckkehren.mp3", "erfahrung die erfahrungen": "BAKU_A2_Erfahrung.mp3", "entscheidung treffen": "Glossar-eine-entscheidung-treffen.mp3", "etwas entscheiden": "BAKU_A1_entscheiden.mp3", "über etwas entscheiden": "BAKU_A1_entscheiden.mp3", "risiko die risiken": "BAKU_B1_Risiko.mp3", "etwas gründen": "BAKU_A2_gruenden.mp3", "sich selbstständig machen": "BAKU_B1_selbststaendig_machen.mp3", "erfolgreich": "BAKU_A2_erfolgreich.mp3", "erfolglos": "BAKU_B1_erfolglos.mp3", "kundenorientiert": "BAKU_B1_kundenorientiert.mp3", "bewerbung die bewerbungen": "BAKU_A2_Bewerbung.mp3", "ins exil gehen": "BAKU_B1_ins_exil_gehen.mp3", "gründlich": "BFS2_gruendlich.mp3", "etwas unternehmen": "BAKU_A2_unternehmen.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

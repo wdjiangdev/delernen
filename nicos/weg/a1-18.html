@@ -247,8 +247,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"heimat die heimaten": "BAKU_A1_Heimat.mp3", "heimatland die heimatländer": "BAKU_B1_Heimatland.mp3", "heimweh (nur sg)": "BAKU_A2_Heimweh.mp3", "land die länder": "BAKU_A1_Land.mp3", "stadt die städte": "BAKU_A1_Stadt.mp3", "dorf die dörfer": "BAKU_A1_Dorf.mp3", "(das) deutschland": "BAKU_A1_Deutschland.mp3", "(das) spanien": "BAKU_A1_spanien.mp3", "(das) europa": "BAKU_A1_europa.mp3", "leben die leben": "BAKU_A1_Leben_das.mp3", "beruf die berufe": "BAKU_A1_Beruf.mp3", "studium die studien": "BAKU_A1_Studium.mp3", "traum die träume": "BAKU_A1_Traum.mp3", "plan die pläne": "BAKU_A1_Plan.mp3", "(von etwas) träumen": "BAKU_B1_traeumen.mp3", "sich etwas wünschen": "BAKU_A1_wuenschen.mp3", "leben": "BAKU_A1_leben.mp3", "wohnen": "BAKU_A1_wohnen.mp3", "sprechen": "BAKU_A1_sprechen.mp3", "(etwas) lernen": "BAKU_A1_lernen.mp3", "etwas/jemanden vermissen": "BAKU_A2_vermissen.mp3", "jemandem fehlen": "BAKU_A1_fehlen.mp3", "an etwas/jemanden denken": "BAKU_A1_denken.mp3", "als kind": "BAKU_A2_als_Kind.mp3", "zu hause": "BAKU_A1_zu_Hause.mp3", "anders": "BAKU_A2_anders.mp3", "besser": "BAKU_A1_besser.mp3", "groß": "BAKU_A1_gross.mp3", "klein": "BAKU_A1_klein.mp3", "einfach": "BAKU_A1_einfach.mp3", "eigentlich": "BAKU_A2_eigentlich.mp3", "irgendwann": "BAKU_B1_irgendwann.mp3", "sicher": "BAKU_A2_sicher.mp3", "sympathisch": "BAKU_A2_sympathisch.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

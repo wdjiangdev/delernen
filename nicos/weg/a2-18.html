@@ -250,8 +250,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"meinung die meinungen": "BAKU_B1_Meinung.mp3", "meiner meinung nach": "BAKU_A2_meiner_meinung_nach.mp3", "ich bin anderer meinung": "BAKU_A2_ich_bin_anderer_meinung.mp3", "ich bin der gleichen meinung": "BAKU_Ich_bin_der_gleichen_Meinung.mp3", "etwas/jemanden meinen": "BAKU_A1_meinen.mp3", "glauben": "BAKU_A1_glauben.mp3", "recht haben": "BAKU_B1_Recht.mp3", "(jemandem/etwas) zu|stimmen": "BAKU_B1_zustimmen.mp3", "sich (über etwas/jemanden) auf|regen": "BAKU_A2_aufregen.mp3", "sich über jemanden/etwas ärgern": "BAKU_A2_aergern.mp3", "(jemanden) nerven": "BAKU_A1_nerven.mp3", "ärger (nur sg)": "BAKU_A2_Aerger.mp3", "ärgerlich": "BAKU_A2_aergerlich.mp3", "jemanden überzeugen": "BAKU_B1_ueberzeugen.mp3", "überzeugend": "BAKU_A2_ueberzeugend.mp3", "(mit jemandem) diskutieren": "BAKU_A2_diskutieren.mp3", "ehrlich": "BAKU_A2_ehrlich.mp3", "meinen sie nicht ernst": "BAKU_A2_das_meinen_sie_nicht_ernst.mp3", "fan die fans": "BAKU_A2_Fan.mp3", "stadion die stadien": "BAKU_A1_Stadion.mp3", "tor die tore": "BAKU_A1_Tor.mp3", "einen preis (für etwas) gewinnen": "BAKU_einen_Preis_gewinnen.mp3", "weltmeister die weltmeister": "BAKU_A2_Weltmeister.mp3", "weltmeisterin die weltmeisterinnen": "BAKU_A2_Weltmeisterin.mp3", "verein die vereine": "BAKU_A2_Verein.mp3", "ergebnis die ergebnisse": "BAKU_A1_Ergebnis.mp3", "sich freuen": "BAKU_A2_sich_freuen.mp3", "enttäuscht": "BAKU_A2_enttaeuscht.mp3", "stimme die stimmen": "BAKU_A2_Stimme.mp3", "moderator die moderatoren": "BAKU_B1_Moderator.mp3", "wirklich": "BAKU_A1_wirklich.mp3", "total": "BAKU_A2_total.mp3", "lustig": "BAKU_A2_lustig.mp3", "traurig": "BAKU_A2_traurig.mp3", "weinen": "BAKU_A2_weinen.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

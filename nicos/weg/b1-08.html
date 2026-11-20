@@ -250,8 +250,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"arbeitszeit die arbeitszeiten": "BAKU_A1_Arbeitszeit.mp3", "schichtdienst die schichtdienste": "BAKU_A2_Schichtdienst.mp3", "feierabend die feierabende": "BAKU_B1_Feierabend.mp3", "wunde die wunden": "BAKU_A2_Wunde.mp3", "vorsichtig": "BAKU_A2_vorsichtig.mp3", "unter schutz stehen": "BAKU_B1_unter_schutz_stehen.mp3", "etwas von der steuer ab|setzen": "BAKU_B1_von_der_steuer_absetzen.mp3", "steuern erheben": "BAKU_B1_Steuern_erheben.mp3", "einen antrag stellen": "BAKU_B1_einen_antrag_stellen.mp3", "etwas (bei jemandem) beantragen": "BAKU_B1_beantragen.mp3", "jemanden krank|schreiben": "BAKU_A1_krankschreiben.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

@@ -247,8 +247,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"kleidung (nur sg)": "BAKU_die_Kleidung.mp3", "kleid die kleider": "BAKU_A1_Kleid.mp3", "rock die röcke": "BAKU_A1_Rock.mp3", "hose die hosen": "BAKU_A1_Hose.mp3", "jeans die jeans": "BAKU_A1_Jeans.mp3", "hemd die hemden": "BAKU_A1_Hemd.mp3", "bluse die blusen": "BAKU_A1_Bluse.mp3", "pullover die pullover": "BAKU_A1_Pullover.mp3", "jacke die jacken": "BAKU_A1_Jacke.mp3", "mantel die mäntel": "BAKU_A1_Mantel.mp3", "anzug die anzüge": "BAKU_A1_Anzug.mp3", "mütze die mützen": "BAKU_A1_Muetze.mp3", "schal die schals": "BAKU_A1_Schal.mp3", "handschuh die handschuhe": "BAKU_A1_Handschuh.mp3", "schuh die schuhe": "BAKU_A1_Schuh.mp3", "turnschuh die turnschuhe": "BAKU_A1_Turnschuh.mp3", "sandale die sandalen": "BAKU_Sandale.mp3", "krawatte die krawatten": "BAKU_A2_Krawatte.mp3", "trainingsanzug die trainingsanzüge": "BAKU_A1_Trainingsanzug.mp3", "brille die brillen": "BAKU_A1_Brille.mp3", "farbe die farben": "BAKU_A1_Farbe.mp3", "lieblingsfarbe die lieblingsfarben": "BAKU_A1_Lieblingsfarbe.mp3", "größe die größen": "BAKU_A1_Groesse.mp3", "umkleidekabine die umkleidekabinen": "BAKU_A1_Umkleidekabine.mp3", "etwas tragen": "BAKU_A1_tragen.mp3", "etwas an|ziehen": "BAKU_A1_anziehen.mp3", "etwas an|probieren": "BAKU_A1_anprobieren.mp3", "etwas an|haben": "BAKU_B1_anhaben.mp3", "jemandem gefallen": "BAKU_A1_gefallen.mp3", "jemandem passen": "BAKU_A1_passen.mp3", "gefällt mir": "BAKU_A1_das_gefaellt_mir.mp3", "steht dir gut": "BAKU_A1_das_steht_dir_gut.mp3", "welche größe haben sie": "BAKU_A1_welche_groesse_haben_sie.mp3", "schick": "BAKU_A1_schick.mp3", "modern": "BAKU_A1_modern.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

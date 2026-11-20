@@ -251,8 +251,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"zur wahl gehen": "BAKU_B1_zur_Wahl_gehen.mp3", "jemanden wählen": "BAKU_A1_waehlen.mp3", "ab|stimmen": "BAKU_B1_abstimmen.mp3", "jemandem zu|stimmen": "BAKU_B1_zustimmen.mp3", "politisch": "BAKU_B1_politisch.mp3", "gesetz die gesetze": "BAKU_B1_Gesetz.mp3", "europäisch": "BAKU_A2_europaeisch.mp3", "für/gegen etwas demonstrieren": "BAKU_B1_demonstrieren.mp3", "flüchtling die flüchtlinge": "BAKU_A2_Fluechtling.mp3", "ungerecht": "BAKU_B1_ungerecht.mp3", "einen antrag stellen": "BAKU_B1_einen_antrag_stellen.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

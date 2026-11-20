@@ -249,8 +249,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"temperatur die temperaturen": "BAKU_B1_Temperatur.mp3", "wärme (nur sg)": "BAKU_A1_Waerme.mp3", "frieren": "BAKU_B1_frieren.mp3", "durchschnittlich": "BAKU_B1_durchschnittlich.mp3", "sinken": "BAKU_B1_sinken.mp3", "einen schaden verursachen": "BAKU_B1_einen_schaden_verursachen.mp3", "verschwinden": "BAKU_B1_verschwinden.mp3", "jemanden warnen": "BAKU_B1_warnen.mp3", "risiko die risiken": "BAKU_B1_Risiko.mp3", "extrem": "BAKU_B1_extrem.mp3", "bericht die berichte": "BAKU_A2_Bericht.mp3", "(über etwas) berichten": "BAKU_A2_berichten.mp3", "etwas beeinflussen": "BAKU_B1_beeinflussen.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

@@ -246,8 +246,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"familie die familien": "BAKU_Familie.mp3", "vater die väter": "BAKU_A1_Vater.mp3", "mutter die mütter": "BAKU_A1_Mutter.mp3", "bruder die brüder": "BAKU_A1_Bruder.mp3", "schwester die schwestern": "BAKU_A1_Schwester.mp3", "geschwister die geschwister": "BAKU_A1_Geschwister.mp3", "sohn die söhne": "BAKU_A1_Sohn.mp3", "tochter die töchter": "BAKU_A1_Tochter.mp3", "kind die kinder": "BAKU_A1_Kind.mp3", "baby die babys": "BAKU_A1_Baby.mp3", "großvater die großväter": "BAKU_A2_Grossvater.mp3", "großmutter die großmütter": "BAKU_A2_Grossmutter.mp3", "opa die opas": "BAKU_A2_Opa.mp3", "oma die omas": "BAKU_A1_Oma.mp3", "tante die tanten": "BAKU_A1_Tante.mp3", "onkel die onkel": "BAKU_A2_Onkel.mp3", "cousin die cousins": "BAKU_A2_Cousin.mp3", "cousine die cousinen": "BAKU_A2_Cousine.mp3", "enkelkind die enkelkinder": "BAKU_A2_Enkelkind.mp3", "enkelsohn die enkelsöhne": "BAKU_der_Enkelsohn.mp3", "enkeltochter die enkeltöchter": "BAKU_Enkeltochter.mp3", "einzelkind die einzelkinder": "BAKU_A2_Einzelkind.mp3", "zwillingsbruder die zwillingsbrüder": "BAKU_A1_Zwillingsbruder.mp3", "zwillingsschwester die zwillingsschwestern": "BAKU_A1_Zwillingsschwester.mp3", "mann die männer": "BAKU_A1_Mann.mp3", "frau die frauen": "BAKU_A1_Frau.mp3", "familienname die familiennamen": "BAKU_A1_Familienname.mp3", "verheiratet": "BAKU_A1_verheiratet.mp3", "ledig": "BAKU_A2_ledig.mp3", "alt": "BAKU_A1_alt.mp3", "geburtstag die geburtstage": "BAKU_A1_Geburtstag.mp3", "wie alt bist du": "BAKU_A1_wie_alt_bist_du.mp3", "wie alt ist emma": "BAKU_A1_wie_alt_ist_emma.mp3", "ich bin 23 jahre alt": "A1_E3_L1_S4_A3_Audio1.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

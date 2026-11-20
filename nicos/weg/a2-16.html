@@ -248,8 +248,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"jemandem etwas schenken": "BAKU_A2_schenken.mp3", "etwas verschenken": "BAKU_A2_verschenken.mp3", "werbegeschenk die werbegeschenke": "BAKU_werbegeschenk.mp3", "gutschein die gutscheine": "BAKU_A2_gutschein.mp3", "praline die pralinen": "BAKU_A2_praline.mp3", "blumenstrauß die blumensträuße": "BAKU_A2_Blumenstrauss.mp3", "pflanze die pflanzen": "BAKU_A1_Pflanze.mp3", "kamera die kameras": "BAKU_A1_Kamera.mp3", "parfüm die parfüms": "BAKU_A2_Parfuem.mp3", "schmuck (nur sg)": "BAKU_A2_Schmuck.mp3", "ring die ringe": "BAKU_A2_Ring.mp3", "wunsch die wünsche": "BAKU_A2_Wunsch.mp3", "wunschzettel die wunschzettel": "BAKU_wunschzettel.mp3", "jemandem etwas wünschen": "BAKU_A1_wuenschen.mp3", "glückwunsch die glückwünsche": "BAKU_A2_Glueckwunsch.mp3", "herzlichen glückwunsch": "BAKU_A2_Herzlichen_Glueckwunsch.mp3", "herzlichen glückwunsch zum geburtstag": "BAKU_Herzlichen_Glueckwunsch_zum_Geburtstag.mp3", "jemandem gratulieren": "BAKU_A2_gratulieren.mp3", "jemanden überraschen": "BAKU_A1_ueberraschen.mp3", "überraschung die überraschungen": "BAKU_A2_Ueberraschung.mp3", "überrascht": "BAKU_A2_ueberrascht.mp3", "sich freuen": "BAKU_A2_sich_freuen.mp3", "sich bei jemandem bedanken": "BAKU_A2_bedanken.mp3", "jemandem etwas geben": "BAKU_A1_geben.mp3", "etwas/jemanden aus|wählen": "BAKU_B1_auswaehlen.mp3", "etwas aus|suchen": "BAKU_B1_aussuchen.mp3", "etwas ein|packen": "BAKU_A1_einpacken_iSv_Kleidung_einpacken.mp3", "(sich etwas) überlegen": "BAKU_B1_ueberlegen.mp3", "idee die ideen": "BAKU_A1_Idee.mp3", "vorschlag die vorschläge": "BAKU_B1_Vorschlag.mp3", "(jemandem) etwas vor|schlagen": "BAKU_A2_vorschlagen.mp3", "gemeinsam": "BAKU_A2_gemeinsam.mp3", "zu jemandem/etwas passen": "BAKU_A1_passen.mp3", "passend": "BAKU_A2_passend.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

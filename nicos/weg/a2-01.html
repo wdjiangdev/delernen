@@ -250,8 +250,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"ankunft die ankünfte": "BAKU_A1_Ankunft.mp3", "abfahrt die abfahrten": "BAKU_A1_Abfahrt.mp3", "ausland (nur sg)": "BAKU_A1_Ausland.mp3", "reisepass die reisepässe": "BAKU_A2_Reisepass.mp3", "gleis die gleise": "BAKU_A2_Gleis.mp3", "hauptbahnhof die hauptbahnhöfe": "BAKU_A1_Hauptbahnhof.mp3", "flug die flüge": "BAKU_A2_Flug.mp3", "hin|fliegen": "BAKU_A2_hinfliegen.mp3", "zurück|kommen": "BAKU_A2_zurueckkommen.mp3", "sich treffen": "BAKU_A1_treffen.mp3", "sich mit jemandem treffen": "BAKU_A1_treffen.mp3", "zukunftsplan die zukunftspläne": "BAKU_A2_Zukunftsplan.mp3", "ziel die ziele": "BAKU_A1_Ziel.mp3", "wunsch die wünsche": "BAKU_A2_Wunsch.mp3", "sich entscheiden": "BAKU_A1_entscheiden.mp3", "entscheidung die entscheidungen": "BAKU_A2_Entscheidung.mp3", "etwas schaffen": "BAKU_A1_schaffen.mp3", "schaffst du schon": "BAKU_A2_das_schaffst_du_schon.mp3", "etwas versuchen": "BAKU_B1_versuchen.mp3", "etwas aus|probieren": "BAKU_A2_ausprobieren.mp3", "ausbildung machen": "BAKU_A2_eine_ausbildung_machen.mp3", "sich (um etwas) bewerben": "BAKU_A2_bewerben.mp3", "bewerbung die bewerbungen": "BAKU_A2_Bewerbung.mp3", "praktikum die praktika": "BAKU_A2_Praktikum.mp3", "studium die studien": "BAKU_A1_Studium.mp3", "an einer uni studieren": "BAKU_an_einer_Uni_studieren.mp3", "semester die semester": "BAKU_A2_Semester.mp3", "sprachprüfung die sprachprüfungen": "BAKU_A2_Sprachpruefung.mp3", "etwas bestehen": "BAKU_B1_bestehen.mp3", "intensivkurs die intensivkurse": "BAKU_A2_Intensivkurs.mp3", "einen kurs besuchen": "BAKU_einen_Kurs_besuchen.mp3", "fremd": "BAKU_A1_fremd.mp3", "(auf etwas/jemanden) neugierig": "BAKU_A2_neugierig.mp3", "sich freuen": "BAKU_A2_sich_freuen.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

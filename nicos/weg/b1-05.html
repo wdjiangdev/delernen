@@ -251,8 +251,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"bewerbung die bewerbungen": "BAKU_A2_Bewerbung.mp3", "anschreiben die anschreiben": "BAKU_B1_anschreiben.mp3", "lebenslauf die lebensläufe": "BAKU_A2_Lebenslauf.mp3", "stellenanzeige die stellenanzeigen": "BAKU_A2_Stellenanzeige.mp3", "erfahrung die erfahrungen": "BAKU_A2_Erfahrung.mp3", "zeugnis die zeugnisse": "BAKU_B1_Zeugnis.mp3", "berufswahl (nur sg)": "BAKU_B1_Berufswahl.mp3", "befristet": "BAKU_B1_befristet.mp3", "kreativ": "BAKU_A2_kreativ.mp3", "zeitlich flexibel": "BAKU_B1_zeitlich_flexibel.mp3", "berufstätig": "BAKU_A1_berufstaetig.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

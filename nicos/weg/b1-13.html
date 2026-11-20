@@ -251,8 +251,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"bericht die berichte": "BAKU_A2_Bericht.mp3", "(über etwas) berichten": "BAKU_A2_berichten.mp3", "anzeige auf|geben": "BAKU_B1_anzeige_aufgeben.mp3", "etwas verbreiten": "BAKU_B1_verbreiten.mp3", "sich eine meinung bilden": "BAKU_B1_meinung_bilden.mp3", "etwas äußern": "BAKU_B1_aeussern.mp3", "mit jemandem in kontakt treten": "BAKU_B1_mit_jemandem_in_Kontakt_treten.mp3", "suchmaschine die suchmaschinen": "BAKU_A2_Suchmaschine.mp3", "in der öffentlichkeit": "BAKU_B1_Oeffentlichkeit.mp3", "öffentlich": "BAKU_B1_oeffentlich.mp3", "rolle die rollen": "BAKU_A2_Rolle.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

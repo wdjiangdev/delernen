@@ -248,8 +248,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"wohnen": "BAKU_A1_wohnen.mp3", "wohnung die wohnungen": "BAKU_A1_Wohnung.mp3", "haus die häuser": "BAKU_A1_Haus.mp3", "wohngemeinschaft die wohngemeinschaften": "BAKU_A1_Wohngemeinschaft.mp3", "mitbewohner die mitbewohner": "BAKU_A2_Mitbewohner.mp3", "miete die mieten": "BAKU_A2_Miete.mp3", "zimmer die zimmer": "BAKU_A1_Zimmer.mp3", "wohnzimmer die wohnzimmer": "BAKU_A1_Wohnzimmer.mp3", "schlafzimmer die schlafzimmer": "BAKU_A1_Schlafzimmer.mp3", "kinderzimmer die kinderzimmer": "BAKU_A1_Kinderzimmer.mp3", "küche die küchen": "BAKU_A1_Kueche.mp3", "bad die bäder": "BAKU_A1_Bad.mp3", "badezimmer die badezimmer": "BAKU_A1_Badezimmer.mp3", "flur die flure": "BAKU_A1_Flur.mp3", "keller die keller": "BAKU_A1_Keller.mp3", "balkon die balkons": "BAKU_A1_Balkon.mp3", "garten die gärten": "BAKU_A1_Garten.mp3", "tür die türen": "BAKU_A1_Tuer.mp3", "fenster die fenster": "BAKU_A1_Fenster.mp3", "wand die wände": "BAKU_A1_Wand.mp3", "treppe die treppen": "BAKU_A1_Treppe.mp3", "etage die etagen": "BAKU_A1_Etage.mp3", "sofa die sofas": "BAKU_A1_Sofa.mp3", "sessel die sessel": "BAKU_A1_Sessel.mp3", "tisch die tische": "BAKU_A1_Tisch.mp3", "stuhl die stühle": "BAKU_A1_Stuhl.mp3", "bett die betten": "BAKU_A1_Bett.mp3", "schrank die schränke": "BAKU_A1_Schrank.mp3", "schreibtisch die schreibtische": "BAKU_A1_Schreibtisch.mp3", "regal die regale": "BAKU_A1_Regal.mp3", "lampe die lampen": "BAKU_A1_Lampe.mp3", "fernseher die fernseher": "BAKU_A1_Fernseher.mp3", "teppich die teppiche": "BAKU_A1_Teppich.mp3", "es gibt …": "BAKU_A1_es_gibt.mp3", "stehen": "BAKU_A1_stehen.mp3", "liegen": "BAKU_A1_liegen_iSv_eine_Stadt_liegt.mp3", "wir wohnen in der ersten etage": "BAKU_A1_wir_wohnen_in_der_ersten_etage.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

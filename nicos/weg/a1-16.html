@@ -247,8 +247,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"sport (nur sg)": "BAKU_A1_Sport_der.mp3", "sportart die sportarten": "BAKU_B1_Sportart.mp3", "fußball die fußbälle": "BAKU_A1_Fussball.mp3", "tennis (nur sg)": "BAKU_A2_Tennis.mp3", "basketball (nur sg)": "BAKU_Basketball.mp3", "handball (nur sg)": "BAKU_Handball.mp3", "training die trainings": "BAKU_A1_Training.mp3", "krafttraining die krafttrainings": "BAKU_das_Krafttraining.mp3", "fitnessstudio die fitnessstudios": "BAKU_A1_Fitnessstudio.mp3", "fitness (nur sg)": "BAKU_A2_Fitness.mp3", "gymnastik (nur sg)": "BAKU_A1_Gymnastik.mp3", "yoga (nur sg)": "BAKU_A1_Yoga.mp3", "yoga-matte die yoga-matten": "BAKU_A1_Yogamatte.mp3", "sportplatz die sportplätze": "BAKU_A2_Sportplatz.mp3", "sportler die sportler": "BAKU_A1_Sportler.mp3", "sportlerin die sportlerinnen": "BAKU_A1_Sportlerin.mp3", "mannschaft die mannschaften": "BAKU_A2_Mannschaft.mp3", "verein die vereine": "BAKU_A2_Verein.mp3", "kopf die köpfe": "BAKU_A1_Kopf.mp3", "arm die arme": "BAKU_A1_Arm_der.mp3", "hand die hände": "BAKU_A1_Hand.mp3", "bein die beine": "BAKU_A1_Bein.mp3", "fuß die füße": "BAKU_A1_Fuss.mp3", "körper die körper": "BAKU_A1_Koerper.mp3", "sport treiben": "BAKU_A1_Sport_treiben.mp3", "trainieren": "BAKU_A1_trainieren.mp3", "schwimmen": "BAKU_A1_schwimmen.mp3", "laufen": "BAKU_A1_laufen_iSv_joggen_rennen.mp3", "tanzen": "BAKU_A1_tanzen.mp3", "joggen": "BAKU_A1_joggen.mp3", "wandern": "BAKU_A1_wandern.mp3", "fahrrad fahren": "BAKU_A1_fahrrad_fahren.mp3", "(etwas) spielen": "BAKU_A1_spielen_iSv_etwas_spielen.mp3", "tor schießen": "BAKU_ein_Tor_schiessen.mp3", "fit": "BAKU_A2_fit.mp3", "sportlich": "BAKU_A1_sportlich.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

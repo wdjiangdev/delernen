@@ -251,8 +251,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"sich zu hause fühlen": "BAKU_A2_sich_zu_hause_fuehlen.mp3", "bestimmt": "BAKU_A1_bestimmt.mp3", "reich": "BAKU_B1_reich.mp3", "zielorientiert": "BAKU_B1_zielorientiert.mp3", "lebenslauf die lebensläufe": "BAKU_A2_Lebenslauf.mp3", "berufswahl (nur sg)": "BAKU_B1_Berufswahl.mp3", "prüfung die prüfungen": "BAKU_B1_Pruefung.mp3", "etwas erleben": "BAKU_A1_erleben.mp3", "kinderlos": "BAKU_B1_kinderlos.mp3", "haushalt die haushalte": "BAKU_A1_Haushalt.mp3", "mit jemandem befreundet sein": "BAKU_B1_befreundet_sein.mp3", "zeit vergeht (zeit vergehen)": "BAKU_B1_zeit_vergehen.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

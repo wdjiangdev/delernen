@@ -251,8 +251,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"beziehung die beziehungen": "BAKU_A2_Beziehung.mp3", "sich scheiden lassen": "BAKU_B1_sich_scheiden_lassen.mp3", "gefühlvoll": "BAKU_B1_gefuehlvoll.mp3", "verständnisvoll": "BAKU_B1_verstaendnisvoll.mp3", "verständnislos": "BAKU_B1_verstaendnislos.mp3", "geduldig": "BAKU_B1_geduldig.mp3", "hilfsbereit": "BAKU_B1_hilfsbereit.mp3", "einsam": "BAKU_B1_einsam.mp3", "sich wohl|fühlen": "Glossar-wohlfuehlen-sich.mp3", "sich ähnlich sehen": "BAKU_B1_aehnlichsehen.mp3", "sich unsicher sein": "BAKU_B1_unsicher.mp3", "sich nichts daraus machen": "BAKU_B1_sich_nichts_daraus_machen.mp3", "mit etwas um|gehen": "BAKU_B1_umgehen_2.mp3", "entscheidung treffen": "Glossar-eine-entscheidung-treffen.mp3", "etwas von etwas trennen": "BAKU_A2_trennen.mp3", "zur verfügung stehen": "BAKU_B1_zur_verfuegung_stehen.mp3", "im vordergrund stehen": "BAKU_B1_im_vordergrund_stehen.mp3", "um etwas gehen": "BAKU_A2_gehen.mp3", "zeit vergeht (zeit vergehen)": "BAKU_B1_zeit_vergehen.mp3", "weg|gehen": "BAKU_A2_weggehen.mp3", "auf der suche nach etwas sein": "BAKU_B1_auf_der_suche_nach_etwas_sein.mp3", "mit jemandem in kontakt treten": "BAKU_B1_mit_jemandem_in_Kontakt_treten.mp3", "für alles offen sein": "BFS2_offen.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

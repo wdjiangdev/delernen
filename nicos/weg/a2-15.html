@@ -249,8 +249,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"feiern": "BAKU_A1_feiern.mp3", "mit jemandem feiern": "BAKU_A1_feiern.mp3", "feiertag die feiertage": "BAKU_der_Feiertag.mp3", "nationalfeiertag die nationalfeiertage": "BAKU_der_Nationalfeiertag.mp3", "volksfest die volksfeste": "BAKU_A2_volksfest.mp3", "festival die festivals": "BAKU_A2_Festival.mp3", "(das) weihnachten (die) weihnachten": "BAKU_das_Weihnachten.mp3", "weihnachtsbaum die weihnachtsbäume": "BAKU_A2_weihnachtsbaum.mp3", "weihnachtsmann die weihnachtsmänner": "BAKU_A2_Weihnachtsmann.mp3", "christkind (nur sg)": "BAKU_Christkind.mp3", "advent (nur sg)": "BAKU_Advent.mp3", "adventskranz die adventskränze": "BAKU_A2_Adventskranz.mp3", "(das) silvester (die) silvester": "BAKU_B1_Silvester.mp3", "(das) ostern (die) ostern": "BAKU_das_Ostern.mp3", "osterei die ostereier": "BAKU_A2_Osterei.mp3", "osterhase die osterhasen": "BAKU_A2_Osterhase.mp3", "oktoberfest die oktoberfeste": "BAKU_A1_Oktoberfest.mp3", "hochzeitstag die hochzeitstage": "BAKU_A2_Hochzeitstag.mp3", "tradition die traditionen": "BAKU_A1_Tradition.mp3", "traditionell": "BAKU_B1_traditionell.mp3", "brauch die bräuche": "BAKU_A2_Brauch.mp3", "feierlich": "BAKU_A2_feierlich.mp3", "kerze die kerzen": "BAKU_A2_Kerze.mp3", "etwas schmücken": "BAKU_A2_schmuecken.mp3", "dekoration die dekorationen": "BAKU_die_Dekoration.mp3", "statt|finden": "BAKU_A1_stattfinden.mp3", "vorbereitung die vorbereitungen": "BAKU_B1_Vorbereitung.mp3", "sich auf etwas vor|bereiten": "BAKU_A2_vorbereiten.mp3", "tanz die tänze": "BAKU_A2_Tanz.mp3", "volksmusik (nur sg)": "BAKU_A2_Volksmusik.mp3", "rockmusik (nur sg)": "BAKU_A2_Rockmusik.mp3", "lied die lieder": "BAKU_A2_Lied.mp3", "sich verkleiden": "BAKU_A2_verkleiden.mp3", "wenn": "BAKU_A1_wenn.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

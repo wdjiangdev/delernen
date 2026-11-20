@@ -247,8 +247,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"tag die tage": "BAKU_A1_Tag.mp3", "alltag (nur sg)": "BAKU_A2_Alltag.mp3", "jeden tag": "BAKU_A1_jeden_tag.mp3", "morgen die morgen": "BAKU_A1_Morgen_der.mp3", "mittag die mittage": "BAKU_A1_Mittag.mp3", "nachmittag die nachmittage": "BAKU_A1_Nachmittag.mp3", "abend die abende": "BAKU_A1_Abend.mp3", "nacht die nächte": "BAKU_A1_Nacht.mp3", "morgens": "BAKU_A1_morgens.mp3", "abends": "BAKU_A1_abends.mp3", "auf|stehen": "BAKU_A1_aufstehen.mp3", "(sich) duschen": "BAKU_A1_duschen.mp3", "zähne putzen": "BAKU_A1_zaehne_putzen.mp3", "frühstücken": "BAKU_A1_fruehstuecken.mp3", "frühstück die frühstücke": "BAKU_A1_Fruehstueck.mp3", "mittagessen die mittagessen": "BAKU_A1_Mittagessen.mp3", "abendessen die abendessen": "BAKU_A1_Abendessen.mp3", "kochen": "BAKU_A1_kochen.mp3", "arbeiten": "BAKU_A1_arbeiten.mp3", "fahren": "BAKU_A1_fahren.mp3", "schlafen": "BAKU_A1_schlafen.mp3", "fern|sehen": "BAKU_A1_fernsehen.mp3", "(etwas) lesen": "BAKU_A1_lesen.mp3", "etwas ein|kaufen": "BAKU_A1_einkaufen.mp3", "ins bett gehen": "BAKU_A1_ins_bett_gehen.mp3", "immer": "BAKU_A1_immer.mp3", "oft": "BAKU_A1_oft.mp3", "manchmal": "BAKU_A1_manchmal.mp3", "nie": "BAKU_A1_nie.mp3", "woche die wochen": "BAKU_A1_Woche.mp3", "montag die montage": "BAKU_A1_Montag.mp3", "freitag die freitage": "BAKU_A1_Freitag.mp3", "samstag die samstage": "BAKU_A1_Samstag.mp3", "sonntag die sonntage": "BAKU_A1_Sonntag.mp3", "wochenende die wochenenden": "BAKU_A1_Wochenende.mp3", "am wochenende": "BAKU_A1_am_wochenende.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

@@ -247,8 +247,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"auto die autos": "BAKU_A1_Auto.mp3", "buch die bücher": "BAKU_A1_Buch.mp3", "stift die stifte": "BAKU_A2_Stift.mp3", "schlüssel die schlüssel": "BAKU_A1_Schluessel.mp3", "brille die brillen": "BAKU_A1_Brille.mp3", "foto die fotos": "BAKU_A1_Foto.mp3", "bild die bilder": "BAKU_A1_Bild.mp3", "computer die computer": "BAKU_A1_Computer.mp3", "uhr die uhren": "BAKU_A1_Uhr.mp3", "geld die gelder": "BAKU_A1_Geld.mp3", "koffer die koffer": "BAKU_A1_Koffer.mp3", "fahrkarte die fahrkarten": "BAKU_A2_Fahrkarte.mp3", "geschenk die geschenke": "BAKU_A1_Geschenk.mp3", "sache die sachen": "BAKU_A1_Sache.mp3", "farbe die farben": "BAKU_A1_Farbe.mp3", "rot": "BAKU_A1_rot.mp3", "blau": "BAKU_A1_blau.mp3", "grün": "BAKU_A1_gruen.mp3", "gelb": "BAKU_A1_gelb.mp3", "schwarz": "BAKU_A1_schwarz.mp3", "weiß": "BAKU_A1_weiss.mp3", "grau": "BAKU_A1_grau.mp3", "braun": "BAKU_A1_braun.mp3", "orange": "BAKU_A1_orange_02.mp3", "rosa": "BAKU_A1_rosa.mp3", "lila": "BAKU_A1_lila.mp3", "neu": "BAKU_A1_neu.mp3", "alt": "BAKU_A1_alt.mp3", "schön": "BAKU_A1_schoen.mp3", "kaputt": "BAKU_A1_kaputt.mp3", "etwas haben": "BAKU_A1_haben.mp3", "mein(e)": "BAKU_A1_mein.mp3", "dein(e)": "BAKU_A1_dein.mp3", "sein(e)": "BAKU_A1_sein.mp3", "tisch die tische": "BAKU_A1_Tisch.mp3", "stuhl die stühle": "BAKU_A1_Stuhl.mp3", "was ist das": "BAKU_A1_was_ist_das.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

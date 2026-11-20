@@ -250,8 +250,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"jemandem probleme bereiten": "BAKU_B1_probleme_bereiten.mp3", "problematisch": "BAKU_B1_problematisch.mp3", "kostenlos": "BAKU_A2_kostenlos.mp3", "sparsam": "BAKU_B1_sparsam.mp3", "reich": "BAKU_B1_reich.mp3", "wohlhabend": "BAKU_B1_wohlhabend.mp3", "steuern erheben": "BAKU_B1_Steuern_erheben.mp3", "etwas von der steuer ab|setzen": "BAKU_B1_von_der_steuer_absetzen.mp3", "etwas an jemanden vermieten": "BAKU_A2_vermieten.mp3", "auf etwas verzichten": "BAKU_A2_verzichten.mp3", "auf eine idee kommen": "BAKU_B1_auf_eine_idee_kommen.mp3", "etwas bedauern": "BAKU_B1_bedauern.mp3", "rücksicht (auf etwas/jemanden) nehmen": "BAKU_A2_Ruecksicht_nehmen.mp3", "hilfsbereit": "BAKU_B1_hilfsbereit.mp3", "auf der suche nach etwas sein": "BAKU_B1_auf_der_suche_nach_etwas_sein.mp3", "risiko die risiken": "BAKU_B1_Risiko.mp3", "verzweifelt": "BAKU_B1_verzweifelt.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

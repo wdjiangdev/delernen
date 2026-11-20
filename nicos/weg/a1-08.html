@@ -247,8 +247,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"uhr (uhrzeit)": "BAKU_Uhr.mp3", "uhr die uhren": "BAKU_A1_Uhr.mp3", "können": "BAKU_A1_koennen.mp3", "müssen": "BAKU_A1_muessen.mp3", "wie spät ist es": "BAKU_A1_wie_spaet_ist_es.mp3", "wie viel uhr ist es": "BAKU_A1_wie_viel_uhr_ist_es.mp3", "es ist 0900 uhr": "BAKU_Es_ist_neun_Uhr.mp3", "stunde die stunden": "BAKU_A1_Stunde.mp3", "minute die minuten": "BAKU_A1_Minute.mp3", "halbe stunde": "BAKU_A1_halbe_Stunde.mp3", "viertelstunde die viertelstunden": "BAKU_A1_Viertelstunde.mp3", "viertel nach": "BAKU_A1_viertel_nach.mp3", "viertel vor": "BAKU_A1_viertel_vor.mp3", "halb": "BAKU_A1_halb.mp3", "spät": "BAKU_A1_spaet.mp3", "später": "BAKU_A2_spaeter.mp3", "pünktlich": "BAKU_A1_puenktlich.mp3", "unpünktlich": "BAKU_A1_unpuenktlich.mp3", "verspätung die verspätungen": "BAKU_A1_Verspaetung.mp3", "termin die termine": "BAKU_A1_Termin.mp3", "datum die daten": "BAKU_A1_Datum.mp3", "wievielte ist heute": "BAKU_der_Wievielte.mp3", "kalender die kalender": "BAKU_A1_Kalender.mp3", "heute": "BAKU_A1_heute.mp3", "morgen": "BAKU_A1_morgen.mp3", "übermorgen": "BAKU_A2_uebermorgen.mp3", "gestern": "BAKU_A1_gestern.mp3", "(jemanden) treffen": "BAKU_A1_treffen.mp3", "treffen die treffen": "BAKU_A2_Treffen.mp3", "(auf jemanden/etwas) warten": "BAKU_A1_warten.mp3", "zeit haben": "BAKU_A1_zeit_haben.mp3", "einladung die einladungen": "BAKU_A1_Einladung.mp3", "ich habe lust": "BAKU_A1_ich_habe_lust.mp3", "kino die kinos": "BAKU_A1_Kino.mp3", "ins kino gehen": "BAKU_A1_ins_kino_gehen.mp3", "(etwas) spielen": "BAKU_A1_spielen_iSv_etwas_spielen.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;

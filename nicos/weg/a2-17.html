@@ -250,8 +250,14 @@ var vg=document.getElementById('vgrid');
 vg.innerHTML=WORDS.map(function(w,i){
   return '<div class="vword"><div class="de">'+w[0]+'<small>'+w[2]+'</small></div><div class="zh">'+w[1]+'</div><button class="speak" data-i="'+i+'" title="朗读" aria-label="朗读">🔈</button></div>';
 }).join('');
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWBASE='https://radiodownloaddw-a.akamaihd.net/Events/dwelle/deutschkurse/nicosweg/wortschatz/';
+var DWAUDIO={"schauspieler die schauspieler": "BAKU_A2_Schauspieler.mp3", "schauspielerin die schauspielerinnen": "BAKU_A2_Schauspielerin.mp3", "hauptrolle die hauptrollen": "BAKU_die_Hauptrolle.mp3", "nebenrolle die nebenrollen": "BAKU_A2_Nebenrolle.mp3", "rolle die rollen": "BAKU_A2_Rolle.mp3", "regisseur die regisseure": "BAKU_A2_Regisseur.mp3", "regisseurin die regisseurinnen": "BAKU_A2_Regisseurin.mp3", "kamera die kameras": "BAKU_A1_Kamera.mp3", "kamerafrau die kamerafrauen": "BAKU_A2_kamerafrau.mp3", "filmstudio die filmstudios": "BAKU_das_Filmstudio.mp3", "filmproduktion die filmproduktionen": "BAKU_A2_filmproduktion.mp3", "filmbranche die filmbranchen": "BAKU_A2_filmbranche.mp3", "drehbuch die drehbücher": "BAKU_A2_drehbuch.mp3", "szene die szenen": "BAKU_B1_Szene.mp3", "handlung die handlungen": "BAKU_A2_Handlung.mp3", "geschichte die geschichten": "BAKU_A2_Geschichte.mp3", "krimi die krimis": "BAKU_A2_Krimi.mp3", "komödie die komödien": "BAKU_A2_komoedie.mp3", "actionfilm die actionfilme": "BAKU_A2_actionfilm.mp3", "science-fiction-film die science-fiction-filme": "BAKU_A2_science_fiction_film.mp3", "filmgenre die filmgenres": "BAKU_A2_filmgenre.mp3", "buchverfilmung die buchverfilmungen": "BAKU_A2_buchverfilmung.mp3", "publikum (nur sg)": "BAKU_A2_Publikum.mp3", "zuschauer die zuschauer": "BAKU_B1_Zuschauer.mp3", "star die stars": "BAKU_A2_Star.mp3", "kritiker die kritiker": "BAKU_der_Kritiker.mp3", "kritik die kritiken": "BAKU_B1_Kritik.mp3", "filmkulisse die filmkulissen": "BAKU_A2_filmkulisse.mp3", "filmklappe die filmklappen": "BAKU_Filmklappe.mp3", "praktikum die praktika": "BAKU_A2_Praktikum.mp3", "(etwas) drehen": "BAKU_B1_drehen.mp3", "(etwas) filmen": "BAKU_A2_filmen.mp3", "sich etwas an|sehen": "BAKU_A1_ansehen.mp3", "berühmt": "BAKU_A1_beruehmt.mp3", "worum geht es in dem film": "BAKU_A2_worum_geht_es_in_dem_film.mp3"};
+var _dwA=null;
+function dwKey(t){return t.replace(/[.!?,;:]/g,'').trim().toLowerCase().replace(/^(der|die|das|den|dem|ein|eine)\s+/,'').split(',')[0].trim();}
 function speak(text,btn){
-  try{
+  var _f=DWAUDIO[dwKey(text)];if(_f){try{if(window._dwA){_dwA.pause();}speechSynthesis.cancel();_dwA=new Audio(DWBASE+_f);btn.textContent='🔊';_dwA.onended=function(){btn.textContent='🔈';};_dwA.onerror=function(){btn.textContent='🔈';};_dwA.play();return;}catch(e){}}
+    try{
     speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text.replace(/[.!,]/g,''));
     u.lang='de-DE';u.rate=0.85;
