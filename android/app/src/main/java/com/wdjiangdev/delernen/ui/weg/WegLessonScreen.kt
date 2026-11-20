@@ -1,16 +1,17 @@
 package com.wdjiangdev.delernen.ui.weg
 
-import android.content.ActivityNotFoundException
-import android.content.Context
-import android.content.Intent
-import android.net.Uri
+import android.webkit.WebResourceRequest
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -36,6 +37,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
@@ -44,8 +46,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.viewinterop.AndroidView
 import com.wdjiangdev.delernen.data.DataRepo
 import com.wdjiangdev.delernen.data.WegLesson
 import com.wdjiangdev.delernen.data.WegProgress
@@ -60,9 +65,9 @@ import kotlinx.coroutines.withContext
 
 /**
  * 加速课课详情（路由 weg/{level}/{num}），与网页端课页同结构：
- * 目标 → 视频（跳 YouTube 打开，App 本身不联网）→ 核心句型（可朗读/连读）→
+ * 目标 → 视频（WebView 内嵌 YouTube 播放器，App 内播放）→ 核心句型（可朗读/连读）→
  * 对话（可朗读/连读）→ 语法卡（纯文本）→ 核心词（可朗读）→ 自测（点选判分）→
- * 口语任务 → 标记学完（WegProgress 持久化）。
+ * 口语任务 → 标记学完（WegProgress 持久化）。除视频外全部内容离线。
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -102,7 +107,7 @@ fun WegLessonScreen(level: String, num: Int, onBack: () -> Unit) {
             ) {
                 Header(les, done)
                 CandoSection(les)
-                VideoSection(les, context)
+                VideoSection(les)
                 SpeakListSection(
                     title = "💬 核心句型（${les.phrases.size} 句）",
                     lines = les.phrases,
@@ -173,21 +178,69 @@ private fun CandoSection(les: WegLesson) {
     }
 }
 
-// ---------------------------------------------------------------- 视频（跳 YouTube）
+// ---------------------------------------------------------------- 视频（App 内 WebView 播放）
 
 @Composable
-private fun VideoSection(les: WegLesson, context: Context) {
-    SectionHeader("🎬 视频（${les.folgen.size} 集，点开在 YouTube 播放）")
+private fun VideoSection(les: WegLesson) {
+    SectionHeader("🎬 视频（${les.folgen.size} 集，App 内播放）")
+    val context = LocalContext.current
+    var currentId by remember(les.level, les.num) {
+        mutableStateOf(les.folgen.firstOrNull()?.yt.orEmpty())
+    }
+    // 播放器 WebView 随课创建、离页销毁；只放行 embed 自身的主框架导航，
+    // 点播放器里的 YouTube 标志等跳往观看页的动作一律拦下，保证不跳出 App。
+    val webView = remember(les.level, les.num) {
+        WebView(context).apply {
+            settings.javaScriptEnabled = true
+            settings.domStorageEnabled = true
+            settings.mediaPlaybackRequiresUserGesture = false
+            webViewClient = object : WebViewClient() {
+                override fun shouldOverrideUrlLoading(
+                    view: WebView?,
+                    request: WebResourceRequest?
+                ): Boolean {
+                    val u = request?.url?.toString() ?: return false
+                    val allowed = u.contains("youtube.com/embed") ||
+                        u.contains("youtube-nocookie.com/embed") ||
+                        u.startsWith("about:blank")
+                    return !allowed
+                }
+            }
+        }
+    }
+    LaunchedEffect(currentId) {
+        if (currentId.isNotBlank()) {
+            webView.loadUrl("https://www.youtube.com/embed/$currentId?rel=0&playsinline=1")
+        }
+    }
+    DisposableEffect(Unit) {
+        onDispose {
+            webView.stopLoading()
+            webView.loadUrl("about:blank")
+            webView.destroy()
+        }
+    }
+    Box(
+        Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp)
+            .aspectRatio(16f / 9f)
+            .clip(MaterialTheme.shapes.medium)
+            .background(Color.Black)
+    ) {
+        AndroidView(factory = { webView }, modifier = Modifier.fillMaxSize())
+    }
     Text(
-        "视频是 DW 官方 YouTube 源，打开时需要联网；课内文字、发音都离线可用。",
+        "DW 官方 YouTube 源，在 App 内播放（需联网）；点下面每集切换，其余内容离线可用。",
         style = MaterialTheme.typography.bodySmall,
         color = DelernenColors.Text3,
-        modifier = Modifier.padding(horizontal = 20.dp, vertical = 2.dp)
+        modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp)
     )
     les.folgen.forEach { f ->
+        val isCurrent = f.yt == currentId
         CardSurface(
             modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp),
-            onClick = { openYouTube(context, f.yt) }
+            onClick = { currentId = f.yt }
         ) {
             Row(
                 Modifier.padding(horizontal = 14.dp, vertical = 10.dp),
@@ -204,7 +257,7 @@ private fun VideoSection(les: WegLesson, context: Context) {
                         Text(
                             f.t,
                             style = MaterialTheme.typography.bodyLarge,
-                            color = DelernenColors.Text
+                            color = if (isCurrent) DelernenColors.Accent2 else DelernenColors.Text
                         )
                     }
                     if (f.d.isNotBlank()) {
@@ -215,24 +268,17 @@ private fun VideoSection(les: WegLesson, context: Context) {
                         )
                     }
                 }
-                Icon(
-                    Icons.Default.PlayArrow,
-                    contentDescription = "在 YouTube 播放",
-                    tint = DelernenColors.Accent2
-                )
+                if (isCurrent) {
+                    PosChip("播放中")
+                } else {
+                    Icon(
+                        Icons.Default.PlayArrow,
+                        contentDescription = "播放这一集",
+                        tint = DelernenColors.Accent2
+                    )
+                }
             }
         }
-    }
-}
-
-private fun openYouTube(context: Context, videoId: String) {
-    if (videoId.isBlank()) return
-    try {
-        context.startActivity(
-            Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=$videoId"))
-        )
-    } catch (_: ActivityNotFoundException) {
-        // 没有浏览器/YouTube 可处理：静默忽略
     }
 }
 

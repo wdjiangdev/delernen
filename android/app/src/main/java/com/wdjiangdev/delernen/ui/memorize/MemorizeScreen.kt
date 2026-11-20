@@ -1,4 +1,5 @@
 package com.wdjiangdev.delernen.ui.memorize
+import com.wdjiangdev.delernen.ui.components.ThemeToggleButton
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
@@ -64,7 +65,7 @@ fun MemorizeScreen() {
     val vm: MemorizeViewModel = viewModel()
     val mode by vm.mode.collectAsStateWithLifecycle()
     // 和其他页签一致：用 TopAppBar 处理状态栏 insets，避免内容画到状态栏下面
-    Scaffold(topBar = { TopAppBar(title = { Text("背单词") }) }) { padding ->
+    Scaffold(topBar = { TopAppBar(title = { Text("背单词") }, actions = { ThemeToggleButton() }) }) { padding ->
         Box(Modifier.fillMaxSize().padding(padding)) {
             when (mode) {
                 "study" -> StudyView(vm)

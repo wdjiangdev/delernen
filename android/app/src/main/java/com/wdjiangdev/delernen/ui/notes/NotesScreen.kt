@@ -1,4 +1,5 @@
 package com.wdjiangdev.delernen.ui.notes
+import com.wdjiangdev.delernen.ui.components.ThemeToggleButton
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -44,7 +45,7 @@ fun NotesScreen(navController: NavHostController) {
     }
     val grouped = remember(notes) { groupByLevel(notes) }
 
-    Scaffold(topBar = { TopAppBar(title = { Text("笔记") }) }) { padding ->
+    Scaffold(topBar = { TopAppBar(title = { Text("笔记") }, actions = { ThemeToggleButton() }) }) { padding ->
         if (notes.isEmpty()) {
             Box(Modifier.fillMaxSize().padding(padding), contentAlignment = Alignment.Center) {
                 Text("暂无笔记数据", color = DelernenColors.Text3)

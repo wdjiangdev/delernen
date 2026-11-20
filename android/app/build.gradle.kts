@@ -7,7 +7,7 @@ plugins {
 
 // ---- 版本号：CI 用 GitHub run number，本地默认 1 ----
 // versionCode = run number；versionName = 1.<VERSION_MINOR>.<run>；发布 tag = android-v1.<run>
-val versionMinor = 2
+val versionMinor = 3
 val runNumber: Int = System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull() ?: 1
 
 // ---- 签名：keystore 路径与口令全部来自环境变量 / GitHub Secrets，仓库里不放任何明文 ----

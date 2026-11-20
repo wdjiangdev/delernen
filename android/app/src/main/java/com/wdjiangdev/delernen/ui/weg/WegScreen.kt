@@ -1,4 +1,5 @@
 package com.wdjiangdev.delernen.ui.weg
+import com.wdjiangdev.delernen.ui.components.ThemeToggleButton
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -59,7 +60,7 @@ fun WegScreen(navController: NavHostController) {
     val levelLessons = remember(lessons, level) { lessons.filter { it.level == level } }
     val doneCount = levelLessons.count { (it.level to it.num) in doneSet }
 
-    Scaffold(topBar = { TopAppBar(title = { Text("加速课 · Nicos Weg") }) }) { padding ->
+    Scaffold(topBar = { TopAppBar(title = { Text("加速课 · Nicos Weg") }, actions = { ThemeToggleButton() }) }) { padding ->
         Column(Modifier.fillMaxSize().padding(padding)) {
             SegmentedRow(
                 options = listOf("A1", "A2", "B1"),

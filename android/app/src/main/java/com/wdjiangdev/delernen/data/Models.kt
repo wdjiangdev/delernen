@@ -135,7 +135,7 @@ data class WegFolge(
     val n: Int,
     val t: String,
     val d: String,
-    /** DW 官方 YouTube 视频 ID，App 内跳转 YouTube 打开（App 本身不联网）。 */
+    /** DW 官方 YouTube 视频 ID，课页内 WebView 内嵌播放。 */
     val yt: String
 )
 

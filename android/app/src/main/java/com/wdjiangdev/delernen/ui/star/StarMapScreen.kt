@@ -1,4 +1,5 @@
 package com.wdjiangdev.delernen.ui.star
+import com.wdjiangdev.delernen.ui.components.ThemeToggleButton
 
 import android.net.Uri
 import androidx.compose.foundation.layout.Arrangement
@@ -58,7 +59,7 @@ fun StarMapScreen(navController: NavHostController) {
         value = withContext(Dispatchers.Default) { DataRepo.grammarGroups(range) }
     }
 
-    Scaffold(topBar = { TopAppBar(title = { Text("星图") }) }) { padding ->
+    Scaffold(topBar = { TopAppBar(title = { Text("星图") }, actions = { ThemeToggleButton() }) }) { padding ->
         Column(Modifier.padding(padding).fillMaxSize()) {
             SegmentedRow(
                 options = listOf("A1-A2", "A1-B2"),

@@ -1,4 +1,5 @@
 package com.wdjiangdev.delernen.ui.course
+import com.wdjiangdev.delernen.ui.components.ThemeToggleButton
 
 import android.net.Uri
 import androidx.compose.foundation.layout.Box
@@ -46,7 +47,7 @@ fun CourseScreen(navController: NavHostController) {
     }
     val grouped = remember(cards) { groupByLevel(cards) }
 
-    Scaffold(topBar = { TopAppBar(title = { Text("课程") }) }) { padding ->
+    Scaffold(topBar = { TopAppBar(title = { Text("课程") }, actions = { ThemeToggleButton() }) }) { padding ->
         if (cards.isEmpty()) {
             Box(Modifier.fillMaxSize().padding(padding), contentAlignment = Alignment.Center) {
                 Text("暂无课程数据", color = DelernenColors.Text3)

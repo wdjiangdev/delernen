@@ -1,4 +1,5 @@
 package com.wdjiangdev.delernen.ui.vocab
+import com.wdjiangdev.delernen.ui.components.ThemeToggleButton
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -81,7 +82,7 @@ fun VocabScreen() {
     }
     val grouped: Map<String, List<NicosWord>> = remember(filtered) { filtered.groupBy { it.topic } }
 
-    Scaffold(topBar = { TopAppBar(title = { Text("词表") }) }) { padding ->
+    Scaffold(topBar = { TopAppBar(title = { Text("词表") }, actions = { ThemeToggleButton() }) }) { padding ->
         Column(Modifier.padding(padding).fillMaxSize()) {
             SegmentedRow(
                 options = listOf("A1", "A2", "B1"),

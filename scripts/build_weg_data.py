@@ -9,7 +9,7 @@
 
 词义（zh/en）从已生成的 App 资产 nicos_<level>.json 按 de 精确匹配补齐，
 所以改词表后先跑 build_android_data.py 再跑本脚本。
-视频在 App 内以「跳转 YouTube 打开」呈现（App 本身保持纯离线、无 INTERNET 权限）。
+视频在 App 课页内以 WebView 内嵌 YouTube 播放（yt 为视频 ID）；文字数据全量离线。
 """
 import argparse
 import html as ihtml

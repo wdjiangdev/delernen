@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.DarkMode
+import androidx.compose.material.icons.filled.LightMode
 import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -26,7 +28,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.wdjiangdev.delernen.data.ThemeStore
 import com.wdjiangdev.delernen.ui.theme.DelernenColors
+import com.wdjiangdev.delernen.ui.theme.ThemeState
 import com.wdjiangdev.delernen.util.TtsHelper
 
 /** 单选分段切换（Material 3 SegmentedButton）。 */
@@ -67,6 +71,24 @@ fun TtsIconButton(text: String?, modifier: Modifier = Modifier) {
             Icons.Default.VolumeUp,
             contentDescription = "朗读",
             tint = if (enabled) DelernenColors.Accent2 else DelernenColors.Text3
+        )
+    }
+}
+
+/** 主题切换按钮（各页签顶栏）：蓝色（深色）⇄ 白色（浅色），选择落盘，下次启动保持。 */
+@Composable
+fun ThemeToggleButton() {
+    val context = LocalContext.current
+    val light = ThemeState.light
+    IconButton(onClick = {
+        val next = !light
+        ThemeState.light = next
+        ThemeStore.setLight(context, next)
+    }) {
+        Icon(
+            if (light) Icons.Default.DarkMode else Icons.Default.LightMode,
+            contentDescription = if (light) "切回蓝色主题" else "切换白色主题",
+            tint = DelernenColors.Accent2
         )
     }
 }
