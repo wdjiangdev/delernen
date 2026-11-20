@@ -7,7 +7,7 @@ plugins {
 
 // ---- 版本号：CI 用 GitHub run number，本地默认 1 ----
 // versionCode = run number；versionName = 1.<VERSION_MINOR>.<run>；发布 tag = android-v1.<run>
-val versionMinor = 4
+val versionMinor = 5
 val runNumber: Int = System.getenv("GITHUB_RUN_NUMBER")?.toIntOrNull() ?: 1
 
 // ---- 签名：keystore 路径与口令全部来自环境变量 / GitHub Secrets，仓库里不放任何明文 ----
@@ -105,6 +105,11 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
+
+    // 加速课视频：DW 官方 HLS 直源的原生播放器（YouTube 网页嵌在 App 里会被要求登录验人）
+    implementation("androidx.media3:media3-exoplayer:1.4.1")
+    implementation("androidx.media3:media3-exoplayer-hls:1.4.1")
+    implementation("androidx.media3:media3-ui:1.4.1")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }

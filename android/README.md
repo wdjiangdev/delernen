@@ -1,14 +1,14 @@
 # delernen Android
 
-离线德语学习 App（Jetpack Compose + Room SRS）。数据全量打包在 `app/src/main/assets/data/`（15 个 JSON：13 个由 `scripts/build_android_data.py` 生成，加速课的 `weg.json` 与 DW 录音映射 `dw_audio.json` 由 `scripts/build_weg_data.py` 生成），学习数据全量离线；Manifest 申请 INTERNET 供两处：加速课视频在课页内 WebView 内嵌播放（YouTube 源），以及单词点读的 DW 原版录音按需下载（DwAudio：先查缓存 cacheDir/dw-audio，没有才联网下载并缓存，失败回退系统 TTS；整句无录音直接 TTS）。主题两套：蓝色（深色，默认）与白色（浅色），各页签顶栏按钮切换、选择落盘。
+离线德语学习 App（Jetpack Compose + Room SRS）。数据全量打包在 `app/src/main/assets/data/`（15 个 JSON：13 个由 `scripts/build_android_data.py` 生成，加速课的 `weg.json` 与 DW 录音映射 `dw_audio.json` 由 `scripts/build_weg_data.py` 生成），学习数据全量离线；Manifest 申请 INTERNET 供两处：加速课视频用 ExoPlayer 播 DW 官方 HLS 直源（228 集全覆盖，可选清晰度、部分集可切字幕版；YouTube 网页嵌在 App 里会被要求登录验人，故弃用），以及单词点读的 DW 原版录音按需下载（DwAudio：先查缓存 cacheDir/dw-audio，没有才联网下载并缓存，失败回退系统 TTS；整句无录音直接 TTS）。主题两套：蓝色（深色，默认）与白色（浅色），各页签顶栏按钮切换、选择落盘。
 
 ## 构建
 
 **CI 为主（推荐）**：`.github/workflows/android.yml` 在 push 到 master 且改动路径含 `android/**` 或该 workflow 本身（或手动 workflow_dispatch）时执行 `assembleRelease`（R8 混淆 + 资源压缩，debuggable=false），用固定证书签名并发布到 Release。每次构建都是一个新版本，不覆盖旧的：
 
 - versionCode：`GITHUB_RUN_NUMBER`
-- versionName：`1.4.<run>`（`app/build.gradle.kts` 里的 `versionMinor` 控制中间那位）
-- tag：`android-v1.<run>`，附件：`delernen-1.4.<run>.apk`
+- versionName：`1.5.<run>`（`app/build.gradle.kts` 里的 `versionMinor` 控制中间那位）
+- tag：`android-v1.<run>`，附件：`delernen-1.5.<run>.apk`
 - 有 `concurrency: android-release`，连续 push 只保留最新一次构建。
 - CI 会校验 APK 证书 SHA-256 必须等于既有证书（`2308e396…438164`），不一致直接失败。
 
@@ -63,7 +63,7 @@ android/app/src/main/java/com/wdjiangdev/delernen/
 │   ├── vocab/                 # 页签 2 词表
 │   ├── memorize/              # 页签 3 背单词（SRS）
 │   ├── course/                # 页签 4 课程列表 + 详情/跟读（本目录）
-│   ├── weg/                   # 页签 5 加速课（WegScreen 课列表 / WegLessonScreen 课详情：句型/对话/语法/核心词/自测/口语，视频 WebView 内嵌播放）
+│   ├── weg/                   # 页签 5 加速课（WegScreen 课列表 / WegLessonScreen 课详情：句型/对话/语法/核心词/自测/口语，视频 ExoPlayer 播 DW 直源）
 │   ├── notes/                 # 页签 6 笔记列表 + 详情（本目录）
 │   ├── components/Common.kt   # 通用组件（CardSurface / SectionHeader / TtsIconButton / SegmentedRow / PosChip）
 │   └── theme/Theme.kt         # DelernenColors 深色配色（对齐网站 theme.css）

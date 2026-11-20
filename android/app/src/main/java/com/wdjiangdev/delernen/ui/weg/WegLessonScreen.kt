@@ -1,13 +1,9 @@
 package com.wdjiangdev.delernen.ui.weg
 
-import android.view.View
-import android.webkit.WebChromeClient
-import android.webkit.WebResourceRequest
-import android.webkit.WebView
-import android.webkit.WebViewClient
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -28,6 +24,7 @@ import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -55,6 +52,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
+import androidx.media3.common.C
+import androidx.media3.common.MediaItem
+import androidx.media3.common.Player
+import androidx.media3.common.TrackSelectionOverride
+import androidx.media3.common.Tracks
+import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.ui.PlayerView
 import com.wdjiangdev.delernen.data.DataRepo
 import com.wdjiangdev.delernen.data.WegLesson
 import com.wdjiangdev.delernen.data.WegProgress
@@ -70,7 +74,7 @@ import kotlinx.coroutines.withContext
 
 /**
  * 加速课课详情（路由 weg/{level}/{num}），与网页端课页同结构：
- * 目标 → 视频（WebView 内嵌 YouTube 播放器，App 内播放）→ 核心句型（可朗读/连读）→
+ * 目标 → 视频（ExoPlayer 播 DW 官方 HLS 直源，App 内播放）→ 核心句型（可朗读/连读）→
  * 对话（可朗读/连读）→ 语法卡（纯文本）→ 核心词（可朗读）→ 自测（点选判分）→
  * 口语任务 → 标记学完（WegProgress 持久化）。除视频外全部内容离线。
  */
@@ -188,112 +192,162 @@ private fun CandoSection(les: WegLesson) {
     }
 }
 
-// ---------------------------------------------------------------- 视频（App 内 WebView 播放）
+// ---------------------------------------------------------------- 视频（DW 官方源 · 原生播放器）
 
 @Composable
 private fun VideoSection(les: WegLesson) {
     SectionHeader("🎬 视频（${les.folgen.size} 集，App 内播放）")
     val context = LocalContext.current
-    var currentId by remember(les.level, les.num) {
-        mutableStateOf(les.folgen.firstOrNull()?.yt.orEmpty())
-    }
-    // 播放器 WebView 随课创建、离页销毁；只放行 embed 自身的主框架导航，
-    // 点播放器里的 YouTube 标志等跳往观看页的动作一律拦下，保证不跳出 App。
-    // 注意：不能直接 loadUrl(embed 地址)——那样没有合法来源，YouTube 报 Error 153；
-    // 必须像网站一样加载一个含 iframe 的页面，并以网站域名为 baseURL（该来源已验证可嵌）。
-    var fullscreenView by remember { mutableStateOf<View?>(null) }
-    var fullscreenCallback by remember { mutableStateOf<WebChromeClient.CustomViewCallback?>(null) }
-    val webView = remember(les.level, les.num) {
-        WebView(context).apply {
-            settings.javaScriptEnabled = true
-            settings.domStorageEnabled = true
-            settings.mediaPlaybackRequiresUserGesture = false
-            webViewClient = object : WebViewClient() {
-                override fun shouldOverrideUrlLoading(
-                    view: WebView?,
-                    request: WebResourceRequest?
-                ): Boolean {
-                    val u = request?.url?.toString() ?: return false
-                    val allowed = u.contains("youtube.com/embed") ||
-                        u.contains("youtube-nocookie.com/embed") ||
-                        u.startsWith("about:blank")
-                    return !allowed
-                }
-            }
-            webChromeClient = object : WebChromeClient() {
-                override fun onShowCustomView(view: View?, callback: CustomViewCallback?) {
-                    fullscreenView = view
-                    fullscreenCallback = callback
-                }
+    var current by remember(les.level, les.num) { mutableStateOf(les.folgen.firstOrNull()) }
+    var useUt by remember(les.level, les.num) { mutableStateOf(false) }
+    var quality by remember(les.level, les.num) { mutableStateOf(0) } // 0=自动，其余=指定高度(px)
+    var heights by remember(les.level, les.num) { mutableStateOf<List<Int>>(emptyList()) }
+    var fullscreen by remember { mutableStateOf(false) }
 
-                override fun onHideCustomView() {
-                    fullscreenView = null
-                    fullscreenCallback = null
+    // DW 官方 HLS 源 + ExoPlayer 原生播放：不经 YouTube（网页嵌在 App 里会被它要求登录验人），
+    // 自带进度/全屏，清晰度可手动锁定一档，也可切带德语字幕的版本（dwUt，部分集没有）。
+    val player = remember(les.level, les.num) { ExoPlayer.Builder(context).build() }
+    DisposableEffect(player) { onDispose { player.release() } }
+
+    fun applyQuality() {
+        if (quality != 0) {
+            val already = player.trackSelectionParameters.overrides.values.any { ov ->
+                (0 until ov.mediaTrackGroup.length).any { i ->
+                    ov.trackIndices.contains(i) &&
+                        ov.mediaTrackGroup.getFormat(i).height == quality
+                }
+            }
+            if (already) return
+        }
+        val builder = player.trackSelectionParameters.buildUpon()
+            .clearOverridesOfType(C.TRACK_TYPE_VIDEO)
+        if (quality != 0) {
+            outer@ for (group in player.currentTracks.groups) {
+                if (group.type != C.TRACK_TYPE_VIDEO) continue
+                for (i in 0 until group.length) {
+                    if (group.getTrackFormat(i).height == quality) {
+                        builder.addOverride(TrackSelectionOverride(group.mediaTrackGroup, i))
+                        break@outer
+                    }
                 }
             }
         }
+        player.trackSelectionParameters = builder.build()
     }
-    LaunchedEffect(currentId) {
-        if (currentId.isNotBlank()) {
-            // 关键：HTML 里绝不能出现 % 和 # —— loadDataWithBaseURL 明文加载时会把它们
-            // 当转义符解析坏（黑屏）；而 base64 编码在带 https baseURL 时又会被原样显示。
-            // 所以样式不用百分比尺寸（inset:0 已足够撑满）、颜色用命名色。
-            val html = "<!DOCTYPE html><html><head>" +
-                "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" +
-                "<style>html,body{margin:0;padding:0;background:black}" +
-                "iframe{position:absolute;inset:0;border:0}</style>" +
-                "</head><body><iframe src=\"https://www.youtube.com/embed/$currentId" +
-                "?rel=0&playsinline=1\" allow=\"autoplay; encrypted-media; picture-in-picture\" " +
-                "allowfullscreen></iframe></body></html>"
-            webView.loadDataWithBaseURL(
-                "https://delernen.6668800.xyz/", html, "text/html", "utf-8", null
-            )
+
+    DisposableEffect(player) {
+        val listener = object : Player.Listener {
+            override fun onTracksChanged(tracks: Tracks) {
+                val hs = sortedSetOf<Int>()
+                for (g in tracks.groups) {
+                    if (g.type == C.TRACK_TYPE_VIDEO) {
+                        for (i in 0 until g.length) {
+                            val h = g.getTrackFormat(i).height
+                            if (h > 0) hs.add(h)
+                        }
+                    }
+                }
+                heights = hs.toList().sortedDescending()
+                applyQuality()
+            }
+        }
+        player.addListener(listener)
+        onDispose { player.removeListener(listener) }
+    }
+
+    fun load(posMs: Long) {
+        val f = current ?: return
+        val url = if (useUt && f.dwUt.isNotBlank()) f.dwUt else f.dw
+        if (url.isBlank()) return
+        player.setMediaItem(MediaItem.fromUri(url))
+        player.prepare()
+        if (posMs > 0) player.seekTo(posMs)
+    }
+    LaunchedEffect(current) { load(0L) }
+    val utSeen = remember { mutableStateOf(false) }
+    LaunchedEffect(useUt) {
+        // 首次组合时不重复加载（切集的 effect 已处理）；之后切字幕版保留进度
+        if (utSeen.value) load(player.currentPosition) else utSeen.value = true
+    }
+    LaunchedEffect(quality) { applyQuality() }
+
+    val playerView = remember {
+        PlayerView(context).apply {
+            useController = true
+            setShowBuffering(PlayerView.SHOW_BUFFERING_WHEN_PLAYING)
+            setFullscreenButtonClickListener { fs -> fullscreen = fs }
         }
     }
-    val fsView = fullscreenView
-    if (fsView != null) {
+    LaunchedEffect(playerView, player) { playerView.player = player }
+
+    if (fullscreen) {
         Dialog(
-            onDismissRequest = {
-                fullscreenCallback?.onCustomViewHidden()
-                fullscreenView = null
-                fullscreenCallback = null
-            },
+            onDismissRequest = { fullscreen = false },
             properties = DialogProperties(usePlatformDefaultWidth = false)
         ) {
             AndroidView(
-                factory = { fsView },
+                factory = { playerView },
                 modifier = Modifier.fillMaxSize().background(Color.Black)
             )
         }
-    }
-    DisposableEffect(Unit) {
-        onDispose {
-            webView.stopLoading()
-            webView.loadUrl("about:blank")
-            webView.destroy()
+    } else {
+        Box(
+            Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp)
+                .aspectRatio(16f / 9f)
+                .clip(MaterialTheme.shapes.medium)
+                .background(Color.Black)
+        ) {
+            AndroidView(factory = { playerView }, modifier = Modifier.fillMaxSize())
         }
     }
-    Box(
+    Row(
         Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp)
-            .aspectRatio(16f / 9f)
-            .clip(MaterialTheme.shapes.medium)
-            .background(Color.Black)
+            .padding(horizontal = 16.dp, vertical = 4.dp)
+            .horizontalScroll(rememberScrollState()),
+        verticalAlignment = Alignment.CenterVertically
     ) {
-        AndroidView(factory = { webView }, modifier = Modifier.fillMaxSize())
+        Text(
+            "清晰度",
+            style = MaterialTheme.typography.labelMedium,
+            color = DelernenColors.Text3
+        )
+        Spacer(Modifier.width(8.dp))
+        FilterChip(
+            selected = quality == 0,
+            onClick = { quality = 0 },
+            label = { Text("自动") }
+        )
+        heights.forEach { h ->
+            Spacer(Modifier.width(6.dp))
+            FilterChip(
+                selected = quality == h,
+                onClick = { quality = h },
+                label = { Text("${h}p") }
+            )
+        }
+        if (current?.dwUt?.isNotBlank() == true) {
+            Spacer(Modifier.width(12.dp))
+            FilterChip(
+                selected = useUt,
+                onClick = { useUt = !useUt },
+                label = { Text("字幕版") }
+            )
+        }
     }
     Text(
-        "DW 官方 YouTube 源，在 App 内播放（需联网）；点下面每集切换，其余内容离线可用。",
+        "DW 官方源，在 App 内播放（需联网）；点下面每集切换，其余内容离线可用。",
         style = MaterialTheme.typography.bodySmall,
         color = DelernenColors.Text3,
         modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp)
     )
     les.folgen.forEach { f ->
-        val isCurrent = f.yt == currentId
+        val isCurrent = f == current
         CardSurface(
             modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp),
-            onClick = { currentId = f.yt }
+            onClick = { current = f }
         ) {
             Row(
                 Modifier.padding(horizontal = 14.dp, vertical = 10.dp),

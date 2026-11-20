@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # versionCode = run number；versionName = 1.4.<run>（见 app/build.gradle.kts）
-      VERSION_NAME: 1.4.${{ github.run_number }}
+      VERSION_NAME: 1.5.${{ github.run_number }}
       RELEASE_TAG: android-v1.${{ github.run_number }}
     steps:
       - name: 检出代码

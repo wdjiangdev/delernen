@@ -69,6 +69,11 @@ def main() -> int:
             return 76 + n
         return b1_idx[n]
 
+    # DW 官方视频直源（harvest_dw_video.py 抓、verify_dw_video.py 全量验过）：
+    # f["n"] 即该级内的全局集号，与 dw-video-*.json 的键一致。
+    video_map = json.loads((src / "dw-video-global.json").read_text(encoding="utf-8"))
+    verified = json.loads((src / "dw-video-verified.json").read_text(encoding="utf-8"))
+
     lessons, total_folgen = [], 0
     for level, count in LEVELS:
         vocab_asset = json.loads(
@@ -76,10 +81,16 @@ def main() -> int:
         vmap = {w["de"]: w for w in vocab_asset}
         for num in range(1, count + 1):
             d = json.loads((src / f"{level}-{num:02d}.json").read_text(encoding="utf-8"))
-            folgen = [{
-                "n": f["n"], "t": f["t"], "d": f["d"],
-                "yt": ids[folge_idx(level, f["n"])],
-            } for f in d["folgen"]]
+            folgen = []
+            for f in d["folgen"]:
+                vm = video_map[level][str(f["n"])]
+                vv = verified[level][str(f["n"])]
+                folgen.append({
+                    "n": f["n"], "t": f["t"], "d": f["d"],
+                    "yt": ids[folge_idx(level, f["n"])],
+                    "dw": vm["hls"] if vv.get("hls") else "",
+                    "dwUt": vm["hlsUt"] if (vm.get("hlsUt") and vv.get("ut")) else "",
+                })
             total_folgen += len(folgen)
 
             if "vocab" in d:  # a1-01：三元组现成
@@ -115,6 +126,7 @@ def main() -> int:
         expect_words = 40 if (les["level"], les["num"]) == ("a1", 1) else 36
         assert len(les["words"]) == expect_words, (tag, "words", len(les["words"]))
         assert all(f["yt"] for f in les["folgen"]), (tag, "yt missing")
+        assert all(f["dw"] for f in les["folgen"]), (tag, "dw missing")
 
     OUT.write_text(json.dumps({"lessons": lessons}, ensure_ascii=False), encoding="utf-8")
     print(f"weg.json 已生成: 56 课 / {total_folgen} 集 / {OUT.stat().st_size/1024:.0f} KB -> {OUT}")

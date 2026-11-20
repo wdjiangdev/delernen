@@ -268,7 +268,10 @@ object DataRepo {
             val folArr = l.getJSONArray("folgen")
             val folgen = (0 until folArr.length()).map { j ->
                 val f = folArr.getJSONObject(j)
-                WegFolge(f.getInt("n"), optStr(f, "t"), optStr(f, "d"), optStr(f, "yt"))
+                WegFolge(
+                    f.getInt("n"), optStr(f, "t"), optStr(f, "d"), optStr(f, "yt"),
+                    optStr(f, "dw"), optStr(f, "dwUt")
+                )
             }
             val grArr = l.optJSONArray("grammar")
             val grammar = (0 until (grArr?.length() ?: 0)).map { j ->

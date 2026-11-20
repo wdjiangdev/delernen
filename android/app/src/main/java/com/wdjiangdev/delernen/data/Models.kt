@@ -135,8 +135,12 @@ data class WegFolge(
     val n: Int,
     val t: String,
     val d: String,
-    /** DW 官方 YouTube 视频 ID，课页内 WebView 内嵌播放。 */
-    val yt: String
+    /** DW 官方 YouTube 视频 ID（网站用；App 已改播 DW 直源，保留备用）。 */
+    val yt: String,
+    /** DW 官方 HLS 直源（App 原生播放器用），228/228 集全覆盖。 */
+    val dw: String = "",
+    /** DW 字幕版 HLS（部分集没有，为空时不显示「字幕版」开关）。 */
+    val dwUt: String = ""
 )
 
 data class WegWord(
