@@ -242,8 +242,12 @@ private fun VideoSection(les: WegLesson) {
                 "</head><body><iframe src=\"https://www.youtube.com/embed/$currentId" +
                 "?rel=0&playsinline=1\" allow=\"autoplay; encrypted-media; picture-in-picture\" " +
                 "allowfullscreen></iframe></body></html>"
+            // HTML 里有 % 等字符，必须 Base64 编码加载，否则 loadData 解析坏掉、整页黑屏
+            val encoded = android.util.Base64.encodeToString(
+                html.toByteArray(Charsets.UTF_8), android.util.Base64.NO_PADDING
+            )
             webView.loadDataWithBaseURL(
-                "https://delernen.6668800.xyz/", html, "text/html", "utf-8", null
+                "https://delernen.6668800.xyz/", encoded, "text/html", "base64", null
             )
         }
     }
