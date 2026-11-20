@@ -33,6 +33,7 @@ td .zh{color:var(--text3);font-size:13px}
 .folge .t small{display:block;color:var(--text3);font-size:12px;line-height:1.5}
 .playerbox{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;margin-bottom:14px}
 .playerbox iframe,.playerbox #ytPlayer{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playerbox video{position:absolute;inset:0;width:100%;height:100%;background:#000}
 .playbtn{flex-shrink:0;align-self:center;background:var(--accentdeep);border:1px solid var(--accent);color:var(--text);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
 .playbtn:hover{background:var(--accentbg)}
 .playbtn.now{border-color:var(--green);color:var(--green)}
@@ -130,9 +131,9 @@ h2.sec.closed .chev{transform:rotate(-90deg)}
 
 <h2 class="sec">🎬 第一步 · 看视频（DW 原版，页内播放）</h2>
 <div class="card">
-<div class="playerbox"><div id="ytPlayer"></div></div>
+<div class="playerbox"><div id="ytPlayer"></div><video id="dwPlayer" controls playsinline preload="none" src="https://tvdownloaddw-a.akamaihd.net/Events/mp4/nicosweg/A1_E0_L1_F1_hd.mp4" style="display:none"></video></div>
 <p style="margin-bottom:10px">播放器已内嵌本课的 DW 官方视频（YouTube 播放列表）。<b class="hl">点每集右边的「▶ 播放」就在本页切换到那一集</b>，不用跳走；播放器里也可以直接点下一集连着看。默认停在 Folge 1，按播放键开始。</p>
-<div class="folge"><span class="no">Folge 1</span><span class="t">Hallo!<small>Nico 刚下飞机，在机场遇到 Emma，先学打招呼</small></span><button class="playbtn" data-folge="1" onclick="playFolge(1,this)">▶ 播放</button></div>
+<div class="folge"><span class="no">Folge 1</span><span class="t">Hallo!<small>Nico 刚下飞机，在机场遇到 Emma，先学打招呼 · 本集为 DW 直链源试验</small></span><button class="playbtn" data-folge="1" onclick="playFolge(1,this)">▶ 播放</button></div>
 <div class="folge"><span class="no">Folge 2</span><span class="t">Kein Problem!<small>学着说「没问题」，第一次开口求人帮忙</small></span><button class="playbtn" data-folge="2" onclick="playFolge(2,this)">▶ 播放</button></div>
 <div class="folge"><span class="no">Folge 3</span><span class="t">Tschüss!<small>Nico 的包被出租车拉走了，学告别用语</small></span><button class="playbtn" data-folge="3" onclick="playFolge(3,this)">▶ 播放</button></div>
 <div class="folge"><span class="no">Folge 4</span><span class="t">Von A bis Z<small>德语字母表：听懂并拼出自己的名字</small></span><button class="playbtn" data-folge="4" onclick="playFolge(4,this)">▶ 播放</button></div>
@@ -258,6 +259,20 @@ function onYouTubeIframeAPIReady(){
 }
 /* playlist position: 0=Trailer, 1=Folge 1, 2=Folge 2 ... so Folge n is index n */
 window.playFolge=function(n,btn){
+  var _dwv=document.getElementById('dwPlayer');
+  if(_dwv){
+    if(n===1){
+      document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
+      if(btn)btn.classList.add('now');
+      var _box=document.querySelector('.playerbox');if(_box)_box.scrollIntoView({behavior:'smooth',block:'center'});
+      var _yf=document.getElementById('ytPlayer');if(_yf)_yf.style.display='none';
+      if(ytReady&&ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();
+      _dwv.style.display='block';_dwv.play();
+      return;
+    }
+    _dwv.pause();_dwv.style.display='none';
+    var _yf2=document.getElementById('ytPlayer');if(_yf2)_yf2.style.display='block';
+  }
   document.querySelectorAll('.playbtn').forEach(function(b){b.classList.remove('now');});
   if(btn)btn.classList.add('now');
   var box=document.querySelector('.playerbox');
@@ -386,7 +401,7 @@ paintDone();
     if(Array.isArray(sv)&&sv.length===secs.length)openState=sv.map(function(x){return !!x;});
   }catch(e){}
   function pauseVideo(){
-    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}
+    try{if(window.ytPlayer&&ytPlayer.pauseVideo)ytPlayer.pauseVideo();}catch(e){}try{var _dv=document.getElementById('dwPlayer');if(_dv)_dv.pause();}catch(e){}
   }
   function apply(){
     bodies.forEach(function(b,i){
