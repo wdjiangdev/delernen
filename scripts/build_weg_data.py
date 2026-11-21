@@ -73,6 +73,7 @@ def main() -> int:
     # f["n"] 即该级内的全局集号，与 dw-video-*.json 的键一致。
     video_map = json.loads((src / "dw-video-global.json").read_text(encoding="utf-8"))
     verified = json.loads((src / "dw-video-verified.json").read_text(encoding="utf-8"))
+    mp4_verified = json.loads((src / "dw-video-mp4-verified.json").read_text(encoding="utf-8"))
 
     lessons, total_folgen = [], 0
     for level, count in LEVELS:
@@ -85,11 +86,16 @@ def main() -> int:
             for f in d["folgen"]:
                 vm = video_map[level][str(f["n"])]
                 vv = verified[level][str(f["n"])]
+                mv = mp4_verified[level][str(f["n"])]
                 folgen.append({
                     "n": f["n"], "t": f["t"], "d": f["d"],
                     "yt": ids[folge_idx(level, f["n"])],
                     "dw": vm["hls"] if vv.get("hls") else "",
                     "dwUt": vm["hlsUt"] if (vm.get("hlsUt") and vv.get("ut")) else "",
+                    "mp4": vm["mp4"] if (vm.get("mp4") and mv.get("hd")) else "",
+                    "mp4Sd": (vm["mp4"] or "").replace("_hd.mp4", "_sd.mp4")
+                             if (vm.get("mp4") and mv.get("sd")) else "",
+                    "mp4Ut": vm["mp4Ut"] if (vm.get("mp4Ut") and mv.get("ut")) else "",
                 })
             total_folgen += len(folgen)
 
@@ -127,6 +133,7 @@ def main() -> int:
         assert len(les["words"]) == expect_words, (tag, "words", len(les["words"]))
         assert all(f["yt"] for f in les["folgen"]), (tag, "yt missing")
         assert all(f["dw"] for f in les["folgen"]), (tag, "dw missing")
+        assert all(f["mp4"] for f in les["folgen"]), (tag, "mp4 missing")
 
     OUT.write_text(json.dumps({"lessons": lessons}, ensure_ascii=False), encoding="utf-8")
     print(f"weg.json 已生成: 56 课 / {total_folgen} 集 / {OUT.stat().st_size/1024:.0f} KB -> {OUT}")

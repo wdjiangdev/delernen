@@ -52,11 +52,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import androidx.media3.common.C
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
-import androidx.media3.common.TrackSelectionOverride
-import androidx.media3.common.Tracks
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.PlayerView
 import com.wdjiangdev.delernen.data.DataRepo
@@ -200,76 +197,71 @@ private fun VideoSection(les: WegLesson) {
     val context = LocalContext.current
     var current by remember(les.level, les.num) { mutableStateOf(les.folgen.firstOrNull()) }
     var useUt by remember(les.level, les.num) { mutableStateOf(false) }
-    var quality by remember(les.level, les.num) { mutableStateOf(0) } // 0=自动，其余=指定高度(px)
-    var heights by remember(les.level, les.num) { mutableStateOf<List<Int>>(emptyList()) }
+    var hdQuality by remember(les.level, les.num) { mutableStateOf(true) }
     var fullscreen by remember { mutableStateOf(false) }
+    // 播放源两级：0=Akamai MP4 直链（首选），1=hlsvod HLS（MP4 失败时自动回退）；两级都失败才报错
+    var stage by remember(les.level, les.num) { mutableStateOf(0) }
+    var errorMsg by remember(les.level, les.num) { mutableStateOf<String?>(null) }
 
-    // DW 官方 HLS 源 + ExoPlayer 原生播放：不经 YouTube（网页嵌在 App 里会被它要求登录验人），
-    // 自带进度/全屏，清晰度可手动锁定一档，也可切带德语字幕的版本（dwUt，部分集没有）。
     val player = remember(les.level, les.num) { ExoPlayer.Builder(context).build() }
     DisposableEffect(player) { onDispose { player.release() } }
 
-    fun applyQuality() {
-        if (quality != 0) {
-            val already = player.trackSelectionParameters.overrides.values.any { ov ->
-                (0 until ov.mediaTrackGroup.length).any { i ->
-                    ov.trackIndices.contains(i) &&
-                        ov.mediaTrackGroup.getFormat(i).height == quality
-                }
+    fun pickUrl(): String {
+        val f = current ?: return ""
+        return if (stage == 0) {
+            when {
+                useUt && f.mp4Ut.isNotBlank() -> f.mp4Ut
+                !hdQuality && f.mp4Sd.isNotBlank() -> f.mp4Sd
+                f.mp4.isNotBlank() -> f.mp4
+                useUt && f.dwUt.isNotBlank() -> f.dwUt
+                else -> f.dw
             }
-            if (already) return
+        } else {
+            if (useUt && f.dwUt.isNotBlank()) f.dwUt else f.dw
         }
-        val builder = player.trackSelectionParameters.buildUpon()
-            .clearOverridesOfType(C.TRACK_TYPE_VIDEO)
-        if (quality != 0) {
-            outer@ for (group in player.currentTracks.groups) {
-                if (group.type != C.TRACK_TYPE_VIDEO) continue
-                for (i in 0 until group.length) {
-                    if (group.getTrackFormat(i).height == quality) {
-                        builder.addOverride(TrackSelectionOverride(group.mediaTrackGroup, i))
-                        break@outer
-                    }
-                }
-            }
+    }
+
+    fun load(posMs: Long) {
+        val url = pickUrl()
+        if (url.isBlank()) {
+            errorMsg = "本集暂时没有可用的视频源"
+            return
         }
-        player.trackSelectionParameters = builder.build()
+        errorMsg = null
+        player.setMediaItem(MediaItem.fromUri(url))
+        player.prepare()
+        if (posMs > 0) player.seekTo(posMs)
     }
 
     DisposableEffect(player) {
         val listener = object : Player.Listener {
-            override fun onTracksChanged(tracks: Tracks) {
-                val hs = sortedSetOf<Int>()
-                for (g in tracks.groups) {
-                    if (g.type == C.TRACK_TYPE_VIDEO) {
-                        for (i in 0 until g.length) {
-                            val h = g.getTrackFormat(i).height
-                            if (h > 0) hs.add(h)
-                        }
-                    }
+            override fun onPlayerError(error: androidx.media3.common.PlaybackException) {
+                if (stage == 0) {
+                    stage = 1
+                    load(player.currentPosition)
+                } else {
+                    errorMsg = "视频加载失败：当前网络访问不到 DW 的视频源（可先看其他内容，或用 YouTube 打开）"
                 }
-                heights = hs.toList().sortedDescending()
-                applyQuality()
             }
         }
         player.addListener(listener)
         onDispose { player.removeListener(listener) }
     }
 
-    fun load(posMs: Long) {
-        val f = current ?: return
-        val url = if (useUt && f.dwUt.isNotBlank()) f.dwUt else f.dw
-        if (url.isBlank()) return
-        player.setMediaItem(MediaItem.fromUri(url))
-        player.prepare()
-        if (posMs > 0) player.seekTo(posMs)
+    LaunchedEffect(current) {
+        stage = 0
+        load(0L)
     }
-    LaunchedEffect(current) { load(0L) }
-    val utSeen = remember { mutableStateOf(false) }
-    LaunchedEffect(useUt) {
-        // 首次组合时不重复加载（切集的 effect 已处理）；之后切字幕版保留进度
-        if (utSeen.value) load(player.currentPosition) else utSeen.value = true
+    val settingsSeen = remember { mutableStateOf(false) }
+    LaunchedEffect(useUt, hdQuality) {
+        // 首次组合不重复加载（切集 effect 已处理）；之后切换保留进度、回到 MP4 首选源
+        if (settingsSeen.value) {
+            stage = 0
+            load(player.currentPosition)
+        } else {
+            settingsSeen.value = true
+        }
     }
-    LaunchedEffect(quality) { applyQuality() }
 
     val playerView = remember {
         PlayerView(context).apply {
@@ -297,9 +289,39 @@ private fun VideoSection(les: WegLesson) {
                 .padding(horizontal = 16.dp)
                 .aspectRatio(16f / 9f)
                 .clip(MaterialTheme.shapes.medium)
-                .background(Color.Black)
+                .background(Color.Black),
+            contentAlignment = Alignment.Center
         ) {
-            AndroidView(factory = { playerView }, modifier = Modifier.fillMaxSize())
+            if (errorMsg != null) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.padding(horizontal = 20.dp)
+                ) {
+                    Text(
+                        errorMsg!!,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = Color.White
+                    )
+                    Spacer(Modifier.height(10.dp))
+                    Row {
+                        Button(onClick = { stage = 0; load(0L) }) { Text("重试") }
+                        Spacer(Modifier.width(10.dp))
+                        OutlinedButton(onClick = {
+                            val yt = current?.yt.orEmpty()
+                            if (yt.isNotBlank()) {
+                                context.startActivity(
+                                    android.content.Intent(
+                                        android.content.Intent.ACTION_VIEW,
+                                        android.net.Uri.parse("https://www.youtube.com/watch?v=$yt")
+                                    )
+                                )
+                            }
+                        }) { Text("YouTube 打开") }
+                    }
+                }
+            } else {
+                AndroidView(factory = { playerView }, modifier = Modifier.fillMaxSize())
+            }
         }
     }
     Row(
@@ -309,27 +331,27 @@ private fun VideoSection(les: WegLesson) {
             .horizontalScroll(rememberScrollState()),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text(
-            "清晰度",
-            style = MaterialTheme.typography.labelMedium,
-            color = DelernenColors.Text3
-        )
-        Spacer(Modifier.width(8.dp))
-        FilterChip(
-            selected = quality == 0,
-            onClick = { quality = 0 },
-            label = { Text("自动") }
-        )
-        heights.forEach { h ->
+        if (!useUt) {
+            Text(
+                "清晰度",
+                style = MaterialTheme.typography.labelMedium,
+                color = DelernenColors.Text3
+            )
+            Spacer(Modifier.width(8.dp))
+            FilterChip(
+                selected = hdQuality,
+                onClick = { hdQuality = true },
+                label = { Text("高清") }
+            )
             Spacer(Modifier.width(6.dp))
             FilterChip(
-                selected = quality == h,
-                onClick = { quality = h },
-                label = { Text("${h}p") }
+                selected = !hdQuality,
+                onClick = { hdQuality = false },
+                label = { Text("标清") }
             )
         }
-        if (current?.dwUt?.isNotBlank() == true) {
-            Spacer(Modifier.width(12.dp))
+        if (current?.let { it.mp4Ut.isNotBlank() || it.dwUt.isNotBlank() } == true) {
+            if (!useUt) Spacer(Modifier.width(12.dp))
             FilterChip(
                 selected = useUt,
                 onClick = { useUt = !useUt },

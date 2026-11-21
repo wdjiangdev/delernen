@@ -270,7 +270,8 @@ object DataRepo {
                 val f = folArr.getJSONObject(j)
                 WegFolge(
                     f.getInt("n"), optStr(f, "t"), optStr(f, "d"), optStr(f, "yt"),
-                    optStr(f, "dw"), optStr(f, "dwUt")
+                    optStr(f, "dw"), optStr(f, "dwUt"),
+                    optStr(f, "mp4"), optStr(f, "mp4Sd"), optStr(f, "mp4Ut")
                 )
             }
             val grArr = l.optJSONArray("grammar")

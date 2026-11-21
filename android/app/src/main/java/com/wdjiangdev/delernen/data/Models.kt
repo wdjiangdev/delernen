@@ -137,10 +137,16 @@ data class WegFolge(
     val d: String,
     /** DW 官方 YouTube 视频 ID（网站用；App 已改播 DW 直源，保留备用）。 */
     val yt: String,
-    /** DW 官方 HLS 直源（App 原生播放器用），228/228 集全覆盖。 */
+    /** DW 官方 HLS 直源（hlsvod.dw.com；App 内作 MP4 失败后的回退源）。 */
     val dw: String = "",
     /** DW 字幕版 HLS（部分集没有，为空时不显示「字幕版」开关）。 */
-    val dwUt: String = ""
+    val dwUt: String = "",
+    /** DW 官方 MP4 高清直链（Akamai，App 首选源）。 */
+    val mp4: String = "",
+    /** DW 官方 MP4 标清直链（由高清地址推导并逐个验过）。 */
+    val mp4Sd: String = "",
+    /** DW 字幕版 MP4 直链（Akamai；没有的集为空）。 */
+    val mp4Ut: String = ""
 )
 
 data class WegWord(
